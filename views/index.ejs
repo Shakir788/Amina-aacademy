@@ -50,6 +50,7 @@
         }
         .logo span { color: var(--primary); }
         
+        .nav-links { display: flex; align-items: center; }
         .nav-links a {
             color: var(--text-main);
             text-decoration: none;
@@ -67,8 +68,15 @@
             border-radius: 50px;
             font-weight: 600;
             transition: 0.3s;
+            margin-right: 0 !important;
         }
         .btn-nav:hover { background: var(--primary); transform: translateY(-2px); }
+
+        /* Mobile Nav Fix */
+        @media (max-width: 768px) {
+            nav { padding: 15px 5%; }
+            .nav-links a:not(.btn-nav) { display: none; } /* Hide text links on mobile */
+        }
 
         /* --- HERO SECTION (Vercel Style) --- */
         .hero {
@@ -130,6 +138,7 @@
             font-size: 16px;
             box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
             transition: all 0.3s ease;
+            text-align: center;
         }
         .btn-main:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(79, 70, 229, 0.4); }
         
@@ -142,10 +151,7 @@
         }
         .btn-sec:hover { color: var(--primary); }
 
-        .hero-img-box {
-            flex: 1;
-            position: relative;
-        }
+        .hero-img-box { flex: 1; position: relative; }
         .hero-img {
             width: 100%;
             border-radius: 24px;
@@ -156,7 +162,6 @@
         }
         .hero-img:hover { transform: perspective(1000px) rotateY(0deg); }
 
-        /* Floating trust badge */
         .float-badge {
             position: absolute;
             bottom: -20px;
@@ -168,10 +173,23 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            z-index: 10;
         }
         .float-badge span { font-size: 24px; }
         .float-badge div p { margin: 0; font-size: 12px; color: var(--text-muted); }
         .float-badge div h4 { margin: 0; font-size: 18px; font-weight: 800; }
+
+        /* Hero Responsive Fix */
+        @media (max-width: 1024px) {
+            .hero { padding: 80px 5% 60px; flex-direction: column; text-align: center; }
+            .hero-content { max-width: 100%; }
+            .hero h1 { font-size: 42px; letter-spacing: -1px; }
+            .hero p { font-size: 18px; margin: 0 auto 30px; }
+            .hero-btns { justify-content: center; flex-wrap: wrap; }
+            .hero-img-box { width: 100%; max-width: 500px; margin-top: 40px; }
+            .hero-img { transform: none; }
+            .float-badge { left: 50%; transform: translateX(-50%); bottom: -20px; width: max-content; }
+        }
 
         /* --- THE EMPIRE BLUEPRINT (Features) --- */
         .blueprint-section {
@@ -206,7 +224,6 @@
             border: 1px solid #E2E8F0;
             transition: 0.3s;
             position: relative;
-            overflow: hidden;
         }
         .card:hover {
             background: white;
@@ -228,6 +245,12 @@
         }
         .card h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
         .card p { color: var(--text-muted); font-size: 15px; }
+
+        @media (max-width: 768px) {
+            .blueprint-section { padding: 60px 5%; }
+            .blueprint-section h2 { font-size: 30px; }
+            .course-grid { grid-template-columns: 1fr; }
+        }
 
         /* --- TESTIMONIALS SECTION --- */
         .testimonials {
@@ -269,6 +292,12 @@
         .user-info h4 { font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 2px;}
         .user-info p { font-size: 14px; color: var(--text-muted); margin: 0; }
 
+        @media (max-width: 768px) {
+            .testimonials { padding: 60px 5%; }
+            .testimonials h2 { font-size: 30px; margin-bottom: 30px; }
+            .testi-grid { grid-template-columns: 1fr; }
+        }
+
         /* --- CTA SECTION --- */
         .cta-section {
             padding: 100px 8%;
@@ -293,8 +322,16 @@
             text-decoration: none;
             box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
             transition: 0.3s;
+            display: inline-block;
         }
         .btn-cta:hover { transform: scale(1.05); background: #FCD34D; }
+
+        @media (max-width: 768px) {
+            .cta-section { padding: 60px 5%; }
+            .cta-section h2 { font-size: 32px; }
+            .cta-section p { font-size: 16px; }
+            .btn-cta { padding: 15px 30px; font-size: 16px; width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -390,7 +427,7 @@
 
             <div class="testi-card">
                 <div class="stars">★★★★★</div>
-                <p class="testi-text">"J'adore le simulateur FIFO et les zones de pratique à la fin de chaque leçon. Ce n'est pas juste de la théorie ennuyeuse, c'est de l'action pure. L'interface est magnifique et super motivante."</p>
+                <p class="testi-text">"J'adore le simulateur FIFO et les zones de pratique à la fin de cada leccion. Ce n'est pas juste de la théorie ennuyeuse, c'est de l'action pure. L'interface est magnifique et super motivante."</p>
                 <div class="testi-user">
                     <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" class="testi-avatar" alt="User">
                     <div class="user-info">

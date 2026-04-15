@@ -338,3 +338,79 @@ a:hover {
 .lesson-card {
     overflow: hidden; 
 }
+
+/* =========================================================
+   📱 MOBILE & TABLET RESPONSIVENESS (Fix for Small Screens)
+   ========================================================= */
+
+@media (max-width: 768px) {
+    /* 🧭 Navbar Adjustments */
+    nav {
+        padding: 12px 5%; /* Side padding kam kar di */
+        flex-direction: column; /* Logo aur Menu upar-neeche (optional) */
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 18px; /* Mobile pe chota logo */
+    }
+
+    /* 📝 Auth Card (Login/Register) */
+    .auth-card {
+        margin: 30px auto; /* Top margin kam kar di */
+        padding: 25px 20px; /* Padding kam taaki screen ke bahar na jaye */
+        width: 95%; /* Poori width le le */
+    }
+
+    .auth-card h1 {
+        font-size: 22px;
+    }
+
+    /* 👑 Welcome Banner (Dashboard) */
+    .welcome-banner {
+        padding: 30px 20px; /* Padding kam kar di */
+        margin-bottom: 25px;
+        border-radius: 12px;
+    }
+
+    .welcome-banner h1 {
+        font-size: 26px; /* Badi heading ko chota kiya */
+        line-height: 1.2;
+    }
+
+    .banner-stats {
+        gap: 10px; /* Stats ke beech space kam kiya */
+    }
+
+    .stat {
+        font-size: 12px; /* Chota text */
+        padding: 6px 12px;
+        flex: 1 1 auto; /* Stats ko wrap hone ke liye flexible banaya */
+        text-align: center;
+    }
+
+    /* 📚 Lesson Grid */
+    .lesson-grid {
+        grid-template-columns: 1fr; /* Mobile pe 1 column (ek ke niche ek) */
+        gap: 16px;
+    }
+
+    .card-img {
+        height: 140px; /* Image height thodi kam mobile pe */
+    }
+
+    .card-content {
+        padding: 20px; /* Content padding adjust ki */
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .welcome-banner h1 {
+        font-size: 22px;
+    }
+    
+    .auth-card {
+        padding: 20px 15px;
+    }
+}
