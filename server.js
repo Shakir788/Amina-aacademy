@@ -3,12 +3,11 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs'); 
 const cookieParser = require('cookie-parser');
-const connectDB = require('./config/db.js');
-
-// 🚀 NAYA: Google Auth ke liye packages
 const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
+
+const connectDB = require('./config/db.js');
 const User = require('./models/User'); 
 
 // --- Imports (Routes, Controllers & Middleware) ---
@@ -17,10 +16,13 @@ const progressRoutes = require('./routes/progressRoutes');
 const { protect } = require('./middleware/authMiddleware');
 const { getDashboard } = require('./controllers/progressController');
 
-// Database se connect karo
+// Database Connection
 connectDB();
 
 const app = express();
+
+// 🚀 VERCEL FIX: Trust proxy for secure cookies/sessions
+app.set('trust proxy', 1); 
 
 // --- Middlewares ---
 app.use(express.json()); 
@@ -28,39 +30,44 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser()); 
 app.use(express.static(path.join(__dirname, 'public'))); 
 
-// 🚀 NAYA: Session setup (Google Auth ke liye zaroori hai)
+// 🚀 Session Setup (Optimized for Production)
 app.use(session({
     secret: process.env.JWT_SECRET || 'amina_secret_key',
-    resave: false,
-    saveUninitialized: false
+    resave: true, // Vercel/Serverless ke liye true rakhna behtar hai
+    saveUninitialized: false,
+    cookie: {
+        secure: process.env.NODE_ENV === 'production', // Production mein HTTPS mandatory hai
+        maxAge: 24 * 60 * 60 * 1000 // 24 Hours
+    }
 }));
 
-// 🚀 NAYA: Passport.js Initialize
+// --- Passport.js Initialize ---
 app.use(passport.initialize());
 app.use(passport.session());
 
-// 🚀 NAYA: Google Strategy Engine (SMART UPDATE)
+// 🧠 Smart Google Strategy: Prevents Duplicate Email Errors
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "/api/auth/google/callback"
+    callbackURL: "/api/auth/google/callback",
+    proxy: true // Ensures redirect works on HTTPS (Vercel)
   },
   async (accessToken, refreshToken, profile, done) => {
       try {
           const userEmail = profile.emails[0].value;
 
-          // 🧠 SMART LOGIC: Pehle Email se dhoondo (Duplicate Error se bachne ke liye)
+          // Check if user exists by Email first
           let user = await User.findOne({ email: userEmail });
 
           if (user) {
-              // Case 1: User mil gaya par pehle Google se nahi aaya tha
+              // If user exists but doesn't have a googleId, link it
               if (!user.googleId) {
-                  user.googleId = profile.id; // Google ID link kar do
+                  user.googleId = profile.id;
                   await user.save();
               }
               return done(null, user); 
           } else {
-              // Case 2: Bilkul naya banda hai (Database me email nahi hai)
+              // Create brand new user if email doesn't exist
               user = await User.create({
                   googleId: profile.id,
                   name: profile.displayName,
@@ -70,7 +77,7 @@ passport.use(new GoogleStrategy({
               return done(null, user);
           }
       } catch (err) {
-          console.error("Passport Google Strategy Error:", err);
+          console.error("Google Auth Error:", err);
           return done(err, false);
       }
   }
@@ -86,7 +93,7 @@ passport.deserializeUser(async (id, done) => {
     }
 });
 
-// 🚀 FIX: PREVENT BACK BUTTON CACHE ISSUE (Ghost Page)
+// 🛡️ Security: Prevent Back-Button Cache (Sensitive Pages)
 app.use((req, res, next) => {
     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
     res.set('Pragma', 'no-cache');
@@ -94,24 +101,19 @@ app.use((req, res, next) => {
     next();
 });
 
-// --- View Engine Setup (EJS) ---
+// --- View Engine Setup ---
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// --- API Routes (Backend logic) ---
+// --- API Routes ---
 app.use('/api/auth', authRoutes); 
 app.use('/api/progress', progressRoutes); 
 
-// --- Page Routes (Frontend Views) ---
-
-app.get('/', (req, res) => {
-    res.render('index'); 
-});
-
+// --- Page Routes ---
+app.get('/', (req, res) => res.render('index'));
 app.get('/register', (req, res) => res.render('pages/register'));
 app.get('/login', (req, res) => res.render('pages/login'));
 
-// 🚀 NAYA: Complete Profile Route
 app.get('/complete-profile', protect, (req, res) => {
     res.render('pages/complete-profile', { user: req.user });
 });
@@ -126,14 +128,13 @@ app.get('/lesson/:id', protect, (req, res) => {
         try {
             const rawData = fs.readFileSync(filePath);
             const lessonData = JSON.parse(rawData);
-
             res.render('pages/lesson', { 
                 user: req.user, 
                 lessonId: lessonId,
                 lesson: lessonData 
             });
         } catch (err) {
-            console.error("Error reading lesson file:", err);
+            console.error("File Read Error:", err);
             res.redirect('/dashboard');
         }
     } else {
@@ -141,8 +142,14 @@ app.get('/lesson/:id', protect, (req, res) => {
     }
 });
 
-// --- Server Start ---
+// --- Server & Vercel Export ---
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+
+// Local dev ke liye listen, Vercel handle karega exports ko
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`🚀 Server running on http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app; 
