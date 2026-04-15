@@ -1,0 +1,57 @@
+{
+  "id": 8,
+  "title": {
+    "fr": "Le Bilan : L'Image du Patrimoine",
+    "en": "The Balance Sheet: The Wealth Snapshot",
+    "ar": "الميزانية العمومية: صورة الذمة المالية"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre profondément le Bilan, savoir le lire, le construire, et analyser la situation financière réelle d’une entreprise.",
+
+      "explication": "🔷 1. C’est quoi le Bilan ?\n\nLe Bilan est une photo financière de l’entreprise à un moment précis.\n\n👉 Il montre :\n- Ce que l’entreprise possède\n- D’où vient cet argent\n\n\n🔷 2. Structure du Bilan\n\nLe Bilan est divisé en deux parties :\n\n👉 ACTIF (gauche)\n= Ce que l’entreprise possède\n\n👉 PASSIF (droite)\n= D’où vient l’argent\n\n\n🔷 3. Comprendre avec logique (IMPORTANT)\n\n👉 Actif = utilisation de l’argent\n👉 Passif = origine de l’argent\n\n💡 Exemple :\nTu achètes une machine → Actif\nTu prends un crédit → Passif\n\n\n🔷 4. Détail des éléments\n\n🔹 Actif :\n- Immobilisations (Classe 2)\n- Stock (Classe 3)\n- Trésorerie (Classe 5)\n\n🔹 Passif :\n- Capital (Classe 1)\n- Dettes (Classe 4)\n\n\n🔷 5. Règle fondamentale\n\n💥 TOTAL ACTIF = TOTAL PASSIF\n\n👉 Toujours équilibré\n\n👉 Pourquoi ?\nParce que chaque dirham utilisé a une origine\n\n\n🔷 6. Vision simple (TRÈS IMPORTANT)\n\n👉 Actif = ce que tu as\n👉 Passif = comment tu l’as obtenu\n\n\n🔷 7. Exemple logique\n\nSi tu as :\nMachine = 20000 DHS\n\n👉 Actif = 20000\n\nSi tu as pris un crédit :\n👉 Passif = 20000\n\n✔ Équilibre parfait\n\n\n🔷 8. Erreurs des débutants\n\n❌ Penser que Actif = richesse totale\n👉 Faux → il faut voir le Passif\n\n❌ Oublier les dettes\n\n❌ Confondre Actif et Charges\n\n\n🔷 9. Vision professionnelle\n\n👉 Le Bilan est utilisé par :\n- Banques\n- État\n- Investisseurs\n\n👉 Il montre si l’entreprise est :\n✔ solide\n✔ endettée\n✔ en danger\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1591696208162-a9317596723b?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nAMINA possède :\n- Machines = 20000 DHS\n- Banque = 5000 DHS\n\n👉 Actif = 25000\n\n\nElle a :\n- Capital = 15000 DHS\n- Dette fournisseur = 10000 DHS\n\n👉 Passif = 25000\n\n\n✔ Actif = Passif = 25000\n\n👉 Bilan équilibré\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Banque = 5000 DHS\nDette fournisseur = 5000 DHS\n👉 Où placer ?\n\n\n2. Machine = 10000 DHS\nCrédit bancaire = 10000 DHS\n👉 Actif ? Passif ?\n\n\n3. Si Actif = 30000\nPassif = 29000\n👉 Problème ?",
+
+      "reponses": "1 → Banque = Actif / Dette = Passif\n2 → Machine = Actif / Crédit = Passif\n3 → Erreur ❌ (doit être égal)",
+
+      "resume": "📌 Résumé FINAL\n\n- Le Bilan = photo financière\n- Actif = ce que l’entreprise possède\n- Passif = origine de l’argent\n\n👉 Règle : Actif = Passif\n\n🔥 Comprendre le Bilan = comprendre toute la comptabilité"
+    },
+
+    "en": {
+      "objectif": "Understand the balance sheet and analyze a company’s financial position.",
+
+      "explication": "🔷 The Balance Sheet is a financial snapshot.\n\n👉 Assets = what the company owns\n👉 Liabilities = where the money comes from\n\n🔷 Rule:\nTotal Assets = Total Liabilities\n\n🔷 Important:\nAssets show usage\nLiabilities show source\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1591696208162-a9317596723b?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Assets = 25000\nLiabilities = 25000\n\nBalanced ✔",
+
+      "pratique": "1. Cash + Debt → ?\n2. Machine + Loan → ?\n3. 30000 / 29000 → ?",
+
+      "reponses": "1 → Asset / Liability\n2 → Asset / Liability\n3 → Error",
+
+      "resume": "Balance Sheet must always balance."
+    },
+
+    "ar": {
+      "objectif": "فهم الميزانية العمومية وتحليل الوضع المالي للشركة.",
+
+      "explication": "🔷 الميزانية العمومية هي صورة مالية.\n\n👉 الأصول = ما تملكه الشركة\n👉 الخصوم = مصدر الأموال\n\n🔷 القاعدة:\nالأصول = الخصوم\n\n🔷 مهم:\nالأصول = الاستخدام\nالخصوم = المصدر\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1591696208162-a9317596723b?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "أصول = 25000\nخصوم = 25000\n\nمتوازن ✔",
+
+      "pratique": "1. نقد + دين → ؟\n2. آلة + قرض → ؟\n3. 30000 / 29000 → ؟",
+
+      "reponses": "1 → أصل / خصم\n2 → أصل / خصم\n3 → خطأ",
+
+      "resume": "الميزانية يجب أن تكون متوازنة دائماً."
+    }
+  }
+}

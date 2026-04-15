@@ -1,0 +1,57 @@
+{
+  "id": 9,
+  "title": {
+    "fr": "Le CPC : Calculer le Résultat Net",
+    "en": "The P&L Statement: Calculating Net Profit",
+    "ar": "حساب المنتجات والتكاليف: حساب النتيجة الصافية"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre en profondeur comment calculer le résultat net d’une entreprise et analyser sa rentabilité réelle.",
+
+      "explication": "🔷 1. C’est quoi le CPC ?\n\nLe CPC (Compte de Produits et Charges) montre si l’entreprise gagne ou perd de l’argent.\n\n👉 Contrairement au Bilan :\n- Le Bilan = situation\n- Le CPC = performance\n\n\n🔷 2. Structure du CPC\n\nLe CPC contient :\n\n👉 Produits (Classe 7)\n= tout ce que l’entreprise gagne\n\n👉 Charges (Classe 6)\n= tout ce que l’entreprise dépense\n\n\n🔷 3. La formule principale\n\n💥 Résultat = Produits - Charges\n\n👉 Si positif → Bénéfice\n👉 Si négatif → Perte\n\n\n🔷 4. Les 3 niveaux du CPC (IMPORTANT)\n\n🔹 Résultat d’exploitation\n👉 Activité normale (ventes - achats)\n\n🔹 Résultat financier\n👉 Intérêts, opérations bancaires\n\n🔹 Résultat non courant\n👉 Événements exceptionnels\n\n\n🔷 5. Résultat final\n\n💥 Résultat Net = Résultat total - Impôts\n\n\n🔷 6. Comprendre avec logique\n\n👉 Le CPC montre COMMENT l’entreprise gagne de l’argent\n\n👉 Il répond à la question :\n“Est-ce que le business est rentable ?”\n\n\n🔷 7. Erreurs des débutants\n\n❌ Confondre CPC avec Bilan\n\n❌ Oublier certaines charges\n\n❌ Penser que chiffre d’affaires = profit\n\n👉 Faux :\nProfit = Revenus - Charges\n\n\n🔷 8. Vision professionnelle\n\n👉 Le CPC est utilisé pour :\n- analyser la rentabilité\n- prendre des décisions\n- attirer des investisseurs\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nAMINA réalise :\nProduits = 500000 DHS\nCharges = 350000 DHS\n\n👉 Résultat = 150000 DHS\n\nSi impôt = 20000 DHS\n\n👉 Résultat net = 130000 DHS\n\n\n💼 Exemple 2\n\nProduits = 100000\nCharges = 120000\n\n👉 Résultat = -20000 (Perte)\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Produits = 80000\nCharges = 50000\n👉 Résultat ?\n\n\n2. Produits = 40000\nCharges = 60000\n👉 Résultat ?\n\n\n3. Résultat = 20000\nImpôt = 5000\n👉 Résultat net ?",
+
+      "reponses": "1 → 30000 bénéfice\n2 → -20000 perte\n3 → 15000 résultat net",
+
+      "resume": "📌 Résumé FINAL\n\n- CPC = performance de l’entreprise\n- Produits - Charges = Résultat\n\n👉 Résultat positif = bénéfice\n👉 Résultat négatif = perte\n\n🔥 Comprendre le CPC = comprendre la rentabilité"
+    },
+
+    "en": {
+      "objectif": "Understand how to calculate net profit and analyze business performance.",
+
+      "explication": "🔷 The P&L statement shows if a business is profitable.\n\n👉 Revenues (Class 7)\n👉 Expenses (Class 6)\n\n🔷 Formula:\nProfit = Revenues - Expenses\n\n🔷 Three levels:\n- Operating\n- Financial\n- Non-current\n\n🔷 Net profit = Profit - Taxes\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Revenue = 500000\nExpenses = 350000\n\nProfit = 150000\n\nAfter tax = 130000",
+
+      "pratique": "1. 80000 - 50000 → ?\n2. 40000 - 60000 → ?\n3. 20000 - 5000 → ?",
+
+      "reponses": "1 → 30000\n2 → -20000\n3 → 15000",
+
+      "resume": "P&L shows profitability."
+    },
+
+    "ar": {
+      "objectif": "فهم كيفية حساب الربح الصافي وتحليل أداء الشركة.",
+
+      "explication": "🔷 حساب CPC يوضح ربح أو خسارة الشركة.\n\n👉 المنتجات (الفئة 7)\n👉 التكاليف (الفئة 6)\n\n🔷 القاعدة:\nالنتيجة = المنتجات - التكاليف\n\n🔷 المستويات:\n- التشغيلي\n- المالي\n- غير الجاري\n\n🔷 النتيجة الصافية = النتيجة - الضرائب\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "منتجات = 500000\nتكاليف = 350000\n\nالربح = 150000\n\nبعد الضريبة = 130000",
+
+      "pratique": "1. 80000 - 50000 → ؟\n2. 40000 - 60000 → ؟\n3. 20000 - 5000 → ؟",
+
+      "reponses": "1 → 30000\n2 → -20000\n3 → 15000",
+
+      "resume": "CPC يوضح ربحية الشركة."
+    }
+  }
+}

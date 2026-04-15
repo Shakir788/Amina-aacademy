@@ -1,0 +1,59 @@
+{
+  "id": 19,
+  "title": {
+    "fr": "L’Amortissement des Immobilisations (Niveau Expert)",
+    "en": "Depreciation of Fixed Assets (Expert Level)",
+    "ar": "إهلاك الأصول الثابتة (مستوى احترافي)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre en profondeur l’amortissement, son rôle dans la comptabilité, son impact sur le résultat et maîtriser les méthodes de calcul.",
+
+      "explication": "🔹 1. C’est quoi l’amortissement ?\n\nL’amortissement = perte de valeur d’un actif avec le temps.\n\n👍 Exemple :\n- Machine\n- Ordinateur\n- Véhicule\n\n👉 Avec le temps → valeur diminue\n\n\n🔹 2. Pourquoi amortir ?\n\n👍 Répartir le coût sur plusieurs années\n👍 Respecter la réalité économique\n\n❌ On ne met pas toute la charge en une fois\n\n\n🔹 3. Logique comptable (TRÈS IMPORTANT)\n\n👉 L’actif reste au bilan\n👉 Mais sa valeur diminue progressivement\n\n👉 Charge d’amortissement = Classe 6\n👉 Amortissement cumulé = Classe 2 (compte correcteur)\n\n\n🔹 4. Méthode linéaire (LA BASE)\n\n💥 Formule :\nAmortissement = Valeur / Durée\n\n👉 Exemple :\nMachine = 10000 DHS\nDurée = 5 ans\n\n👉 10000 / 5 = 2000 par an\n\n\n🔹 5. Tableau d’amortissement\n\nAnnée 1 → 2000\nAnnée 2 → 2000\nAnnée 3 → 2000\n...\n\n👉 Valeur diminue chaque année\n\n\n🔹 6. Écriture comptable\n\n✓ Débit 6811 → charge amortissement\n✓ Crédit 281 → amortissement cumulé\n\n👉 Exemple :\n2000 DHS\n\n\n🔹 7. Impact sur résultat\n\n❌ Charge augmente\n👉 Profit diminue\n\n👍 MAIS → pas de sortie d’argent\n\n👉 Très important\n\n\n🔹 8. Valeur nette comptable (VNC)\n\n💥 Formule :\nVNC = Valeur initiale - amortissement cumulé\n\n👉 Exemple :\n10000 - 4000 = 6000\n\n\n🔹 9. Cas réel\n\nOrdinateur 6000\nDurée 3 ans\n\n👉 2000/an\n\n👉 Après 2 ans → VNC = 2000\n\n\n🔹 10. Autres méthodes (PRO)\n\n🔹 Dégressif (plus rapide au début)\n🔹 Exceptionnel\n\n👉 Linéaire = base\n\n\n🔹 11. Erreurs fréquentes\n\n❌ Oublier amortissement\n❌ Mauvaise durée\n❌ Mauvais calcul\n\n\n🔹 12. Vision professionnelle\n\n👍 Amortissement = image réelle du patrimoine\n👍 Impact direct sur fiscalité\n\n👉 Un bon comptable maîtrise parfaitement ça\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nMachine : 10000 DHS\nDurée : 5 ans\n\n👉 Amortissement annuel = 2000\n\nAnnée 1 → VNC = 8000\nAnnée 2 → VNC = 6000\n\n👉 Écriture :\n✓ Débit 6811 → 2000\n✓ Crédit 281 → 2000\n\n\n💼 Impact :\nProfit diminue mais cash reste",
+
+      "pratique": "🔹 EXERCICE\n\n1. Actif 12000 sur 4 ans\n👉 Amortissement annuel ?\n\n2. Valeur 10000, amortissement 3000\n👉 VNC ?\n\n3. Pourquoi amortissement n’est pas une sortie d’argent ?",
+
+      "reponses": "1 → 3000\n2 → 7000\n3 → Car c’est une charge comptable ✔",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Amortissement = perte de valeur\n✓ Charge sans sortie d’argent\n✓ Impact sur profit\n\n👍 Indispensable pour un comptable"
+    },
+
+    "en": {
+      "objectif": "Master depreciation and understand its financial impact.",
+
+      "explication": "🔹 Depreciation spreads asset cost over time.\n\n🔹 Formula:\nCost / Useful life\n\n🔹 Entry:\nDebit Expense\nCredit Accumulated Depreciation\n\n🔹 Important:\nNo cash outflow\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "10000 / 5 = 2000 per year",
+
+      "pratique": "1. 12000/4?\n2. VNC?\n3. Why no cash?",
+
+      "reponses": "1 → 3000\n2 → 7000\n3 → Accounting charge",
+
+      "resume": "Depreciation affects profit, not cash."
+    },
+
+    "ar": {
+      "objectif": "إتقان مفهوم الإهلاك وفهم تأثيره المالي.",
+
+      "explication": "🔹 الإهلاك هو توزيع تكلفة الأصل على سنوات.\n\n🔹 القاعدة:\nالتكلفة ÷ العمر\n\n🔹 القيد:\nمدين مصروف\nدائن مجمع الإهلاك\n\n🔹 مهم:\nلا يوجد خروج نقدي\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "10000 ÷ 5 = 2000 سنوياً",
+
+      "pratique": "1. 12000÷4؟\n2. القيمة الصافية؟\n3. لماذا لا يوجد نقد؟",
+
+      "reponses": "1 → 3000\n2 → 7000\n3 → مصروف محاسبي",
+
+      "resume": "الإهلاك يؤثر على الربح وليس النقد."
+    }
+  },
+
+  "practice_zone": {}
+}

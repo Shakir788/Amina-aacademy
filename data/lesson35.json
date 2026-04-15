@@ -1,0 +1,59 @@
+{
+  "id": 35,
+  "title": {
+    "fr": "Domination du Packaging de Services (Système Produit Avancé)",
+    "en": "Service Packaging Domination (Advanced Product System)",
+    "ar": "هيمنة تغليف الخدمات (نظام المنتج المتقدم)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Transformer les services en produits haut de gamme avec une forte valeur perçue pour maximiser les revenus.",
+
+      "explication": "🔹 1. Comprendre le niveau avancé\n\n👉 Ne pas vendre du temps\n👉 Vendre un système + résultat\n\n\n🔹 2. Structure produit\n\nChaque offre doit contenir:\n✔ Service principal\n✔ Bonus\n✔ Support\n✔ Résultat clair\n\n\n🔹 3. Value stacking\n\nExemple Standard:\n✔ Comptabilité complète\n✔ Rapport détaillé\n✔ Analyse cash\n✔ Support WhatsApp\n\n👉 Plus de valeur perçue\n\n\n🔹 4. Naming puissant\n\n❌ Basic / Standard\n✔ Cash Control System\n✔ Profit Growth Plan\n\n👉 Branding + valeur\n\n\n🔹 5. Pricing stratégique\n\n✔ Premium élevé\n✔ Standard attractif\n✔ Basic entrée\n\nExemple:\nPremium = 5000 MAD\nStandard = 2000 MAD\nBasic = 800 MAD\n\n👉 Effet psychologique\n\n\n🔹 6. Positionnement\n\n✔ Expert\n✔ Solution business\n\n👉 Vous ne vendez pas service mais transformation\n\n\n🔹 7. Offre structurée\n\nProblème → Solution → Résultat\n\nExemple:\n\"On identifie vos pertes et améliore votre profit\"\n\n\n🔹 8. Abonnement (revenu stable)\n\n✔ Mensuel\n✔ Suivi continu\n\n👉 Cash régulier\n\n\n🔹 9. Upsell\n\n✔ Ajouter analyse avancée\n✔ Ajouter conseil business\n\n\n🔹 10. Garantie\n\n✔ Révision gratuite\n✔ Satisfaction client\n\n👉 Confiance élevée\n\n\n🔹 11. Scarcity\n\n✔ Limiter clients\n\nExemple:\n\"5 places disponibles\"\n\n\n🔹 12. Présentation\n\n✔ Claire\n✔ Structurée\n✔ Simple\n\n\n🔹 13. Closing produit\n\n✔ \"Standard ou Premium ?\"\n\n👉 Décision facile\n\n\n🔹 14. Erreurs critiques\n\n❌ Prix bas\n❌ Pas de structure\n❌ Trop compliqué\n\n\n🔹 15. Action pratique\n\n✔ Créer 3 offres\n✔ Nommer chaque offre\n✔ Fixer prix\n\n\n🔹 16. Vision finale\n\n👉 Produit = système\n👉 Système = revenus\n👉 Revenus = liberté"
+      ,
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Un expert vend un système complet au lieu d'un simple service",
+
+      "pratique": "1. Pourquoi value stacking ?\n2. Pourquoi 3 prix ?\n3. Que vend-on réellement ?",
+
+      "reponses": "1 → valeur élevée\n2 → psychologie\n3 → résultat",
+
+      "resume": "Créer des offres puissantes pour maximiser les revenus"
+    },
+
+    "en": {
+      "objectif": "Convert services into high-value products.",
+
+      "explication": "Includes value stacking, pricing and subscription system.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Selling systems instead of services",
+
+      "pratique": "1. Why stacking?\n2. Why 3 prices?\n3. What sell?",
+
+      "reponses": "1 → value\n2 → psychology\n3 → result",
+
+      "resume": "Product system mastered"
+    },
+
+    "ar": {
+      "objectif": "تحويل الخدمات إلى منتجات عالية القيمة.",
+
+      "explication": "يشمل القيمة، التسعير ونظام الاشتراك.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "بيع نظام كامل بدلاً من خدمة بسيطة",
+
+      "pratique": "1. لماذا القيمة؟\n2. لماذا 3 أسعار؟\n3. ماذا نبيع؟",
+
+      "reponses": "1 → قيمة\n2 → نفسية\n3 → النتيجة",
+
+      "resume": "نظام منتجات كامل"
+    }
+  },
+  "practice_zone": {}
+}

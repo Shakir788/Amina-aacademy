@@ -1,0 +1,57 @@
+{
+  "id": 4,
+  "title": {
+    "fr": "Le Journal : Enregistrer les Opérations",
+    "en": "The Journal: Recording Transactions",
+    "ar": "دفتر اليومية: تسجيل العمليات"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser parfaitement l’enregistrement des opérations dans le journal en utilisant le principe fondamental de la partie double (Débit / Crédit).",
+
+      "explication": "🔷 1. Le Journal, c’est quoi ?\n\nLe Journal est le premier document comptable.\n\n👉 C’est ici que chaque opération est enregistrée pour la première fois.\n👉 Toutes les opérations sont enregistrées dans l’ordre chronologique.\n\n\n🔷 2. Pourquoi le Journal est important ?\n\n👉 Il permet de garder une trace de tout ce qui se passe\n👉 Il évite les erreurs\n👉 Il sert de base pour toute la comptabilité\n\n\n🔷 3. La règle la plus importante (PARTIE DOUBLE)\n\n💥 Chaque opération touche toujours au moins 2 comptes\n\n👉 Un compte = Débit (gauche)\n👉 Un autre compte = Crédit (droite)\n\n👉 RÈGLE D’OR :\nTotal Débit = Total Crédit (TOUJOURS)\n\n\n🔷 4. Comprendre Débit / Crédit simplement\n\n👉 Débit = ce que l’entreprise reçoit\n👉 Crédit = ce que l’entreprise donne\n\n💡 Astuce simple :\n👉 Argent entre → Débit\n👉 Argent sort → Crédit\n\n\n🔷 5. Structure d’une écriture comptable\n\n1. Date\n2. Numéro de compte\n3. Nom du compte\n4. Débit / Crédit\n5. Libellé (explication)\n\n\n🔷 6. Exemple logique (IMPORTANT)\n\nQuand tu vends un produit :\n👉 Tu reçois de l’argent → Débit\n👉 Tu gagnes un revenu → Crédit\n\n\n🔷 7. Erreurs des débutants\n\n❌ Penser qu’un seul compte suffit\n👉 Faux → toujours 2 comptes minimum\n\n❌ Inverser Débit et Crédit\n👉 Toujours réfléchir : argent entre ou sort ?\n\n❌ Oublier l’équilibre\n👉 Débit doit = Crédit\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple détaillé\n\nLe 12 Avril : vente en espèces de 2000 DHS\n\n👉 Compte 5161 (Caisse)\n✔ Débit 2000 (argent entre)\n\n👉 Compte 7111 (Ventes)\n✔ Crédit 2000 (revenu)\n\n👉 Résultat :\nDébit = Crédit = 2000 ✔\n\n\n💼 Exemple 2\n\nAchat fournitures 300 DHS par banque\n\n👉 611 (Charges) → Débit\n👉 5141 (Banque) → Crédit\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Vente 1000 DHS en espèces\n👉 Débit ? Crédit ?\n\n2. Achat marchandises 500 DHS\n👉 Débit ? Crédit ?\n\n3. Paiement salaire 2000 DHS\n👉 Débit ? Crédit ?\n\n💡 Astuce :\nToujours se demander :\n👉 Qui reçoit ? Qui donne ?",
+
+      "reponses": "1 → Débit Caisse / Crédit Vente\n2 → Débit Achat / Crédit Caisse ou Banque\n3 → Débit Salaire / Crédit Banque",
+
+      "resume": "📌 Résumé FINAL\n\n- Le Journal enregistre toutes les opérations\n- Chaque opération = 2 comptes minimum\n- Débit = Crédit (toujours)\n\n🔥 Si tu maîtrises ça → tu peux faire de la comptabilité réelle"
+    },
+
+    "en": {
+      "objectif": "Master recording transactions using the double-entry system (Debit/Credit).",
+
+      "explication": "🔷 The Journal is the first accounting record.\n\nEvery transaction is recorded chronologically.\n\n🔷 Double-entry rule:\nEvery transaction affects at least 2 accounts.\n\n👉 Debit = what the company receives\n👉 Credit = what the company gives\n\n👉 Total Debit = Total Credit\n\n🔷 Common mistakes:\n- Using only one account\n- Confusing debit and credit\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Sell for 2000 DHS\n\nDebit: Cash\nCredit: Sales\n\nBalanced ✔",
+
+      "pratique": "1. Sale → ?\n2. Purchase → ?\n3. Salary → ?",
+
+      "reponses": "1 → Debit Cash / Credit Sales\n2 → Debit Purchase / Credit Bank\n3 → Debit Salary / Credit Bank",
+
+      "resume": "Every transaction must balance: Debit = Credit."
+    },
+
+    "ar": {
+      "objectif": "إتقان تسجيل العمليات باستخدام مبدأ القيد المزدوج (مدين/دائن).",
+
+      "explication": "🔷 دفتر اليومية هو أول سجل محاسبي.\n\nكل عملية تسجل حسب الترتيب الزمني.\n\n🔷 القاعدة:\nكل عملية تؤثر على حسابين على الأقل.\n\n👉 المدين = ما تستلمه الشركة\n👉 الدائن = ما تدفعه الشركة\n\n👉 يجب أن يتساوى المدين مع الدائن\n\n🔷 أخطاء شائعة:\n- استخدام حساب واحد فقط\n- الخلط بين المدين والدائن\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "بيع 2000 درهم\n\nمدين: الصندوق\nدائن: المبيعات\n\nمتوازن ✔",
+
+      "pratique": "1. بيع → ؟\n2. شراء → ؟\n3. راتب → ؟",
+
+      "reponses": "1 → مدين صندوق / دائن مبيعات\n2 → مدين مشتريات / دائن بنك\n3 → مدين رواتب / دائن بنك",
+
+      "resume": "كل عملية يجب أن تكون متوازنة: مدين = دائن"
+    }
+  }
+}

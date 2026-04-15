@@ -1,0 +1,59 @@
+{
+  "id": 17,
+  "title": {
+    "fr": "Le Rapprochement Bancaire",
+    "en": "Bank Reconciliation",
+    "ar": "التسوية البنكية"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre et réaliser un rapprochement bancaire pour vérifier la concordance entre la banque et la comptabilité.",
+
+      "explication": "🔹 1. C’est quoi le rapprochement bancaire ?\n\nC’est une comparaison entre :\n\n✓ Le solde bancaire réel (relevé bancaire)\n✓ Le solde comptable (Grand Livre)\n\n👉 Objectif : trouver les différences\n\n\n🔹 2. Pourquoi il y a des différences ?\n\n👍 Chèque non encaissé\n👍 Virement non enregistré\n👍 Frais bancaires oubliés\n\n\n🔹 3. Types d’écarts\n\n🔹 Écart temporaire\n👉 Timing différent\n\n🔹 Écart réel\n👉 Erreur comptable\n\n\n🔹 4. Exemple simple\n\nSolde banque = 10 000\nSolde comptable = 9 500\n\n👉 Différence = 500\n\n👉 On cherche pourquoi\n\n\n🔹 5. Cas fréquents\n\n✓ Chèque émis non encore encaissé\n✓ Frais bancaires non enregistrés\n✓ Virement en attente\n\n\n🔹 6. Traitement\n\n👍 Ajouter écritures manquantes\n👍 Corriger erreurs\n\n\n🔹 7. Logique professionnelle\n\n👉 Banque = réalité\n👉 Comptabilité doit correspondre\n\n\n🔹 8. Erreurs fréquentes\n\n❌ Ignorer les écarts\n❌ Ne pas vérifier régulièrement\n❌ Mauvaise analyse\n\n\n🔹 9. Vision professionnelle\n\n👍 Rapprochement = contrôle essentiel\n👍 Évite fraude et erreurs\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple réel\n\nSolde banque = 10000\nSolde comptable = 9500\n\nDifférence = 500\n\n👉 Frais bancaires oubliés → 500\n\n👉 Correction faite ✔",
+
+      "pratique": "🔹 EXERCICE\n\n1. Solde banque 8000\nSolde comptable 8500\n👉 Différence ?\n\n2. Pourquoi il y a écart ?\n\n3. Que faire en cas d’erreur ?",
+
+      "reponses": "1 → 500\n2 → Timing ou erreur\n3 → Corriger les écritures",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Comparer banque et comptabilité\n✓ Trouver écarts\n✓ Corriger erreurs\n\n👍 Rapprochement = sécurité financière"
+    },
+
+    "en": {
+      "objectif": "Learn how to reconcile bank balance with accounting records.",
+
+      "explication": "🔹 Bank reconciliation compares bank statement with accounting records.\n\n✓ Differences may exist due to timing or errors.\n\n✓ Goal: match both balances\n\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "10000 bank vs 9500 books → 500 difference",
+
+      "pratique": "1. Difference?\n2. Why?\n3. Fix?",
+
+      "reponses": "1 → 500\n2 → Timing/errors\n3 → Adjust",
+
+      "resume": "Reconciliation ensures accuracy."
+    },
+
+    "ar": {
+      "objectif": "فهم التسوية البنكية ومطابقة الحسابات مع كشف البنك.",
+
+      "explication": "🔹 التسوية البنكية تعني مقارنة:\n\n✓ كشف البنك\n✓ الحسابات المحاسبية\n\n👉 الهدف: إيجاد الفرق\n\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "10000 مقابل 9500 → فرق 500",
+
+      "pratique": "1. الفرق؟\n2. السبب؟\n3. الحل؟",
+
+      "reponses": "1 → 500\n2 → توقيت/خطأ\n3 → تصحيح",
+
+      "resume": "التسوية البنكية ضرورية للدقة."
+    }
+  },
+
+  "practice_zone": {}
+}

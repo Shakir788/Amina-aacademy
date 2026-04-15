@@ -1,0 +1,59 @@
+{
+  "id": 22,
+  "title": {
+    "fr": "Les Ratios Financiers Avancés (Analyse Professionnelle Complète)",
+    "en": "Advanced Financial Ratios (Full Professional Analysis)",
+    "ar": "النسب المالية المتقدمة (تحليل احترافي كامل)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser les ratios financiers avancés, interpréter les résultats comme un analyste professionnel et prendre des décisions stratégiques.",
+
+      "explication": "🔹 1. Rôle réel des ratios\n\nLes ratios ne sont pas des formules.\n\n👉 Ce sont des outils de décision.\n\n👍 Objectif : comprendre si l’entreprise est :\n✓ rentable\n✓ stable\n✓ risquée\n\n\n🔹 2. Catégories complètes\n\n🔹 Rentabilité\n🔹 Liquidité\n🔹 Solvabilité\n🔹 Activité\n\n\n🔹 3. Ratios de rentabilité (ANALYSE PRO)\n\n🔹 Marge nette\n💥 Résultat / CA\n\n👉 Interprétation :\n👍 15%–25% → bon\n❌ <10% → faible\n\n\n🔹 ROE\n💥 Résultat / Capitaux propres\n\n👉 Interprétation :\n👍 15–30% → sain\n❌ >50% → risque (trop de dette)\n\n\n🔹 ROA\n💥 Résultat / Actif\n\n👉 Montre efficacité des ressources\n\n\n🔹 4. Ratios de liquidité (ANALYSE PRO)\n\n🔹 Current ratio\n💥 Actif courant / Passif courant\n\n👉 Interprétation :\n👍 1.5 – 2 → bon\n❌ <1 → danger\n\n\n🔹 Quick ratio\n💥 (Actif - Stock) / Passif\n\n👉 Plus réaliste\n\n\n🔹 5. Ratios de solvabilité (ANALYSE PRO)\n\n🔹 Debt ratio\n💥 Dettes / Actif\n\n👉 Interprétation :\n👍 <50% → sain\n❌ >70% → risqué\n\n\n🔹 Autonomie financière\n💥 Capitaux propres / Total passif\n\n👉 Plus c’est élevé → plus c’est stable\n\n\n🔹 6. Ratios d’activité (OPERATIONNEL)\n\n🔹 Rotation stock\n💥 Coût des ventes / Stock\n\n👉 Faible → stock bloqué ❌\n\n\n🔹 Délai client\n💥 Créances / CA × 365\n\n👉 Élevé → clients payent lentement ❌\n\n\n🔹 Délai fournisseur\n💥 Dettes / Achats × 365\n\n👉 Trop court → pression trésorerie\n\n\n🔹 7. Analyse croisée (VERY IMPORTANT)\n\n❌ Un ratio seul = inutile\n\n✓ Toujours combiner\n\n👉 Exemple :\nProfit élevé + dette élevée = risque\n\n\n🔹 8. Comparaison (PRO LEVEL)\n\n👉 Toujours comparer :\n\n✓ Avec année précédente\n✓ Avec concurrents\n\n👉 Exemple :\nMarge 20% mais secteur = 30%\n❌ Mauvaise performance\n\n\n🔹 9. Red Flags (VERY IMPORTANT)\n\n❌ Profit ↓ + dette ↑\n❌ Liquidité faible\n❌ Stock qui ne tourne pas\n❌ Clients qui ne paient pas\n\n👉 Danger immédiat\n\n\n🔹 10. Prise de décision (GAME CHANGER)\n\n👉 Avec les ratios, on décide :\n\n👍 Investir ou non\n👍 Donner crédit ou non\n👍 Réduire coûts\n👍 Augmenter prix\n\n\n🔹 11. Cas réel (VERY IMPORTANT)\n\nEntreprise :\nCA = 100000\nRésultat = 10000\nDette = 70000\nActif = 80000\n\n👉 Analyse :\n❌ Marge faible (10%)\n❌ Dette élevée\n\n👉 Conclusion : entreprise risquée\n\n\n🔹 12. Erreurs fréquentes\n\n❌ Lire sans comprendre\n❌ Ignorer contexte\n❌ Mauvaise comparaison\n\n\n🔹 13. Vision professionnelle\n\n👍 Comptable → Analyste\n👍 Analyste → Décideur\n\n👉 Celui qui comprend les ratios contrôle le business\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Cas complet\n\nEntreprise A :\nMarge = 20%\nDette = 30%\n\n👍 Stable\n\nEntreprise B :\nMarge = 10%\nDette = 80%\n\n❌ Risquée",
+
+      "pratique": "🔹 EXERCICE\n\n1. Résultat 20000 / CA 100000\n👉 Marge ?\n\n2. Dette 60000 / Actif 100000\n👉 Debt ratio ?\n\n3. Entreprise avec profit faible et dette élevée\n👉 Analyse ?",
+
+      "reponses": "1 → 20%\n2 → 60%\n3 → Risquée ❌",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Ratios = outils de décision\n✓ Toujours analyser ensemble\n✓ Comparer + interpréter\n\n👍 Analyse = pouvoir financier"
+    },
+
+    "en": {
+      "objectif": "Analyze financial ratios and make professional decisions.",
+
+      "explication": "🔹 Ratios are decision tools.\n\n🔹 Categories:\n- Profitability\n- Liquidity\n- Solvency\n- Activity\n\n🔹 Combine ratios for full analysis\n\n🔹 Detect risks and opportunities\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "High profit + high debt = risky",
+
+      "pratique": "1. Margin?\n2. Debt?\n3. Risk?",
+
+      "reponses": "1 → 20%\n2 → 60%\n3 → Risky",
+
+      "resume": "Ratios guide decisions."
+    },
+
+    "ar": {
+      "objectif": "تحليل النسب المالية واتخاذ قرارات احترافية.",
+
+      "explication": "🔹 النسب أدوات لاتخاذ القرار.\n\n🔹 يجب الجمع بين عدة نسب.\n\n🔹 تساعد في اكتشاف المخاطر والفرص\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "ربح عالي + دين عالي = خطر",
+
+      "pratique": "1. الربحية؟\n2. الدين؟\n3. المخاطر؟",
+
+      "reponses": "1 → 20%\n2 → 60%\n3 → خطر",
+
+      "resume": "النسب تساعد في القرار."
+    }
+  },
+
+  "practice_zone": {}
+}

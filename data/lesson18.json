@@ -1,0 +1,59 @@
+{
+  "id": 18,
+  "title": {
+    "fr": "Les Erreurs Comptables et Leur Correction (Niveau Professionnel)",
+    "en": "Accounting Errors and Their Correction (Professional Level)",
+    "ar": "الأخطاء المحاسبية وتصحيحها (مستوى احترافي)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser les erreurs comptables, comprendre leur impact sur les états financiers et appliquer des méthodes professionnelles de correction.",
+
+      "explication": "🔹 1. Définition professionnelle\n\nUne erreur comptable est une anomalie dans l’enregistrement qui peut fausser les états financiers.\n\n❌ Mauvais compte\n❌ Mauvais montant\n❌ Omission\n\n\n🔹 2. Classification avancée des erreurs\n\n🔹 Erreurs affectant la Balance\n👍 Déséquilibre Débit/Crédit\n\n🔹 Erreurs n’affectant pas la Balance\n❌ Mauvais compte mais montant correct\n\n👉 Très dangereux car difficile à détecter\n\n\n🔹 3. Impact des erreurs (TRÈS IMPORTANT)\n\n🔹 Sur le Résultat\n❌ Charge sous-estimée → Profit faux (↑)\n❌ Charge surestimée → Profit faux (↓)\n\n🔹 Sur le Bilan\n❌ Mauvais actif → situation financière incorrecte\n\n🔹 Sur la fiscalité\n❌ Déclaration incorrecte → pénalités\n\n\n🔹 4. Détection des erreurs\n\n👍 Balance déséquilibrée\n👍 Rapprochement bancaire\n👍 Analyse des comptes\n\n\n🔹 5. Principe fondamental\n\n❌ Ne jamais supprimer une écriture\n\n✓ Toujours corriger avec traçabilité\n\n\n🔹 6. Méthodes de correction\n\n🔹 Contre-passation\n👉 Inversion complète de l’écriture\n\n🔹 Ajustement\n👉 Correction partielle\n\n\n🔹 7. Exemple avancé\n\nErreur : Achat 1000 enregistré 100\n\n👉 Correction :\n✓ Annulation (100)\n✓ Nouvelle écriture (1000)\n\n\n🔹 8. Cas dangereux (IMPORTANT)\n\nErreur invisible :\n\nCharge enregistrée dans mauvaise classe\n\n👉 Balance OK ❌\n👉 Comptabilité FAUSSE ❌\n\n\n🔹 9. Correction en logiciel\n\n👍 Logiciels comptables gardent historique\n\n👉 Méthodes :\n✓ Reverse entry\n✓ Adjustment entry\n✓ Audit trail\n\n\n🔹 10. Erreurs fréquentes\n\n❌ Supprimer écriture\n❌ Modifier sans trace\n❌ Ignorer erreurs\n\n\n🔹 11. Vision professionnelle\n\n👍 Comptabilité = transparence\n👍 Toute modification doit être traçable\n\n👉 Un bon comptable ne cache jamais une erreur\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple réel\n\nErreur : Charge enregistrée 100 au lieu de 1000\n\n👉 Impact :\nProfit faux ↑\n\n👉 Correction :\n✓ Annulation\n✓ Nouvelle écriture correcte\n\n\n💼 Erreur invisible\n\nCharge dans mauvais compte\n\n👉 Balance correcte ❌\n👉 Analyse fausse ❌",
+
+      "pratique": "🔹 EXERCICE\n\n1. Une charge est oubliée\n👉 Impact sur profit ?\n\n2. Une erreur n’affecte pas la balance\n👉 Pourquoi dangereuse ?\n\n3. Pourquoi ne pas supprimer une écriture ?",
+
+      "reponses": "1 → Profit trop élevé ❌\n2 → Difficile à détecter ❌\n3 → Pour garder traçabilité ✔",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Les erreurs sont inévitables\n✓ Certaines sont invisibles\n✓ Toujours corriger proprement\n\n👍 Comptabilité = précision + transparence"
+    },
+
+    "en": {
+      "objectif": "Understand advanced accounting errors, their impact, and professional correction methods.",
+
+      "explication": "🔹 Errors can affect or not affect the trial balance.\n\n🔹 Some errors are hidden but dangerous.\n\n🔹 Impact:\n- Profit distortion\n- Balance sheet errors\n\n🔹 Correction methods:\n- Reversal entry\n- Adjustment entry\n\n🔹 Never delete entries\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Wrong expense → wrong profit\n\nCorrection via reversal",
+
+      "pratique": "1. Missing expense impact?\n2. Hidden error?\n3. Why no delete?",
+
+      "reponses": "1 → Profit too high\n2 → Hard to detect\n3 → Audit trail",
+
+      "resume": "Errors must be corrected professionally."
+    },
+
+    "ar": {
+      "objectif": "فهم الأخطاء المحاسبية المتقدمة وتأثيرها وكيفية تصحيحها بطريقة احترافية.",
+
+      "explication": "🔹 الأخطاء قد تؤثر أو لا تؤثر على ميزان المراجعة.\n\n🔹 بعض الأخطاء غير ظاهرة لكنها خطيرة.\n\n🔹 التأثير:\n- الربح\n- الميزانية\n\n🔹 طرق التصحيح:\n- عكس القيد\n- تعديل\n\n🔹 لا تحذف القيود\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "خطأ في المصروف → ربح خاطئ\n\nتصحيح بالعكس",
+
+      "pratique": "1. نسيان مصروف؟\n2. خطأ مخفي؟\n3. لماذا لا نحذف؟",
+
+      "reponses": "1 → ربح أعلى\n2 → صعب الاكتشاف\n3 → للحفاظ على التتبع",
+
+      "resume": "التصحيح يجب أن يكون احترافياً."
+    }
+  },
+
+  "practice_zone": {}
+}

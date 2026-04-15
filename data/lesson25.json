@@ -1,0 +1,59 @@
+{
+  "id": 25,
+  "title": {
+    "fr": "Le Système Fiscal et les Déclarations (Niveau Expert Comptable)",
+    "en": "Taxation System and Filings (Tax Expert Level)",
+    "ar": "النظام الضريبي والتصريحات (مستوى خبير)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser le calcul fiscal réel, les déclarations, la conformité et la planification fiscale professionnelle.",
+
+      "explication": "🔹 1. Rôle réel de la fiscalité\n\n👉 La fiscalité = lien entre entreprise et État\n\n❌ Mauvaise gestion → pénalités\n✔ Bonne gestion → optimisation\n\n\n🔹 2. Types d’impôts principaux\n\n🔹 TVA (consommation)\n🔹 IS (bénéfice société)\n🔹 IR (revenu personnel)\n\n\n🔹 3. TVA (RAPPEL + APPLICATION)\n\n💥 TVA à payer = TVA collectée - TVA récupérable\n\n👉 Exemple :\nCollectée = 8000\nRécupérable = 3000\n\n👉 TVA = 5000\n\n\n🔹 4. Calcul fiscal réel (CORE SYSTEM)\n\n👉 Étapes :\n\n1. Résultat comptable\n2. Ajouter charges non déductibles\n3. Déduire éléments autorisés\n\n👉 Résultat fiscal = base d’impôt\n\n\n🔹 5. Charges déductibles vs non déductibles\n\n✔ Déductibles :\n- Salaires\n- Loyer\n- Électricité\n\n❌ Non déductibles :\n- Amendes\n- Dépenses personnelles\n\n\n🔹 6. Calcul IS (APPLICATION)\n\n💥 IS = Résultat fiscal × taux\n\n👉 Exemple :\nRésultat = 110000\nTaux = 20%\n\n👉 IS = 22000\n\n\n🔹 7. Paiement de l’impôt (ADVANCE TAX)\n\n👉 Paiement en acomptes\n\n✔ Trimestriel\n✔ Basé sur estimation\n\n\n🔹 8. Déclarations fiscales (PROCESS RÉEL)\n\n👉 Étapes :\n\n1. Accès portail fiscal\n2. Saisie données\n3. Vérification\n4. Soumission\n5. Paiement\n\n👉 Processus réel utilisé en entreprise\n\n\n🔹 9. Calendrier fiscal (IMPORTANT)\n\n✔ TVA → mensuel / trimestriel\n✔ IS → annuel\n✔ IR → annuel\n\n👉 Respect des délais obligatoire\n\n\n🔹 10. Audit fiscal (PRO LEVEL)\n\n👉 L’administration peut contrôler\n\n✔ Vérification documents\n✔ Analyse comptes\n\n👉 Risque si erreurs\n\n\n🔹 11. Tax Planning vs Tax Evasion\n\n✔ Tax planning = légal\n👉 optimiser charges\n\n❌ Tax evasion = illégal\n👉 cacher revenus\n\n\n🔹 12. Cas réel (VERY IMPORTANT)\n\nRésultat comptable = 100000\nCharges non déductibles = 10000\n\n👉 Résultat fiscal = 110000\n\n👉 IS = 22000\n\n\n🔹 13. Erreurs fréquentes\n\n❌ Mauvais calcul\n❌ Oublier déclaration\n❌ Ignorer délais\n\n\n🔹 14. Vision professionnelle\n\n👍 Comptable = responsable fiscal\n👍 Doit maîtriser lois\n\n👉 Fiscalité = zone critique\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Cas complet\n\nRésultat = 100000\nNon déductible = 10000\n\n👉 Résultat fiscal = 110000\n👉 IS = 22000\n\n👉 Déclaration faite correctement ✔",
+
+      "pratique": "🔹 EXERCICE\n\n1. Résultat 80000, non déductible 20000\n👉 Résultat fiscal ?\n\n2. TVA collectée 9000, récupérable 4000\n👉 TVA ?\n\n3. Différence entre planning et evasion ?",
+
+      "reponses": "1 → 100000\n2 → 5000\n3 → légal vs illégal ✔",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Calcul fiscal réel\n✓ Déclarations obligatoires\n✓ Respect des lois\n\n👍 Fiscalité = responsabilité majeure"
+    },
+
+    "en": {
+      "objectif": "Master taxation system and real-world filing process.",
+
+      "explication": "🔹 Tax types: VAT, corporate tax, income tax\n\n🔹 Taxable income = adjusted profit\n\n🔹 Filing steps: input, verify, submit, pay\n\n🔹 Follow deadlines\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Profit adjusted → tax calculated",
+
+      "pratique": "1. Taxable?\n2. VAT?\n3. Planning vs evasion?",
+
+      "reponses": "1 → 100000\n2 → 5000\n3 → legal vs illegal",
+
+      "resume": "Tax compliance is critical."
+    },
+
+    "ar": {
+      "objectif": "إتقان النظام الضريبي والتصريحات العملية.",
+
+      "explication": "🔹 أنواع الضرائب: TVA، ضريبة الشركات، ضريبة الدخل\n\n🔹 الدخل الخاضع = الربح المعدل\n\n🔹 خطوات التصريح: إدخال، مراجعة، إرسال، دفع\n\n🔹 الالتزام بالمواعيد\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "ربح معدل → ضريبة",
+
+      "pratique": "1. الدخل؟\n2. الضريبة؟\n3. الفرق؟",
+
+      "reponses": "1 → 100000\n2 → 5000\n3 → قانوني وغير قانوني",
+
+      "resume": "الالتزام الضريبي ضروري."
+    }
+  },
+
+  "practice_zone": {}
+}

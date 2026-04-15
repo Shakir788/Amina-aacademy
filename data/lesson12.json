@@ -1,0 +1,57 @@
+{
+  "id": 12,
+  "title": {
+    "fr": "La Personnalisation du Plan Comptable",
+    "en": "Customizing the Chart of Accounts",
+    "ar": "تخصيص المخطط المحاسبي"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser la personnalisation du Plan Comptable Marocain (PCM) pour adapter la comptabilité aux besoins réels de l’entreprise.",
+
+      "explication": "🔷 1. Pourquoi personnaliser le PCM ?\n\nLe PCM est une base standard.\n\n👉 Mais chaque entreprise est différente.\n\n👉 Donc :\n✔ On adapte\n✔ On détaille\n✔ On organise\n\n\n🔷 2. Problème sans personnalisation\n\n❌ Tous les clients dans un seul compte\n❌ Impossible de savoir qui doit combien\n\n❌ Toutes les charges mélangées\n❌ Analyse impossible\n\n\n🔷 3. Solution : Sous-comptes\n\n👉 On crée des comptes détaillés\n\nExemple :\n3421 → Clients (général)\n3421001 → Client Ahmed\n3421002 → Client Zineb\n\n👉 Résultat : suivi précis\n\n\n🔷 4. Personnalisation des clients/fournisseurs\n\n👉 Chaque client = compte unique\n👉 Chaque fournisseur = compte unique\n\n👉 Avantage :\n✔ suivi des dettes\n✔ suivi des paiements\n\n\n🔷 5. Comptes bancaires\n\n👉 Une banque = un compte\n\nExemple :\n514101 → Banque Populaire\n514102 → CIH\n\n👉 Permet de suivre chaque banque séparément\n\n\n🔷 6. Détail des charges\n\n👉 Ne jamais regrouper tout\n\nExemples :\n- Achat tissu\n- Achat boutons\n- Transport\n- Électricité\n\n👉 Analyse facile des coûts\n\n\n🔷 7. Logique professionnelle (TRÈS IMPORTANT)\n\n👉 Plus tu détailles → plus tu comprends ton business\n\n👉 Comptabilité = outil d’analyse\n\n\n🔷 8. Règles importantes\n\n✔ Respecter la structure PCM\n✔ Ne pas inventer n’importe quoi\n✔ Garder une logique claire\n\n\n🔷 9. Erreurs des débutants\n\n❌ Trop général\n❌ Mauvais codage\n❌ Mélanger clients et fournisseurs\n\n\n🔷 10. Vision professionnelle\n\n👉 Un bon plan comptable personnalisé permet :\n✔ décisions rapides\n✔ contrôle précis\n✔ gestion efficace\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple réel\n\nCompte client :\n3421001 → Ahmed\n3421002 → Zineb\n\n👉 On sait exactement qui doit combien\n\n\n💼 Exemple banque :\n514101 → Banque Populaire\n514102 → CIH\n\n👉 Suivi précis de chaque compte\n\n\n💼 Exemple charges :\n6111 → Achat tissu\n6112 → Achat accessoires\n\n👉 Analyse détaillée des coûts\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Crée un compte pour client 'Ali'\n👉 Numéro ?\n\n\n2. Tu as 2 banques\n👉 Comment les organiser ?\n\n\n3. Pourquoi détailler les charges ?",
+
+      "reponses": "1 → 342100X (ex: 3421003)\n2 → Un compte pour chaque banque\n3 → Pour analyser les coûts ✔",
+
+      "resume": "📌 Résumé FINAL\n\n- PCM = base\n- Personnalisation = précision\n\n👉 Sous-comptes = contrôle total\n\n🔥 Plus de détail = meilleure gestion"
+    },
+
+    "en": {
+      "objectif": "Understand how to customize the chart of accounts for better financial tracking.",
+
+      "explication": "🔷 The PCM is a standard base.\n\n👉 Businesses must customize it.\n\n🔷 Create sub-accounts:\n- Each client\n- Each supplier\n- Each bank\n- Each expense type\n\n🔷 Benefits:\n- Better tracking\n- Better analysis\n\n🔷 Rule:\nMore detail = better control\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "3421001 → Client A\n514101 → Bank A\n\nClear tracking",
+
+      "pratique": "1. Client account?\n2. 2 banks?\n3. Why detail?",
+
+      "reponses": "1 → Sub-account\n2 → Separate accounts\n3 → Better analysis",
+
+      "resume": "Customization improves financial control."
+    },
+
+    "ar": {
+      "objectif": "فهم كيفية تخصيص المخطط المحاسبي لتحسين تتبع الحسابات.",
+
+      "explication": "🔷 المخطط المحاسبي هو قاعدة.\n\n👉 يجب تخصيصه حسب النشاط.\n\n🔷 يتم إنشاء حسابات فرعية:\n- لكل زبون\n- لكل مورد\n- لكل بنك\n- لكل نوع مصاريف\n\n🔷 الفائدة:\n- دقة أكبر\n- تحليل أفضل\n\n🔷 القاعدة:\nكلما زاد التفصيل زادت السيطرة\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "3421001 → زبون\n514101 → بنك\n\nمتابعة دقيقة",
+
+      "pratique": "1. حساب زبون؟\n2. بنكان؟\n3. لماذا التفصيل؟",
+
+      "reponses": "1 → حساب فرعي\n2 → حساب لكل بنك\n3 → تحليل أفضل",
+
+      "resume": "التخصيص يعطي دقة وتحكم أكبر."
+    }
+  }
+}

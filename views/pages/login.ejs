@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | AMINA Académie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --bg-light: #F8FAFC;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .auth-layout { display: flex; width: 100%; height: 100%; }
+
+        /* LEFT SIDE: Banner */
+        .auth-banner {
+            flex: 1;
+            background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+            color: white;
+            position: relative;
+        }
+        .auth-banner h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 48px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+        .auth-banner p { font-size: 18px; color: #CBD5E1; max-width: 450px; line-height: 1.6; }
+        
+        .logo-white { position: absolute; top: 40px; left: 60px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 800; color: white; text-decoration: none; }
+        .logo-white span { color: #818CF8; }
+
+        /* RIGHT SIDE: Auth Panel */
+        .auth-form-container { flex: 1; display: flex; align-items: center; justify-content: center; background: white; padding: 40px; }
+        .auth-form-box { width: 100%; max-width: 400px; text-align: center; }
+
+        .auth-header { margin-bottom: 40px; text-align: left; }
+        .auth-header h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 32px; font-weight: 800; margin-bottom: 12px; letter-spacing: -1px; }
+        .auth-header p { color: var(--text-muted); font-size: 16px; line-height: 1.5; }
+
+        /* GOOGLE BUTTON */
+        .btn-google-large {
+            width: 100%;
+            padding: 16px;
+            background: white;
+            color: #0F172A;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            margin-bottom: 32px;
+        }
+        .btn-google-large:hover {
+            background: #F8FAFC;
+            border-color: #CBD5E1;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .auth-footer { padding-top: 24px; border-top: 1px solid var(--border); font-size: 14px; color: var(--text-muted); }
+        .auth-footer a { color: var(--primary); font-weight: 600; text-decoration: none; margin-left: 4px; }
+        .auth-footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 900px) { .auth-banner { display: none; } .auth-form-container { padding: 24px; } }
+    </style>
+</head>
+<body>
+
+    <div class="auth-layout">
+        <div class="auth-banner">
+            <a href="/" class="logo-white">AMINA <span>Académie</span></a>
+            <h2>Bon retour ! </h2>
+            <p>Reprenez votre apprentissage là où vous l'avez laissé. La maîtrise de la comptabilité n'est qu'à un clic.</p>
+        </div>
+
+        <div class="auth-form-container">
+            <div class="auth-form-box">
+                <div class="auth-header">
+                    <h1>Se connecter</h1>
+                    <p>Accédez à votre espace membre sécurisé.</p>
+                </div>
+
+                <% if (typeof error !== 'undefined' && error) { %>
+                    <div style="background-color: #FEF2F2; color: #B91C1C; padding: 12px; border-radius: 8px; margin-bottom: 24px; font-size: 14px; text-align: center; border: 1px solid #FCA5A5;">
+                        ⚠️ <%= error %>
+                    </div>
+                <% } %>
+
+                <a href="/api/auth/google" class="btn-google-large">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="24">
+                    Continuer avec Google
+                </a>
+
+                <div class="auth-footer">
+                    Nouveau ici ? <a href="/register">Créer un compte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

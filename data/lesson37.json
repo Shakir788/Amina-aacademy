@@ -1,0 +1,59 @@
+{
+  "id": 37,
+  "title": {
+    "fr": "Domination de l'Équipe et Recrutement (Système Complet RH)",
+    "en": "Team Domination System (Advanced Hiring & HR Control)",
+    "ar": "هيمنة الفريق والتوظيف (نظام موارد بشرية متكامل)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Construire, contrôler et scaler une équipe performante avec un système professionnel de recrutement, formation et gestion.",
+
+      "explication": "🔹 1. Vision du leader\n\n👉 Sans équipe = limite\n👉 Avec équipe = scaling\n\n\n🔹 2. Funnel de recrutement\n\nPost → Candidature → Test → Filtrage → Embauche\n\n👉 Process structuré\n\n\n🔹 3. Interview\n\nQuestions clés:\n✔ \"Pourquoi vous choisir ?\"\n✔ \"Pouvez-vous respecter deadlines ?\"\n\n👉 Vérifier mentalité\n\n\n🔹 4. Test obligatoire\n\n✔ Donner tâche réelle\n✔ Vérifier précision\n\n👉 Ne jamais recruter sans test\n\n\n🔹 5. Période d'essai\n\n✔ 7 à 15 jours\n✔ Observer performance\n\n👉 Réduction risque\n\n\n🔹 6. Structure équipe\n\n✔ Data entry\n✔ Comptable\n✔ Analyste\n✔ Manager (vous)\n\n\n🔹 7. Formation système\n\n✔ SOP document\n✔ Exemples\n✔ Explications claires\n\n\n🔹 8. KPI (Performance)\n\n✔ Qualité du travail\n✔ Temps\n✔ Erreurs\n\n👉 Mesurer chaque membre\n\n\n🔹 9. Tracking\n\n✔ Tâches quotidiennes\n✔ Rapport hebdomadaire\n\n👉 Suivi constant\n\n\n🔹 10. Paiement équipe\n\n✔ Par tâche\n✔ Mensuel\n✔ Bonus performance\n\n\n🔹 11. Discipline\n\n✔ Retard = warning\n✔ Erreur = correction\n✔ Répétition = remplacement\n\n\n🔹 12. Communication\n\n✔ Instructions simples\n✔ WhatsApp groupe\n\n\n🔹 13. Gestion erreurs\n\n✔ Corriger\n✔ Former\n✔ Remplacer si besoin\n\n\n🔹 14. Scaling équipe\n\n1 personne → 5 clients\n2 personnes → 10 clients\n5 personnes → 25 clients\n\n\n🔹 15. Culture équipe\n\n✔ Respect\n✔ Clarté\n✔ Discipline\n\n\n🔹 16. Système de remplacement\n\n✔ Toujours backup\n✔ Recruter en avance\n\n\n🔹 17. CEO mindset\n\n👉 Vous ne travaillez pas\n👉 Vous contrôlez le système\n\n\n🔹 18. Vision finale\n\n👉 Équipe = machine\n👉 Machine = croissance\n👉 Croissance = revenus"
+      ,
+
+      "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Une équipe bien structurée permet de gérer 25 clients avec efficacité",
+
+      "pratique": "1. Pourquoi tester avant recruter ?\n2. Qu'est-ce que KPI ?\n3. Que faire en cas d'erreur répétée ?",
+
+      "reponses": "1 → qualité\n2 → performance\n3 → remplacer",
+
+      "resume": "Construire une équipe performante et scalable"
+    },
+
+    "en": {
+      "objectif": "Build and manage a scalable team with full control.",
+
+      "explication": "Includes hiring funnel, KPI tracking and training system.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Strong team scales business",
+
+      "pratique": "1. Why test?\n2. KPI?\n3. If error?",
+
+      "reponses": "1 → quality\n2 → performance\n3 → replace",
+
+      "resume": "Team system mastered"
+    },
+
+    "ar": {
+      "objectif": "بناء فريق قوي قابل للتوسع مع نظام تحكم كامل.",
+
+      "explication": "يشمل التوظيف، التدريب، وتتبع الأداء.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "فريق قوي يوسع العمل",
+
+      "pratique": "1. لماذا الاختبار؟\n2. KPI؟\n3. عند الخطأ؟",
+
+      "reponses": "1 → الجودة\n2 → الأداء\n3 → الاستبدال",
+
+      "resume": "نظام فريق متكامل"
+    }
+  },
+  "practice_zone": {}
+}

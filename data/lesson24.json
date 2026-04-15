@@ -1,0 +1,59 @@
+{
+  "id": 24,
+  "title": {
+    "fr": "Budgétisation et Prévisions (Système de Contrôle Complet de l’Entreprise)",
+    "en": "Budgeting & Forecasting (Full Business Control System)",
+    "ar": "إعداد الميزانية والتوقعات (نظام التحكم الكامل في الأعمال)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Construire un système complet de contrôle financier, planifier les performances, analyser les écarts et prendre des décisions stratégiques.",
+
+      "explication": "🔹 1. Rôle réel du budget (IMPORTANT)\n\nLe budget n’est pas juste un plan.\n\n👉 C’est un outil de contrôle.\n\n👍 Il permet de :\n✓ guider l’entreprise\n✓ éviter les erreurs\n✓ contrôler les coûts\n\n\n🔹 2. Master Budget (SYSTÈME COMPLET)\n\nLe Master Budget regroupe :\n\n✓ Budget des ventes\n✓ Budget des charges\n✓ Budget de trésorerie\n\n👉 Résultat final :\n✓ Profit prévu\n✓ Cash prévu\n\n\n🔹 3. Budget des ventes (BASE)\n\n👉 Prévision du chiffre d’affaires\n\nExemple :\n100 unités × 500 = 50000\n\n👉 Tout commence ici\n\n\n🔹 4. Budget des coûts\n\n👉 Charges fixes + variables\n\n🔹 Charges fixes : loyer, salaires\n🔹 Charges variables : matières, transport\n\n\n🔹 5. Break-even Analysis (CRITICAL)\n\n💥 Formule :\n\nSeuil de rentabilité =\nCharges fixes / (Prix - Coût variable)\n\n👉 Montre : quand l’entreprise devient rentable\n\n\n🔹 6. Flexible Budget (PRO LEVEL)\n\n👉 Le budget change selon activité\n\n❌ Budget fixe = erreur\n\n✔ Adapter selon volume réel\n\n\n🔹 7. Cash Forecasting (VERY IMPORTANT)\n\n👉 Prévoir trésorerie mois par mois\n\n👍 Éviter manque de cash\n\n👉 Exemple :\nJanvier → +5000\nFévrier → -3000\n\n👉 Danger détecté ✔\n\n\n🔹 8. Variance Analysis (CORE CONTROL)\n\n👉 Comparer :\nBudget vs Réel\n\nExemple :\nBudget = 50000\nRéel = 30000\n\n❌ Écart = -20000\n\n👉 Analyse obligatoire\n\n\n🔹 9. Analyse des écarts\n\nPourquoi ?\n\n❌ Mauvaise estimation\n❌ Baisse des ventes\n❌ Coûts élevés\n\n\n🔹 10. KPI (KEY PERFORMANCE INDICATORS)\n\n👉 Indicateurs clés :\n\n✓ Marge bénéficiaire\n✓ Croissance des ventes\n✓ Ratio des dépenses\n\n👉 Tableau de bord du business\n\n\n🔹 11. Prise de décision (GAME CHANGER)\n\nAvec les données :\n\n👍 Réduire coûts\n👍 Augmenter prix\n👍 Investir\n👍 Embaucher ou non\n\n\n🔹 12. Cas réel (VERY IMPORTANT)\n\nBudget = 50000\nRéel = 30000\nCharges = 40000\n\n👉 Analyse :\n❌ Perte\n❌ Mauvais contrôle\n\n👉 Solution :\n✓ Réduire coûts\n✓ Améliorer ventes\n\n\n🔹 13. Erreurs fréquentes\n\n❌ Budget irréaliste\n❌ Ignorer écarts\n❌ Ne pas suivre\n\n\n🔹 14. Vision professionnelle\n\n👍 Budget = plan\n👍 Forecast = direction\n👍 Analyse = contrôle\n\n👉 Sans budget = business aveugle\n\n👉 Avec budget = business maîtrisé\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Cas complet\n\nBudget ventes = 50000\nRéel = 30000\n\n👉 Perte détectée\n\n👉 Action : ajustement immédiat ✔",
+
+      "pratique": "🔹 EXERCICE\n\n1. Charges fixes 20000, marge unitaire 100\n👉 Break-even ?\n\n2. Budget 60000, réel 50000\n👉 Écart ?\n\n3. Pourquoi KPI importants ?",
+
+      "reponses": "1 → 200 unités\n2 → -10000\n3 → Suivi performance ✔",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Budget = contrôle\n✓ Break-even = sécurité\n✓ KPI = suivi\n\n👍 Contrôle = succès business"
+    },
+
+    "en": {
+      "objectif": "Build a full business control system using budgeting.",
+
+      "explication": "🔹 Budget = control tool\n\n🔹 Includes:\n- Sales\n- Expenses\n- Cash\n\n🔹 Use break-even and KPIs\n\n🔹 Compare budget vs actual\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Budget 50000 vs actual 30000",
+
+      "pratique": "1. Break-even?\n2. Difference?\n3. KPI?",
+
+      "reponses": "1 → 200\n2 → -10000\n3 → Performance",
+
+      "resume": "Budget controls business."
+    },
+
+    "ar": {
+      "objectif": "بناء نظام تحكم مالي كامل باستخدام الميزانية.",
+
+      "explication": "🔹 الميزانية أداة للتحكم.\n\n🔹 تشمل:\n- المبيعات\n- المصاريف\n- النقد\n\n🔹 استخدم نقطة التعادل و KPI\n\n🔹 قارن بين المخطط والفعلي\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "ميزانية 50000 مقابل 30000",
+
+      "pratique": "1. نقطة التعادل؟\n2. الفرق؟\n3. KPI؟",
+
+      "reponses": "1 → 200\n2 → -10000\n3 → الأداء",
+
+      "resume": "الميزانية تتحكم في العمل."
+    }
+  },
+
+  "practice_zone": {}
+}

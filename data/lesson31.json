@@ -1,0 +1,59 @@
+{
+  "id": 31,
+  "title": {
+    "fr": "Système de Marque Personnelle (Niveau Pro Max)",
+    "en": "Personal Brand System (Pro Max Authority Level)",
+    "ar": "نظام العلامة الشخصية (مستوى احترافي متقدم)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Construire une marque personnelle forte pour attirer automatiquement des clients et se positionner comme expert sur le marché.",
+
+      "explication": "🔹 1. Comprendre le personal branding\n\n👉 Sans visibilité = zéro client\n👉 Les clients achètent la confiance\n\n\n🔹 2. Positionnement (IMPORTANT)\n\n❌ Comptable simple\n✔ Expert qui résout des problèmes business\n\nExemple:\n\"J'aide les entreprises à améliorer leur cash et augmenter leur profit\"\n\n\n🔹 3. Profil professionnel\n\n✔ Nom clair\n✔ Bio simple\n✔ Contact visible\n\nExemple bio:\n\"Expert comptable | J'aide les business à contrôler leur cash | DM pour audit\"\n\n\n🔹 4. Plateformes\n\n✔ Instagram\n✔ LinkedIn\n✔ WhatsApp Business\n\n\n🔹 5. Stratégie de contenu\n\n4 types de contenu:\n\n1. Éducation\n2. Problème\n3. Solution\n4. Autorité\n\n\n🔹 6. Formule de post\n\nHook → Problème → Explication → Solution\n\nExemple:\n\"Votre business gagne mais vous n'avez pas de cash ? Voici pourquoi...\"\n\n\n🔹 7. Fréquence\n\n✔ 3 posts par semaine minimum\n\n\n🔹 8. Construction de confiance\n\n✔ Montrer expertise\n✔ Partager conseils\n✔ Donner valeur gratuitement\n\n\n🔹 9. Système client entrant\n\n👉 Contenu → Confiance → Message → Client\n\n\n🔹 10. Réponse aux messages\n\n✔ Être clair\n✔ Être professionnel\n✔ Proposer solution\n\n\n🔹 11. Erreurs à éviter\n\n❌ Poster sans stratégie\n❌ Être irrégulier\n❌ Ne pas montrer expertise\n\n\n🔹 12. Vision finale\n\n👉 Marque = pouvoir\n👉 Visibilité = clients\n👉 Clients = revenus"
+      ,
+
+      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Un expert actif reçoit des messages clients sans faire de prospection",
+
+      "pratique": "1. Pourquoi le branding est important ?\n2. Quelle est la formule d'un bon post ?\n3. Que se passe-t-il avec la visibilité ?",
+
+      "reponses": "1 → confiance\n2 → Hook-Problème-Solution\n3 → clients viennent",
+
+      "resume": "Construire une marque pour attirer des clients automatiquement"
+    },
+
+    "en": {
+      "objectif": "Build a strong personal brand to attract clients automatically.",
+
+      "explication": "Includes positioning, content strategy and client attraction system.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Consistent expert gets inbound clients",
+
+      "pratique": "1. Why branding?\n2. Post formula?\n3. Result?",
+
+      "reponses": "1 → trust\n2 → hook-problem-solution\n3 → clients",
+
+      "resume": "Brand system ready"
+    },
+
+    "ar": {
+      "objectif": "بناء علامة شخصية قوية لجذب العملاء.",
+
+      "explication": "يشمل التمركز، المحتوى، وبناء الثقة.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "الخبير النشط يحصل على عملاء بسهولة",
+
+      "pratique": "1. لماذا مهم؟\n2. صيغة المنشور؟\n3. النتيجة؟",
+
+      "reponses": "1 → الثقة\n2 → جذب-مشكلة-حل\n3 → عملاء",
+
+      "resume": "نظام علامة شخصية كامل"
+    }
+  },
+  "practice_zone": {}
+}

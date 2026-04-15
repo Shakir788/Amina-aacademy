@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complétez votre profil | AMINA Académie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #64748B;
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #E2E8F0;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus {
+            border-color: #4F46E5;
+            box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: #4F46E5;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+        .btn-submit:hover {
+            background: #4338CA;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">✨</div>
+        <h1>Dernière étape !</h1>
+        <p>Bienvenue dans l'élite. Comment souhaitez-vous que l'on vous appelle sur votre tableau de bord ?</p>
+
+        <form action="/api/auth/complete-profile" method="POST">
+            <div class="input-group">
+                <label for="name">Votre Nom (Affiché sur le Dashboard)</label>
+                <input type="text" id="name" name="name" value="<%= user.name %>" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Accéder au Dashboard ➔</button>
+        </form>
+    </div>
+
+</body>
+</html>

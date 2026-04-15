@@ -1,0 +1,57 @@
+{
+  "id": 7,
+  "title": {
+    "fr": "La Balance des Comptes : L'Outil de Contrôle",
+    "en": "The Trial Balance: The Control Tool",
+    "ar": "ميزان المراجعة: أداة الرقابة"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser parfaitement la Balance des comptes, comprendre son rôle de contrôle, et savoir détecter les erreurs dans la comptabilité.",
+
+      "explication": "🔷 1. Pourquoi la Balance est importante ?\n\nAprès le Journal et le Grand Livre, tu dois vérifier si tout est correct.\n\n👉 La Balance sert à contrôler la comptabilité.\n\n\n🔷 2. C’est quoi la Balance ?\n\nLa Balance est un tableau qui regroupe tous les comptes.\n\n👉 Elle montre :\n- Les mouvements Débit et Crédit\n- Les soldes de chaque compte\n\n\n🔷 3. Structure de la Balance\n\nElle contient généralement :\n\n1. Numéro de compte\n2. Nom du compte\n3. Total Débit\n4. Total Crédit\n5. Solde Débiteur\n6. Solde Créditeur\n\n\n🔷 4. Les 3 règles fondamentales (TRÈS IMPORTANT)\n\n💥 Règle 1 :\nTotal Débit = Total Crédit\n\n💥 Règle 2 :\nTotal Soldes Débiteurs = Total Soldes Créditeurs\n\n💥 Règle 3 :\nTotal Balance = Total Journal\n\n\n🔷 5. Comprendre avec logique\n\n👉 Si tout est bien enregistré :\n✔ tout sera équilibré\n\n👉 Si erreur :\n❌ déséquilibre\n\n\n🔷 6. Exemple simple\n\nSi tu trouves :\nDébit = 100000\nCrédit = 99990\n\n👉 Il y a une erreur de 10 DHS\n\n\n🔷 7. Attention (IMPORTANT)\n\n👉 La Balance ne détecte PAS :\n❌ mauvais compte utilisé\n\n👉 Elle détecte seulement :\n✔ erreurs de calcul\n✔ erreurs de saisie\n\n\n🔷 8. Erreurs des débutants\n\n❌ Penser que balance correcte = tout parfait\n\n❌ Ignorer les petites différences\n\n❌ Ne pas vérifier le Journal\n\n\n🔷 9. Vision professionnelle\n\n👉 La Balance est obligatoire avant :\n- Bilan\n- Compte de résultat\n\n👉 Sans Balance correcte → états faux\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1611095773163-97a30b1a9245?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple réel\n\nTotal Journal = 100000 DHS\n\nBalance :\nDébit = 100000\nCrédit = 100000 ✔\n\n👉 Balance correcte\n\n\n💼 Exemple erreur\n\nDébit = 50000\nCrédit = 49500\n\n👉 Différence = 500 DHS ❌\n👉 Erreur à corriger\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Débit = 70000\nCrédit = 70000\n👉 Balance correcte ?\n\n\n2. Débit = 80000\nCrédit = 79000\n👉 Que faire ?\n\n\n3. Balance correcte mais mauvais compte utilisé\n👉 Est-ce que la Balance détecte ?",
+
+      "reponses": "1 → Oui ✔\n2 → Non ❌, il faut chercher l’erreur\n3 → Non ❌, la Balance ne détecte pas ce type d’erreur",
+
+      "resume": "📌 Résumé FINAL\n\n- La Balance vérifie l’équilibre\n- Débit = Crédit (toujours)\n\n👉 Elle détecte erreurs de calcul\n👉 Elle ne détecte pas erreurs de logique\n\n🔥 Balance correcte = base solide pour la suite"
+    },
+
+    "en": {
+      "objectif": "Master the trial balance and understand how it helps detect accounting errors.",
+
+      "explication": "🔷 The Trial Balance checks if accounting is correct.\n\nIt summarizes all accounts and ensures:\n\n1. Total Debit = Total Credit\n2. Total Debit Balances = Total Credit Balances\n3. Matches Journal totals\n\n🔷 Important:\nIt detects calculation errors but NOT wrong account usage\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1611095773163-97a30b1a9245?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Debit = 100000\nCredit = 100000 ✔\n\nBalanced",
+
+      "pratique": "1. 70000 / 70000 → ?\n2. 80000 / 79000 → ?\n3. Wrong account but balanced → ?",
+
+      "reponses": "1 → Correct\n2 → Error\n3 → Not detected",
+
+      "resume": "Trial Balance ensures equality but not correctness of account choice."
+    },
+
+    "ar": {
+      "objectif": "إتقان ميزان المراجعة وفهم دوره في اكتشاف الأخطاء.",
+
+      "explication": "🔷 ميزان المراجعة يستخدم للتحقق من صحة الحسابات.\n\nيتأكد من:\n\n1. المدين = الدائن\n2. مجموع الأرصدة متساوي\n3. يطابق دفتر اليومية\n\n🔷 مهم:\nيكشف الأخطاء الحسابية فقط\nولا يكشف اختيار الحساب الخاطئ\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1611095773163-97a30b1a9245?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "مدين = 100000\nدائن = 100000 ✔",
+
+      "pratique": "1. 70000 / 70000 → ؟\n2. 80000 / 79000 → ؟\n3. حساب خاطئ → ؟",
+
+      "reponses": "1 → صحيح\n2 → خطأ\n3 → لا يتم اكتشافه",
+
+      "resume": "ميزان المراجعة يتحقق من التوازن فقط."
+    }
+  }
+}

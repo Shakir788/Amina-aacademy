@@ -1,0 +1,57 @@
+{
+  "id": 5,
+  "title": {
+    "fr": "La TVA : Taxe sur la Valeur Ajoutée",
+    "en": "VAT: Value Added Tax",
+    "ar": "الضريبة على القيمة المضافة (TVA)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre en profondeur le mécanisme de la TVA, savoir la calculer correctement, et comprendre son impact réel dans la gestion d’une entreprise.",
+
+      "explication": "🔷 1. Qu’est-ce que la TVA ?\n\nLa TVA est une taxe indirecte.\n\n👉 Elle est payée par le client final\n👉 Mais collectée par l’entreprise\n\n👉 Donc l’entreprise joue le rôle d’intermédiaire entre le client et l’État.\n\n\n🔷 2. Logique simple de la TVA\n\nQuand tu ACHÈTES → tu payes de la TVA\nQuand tu VENDS → tu encaisses de la TVA\n\n👉 Donc tu as :\n- TVA payée\n- TVA encaissée\n\n\n🔷 3. Les deux types de TVA\n\n🔹 TVA Facturée (Collectée)\n👉 TVA que tu prends à ton client\n👉 C’est une dette envers l’État\n\n\n🔹 TVA Récupérable\n👉 TVA que tu payes à ton fournisseur\n👉 L’État te la rembourse (ou la déduit)\n\n\n🔷 4. La formule clé (TRÈS IMPORTANT)\n\n💥 TVA à payer = TVA collectée - TVA récupérable\n\n👉 Si positif → tu payes l’État\n👉 Si négatif → l’État te doit de l’argent\n\n\n🔷 5. Taux de TVA au Maroc\n\n👉 20% (normal)\n👉 14% / 10% / 7% (réduits)\n\n\n🔷 6. Comprendre avec logique (IMPORTANT)\n\n👉 Tu n’es pas le propriétaire de la TVA\n👉 Tu es juste un collecteur\n\n👉 L’argent de TVA ne t’appartient pas\n\n\n🔷 7. Erreurs des débutants\n\n❌ Penser que TVA = charge\n👉 Faux\n\n❌ Penser que TVA = revenu\n👉 Faux\n\n👉 TVA = dette ou créance\n\n\n🔷 8. Vision professionnelle\n\n👉 TVA = relation entre entreprise et État\n👉 Très important pour éviter les problèmes fiscaux\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nAMINA achète du tissu :\n1000 DHS HT\nTVA 20% = 200 DHS\n\n👉 TVA récupérable = 200\n\n\nElle vend une robe :\n3000 DHS HT\nTVA 20% = 600 DHS\n\n👉 TVA collectée = 600\n\n\n👉 Calcul final :\n600 - 200 = 400 DHS à payer à l’État\n\n\n💼 Exemple 2\n\nAchat ordinateur 6000 DHS HT\nTVA = 1200 DHS\n\n👉 TVA récupérable = 1200",
+
+      "pratique": "🧠 EXERCICE\n\n1. Achat marchandises 2000 DHS HT (TVA 20%)\n👉 TVA récupérable ?\n\n2. Vente 5000 DHS HT\n👉 TVA collectée ?\n\n3. Calcul final :\nTVA collectée = 1000\nTVA récupérable = 300\n👉 TVA à payer ?",
+
+      "reponses": "1 → 400 DHS\n2 → 1000 DHS\n3 → 700 DHS à payer",
+
+      "resume": "📌 Résumé FINAL\n\n- TVA payée = récupérable\n- TVA encaissée = collectée\n\n👉 TVA à payer = collectée - récupérable\n\n🔥 L’entreprise ne gagne pas la TVA, elle la collecte pour l’État"
+    },
+
+    "en": {
+      "objectif": "Understand VAT deeply, how to calculate it, and its role in business operations.",
+
+      "explication": "🔷 VAT is an indirect tax.\n\n👉 Paid by the customer\n👉 Collected by the business\n\n🔷 Two types:\n\n- Output VAT (collected)\n- Input VAT (recoverable)\n\n🔷 Formula:\nVAT to pay = Output VAT - Input VAT\n\n👉 If positive → pay government\n👉 If negative → government owes you\n\n🔷 Important:\nVAT is NOT profit or expense\n\n🔷 Common mistakes:\n- Treating VAT as income\n- Treating VAT as cost\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Buy: 1000 + 200 VAT\nSell: 3000 + 600 VAT\n\nVAT to pay = 600 - 200 = 400",
+
+      "pratique": "1. Buy 2000 HT → VAT?\n2. Sell 5000 HT → VAT?\n3. 1000 - 300 → ?",
+
+      "reponses": "1 → 400\n2 → 1000\n3 → 700",
+
+      "resume": "VAT is collected for the government, not profit."
+    },
+
+    "ar": {
+      "objectif": "فهم الضريبة على القيمة المضافة بشكل عميق وكيفية حسابها وتأثيرها على الشركة.",
+
+      "explication": "🔷 الضريبة على القيمة المضافة هي ضريبة غير مباشرة.\n\n👉 يدفعها الزبون\n👉 تجمعها الشركة\n\n🔷 نوعان:\n\n- الضريبة المحصلة\n- الضريبة القابلة للاسترداد\n\n🔷 القاعدة:\nالضريبة المستحقة = المحصلة - القابلة للاسترداد\n\n👉 إذا كانت موجبة → تدفع للدولة\n👉 إذا كانت سالبة → الدولة تدفع لك\n\n🔷 مهم:\nالضريبة ليست ربحاً ولا مصروفاً\n\n🔷 أخطاء شائعة:\n- اعتبار الضريبة ربحاً\n- اعتبارها تكلفة\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "شراء 1000 + 200 ضريبة\nبيع 3000 + 600 ضريبة\n\nالمبلغ للدولة = 400",
+
+      "pratique": "1. شراء 2000 → ؟\n2. بيع 5000 → ؟\n3. 1000 - 300 → ؟",
+
+      "reponses": "1 → 400\n2 → 1000\n3 → 700",
+
+      "resume": "الضريبة ليست ربحاً، بل أمانة للدولة."
+    }
+  }
+}

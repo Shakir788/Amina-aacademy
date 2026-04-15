@@ -1,0 +1,59 @@
+{
+  "id": 34,
+  "title": {
+    "fr": "Domination de la Gestion des Clients (Système Avancé)",
+    "en": "Client Control Domination System (Advanced Multi-Client Management)",
+    "ar": "هيمنة إدارة العملاء (نظام متقدم متعدد العملاء)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Contrôler totalement plusieurs clients avec un système structuré, professionnel et scalable.",
+
+      "explication": "🔹 1. Comprendre le niveau avancé\n\n👉 Sans système = chaos\n👉 Avec système = contrôle total\n\n\n🔹 2. Classification clients\n\n✔ VIP (haut paiement)\n✔ Standard\n✔ Risqué (retards / problèmes)\n\n👉 Priorité selon valeur\n\n\n🔹 3. Système de priorité\n\n✔ VIP → priorité 1\n✔ Standard → priorité 2\n✔ Risqué → priorité 3\n\n\n🔹 4. Structure client\n\nChaque client doit avoir:\n✔ Dossier\n✔ Historique\n✔ Paiements\n✔ Statut\n\n\n🔹 5. Tableau de contrôle\n\nCréer un tableau:\n✔ Nom\n✔ Service\n✔ Paiement\n✔ Deadline\n✔ Statut\n\n👉 Vision complète\n\n\n🔹 6. Workflow professionnel\n\nClient → Données → Travail → Rapport → Livraison\n\n👉 Process identique pour tous\n\n\n🔹 7. Gestion des deadlines\n\n✔ Fixer date claire\n✔ Respect strict\n\n👉 Discipline\n\n\n🔹 8. Communication templates\n\n✔ Data:\n\"Merci d'envoyer vos données aujourd'hui\"\n\n✔ Paiement:\n\"Merci de confirmer le paiement\"\n\n✔ Livraison:\n\"Votre travail est prêt\"\n\n\n🔹 9. Règles strictes\n\n❌ Pas de données → pas de travail\n❌ Pas de paiement → pas de service\n\n👉 Respect obligatoire\n\n\n🔹 10. Suivi clients\n\n✔ Relance régulière\n✔ Vérification\n\n\n🔹 11. Gestion du temps\n\n✔ Travail en batch\n✔ Priorité clients\n\n\n🔹 12. Gestion surcharge\n\n✔ Limiter clients\n✔ Refuser si nécessaire\n\n\n🔹 13. Performance tracking\n\n✔ Nombre clients\n✔ Revenus\n✔ Temps par client\n\n\n🔹 14. Fidélisation\n\n✔ Suivi mensuel\n✔ Conseil\n✔ Relation\n\n\n🔹 15. Vision finale\n\n👉 Vous contrôlez le système\n👉 Les clients suivent vos règles\n👉 Le business est stable"
+      ,
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Un expert gère 15 clients avec un système sans stress",
+
+      "pratique": "1. Pourquoi classer les clients ?\n2. Que faire sans paiement ?\n3. Pourquoi utiliser des templates ?",
+
+      "reponses": "1 → priorité\n2 → arrêter travail\n3 → gain de temps",
+
+      "resume": "Système complet pour contrôler tous les clients efficacement"
+    },
+
+    "en": {
+      "objectif": "Fully control multiple clients using a structured system.",
+
+      "explication": "Includes priority system, workflow and communication.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Managing many clients with control",
+
+      "pratique": "1. Why classify?\n2. No payment?\n3. Templates?",
+
+      "reponses": "1 → priority\n2 → stop work\n3 → speed",
+
+      "resume": "Client control system ready"
+    },
+
+    "ar": {
+      "objectif": "التحكم الكامل في العملاء باستخدام نظام منظم.",
+
+      "explication": "يشمل الأولويات، التنظيم والتواصل.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "إدارة عدة عملاء بسهولة",
+
+      "pratique": "1. لماذا التصنيف؟\n2. بدون دفع؟\n3. القوالب؟",
+
+      "reponses": "1 → الأولوية\n2 → إيقاف العمل\n3 → السرعة",
+
+      "resume": "نظام تحكم كامل"
+    }
+  },
+  "practice_zone": {}
+}

@@ -1,0 +1,59 @@
+{
+  "id": 23,
+  "title": {
+    "fr": "Analyse des Flux de Trésorerie (Niveau Investisseur Avancé)",
+    "en": "Cash Flow Analysis (Advanced Investor Level)",
+    "ar": "تحليل التدفقات النقدية (مستوى المستثمر المتقدم)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser les flux de trésorerie, comprendre leur calcul réel, détecter les manipulations et prendre des décisions d’investissement intelligentes.",
+
+      "explication": "🔹 1. Vérité absolue (CORE PRINCIPLE)\n\n👉 Le profit est une illusion comptable.\n👉 Le cash est la réalité.\n\n❌ Une entreprise peut afficher un bénéfice mais être en faillite.\n\n\n🔹 2. Structure officielle du Cash Flow\n\nLe tableau des flux de trésorerie contient 3 parties :\n\n1. Flux d’exploitation (Operating)\n2. Flux d’investissement (Investing)\n3. Flux de financement (Financing)\n\n👉 C’est le format réel utilisé dans les entreprises.\n\n\n🔹 3. Operating Cash Flow (VERY IMPORTANT)\n\n💥 Formule :\n\nOperating Cash Flow =\nRésultat net\n+ Charges non monétaires (amortissement)\n± Variation du besoin en fonds de roulement\n\n👉 C’est le cœur de l’analyse\n\n\n🔹 4. Working Capital Impact (CRITICAL)\n\n🔹 Clients (Créances) ↑ → Cash ↓ ❌\n🔹 Fournisseurs ↑ → Cash ↑ 👍\n🔹 Stock ↑ → Cash bloqué ❌\n\n👉 C’est ici que beaucoup se trompent\n\n\n🔹 5. Direct vs Indirect Method\n\n🔹 Méthode directe\n👉 Flux réel encaissé/décaisse\n\n🔹 Méthode indirecte (la plus utilisée)\n👉 Part du résultat puis ajuste\n\n\n🔹 6. Investing Cash Flow\n\n👉 Achat machines → Cash ↓\n👉 Vente actifs → Cash ↑\n\n👉 Investissement = croissance\n\n\n🔹 7. Financing Cash Flow\n\n👉 Emprunt → Cash ↑\n👉 Remboursement → Cash ↓\n\n👉 Montre dépendance financière\n\n\n🔹 8. Free Cash Flow (VERY IMPORTANT)\n\n💥 Formule :\nFree Cash Flow = Operating Cash Flow - Investissements\n\n👉 Argent réel disponible\n\n👉 Les investisseurs adorent ce ratio\n\n\n🔹 9. Exemple complet\n\nRésultat = 20000\nAmortissement = 5000\nVariation BFR = -3000\n\n👉 OCF = 22000\n\nInvestissement = 10000\n\n👉 Free Cash = 12000\n\n\n🔹 10. Manipulation du cash (INVESTOR SECRET)\n\n❌ Retarder paiement fournisseurs → Cash ↑ artificiel\n❌ Accélérer encaissement → Cash ↑ temporaire\n\n👉 Attention : faux signal\n\n\n🔹 11. Analyse réelle (VERY IMPORTANT)\n\nEntreprise A :\nProfit = 30000\nCash = -5000\n\n❌ Danger (clients ne paient pas)\n\nEntreprise B :\nProfit = 20000\nCash = 30000\n\n👍 Très solide\n\n\n🔹 12. Red Flags (CRITICAL)\n\n❌ Cash ↓ pendant plusieurs années\n❌ Dépendance aux prêts\n❌ Cash négatif + profit positif\n\n👉 Risque élevé\n\n\n🔹 13. Décision investisseur (GAME CHANGER)\n\n👉 Investir si :\n✓ Cash positif stable\n✓ Free cash élevé\n\n👉 Éviter si :\n❌ Cash instable\n❌ Forte dette\n\n\n🔹 14. Erreurs fréquentes\n\n❌ Confondre profit et cash\n❌ Ignorer BFR\n❌ Mauvaise lecture\n\n\n🔹 15. Vision ultime\n\n👍 Cash = oxygène de l’entreprise\n👍 Sans cash → mort\n\n👉 Les investisseurs regardent uniquement le cash\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Cas avancé\n\nProfit = 50000\nCréances ↑ = 40000\n\n👉 Cash réel faible ❌\n\n👉 Mauvaise situation\n\n\n💼 Cas solide\n\nProfit = 30000\nCash = 40000\n\n👍 Investissement sécurisé",
+
+      "pratique": "🔹 EXERCICE\n\n1. Résultat 30000, amortissement 5000, BFR -2000\n👉 OCF ?\n\n2. OCF 20000, investissement 8000\n👉 Free cash ?\n\n3. Profit élevé mais cash faible\n👉 Analyse ?",
+
+      "reponses": "1 → 33000\n2 → 12000\n3 → Risque ❌",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Cash > Profit\n✓ OCF = cœur\n✓ Free cash = décision\n\n👍 Cash = pouvoir réel"
+    },
+
+    "en": {
+      "objectif": "Master cash flow analysis at investor level.",
+
+      "explication": "🔹 Cash is real, profit is accounting.\n\n🔹 Structure:\n- Operating\n- Investing\n- Financing\n\n🔹 Key:\nOperating Cash Flow & Free Cash Flow\n\n🔹 Watch working capital changes\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Profit high but cash low = risk",
+
+      "pratique": "1. OCF?\n2. Free cash?\n3. Risk?",
+
+      "reponses": "1 → 33000\n2 → 12000\n3 → Risk",
+
+      "resume": "Cash drives investment decisions."
+    },
+
+    "ar": {
+      "objectif": "إتقان تحليل التدفقات النقدية على مستوى المستثمر.",
+
+      "explication": "🔹 النقد هو الحقيقة، الربح محاسبي.\n\n🔹 الهيكل:\n- تشغيلي\n- استثماري\n- تمويلي\n\n🔹 الأهم:\nالتدفق التشغيلي والنقد الحر\n\n🔹 انتبه لرأس المال العامل\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "ربح عالي ونقد ضعيف = خطر",
+
+      "pratique": "1. التدفق التشغيلي؟\n2. النقد الحر؟\n3. المخاطر؟",
+
+      "reponses": "1 → 33000\n2 → 12000\n3 → خطر",
+
+      "resume": "النقد أساس القرار."
+    }
+  },
+
+  "practice_zone": {}
+}

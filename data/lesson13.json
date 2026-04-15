@@ -1,0 +1,57 @@
+{
+  "id": 13,
+  "title": {
+    "fr": "La Gestion des Stocks : FIFO et Coût Moyen",
+    "en": "Inventory Management: FIFO and Average Cost",
+    "ar": "إدارة المخزون: FIFO ومتوسط التكلفة"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre la gestion des stocks, apprendre les méthodes FIFO et Coût Moyen, et savoir calculer le coût réel des marchandises vendues.",
+
+      "explication": "🔷 1. C’est quoi le stock ?\n\nLe stock représente les produits que l’entreprise possède pour vendre.\n\n👉 Types de stock :\n- Matières premières\n- Produits finis\n- Marchandises\n\n\n🔷 2. Pourquoi le stock est important ?\n\n👉 Il impacte directement :\n✔ le bénéfice\n✔ les pertes\n✔ la gestion du business\n\n👉 Mauvaise gestion = pertes financières\n\n\n🔷 3. Problème principal\n\n👉 Quand les prix changent\n\nExemple :\n- Achat 100 DHS\n- Puis 120 DHS\n\n👉 Quel prix utiliser pour calculer le coût ?\n\n\n🔷 4. Méthode FIFO (TRÈS IMPORTANT)\n\nFIFO = First In First Out\n\n👉 Premier acheté = premier vendu\n\n💡 Logique :\nOn vend d’abord l’ancien stock\n\n\n🔷 5. Méthode Coût Moyen\n\n👉 On calcule la moyenne des prix\n\n💥 Formule :\nCoût moyen = Total prix / Total quantité\n\n\n🔷 6. Exemple complet\n\nStock :\n10 × 100\n10 × 120\n\nVente : 15\n\n👉 FIFO :\n10 × 100 = 1000\n5 × 120 = 600\n\nTotal = 1600\n\n\n👉 Coût Moyen :\n(1000 + 1200) / 20 = 110\n\n15 × 110 = 1650\n\n\n🔷 7. Différence importante\n\n👉 FIFO = plus proche de la réalité\n👉 Moyenne = plus stable\n\n\n🔷 8. Impact sur le bénéfice\n\n👉 Coût bas → bénéfice élevé\n👉 Coût élevé → bénéfice bas\n\n\n🔷 9. Erreurs des débutants\n\n❌ Mélanger les méthodes\n❌ Mauvais calcul\n❌ Oublier les quantités\n\n\n🔷 10. Vision professionnelle\n\n👉 Stock = argent bloqué\n👉 Bonne gestion = profit élevé\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple réel\n\nAchat :\n10 × 100\n10 × 120\n\nVente : 15\n\nFIFO = 1600\nMoyenne = 1650\n\n👉 Résultat différent selon méthode\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. 5 × 100\n5 × 200\nVente = 5\n👉 FIFO ?\n\n\n2. Total = 3000\nQuantité = 20\n👉 Coût moyen ?\n\n\n3. Pourquoi FIFO donne un résultat différent ?",
+
+      "reponses": "1 → 500\n2 → 150\n3 → Car prix différents",
+
+      "resume": "📌 Résumé FINAL\n\n- FIFO = premier entré, premier sorti\n- Coût moyen = moyenne des prix\n\n👉 Stock impacte directement le profit\n\n🔥 Bonne gestion du stock = business réussi"
+    },
+
+    "en": {
+      "objectif": "Understand inventory management and calculate costs using FIFO and average methods.",
+
+      "explication": "🔷 Inventory is goods for sale.\n\n🔷 Methods:\n- FIFO (First In First Out)\n- Average Cost\n\n🔷 FIFO uses oldest stock first.\n🔷 Average uses mean price.\n\n🔷 Important:\nStock affects profit directly\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "FIFO = 1600\nAverage = 1650",
+
+      "pratique": "1. FIFO?\n2. Average?\n3. Why different?",
+
+      "reponses": "1 → 500\n2 → 150\n3 → Price difference",
+
+      "resume": "Inventory management impacts profit."
+    },
+
+    "ar": {
+      "objectif": "فهم إدارة المخزون وحساب التكلفة باستخدام FIFO ومتوسط التكلفة.",
+
+      "explication": "🔷 المخزون هو السلع المعدة للبيع.\n\n🔷 الطرق:\n- FIFO (الأول دخولاً أول خروجاً)\n- متوسط التكلفة\n\n🔷 FIFO يستخدم المخزون القديم أولاً\n🔷 المتوسط يستخدم السعر المتوسط\n\n🔷 مهم:\nالمخزون يؤثر على الربح\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "FIFO = 1600\nالمتوسط = 1650",
+
+      "pratique": "1. FIFO؟\n2. المتوسط؟\n3. لماذا الفرق؟",
+
+      "reponses": "1 → 500\n2 → 150\n3 → اختلاف الأسعار",
+
+      "resume": "إدارة المخزون تؤثر على الربح."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": 3,
+  "title": {
+    "fr": "Les Comptes de Gestion : Charges et Produits",
+    "en": "Management Accounts: Expenses and Revenues",
+    "ar": "حسابات التسيير: التكاليف والإيرادات"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre profondément la différence entre les charges (Classe 6) et les produits (Classe 7), et leur impact sur le résultat.",
+
+      "explication": "🔷 Chaque entreprise fait deux choses :\n👉 Dépenser\n👉 Gagner\n\n👉 Charges = argent qui sort\n👉 Produits = argent qui entre\n\n🔷 Classe 6 = Dépenses\nExemples : loyer, salaires, électricité\n\n🔷 Classe 7 = Revenus\nExemples : ventes, services\n\n💥 Formule :\nRésultat = Produits - Charges\n\n👉 Bénéfice si positif\n👉 Perte si négatif\n\n🔷 Important :\nClasses 1-5 = situation\nClasses 6-7 = performance",
+
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "AMINA vend pour 1200 DHS → Classe 7\n\nCoût = 400 DHS → Classe 6\n\nRésultat = 800 DHS",
+
+      "pratique": "1. Loyer → ?\n2. Vente → ?\n3. Salaire → ?\n4. Paiement client → ?",
+
+      "reponses": "1 → Classe 6\n2 → Classe 7\n3 → Classe 6\n4 → Classe 7",
+
+      "resume": "Classe 6 = dépenses\nClasse 7 = revenus\n\nRésultat = Produits - Charges"
+    },
+
+    "en": {
+      "objectif": "Understand expenses and revenues and how they affect profit.",
+
+      "explication": "Every business spends and earns.\n\nExpenses = money out\nRevenue = money in\n\nResult = Revenue - Expenses",
+
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "1200 DHS sale → Revenue\n400 DHS cost → Expense\n\nProfit = 800",
+
+      "pratique": "1. Rent → ?\n2. Sale → ?\n3. Salary → ?\n4. Client payment → ?",
+
+      "reponses": "1 → Expense\n2 → Revenue\n3 → Expense\n4 → Revenue",
+
+      "resume": "Expenses reduce profit, revenue increases it."
+    },
+
+    "ar": {
+      "objectif": "فهم التكاليف والإيرادات وتأثيرها على الربح.",
+
+      "explication": "كل شركة تنفق وتكسب.\n\nالتكاليف = مال يخرج\nالإيرادات = مال يدخل\n\nالنتيجة = الإيرادات - التكاليف",
+
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "بيع 1200 درهم → إيراد\nتكلفة 400 درهم → مصروف\n\nالربح = 800",
+
+      "pratique": "1. إيجار → ؟\n2. بيع → ؟\n3. راتب → ؟\n4. مال من عميل → ؟",
+
+      "reponses": "1 → تكلفة\n2 → إيراد\n3 → تكلفة\n4 → إيراد",
+
+      "resume": "التكاليف تقلل الربح، والإيرادات تزيده."
+    }
+  }
+}

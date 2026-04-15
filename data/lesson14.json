@@ -1,0 +1,57 @@
+{
+  "id": 14,
+  "title": {
+    "fr": "Saisie des Achats et Frais Généraux",
+    "en": "Recording Purchases and Expenses",
+    "ar": "تسجيل المشتريات والمصاريف العامة"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser parfaitement la saisie des factures d'achat avec TVA et comprendre la logique complète derrière chaque ligne comptable.",
+
+      "explication": "🔷 1. C’est quoi une facture d’achat ?\n\nC’est un document reçu d’un fournisseur.\n\n👉 Elle montre :\n- Ce que tu as acheté\n- Le montant\n- La TVA\n\n\n🔷 2. Où enregistrer ?\n\n👉 Journal des Achats\n\n👉 Toutes les factures fournisseurs passent ici\n\n\n🔷 3. Structure d’une écriture d’achat (TRÈS IMPORTANT)\n\nUne facture contient toujours 3 lignes :\n\n🔹 1. Charge (Classe 6) → Débit\n👉 Montant HT\n\n🔹 2. TVA récupérable (3455) → Débit\n👉 TVA\n\n🔹 3. Fournisseur (4411) → Crédit\n👉 Montant TTC\n\n\n🔷 4. Règle fondamentale\n\n💥 Débit (HT + TVA) = Crédit (TTC)\n\n👉 Toujours équilibré\n\n\n🔷 5. Comprendre avec logique\n\n👉 Tu achètes → Charge\n👉 Tu paies TVA → récupérable\n👉 Tu dois argent → Fournisseur\n\n\n🔷 6. Calcul HT / TVA / TTC (TRÈS IMPORTANT)\n\n👉 Si HT connu :\nTVA = HT × 20%\nTTC = HT + TVA\n\n👉 Si TTC connu :\nHT = TTC / 1.20\nTVA = TTC - HT\n\n\n🔷 7. Exemple complet\n\nFacture :\nHT = 5000\nTVA = 1000\nTTC = 6000\n\n👉 Écriture :\nDébit 6111 → 5000\nDébit 3455 → 1000\nCrédit 4411 → 6000\n\n\n🔷 8. Exemple TTC (IMPORTANT)\n\nTTC = 1200\n\n👉 HT = 1200 / 1.20 = 1000\n👉 TVA = 200\n\n\n🔷 9. Erreurs des débutants\n\n❌ Oublier TVA\n❌ Mauvais calcul HT\n❌ Mettre fournisseur en débit\n❌ Déséquilibre écriture\n\n\n🔷 10. Vision professionnelle\n\n👉 Chaque facture = dette fournisseur\n👉 TVA = récupérable\n👉 Bonne saisie = fiscalité correcte\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple réel\n\nFacture fournisseur :\nHT = 5000\nTVA = 1000\n\n👉 Débit 6111 → 5000\n👉 Débit 3455 → 1000\n👉 Crédit 4411 → 6000\n\n\n💼 Exemple TTC\n\nFacture = 1200 TTC\n\n👉 HT = 1000\n👉 TVA = 200\n\n👉 Écriture correcte\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Facture 2400 TTC\n👉 HT ? TVA ?\n\n\n2. Achat 2000 HT\n👉 TVA ? TTC ?\n\n\n3. Pourquoi fournisseur est crédité ?",
+
+      "reponses": "1 → HT = 2000 / TVA = 400\n2 → TVA = 400 / TTC = 2400\n3 → Car c’est une dette ✔",
+
+      "resume": "📌 Résumé FINAL\n\n- Achat = 3 lignes\n- Débit : Charge + TVA\n- Crédit : Fournisseur\n\n👉 Débit = Crédit\n\n🔥 Maîtriser les achats = base du métier"
+    },
+
+    "en": {
+      "objectif": "Master recording purchase invoices with VAT.",
+
+      "explication": "🔷 Every purchase invoice includes:\n- Expense (Debit)\n- VAT (Debit)\n- Supplier (Credit)\n\n🔷 Formula:\nHT + VAT = TTC\n\n🔷 If TTC given:\nHT = TTC / 1.20\n\n🔷 Important:\nEntries must always balance\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "5000 HT + 1000 VAT → 6000 TTC\n\nCorrect entry",
+
+      "pratique": "1. 2400 TTC → ?\n2. 2000 HT → ?\n3. Supplier why credit?",
+
+      "reponses": "1 → 2000 / 400\n2 → 400 / 2400\n3 → Liability",
+
+      "resume": "Purchase entries track expenses and liabilities."
+    },
+
+    "ar": {
+      "objectif": "إتقان تسجيل فواتير الشراء مع الضريبة.",
+
+      "explication": "🔷 كل فاتورة شراء تحتوي على:\n- مصاريف (مدين)\n- ضريبة (مدين)\n- مورد (دائن)\n\n🔷 القاعدة:\nHT + TVA = TTC\n\n🔷 إذا كان TTC:\nHT = TTC / 1.20\n\n🔷 مهم:\nيجب توازن القيد\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "5000 + 1000 = 6000\n\nقيد صحيح",
+
+      "pratique": "1. 2400 → ؟\n2. 2000 → ؟\n3. لماذا المورد دائن؟",
+
+      "reponses": "1 → 2000 / 400\n2 → 400 / 2400\n3 → لأنه دين",
+
+      "resume": "تسجيل المشتريات أساس المحاسبة."
+    }
+  }
+}

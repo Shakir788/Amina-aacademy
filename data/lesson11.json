@@ -1,0 +1,57 @@
+{
+  "id": 11,
+  "title": {
+    "fr": "La Création du Dossier Comptable Réel",
+    "en": "Creating a Real Accounting File",
+    "ar": "إنشاء ملف محاسبي حقيقي"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser la création complète d’un dossier comptable réel dans un logiciel professionnel et comprendre toutes les étapes administratives essentielles.",
+
+      "explication": "🔷 1. C’est quoi un dossier comptable ?\n\nUn dossier comptable est la base de travail dans un logiciel.\n\n👉 C’est l’identité complète de l’entreprise dans le système.\n\n👉 Sans dossier → impossible de travailler\n\n\n🔷 2. Pourquoi cette étape est critique ?\n\n👉 Toute erreur ici impacte toute l’année\n\nExemples :\n❌ Mauvaise date → erreurs fiscales\n❌ Mauvais identifiant → déclarations rejetées\n\n\n🔷 3. Étape 1 : Identification de l’entreprise\n\n👉 Informations obligatoires :\n- Raison sociale\n- IF (Identifiant Fiscal)\n- ICE (15 chiffres)\n- Adresse\n\n👉 Ces infos sont utilisées pour :\n✔ déclarations fiscales\n✔ facturation\n✔ légalité\n\n\n🔷 4. Étape 2 : Configuration de l’exercice\n\n👉 Définir :\n- Date début\n- Date fin\n\n💡 Généralement :\n01/01 → 31/12\n\n👉 Important :\nUne erreur ici = tout faux\n\n\n🔷 5. Étape 3 : Plan Comptable (PCM)\n\n👉 Importer le Plan Comptable Marocain\n\n👉 C’est la base de tous les comptes\n\nExemples :\n- 2 → Immobilisations\n- 6 → Charges\n- 7 → Produits\n\n\n🔷 6. Étape 4 : Création des journaux\n\n👉 Journaux essentiels :\n- Achats\n- Ventes\n- Banque\n- Caisse\n- Opérations Diverses\n\n👉 Chaque opération doit aller dans le bon journal\n\n\n🔷 7. Étape 5 : Paramétrage initial\n\n👉 Devise (MAD)\n👉 TVA (20% ou autres)\n👉 Format des comptes\n\n\n🔷 8. Vision pratique (TRÈS IMPORTANT)\n\nQuand tu travailles dans Sage ou QuickBooks :\n\n👉 Tu dois créer le dossier AVANT toute écriture\n\n👉 Sinon → rien ne fonctionne\n\n\n🔷 9. Erreurs des débutants\n\n❌ Oublier ICE\n\n❌ Mauvaise date exercice\n\n❌ Mauvais plan comptable\n\n❌ Journaux mal configurés\n\n\n🔷 10. Vision professionnelle\n\n👉 Un bon comptable commence toujours par un dossier propre\n\n👉 Un dossier bien créé =\n✔ travail facile\n✔ moins d’erreurs\n✔ conformité légale\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple réel\n\nCréation dossier AMINA SARL\n\n✔ Raison sociale : AMINA SARL\n✔ ICE : 002345678901234\n✔ IF : 12345678\n✔ Exercice : 01/01 → 31/12\n✔ Devise : MAD\n✔ Journaux créés : Achats, Ventes, Banque\n\n👉 Résultat :\nSystème prêt à utiliser\n\n\n💼 Exemple erreur\n\nICE incorrect →\n❌ déclaration rejetée\n❌ problème fiscal\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Citez 3 informations obligatoires pour créer un dossier\n\n\n2. Si la date d’exercice est incorrecte\n👉 Quel problème ?\n\n\n3. Pourquoi le plan comptable est important ?",
+
+      "reponses": "1 → Raison sociale, IF, ICE\n2 → Comptabilité fausse ❌\n3 → Base de tous les comptes ✔",
+
+      "resume": "📌 Résumé FINAL\n\n- Le dossier comptable = base du travail\n- Doit être créé avant toute opération\n\n👉 Étapes :\nIdentification → Exercice → Plan Comptable → Journaux\n\n🔥 Un bon départ = une comptabilité parfaite"
+    },
+
+    "en": {
+      "objectif": "Master the creation of a real accounting file in professional software.",
+
+      "explication": "🔷 An accounting file is the company's digital identity.\n\n🔷 Steps:\n- Enter company info (Name, Tax ID, ICE)\n- Set fiscal year\n- Import chart of accounts\n- Create journals\n\n🔷 Important:\nErrors here affect the entire accounting system\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Company setup with correct ICE and fiscal year ensures proper accounting",
+
+      "pratique": "1. Required info?\n2. Wrong fiscal date?\n3. Why chart important?",
+
+      "reponses": "1 → Name, Tax ID, ICE\n2 → Errors in accounting\n3 → Base of accounts",
+
+      "resume": "A correct setup ensures accurate accounting."
+    },
+
+    "ar": {
+      "objectif": "إتقان إنشاء ملف محاسبي حقيقي باستخدام برنامج محاسبي.",
+
+      "explication": "🔷 الملف المحاسبي هو الهوية الرقمية للشركة.\n\n🔷 الخطوات:\n- إدخال معلومات الشركة\n- تحديد السنة المالية\n- تحميل المخطط المحاسبي\n- إنشاء الدفاتر\n\n🔷 مهم:\nأي خطأ هنا يؤثر على كل المحاسبة\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "إدخال ICE صحيح يضمن قبول التصريحات",
+
+      "pratique": "1. معلومات ضرورية؟\n2. تاريخ خاطئ؟\n3. أهمية المخطط؟",
+
+      "reponses": "1 → الاسم، الضريبة، ICE\n2 → أخطاء\n3 → أساس الحسابات",
+
+      "resume": "البداية الصحيحة = محاسبة صحيحة."
+    }
+  }
+}

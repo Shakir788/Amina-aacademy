@@ -1,0 +1,340 @@
+/* =========================================================
+   AMINA ACADÉMIE - PREMIUM ACCOUNTING & FINTECH THEME
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* 💼 Professional Finance Palette */
+    --primary: #0F766E;       /* Deep Teal / Trust Green */
+    --primary-hover: #115E59; /* Darker Teal */
+    --secondary: #1E293B;     /* Corporate Navy */
+    --bg-main: #F1F5F9;       /* Light Slate / Clean Desk background */
+    --card-bg: #FFFFFF;       /* Crisp White Paper */
+    --text-dark: #0F172A;     /* Pure Dark for high readability */
+    --text-muted: #64748B;    /* Professional Gray */
+    --border-color: #CBD5E1;
+    --accent-gold: #D97706;   /* Subtle Premium Accent */
+}
+
+/* --- Base Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    color: var(--secondary);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* --- 🧭 Navbar (Clean Corporate) --- */
+nav {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondary);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--primary); /* Teal Accent in Logo */
+}
+
+/* --- 📝 Authentication Cards (Login & Register) --- */
+.container {
+    padding: 0 20px;
+}
+
+.auth-card {
+    max-width: 440px;
+    margin: 60px auto;
+    padding: 40px;
+    background: var(--card-bg);
+    border-radius: 12px; /* Professional slight curve, not too round */
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+.auth-card h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: var(--secondary);
+}
+
+/* --- Form Fields (High Trust, Clean) --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--text-dark);
+    transition: 0.2s all ease;
+    background: #FFFFFF;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15); /* Soft Teal Glow */
+}
+
+.form-group input::placeholder {
+    color: #94A3B8;
+}
+
+/* --- 🚀 Professional Buttons --- */
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s all ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(15, 118, 110, 0.2);
+}
+
+/* Link Styling */
+a {
+    color: var(--primary);
+    transition: 0.2s;
+}
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* =========================================================
+   DASHBOARD VIP STYLES (With Images)
+   ========================================================= */
+
+/* The Premium Banner with Blended Image Background */
+.welcome-banner {
+    background: linear-gradient(to right, #0F172A 30%, rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    padding: 50px 40px;
+    color: white;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+    border-top: 4px solid var(--accent-gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2; /* Keeps text above the image */
+    max-width: 600px;
+}
+
+.gold-subtitle {
+    color: var(--accent-gold);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.welcome-banner h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.welcome-banner p {
+    color: #CBD5E1;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.banner-stats {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Lesson Cards with Images --- */
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.lesson-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Remove default card padding */
+    overflow: hidden; /* Keeps image inside rounded corners */
+}
+
+.card-img {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+.card-img .badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+.card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.lesson-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.lesson-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--secondary);
+}
+
+.lesson-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Status Badges */
+.badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-success { background: #10B981; color: white; }
+.badge-locked { background: rgba(30, 41, 59, 0.8); color: white; backdrop-filter: blur(4px); }
+
+/* Card Hover States */
+.active-lesson { border: 1px solid var(--border-color); }
+.active-lesson:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.locked-lesson .card-img { filter: grayscale(100%); opacity: 0.7; }
+.locked-lesson .card-content { background: #F8FAFC; }
+.btn-disabled { background: #E2E8F0; color: #94A3B8; width: 100%; cursor: not-allowed; }
+/* =========================================================
+   DASHBOARD HOVER EFFECTS (The Real Magic 🎨)
+   ========================================================= */
+
+/* --- Default State (Black & White & Slightly Faded) --- */
+.lesson-card .card-img {
+    filter: grayscale(100%) contrast(120%);
+    opacity: 0.85;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Ultra smooth transition */
+    transform: scale(1); /* Base scale */
+}
+
+/* --- Hover State (Full Color, Full Opacity & Slight Zoom) --- */
+.lesson-card:hover .card-img {
+    filter: grayscale(0%) contrast(100%);
+    opacity: 1;
+    transform: scale(1.05); 
+}
+
+.locked-lesson .card-img {
+    filter: grayscale(100%) opacity(0.5) !important; 
+    transform: scale(1) !important; 
+}
+
+.lesson-card {
+    overflow: hidden; 
+}

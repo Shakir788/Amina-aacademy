@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" id="pageLang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon <%= lessonId %> - AMINA Académie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Poster Canvas Background --- */
+        body {
+            background: linear-gradient(135deg, #eef2f7 0%, #d1d9e6 100%);
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            min-height: 100vh;
+        }
+
+        /* --- Elegant Navbar --- */
+        nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+        .logo { font-size: 20px; font-weight: 800; text-decoration: none; color: #0f172a; }
+        .logo span { color: #4f46e5; }
+
+        /* --- THE PREMIUM HEADER --- */
+        .poster-header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        
+        .lesson-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #1e3a8a; 
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #0f172a;
+            margin: 0 auto;
+            max-width: 900px;
+            line-height: 1.2;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05); 
+        }
+        
+        .ornament {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .ornament::before, .ornament::after {
+            content: '';
+            height: 2px;
+            width: 50px;
+            background: #d97706; 
+        }
+        .ornament span {
+            color: #d97706;
+            font-size: 18px;
+            line-height: 0;
+        }
+
+        /* --- Hero Image Restored --- */
+        .hero-img-container {
+            max-width: 850px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+        .hero-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 4px solid white; 
+        }
+
+        /* --- The Infographic Content Grid --- */
+        .poster-grid {
+            max-width: 850px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+            display: grid;
+            gap: 25px;
+        }
+
+        .info-card {
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card-ribbon {
+            padding: 12px 25px;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* 🚀 TEXT TYPOGRAPHY */
+        .card-body {
+            padding: 30px 35px;
+            font-size: 17px;
+            line-height: 2; 
+            color: #334155;
+            letter-spacing: 0.3px;
+        }
+        .card-body b { color: #0f172a; font-weight: 700; }
+
+        /* 🚀 FORMATTING CLASSES */
+        .premium-heading {
+            font-family: 'Playfair Display', serif;
+            color: #1e3a8a;
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 10px;
+            display: block;
+        }
+        .premium-bullet { color: #3b82f6; margin-right: 8px; font-size: 1.1em; }
+        .premium-note {
+            background: #fef3c7; border-left: 4px solid #f59e0b; padding: 12px 20px;
+            margin: 20px 0; border-radius: 0 8px 8px 0; display: block; color: #92400e;
+        }
+        .premium-list-item { display: block; margin-left: 25px; margin-bottom: 10px; position: relative; }
+        .premium-list-item::before {
+            content: '•'; color: #d97706; position: absolute; left: -18px; font-size: 22px; line-height: 1;
+        }
+
+        /* 🚀 NEW: INTERACTIVE PRACTICE ZONE CSS */
+        .practice-widget {
+            margin-top: 30px;
+            padding: 25px;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+        }
+        .practice-input {
+            width: 100%; padding: 15px; margin: 15px 0;
+            border: 2px solid #cbd5e1; border-radius: 8px;
+            font-size: 18px; font-family: 'Inter', sans-serif;
+            transition: 0.3s; box-sizing: border-box;
+        }
+        .practice-input:focus { border-color: #3b82f6; outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.2); }
+        .practice-btn {
+            background: #0f172a; color: white; border: none;
+            padding: 15px 30px; border-radius: 8px; font-size: 16px;
+            font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%;
+        }
+        .practice-btn:hover { background: #1e293b; transform: translateY(-2px); }
+        .mcq-option {
+            display: block; margin: 10px 0; padding: 15px;
+            background: white; border: 2px solid #e2e8f0;
+            border-radius: 8px; cursor: pointer; transition: 0.2s; font-weight: 500;
+        }
+        .mcq-option:hover { border-color: #94a3b8; background: #f1f5f9; }
+        .mcq-option input { margin-right: 15px; transform: scale(1.2); }
+        .practice-result { margin-top: 20px; padding: 15px; border-radius: 8px; font-weight: 700; display: none; }
+        .result-success { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; display: block; }
+        .result-error { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; display: block; }
+
+        /* --- Section Specific Colors --- */
+        .theme-blue .card-ribbon { background: linear-gradient(to right, #1e3a8a, #3b82f6); }
+        .theme-teal { background: #f0fdfa; }
+        .theme-teal .card-ribbon { background: linear-gradient(to right, #0f766e, #14b8a6); }
+        .theme-gold { background: #fffbeb; }
+        .theme-gold .card-ribbon { background: linear-gradient(to right, #b45309, #f59e0b); }
+        .theme-dark { background: #1e3a8a; color: white; }
+        .theme-dark .card-ribbon { background: linear-gradient(to right, #d97706, #fbbf24); color: #000; }
+        .theme-dark .card-body { color: #e2e8f0; }
+        .theme-dark .card-body b { color: #fbbf24; }
+
+        /* --- Controls --- */
+        .btn-lang {
+            border: none; background: white; padding: 6px 15px; border-radius: 50px;
+            font-weight: 700; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: #1e3a8a; transition: 0.3s;
+        }
+        .btn-lang.active { background: #1e3a8a; color: white; }
+
+        /* --- Finish Button --- */
+        .action-area { text-align: center; margin-top: 20px; }
+        .btn-complete {
+            background: linear-gradient(to right, #d97706, #f59e0b); color: white; border: none;
+            padding: 18px 50px; font-size: 18px; font-weight: 700; border-radius: 50px;
+            cursor: pointer; box-shadow: 0 5px 20px rgba(217, 119, 6, 0.4); transition: 0.3s;
+        }
+        .btn-complete:hover { transform: scale(1.05); }
+
+        /* RTL Support */
+        [dir="rtl"] .poster-grid, [dir="rtl"] .card-body { text-align: right; }
+        [dir="rtl"] .card-ribbon { flex-direction: row-reverse; }
+        [dir="rtl"] .premium-note { border-left: none; border-right: 4px solid #f59e0b; border-radius: 8px 0 0 8px; }
+        [dir="rtl"] .premium-list-item { margin-left: 0; margin-right: 25px; }
+        [dir="rtl"] .premium-list-item::before { left: auto; right: -18px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/dashboard" class="logo">AMINA <span>Académie</span></a>
+        <div style="display:flex; gap:10px;">
+            <button class="btn-lang active" onclick="switchLang('fr', 'ltr', this)">FR</button>
+            <button class="btn-lang" onclick="switchLang('en', 'ltr', this)">EN</button>
+            <button class="btn-lang" onclick="switchLang('ar', 'rtl', this)">AR</button>
+        </div>
+    </nav>
+
+    <div class="poster-header">
+        <div class="lesson-tag">Leçon <%= lessonId %></div>
+        <h1 class="main-title" id="lessonTitle"><%= lesson.title.fr %></h1>
+        <div class="ornament">
+            <span>◈</span>
+        </div>
+    </div>
+
+    <div class="hero-img-container">
+        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200" id="lessonImg" class="hero-img" alt="Cover">
+    </div>
+
+    <div class="poster-grid">
+
+        <div class="info-card theme-blue">
+            <div class="card-ribbon">🎯 <span id="lbl-obj">Objectif</span></div>
+            <div class="card-body" id="txt-obj"></div>
+        </div>
+
+        <div class="info-card theme-blue">
+            <div class="card-ribbon">📖 <span id="lbl-exp">Explication</span></div>
+            <div class="card-body" id="txt-exp"></div>
+        </div>
+
+        <div class="info-card theme-teal">
+            <div class="card-ribbon">💼 <span id="lbl-exm">Exemple</span></div>
+            <div class="card-body" id="txt-exm"></div>
+        </div>
+
+        <div class="info-card theme-gold">
+            <div class="card-ribbon">✍️ <span id="lbl-pra">Tâche Pratique</span></div>
+            <div class="card-body">
+                <div id="txt-pra"></div>
+                <div id="dynamic-practice-zone"></div>
+            </div>
+        </div>
+
+        <div class="info-card theme-dark">
+            <div class="card-ribbon">📌 <span id="lbl-res">Résumé</span></div>
+            <div class="card-body" id="txt-res"></div>
+        </div>
+
+        <div class="action-area">
+            <button class="btn-complete" id="btn-complete" onclick="markComplete('<%= lessonId %>')">
+                ✅ Marquer comme terminé
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        const lessonData = JSON.parse('<%- JSON.stringify(lesson).replace(/\\/g, "\\\\").replace(/\'/g, "\\\'") %>');
+
+        const labels = {
+            fr: { obj: "Objectif", exp: "Explication", exm: "Exemple", pra: "Tâche Pratique", res: "Résumé", btn: "✅ Marquer comme terminé" },
+            en: { obj: "Objective", exp: "Explanation", exm: "Case Study", pra: "Practice Task", res: "Summary", btn: "✅ Mark as Completed" },
+            ar: { obj: "الهدف", exp: "الشرح", exm: "مثال", pra: "تطبيق عملي", res: "ملخص", btn: "✅ تحديد كمكتمل" }
+        };
+
+        function format(text) {
+            if (!text) return "";
+            let html = text;
+            html = html.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+            html = html.replace(/🔹\s*(\d+\..*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-heading"><span class="premium-bullet">🔹</span> $1</span>');
+            html = html.replace(/🔹/g, '<br><br><span class="premium-bullet">🔹</span>');
+            html = html.replace(/👍\s*(.*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-note"><b>💡 Note :</b> $1</span>');
+            html = html.replace(/-\s+(.*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-list-item">$1</span>');
+            html = html.replace(/❌/g, '<br><span style="color: #ef4444; font-weight: bold; margin-right: 8px;">❌</span>');
+            html = html.replace(/✓/g, '<br><span style="color: #10b981; font-weight: bold; margin-right: 8px;">✅</span>');
+            html = html.replace(/\n/g, '<br>');
+            return html;
+        }
+
+        // 🚀 THE WIDGET ENGINE
+        function renderPracticeZone() {
+            const container = document.getElementById('dynamic-practice-zone');
+            const pz = lessonData.practice_zone;
+            
+            // Agar practice zone khali hai ya JSON mein nahi hai toh kuch mat draw karo
+            if (!pz || !pz.type || Object.keys(pz).length === 0) {
+                container.innerHTML = '';
+                return;
+            }
+
+            let html = `<div class="practice-widget">`;
+            if (pz.question) {
+                html += `<h4 class="premium-heading" style="margin-top:0;">🎯 Challenge :<br><span style="color:#334155; font-size:18px; font-weight:500;">${pz.question}</span></h4>`;
+            }
+
+            // Engine Logic: Check Type and Draw Tool
+            if (pz.type === 'mcq' || pz.type === 'brand_audit' || pz.type === 'commitment') {
+                pz.options.forEach((opt, index) => {
+                    html += `
+                        <label class="mcq-option">
+                            <input type="radio" name="pz_radio" value="${opt}">
+                            ${opt}
+                        </label>
+                    `;
+                });
+                html += `<button class="practice-btn" onclick="checkAnswer('radio')">Vérifier la réponse</button>`;
+            } 
+            else if (pz.type === 'fifo_calculator' || pz.type === 'tva_calculator' || pz.type === 'input') {
+                html += `<input type="number" id="pz_input" class="practice-input" placeholder="Entrez votre réponse en chiffres...">`;
+                html += `<button class="practice-btn" onclick="checkAnswer('input')">Calculer & Vérifier</button>`;
+            }
+
+            html += `<div id="pz_result" class="practice-result"></div>`;
+            html += `</div>`;
+            
+            container.innerHTML = html;
+        }
+
+        // 🚀 THE WIDGET VALIDATOR
+        window.checkAnswer = function(inputType) {
+            const pz = lessonData.practice_zone;
+            const resultDiv = document.getElementById('pz_result');
+            let userAnswer = "";
+
+            if (inputType === 'radio') {
+                const selected = document.querySelector('input[name="pz_radio"]:checked');
+                if(!selected) {
+                    resultDiv.className = 'practice-result result-error';
+                    resultDiv.innerHTML = '⚠️ Veuillez sélectionner une option avant de vérifier.';
+                    return;
+                }
+                userAnswer = selected.value;
+            } else if (inputType === 'input') {
+                userAnswer = document.getElementById('pz_input').value;
+                if(!userAnswer) {
+                    resultDiv.className = 'practice-result result-error';
+                    resultDiv.innerHTML = '⚠️ Veuillez entrer une valeur numérique.';
+                    return;
+                }
+            }
+
+            // Match Logic
+            if (userAnswer.toString().trim() === pz.correct_answer.toString().trim()) {
+                resultDiv.className = 'practice-result result-success';
+                resultDiv.innerHTML = '🎉 Excellent ! Votre réponse est parfaitement correcte.';
+            } else {
+                resultDiv.className = 'practice-result result-error';
+                resultDiv.innerHTML = '❌ Incorrect. Relisez le cours et essayez encore !';
+            }
+        };
+
+        function switchLang(lang, dir, btnElement = null) {
+            document.documentElement.setAttribute('dir', dir);
+            const content = lessonData.content[lang] || lessonData.content.fr;
+            const l = labels[lang];
+
+            if(btnElement) {
+                document.querySelectorAll('.btn-lang').forEach(btn => btn.classList.remove('active'));
+                btnElement.classList.add('active');
+            }
+
+            document.getElementById('lessonTitle').innerText = lessonData.title[lang] || lessonData.title.fr;
+            document.getElementById('lbl-obj').innerText = l.obj;
+            document.getElementById('lbl-exp').innerText = l.exp;
+            document.getElementById('lbl-exm').innerText = l.exm;
+            document.getElementById('lbl-pra').innerText = l.pra;
+            document.getElementById('lbl-res').innerText = l.res;
+            document.getElementById('btn-complete').innerText = l.btn;
+
+            document.getElementById('txt-obj').innerHTML = format(content.objectif);
+            document.getElementById('txt-exp').innerHTML = format(content.explication);
+            document.getElementById('txt-exm').innerHTML = format(content.exemple);
+            document.getElementById('txt-pra').innerHTML = format(content.pratique);
+            document.getElementById('txt-res').innerHTML = format(content.resume);
+
+            const img = document.getElementById('lessonImg');
+            img.src = content.imageUrl || "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200";
+        }
+
+        window.onload = () => {
+            switchLang('fr', 'ltr', document.querySelector('.btn-lang.active'));
+            renderPracticeZone(); // 🚀 TRIGGER THE ENGINE ON LOAD
+        };
+
+        async function markComplete(id) {
+            const btn = document.getElementById('btn-complete');
+            const originalText = btn.innerText;
+            
+            btn.innerHTML = '⏳ Validation...';
+            btn.style.opacity = '0.8';
+            btn.style.pointerEvents = 'none'; 
+
+            try {
+                const res = await fetch('/api/progress/complete', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ lessonId: parseInt(id) }) 
+                });
+                
+                if (res.ok) {
+                    btn.innerHTML = '🎉 Terminé !';
+                    btn.style.background = '#10B981'; 
+                    setTimeout(() => {
+                        window.location.href = '/dashboard?t=' + new Date().getTime();
+                    }, 500);
+                } else {
+                    const data = await res.json();
+                    alert("Erreur du backend: " + (data.message || "Impossible de sauvegarder"));
+                    btn.innerHTML = originalText;
+                    btn.style.opacity = '1';
+                    btn.style.pointerEvents = 'auto';
+                }
+            } catch (error) {
+                console.error("Error updating progress:", error);
+                alert("Erreur de connexion. Vérifiez votre backend !");
+                btn.innerHTML = originalText;
+                btn.style.opacity = '1';
+                btn.style.pointerEvents = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "id": 28,
+  "title": {
+    "fr": "Projet Client Réel (Freelance Pro Max)",
+    "en": "Real Client Project (Freelancer Pro Max)",
+    "ar": "مشروع عميل حقيقي (مستوى العمل الحر المتقدم)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser un projet client réel avec collecte de données, traitement comptable, communication et génération de revenus.",
+
+      "explication": "🔹 1. Situation réelle\nClient : Boutique vêtements\n\nProblèmes:\n- Données non organisées\n- Cash confus\n- Aucun suivi\n\n\n🔹 2. Workflow freelance\n\nÉtape 1: Collecte données\n- Factures\n- Reçus\n- WhatsApp / Excel\n\nÉtape 2: Organisation\n- Trier par date\n- Séparer achats / ventes\n\nÉtape 3: Comptabilité\n- Journal\n- Grand Livre\n\nÉtape 4: Résultat\n- Calcul profit\n- TVA\n\nÉtape 5: Analyse\n- Cash\n- Risques\n\nÉtape 6: Conseil\n- Solutions client\n\n\n🔹 3. Cas client\n\nVentes = 120000\nAchats = 70000\nCharges = 30000\nCrédit clients = 40000\n\nRésultat = 20000\n\n\n🔹 4. Analyse\n\n✔ Profit ok\n❌ Cash bloqué\n\nCause = crédit clients élevé\n\n\n🔹 5. Communication client\n\n✔ Expliquer simplement\n✔ Donner solutions\n✔ Être professionnel\n\n\n🔹 6. Pricing freelance\n\nDébutant = 1000\nIntermédiaire = 3000\nExpert = 10000+\n\n\n🔹 7. Problèmes réels\n\n❌ Données manquantes\n❌ Client lent\n❌ Mauvaise info\n\n\n🔹 8. Livrable\n\n✔ Rapport clair\n✔ Résultat\n✔ Recommandation\n\n\n🔹 9. Vision\n\nCompétence = revenu\nClient = opportunité",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Client gagne mais ne comprend pas son cash",
+
+      "pratique": "1. Résultat si ventes 150000 et charges 120000 ?\n2. Pourquoi cash faible ?\n3. Que conseiller ?",
+
+      "reponses": "1 → 30000\n2 → crédit clients\n3 → réduire crédit",
+
+      "resume": "Projet client réel avec workflow complet"
+    },
+
+    "en": {
+      "objectif": "Handle a real freelance client project with full workflow and income system.",
+
+      "explication": "Includes data collection, accounting process, communication and pricing.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Client earns but cash unclear",
+
+      "pratique": "1. Profit?\n2. Why cash issue?\n3. Advice?",
+
+      "reponses": "1 → 30000\n2 → credit\n3 → control",
+
+      "resume": "Freelancer system applied."
+    },
+
+    "ar": {
+      "objectif": "إدارة مشروع عميل حقيقي مع نظام عمل حر كامل.",
+
+      "explication": "يشمل جمع البيانات، المعالجة المحاسبية، التواصل والتسعير.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "العميل يربح لكن لا يفهم النقد",
+
+      "pratique": "1. الربح؟\n2. لماذا المشكلة؟\n3. النصيحة؟",
+
+      "reponses": "1 → 30000\n2 → الائتمان\n3 → التحكم",
+
+      "resume": "تم تطبيق نظام العمل الحر."
+    }
+  },
+  "practice_zone": {}
+}

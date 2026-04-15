@@ -1,0 +1,44 @@
+{
+  "id": 30,
+  "title": {
+    "fr": "Automatisation Complète et Système de Revenus (Niveau Pro Max)",
+    "en": "Complete Automation and Income System (Pro Max Level)",
+    "ar": "الأتمتة الكاملة ونظام الدخل (مستوى احترافي)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Construire un système automatisé complet pour gérer plusieurs clients, gagner du temps et multiplier les revenus sans augmenter la charge de travail.",
+      "explication": "🔹 1. Problème du freelance\nQuand vous travaillez manuellement :\n- Temps limité\n- Fatigue élevée\n- Revenus bloqués\n\n👍 Vous échangez votre temps contre de l'argent.\n\n🔹 2. Solution : Penser en système\n- Ne pas travailler plus\n- Construire un système répétable\n- Automatiser les tâches simples\n\n🔹 3. Architecture du système\nClient → Données → Excel → Calcul automatique → Rapport → Conseil\n\n👍 Chaque étape doit être standardisée.\n\n🔹 4. Collecte des données\n✓ Utiliser Google Form ou message structuré.\n\nExemple de données demandées :\n- Ventes\n- Achats\n- Charges\n- Crédit clients\n\n👍 Plus les données sont propres, plus le travail est rapide.\n\n🔹 5. Organisation intelligente\n✓ Utiliser un modèle Excel fixe.\n✓ Classer automatiquement : Ventes, Achats, Charges.\n\n👍 Gain de temps énorme.\n\n🔹 6. Automatisation Excel (Cœur du système)\n✓ Profit calculé automatiquement.\n✓ TVA calculée automatiquement.\n✓ Résultat final instantané.\n\n👍 Vous ne calculez plus manuellement.\n\n🔹 7. Rapport automatique\n✓ Format fixe prêt.\n✓ Copier-coller rapide.\n✓ Même structure pour tous les clients.\n\n👍 1 clic = rapport prêt.\n\n🔹 8. Gestion des clients (Mini CRM)\n✓ Liste clients\n✓ Paiements reçus\n✓ Travail en attente\n\n👍 Vous contrôlez tout votre business.\n\n🔹 9. Gestion du temps\nAvant : 3 heures par client\nAprès système : 1 heure par client\n\n👍 Vous pouvez gérer 3× plus de clients.\n\n🔹 10. Scaling du business\n- 1 client → manuel\n- 5 clients → organisation\n- 10 clients → système obligatoire\n\n❌ Sans système = chaos.\n\n🔹 11. Construction d'équipe\n✓ Assistant pour saisie\n✓ Vous = analyse et décision\n\n👍 Vous devenez manager.\n\n🔹 12. Résultat financier\nPlus de clients + moins de temps = plus de revenus.\n\nExemple :\n- 10 clients × 1000 DHS = 10000 DHS.\n\n🔹 13. Passage au niveau supérieur\n- Travail → système\n- Système → liberté\n- Liberté → croissance",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+      "exemple": "💼 Exemple Réel\nUn freelance passe de 3 clients à 10 clients grâce à l'automatisation. Son temps de travail reste le même, mais ses revenus triplent !",
+      "pratique": "Passez à la Zone de Pratique ci-dessous pour tester votre compréhension.",
+      "resume": "📌 Résumé FINAL\n\n- Ne travaillez pas plus dur, travaillez plus intelligemment.\n- Automatisez la collecte et le calcul avec Excel.\n👍 Créer un système automatisé permet de multiplier les revenus sans augmenter le travail."
+    },
+    "en": {
+      "objectif": "Build a complete automated system to scale income without increasing workload.",
+      "explication": "🔹 Includes system thinking, Excel automation, workflow standardization and scaling.\n\n👍 Time saved is money earned.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+      "exemple": "Going from 3 clients to 10 clients using automation.",
+      "pratique": "Proceed to the Practice Zone below.",
+      "resume": "Automation system to scale business."
+    },
+    "ar": {
+      "objectif": "بناء نظام مؤتمت لزيادة الدخل دون زيادة العمل.",
+      "explication": "🔹 يشمل التفكير بالنظام، الأتمتة، وتنظيم العمل والتوسع.\n\n👍 الوقت الذي توفره هو مال تكسبه.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+      "exemple": "الانتقال من 3 عملاء إلى 10 عملاء بفضل الأتمتة.",
+      "pratique": "انتقل إلى منطقة التدريب أدناه.",
+      "resume": "نظام أتمتة لتوسيع العمل."
+    }
+  },
+  "practice_zone": {
+    "type": "mcq",
+    "question": "Quel est le résultat direct de la mise en place d'un système automatisé (Excel, CRM) pour un freelance ?",
+    "options": [
+      "Travailler plus d'heures pour gagner plus",
+      "Gérer 3x plus de clients avec le même temps de travail",
+      "Faire les calculs de TVA manuellement"
+    ],
+    "correct_answer": "Gérer 3x plus de clients avec le même temps de travail"
+  }
+}

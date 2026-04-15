@@ -1,0 +1,57 @@
+{
+  "id": 10,
+  "title": {
+    "fr": "L'Organisation Comptable : Le Workflow Complet",
+    "en": "Accounting Organization: The Full Workflow",
+    "ar": "التنظيم المحاسبي: سير العمل الكامل"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre en profondeur le cycle comptable complet et maîtriser le workflow réel utilisé dans une entreprise.",
+
+      "explication": "🔷 1. Pourquoi l’organisation est essentielle ?\n\nLa comptabilité n’est pas seulement des chiffres.\n\n👉 C’est un système organisé.\n\n👉 Sans organisation :\n❌ pertes de documents\n❌ erreurs fiscales\n❌ problèmes avec l’État\n\n\n🔷 2. Le cycle comptable complet\n\nChaque information suit un chemin précis.\n\n👉 C’est comme une chaîne :\nSi une étape est fausse → tout est faux\n\n\n🔷 3. Étape 1 : Pièces justificatives (LA BASE)\n\n👉 Ce sont les preuves :\n- Factures\n- Reçus\n- Bons\n- Chèques\n\n👉 Règle :\nPas de justificatif = pas d’écriture\n\n\n🔷 4. Étape 2 : Le Journal\n\n👉 Enregistrement chronologique\n\n👉 Chaque opération est écrite avec :\n- Date\n- Comptes\n- Débit / Crédit\n\n\n🔷 5. Étape 3 : Le Grand Livre\n\n👉 Classement par compte\n\n👉 Permet de voir chaque compte séparément\n\n\n🔷 6. Étape 4 : La Balance\n\n👉 Vérification\n\n👉 Débit = Crédit\n\n👉 Détection des erreurs\n\n\n🔷 7. Étape 5 : États de synthèse\n\n👉 Bilan (situation)\n👉 CPC (résultat)\n\n👉 C’est le résultat final\n\n\n🔷 8. Vision globale (TRÈS IMPORTANT)\n\nJustificatif → Journal → Grand Livre → Balance → Bilan & CPC\n\n👉 C’est le workflow réel en entreprise\n\n\n🔷 9. Exemple réel (TRÈS IMPORTANT)\n\nTu achètes un produit :\n\n1. Tu reçois la facture\n2. Tu l’enregistres au Journal\n3. Elle va au Grand Livre\n4. Elle apparaît dans la Balance\n5. Elle impacte le CPC et le Bilan\n\n\n🔷 10. Erreurs des débutants\n\n❌ Ignorer les justificatifs\n\n❌ Sauter des étapes\n\n❌ Mauvaise organisation des documents\n\n❌ Retard dans la saisie\n\n\n🔷 11. Vision professionnelle\n\n👉 Une bonne organisation =\n✔ moins d’erreurs\n✔ gain de temps\n✔ sécurité fiscale\n\n👉 Un bon comptable = organisé\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet réel\n\nChez AMINA :\n\n1. Chaque ticket est gardé\n2. Classé par date\n3. Enregistré le lendemain\n4. Vérifié à la fin du mois\n\n👉 Résultat :\n✔ Comptabilité propre\n✔ Aucun document perdu\n\n\n💼 Exemple erreur\n\nFacture oubliée →\n❌ pas dans le Journal\n❌ pas dans le Grand Livre\n❌ Balance fausse\n\n👉 Résultat final incorrect\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Une facture est perdue\n👉 Problème ?\n\n\n2. Une opération non enregistrée\n👉 Impact ?\n\n\n3. Si Journal faux\n👉 Le reste sera ?\n\n\n💡 Réfléchis au workflow complet",
+
+      "reponses": "1 → Comptabilité incomplète ❌\n2 → Résultat faux ❌\n3 → Tout sera faux ❌",
+
+      "resume": "📌 Résumé FINAL\n\n- Comptabilité = système organisé\n- Chaque étape dépend de la précédente\n\n👉 Workflow :\nJustificatif → Journal → Grand Livre → Balance → Bilan & CPC\n\n🔥 Organisation = clé du succès en comptabilité"
+    },
+
+    "en": {
+      "objectif": "Understand the full accounting workflow used in real businesses.",
+
+      "explication": "🔷 Accounting is a structured system.\n\n🔷 Workflow:\nSource Docs → Journal → Ledger → Trial Balance → Financial Statements\n\n🔷 Each step depends on the previous one.\n\n🔷 Without organization:\n- Errors\n- Missing data\n- Financial problems\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Invoice → Journal → Ledger → Balance → Reports",
+
+      "pratique": "1. Missing invoice → ?\n2. Not recorded → ?\n3. Wrong Journal → ?",
+
+      "reponses": "1 → Incomplete\n2 → Wrong result\n3 → All wrong",
+
+      "resume": "Accounting workflow must be respected."
+    },
+
+    "ar": {
+      "objectif": "فهم دورة العمل المحاسبية الكاملة المستخدمة في الشركات.",
+
+      "explication": "🔷 المحاسبة نظام منظم.\n\n🔷 المسار:\nالوثائق → اليومية → الأستاذ → الميزان → القوائم\n\n🔷 كل مرحلة تعتمد على السابقة\n\n🔷 بدون تنظيم:\n- أخطاء\n- نقص بيانات\n\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "فاتورة → يومية → أستاذ → ميزان → تقارير",
+
+      "pratique": "1. فقدان فاتورة → ؟\n2. عدم تسجيل → ؟\n3. خطأ في اليومية → ؟",
+
+      "reponses": "1 → نقص\n2 → نتيجة خاطئة\n3 → كل شيء خاطئ",
+
+      "resume": "التنظيم هو أساس المحاسبة."
+    }
+  }
+}

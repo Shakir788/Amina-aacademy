@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <title>Tableau de Bord - AMINA Académie</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Card Hover Effects --- */
+        .lesson-card .card-img {
+            filter: grayscale(100%);
+            transition: all 0.4s ease-in-out; 
+            transform: scale(1);
+        }
+        .lesson-card:hover .card-img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+        .locked-lesson .card-img,
+        .locked-lesson:hover .card-img {
+            filter: grayscale(100%) opacity(0.6) !important;
+            transform: scale(1) !important; 
+        }
+        .lesson-card { overflow: hidden; }
+
+        /* 🎬 NETFLIX STYLE CAROUSEL CSS */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .lesson-grid {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 24px;
+            /* 👇 OVERLAP FIX: Padding 60px added here */
+            padding: 20px 60px 40px;
+            width: 100%;
+            scrollbar-width: none; /* Firefox */
+        }
+        .lesson-grid::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+        
+        /* Card ko shrink hone se roko */
+        .lesson-card {
+            flex: 0 0 320px; 
+            max-width: 320px;
+        }
+
+        /* 🎬 Left / Right Arrows */
+        .scroll-btn {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #e2e8f0;
+            color: #0f172a;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .scroll-btn:hover {
+            background: #1e3a8a;
+            color: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+        /* 👇 OVERLAP FIX: Arrows adjusted to the edge */
+        .scroll-btn.left { left: 0px; }
+        .scroll-btn.right { right: 0px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">AMINA <span>Académie</span></a>
+        <div>
+            <span style="font-weight: 600; margin-right: 20px; color: var(--secondary);">👨‍💼 <%= user.name %></span>
+            <a href="/api/auth/logout" class="btn btn-outline" style="padding: 8px 16px; font-size: 13px;">Déconnexion</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 40px; margin-bottom: 80px;">
+        
+        <div class="welcome-banner">
+            <div class="banner-content">
+                <span class="gold-subtitle">Guide d'apprentissage</span>
+                <h1>Comptabilité Complète</h1>
+                <p>Bienvenue, <strong><%= user.name %></strong> ! Voici votre programme professionnel en comptabilité, paie et fiscalité.</p>
+                
+                <div class="banner-stats">
+                    <div class="stat"><span class="icon">📅</span> 6 - 8 semaines</div>
+                    <div class="stat"><span class="icon">📚</span> 40 leçons pratiques</div>
+                    <div class="stat"><span class="icon">✅</span> Certificat Garanti</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2>Vos Leçons (Programme)</h2>
+            <p>Suivez le parcours de débutant à avancé.</p>
+        </div>
+
+        <div class="carousel-container">
+            
+            <button class="scroll-btn left" onclick="scrollGrid('left')">❮</button>
+            
+            <div class="lesson-grid" id="lessonGrid">
+                <% if (typeof lessons !== 'undefined' && lessons.length > 0) { %>
+                    
+                    <% 
+                    // 🚀 40 Premium Images Array (Declared once before the loop for speed)
+                    const premiumImages = [
+                        'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop', // 01
+                        'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?q=80&w=800&auto=format&fit=crop', // 02
+                        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop', // 03
+                        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop', // 04
+                        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop', // 05
+                        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop', // 06
+                        'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop', // 07
+                        'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop', // 08
+                        'https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=800&auto=format&fit=crop', // 09
+                        'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=800&auto=format&fit=crop', // 10
+                        'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop', // 11
+                        'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop', // 12
+                        'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=800&auto=format&fit=crop', // 13
+                        'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop', // 14
+                        'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop', // 15
+                        'https://images.unsplash.com/photo-1512408811435-9cd8e8fa132f?q=80&w=800&auto=format&fit=crop', // 16
+                        'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=800&auto=format&fit=crop', // 17
+                        'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=800&auto=format&fit=crop', // 18
+                        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop', // 19
+                        'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=800&auto=format&fit=crop', // 20
+                        'https://images.unsplash.com/photo-1450101499163-c8848c66cb85?q=80&w=800&auto=format&fit=crop', // 21
+                        'https://images.unsplash.com/photo-1493612278195-0a30c5e12818?q=80&w=800&auto=format&fit=crop', // 22
+                        'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop', // 23
+                        'https://images.unsplash.com/photo-1518186285589-2244a10dfa69?q=80&w=800&auto=format&fit=crop', // 24
+                        'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop', // 25
+                        'https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?q=80&w=800&auto=format&fit=crop', // 26
+                        'https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=800&auto=format&fit=crop', // 27
+                        'https://images.unsplash.com/photo-1565514020179-026fb07ce2be?q=80&w=800&auto=format&fit=crop', // 28
+                        'https://images.unsplash.com/photo-1578574577315-3f086f815611?q=80&w=800&auto=format&fit=crop', // 29
+                        'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop', // 30
+                        'https://images.unsplash.com/photo-1590283603385-17ffb3a7ad1f?q=80&w=800&auto=format&fit=crop', // 31
+                        'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop', // 32
+                        'https://images.unsplash.com/photo-1620912189855-32e1ea8b3980?q=80&w=800&auto=format&fit=crop', // 33
+                        'https://images.unsplash.com/photo-1642132652075-2b281f6bb7f6?q=80&w=800&auto=format&fit=crop', // 34
+                        'https://images.unsplash.com/photo-1664551105151-507de86121f2?q=80&w=800&auto=format&fit=crop', // 35
+                        'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop', // 36
+                        'https://images.unsplash.com/photo-1432888117247-36e5a4f81014?q=80&w=800&auto=format&fit=crop', // 37
+                        'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop', // 38
+                        'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop', // 39
+                        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop'  // 40
+                    ];
+                    %>
+
+                    <% lessons.forEach(function(lesson) { %>
+                        <% 
+                            // JSON wali image use karo, nahi to premiumImages me se utha lo
+                            const imgUrl = lesson.imageUrl ? lesson.imageUrl : premiumImages[(lesson.id - 1) % premiumImages.length];
+                            const formattedNum = lesson.id < 10 ? '0' + lesson.id : lesson.id;
+                        %>
+
+                        <div class="card lesson-card <%= lesson.isUnlocked ? 'active-lesson' : 'locked-lesson' %>">
+                            <div class="card-img" style="background-image: url('<%= imgUrl %>');">
+                                <% if(lesson.isUnlocked) { %>
+                                    <span class="badge badge-success">● Disponible</span>
+                                <% } else { %>
+                                    <span class="badge badge-locked">🔒 Verrouillé</span>
+                                <% } %>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-text">
+                                    <span class="lesson-number"><%= formattedNum %></span>
+                                    <h3 style="font-size: 18px; margin-bottom: 8px; line-height: 1.3;"><%= lesson.title %></h3>
+                                    <p style="font-size: 14px; line-height: 1.5; color: #64748b; margin-bottom: 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;"><%= lesson.description %></p>
+                                </div>
+                                <% if(lesson.isUnlocked) { %>
+                                    <a href="/lesson/<%= lesson.id %>" class="btn btn-primary" style="width: 100%;">Commencer</a>
+                                <% } else { %>
+                                    <button class="btn btn-disabled" disabled style="width: 100%;">Bloqué</button>
+                                <% } %>
+                            </div>
+                        </div>
+
+                    <% }); %>
+                <% } else { %>
+                    <div style="text-align: center; width: 100%; padding: 50px;">
+                        <p style="font-size: 18px; color: #64748b;">Aucune leçon trouvée. Créez vos fichiers JSON dans le dossier 'data'.</p>
+                    </div>
+                <% } %>
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollGrid('right')">❯</button>
+            
+        </div>
+    </div>
+
+    <script>
+        function scrollGrid(direction) {
+            const grid = document.getElementById('lessonGrid');
+            const scrollAmount = 350; // Ek baar me ek card scroll hoga
+            
+            if (direction === 'left') {
+                grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <script>
+        window.addEventListener('pageshow', function (event) {
+            // Agar browser is page ko apni "Back Button History" (cache) se load kar raha hai
+            if (event.persisted) {
+                // Toh zabardasti page ko wapas server se naya load karwa do!
+                window.location.reload(); 
+            }
+        });
+    </script>
+
+</body>
+</html>

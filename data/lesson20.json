@@ -1,0 +1,59 @@
+{
+  "id": 20,
+  "title": {
+    "fr": "Les Écritures de Clôture et la Fin d’Exercice (Système Complet)",
+    "en": "Closing Entries and Year-End Process (Complete System)",
+    "ar": "قيود الإقفال ونهاية السنة المالية (النظام الكامل)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser le processus complet de clôture comptable, comprendre chaque étape et préparer des états financiers corrects.",
+
+      "explication": "🔹 1. C’est quoi la clôture comptable ?\n\nLa clôture = fin de l’exercice comptable.\n\n👉 On arrête les comptes\n👉 On calcule le résultat final\n\n\n🔹 2. Pourquoi faire la clôture ?\n\n👍 Connaître le bénéfice ou la perte\n👍 Préparer les états financiers\n👍 Déclarations fiscales\n\n\n🔹 3. Étapes du processus (TRÈS IMPORTANT)\n\n🔹 Vérification des écritures\n🔹 Rapprochement bancaire\n🔹 Correction des erreurs\n🔹 Calcul des amortissements\n🔹 Calcul du stock final\n\n👉 Ensuite seulement → clôture\n\n\n🔹 4. Calcul du résultat\n\n💥 Résultat = Produits - Charges\n\n👉 Si positif → Bénéfice\n👉 Si négatif → Perte\n\n\n🔹 5. Écritures de clôture\n\n👉 On ferme :\n\n✓ Comptes de charges (Classe 6)\n✓ Comptes de produits (Classe 7)\n\n👉 Transfert vers compte résultat\n\n\n🔹 6. Exemple\n\nCharges = 30000\nProduits = 50000\n\n👉 Résultat = 20000 bénéfice\n\n\n🔹 7. Traitement du résultat\n\n👉 Bénéfice → Capitaux propres\n👉 Perte → diminue capital\n\n\n🔹 8. Bilan final\n\n👉 Actif = Passif\n\n👉 Inclut :\n- Immobilisations\n- Trésorerie\n- Dettes\n- Capitaux\n\n\n🔹 9. CPC final\n\n👉 Montre performance\n👉 Détaille charges et produits\n\n\n🔹 10. Logique globale (VERY IMPORTANT)\n\nCycle complet :\n\n👍 Journal → Grand Livre → Balance → Ajustements → Clôture → Bilan & CPC\n\n\n🔹 11. Erreurs fréquentes\n\n❌ Oublier amortissement\n❌ Mauvais stock final\n❌ Ne pas corriger erreurs\n❌ Clôture sans vérification\n\n\n🔹 12. Vision professionnelle\n\n👍 Clôture = moment critique\n👍 Détermine situation réelle\n\n👉 Comptable sérieux vérifie tout avant\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nProduits = 50000\nCharges = 30000\n\n👉 Résultat = 20000\n\n👉 Bilan équilibré\n\n👉 Comptes fermés correctement\n\n\n💼 Processus réel\n\n1. Vérification\n2. Ajustement\n3. Clôture\n4. Rapport final\n\n👉 Système complet ✔",
+
+      "pratique": "🔹 EXERCICE\n\n1. Produits = 80000\nCharges = 60000\n👉 Résultat ?\n\n2. Pourquoi corriger avant clôture ?\n\n3. Que se passe-t-il si stock faux ?",
+
+      "reponses": "1 → 20000\n2 → Pour éviter erreurs ❌\n3 → Résultat faux ❌",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Clôture = fin du cycle\n✓ Résultat calculé\n✓ Comptes fermés\n\n👍 Clôture = cœur de la comptabilité"
+    },
+
+    "en": {
+      "objectif": "Understand the full closing process and prepare final financial statements.",
+
+      "explication": "🔹 Closing ends the accounting cycle.\n\n🔹 Steps:\n- Verify entries\n- Adjust accounts\n- Calculate profit\n\n🔹 Result = Revenue - Expenses\n\n🔹 Final output:\nBalance Sheet & P&L\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "50000 - 30000 = 20000 profit",
+
+      "pratique": "1. Result?\n2. Why adjust?\n3. Stock error?",
+
+      "reponses": "1 → 20000\n2 → Accuracy\n3 → Wrong result",
+
+      "resume": "Closing finalizes accounting."
+    },
+
+    "ar": {
+      "objectif": "فهم عملية الإقفال الكاملة وإعداد القوائم المالية النهائية.",
+
+      "explication": "🔹 الإقفال هو نهاية الدورة المحاسبية.\n\n🔹 الخطوات:\n- مراجعة القيود\n- التعديلات\n- حساب النتيجة\n\n🔹 النتيجة = الإيرادات - المصاريف\n\n🔹 النتيجة النهائية:\nالميزانية وCPC\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "50000 - 30000 = 20000",
+
+      "pratique": "1. النتيجة؟\n2. لماذا التعديل؟\n3. خطأ المخزون؟",
+
+      "reponses": "1 → 20000\n2 → دقة\n3 → نتيجة خاطئة",
+
+      "resume": "الإقفال ينهي الدورة المحاسبية."
+    }
+  },
+
+  "practice_zone": {}
+}

@@ -1,0 +1,59 @@
+{
+  "id": 36,
+  "title": {
+    "fr": "Domination de l’Agence Comptable (Système Complet)",
+    "en": "Agency Domination System (Full Accounting Business Model)",
+    "ar": "هيمنة نظام الوكالة (نموذج عمل متكامل)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Construire une agence structurée avec système, équipe et contrôle pour scaler les revenus sans dépendre du travail individuel.",
+
+      "explication": "🔹 1. Évolution du modèle\n\nFreelance → Système → Agence → Business\n\n👉 Objectif: ne plus échanger temps contre argent\n\n\n🔹 2. Types d’agence\n\n✔ Solo agency (vous seul + système)\n✔ Small team (1-3 assistants)\n✔ Scaled agency (équipe complète)\n\n\n🔹 3. Structure des rôles\n\n✔ Data entry → saisie\n✔ Comptable → traitement\n✔ Analyste → analyse\n✔ Manager (vous) → décision\n\n👉 Structure claire\n\n\n🔹 4. SOP (Standard Operating Process)\n\n1. Réception données\n2. Saisie\n3. Vérification\n4. Analyse\n5. Rapport\n6. Livraison\n\n👉 Process identique pour tous\n\n\n🔹 5. Recrutement\n\n✔ Commencer avec 1 assistant\n✔ Tester compétences\n✔ Former progressivement\n\n\n🔹 6. Système de formation\n\n✔ Montrer process\n✔ Donner exemples\n✔ Vérifier travail\n\n\n🔹 7. Délégation\n\n✔ Tâches répétitives → équipe\n✔ Décision → vous\n\n👉 Gain de temps\n\n\n🔹 8. Contrôle qualité\n\n✔ Double vérification\n✔ Correction erreurs\n\n👉 Qualité constante\n\n\n🔹 9. Modèle de profit\n\nClient paye = 2000 MAD\nAssistant = 500 MAD\n\n👉 Profit = 1500 MAD\n\n👉 Multiplier clients = multiplier revenus\n\n\n🔹 10. Workflow agence\n\nLead → Closing → Assignation → Travail → Vérification → Livraison\n\n\n🔹 11. Scaling\n\n5 clients → 10 → 20\n\n✔ Ajouter assistants\n✔ Garder contrôle\n\n\n🔹 12. Gestion des risques\n\n❌ Mauvais employé\n❌ Trop de clients\n\n✔ Solution:\n- Formation\n- Limitation\n\n\n🔹 13. Discipline\n\n✔ Process fixe\n✔ Règles strictes\n\n\n🔹 14. CEO mindset\n\n👉 Vous ne faites pas le travail\n👉 Vous contrôlez le système\n\n\n🔹 15. Vision finale\n\n👉 Agence = machine\n👉 Machine = revenus\n👉 Revenus = liberté"
+      ,
+
+      "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Une agence avec 2 assistants peut gérer 20 clients et générer des revenus élevés",
+
+      "pratique": "1. Quelle est la différence entre freelance et agence ?\n2. Que déléguer ?\n3. Comment augmenter les revenus ?",
+
+      "reponses": "1 → système\n2 → tâches répétitives\n3 → plus clients",
+
+      "resume": "Construire une agence scalable et rentable"
+    },
+
+    "en": {
+      "objectif": "Build a scalable agency system with team and structure.",
+
+      "explication": "Includes SOP, team roles, delegation and profit model.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Agency handles multiple clients efficiently",
+
+      "pratique": "1. Difference?\n2. Delegate?\n3. Scale?",
+
+      "reponses": "1 → system\n2 → repetitive tasks\n3 → more clients",
+
+      "resume": "Agency system mastered"
+    },
+
+    "ar": {
+      "objectif": "بناء وكالة قابلة للتوسع باستخدام نظام وفريق.",
+
+      "explication": "يشمل العمليات، الفريق، والربح.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "وكالة تدير عدة عملاء بكفاءة",
+
+      "pratique": "1. الفرق؟\n2. التفويض؟\n3. التوسع؟",
+
+      "reponses": "1 → نظام\n2 → مهام متكررة\n3 → عملاء أكثر",
+
+      "resume": "نظام وكالة متكامل"
+    }
+  },
+  "practice_zone": {}
+}

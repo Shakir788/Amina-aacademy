@@ -1,0 +1,59 @@
+{
+  "id": 16,
+  "title": {
+    "fr": "Règlements : Banque et Caisse",
+    "en": "Payments: Bank and Cash Entries",
+    "ar": "المدفوعات: البنك والصندوق"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser les écritures de règlement des clients et des fournisseurs en banque ou en caisse.",
+
+      "explication": "🔹 1. C’est quoi un règlement ?\n\nUn règlement = paiement reçu ou payé.\n\n👍 Exemple :\n- Client paie → entrée d’argent\n- On paie fournisseur → sortie d’argent\n\n\n🔹 2. Types de règlements\n\n🔹 Banque\n🔹 Caisse\n\n👉 Selon où passe l’argent\n\n\n🔹 3. Règlement client (TRÈS IMPORTANT)\n\nQuand client paie :\n\n✓ Banque / Caisse → Débit\n✓ Client → Crédit\n\n👉 Pourquoi ?\n👍 Argent entre\n❌ Client ne doit plus\n\n\n🔹 4. Exemple client\n\nClient paie 6000 DHS\n\n✓ Débit Banque → 6000\n✓ Crédit Client → 6000\n\n\n🔹 5. Règlement fournisseur\n\nQuand on paie fournisseur :\n\n✓ Fournisseur → Débit\n✓ Banque / Caisse → Crédit\n\n👉 Pourquoi ?\n👍 Dette diminue\n❌ Argent sort\n\n\n🔹 6. Exemple fournisseur\n\nPaiement 3000 DHS\n\n✓ Débit Fournisseur → 3000\n✓ Crédit Banque → 3000\n\n\n🔹 7. Logique simple\n\n👍 Entrée argent = Débit\n👍 Sortie argent = Crédit\n\n\n🔹 8. Erreurs fréquentes\n\n❌ Inverser débit/crédit\n❌ Confondre client et fournisseur\n❌ Oublier journal correct\n\n\n🔹 9. Vision professionnelle\n\n👍 Chaque paiement impacte trésorerie\n👍 Suivi précis = contrôle financier\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nClient paie 6000\n✓ Banque (D) → 6000\n✓ Client (C) → 6000\n\nFournisseur payé 3000\n✓ Fournisseur (D) → 3000\n✓ Banque (C) → 3000",
+
+      "pratique": "🔹 EXERCICE\n\n1. Client paie 2000\n👉 Écriture ?\n\n2. Paiement fournisseur 1500\n👉 Écriture ?\n\n3. Pourquoi banque est débitée ?",
+
+      "reponses": "1 → Banque (D) 2000 / Client (C) 2000\n2 → Fournisseur (D) 1500 / Banque (C) 1500\n3 → Car argent entre 👍",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Client paie → Banque Débit\n✓ Fournisseur payé → Banque Crédit\n\n👍 Comprendre cash flow = essentiel"
+    },
+
+    "en": {
+      "objectif": "Understand how to record payments from customers and to suppliers.",
+
+      "explication": "🔹 Payments involve cash or bank.\n\n✓ Customer payment:\nBank (Debit)\nCustomer (Credit)\n\n✓ Supplier payment:\nSupplier (Debit)\nBank (Credit)\n\n👍 Money in = Debit\n👍 Money out = Credit\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Customer pays → Bank D\nSupplier paid → Bank C",
+
+      "pratique": "1. Customer pays?\n2. Supplier paid?\n3. Why debit bank?",
+
+      "reponses": "1 → Bank D / Customer C\n2 → Supplier D / Bank C\n3 → Money in",
+
+      "resume": "Payments control cash flow."
+    },
+
+    "ar": {
+      "objectif": "فهم تسجيل المدفوعات من العملاء وإلى الموردين.",
+
+      "explication": "🔹 المدفوعات تكون عبر البنك أو الصندوق.\n\n✓ دفع العميل:\nالبنك مدين\nالعميل دائن\n\n✓ دفع المورد:\nالمورد مدين\nالبنك دائن\n\n👍 دخول المال = مدين\n👍 خروج المال = دائن\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "دفع العميل → البنك مدين\nدفع المورد → البنك دائن",
+
+      "pratique": "1. دفع العميل؟\n2. دفع المورد؟\n3. لماذا البنك مدين؟",
+
+      "reponses": "1 → بنك مدين / عميل دائن\n2 → مورد مدين / بنك دائن\n3 → دخول المال",
+
+      "resume": "المدفوعات تتحكم في السيولة."
+    }
+  },
+
+  "practice_zone": {}
+}

@@ -1,0 +1,58 @@
+{
+  "id": 28,
+  "title": {
+    "fr": "Projet Client Réel (Système de Revenus Freelance Avancé)",
+    "en": "Real Client Project (Advanced Freelancer Income System)",
+    "ar": "مشروع عميل حقيقي (نظام دخل العمل الحر المتقدم)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser un projet client réel de A à Z et transformer ses compétences comptables en revenus stables.",
+
+      "explication": "🔹 1. Situation réelle\n\nClient : Boutique de vêtements\n\nProblèmes:\n- Comptabilité désorganisée\n- Cash non suivi\n- Aucun contrôle financier\n\n\n🔹 2. Workflow complet freelance\n\nÉtape 1: Collecte des données\n- Factures\n- Reçus\n- Messages WhatsApp\n- Fichiers Excel\n\nÉtape 2: Organisation\n- Trier par date\n- Classer achats et ventes\n- Vérifier cohérence\n\nÉtape 3: Comptabilité\n- Journal\n- Grand Livre\n- Balance\n\nÉtape 4: Calcul\n- Résultat (profit)\n- TVA\n\nÉtape 5: Analyse\n- Situation cash\n- Risques\n- Erreurs\n\nÉtape 6: Conseil\n- Solutions pratiques\n- Amélioration business\n\n\n🔹 3. Cas client réel\n\nVentes = 120000 MAD\nAchats = 70000 MAD\nCharges = 30000 MAD\nCrédit clients = 40000 MAD\n\nRésultat = 20000 MAD\n\n\n🔹 4. Analyse professionnelle\n\n✔ Profit positif\n❌ Cash bloqué\n\nCause principale:\n👉 Trop de ventes à crédit\n\n\n🔹 5. Communication client (REAL)\n\nClient: \"Je ne comprends pas où va mon argent\"\n\nRéponse:\n\"Votre business génère un profit, mais votre argent est bloqué chez vos clients.\"\n\n\n🔹 6. Packages freelance\n\nBasic = 500 MAD\n- Organisation simple\n\nStandard = 1500 MAD\n- Comptabilité complète\n\nPremium = 5000+ MAD\n- Analyse + conseil stratégique\n\n\n🔹 7. Paiement\n\n✔ Toujours demander avance\n✔ Paiement avant livraison\n✔ Utiliser virement / cash\n\n\n🔹 8. Problèmes réels freelance\n\n❌ Client paie en retard\n❌ Données manquantes\n❌ Client négocie trop\n\nSolutions:\n✔ Fixer règles\n✔ Rester professionnel\n✔ Ne pas travailler gratuitement\n\n\n🔹 9. Livrable client\n\n✔ Résultat clair\n✔ Situation cash\n✔ Recommandations\n\n\n🔹 10. Scaling\n\n1 client = début\n5 clients = revenu stable\n10 clients = business\n\n\n🔹 11. Vision finale\n\n👉 Compétence = revenu\n👉 Client = opportunité\n👉 Système = liberté",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Un freelance avec 5 clients à 1500 MAD gagne 7500 MAD",
+
+      "pratique": "1. Si 4 clients paient 2000 MAD chacun, quel est le revenu total ?\n2. Pourquoi le cash est bloqué ?\n3. Quelle est la meilleure solution pour améliorer le cash ?",
+
+      "reponses": "1 → 8000 MAD\n2 → Crédit clients élevé\n3 → Réduire crédit et améliorer encaissement",
+
+      "resume": "Transformer ses compétences en revenus réels grâce à un système freelance structuré"
+    },
+
+    "en": {
+      "objectif": "Master a real client project and convert accounting skills into income.",
+
+      "explication": "Includes full freelance workflow, communication, pricing and scaling.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "5 clients × 1500 MAD = 7500 MAD",
+
+      "pratique": "1. Total income?\n2. Why cash issue?\n3. Best advice?",
+
+      "reponses": "1 → 8000 MAD\n2 → credit sales\n3 → control receivables",
+
+      "resume": "Freelance income system mastered"
+    },
+
+    "ar": {
+      "objectif": "إتقان مشروع عميل حقيقي وتحويل المهارات إلى دخل.",
+
+      "explication": "يشمل سير العمل الكامل والتواصل والتسعير والتطوير.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "5 عملاء × 1500 درهم = 7500 درهم",
+
+      "pratique": "1. ما هو الدخل الإجمالي؟\n2. لماذا المشكلة في السيولة؟\n3. ما هو الحل الأفضل؟",
+
+      "reponses": "1 → 8000 درهم\n2 → البيع الآجل\n3 → تقليل الائتمان",
+
+      "resume": "نظام دخل كامل من العمل الحر"
+    }
+  },
+  "practice_zone": {}
+}

@@ -1,0 +1,57 @@
+{
+  "id": 6,
+  "title": {
+    "fr": "Le Grand Livre : Les Comptes en T",
+    "en": "The General Ledger: T-Accounts",
+    "ar": "دفتر الأستاذ: حسابات حرف T"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Comprendre en profondeur le rôle du Grand Livre, savoir regrouper les écritures par compte, et calculer correctement le solde débiteur ou créditeur.",
+
+      "explication": "🔷 1. Pourquoi le Grand Livre existe ?\n\nDans le Journal, toutes les opérations sont enregistrées par date.\n\n👉 Mais problème :\nTu ne peux pas voir facilement l’état d’un seul compte.\n\n👉 Solution : Grand Livre\n\n\n🔷 2. Le rôle du Grand Livre\n\n👉 Il regroupe toutes les opérations par compte\n\n💡 Exemple :\n- Toutes les opérations de la caisse ensemble\n- Toutes les opérations de la banque ensemble\n\n👉 Résultat : vision claire de chaque compte\n\n\n🔷 3. Différence Journal vs Grand Livre\n\n👉 Journal = chronologique (par date)\n👉 Grand Livre = par compte\n\n\n🔷 4. Structure en T (TRÈS IMPORTANT)\n\nChaque compte est présenté sous forme de T :\n\nDébit (gauche) | Crédit (droite)\n\n👉 Débit = ce que le compte reçoit\n👉 Crédit = ce que le compte donne\n\n\n🔷 5. Comprendre avec logique\n\n👉 Si argent entre dans un compte → Débit\n👉 Si argent sort → Crédit\n\n\n🔷 6. Calcul du solde\n\n👉 Additionner Débit\n👉 Additionner Crédit\n\n💥 Cas 1 :\nDébit > Crédit → Solde Débiteur (SD)\n\n💥 Cas 2 :\nCrédit > Débit → Solde Créditeur (SC)\n\n\n🔷 7. Pourquoi le solde est important ?\n\n👉 Il montre la situation réelle du compte\n\nExemples :\n- Solde caisse → combien d’argent disponible\n- Solde banque → argent en banque\n\n\n🔷 8. Erreurs des débutants\n\n❌ Mélanger Journal et Grand Livre\n\n❌ Oublier de regrouper par compte\n\n❌ Mauvais calcul du solde\n\n\n🔷 9. Vision professionnelle\n\n👉 Le Grand Livre est la base pour créer la Balance\n👉 Sans Grand Livre → impossible d’analyser les comptes\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nCompte : Caisse (5161)\n\nDébit :\n- Vente 1 → 1000\n- Vente 2 → 2000\n- Vente 3 → 1500\n\nTotal Débit = 4500\n\nCrédit :\n- Paiement fournisseur → 1000\n\nTotal Crédit = 1000\n\n\n👉 Solde = 4500 - 1000 = 3500 DHS (SD)\n\n\n💼 Exemple 2\n\nCompte Banque :\n\nDébit = 5000\nCrédit = 7000\n\n👉 Solde = 2000 SC\n",
+
+      "pratique": "🧠 EXERCICE\n\n1. Compte Caisse :\nDébit = 3000\nCrédit = 1000\n👉 Solde ?\n\n\n2. Compte Banque :\nDébit = 4000\nCrédit = 6000\n👉 Solde ?\n\n\n3. Compte Fournisseur :\nDébit = 2000\nCrédit = 2000\n👉 Solde ?\n\n\n💡 Astuce :\nToujours comparer Débit et Crédit",
+
+      "reponses": "1 → 2000 SD\n2 → 2000 SC\n3 → 0 (compte équilibré)",
+
+      "resume": "📌 Résumé FINAL\n\n- Journal = par date\n- Grand Livre = par compte\n\n👉 Débit = gauche\n👉 Crédit = droite\n\n👉 Solde = différence entre les deux\n\n🔥 Le Grand Livre te montre la vraie situation de chaque compte"
+    },
+
+    "en": {
+      "objectif": "Understand the role of the General Ledger and how to calculate account balances.",
+
+      "explication": "🔷 The Journal records transactions by date.\n\n👉 The General Ledger organizes them by account.\n\n🔷 T-Account format:\nDebit (left) | Credit (right)\n\n👉 Balance:\nDebit > Credit → Debit balance\nCredit > Debit → Credit balance\n\n🔷 Important:\nThe ledger shows the real state of each account\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Debit = 4500\nCredit = 1000\n\nBalance = 3500 Debit",
+
+      "pratique": "1. 3000 / 1000 → ?\n2. 4000 / 6000 → ?\n3. 2000 / 2000 → ?",
+
+      "reponses": "1 → 2000 Debit\n2 → 2000 Credit\n3 → 0",
+
+      "resume": "The Ledger organizes accounts and shows balances."
+    },
+
+    "ar": {
+      "objectif": "فهم دور دفتر الأستاذ وكيفية حساب الرصيد لكل حساب.",
+
+      "explication": "🔷 دفتر اليومية يسجل حسب التاريخ.\n\n👉 دفتر الأستاذ ينظم حسب الحساب.\n\n🔷 حساب T:\nالمدين (يسار) | الدائن (يمين)\n\n👉 الرصيد:\nإذا المدين أكبر → رصيد مدين\nإذا الدائن أكبر → رصيد دائن\n\n🔷 مهم:\nيعطيك الوضع الحقيقي لكل حساب\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "مدين 4500\nدائن 1000\n\nالرصيد = 3500 مدين",
+
+      "pratique": "1. 3000 / 1000 → ؟\n2. 4000 / 6000 → ؟\n3. 2000 / 2000 → ؟",
+
+      "reponses": "1 → 2000 مدين\n2 → 2000 دائن\n3 → 0",
+
+      "resume": "دفتر الأستاذ يوضح حالة كل حساب."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": 27,
+  "title": {
+    "fr": "Simulation Avancée Multi-Situations (Niveau Expert Pro Max)",
+    "en": "Advanced Multi-Situation Simulation (Expert Pro Max Level)",
+    "ar": "محاكاة متقدمة متعددة الحالات (مستوى خبير متقدم)"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Gérer une entreprise dans des conditions réelles complexes avec crédit, fiscalité, crise de trésorerie et décisions stratégiques.",
+
+      "explication": "1. Création\nCapital = 100000\n\nÉcriture:\nBanque Dr 100000\nTo Capital 100000\n\n\n2. Opérations\n- Achat = 40000 (crédit)\n- Vente = 90000 (20% cash, 80% crédit)\n- Paiement client = 30000\n- Loyer = 10000\n- Salaires = 20000\n- Machine = 30000\n- Emprunt = 20000\n- Intérêt = 2000\n\n\n3. Journal\nAchat:\n6111 Dr 40000\n3455 Dr 8000\nFournisseur Cr 48000\n\nVente:\nCaisse Dr 18000\nClients Dr 72000\nVentes Cr 75000\nTVA Cr 15000\n\nPaiement:\nBanque Dr 30000\nClients Cr 30000\n\nCharges:\nCharges Dr 30000\nBanque Cr 30000\n\nMachine:\nImmobilisation Dr 30000\nBanque Cr 30000\n\nEmprunt:\nBanque Dr 20000\nEmprunt Cr 20000\n\nIntérêt:\nCharge Dr 2000\nBanque Cr 2000\n\n\n4. Amortissement\n30000 × 10% = 3000\n\n\n5. Stock\nStock final = 15000\nCOGS = 25000\n\n\n6. Résultat\nProduits = 75000\nCharges = 35000\nCOGS = 25000\nRésultat = 15000\n\n\n7. TVA\nTVA collectée = 15000\nTVA récupérable = 8000\nTVA = 7000\n\n\n8. Cash\nEntrées = 68000\nSorties = 82000\nCash = -14000\n\n\n9. Analyse\nProfit positif mais cash négatif\nRisque élevé",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Profit 15000 mais cash négatif = danger",
+
+      "pratique": "1. TVA collectée 15000, récupérable 8000 ?\n2. Résultat si produits 80000, charges 50000 ?\n3. Pourquoi cash négatif ?",
+
+      "reponses": "1 → 7000\n2 → 30000\n3 → ventes à crédit",
+
+      "resume": "Simulation avancée complète avec analyse"
+    },
+
+    "en": {
+      "objectif": "Handle complex business simulation with credit, tax and crisis.",
+
+      "explication": "Includes full cycle: journal, depreciation, tax, loan and cash flow.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "Profit positive but cash negative",
+
+      "pratique": "1. VAT?\n2. Profit?\n3. Why cash issue?",
+
+      "reponses": "1 → 7000\n2 → 30000\n3 → credit sales",
+
+      "resume": "Advanced simulation complete."
+    },
+
+    "ar": {
+      "objectif": "إدارة محاكاة أعمال معقدة مع الضرائب والقروض.",
+
+      "explication": "يشمل الدورة الكاملة: اليومية، الإهلاك، الضرائب والتدفق النقدي.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "ربح إيجابي مع نقد سلبي",
+
+      "pratique": "1. الضريبة؟\n2. الربح؟\n3. لماذا المشكلة؟",
+
+      "reponses": "1 → 7000\n2 → 30000\n3 → البيع الآجل",
+
+      "resume": "تم إتقان المحاكاة المتقدمة."
+    }
+  },
+  "practice_zone": {}
+}

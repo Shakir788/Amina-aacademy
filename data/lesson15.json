@@ -1,0 +1,57 @@
+{
+  "id": 15,
+  "title": {
+    "fr": "Saisie des Ventes et TVA Collectée",
+    "en": "Recording Sales and Output VAT",
+    "ar": "تسجيل المبيعات والضريبة المحصلة"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Maîtriser l'enregistrement des ventes avec TVA et comprendre la logique des produits et de la TVA collectée.",
+
+      "explication": "🔷 1. C’est quoi une facture de vente ?\n\nC’est un document que l’entreprise donne au client.\n\n👉 Elle montre :\n- Le produit vendu\n- Le montant\n- La TVA\n\n\n🔷 2. Où enregistrer ?\n\n👉 Journal des Ventes\n\n\n🔷 3. Structure d’une écriture de vente\n\n🔹 1. Client (Débit)\n👉 Montant TTC\n\n🔹 2. Produit (Classe 7) (Crédit)\n👉 Montant HT\n\n🔹 3. TVA collectée (4455) (Crédit)\n👉 TVA\n\n\n🔷 4. Logique importante\n\n👉 Client doit payer → Débit\n👉 Vente = revenu → Crédit\n👉 TVA = dette envers l’État\n\n\n🔷 5. Exemple\n\nHT = 5000\nTVA = 1000\nTTC = 6000\n\n👉 Débit Client → 6000\n👉 Crédit Vente → 5000\n👉 Crédit TVA → 1000\n\n\n🔷 6. Calcul inverse\n\nTTC = 1200\n\n👉 HT = 1000\n👉 TVA = 200\n\n\n🔷 7. Erreurs fréquentes\n\n❌ Oublier TVA\n❌ Mettre client en crédit\n❌ Confondre achat et vente\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Vente :\nHT = 5000\nTVA = 1000\n\n👉 Client = 6000\n👉 Vente = 5000\n👉 TVA = 1000",
+
+      "pratique": "🧠 EXERCICE\n\n1. Vente 2400 TTC\n👉 HT ? TVA ?\n\n2. Vente 3000 HT\n👉 TVA ? TTC ?\n\n3. Pourquoi TVA est créditée ?",
+
+      "reponses": "1 → HT = 2000 / TVA = 400\n2 → TVA = 600 / TTC = 3600\n3 → Car c’est une dette envers l’État",
+
+      "resume": "📌 Résumé\n\n- Vente = 3 lignes\n- Débit : Client\n- Crédit : Vente + TVA\n\n👉 TVA collectée = dette"
+    },
+
+    "en": {
+      "objectif": "Learn to record sales with VAT.",
+
+      "explication": "Sales entry includes:\n- Debit Customer\n- Credit Revenue\n- Credit VAT\n\nVAT is collected and paid to the government.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "6000 TTC → Customer Debit\n5000 Revenue\n1000 VAT",
+
+      "pratique": "1. 2400 TTC → ?\n2. 3000 HT → ?\n3. VAT why credit?",
+
+      "reponses": "1 → 2000 / 400\n2 → 600 / 3600\n3 → Liability",
+
+      "resume": "Sales generate revenue and VAT liability."
+    },
+
+    "ar": {
+      "objectif": "إتقان تسجيل المبيعات مع الضريبة.",
+
+      "explication": "تتكون عملية البيع من:\n- مدين العميل\n- دائن الإيراد\n- دائن الضريبة\n\nالضريبة دين على الشركة.",
+
+      "imageUrl": "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "6000 → العميل\n5000 → الإيراد\n1000 → الضريبة",
+
+      "pratique": "1. 2400 → ؟\n2. 3000 → ؟\n3. لماذا الضريبة دائن؟",
+
+      "reponses": "1 → 2000 / 400\n2 → 600 / 3600\n3 → دين",
+
+      "resume": "المبيعات تولد أرباح وضريبة."
+    }
+  }
+}

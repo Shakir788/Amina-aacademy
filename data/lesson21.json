@@ -1,0 +1,59 @@
+{
+  "id": 21,
+  "title": {
+    "fr": "L’Analyse Financière et les Indicateurs Clés",
+    "en": "Financial Analysis and Key Performance Indicators",
+    "ar": "التحليل المالي والمؤشرات الأساسية"
+  },
+  "content": {
+    "fr": {
+      "objectif": "Apprendre à analyser les états financiers pour évaluer la performance et la santé financière d’une entreprise.",
+
+      "explication": "🔹 1. C’est quoi l’analyse financière ?\n\nL’analyse financière = comprendre la situation réelle d’une entreprise.\n\n👉 On utilise :\n✓ Bilan\n✓ CPC\n\n\n🔹 2. Pourquoi analyser ?\n\n👍 Savoir si l’entreprise est rentable\n👍 Savoir si elle peut payer ses dettes\n👍 Aider à prendre des décisions\n\n\n🔹 3. Les 3 piliers (TRÈS IMPORTANT)\n\n🔹 Rentabilité\n🔹 Liquidité\n🔹 Solvabilité\n\n\n🔹 4. Analyse de rentabilité\n\n💥 Formule :\nRésultat / Chiffre d’affaires\n\n👉 Montre profit réel\n\n\n🔹 5. Analyse de liquidité\n\n💥 Formule :\nActif courant / Passif courant\n\n👉 Capacité à payer court terme\n\n\n🔹 6. Analyse de solvabilité\n\n💥 Formule :\nTotal dettes / Capitaux propres\n\n👉 Niveau de risque\n\n\n🔹 7. Exemple réel\n\nEntreprise :\nCA = 100000\nRésultat = 20000\n\n👉 Rentabilité = 20%\n\n\n🔹 8. Interprétation (IMPORTANT)\n\n👍 Ratio élevé = bon\n❌ Ratio faible = risque\n\n👉 Mais toujours analyser contexte\n\n\n🔹 9. Erreurs fréquentes\n\n❌ Regarder un seul ratio\n❌ Ignorer contexte\n❌ Mauvaise interprétation\n\n\n🔹 10. Vision professionnelle\n\n👍 Comptable = analyste\n👍 Aide décision business\n\n👉 Exemple :\nInvestir ou non\nRéduire coûts\nAugmenter prix\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "💼 Exemple complet\n\nCA = 100000\nCharges = 80000\n\n👉 Résultat = 20000\n👉 Rentabilité = 20%\n\n👉 Analyse : bonne performance ✔",
+
+      "pratique": "🔹 EXERCICE\n\n1. CA = 50000, Résultat = 10000\n👉 Rentabilité ?\n\n2. Actif = 20000, Passif = 10000\n👉 Liquidité ?\n\n3. Pourquoi analyser plusieurs ratios ?",
+
+      "reponses": "1 → 20%\n2 → 2\n3 → Vision complète ✔",
+
+      "resume": "🔹 Résumé FINAL\n\n✓ Analyse = comprendre business\n✓ 3 piliers : rentabilité, liquidité, solvabilité\n\n👍 Comptable devient conseiller"
+    },
+
+    "en": {
+      "objectif": "Understand financial analysis and key ratios.",
+
+      "explication": "🔹 Financial analysis evaluates business health.\n\n🔹 Key ratios:\n- Profitability\n- Liquidity\n- Solvency\n\n🔹 Helps decision making\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "100000 revenue → 20% profit",
+
+      "pratique": "1. Profit?\n2. Liquidity?\n3. Why ratios?",
+
+      "reponses": "1 → 20%\n2 → 2\n3 → Full view",
+
+      "resume": "Analysis guides decisions."
+    },
+
+    "ar": {
+      "objectif": "فهم التحليل المالي والمؤشرات الأساسية.",
+
+      "explication": "🔹 التحليل المالي يوضح وضع الشركة.\n\n🔹 المؤشرات:\n- الربحية\n- السيولة\n- الملاءة\n\n🔹 يساعد في اتخاذ القرار\n",
+
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+
+      "exemple": "ربح 20%\n\n",
+
+      "pratique": "1. الربحية؟\n2. السيولة؟\n3. لماذا؟",
+
+      "reponses": "1 → 20%\n2 → 2\n3 → رؤية كاملة",
+
+      "resume": "التحليل يساعد في القرار."
+    }
+  },
+
+  "practice_zone": {}
+}
