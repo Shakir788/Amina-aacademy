@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4F46E5; /* Deep Indigo */
+            --primary: #4F46E5;
             --primary-hover: #4338CA;
-            --accent: #F59E0B; /* Gold for premium feel */
+            --accent: #F59E0B;
             --bg-light: #F8FAFC;
             --text-main: #0F172A;
             --text-muted: #475569;
@@ -26,7 +26,7 @@
             overflow-x: hidden;
         }
 
-        /* --- PREMIUM NAVBAR (Glassmorphism) --- */
+        /* --- 🧭 PREMIUM NAVBAR --- */
         nav {
             padding: 18px 8%;
             display: flex;
@@ -50,6 +50,7 @@
         }
         .logo span { color: var(--primary); }
         
+        /* Desktop Links */
         .nav-links { display: flex; align-items: center; }
         .nav-links a {
             color: var(--text-main);
@@ -68,17 +69,78 @@
             border-radius: 50px;
             font-weight: 600;
             transition: 0.3s;
-            margin-right: 0 !important;
         }
-        .btn-nav:hover { background: var(--primary); transform: translateY(-2px); }
 
-        /* Mobile Nav Fix */
+        /* ☰ HAMBURGER ICON (Hidden on Desktop) */
+        .menu-btn {
+            display: none;
+            font-size: 28px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-main);
+        }
+
+        /* --- 📱 SIDEBAR SLIDE MENU --- */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -100%; /* Shuru mein screen ke bahar */
+            width: 300px;
+            height: 100vh;
+            background: var(--white);
+            z-index: 2000;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .sidebar.active { right: 0; } /* Jab 'active' class hogi tab slide hoga */
+        
+        .close-btn {
+            align-self: flex-end;
+            font-size: 30px;
+            cursor: pointer;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 0;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .sidebar .btn-nav-mobile {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        /* Dark Overlay */
+        .overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1500;
+            display: none;
+        }
+        .overlay.active { display: block; }
+
         @media (max-width: 768px) {
             nav { padding: 15px 5%; }
-            .nav-links a:not(.btn-nav) { display: none; } /* Hide text links on mobile */
+            .nav-links { display: none; } /* Hide desktop links */
+            .menu-btn { display: block; }  /* Show hamburger */
         }
 
-        /* --- HERO SECTION (Vercel Style) --- */
+        /* --- HERO SECTION --- */
         .hero {
             padding: 120px 8% 100px;
             display: flex;
@@ -90,309 +152,116 @@
         }
 
         .hero-content { flex: 1; max-width: 650px; }
-        
-        .badge-pro {
-            display: inline-block;
-            background: rgba(79, 70, 229, 0.1);
-            color: var(--primary);
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            border: 1px solid rgba(79, 70, 229, 0.2);
-        }
-
-        .hero h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 64px;
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -2px;
-            margin-bottom: 24px;
-            color: var(--text-main);
-        }
-        .hero h1 span {
-            background: linear-gradient(to right, var(--primary), #818CF8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: var(--text-muted);
-            margin-bottom: 35px;
-            font-weight: 400;
-            max-width: 550px;
-        }
-
+        .hero h1 { font-size: 64px; font-weight: 800; line-height: 1.1; letter-spacing: -2px; margin-bottom: 24px; }
+        .hero h1 span { background: linear-gradient(to right, var(--primary), #818CF8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 20px; color: var(--text-muted); margin-bottom: 35px; max-width: 550px; }
         .hero-btns { display: flex; gap: 15px; align-items: center; }
 
-        .btn-main {
-            background: var(--primary);
-            color: white;
-            padding: 16px 35px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        .btn-main:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(79, 70, 229, 0.4); }
-        
-        .btn-sec {
-            color: var(--text-main);
-            text-decoration: none;
-            font-weight: 600;
-            padding: 16px 20px;
-            transition: 0.3s;
-        }
-        .btn-sec:hover { color: var(--primary); }
+        .btn-main { background: var(--primary); color: white; padding: 16px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3); transition: 0.3s; }
+        .btn-main:hover { transform: translateY(-3px); }
 
         .hero-img-box { flex: 1; position: relative; }
-        .hero-img {
-            width: 100%;
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            border: 8px solid white;
-            transform: perspective(1000px) rotateY(-5deg);
-            transition: 0.5s;
-        }
-        .hero-img:hover { transform: perspective(1000px) rotateY(0deg); }
+        .hero-img { width: 100%; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border: 8px solid white; transform: perspective(1000px) rotateY(-5deg); transition: 0.5s; }
+        
+        .float-badge { position: absolute; bottom: -20px; left: -30px; background: white; padding: 15px 25px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 15px; z-index: 10; }
 
-        .float-badge {
-            position: absolute;
-            bottom: -20px;
-            left: -30px;
-            background: white;
-            padding: 15px 25px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            z-index: 10;
-        }
-        .float-badge span { font-size: 24px; }
-        .float-badge div p { margin: 0; font-size: 12px; color: var(--text-muted); }
-        .float-badge div h4 { margin: 0; font-size: 18px; font-weight: 800; }
-
-        /* Hero Responsive Fix */
         @media (max-width: 1024px) {
             .hero { padding: 80px 5% 60px; flex-direction: column; text-align: center; }
-            .hero-content { max-width: 100%; }
-            .hero h1 { font-size: 42px; letter-spacing: -1px; }
-            .hero p { font-size: 18px; margin: 0 auto 30px; }
-            .hero-btns { justify-content: center; flex-wrap: wrap; }
+            .hero h1 { font-size: 42px; }
+            .hero-btns { justify-content: center; }
             .hero-img-box { width: 100%; max-width: 500px; margin-top: 40px; }
             .hero-img { transform: none; }
             .float-badge { left: 50%; transform: translateX(-50%); bottom: -20px; width: max-content; }
         }
 
-        /* --- THE EMPIRE BLUEPRINT (Features) --- */
-        .blueprint-section {
-            padding: 80px 8%;
-            background: white;
-            text-align: center;
-        }
-        .blueprint-section h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 40px;
-            font-weight: 800;
-            margin-bottom: 15px;
-            letter-spacing: -1px;
-        }
-        .blueprint-section p.sub {
-            color: var(--text-muted);
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 auto 50px;
-        }
+        /* --- BLUEPRINT SECTION --- */
+        .blueprint-section { padding: 80px 8%; background: white; text-align: center; }
+        .blueprint-section h2 { font-size: 40px; font-weight: 800; margin-bottom: 15px; }
+        .blueprint-section p.sub { color: var(--text-muted); font-size: 18px; max-width: 600px; margin: 0 auto 50px; }
 
-        .course-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            text-align: left;
-        }
-        .card {
-            background: var(--bg-light);
-            padding: 40px 30px;
-            border-radius: 20px;
-            border: 1px solid #E2E8F0;
-            transition: 0.3s;
-            position: relative;
-        }
-        .card:hover {
-            background: white;
-            border-color: var(--primary);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-            transform: translateY(-5px);
-        }
-        .icon-box {
-            width: 60px;
-            height: 60px;
-            background: white;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        .card h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
-        .card p { color: var(--text-muted); font-size: 15px; }
+        .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: left; }
+        .card { background: var(--bg-light); padding: 40px 30px; border-radius: 20px; border: 1px solid #E2E8F0; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .icon-box { width: 60px; height: 60px; background: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 28px; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
 
-        @media (max-width: 768px) {
-            .blueprint-section { padding: 60px 5%; }
-            .blueprint-section h2 { font-size: 30px; }
-            .course-grid { grid-template-columns: 1fr; }
-        }
+        /* --- TESTIMONIALS --- */
+        .testimonials { padding: 100px 8%; background: var(--bg-light); text-align: center; }
+        .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; }
+        .testi-card { background: white; padding: 40px 30px; border-radius: 20px; border: 1px solid #E2E8F0; transition: 0.3s; }
 
-        /* --- TESTIMONIALS SECTION --- */
-        .testimonials {
-            padding: 100px 8%;
-            background: var(--bg-light);
-            text-align: center;
-        }
-        .testimonials h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 40px;
-            font-weight: 800;
-            margin-bottom: 50px;
-            color: var(--text-main);
-            letter-spacing: -1px;
-        }
-        .testi-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            text-align: left;
-        }
-        .testi-card {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            border: 1px solid #E2E8F0;
-            transition: 0.3s;
-        }
-        .testi-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-            border-color: var(--primary);
-        }
-        .stars { color: #F59E0B; font-size: 22px; margin-bottom: 15px; letter-spacing: 2px;}
-        .testi-text { font-size: 16px; color: var(--text-muted); font-style: italic; margin-bottom: 25px; line-height: 1.7; }
-        .testi-user { display: flex; align-items: center; gap: 15px; }
-        .testi-avatar { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; border: 2px solid #E2E8F0;}
-        .user-info h4 { font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 2px;}
-        .user-info p { font-size: 14px; color: var(--text-muted); margin: 0; }
-
-        @media (max-width: 768px) {
-            .testimonials { padding: 60px 5%; }
-            .testimonials h2 { font-size: 30px; margin-bottom: 30px; }
-            .testi-grid { grid-template-columns: 1fr; }
-        }
-
-        /* --- CTA SECTION --- */
-        .cta-section {
-            padding: 100px 8%;
-            background: var(--text-main);
-            color: white;
-            text-align: center;
-        }
-        .cta-section h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 48px;
-            font-weight: 800;
-            margin-bottom: 20px;
-        }
-        .cta-section p { font-size: 20px; color: #94A3B8; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;}
-        .btn-cta {
-            background: var(--accent);
-            color: var(--text-main);
-            padding: 18px 40px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 800;
-            text-decoration: none;
-            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
-            transition: 0.3s;
-            display: inline-block;
-        }
-        .btn-cta:hover { transform: scale(1.05); background: #FCD34D; }
-
-        @media (max-width: 768px) {
-            .cta-section { padding: 60px 5%; }
-            .cta-section h2 { font-size: 32px; }
-            .cta-section p { font-size: 16px; }
-            .btn-cta { padding: 15px 30px; font-size: 16px; width: 100%; }
-        }
+        /* --- CTA --- */
+        .cta-section { padding: 100px 8%; background: var(--text-main); color: white; text-align: center; }
+        .cta-section h2 { font-size: 48px; font-weight: 800; margin-bottom: 20px; }
+        .btn-cta { background: var(--accent); color: var(--text-main); padding: 18px 40px; border-radius: 50px; font-size: 18px; font-weight: 800; text-decoration: none; display: inline-block; }
     </style>
 </head>
 <body>
 
+    <div class="overlay" id="overlay"></div>
+
     <nav>
         <a href="/" class="logo">AMINA <span>Académie</span></a>
+        
         <div class="nav-links">
             <a href="#programme">Le Programme</a>
             <a href="#temoignages">Témoignages</a>
             <a href="/login">Se connecter</a>
             <a href="/register" class="btn-nav">Rejoindre l'élite</a>
         </div>
+
+        <button class="menu-btn" id="openMenu">☰</button>
     </nav>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="closeMenu">✕</div>
+        <a href="#programme" class="mobile-link">Le Programme</a>
+        <a href="#temoignages" class="mobile-link">Témoignages</a>
+        <a href="/login" class="mobile-link">Se connecter</a>
+        <a href="/register" class="btn-nav-mobile mobile-link">Rejoindre l'élite ➔</a>
+    </div>
 
     <section class="hero">
         <div class="hero-content">
             <div class="badge-pro">🚀 Niveau Pro Max Disponible</div>
             <h1>Devenez un Expert, Bâtissez un <span>Empire.</span></h1>
-            <p>Bien plus qu'un cours de comptabilité. Un système complet pour maîtriser la gestion, acquérir des clients et automatiser vos revenus au Maroc.</p>
-            
+            <p>Bien plus qu'un cours de comptabilité. Un système complet pour maîtriser la gestion et automatiser vos revenus au Maroc.</p>
             <div class="hero-btns">
-                <a href="/register" class="btn-main">Accéder au Système (40 Leçons)</a>
+                <a href="/register" class="btn-main">Accéder au Système</a>
                 <a href="#programme" class="btn-sec">Voir le programme ↓</a>
             </div>
         </div>
         <div class="hero-img-box">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" alt="Dashboard Setup" class="hero-img">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" class="hero-img">
             <div class="float-badge">
                 <span>🏆</span>
-                <div>
-                    <h4>100% Pratique</h4>
-                    <p>Conforme DGI & PCM</p>
-                </div>
+                <div><h4>100% Pratique</h4><p>Conforme DGI & PCM</p></div>
             </div>
         </div>
     </section>
 
     <section id="programme" class="blueprint-section">
-        <h2>Le "Ultimate Blueprint"</h2>
-        <p class="sub">Notre méthode en 4 piliers pour passer de zéro à un système automatisé générant des revenus.</p>
-
+        <h2>Le Ultimate Blueprint</h2>
+        <p class="sub">Notre méthode en 4 piliers pour un succès garanti.</p>
         <div class="course-grid">
             <div class="card">
                 <div class="icon-box">🧠</div>
-                <h3>1. Fondation & Skills</h3>
-                <p>Maîtrisez le Plan Comptable Marocain, le CPC, la TVA et les écritures comptables comme un chef comptable.</p>
+                <h3>1. Fondation</h3>
+                <p>Maîtrisez le Plan Comptable Marocain et la fiscalité (TVA, IS).</p>
             </div>
             <div class="card">
                 <div class="icon-box">💻</div>
-                <h3>2. Logiciels & Pratique</h3>
-                <p>Traitez des dossiers réels sur Sage, gérez la paie (CNSS) et faites des télédéclarations en direct.</p>
+                <h3>2. Logiciels</h3>
+                <p>Pratique réelle sur Sage et télédéclarations en direct.</p>
             </div>
             <div class="card">
                 <div class="icon-box">🤝</div>
-                <h3>3. Acquisition Client</h3>
-                <p>Apprenez à construire une marque personnelle forte, trouver des clients B2B et clore des contrats High-Ticket.</p>
+                <h3>3. Clients</h3>
+                <p>Trouvez des clients B2B et signez des contrats High-Ticket.</p>
             </div>
             <div class="card">
                 <div class="icon-box">⚙️</div>
-                <h3>4. Automatisation</h3>
-                <p>Ne travaillez plus pour l'argent. Créez des systèmes, déléguez et scalez votre agence ou freelance.</p>
+                <h3>4. Scaling</h3>
+                <p>Automatisez vos processus et bâtissez votre propre agence.</p>
             </div>
         </div>
     </section>
@@ -400,51 +269,58 @@
     <section id="temoignages" class="testimonials">
         <h2>Ils ont bâti leur empire 👑</h2>
         <div class="testi-grid">
-            
             <div class="testi-card">
-                <div class="stars">★★★★★</div>
-                <p class="testi-text">"Avant AMINA Académie, je ne comprenais rien à la TVA ni aux déclarations. Aujourd'hui, je gère 5 clients en freelance grâce aux systèmes d'automatisation enseignés. Un investissement rentabilisé en 1 mois !"</p>
+                <p class="testi-text">"Rentabilisé en 1 mois ! Je gère 5 clients en freelance désormais."</p>
                 <div class="testi-user">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" class="testi-avatar" alt="User">
-                    <div class="user-info">
-                        <h4>Karim B.</h4>
-                        <p>Comptable Indépendant</p>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200" class="testi-avatar">
+                    <div class="user-info"><h4>Karim B.</h4><p>Freelance</p></div>
                 </div>
             </div>
-
             <div class="testi-card">
-                <div class="stars">★★★★★</div>
-                <p class="testi-text">"Le module sur l'acquisition de clients High-Ticket a tout changé. Je suis passé de simples saisies comptables à la vente de packages complets de conseil financier. La qualité des leçons est digne d'un Master."</p>
+                <p class="testi-text">"L'interface est magnifique et super motivante. On apprend en pratiquant."</p>
                 <div class="testi-user">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" class="testi-avatar" alt="User">
-                    <div class="user-info">
-                        <h4>Nadia M.</h4>
-                        <p>Fondatrice d'Agence</p>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200" class="testi-avatar">
+                    <div class="user-info"><h4>Nadia M.</h4><p>Chef d'Entreprise</p></div>
                 </div>
             </div>
-
-            <div class="testi-card">
-                <div class="stars">★★★★★</div>
-                <p class="testi-text">"J'adore le simulateur FIFO et les zones de pratique à la fin de cada leccion. Ce n'est pas juste de la théorie ennuyeuse, c'est de l'action pure. L'interface est magnifique et super motivante."</p>
-                <div class="testi-user">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" class="testi-avatar" alt="User">
-                    <div class="user-info">
-                        <h4>Youssef T.</h4>
-                        <p>Étudiant Expert-Comptable</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <section class="cta-section">
-        <h2>Prêt à changer votre trajectoire ?</h2>
-        <p>Rejoignez AMINA Académie aujourd'hui et commencez à construire votre liberté financière.</p>
-        <a href="/register" class="btn-cta">Créer mon compte maintenant ➔</a>
+        <h2>Prêt à changer de vie ?</h2>
+        <p>Rejoignez AMINA Académie et commencez aujourd'hui.</p>
+        <a href="/register" class="btn-cta">Démarrer Maintenant ➔</a>
     </section>
+
+    <script>
+        const openBtn = document.getElementById('openMenu');
+        const closeBtn = document.getElementById('closeMenu');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Open Menu
+        openBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Stop scrolling
+        });
+
+        // Close Menu Function
+        const closeSidebar = () => {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        };
+
+        closeBtn.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+        
+        // Auto-close when clicking links
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+    </script>
 
 </body>
 </html>
