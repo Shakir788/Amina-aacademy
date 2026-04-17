@@ -1,0 +1,122 @@
+<style>
+    /* AI Coach specific styling only */
+    .ai-fab { position: fixed; bottom: 25px; right: 25px; background: linear-gradient(135deg, #4F46E5, #7C3AED); color: white; padding: 15px 25px; border-radius: 30px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 800; cursor: pointer; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4); z-index: 1000; transition: transform 0.2s; display: flex; align-items: center; gap: 8px; }
+    .ai-fab:hover { transform: translateY(-3px) scale(1.05); }
+    
+    .ai-panel { position: fixed; bottom: 90px; right: 25px; width: 340px; height: 450px; background: white; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); display: none; flex-direction: column; z-index: 1000; border: 1px solid #E2E8F0; overflow: hidden; animation: slideUp 0.3s ease-out; font-family: 'Inter', sans-serif; }
+    .ai-header { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: white; padding: 15px 20px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 16px; display: flex; justify-content: space-between; align-items: center; }
+    .ai-header button { background: none; border: none; color: white; font-size: 20px; cursor: pointer; opacity: 0.8; }
+    .ai-header button:hover { opacity: 1; }
+    
+    .ai-messages { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: #F8FAFC; }
+    .ai-msg-bubble { padding: 12px 16px; border-radius: 16px; font-size: 14px; max-width: 85%; line-height: 1.5; font-weight: 500; }
+    .ai-system-msg { background: white; border: 1px solid #E2E8F0; color: #0F172A; align-self: flex-start; border-bottom-left-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+    .ai-user-msg { background: #4F46E5; color: white; align-self: flex-end; border-bottom-right-radius: 4px; box-shadow: 0 2px 5px rgba(79, 70, 229, 0.2); }
+    
+    .ai-input-area { display: flex; padding: 15px; background: white; border-top: 1px solid #E2E8F0; }
+    .ai-input-area input { flex: 1; padding: 12px 15px; border: 1px solid #CBD5E1; border-radius: 12px; outline: none; font-family: 'Inter', sans-serif; font-size: 14px; transition: border 0.3s; }
+    .ai-input-area input:focus { border-color: #4F46E5; }
+    .ai-input-area button { background: #4F46E5; color: white; border: none; width: 45px; height: 45px; margin-left: 10px; border-radius: 12px; cursor: pointer; font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+    .ai-input-area button:hover { background: #4338CA; }
+
+    @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+
+<div class="ai-fab" onclick="toggleAIPanel()">✨ Coach Amina</div>
+
+<div class="ai-panel" id="aiPanel">
+    <div class="ai-header">
+        <span>✨ Coach Amina AI</span>
+        <button onclick="toggleAIPanel()">✕</button>
+    </div>
+    <div class="ai-messages" id="aiMessages">
+        <div class="ai-msg-bubble ai-system-msg">Bonjour ! Je suis Coach Amina. Posez-moi vos questions. 😊</div>
+    </div>
+    <div class="ai-input-area">
+        <input type="text" id="aiInput" placeholder="Posez une question..." onkeypress="if(event.key === 'Enter') sendChatMessage()">
+        <button onclick="sendChatMessage()">➔</button>
+    </div>
+</div>
+
+<script>
+    // Component Logic
+    function toggleAIPanel() {
+        const panel = document.getElementById('aiPanel');
+        panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function appendAIMessage(text, sender) {
+        const msgDiv = document.createElement('div');
+        msgDiv.className = `ai-msg-bubble ${sender === 'ai' ? 'ai-system-msg' : 'ai-user-msg'}`;
+        msgDiv.innerHTML = text;
+        document.getElementById('aiMessages').appendChild(msgDiv);
+        document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
+    }
+
+    // Global function so the main lesson page can trigger it when user makes an error
+    window.triggerAICoachError = async function(whatTheySaid, target) {
+        document.getElementById('aiPanel').style.display = 'flex';
+        appendAIMessage(`J'ai dit "${whatTheySaid}" au lieu de "${target}". Pourquoi c'est faux ?`, 'user');
+
+        const typingId = 'typing-' + Date.now();
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'ai-msg-bubble ai-system-msg';
+        typingDiv.id = typingId;
+        typingDiv.innerHTML = '<span style="color:#64748B; font-style:italic;">Coach Amina écrit...</span>';
+        document.getElementById('aiMessages').appendChild(typingDiv);
+        document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
+
+        try {
+            const aiRes = await fetch('/api/ai/coach', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    userSaid: whatTheySaid, 
+                    correctText: target, 
+                    courseType: window.CURRENT_COURSE_TYPE || 'english' 
+                })
+            });
+            const aiData = await aiRes.json();
+            document.getElementById(typingId).remove();
+            if(aiData.feedback) { appendAIMessage(aiData.feedback, 'ai'); }
+        } catch(e) {
+            document.getElementById(typingId).remove();
+            appendAIMessage("Erreur de connexion. 😞", 'ai');
+        }
+    }
+
+    // Manual Question Logic
+    window.sendChatMessage = async function() {
+        const input = document.getElementById('aiInput');
+        const text = input.value.trim();
+        if(!text) return;
+        
+        input.value = '';
+        appendAIMessage(text, 'user');
+
+        const typingId = 'typing-' + Date.now();
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'ai-msg-bubble ai-system-msg';
+        typingDiv.id = typingId;
+        typingDiv.innerHTML = '<span style="color:#64748B; font-style:italic;">Coach Amina écrit...</span>';
+        document.getElementById('aiMessages').appendChild(typingDiv);
+        document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
+
+        try {
+            const aiRes = await fetch('/api/ai/coach', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    userQuestion: text, 
+                    courseType: window.CURRENT_COURSE_TYPE || 'english' 
+                })
+            });
+            const aiData = await aiRes.json();
+            document.getElementById(typingId).remove();
+            if(aiData.feedback) { appendAIMessage(aiData.feedback, 'ai'); }
+        } catch(e) {
+            document.getElementById(typingId).remove();
+            appendAIMessage("Erreur de connexion. 😞", 'ai');
+        }
+    }
+</script>

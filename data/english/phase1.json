@@ -1,0 +1,784 @@
+{
+  "phase": "Phase 1: Survival English (The Foundation)",
+  "system": "Forced Fluency + Real Life English + Fast Thinking + Moroccan Optimization",
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Real Greetings (Human Style)",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
+      "type": "conversation",
+      "flow": ["Hello", "How are you?", "I am fine"],
+      "exercises": [
+        {
+          "en": "Hello",
+          "variations": ["Hello", "Hey", "Hi"],
+          "pronunciation": { "simple": "He-lo", "fast": "Hlo", "break": "Hel + lo" },
+          "darija": "Salam",
+          "fr": "Salut / Bonjour",
+          "ar": "مرحباً",
+          "emotion": ["😊 friendly", "😐 normal"],
+          "context": "Saluer quelqu'un",
+          "practice": "Dites-le sur 3 tons différents"
+        },
+        {
+          "en": "How are you?",
+          "variations": ["How are you?", "How are you doing?", "You good?"],
+          "pronunciation": { "simple": "Hau ar yu", "fast": "Harya", "break": "How + are + you" },
+          "darija": "Kidayr?",
+          "fr": "Comment vas-tu ?",
+          "ar": "كيف حالك؟",
+          "listening_trap": "How ya doing?",
+          "practice": "Demandez de façon naturelle"
+        },
+        {
+          "en": "I am fine",
+          "variations": ["I am fine", "I'm good", "I'm okay"],
+          "pronunciation": { "simple": "Ai am fain", "fast": "Am fine", "break": "I + am + fine" },
+          "darija": "Ana bikhir",
+          "fr": "Je vais bien",
+          "ar": "أنا بخير",
+          "emotion": ["😊 happy", "😴 tired", "😒 annoyed"]
+        }
+      ],
+      "memory_trap": ["Hello → How are you → I am fine"],
+      "challenge": "Speak full conversation naturally",
+      "rules": { "repeat": 3, "no_skip": true }
+    },
+    {
+      "id": 2,
+      "title": "Introducing Yourself (Natural)",
+      "imageUrl": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=800&auto=format&fit=crop",
+      "flow": ["My name is Ali", "I am from Morocco"],
+      "exercises": [
+        {
+          "en": "My name is Ali",
+          "variations": ["My name is...", "I'm Ali"],
+          "pronunciation": { "simple": "Mai nem iz", "fast": "Mynamiz" },
+          "darija": "Smiti Ali",
+          "fr": "Je m'appelle Ali",
+          "ar": "اسمي علي"
+        },
+        {
+          "en": "I am from Morocco",
+          "variations": ["I'm from Morocco"],
+          "pronunciation": { "simple": "Ai am from Morocco", "fast": "Am from Morocco" },
+          "darija": "Ana men المغرب",
+          "fr": "Je viens du Maroc",
+          "ar": "أنا من المغرب"
+        }
+      ],
+      "challenge": "Introduce yourself fast"
+    },
+    {
+      "id": 3,
+      "title": "Asking Questions",
+      "imageUrl": "https://images.unsplash.com/photo-1516322050882-8b419af71422?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "What is your name?",
+          "variations": ["What's your name?"],
+          "pronunciation": "Wat iz yor nem",
+          "darija": "Smitk?",
+          "fr": "Comment t'appelles-tu ?",
+          "ar": "ما اسمك؟"
+        },
+        {
+          "en": "Where are you from?",
+          "variations": ["Where you from?"],
+          "pronunciation": "Wer ar yu from",
+          "darija": "Menin nta?",
+          "fr": "D'où viens-tu ?",
+          "ar": "من أين أنت؟"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Daily Actions (Real Use)",
+      "imageUrl": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I am going",
+          "variations": ["I'm going"],
+          "pronunciation": "Ai am go-ing",
+          "darija": "Ana ghadi",
+          "fr": "J'y vais",
+          "ar": "أنا ذاهب"
+        },
+        {
+          "en": "I am working",
+          "variations": ["I'm working"],
+          "pronunciation": "Ai am wor-king",
+          "darija": "Ana kan-khdem",
+          "fr": "Je travaille",
+          "ar": "أنا أعمل"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Quick Replies",
+      "imageUrl": "https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        { "en": "Yes", "pronunciation": "Yes", "darija": "Ah", "fr": "Oui", "ar": "نعم" },
+        { "en": "No", "pronunciation": "No", "darija": "La", "fr": "Non", "ar": "لا" },
+        { "en": "No problem", "pronunciation": "No prob-lem", "darija": "Makayn mouchkil", "fr": "Pas de problème", "ar": "لا توجد مشكلة" }
+      ],
+      "memory_trap": ["Use Yes/No in conversation"]
+    },
+    {
+      "id": 6,
+      "title": "Commands (Street English)",
+      "imageUrl": "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "Come here",
+          "variations": ["Come here!", "Come on"],
+          "pronunciation": "Kam hi-yr",
+          "darija": "Aji hna",
+          "fr": "Viens ici",
+          "ar": "تعال إلى هنا"
+        },
+        {
+          "en": "Wait a second",
+          "variations": ["Wait", "Hold on"],
+          "pronunciation": "Wet a se-kond",
+          "darija": "Tsna chwia",
+          "fr": "Attends une seconde",
+          "ar": "انتظر لحظة"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Polite Words",
+      "imageUrl": "https://images.unsplash.com/photo-1544716278-ca513f5daa3d?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        { "en": "Please", "pronunciation": "Pli-z", "darija": "3afak", "fr": "S'il te plaît", "ar": "من فضلك" },
+        { "en": "Thank you", "pronunciation": "Thank yu", "darija": "Shukran", "fr": "Merci", "ar": "شكراً" },
+        { "en": "Sorry", "pronunciation": "So-ri", "darija": "Smeh lia", "fr": "Désolé", "ar": "عفواً / آسف" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Asking Help (Real Life)",
+      "imageUrl": "https://images.unsplash.com/photo-1531206715517-5c561081788d?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "Can you help me?",
+          "variations": ["Help me please"],
+          "pronunciation": "Kan yu help mi",
+          "darija": "T9der t3awni?",
+          "fr": "Peux-tu m'aider ?",
+          "ar": "هل يمكنك مساعدتي؟"
+        },
+        {
+          "en": "I don't understand",
+          "variations": ["I don't get it"],
+          "pronunciation": "Ai dont un-der-stand",
+          "darija": "Ma fhemtch",
+          "fr": "Je ne comprends pas",
+          "ar": "أنا لا أفهم"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Feelings",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        { "en": "I am tired", "pronunciation": "Ai am tai-red", "darija": "Ana 3yan", "fr": "Je suis fatigué", "ar": "أنا متعب" },
+        { "en": "I am hungry", "pronunciation": "Ai am hung-ri", "darija": "Ana j3an", "fr": "J'ai faim", "ar": "أنا جائع" }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Mini Real Conversation",
+      "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=800&auto=format&fit=crop",
+      "flow": ["Hello", "Where are you going?", "I am going home"],
+      "exercises": [
+        {
+          "en": "Where are you going?",
+          "variations": ["Where you going?"],
+          "pronunciation": "Wer ar yu go-ing",
+          "darija": "Fin ghadi?",
+          "fr": "Où vas-tu ?",
+          "ar": "إلى أين أنت ذاهب؟"
+        },
+        {
+          "en": "I am going home",
+          "variations": ["I'm going home"],
+          "pronunciation": "Ai am go-ing hom",
+          "darija": "Ana ghadi ldar",
+          "fr": "Je rentre à la maison",
+          "ar": "أنا ذاهب إلى المنزل"
+        }
+      ],
+      "challenge": "Speak full real-life conversation fast"
+    },
+    {
+      "id": 11,
+      "title": "Location Conversation (Real Style)",
+      "imageUrl": "https://images.unsplash.com/photo-1488085061387-422e17646194?q=80&w=800&auto=format&fit=crop",
+      "flow": ["Where are you?", "I am at home"],
+      "exercises": [
+        {
+          "en": "Where are you?",
+          "variations": ["Where you at?"],
+          "listening_trap": "Where ya at?",
+          "pronunciation": { "simple": "Wer ar yu", "fast": "Werya" },
+          "darija": "Fin nta?",
+          "fr": "Où es-tu ?",
+          "ar": "أين أنت؟",
+          "type": "question"
+        },
+        {
+          "en": "I am at home",
+          "variations": ["I'm home"],
+          "pronunciation": { "simple": "Ai am at home", "fast": "Am home" },
+          "darija": "Ana f dar",
+          "fr": "Je suis à la maison",
+          "ar": "أنا في المنزل",
+          "type": "answer"
+        }
+      ],
+      "roleplay": {
+        "scenario": "Friend calls you",
+        "ai": "Where are you?",
+        "expected": "I am at home"
+      },
+      "challenge": {
+        "type": "speed",
+        "instruction": "Answer in 2 seconds"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Time Talk (Fast Thinking)",
+      "imageUrl": "https://images.unsplash.com/photo-1508685002900-a128ebbb145b?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "What time is it?",
+          "variations": ["What's the time?"],
+          "listening_trap": "Wats time?",
+          "pronunciation": "Wat taim iz it",
+          "darija": "Ch7al sa3a?",
+          "fr": "Quelle heure est-il ?",
+          "ar": "كم الساعة؟"
+        },
+        {
+          "en": "It is 5 o'clock",
+          "variations": ["It's five"],
+          "pronunciation": "It iz faiv o-klok",
+          "darija": "Hiya khamsa",
+          "fr": "Il est 5 heures",
+          "ar": "الساعة الخامسة"
+        }
+      ],
+      "challenge": "Say time instantly"
+    },
+    {
+      "id": 13,
+      "title": "Plans & Actions",
+      "imageUrl": "https://images.unsplash.com/photo-1506784951209-6834d9834ea1?q=80&w=800&auto=format&fit=crop",
+      "flow": ["What are you doing?", "I am working", "Let's meet"],
+      "exercises": [
+        {
+          "en": "What are you doing?",
+          "variations": ["What you doing?"],
+          "listening_trap": "Whatcha doin?",
+          "pronunciation": "Wat ar yu du-ing",
+          "darija": "Ach katdir?",
+          "fr": "Que fais-tu ?",
+          "ar": "ماذا تفعل؟"
+        },
+        {
+          "en": "I am working",
+          "variations": ["I'm working"],
+          "pronunciation": "Ai am wor-king",
+          "darija": "Ana kan-khdem",
+          "fr": "Je travaille",
+          "ar": "أنا أعمل"
+        },
+        {
+          "en": "Let's meet",
+          "variations": ["Let's go", "Come let's meet"],
+          "pronunciation": "Lets mi-t",
+          "darija": "Yallah ntlaqaw",
+          "fr": "On se voit",
+          "ar": "دعنا نلتقي"
+        }
+      ],
+      "roleplay": {
+        "scenario": "Friend asks your plan",
+        "ai": "What are you doing?",
+        "expected": "I am working"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Phone Call (Real Style)",
+      "imageUrl": "https://images.unsplash.com/photo-1520923642038-b4259aceeba7?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "Hello, who is this?",
+          "listening_trap": "Who dis?",
+          "pronunciation": "He-lo hu iz th-is",
+          "darija": "Shkun hada?",
+          "fr": "Allô, qui est-ce ?",
+          "ar": "ألو، من معي؟"
+        },
+        {
+          "en": "I will call you later",
+          "variations": ["I'll call you later"],
+          "pronunciation": "Ai wil kol yu le-ter",
+          "darija": "Ghadi n3ayet lik mn b3d",
+          "fr": "Je t'appellerai plus tard",
+          "ar": "سأتصل بك لاحقاً"
+        }
+      ],
+      "roleplay": {
+        "scenario": "Phone call",
+        "ai": "Hello, who is this?",
+        "expected": "It's me"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Shopping Situation",
+      "imageUrl": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&auto=format&fit=crop",
+      "flow": ["How much is this?", "It is too expensive"],
+      "exercises": [
+        {
+          "en": "How much is this?",
+          "listening_trap": "How much dis?",
+          "pronunciation": "Hau mach iz th-is",
+          "darija": "Bchhal hada?",
+          "fr": "Combien ça coûte ?",
+          "ar": "بكم هذا؟"
+        },
+        {
+          "en": "It is too expensive",
+          "variations": ["Too much"],
+          "pronunciation": "It iz tu ex-pen-siv",
+          "darija": "Ghali بزاف",
+          "fr": "C'est trop cher",
+          "ar": "إنه غالي جداً"
+        }
+      ],
+      "roleplay": {
+        "scenario": "At shop",
+        "ai": "How much is this?",
+        "expected": "It is too expensive"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Directions (Street English)",
+      "imageUrl": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "Go straight",
+          "variations": ["Go straight ahead"],
+          "pronunciation": "Go stre-t",
+          "darija": "Sir nishan",
+          "fr": "Allez tout droit",
+          "ar": "اذهب باستقامة"
+        },
+        {
+          "en": "Turn left",
+          "pronunciation": "Turn left",
+          "darija": "Dour lissar",
+          "fr": "Tournez à gauche",
+          "ar": "انعطف يساراً"
+        },
+        {
+          "en": "Turn right",
+          "pronunciation": "Turn rait",
+          "darija": "Dour limn",
+          "fr": "Tournez à droite",
+          "ar": "انعطف يميناً"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Restaurant Talk",
+      "imageUrl": "https://images.unsplash.com/photo-1414235001283-0c1a4b494669?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I want food",
+          "variations": ["I want to eat"],
+          "pronunciation": "Ai wont fu-d",
+          "darija": "Bghit nakol",
+          "fr": "Je veux manger",
+          "ar": "أريد طعاماً"
+        },
+        {
+          "en": "Bring me water",
+          "variations": ["Water please"],
+          "pronunciation": "Bring mi wa-ter",
+          "darija": "Jib lia lma",
+          "fr": "Apportez-moi de l'eau",
+          "ar": "أحضر لي ماء"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Feelings (Emotion Training)",
+      "imageUrl": "https://images.unsplash.com/photo-1513726562939-c0b71511fea9?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I am happy",
+          "emotion": ["😊 happy", "😄 excited"],
+          "pronunciation": "Ai am ha-pi",
+          "darija": "Ana farhan",
+          "fr": "Je suis heureux",
+          "ar": "أنا سعيد"
+        },
+        {
+          "en": "I am sad",
+          "emotion": ["😢 sad", "😞 low"],
+          "pronunciation": "Ai am sad",
+          "darija": "Ana hazin",
+          "fr": "Je suis triste",
+          "ar": "أنا حزين"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Problem Handling",
+      "imageUrl": "https://images.unsplash.com/photo-1508696879815-4eeccfe4eb72?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I have a problem",
+          "pronunciation": "Ai hav a prob-lem",
+          "darija": "3andi mochkil",
+          "fr": "J'ai un problème",
+          "ar": "لدي مشكلة"
+        },
+        {
+          "en": "I need help",
+          "variations": ["Help me"],
+          "pronunciation": "Ai nid help",
+          "darija": "Khassni mosa3ada",
+          "fr": "J'ai besoin d'aide",
+          "ar": "أحتاج إلى مساعدة"
+        }
+      ],
+      "roleplay": {
+        "scenario": "Emergency",
+        "ai": "What happened?",
+        "expected": "I have a problem"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Full Real Scenario",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
+      "flow": [
+        "Hello",
+        "Where are you?",
+        "I am at the shop",
+        "I will call you later"
+      ],
+      "exercises": [
+        {
+          "en": "I am at the shop",
+          "variations": ["I'm at the shop"],
+          "pronunciation": "Ai am at th-e shop",
+          "darija": "Ana fl 7anout",
+          "fr": "Je suis au magasin",
+          "ar": "أنا في المتجر"
+        }
+      ],
+      "challenge": {
+        "type": "real_conversation",
+        "instruction": "Parlez rapidement sans vous arrêter",
+        "fr": "Parlez rapidement sans vous arrêter",
+        "darija": "Hdar bzarba bla matw9ef"
+      },
+      "memory_trap": [
+        "Reuse Hello",
+        "Reuse Where are you"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Giving Opinions (Human Style)",
+      "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I think it's good",
+          "natural": "Yeah, I think it's good",
+          "extended": "I think it's good because it's easy",
+          "pronunciation": "Ai think its gud",
+          "darija": "Kanban lia مزيان",
+          "fr": "Je pense que c'est bien",
+          "ar": "أعتقد أنه جيد",
+          "follow_up": "What do you think?"
+        },
+        {
+          "en": "I don't like it",
+          "natural": "Hmm… I don't really like it",
+          "extended": "I don't like it because it's boring",
+          "pronunciation": "Ai dont laik it",
+          "darija": "Ma 3jbnich",
+          "fr": "Je n'aime pas ça",
+          "ar": "لا يعجبني",
+          "follow_up": "Do you like it?"
+        }
+      ],
+      "thinking_trigger": "You see something → give opinion instantly"
+    },
+    {
+      "id": 22,
+      "title": "Agree / Disagree (Real Talk)",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I agree",
+          "natural": "Yeah, I agree",
+          "pronunciation": "Ai a-gri",
+          "darija": "Mtafe9",
+          "fr": "Je suis d'accord",
+          "ar": "أنا أوافق",
+          "follow_up": "Exactly, right?"
+        },
+        {
+          "en": "I don't agree",
+          "natural": "No, I don't agree",
+          "extended": "I don't agree with you",
+          "pronunciation": "Ai dont a-gri",
+          "darija": "Ma mtafe9ch",
+          "fr": "Je ne suis pas d'accord",
+          "ar": "أنا لا أوافق",
+          "follow_up": "Why do you think so?"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Reactions (Emotion + Tone)",
+      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "Really?",
+          "natural": "Oh really?",
+          "emotion": ["😲 surprised", "😐 neutral"],
+          "pronunciation": "Ri-li",
+          "darija": "Bssah?",
+          "fr": "Vraiment ?",
+          "ar": "حقاً؟"
+        },
+        {
+          "en": "No way!",
+          "natural": "No way, seriously?",
+          "pronunciation": "No we",
+          "darija": "Machi mumkin!",
+          "fr": "C'est pas vrai !",
+          "ar": "مستحيل!"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Future Plans (Natural)",
+      "imageUrl": "https://images.unsplash.com/photo-1469078651475-6e0b047ee2f2?q=80&w=800&auto=format&fit=crop",
+      "flow": ["What are you doing tomorrow?", "I will go out"],
+      "exercises": [
+        {
+          "en": "What are you doing tomorrow?",
+          "natural": "What are you doing tomorrow?",
+          "pronunciation": "Wat ar yu du-ing tu-mo-ro",
+          "darija": "Ach ghadi dir gheda?",
+          "fr": "Que fais-tu demain ?",
+          "ar": "ماذا ستفعل غداً؟",
+          "follow_up": "Want to join me?"
+        },
+        {
+          "en": "I will go out",
+          "natural": "I'll go out",
+          "extended": "I'll go out with my friends",
+          "pronunciation": "Ai wil go aut",
+          "darija": "Ghadi nkhroj",
+          "fr": "Je vais sortir",
+          "ar": "سأخرج"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Past Talking (Real Use)",
+      "imageUrl": "https://images.unsplash.com/photo-1461301214746-1e109d3b1401?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I went there",
+          "natural": "Yeah, I went there",
+          "extended": "I went there yesterday",
+          "pronunciation": "Ai went ther",
+          "darija": "Mchit lhih",
+          "fr": "J'y suis allé",
+          "ar": "ذهبت إلى هناك"
+        },
+        {
+          "en": "I saw him",
+          "natural": "I saw him yesterday",
+          "pronunciation": "Ai so him",
+          "darija": "Chefto",
+          "fr": "Je l'ai vu",
+          "ar": "رأيته"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Needs & Wants",
+      "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "I need money",
+          "natural": "I really need money",
+          "pronunciation": "Ai nid ma-ni",
+          "darija": "Khassni flos",
+          "fr": "J'ai besoin d'argent",
+          "ar": "أحتاج إلى المال"
+        },
+        {
+          "en": "I need time",
+          "natural": "I need more time",
+          "pronunciation": "Ai nid taim",
+          "darija": "Khassni lwa9t",
+          "fr": "J'ai besoin de temps",
+          "ar": "أحتاج إلى الوقت"
+        }
+      ],
+      "thinking_trigger": "When you need something → say it instantly"
+    },
+    {
+      "id": 27,
+      "title": "Social Conversation (Flow)",
+      "imageUrl": "https://images.unsplash.com/photo-1511632765486-a9ea3ee40bef?q=80&w=800&auto=format&fit=crop",
+      "flow": ["What do you do?", "I work", "That's nice"],
+      "exercises": [
+        {
+          "en": "What do you do?",
+          "natural": "So, what do you do?",
+          "pronunciation": "Wat du yu du",
+          "darija": "Ach katdir?",
+          "fr": "Que fais-tu dans la vie ?",
+          "ar": "ماذا تعمل؟",
+          "follow_up": "Do you like your job?"
+        },
+        {
+          "en": "I work",
+          "natural": "I work in a company",
+          "pronunciation": "Ai work",
+          "darija": "Kan-khdem",
+          "fr": "Je travaille",
+          "ar": "أنا أعمل"
+        },
+        {
+          "en": "That's nice",
+          "natural": "Oh that's nice",
+          "pronunciation": "Thats nais",
+          "darija": "Zwin hada",
+          "fr": "C'est sympa",
+          "ar": "هذا جميل"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Awkward Moments",
+      "imageUrl": "https://images.unsplash.com/photo-1580407000969-9528d712ce33?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "It's okay",
+          "natural": "It's okay, don't worry",
+          "pronunciation": "Its o-ke",
+          "darija": "Mashi mochkil",
+          "fr": "C'est pas grave",
+          "ar": "لا بأس"
+        },
+        {
+          "en": "No worries",
+          "natural": "No worries at all",
+          "pronunciation": "No wo-riz",
+          "darija": "Matkhafch",
+          "fr": "Ne t'inquiète pas",
+          "ar": "لا تقلق"
+        }
+      ],
+      "interruption": ["Wait wait", "No no listen"]
+    },
+    {
+      "id": 29,
+      "title": "Pressure Mode (Fast Thinking)",
+      "imageUrl": "https://images.unsplash.com/photo-1492551557933-34265f7af79e?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "Where are you?",
+          "pronunciation": "Wer ar yu",
+          "darija": "Fin nta?",
+          "fr": "Où es-tu ?",
+          "ar": "أين أنت؟",
+          "hint": "Répondez instantanément (2 sec max)"
+        },
+        {
+          "en": "What are you doing?",
+          "pronunciation": "Wat ar yu du-ing",
+          "darija": "Ach katdir?",
+          "fr": "Que fais-tu ?",
+          "ar": "ماذا تفعل؟"
+        }
+      ],
+      "challenge": {
+        "type": "rapid_fire",
+        "instruction": "Answer instantly (2 sec max)"
+      }
+    },
+    {
+      "id": 30,
+      "title": "FINAL BOSS TEST (Real Conversation)",
+      "imageUrl": "https://images.unsplash.com/photo-1519389953810-1950811e5f80?q=80&w=800&auto=format&fit=crop",
+      "exercises": [
+        {
+          "en": "Because I need money",
+          "variations": ["I need money"],
+          "pronunciation": "Bi-koz ai nid ma-ni",
+          "darija": "7it khassni flos",
+          "fr": "Parce que j'ai besoin d'argent",
+          "ar": "لأنني أحتاج إلى المال",
+          "hint": "Full conversation with emotion + speed"
+        },
+        {
+          "en": "Okay, call me later",
+          "variations": ["Call me later"],
+          "pronunciation": "O-ke, kol mi le-ter",
+          "darija": "Wakha, 3ayet lia mn b3d",
+          "fr": "D'accord, appelle-moi plus tard",
+          "ar": "حسناً، اتصل بي لاحقاً"
+        }
+      ],
+      "challenge": {
+        "type": "simulation",
+        "instruction": "Full conversation with emotion + speed",
+        "flow": [
+          "Hello",
+          "What are you doing?",
+          "I am working",
+          "Why?",
+          "Because I need money",
+          "Okay, call me later"
+        ]
+      },
+      "memory_trap": [
+        "Reuse opinion + reaction + answer",
+        "Mix past + present + future"
+      ]
+    }
+  ]
+}

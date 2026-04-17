@@ -12,35 +12,55 @@ const userSchema = new mongoose.Schema({
     },
     password: { 
         type: String, 
-        // 👇 Password sirf tab required hoga agar user Google se nahi aaya
+        // Password sirf tab required hoga agar user Google se nahi aaya
         required: function() {
             return !this.googleId;
         }, 
         select: false 
     },
     
-    // 🚀 NAYA: Google OAuth & Profile Flow
+    // 🚀 Google OAuth & Profile Flow
     googleId: {
         type: String,
         unique: true,
-        sparse: true // Jin users ke paas ye nahi hoga, unko error aane se rokega
+        sparse: true 
     },
     isProfileComplete: {
         type: Boolean,
-        default: false // Jab naya user Google se aayega, ye false rahega
+        default: false 
     },
 
-    // 👇 Purana Progress wala section
+    // 🏗️ NAYA: Multi-Course Progress System
+    // Ab hum har course ki progress alag-alag track karenge
     progress: {
-        completedLessons: {
-            type: [Number],
-            default: []
+        accounting: {
+            completedLessons: {
+                type: [Number],
+                default: []
+            },
+            lastUnlockedLesson: {
+                type: Number,
+                default: 1
+            }
         },
-        lastUnlockedLesson: {
-            type: Number,
-            default: 1
+        english: {
+            completedLessons: {
+                type: [Number],
+                default: []
+            },
+            lastUnlockedLesson: {
+                type: Number,
+                default: 1
+            }
         }
+    },
+
+    
+    preferences: {
+        language: { type: String, default: 'fr' }, 
+        goal: { type: String } 
     }
+
 }, { timestamps: true });
 
 module.exports = mongoose.model('User', userSchema);

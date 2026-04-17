@@ -149,7 +149,7 @@
 
         <div class="final-screen" id="finalScreen">
             <div class="final-icon">🏆</div>
-            <h1 style="font-family: 'Plus Jakarta Sans'; font-size: 32px; margin-bottom: 10px;">Phase 1 Terminée!</h1>
+            <h1 style="font-family: 'Plus Jakarta Sans'; font-size: 32px; margin-bottom: 10px;">Session Terminée!</h1>
             <p style="color: #64748B; font-size: 18px; margin-bottom: 30px;">+ <span id="finalXp">0</span> XP gagnés aujourd'hui.</p>
             <button class="btn-action btn-speak" style="max-width: 300px; margin: 0 auto;" onclick="finishSession()">
                 Retour au Hub
@@ -167,41 +167,28 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
-        // 🚀 Set Course Type Globally for AI Coach
+        // 🚀 Set Course Type Globally for the AI Coach Partial
         window.CURRENT_COURSE_TYPE = "<%= courseType %>";
 
         const rawData = JSON.parse(document.getElementById('lesson-data').textContent);
         const CURRENT_LESSON_ID = parseInt("<%= lessonId %>");
 
-        // 🧠 NAYA MASTERCLASS MODE: Combine all exercises from all 30 lessons!
-        let exercises = [];
-        let sessionTitle = "English Mastery";
-
+        let currentLessonData = null;
         if (rawData.lessons && Array.isArray(rawData.lessons)) {
-            sessionTitle = rawData.phase || "Phase 1";
-            // Har lesson ke andar jao aur uski exercises ko ek master list me daal do
-            rawData.lessons.forEach(lesson => {
-                if (lesson.exercises) {
-                    lesson.exercises.forEach(ex => {
-                        ex._lessonTitle = lesson.title;
-                        ex._lessonImage = lesson.imageUrl; // Image bhi carry forward hogi!
-                        exercises.push(ex);
-                    });
-                }
-            });
-        } else if (rawData.exercises) {
-            exercises = rawData.exercises;
-            sessionTitle = rawData.title || "Session";
+            currentLessonData = rawData.lessons.find(l => l.id === CURRENT_LESSON_ID);
+        } else {
+            currentLessonData = rawData; 
         }
 
-        if (exercises.length === 0) {
+        if (!currentLessonData || !currentLessonData.exercises) {
             document.getElementById('targetSentence').innerText = "Erreur: Leçon introuvable.";
             document.getElementById('btnSpeak').style.display = 'none';
             document.getElementById('btnListen').style.display = 'none';
         } else {
 
+            let exercises = currentLessonData.exercises || [];
             let currentIndex = 0;
-            const totalCards = exercises.length; // Ab ye 3 ki jagah 60+ hoga!
+            const totalCards = exercises.length;
             
             let totalXp = 0;
             let requiredSuccess = 2; 
@@ -228,7 +215,7 @@
             const btnSpeak = document.getElementById('btnSpeak');
             const btnNext = document.getElementById('btnNext');
 
-            document.title = `${sessionTitle} | English Mastery`;
+            document.title = `${currentLessonData.title || 'Session'} | English Mastery`;
 
             const synth = window.speechSynthesis;
             let femaleVoice = null;
@@ -314,8 +301,7 @@
                 currentSuccess = 0; 
                 updateDots();
                 
-                // Image automatically change hogi jaise hi naya lesson shuru hoga!
-                const activeImgUrl = currentEx.imageUrl || currentEx._lessonImage || currentLessonData?.imageUrl;
+                const activeImgUrl = currentEx.imageUrl || currentLessonData.imageUrl;
                 if (activeImgUrl) {
                     elImg.src = activeImgUrl;
                     elImg.classList.add('active');
@@ -391,6 +377,7 @@
                 elFeedback.style.display = 'block';
                 btnSpeak.innerHTML = '🎤 Réessayer';
 
+                // 🚀 Call the AI Coach from the separate partial file!
                 if (window.triggerAICoachError) {
                     window.triggerAICoachError(whatTheySaid, target);
                 }

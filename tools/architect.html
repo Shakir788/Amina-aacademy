@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Lesson Architect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; display: flex; height: 100vh; background: #F8FAFC; color: #0F172A; }
+        
+        /* LEFT PANEL: Editor */
+        .editor-panel { width: 50%; padding: 30px; overflow-y: auto; background: white; border-right: 2px solid #E2E8F0; }
+        h1 { font-family: 'Plus Jakarta Sans'; font-size: 24px; color: #4F46E5; margin-top: 0; }
+        
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 14px; color: #475569; }
+        input[type="text"], textarea { width: 100%; padding: 10px; border: 2px solid #E2E8F0; border-radius: 8px; font-family: 'Inter'; box-sizing: border-box; }
+        input[type="text"]:focus, textarea:focus { border-color: #4F46E5; outline: none; }
+        
+        .btn { background: #4F46E5; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: 10px; }
+        .btn-green { background: #10B981; }
+        
+        .output-box { background: #1E293B; color: #38BDF8; padding: 15px; border-radius: 8px; font-family: monospace; white-space: pre-wrap; font-size: 12px; margin-top: 20px; overflow-x: auto; }
+
+        /* RIGHT PANEL: Live Preview (Mobile Mockup) */
+        .preview-panel { width: 50%; display: flex; align-items: center; justify-content: center; background: #EEF2FF; }
+        
+        .mobile-mockup { width: 375px; height: 750px; background: #F8FAFC; border-radius: 40px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); border: 8px solid #0F172A; overflow-y: auto; position: relative; }
+        .preview-nav { background: white; padding: 15px; display: flex; justify-content: space-between; border-bottom: 1px solid #E2E8F0; font-weight: bold; }
+        
+        .flashcard { margin: 20px; background: white; border-radius: 20px; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; }
+        .exercise-img { width: 100%; height: 150px; object-fit: cover; border-radius: 12px; margin-bottom: 15px; display: none; }
+        .exercise-img.active { display: block; }
+        
+        .pronunciation { font-size: 12px; color: #4F46E5; background: #EEF2FF; display: inline-block; padding: 4px 10px; border-radius: 8px; font-weight: 600; margin-bottom: 10px; }
+        .target-sentence { font-family: 'Plus Jakarta Sans'; font-size: 24px; font-weight: 800; margin-bottom: 20px; }
+        
+        .trans-box { background: #F1F5F9; padding: 12px; border-radius: 12px; margin-bottom: 20px; text-align: left; font-size: 14px; }
+        .trans-row { display: flex; justify-content: space-between; margin-bottom: 8px; border-bottom: 1px solid #E2E8F0; padding-bottom: 5px; }
+        .trans-row:last-child { border: none; padding-bottom: 0; margin-bottom: 0; }
+        .lang-label { font-weight: bold; color: #64748B; font-size: 11px; text-transform: uppercase; }
+        
+        .hint-box { background: #FFFBEB; border-left: 3px solid #F59E0B; padding: 10px; font-size: 12px; text-align: left; margin-bottom: 20px; color: #92400E; display: none; }
+        .hint-box.active { display: block; }
+
+        .btn-mock { background: #4F46E5; color: white; padding: 15px; border-radius: 12px; font-weight: bold; text-align: center; margin-bottom: 10px; cursor: pointer; }
+        .btn-mock.listen { background: #E2E8F0; color: #0F172A; }
+    </style>
+</head>
+<body>
+
+    <div class="editor-panel">
+        <h1>🛠️ Lesson Architect</h1>
+        <p>Type here and see the magic on the right!</p>
+
+        <div class="form-group">
+            <label>🇬🇧 English Sentence</label>
+            <input type="text" id="inpEn" value="Good morning" oninput="updatePreview()">
+        </div>
+        <div class="form-group">
+            <label>🗣️ Pronunciation Breakdown</label>
+            <input type="text" id="inpPro" value="Gud mor-ning" oninput="updatePreview()">
+        </div>
+        <div class="form-group">
+            <label>🖼️ Image URL (Unsplash etc.)</label>
+            <input type="text" id="inpImg" value="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=800" oninput="updatePreview()">
+        </div>
+        <div class="form-group">
+            <label>🇫🇷 French Translation</label>
+            <input type="text" id="inpFr" value="Bonjour (le matin)" oninput="updatePreview()">
+        </div>
+        <div class="form-group">
+            <label>🇲🇦 Darija Translation</label>
+            <input type="text" id="inpDar" value="Sbah lkhir" oninput="updatePreview()">
+        </div>
+        <div class="form-group">
+            <label>🇸🇦 Arabic Translation</label>
+            <input type="text" id="inpAr" value="صباح الخير" dir="rtl" oninput="updatePreview()">
+        </div>
+        <div class="form-group">
+            <label>💡 Grammar Hint</label>
+            <textarea id="inpHint" rows="2" oninput="updatePreview()">Use strictly before 12 PM.</textarea>
+        </div>
+
+        <button class="btn btn-green" onclick="generateJSON()">📥 Generate JSON for Backend</button>
+        
+        <div class="output-box" id="jsonOutput">Click generate to see JSON...</div>
+    </div>
+
+    <div class="preview-panel">
+        <div class="mobile-mockup">
+            <div class="preview-nav">
+                <span>✕</span>
+                <span style="color:#10B981;">⭐⭐ XP: 10</span>
+            </div>
+            
+            <div class="flashcard">
+                <img src="" id="prevImg" class="exercise-img active">
+                
+                <div class="pronunciation" id="prevPro">🗣️ Gud mor-ning</div>
+                <div class="target-sentence" id="prevEn">Good morning</div>
+                
+                <div class="trans-box">
+                    <div class="trans-row"><span class="lang-label">Fr</span> <span id="prevFr">Bonjour (le matin)</span></div>
+                    <div class="trans-row"><span class="lang-label">Dar</span> <span style="color:#0F766E; font-weight:bold;" id="prevDar">Sbah lkhir</span></div>
+                    <div class="trans-row"><span class="lang-label">Ar</span> <span style="font-weight:bold;" id="prevAr" dir="rtl">صباح الخير</span></div>
+                </div>
+
+                <div class="hint-box active" id="prevHintBox">
+                    💡 <b>Grammar:</b> <span id="prevHint">Use strictly before 12 PM.</span>
+                </div>
+
+                <div class="btn-mock listen" onclick="playAudio()">🔊 Écouter (Listen)</div>
+                <div class="btn-mock">🎤 Parler (Simulate)</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updatePreview() {
+            document.getElementById('prevEn').innerText = document.getElementById('inpEn').value || '...';
+            document.getElementById('prevPro').innerText = '🗣️ ' + (document.getElementById('inpPro').value || '...');
+            document.getElementById('prevFr').innerText = document.getElementById('inpFr').value || '...';
+            document.getElementById('prevDar').innerText = document.getElementById('inpDar').value || '...';
+            document.getElementById('prevAr').innerText = document.getElementById('inpAr').value || '...';
+            
+            const hint = document.getElementById('inpHint').value;
+            const hintBox = document.getElementById('prevHintBox');
+            if(hint) { hintBox.classList.add('active'); document.getElementById('prevHint').innerText = hint; }
+            else { hintBox.classList.remove('active'); }
+
+            const imgUrl = document.getElementById('inpImg').value;
+            const imgEl = document.getElementById('prevImg');
+            if(imgUrl) { imgEl.src = imgUrl; imgEl.classList.add('active'); }
+            else { imgEl.classList.remove('active'); }
+        }
+
+        function playAudio() {
+            const textToSpeak = document.getElementById('inpEn').value;
+            if(!textToSpeak) return;
+            window.speechSynthesis.cancel();
+            const utterThis = new SpeechSynthesisUtterance(textToSpeak);
+            utterThis.lang = 'en-US';
+            utterThis.rate = 0.85;
+            window.speechSynthesis.speak(utterThis);
+        }
+
+        function generateJSON() {
+            const exercise = {
+                en: document.getElementById('inpEn').value,
+                pronunciation: document.getElementById('inpPro').value,
+                fr: document.getElementById('inpFr').value,
+                ar: document.getElementById('inpAr').value,
+                darija: document.getElementById('inpDar').value,
+                hint: document.getElementById('inpHint').value,
+                imageUrl: document.getElementById('inpImg').value
+            };
+            document.getElementById('jsonOutput').innerText = JSON.stringify(exercise, null, 2);
+        }
+
+        // Init
+        updatePreview();
+    </script>
+</body>
+</html>
