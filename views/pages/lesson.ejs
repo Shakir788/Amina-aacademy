@@ -1,158 +1,256 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr" id="pageLang">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session <%= lessonId %> | English Mastery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Leçon <%= lessonId %> - AMINA Académie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
     
+    <% 
+        // 💼 PURE ACCOUNTING THEME
+        const themeMain = '#1e3a8a'; // Deep Blue
+        const themeGradient = '#3b82f6';
+        const fallbackImg = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200'; // Calculator image
+    %>
+
     <style>
         :root {
-            --primary: #4F46E5;
-            --primary-hover: #4338CA;
-            --success: #10B981;
-            --warning: #F59E0B;
-            --error: #EF4444;
-            --bg-color: #F8FAFC;
-            --card-bg: #FFFFFF;
-            --text-main: #0F172A;
-            --text-muted: #64748B;
+            --theme-main: <%= themeMain %>;
+            --theme-gradient: <%= themeGradient %>;
         }
 
+        /* --- Poster Canvas Background --- */
         body {
-            background-color: var(--bg-color); font-family: 'Inter', sans-serif;
-            margin: 0; padding: 0; color: var(--text-main);
-            display: flex; flex-direction: column; min-height: 100vh;
+            background: linear-gradient(135deg, #eef2f7 0%, #d1d9e6 100%);
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            min-height: 100vh;
         }
 
+        /* --- Elegant Navbar --- */
         nav {
-            background: white; padding: 15px 5%; display: flex; justify-content: space-between;
-            align-items: center; border-bottom: 2px solid #E2E8F0; position: sticky; top: 0; z-index: 100;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
         }
-        .nav-left { display: flex; align-items: center; gap: 15px; }
-        .back-btn { color: var(--text-muted); text-decoration: none; font-size: 24px; font-weight: bold; }
-        .progress-container { flex: 1; max-width: 300px; background: #E2E8F0; height: 12px; border-radius: 20px; overflow: hidden; margin: 0 20px; }
-        .progress-bar { height: 100%; background: var(--success); width: 0%; transition: width 0.5s ease; }
+        .logo { font-size: 20px; font-weight: 800; text-decoration: none; color: #0f172a; }
+        .logo span { color: var(--theme-main); }
+
+        /* --- THE PREMIUM HEADER --- */
+        .poster-header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
         
-        .stats-badge { display: flex; gap: 10px; }
-        .streak-badge, .xp-badge { padding: 5px 12px; border-radius: 50px; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 5px; }
-        .streak-badge { background: #FEF3C7; color: #D97706; }
-        .xp-badge { background: #E0E7FF; color: var(--primary); }
-
-        .game-container {
-            flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            padding: 20px; max-width: 600px; margin: 0 auto; width: 100%; box-sizing: border-box;
+        .lesson-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--theme-main); 
+            margin-bottom: 10px;
+            font-weight: 700;
+            display: inline-block;
+            background: rgba(255,255,255,0.5);
+            padding: 5px 15px;
+            border-radius: 50px;
         }
-
-        .flashcard {
-            background: var(--card-bg); width: 100%; border-radius: 24px; padding: 25px 30px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05); border: 2px solid #E2E8F0;
-            text-align: center; transition: all 0.3s ease; position: relative;
-        }
-
-        .status-badge {
-            position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
-            background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px;
-            font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
-        }
-
-        .exercise-img { width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-bottom: 20px; display: none; }
-        .exercise-img.active { display: block; }
-
-        .pronunciation { font-size: 15px; color: var(--primary); background: #EEF2FF; display: inline-block; padding: 4px 12px; border-radius: 8px; margin-bottom: 10px; font-weight: 600; letter-spacing: 1px;}
-        .target-sentence { font-family: 'Plus Jakarta Sans'; font-size: 32px; font-weight: 800; color: var(--text-main); margin: 0 0 20px; line-height: 1.3; }
         
-        .translation-box { background: #F8FAFC; border: 1px solid #E2E8F0; padding: 15px; border-radius: 12px; margin-bottom: 25px; text-align: left; }
-        .trans-row { display: flex; justify-content: space-between; margin-bottom: 8px; align-items: center; font-size: 15px; }
-        .trans-row:last-child { margin-bottom: 0; }
-        .lang-label { font-weight: 700; color: var(--text-muted); font-size: 12px; text-transform: uppercase; width: 60px; }
-        .trans-fr { color: #334155; flex: 1; }
-        .trans-darija { color: #0F766E; font-weight: 600; flex: 1; }
-        .trans-ar { font-size: 18px; font-weight: 600; color: var(--text-main); text-align: right; flex: 1; font-family: 'Arial', sans-serif; }
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #0f172a;
+            margin: 0 auto;
+            max-width: 900px;
+            line-height: 1.2;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05); 
+        }
+        
+        .ornament {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-        .grammar-hint { background: #FFFBEB; border-left: 4px solid var(--warning); padding: 15px; text-align: left; font-size: 14px; color: #92400E; border-radius: 0 8px 8px 0; margin-bottom: 25px; display: none; }
-        .grammar-hint.active { display: block; }
+        .ornament::before, .ornament::after {
+            content: '';
+            height: 2px;
+            width: 50px;
+            background: #d97706; 
+        }
+        .ornament span { color: #d97706; font-size: 18px; line-height: 0; }
 
-        .action-area { display: flex; flex-direction: column; gap: 15px; width: 100%; }
-        .btn-action { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 18px; border-radius: 16px; font-size: 18px; font-weight: 700; border: none; cursor: pointer; transition: 0.3s; }
-        .btn-listen { background: #F1F5F9; color: var(--text-main); border: 2px solid #CBD5E1; }
-        .btn-listen:hover { background: #E2E8F0; }
-        .btn-speak { background: var(--primary); color: white; box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3); }
-        .btn-speak:hover { background: var(--primary-hover); transform: translateY(-2px); }
-        .btn-speak.listening { background: var(--error); animation: pulse 1.5s infinite; box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4); }
-        .btn-next { background: var(--success); color: white; display: none; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3); }
-        .btn-next:hover { filter: brightness(1.1); transform: translateY(-2px); }
+        /* --- Hero Image --- */
+        .hero-img-container {
+            max-width: 850px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+        .hero-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 4px solid white; 
+        }
 
-        .feedback-msg { margin-top: 15px; font-size: 15px; text-align: left; padding: 15px; border-radius: 12px; display: none; }
-        .feedback-success { background: #D1FAE5; color: #065F46; display: block; text-align: center; font-weight: 700;}
-        .feedback-error { background: #FEE2E2; color: #991B1B; display: block; }
-        .feedback-error span { display: block; margin-top: 5px; }
+        /* --- The Infographic Content Grid --- */
+        .poster-grid {
+            max-width: 850px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+            display: grid;
+            gap: 25px;
+        }
 
-        .repeat-tracker { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
-        .dot { width: 12px; height: 12px; border-radius: 50%; background: #E2E8F0; }
-        .dot.filled { background: var(--success); }
+        .info-card {
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .info-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
 
-        .final-screen { display: none; text-align: center; }
-        .final-icon { font-size: 80px; margin-bottom: 20px; }
+        .card-ribbon {
+            padding: 12px 25px;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+        /* 🚀 TEXT TYPOGRAPHY */
+        .card-body { padding: 30px 35px; font-size: 17px; line-height: 2; color: #334155; letter-spacing: 0.3px; }
+        .card-body b { color: #0f172a; font-weight: 700; }
+
+        /* 🚀 FORMATTING CLASSES */
+        .premium-heading {
+            font-family: 'Playfair Display', serif; color: var(--theme-main); font-size: 22px;
+            font-weight: 700; margin-top: 35px; margin-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 10px; display: block;
+        }
+        .premium-bullet { color: var(--theme-gradient); margin-right: 8px; font-size: 1.1em; }
+        .premium-note { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 12px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; display: block; color: #92400e; }
+        .premium-list-item { display: block; margin-left: 25px; margin-bottom: 10px; position: relative; }
+        .premium-list-item::before { content: '•'; color: #d97706; position: absolute; left: -18px; font-size: 22px; line-height: 1; }
+
+        /* 🚀 INTERACTIVE PRACTICE ZONE CSS */
+        .practice-widget { margin-top: 30px; padding: 25px; background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; }
+        .practice-input { width: 100%; padding: 15px; margin: 15px 0; border: 2px solid #cbd5e1; border-radius: 8px; font-size: 18px; font-family: 'Inter', sans-serif; transition: 0.3s; box-sizing: border-box; }
+        .practice-input:focus { border-color: var(--theme-gradient); outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.2); }
+        .practice-btn { background: #0f172a; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; }
+        .practice-btn:hover { background: #1e293b; transform: translateY(-2px); }
+        .mcq-option { display: block; margin: 10px 0; padding: 15px; background: white; border: 2px solid #e2e8f0; border-radius: 8px; cursor: pointer; transition: 0.2s; font-weight: 500; }
+        .mcq-option:hover { border-color: #94a3b8; background: #f1f5f9; }
+        .mcq-option input { margin-right: 15px; transform: scale(1.2); }
+        .practice-result { margin-top: 20px; padding: 15px; border-radius: 8px; font-weight: 700; display: none; }
+        .result-success { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; display: block; }
+        .result-error { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; display: block; }
+
+        /* --- Dynamic Section Colors (Restored to Original) --- */
+        .theme-main .card-ribbon { background: linear-gradient(to right, var(--theme-main), var(--theme-gradient)); }
+        
+        .theme-teal { background: #f0fdfa; }
+        .theme-teal .card-ribbon { background: linear-gradient(to right, #0f766e, #14b8a6); }
+        
+        .theme-gold { background: #fffbeb; }
+        .theme-gold .card-ribbon { background: linear-gradient(to right, #b45309, #f59e0b); }
+        
+        .theme-dark { background: var(--theme-main); color: white; }
+        .theme-dark .card-ribbon { background: linear-gradient(to right, #0f172a, #334155); color: white; }
+        .theme-dark .card-body { color: #e2e8f0; }
+        .theme-dark .card-body b { color: #fbbf24; }
+
+        /* --- Controls --- */
+        .btn-lang { border: none; background: white; padding: 6px 15px; border-radius: 50px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1); color: var(--theme-main); transition: 0.3s; }
+        .btn-lang.active { background: var(--theme-main); color: white; }
+
+        /* --- Finish Button --- */
+        .action-area { text-align: center; margin-top: 20px; }
+        .btn-complete { background: linear-gradient(to right, #d97706, #f59e0b); color: white; border: none; padding: 18px 50px; font-size: 18px; font-weight: 700; border-radius: 50px; cursor: pointer; box-shadow: 0 5px 20px rgba(217, 119, 6, 0.4); transition: 0.3s; }
+        .btn-complete:hover { transform: scale(1.05); }
+
+        /* RTL Support */
+        [dir="rtl"] .poster-grid, [dir="rtl"] .card-body { text-align: right; }
+        [dir="rtl"] .card-ribbon { flex-direction: row-reverse; }
+        [dir="rtl"] .premium-note { border-left: none; border-right: 4px solid #f59e0b; border-radius: 8px 0 0 8px; }
+        [dir="rtl"] .premium-list-item { margin-left: 0; margin-right: 25px; }
+        [dir="rtl"] .premium-list-item::before { left: auto; right: -18px; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="nav-left">
-            <a href="/dashboard" class="back-btn">✕</a>
-        </div>
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
-        <div class="stats-badge">
-            <div class="xp-badge">⭐ <span id="xpCounter">0</span> XP</div>
-            <div class="streak-badge">🔥 <span>1</span></div>
+        <a href="/dashboard" class="logo">AMINA <span>Académie</span></a>
+        <div style="display:flex; gap:10px;">
+            <button class="btn-lang active" onclick="switchLang('fr', 'ltr', this)">FR</button>
+            <button class="btn-lang" onclick="switchLang('en', 'ltr', this)">EN</button>
+            <button class="btn-lang" onclick="switchLang('ar', 'rtl', this)">AR</button>
         </div>
     </nav>
 
-    <div class="game-container">
-        
-        <div class="flashcard" id="learningCard">
-            <div class="status-badge" id="stepIndicator">1 / 5</div>
-            
-            <img src="" alt="Exercise context" class="exercise-img" id="exerciseImg">
+    <div class="poster-header">
+        <div class="lesson-tag">💼 Accounting Empire - Leçon <%= lessonId %></div>
+        <h1 class="main-title" id="lessonTitle">
+            <%= lesson.title?.fr || lesson.title || 'Chargement...' %>
+        </h1>
+        <div class="ornament">
+            <span>◈</span>
+        </div>
+    </div>
 
-            <div class="pronunciation" id="pronunciation">...</div>
-            <div class="target-sentence" id="targetSentence">Loading...</div>
-            
-            <div class="translation-box" id="transBoxMain">
-                <div class="trans-row" id="rowFr"><span class="lang-label">Fr</span> <span class="trans-fr" id="transFr">...</span></div>
-                <div class="trans-row" id="rowDar"><span class="lang-label">Dar</span> <span class="trans-darija" id="transDarija">...</span></div>
-                <div class="trans-row" id="rowAr"><span class="lang-label">Ar</span> <span class="trans-ar" dir="rtl" id="transAr">...</span></div>
-            </div>
+    <div class="hero-img-container">
+        <img src="<%= fallbackImg %>" id="lessonImg" class="hero-img" alt="Cover">
+    </div>
 
-            <div class="grammar-hint" id="grammarHint">
-                💡 <b>Indice:</b> <span id="hintText">...</span>
-            </div>
+    <div class="poster-grid">
 
-            <div class="repeat-tracker" id="repeatTracker">
-                <div class="dot" id="dot1"></div>
-                <div class="dot" id="dot2"></div>
-            </div>
-
-            <div class="action-area">
-                <button class="btn-action btn-listen" id="btnListen" onclick="playAudio()">🔊 Écouter</button>
-                <button class="btn-action btn-speak" id="btnSpeak" onclick="startSpeaking()">🎤 Parler</button>
-                <button class="btn-action btn-next" id="btnNext" onclick="nextCard()">Continue ➔</button>
-            </div>
-
-            <div class="feedback-msg" id="feedbackMsg"></div>
+        <div class="info-card theme-main">
+            <div class="card-ribbon">🎯 <span id="lbl-obj">Objectif</span></div>
+            <div class="card-body" id="txt-obj"></div>
         </div>
 
-        <div class="final-screen" id="finalScreen">
-            <div class="final-icon">🏆</div>
-            <h1 style="font-family: 'Plus Jakarta Sans'; font-size: 32px; margin-bottom: 10px;">Phase 1 Terminée!</h1>
-            <p style="color: #64748B; font-size: 18px; margin-bottom: 30px;">+ <span id="finalXp">0</span> XP gagnés aujourd'hui.</p>
-            <button class="btn-action btn-speak" style="max-width: 300px; margin: 0 auto;" onclick="finishSession()">
-                Retour au Hub
+        <div class="info-card theme-main">
+            <div class="card-ribbon">📖 <span id="lbl-exp">Explication</span></div>
+            <div class="card-body" id="txt-exp"></div>
+        </div>
+
+        <div class="info-card theme-teal">
+            <div class="card-ribbon">💼 <span id="lbl-exm">Exemple</span></div>
+            <div class="card-body" id="txt-exm"></div>
+        </div>
+
+        <div class="info-card theme-gold">
+            <div class="card-ribbon">✍️ <span id="lbl-pra">Tâche Pratique</span></div>
+            <div class="card-body">
+                <div id="txt-pra"></div>
+                <div id="dynamic-practice-zone"></div>
+            </div>
+        </div>
+
+        <div class="info-card theme-dark">
+            <div class="card-ribbon">📌 <span id="lbl-res">Résumé</span></div>
+            <div class="card-body" id="txt-res"></div>
+        </div>
+
+        <div class="action-area">
+            <button class="btn-complete" id="btn-complete" onclick="markComplete()">
+                ✅ Marquer comme terminé
             </button>
         </div>
 
@@ -163,276 +261,188 @@
     <script id="lesson-data" type="application/json">
         <%- JSON.stringify(lesson || {}) %>
     </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
-        // 🚀 Set Course Type Globally for AI Coach
-        window.CURRENT_COURSE_TYPE = "<%= courseType %>";
+        // 🚀 NAYA: AI Coach ko context dene ke liye global variable
+        window.CURRENT_COURSE_TYPE = "accounting"; 
 
-        const rawData = JSON.parse(document.getElementById('lesson-data').textContent);
-        const CURRENT_LESSON_ID = parseInt("<%= lessonId %>");
+        const lessonData = JSON.parse(document.getElementById('lesson-data').textContent);
+        const fallbackImageUrl = "<%= fallbackImg %>"; 
+        const CURRENT_LESSON_ID = "<%= lessonId %>";
+        const CURRENT_COURSE_TYPE = "accounting"; // 🚀 Hardcoded to accounting for this file
 
-        // 🧠 NAYA MASTERCLASS MODE: Combine all exercises from all 30 lessons!
-        let exercises = [];
-        let sessionTitle = "English Mastery";
+        const labels = {
+            fr: { obj: "Objectif", exp: "Explication", exm: "Exemple", pra: "Tâche Pratique", res: "Résumé", btn: "✅ Marquer comme terminé" },
+            en: { obj: "Objective", exp: "Explanation", exm: "Case Study", pra: "Practice Task", res: "Summary", btn: "✅ Mark as Completed" },
+            ar: { obj: "الهدف", exp: "الشرح", exm: "مثال", pra: "تطبيق عملي", res: "ملخص", btn: "✅ تحديد كمكتمل" }
+        };
 
-        if (rawData.lessons && Array.isArray(rawData.lessons)) {
-            sessionTitle = rawData.phase || "Phase 1";
-            // Har lesson ke andar jao aur uski exercises ko ek master list me daal do
-            rawData.lessons.forEach(lesson => {
-                if (lesson.exercises) {
-                    lesson.exercises.forEach(ex => {
-                        ex._lessonTitle = lesson.title;
-                        ex._lessonImage = lesson.imageUrl; // Image bhi carry forward hogi!
-                        exercises.push(ex);
-                    });
-                }
-            });
-        } else if (rawData.exercises) {
-            exercises = rawData.exercises;
-            sessionTitle = rawData.title || "Session";
+        function format(text) {
+            if (!text) return "";
+            let html = text;
+            html = html.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+            html = html.replace(/🔹\s*(\d+\..*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-heading"><span class="premium-bullet">🔹</span> $1</span>');
+            html = html.replace(/🔹/g, '<br><br><span class="premium-bullet">🔹</span>');
+            html = html.replace(/👍\s*(.*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-note"><b>💡 Note :</b> $1</span>');
+            html = html.replace(/-\s+(.*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-list-item">$1</span>');
+            html = html.replace(/❌/g, '<br><span style="color: #ef4444; font-weight: bold; margin-right: 8px;">❌</span>');
+            html = html.replace(/✓/g, '<br><span style="color: #10b981; font-weight: bold; margin-right: 8px;">✅</span>');
+            html = html.replace(/\n/g, '<br>');
+            return html;
         }
 
-        if (exercises.length === 0) {
-            document.getElementById('targetSentence').innerText = "Erreur: Leçon introuvable.";
-            document.getElementById('btnSpeak').style.display = 'none';
-            document.getElementById('btnListen').style.display = 'none';
-        } else {
+        window.checkAnswer = function(inputType) {
+            const pz = lessonData.practice_zone;
+            const resultDiv = document.getElementById('pz_result');
+            let userAnswer = "";
 
-            let currentIndex = 0;
-            const totalCards = exercises.length; // Ab ye 3 ki jagah 60+ hoga!
-            
-            let totalXp = 0;
-            let requiredSuccess = 2; 
-            let currentSuccess = 0;
-
-            const elPronunciation = document.getElementById('pronunciation');
-            const elSentence = document.getElementById('targetSentence');
-            const elTransFr = document.getElementById('transFr');
-            const elTransDarija = document.getElementById('transDarija');
-            const elTransAr = document.getElementById('transAr');
-            const elHintBox = document.getElementById('grammarHint');
-            const elHintText = document.getElementById('hintText');
-            const elStepInd = document.getElementById('stepIndicator');
-            const elProgressBar = document.getElementById('progressBar');
-            const elFeedback = document.getElementById('feedbackMsg');
-            const elXp = document.getElementById('xpCounter');
-            const elImg = document.getElementById('exerciseImg');
-            
-            const rowFr = document.getElementById('rowFr');
-            const rowDar = document.getElementById('rowDar');
-            const rowAr = document.getElementById('rowAr');
-            
-            const btnListen = document.getElementById('btnListen');
-            const btnSpeak = document.getElementById('btnSpeak');
-            const btnNext = document.getElementById('btnNext');
-
-            document.title = `${sessionTitle} | English Mastery`;
-
-            const synth = window.speechSynthesis;
-            let femaleVoice = null;
-
-            function setFemaleVoice() {
-                const voices = synth.getVoices();
-                femaleVoice = voices.find(v => v.name.includes('Google UK English Female') || v.name.includes('Zira') || v.name.includes('Samantha') || v.name.includes('Female')) || voices.find(v => v.lang.startsWith('en-'));
-            }
-            
-            synth.getVoices();
-            if (speechSynthesis.onvoiceschanged !== undefined) {
-                speechSynthesis.onvoiceschanged = setFemaleVoice;
+            if (inputType === 'radio') {
+                const selected = document.querySelector('input[name="pz_radio"]:checked');
+                if(!selected) {
+                    resultDiv.className = 'practice-result result-error';
+                    resultDiv.innerHTML = '⚠️ Veuillez sélectionner une option avant de vérifier.';
+                    return;
+                }
+                userAnswer = selected.value;
+            } else if (inputType === 'input') {
+                userAnswer = document.getElementById('pz_input').value;
+                if(!userAnswer) {
+                    resultDiv.className = 'practice-result result-error';
+                    resultDiv.innerHTML = '⚠️ Veuillez entrer une valeur numérique.';
+                    return;
+                }
             }
 
-            window.playAudio = function() {
-                if (synth.speaking) { synth.cancel(); }
-                setTimeout(() => {
-                    const utterThis = new SpeechSynthesisUtterance(exercises[currentIndex].en);
-                    if (femaleVoice) { utterThis.voice = femaleVoice; }
-                    utterThis.lang = 'en-US'; 
-                    utterThis.rate = 0.85;
-                    synth.speak(utterThis);
-                }, 50);
-            }
-
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-            let recognition;
-            
-            if (SpeechRecognition) {
-                recognition = new SpeechRecognition();
-                recognition.lang = 'en-US';
-                recognition.interimResults = false;
-
-                recognition.onstart = function() {
-                    btnSpeak.classList.add('listening');
-                    btnSpeak.innerHTML = '🎧 Je vous écoute...';
-                    elFeedback.style.display = 'none';
-                };
-
-                recognition.onresult = function(event) {
-                    const speechResult = event.results[0][0].transcript.toLowerCase().trim();
-                    const targetText = exercises[currentIndex].en.toLowerCase().replace(/[^\w\s\']/g, "").trim();
-                    const cleanSpeech = speechResult.replace(/[^\w\s\']/g, "").trim();
-
-                    let matched = false;
-                    if (cleanSpeech.includes(targetText) || targetText.includes(cleanSpeech) || cleanSpeech === targetText) {
-                        matched = true;
-                    }
-                    
-                    if (!matched && exercises[currentIndex].variations) {
-                        for(let variation of exercises[currentIndex].variations) {
-                            let cleanVar = variation.toLowerCase().replace(/[^\w\s\']/g, "").trim();
-                            if(cleanSpeech.includes(cleanVar) || cleanSpeech === cleanVar) {
-                                matched = true; break;
-                            }
-                        }
-                    }
-
-                    if (matched) {
-                        handleSuccess();
-                    } else {
-                        handleFailure(speechResult, exercises[currentIndex].en);
-                    }
-                };
-
-                recognition.onerror = function() {
-                    btnSpeak.classList.remove('listening'); btnSpeak.innerHTML = '🎤 Parler';
-                    elFeedback.className = 'feedback-msg feedback-error';
-                    elFeedback.innerHTML = "❌ Je n'ai pas bien entendu. Réessayez.";
-                    elFeedback.style.display = 'block';
-                };
-
-                recognition.onend = function() { btnSpeak.classList.remove('listening'); };
+            if (userAnswer.toString().trim() === pz.correct_answer.toString().trim()) {
+                resultDiv.className = 'practice-result result-success';
+                resultDiv.innerHTML = '🎉 Excellent ! Votre réponse est parfaitement correcte.';
             } else {
-                alert("Navigateur non supporté pour la voix. Utilisez Chrome.");
-                btnSpeak.style.display = 'none'; btnNext.style.display = 'flex';
+                resultDiv.className = 'practice-result result-error';
+                resultDiv.innerHTML = '❌ Incorrect. Relisez le cours et essayez encore !';
+            }
+        };
+
+        function renderPracticeZone() {
+            const container = document.getElementById('dynamic-practice-zone');
+            const pz = lessonData.practice_zone;
+            
+            if (!pz || !pz.type || Object.keys(pz).length === 0) {
+                container.innerHTML = '';
+                return;
             }
 
-            window.startSpeaking = function() { if(recognition) { try { recognition.start(); } catch(e) {} } }
+            let html = `<div class="practice-widget">`;
+            if (pz.question) {
+                html += `<h4 class="premium-heading" style="margin-top:0;">🎯 Challenge :<br><span style="color:#334155; font-size:18px; font-weight:500;">${pz.question}</span></h4>`;
+            }
 
-            function loadCard() {
-                const currentEx = exercises[currentIndex];
-                currentSuccess = 0; 
-                updateDots();
+            if (pz.type === 'mcq' || pz.type === 'brand_audit' || pz.type === 'commitment') {
+                pz.options.forEach((opt) => {
+                    html += `
+                        <label class="mcq-option">
+                            <input type="radio" name="pz_radio" value="${opt}">
+                            ${opt}
+                        </label>
+                    `;
+                });
+                html += `<button class="practice-btn" onclick="checkAnswer('radio')">Vérifier la réponse</button>`;
+            } 
+            else if (pz.type === 'fifo_calculator' || pz.type === 'tva_calculator' || pz.type === 'input') {
+                html += `<input type="number" id="pz_input" class="practice-input" placeholder="Entrez votre réponse en chiffres...">`;
+                html += `<button class="practice-btn" onclick="checkAnswer('input')">Calculer & Vérifier</button>`;
+            }
+
+            html += `<div id="pz_result" class="practice-result"></div>`;
+            html += `</div>`;
+            
+            container.innerHTML = html;
+        }
+
+        function switchLang(lang, dir, btnElement = null) {
+            document.documentElement.setAttribute('dir', dir);
+            
+            let content = {};
+            if (lessonData.content && lessonData.content[lang]) {
+                content = lessonData.content[lang];
+            } else if (lessonData.content) {
+                content = lessonData.content; 
+            }
+
+            const l = labels[lang] || labels.fr;
+
+            if(btnElement) {
+                document.querySelectorAll('.btn-lang').forEach(btn => btn.classList.remove('active'));
+                btnElement.classList.add('active');
+            }
+
+            let titleText = `Leçon ${CURRENT_LESSON_ID}`;
+            if (lessonData.title) {
+                if (typeof lessonData.title === 'string') titleText = lessonData.title;
+                else if (lessonData.title[lang]) titleText = lessonData.title[lang];
+                else if (lessonData.title.fr) titleText = lessonData.title.fr;
+            }
+            document.getElementById('lessonTitle').innerText = titleText;
+
+            document.getElementById('lbl-obj').innerText = l.obj;
+            document.getElementById('lbl-exp').innerText = l.exp;
+            document.getElementById('lbl-exm').innerText = l.exm;
+            document.getElementById('lbl-pra').innerText = l.pra;
+            document.getElementById('lbl-res').innerText = l.res;
+            document.getElementById('btn-complete').innerText = l.btn;
+
+            document.getElementById('txt-obj').innerHTML = format(content.objectif || lessonData.description || "");
+            document.getElementById('txt-exp').innerHTML = format(content.explication || "");
+            document.getElementById('txt-exm').innerHTML = format(content.exemple || "");
+            document.getElementById('txt-pra').innerHTML = format(content.pratique || "");
+            document.getElementById('txt-res').innerHTML = format(content.resume || "");
+
+            const img = document.getElementById('lessonImg');
+            img.src = content.imageUrl || lessonData.imageUrl || fallbackImageUrl;
+        }
+
+        window.onload = () => {
+            switchLang('fr', 'ltr', document.querySelector('.btn-lang.active'));
+            renderPracticeZone(); 
+        };
+
+        async function markComplete() {
+            const btn = document.getElementById('btn-complete');
+            const originalText = btn.innerText;
+            
+            btn.innerHTML = '⏳ Validation...';
+            btn.style.opacity = '0.8';
+            btn.style.pointerEvents = 'none'; 
+
+            try {
+                const res = await fetch('/api/progress/complete', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        lessonId: parseInt(CURRENT_LESSON_ID), 
+                        courseType: CURRENT_COURSE_TYPE // Always sends 'accounting' now
+                    }) 
+                });
                 
-                // Image automatically change hogi jaise hi naya lesson shuru hoga!
-                const activeImgUrl = currentEx.imageUrl || currentEx._lessonImage || currentLessonData?.imageUrl;
-                if (activeImgUrl) {
-                    elImg.src = activeImgUrl;
-                    elImg.classList.add('active');
+                if (res.ok) {
+                    btn.innerHTML = '🎉 Terminé !';
+                    btn.style.background = '#10B981'; 
+                    setTimeout(() => {
+                        window.location.href = '/dashboard?t=' + new Date().getTime();
+                    }, 500);
                 } else {
-                    elImg.classList.remove('active');
+                    const data = await res.json();
+                    alert("Erreur du backend: " + (data.message || "Impossible de sauvegarder"));
+                    btn.innerHTML = originalText;
+                    btn.style.opacity = '1';
+                    btn.style.pointerEvents = 'auto';
                 }
-
-                let pronunciationText = '';
-                if(currentEx.pronunciation) {
-                    if(typeof currentEx.pronunciation === 'object') pronunciationText = currentEx.pronunciation.simple || currentEx.pronunciation.fast;
-                    else pronunciationText = currentEx.pronunciation;
-                }
-
-                elPronunciation.innerText = `🗣️ ${pronunciationText || '...'}`;
-                elSentence.innerText = currentEx.en || '...';
-                
-                if(currentEx.fr) { elTransFr.innerText = currentEx.fr; rowFr.style.display = 'flex'; } 
-                else { rowFr.style.display = 'none'; }
-                
-                if(currentEx.darija) { elTransDarija.innerText = currentEx.darija; rowDar.style.display = 'flex'; } 
-                else { rowDar.style.display = 'none'; }
-                
-                if(currentEx.ar) { elTransAr.innerText = currentEx.ar; rowAr.style.display = 'flex'; } 
-                else { rowAr.style.display = 'none'; }
-
-                elStepInd.innerText = `${currentIndex + 1} / ${totalCards}`;
-                
-                const progress = (currentIndex / totalCards) * 100;
-                elProgressBar.style.width = `${progress}%`;
-
-                const hintTextData = currentEx.context || currentEx.practice || currentEx.hint;
-                if (hintTextData) { elHintBox.classList.add('active'); elHintText.innerText = hintTextData; } 
-                else { elHintBox.classList.remove('active'); }
-
-                btnListen.style.display = 'flex'; btnSpeak.style.display = 'flex';
-                btnSpeak.innerHTML = '🎤 Parler'; btnNext.style.display = 'none';
-                elFeedback.style.display = 'none';
+            } catch (error) {
+                console.error("Error updating progress:", error);
+                alert("Erreur de connexion. Vérifiez votre backend !");
+                btn.innerHTML = originalText;
+                btn.style.opacity = '1';
+                btn.style.pointerEvents = 'auto';
             }
-
-            function updateDots() {
-                document.getElementById('dot1').className = currentSuccess >= 1 ? 'dot filled' : 'dot';
-                document.getElementById('dot2').className = currentSuccess >= 2 ? 'dot filled' : 'dot';
-            }
-
-            function handleSuccess() {
-                currentSuccess++;
-                updateDots();
-                
-                totalXp += 10;
-                elXp.innerText = totalXp;
-
-                elFeedback.className = 'feedback-msg feedback-success';
-                
-                if(currentSuccess < requiredSuccess) {
-                    elFeedback.innerHTML = '🔥 Super ! Répétez encore une fois.';
-                    btnSpeak.innerHTML = '🎤 Parler (Encore)';
-                } else {
-                    elFeedback.innerHTML = '🎉 Parfait !';
-                    btnSpeak.style.display = 'none';
-                    btnListen.style.display = 'none';
-                    btnNext.style.display = 'flex';
-                }
-                elFeedback.style.display = 'block';
-            }
-
-            function handleFailure(whatTheySaid, target) {
-                elFeedback.className = 'feedback-msg feedback-error';
-                elFeedback.innerHTML = `
-                    <b>Oups, presque!</b>
-                    <span>🗣️ <b>Vous avez dit :</b> <i style="color:#475569;">"${whatTheySaid}"</i></span>
-                    <span>🎯 <b>Correct :</b> <i style="color:#0F172A;">"${target}"</i></span>
-                `;
-                elFeedback.style.display = 'block';
-                btnSpeak.innerHTML = '🎤 Réessayer';
-
-                if (window.triggerAICoachError) {
-                    window.triggerAICoachError(whatTheySaid, target);
-                }
-            }
-
-            window.nextCard = function() {
-                currentIndex++;
-                if (currentIndex >= totalCards) {
-                    elProgressBar.style.width = `100%`;
-                    document.getElementById('learningCard').style.display = 'none';
-                    document.getElementById('finalScreen').style.display = 'block';
-                    document.getElementById('finalXp').innerText = totalXp;
-                    
-                    var duration = 3 * 1000;
-                    var end = Date.now() + duration;
-                    (function frame() {
-                        confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#4F46E5', '#10B981', '#F59E0B'] });
-                        confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#4F46E5', '#10B981', '#F59E0B'] });
-                        if (Date.now() < end) { requestAnimationFrame(frame); }
-                    }());
-                } else {
-                    loadCard();
-                }
-            }
-
-            window.finishSession = async function() {
-                const btn = document.querySelector('.final-screen .btn-speak');
-                btn.innerHTML = '⏳ Sauvegarde...';
-                btn.disabled = true;
-
-                try {
-                    const res = await fetch('/api/progress/complete', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ lessonId: parseInt(CURRENT_LESSON_ID), courseType: CURRENT_COURSE_TYPE }) 
-                    });
-                    if (res.ok) { window.location.href = '/dashboard?t=' + new Date().getTime(); } 
-                    else { alert("Erreur."); btn.innerHTML = 'Retour'; btn.disabled = false; }
-                } catch (error) { alert("Erreur."); btn.innerHTML = 'Retour'; btn.disabled = false; }
-            }
-
-            window.onload = () => { loadCard(); };
         }
     </script>
 </body>

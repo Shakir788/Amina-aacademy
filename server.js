@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const axios = require('axios'); 
 
 const connectDB = require('./config/db.js');
 const User = require('./models/User'); 
@@ -13,7 +14,7 @@ const User = require('./models/User');
 // --- Imports ---
 const authRoutes = require('./routes/authRoutes');
 const progressRoutes = require('./routes/progressRoutes');
-const aiRoutes = require('./routes/aiRoutes'); // 🚀 NAYA IMPORT: AI Router attach kiya
+const aiRoutes = require('./routes/aiRoutes'); 
 const { protect } = require('./middleware/authMiddleware');
 const { getDashboard } = require('./controllers/progressController');
 
@@ -103,7 +104,7 @@ app.set('views', path.join(__dirname, 'views'));
 // --- API Routes ---
 app.use('/api/auth', authRoutes); 
 app.use('/api/progress', progressRoutes); 
-app.use('/api/ai', aiRoutes); // 🚀 NAYA ROUTE: Ab AI ka saara dimaag alag file me hai!
+app.use('/api/ai', aiRoutes); 
 
 // --- Page Routes ---
 app.get('/', (req, res) => res.render('index'));
@@ -115,20 +116,33 @@ app.get('/complete-profile', protect, (req, res) => {
 
 app.get('/dashboard', protect, getDashboard);
 
-// Multi-Course Lesson Route (Separate Views for Accounting vs English)
+// 🚀 BACKWARD COMPATIBILITY: Purane accounting links ko naye route pe bhej do
+app.get('/lesson/:id', protect, (req, res) => {
+    res.redirect(`/lesson/accounting/${req.params.id}`);
+});
+
+// 🚀 SMART MULTI-COURSE ROUTE (Accounting & English)
 app.get('/lesson/:course/:id', protect, (req, res) => {
     const { course, id } = req.params;
     
     // Check if course is English or Accounting to set folder path
-    const folder = course === 'english' ? 'data/english' : 'data';
+    let folder = 'data'; 
+    if (course === 'english') folder = 'data/english';
+    else if (course === 'accounting' || course === 'accountant') folder = 'data/accounting';
+
     const fileName = course === 'english' ? `phase${id}.json` : `lesson${id}.json`;
     
-    const filePath = path.join(__dirname, folder, fileName);
+    let filePath = path.join(__dirname, folder, fileName);
+
+    // Agar data/accounting folder me nahi mila, toh direct data/ me check karo (Tree structure fix)
+    if (!fs.existsSync(filePath) && course !== 'english') {
+        filePath = path.join(__dirname, 'data', fileName); 
+    }
 
     if (fs.existsSync(filePath)) {
         try {
             const rawData = fs.readFileSync(filePath);
-            const lessonData = JSON.parse(rawData);
+            const parsedData = JSON.parse(rawData);
             
             // SMART ROUTING: Decide which EJS file to render based on the course
             const viewFile = course === 'english' ? 'pages/lesson-english' : 'pages/lesson';
@@ -137,13 +151,16 @@ app.get('/lesson/:course/:id', protect, (req, res) => {
                 user: req.user, 
                 lessonId: id,
                 courseType: course,
-                lesson: lessonData 
+                // 🚀 THE FIX: Dono naam bhej diye, English 'lesson' use karega, Accounting 'lessonData'
+                lesson: parsedData,
+                lessonData: parsedData 
             });
         } catch (err) {
             console.error("File Read Error:", err);
             res.redirect('/dashboard');
         }
     } else {
+        console.error("❌ File not found at:", filePath);
         res.redirect('/dashboard');
     }
 });

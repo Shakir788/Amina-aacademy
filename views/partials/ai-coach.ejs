@@ -1,45 +1,247 @@
 <style>
-    /* AI Coach specific styling only */
-    .ai-fab { position: fixed; bottom: 25px; right: 25px; background: linear-gradient(135deg, #4F46E5, #7C3AED); color: white; padding: 15px 25px; border-radius: 30px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 800; cursor: pointer; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4); z-index: 1000; transition: transform 0.2s; display: flex; align-items: center; gap: 8px; }
-    .ai-fab:hover { transform: translateY(-3px) scale(1.05); }
+    /* =========================================
+       1. TEXT CHAT UI (FLOATING BUTTON & PANEL)
+       ========================================= */
+    .ai-fab { 
+        position: fixed; 
+        bottom: 30px; 
+        right: 30px; 
+        background: linear-gradient(135deg, #000000, #171717); 
+        color: #fbbf24; /* Soft Gold */
+        padding: 16px 28px; 
+        border-radius: 50px; 
+        font-family: 'Inter', sans-serif; 
+        font-size: 16px; 
+        font-weight: 700; 
+        cursor: pointer; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(251, 191, 36, 0.2); 
+        z-index: 1000; 
+        transition: all 0.3s ease; 
+        display: flex; 
+        align-items: center; 
+        gap: 10px;
+        letter-spacing: 0.5px;
+    }
+    .ai-fab:hover { 
+        transform: translateY(-4px); 
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 15px rgba(251, 191, 36, 0.3); 
+        border-color: rgba(251, 191, 36, 0.5);
+    }
+    .ai-fab img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #fbbf24;
+    }
     
-    .ai-panel { position: fixed; bottom: 90px; right: 25px; width: 340px; height: 450px; background: white; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); display: none; flex-direction: column; z-index: 1000; border: 1px solid #E2E8F0; overflow: hidden; animation: slideUp 0.3s ease-out; font-family: 'Inter', sans-serif; }
-    .ai-header { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: white; padding: 15px 20px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 16px; display: flex; justify-content: space-between; align-items: center; }
-    .ai-header button { background: none; border: none; color: white; font-size: 20px; cursor: pointer; opacity: 0.8; }
-    .ai-header button:hover { opacity: 1; }
+    .ai-panel { 
+        position: fixed; 
+        bottom: 100px; 
+        right: 30px; 
+        width: 360px; 
+        height: 500px; 
+        background: rgba(10, 10, 10, 0.85); 
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 24px; 
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
+        display: none; 
+        flex-direction: column; 
+        z-index: 1000; 
+        border: 1px solid rgba(255, 255, 255, 0.08); 
+        overflow: hidden; 
+        animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+        font-family: 'Inter', sans-serif; 
+    }
     
-    .ai-messages { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: #F8FAFC; }
-    .ai-msg-bubble { padding: 12px 16px; border-radius: 16px; font-size: 14px; max-width: 85%; line-height: 1.5; font-weight: 500; }
-    .ai-system-msg { background: white; border: 1px solid #E2E8F0; color: #0F172A; align-self: flex-start; border-bottom-left-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
-    .ai-user-msg { background: #4F46E5; color: white; align-self: flex-end; border-bottom-right-radius: 4px; box-shadow: 0 2px 5px rgba(79, 70, 229, 0.2); }
+    .ai-header { 
+        background: transparent; 
+        color: #ffffff; 
+        padding: 20px 24px; 
+        font-family: 'Playfair Display', serif; 
+        font-weight: 700; 
+        font-size: 18px; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+        letter-spacing: 0.5px;
+    }
+    .ai-header-left { display: flex; align-items: center; gap: 12px; }
+    .ai-header-left img { width: 32px; height: 32px; border-radius: 50%; border: 2px solid #d97706; object-fit: cover;}
     
-    .ai-input-area { display: flex; padding: 15px; background: white; border-top: 1px solid #E2E8F0; }
-    .ai-input-area input { flex: 1; padding: 12px 15px; border: 1px solid #CBD5E1; border-radius: 12px; outline: none; font-family: 'Inter', sans-serif; font-size: 14px; transition: border 0.3s; }
-    .ai-input-area input:focus { border-color: #4F46E5; }
-    .ai-input-area button { background: #4F46E5; color: white; border: none; width: 45px; height: 45px; margin-left: 10px; border-radius: 12px; cursor: pointer; font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
-    .ai-input-area button:hover { background: #4338CA; }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+    .header-actions button { background: none; border: none; color: #94a3b8; font-size: 22px; cursor: pointer; transition: 0.2s; }
+    .header-actions button:hover { color: #ffffff; transform: scale(1.1); }
+    .header-actions .call-btn-icon { color: #22c55e; font-size: 20px; }
+    .header-actions .call-btn-icon:hover { color: #16a34a; transform: scale(1.1); }
+    
+    .ai-messages { 
+        flex: 1; 
+        padding: 20px; 
+        overflow-y: auto; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 16px; 
+    }
+    .ai-messages::-webkit-scrollbar { width: 4px; }
+    .ai-messages::-webkit-scrollbar-track { background: transparent; }
+    .ai-messages::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 4px; }
+    
+    .ai-msg-bubble { 
+        padding: 14px 18px; 
+        border-radius: 18px; 
+        font-size: 14.5px; 
+        max-width: 85%; 
+        line-height: 1.6; 
+        font-weight: 400; 
+    }
+    .ai-system-msg { 
+        background: #171717; 
+        border: 1px solid rgba(255, 255, 255, 0.05); 
+        color: #e2e8f0; 
+        align-self: flex-start; 
+        border-bottom-left-radius: 4px; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    }
+    .ai-user-msg { 
+        background: linear-gradient(135deg, #b45309, #d97706); 
+        color: #ffffff; 
+        align-self: flex-end; 
+        border-bottom-right-radius: 4px; 
+        box-shadow: 0 4px 15px rgba(217, 119, 6, 0.2); 
+    }
+    
+    .ai-input-area { 
+        display: flex; 
+        padding: 16px 20px; 
+        background: rgba(0, 0, 0, 0.3); 
+        border-top: 1px solid rgba(255, 255, 255, 0.05); 
+        align-items: center;
+    }
+    .ai-input-area input { 
+        flex: 1; 
+        padding: 14px 18px; 
+        background: #171717;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.1); 
+        border-radius: 30px; 
+        outline: none; 
+        font-family: 'Inter', sans-serif; 
+        font-size: 14px; 
+        transition: all 0.3s; 
+    }
+    .ai-input-area input::placeholder { color: #64748B; }
+    .ai-input-area input:focus { 
+        border-color: #d97706; 
+        box-shadow: 0 0 10px rgba(217, 119, 6, 0.1);
+    }
+    
+    .stt-btn { background: none; border: none; font-size: 20px; cursor: pointer; transition: 0.3s; color: #94a3b8; margin-right: 10px; }
+    .stt-btn:hover { color: #fbbf24; transform: scale(1.1); }
+    .stt-btn.recording { color: #ef4444; animation: pulse-red 1.5s infinite; }
+    
+    .send-btn { 
+        background: #ffffff; color: #000000; border: none; width: 44px; height: 44px; 
+        margin-left: 12px; border-radius: 50%; cursor: pointer; font-weight: bold; 
+        font-size: 16px; display: flex; align-items: center; justify-content: center; transition: 0.3s; 
+    }
+    .send-btn:hover { background: #fbbf24; transform: scale(1.05); }
 
-    @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    /* =========================================
+       2. FULL SCREEN LIVE CALL OVERLAY 🚀
+       ========================================= */
+    .call-overlay {
+        position: fixed; inset: 0; background: rgba(5, 5, 5, 0.95); 
+        backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
+        z-index: 9999; display: none; flex-direction: column; align-items: center; justify-content: space-between;
+        padding: 60px 20px; font-family: 'Inter', sans-serif; opacity: 0; transition: opacity 0.4s ease;
+    }
+    .call-overlay.active { display: flex; opacity: 1; animation: fadeIn 0.4s forwards;}
+    
+    .call-header { text-align: center; color: #fff; margin-top: 20px;}
+    .call-header h2 { font-size: 32px; font-weight: 700; margin-bottom: 8px; font-family: 'Playfair Display', serif; }
+    .call-status { font-size: 14px; color: #22c55e; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+
+    /* 🌟 THE CUTE AI GLOW ANIMATION */
+    .avatar-wrapper { position: relative; display: flex; align-items: center; justify-content: center; margin-top: -20px; }
+    .avatar-wrapper img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; z-index: 10; border: 3px solid #fbbf24; box-shadow: 0 0 30px rgba(251, 191, 36, 0.3); }
+    
+    /* Waves effect */
+    .wave { position: absolute; border-radius: 50%; border: 2px solid rgba(251, 191, 36, 0.5); opacity: 0; pointer-events: none;}
+    .call-overlay.speaking .wave:nth-child(1) { animation: ai-ripple 2s linear infinite; }
+    .call-overlay.speaking .wave:nth-child(2) { animation: ai-ripple 2s linear infinite 0.6s; }
+    .call-overlay.speaking .wave:nth-child(3) { animation: ai-ripple 2s linear infinite 1.2s; }
+
+    .call-controls { display: flex; gap: 40px; align-items: center; margin-bottom: 60px;}
+    .control-btn { width: 70px; height: 70px; border-radius: 50%; border: none; font-size: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+    
+    .btn-mic { background: rgba(255,255,255,0.1); color: #fff; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);}
+    .btn-mic:hover { background: rgba(255,255,255,0.2); }
+    .btn-mic.muted { background: rgba(255,255,255,0.8); color: #000; }
+
+    .btn-end { background: #ef4444; color: white; box-shadow: 0 10px 20px rgba(239, 68, 68, 0.4); }
+    .btn-end:hover { background: #dc2626; transform: scale(1.05); box-shadow: 0 15px 25px rgba(239, 68, 68, 0.6);}
+
+    @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    @keyframes slideUpFade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse-red { 0% { transform: scale(1); } 50% { transform: scale(1.2); } 100% { transform: scale(1); } }
+    @keyframes ai-ripple { 
+        0% { width: 160px; height: 160px; opacity: 1; border-width: 4px; } 
+        100% { width: 350px; height: 350px; opacity: 0; border-width: 0px; } 
+    }
 </style>
 
-<div class="ai-fab" onclick="toggleAIPanel()">✨ Coach Amina</div>
+<div class="ai-fab" onclick="toggleAIPanel()">
+    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" alt="Amina AI">
+    Amina
+</div>
 
 <div class="ai-panel" id="aiPanel">
     <div class="ai-header">
-        <span>✨ Coach Amina AI</span>
-        <button onclick="toggleAIPanel()">✕</button>
+        <div class="ai-header-left">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" alt="Amina">
+            <span>Amina</span>
+        </div>
+        <div class="header-actions">
+            <button class="call-btn-icon" onclick="openLiveCallScreen()" title="Appel Vocal">📞</button>
+            <button onclick="toggleAIPanel()" title="Fermer">✕</button>
+        </div>
     </div>
     <div class="ai-messages" id="aiMessages">
-        <div class="ai-msg-bubble ai-system-msg">Bonjour ! Je suis Coach Amina. Posez-moi vos questions. 😊</div>
+        <div class="ai-msg-bubble ai-system-msg">Salut ! Écris-moi ou appelle-moi (📞) pour pratiquer. ✨</div>
     </div>
     <div class="ai-input-area">
-        <input type="text" id="aiInput" placeholder="Posez une question..." onkeypress="if(event.key === 'Enter') sendChatMessage()">
-        <button onclick="sendChatMessage()">➔</button>
+        <button id="sttBtn" class="stt-btn" onclick="toggleSTT()" title="Parler pour écrire">🎙️</button>
+        <input type="text" id="aiInput" placeholder="Écris un message..." autocomplete="off" onkeypress="if(event.key === 'Enter') sendTextMessage()">
+        <button class="send-btn" onclick="sendTextMessage()">➔</button>
+    </div>
+</div>
+
+<div id="liveCallScreen" class="call-overlay">
+    <div class="call-header">
+        <h2>Amina</h2>
+        <div class="call-status" id="callStatusText">CONNECTING...</div>
+    </div>
+
+    <div class="avatar-wrapper">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" alt="Amina">
+    </div>
+
+    <div class="call-controls">
+        <button class="control-btn btn-mic" id="callMicBtn" onclick="toggleCallMute()" title="Couper le micro">🎙️</button>
+        <button class="control-btn btn-end" onclick="closeLiveCallScreen()" title="Raccrocher">☎️</button>
     </div>
 </div>
 
 <script>
-    // Component Logic
+    // ==========================================
+    // 1. TEXT CHAT LOGIC (No Audio Playing)
+    // ==========================================
     function toggleAIPanel() {
         const panel = document.getElementById('aiPanel');
         panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
@@ -48,21 +250,80 @@
     function appendAIMessage(text, sender) {
         const msgDiv = document.createElement('div');
         msgDiv.className = `ai-msg-bubble ${sender === 'ai' ? 'ai-system-msg' : 'ai-user-msg'}`;
-        msgDiv.innerHTML = text;
+        msgDiv.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<b style="color:#fbbf24;">$1</b>');
         document.getElementById('aiMessages').appendChild(msgDiv);
         document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
     }
 
-    // Global function so the main lesson page can trigger it when user makes an error
-    window.triggerAICoachError = async function(whatTheySaid, target) {
-        document.getElementById('aiPanel').style.display = 'flex';
-        appendAIMessage(`J'ai dit "${whatTheySaid}" au lieu de "${target}". Pourquoi c'est faux ?`, 'user');
+    // SPEECH TO TEXT ONLY (Fills input box)
+    let sttRecognition;
+    function toggleSTT() {
+        if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+            return alert("Reconnaissance vocale non supportée sur ce navigateur.");
+        }
+        
+        if(!sttRecognition) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            sttRecognition = new SpeechRecognition();
+            sttRecognition.continuous = false;
+            sttRecognition.lang = (window.CURRENT_COURSE_TYPE === 'english') ? 'en-US' : 'fr-FR';
+            
+            sttRecognition.onstart = () => { document.getElementById('sttBtn').classList.add('recording'); };
+            sttRecognition.onresult = (e) => { 
+                document.getElementById('aiInput').value = e.results[0][0].transcript; 
+                sendTextMessage(); 
+            };
+            sttRecognition.onend = () => { document.getElementById('sttBtn').classList.remove('recording'); };
+            sttRecognition.onerror = (e) => { console.error("STT Error:", e); document.getElementById('sttBtn').classList.remove('recording'); };
+        }
+        sttRecognition.start();
+    }
+
+    // NORMAL TEXT CHAT (No Audio)
+    window.sendTextMessage = async function() {
+        const input = document.getElementById('aiInput');
+        const text = input.value.trim();
+        if(!text) return;
+        
+        input.value = '';
+        appendAIMessage(text, 'user');
 
         const typingId = 'typing-' + Date.now();
         const typingDiv = document.createElement('div');
         typingDiv.className = 'ai-msg-bubble ai-system-msg';
         typingDiv.id = typingId;
-        typingDiv.innerHTML = '<span style="color:#64748B; font-style:italic;">Coach Amina écrit...</span>';
+        typingDiv.innerHTML = '<span style="color:#64748B; font-style:italic;">Amina écrit...</span>';
+        document.getElementById('aiMessages').appendChild(typingDiv);
+        document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
+
+        try {
+            const aiRes = await fetch('/api/ai/coach', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ userQuestion: text, courseType: window.CURRENT_COURSE_TYPE || 'english' })
+            });
+            const aiData = await aiRes.json();
+            document.getElementById(typingId).remove();
+            
+            if(aiData.feedback) { 
+                appendAIMessage(aiData.feedback, 'ai');
+            }
+        } catch(e) { 
+            document.getElementById(typingId).remove(); 
+            appendAIMessage("Erreur de réseau. 😞", 'ai');
+        }
+    }
+
+    // Custom Error Trigger for Text Chat
+    window.triggerAICoachError = async function(whatTheySaid, target) {
+        document.getElementById('aiPanel').style.display = 'flex';
+        appendAIMessage(`J'ai dit "${whatTheySaid}" au lieu de "${target}". Pourquoi ?`, 'user');
+
+        const typingId = 'typing-' + Date.now();
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'ai-msg-bubble ai-system-msg';
+        typingDiv.id = typingId;
+        typingDiv.innerHTML = '<span style="color:#64748B; font-style:italic;">Amina écrit...</span>';
         document.getElementById('aiMessages').appendChild(typingDiv);
         document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
 
@@ -78,45 +339,206 @@
             });
             const aiData = await aiRes.json();
             document.getElementById(typingId).remove();
-            if(aiData.feedback) { appendAIMessage(aiData.feedback, 'ai'); }
+            
+            if(aiData.feedback) { 
+                appendAIMessage(aiData.feedback, 'ai'); 
+            }
         } catch(e) {
             document.getElementById(typingId).remove();
-            appendAIMessage("Erreur de connexion. 😞", 'ai');
+            appendAIMessage("Erreur de réseau. 😞", 'ai');
         }
     }
 
-    // Manual Question Logic
-    window.sendChatMessage = async function() {
-        const input = document.getElementById('aiInput');
-        const text = input.value.trim();
-        if(!text) return;
-        
-        input.value = '';
-        appendAIMessage(text, 'user');
+    // ==========================================
+    // 2. LIVE CALL LOGIC (Raw 16kHz PCM Fix)
+    // ==========================================
+    let isCallActive = false;
+    let isMuted = false;
+    let liveSocket = null;
+    let audioStream = null;
+    let audioContext = null; // To play received audio from Gemini
+    
+    // Naye variables Raw PCM encoding ke liye
+    let micAudioContext = null; 
+    let audioProcessor = null;
 
-        const typingId = 'typing-' + Date.now();
-        const typingDiv = document.createElement('div');
-        typingDiv.className = 'ai-msg-bubble ai-system-msg';
-        typingDiv.id = typingId;
-        typingDiv.innerHTML = '<span style="color:#64748B; font-style:italic;">Coach Amina écrit...</span>';
-        document.getElementById('aiMessages').appendChild(typingDiv);
-        document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
+    async function openLiveCallScreen() {
+        toggleAIPanel(); 
+        const callScreen = document.getElementById('liveCallScreen');
+        callScreen.style.display = 'flex';
+        setTimeout(() => callScreen.classList.add('active'), 10);
+        
+        document.getElementById('callStatusText').innerText = "CONNECTING SECURELY...";
+        document.getElementById('callStatusText').style.color = "#fbbf24"; 
+        isCallActive = true;
 
         try {
-            const aiRes = await fetch('/api/ai/coach', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ 
-                    userQuestion: text, 
-                    courseType: window.CURRENT_COURSE_TYPE || 'english' 
-                })
-            });
-            const aiData = await aiRes.json();
-            document.getElementById(typingId).remove();
-            if(aiData.feedback) { appendAIMessage(aiData.feedback, 'ai'); }
-        } catch(e) {
-            document.getElementById(typingId).remove();
-            appendAIMessage("Erreur de connexion. 😞", 'ai');
+            // 🎙️ STEP 1: BROWSER SE MIC KI PERMISSION MAANGO
+            audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            console.log("🎙️ Hardware Mic Connected!");
+
+            // 🔑 STEP 2: VERCEL BACKEND SE TEMPORARY PASS LO
+            const tokenRes = await fetch('/api/ai/live-token');
+            const tokenData = await tokenRes.json();
+
+            if(!tokenData.success) {
+                throw new Error("Token nahi mila!");
+            }
+
+            // 🚀 STEP 3: DIRECT GOOGLE WEBSOCKET CONNECTION
+            liveSocket = new WebSocket(`${tokenData.url}?key=${tokenData.key}`);
+            
+            // Set up audio context for playback
+            window.AudioContext = window.AudioContext || window.webkitAudioContext;
+            audioContext = new AudioContext();
+
+            liveSocket.onopen = () => {
+                console.log("✅ Google Live Connection Established!");
+                document.getElementById('callStatusText').innerText = "● LIVE";
+                document.getElementById('callStatusText').style.color = "#22c55e"; 
+                
+                // Initial setup message required by Gemini Live API
+                const setupMessage = {
+                    setup: {
+                        model: "models/gemini-2.0-flash", 
+                        generationConfig: {
+                            responseModalities: ["AUDIO"]
+                        }
+                    }
+                };
+                liveSocket.send(JSON.stringify(setupMessage));
+                
+                // Wait a moment for setup to complete, then start sending PCM audio
+                setTimeout(startStreamingPCMAudio, 500);
+            };
+
+            liveSocket.onmessage = async (event) => {
+                if (event.data instanceof Blob) {
+                    // Gemini sends raw PCM audio as binary blobs
+                    console.log("🔊 Received Audio Blob from Gemini");
+                    simulateAminaSpeaking(); // Trigger UI animation
+                    
+                    try {
+                        const arrayBuffer = await event.data.arrayBuffer();
+                        audioContext.decodeAudioData(arrayBuffer, (buffer) => {
+                            const source = audioContext.createBufferSource();
+                            source.buffer = buffer;
+                            source.connect(audioContext.destination);
+                            source.start(0);
+                        });
+                    } catch (e) {
+                        console.log("Error decoding audio buffer", e);
+                    }
+                } else {
+                    // Handle JSON messages (status, text transcriptions, etc)
+                    try {
+                        const data = JSON.parse(event.data);
+                        // console.log("Message from Gemini:", data);
+                    } catch (e) {}
+                }
+            };
+
+            liveSocket.onclose = (event) => {
+                console.log("❌ Google Connection Closed", event.code, event.reason);
+                closeLiveCallScreen();
+            };
+
+            liveSocket.onerror = (error) => {
+                console.error("WebSocket Error: ", error);
+            };
+
+        } catch (error) {
+            console.error("Live Call Error:", error);
+            alert("Connection issue: " + error.message);
+            closeLiveCallScreen();
         }
+    }
+
+    // Ye naya function hai jo browser ki WebM ki jagah server ko raw PCM bhejega
+    function startStreamingPCMAudio() {
+        if(!audioStream || !liveSocket) return;
+
+        // Force browser to sample mic at 16kHz
+        micAudioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
+        const source = micAudioContext.createMediaStreamSource(audioStream);
+        
+        // Create script processor to intercept audio data
+        audioProcessor = micAudioContext.createScriptProcessor(4096, 1, 1);
+        
+        source.connect(audioProcessor);
+        audioProcessor.connect(micAudioContext.destination);
+
+        audioProcessor.onaudioprocess = (e) => {
+            if (liveSocket.readyState === WebSocket.OPEN && !isMuted) {
+                const inputData = e.inputBuffer.getChannelData(0);
+                
+                // Convert Float32 (Browser) to Int16 (Gemini required format)
+                const pcm16 = new Int16Array(inputData.length);
+                for (let i = 0; i < inputData.length; i++) {
+                    let s = Math.max(-1, Math.min(1, inputData[i]));
+                    pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
+                }
+                
+                // Convert Int16Array to Base64 String
+                let binary = '';
+                const bytes = new Uint8Array(pcm16.buffer);
+                const len = bytes.byteLength;
+                for (let i = 0; i < len; i++) {
+                    binary += String.fromCharCode(bytes[i]);
+                }
+                const base64Audio = window.btoa(binary);
+
+                // Send strictly as audio/pcm;rate=16000
+                liveSocket.send(JSON.stringify({
+                    realtimeInput: {
+                        mediaChunks: [{ mimeType: "audio/pcm;rate=16000", data: base64Audio }]
+                    }
+                }));
+            }
+        };
+    }
+
+    function closeLiveCallScreen() {
+        const callScreen = document.getElementById('liveCallScreen');
+        callScreen.classList.remove('active');
+        setTimeout(() => callScreen.style.display = 'none', 400);
+        
+        isCallActive = false;
+        callScreen.classList.remove('speaking'); 
+        
+        // 🛑 Sab kuch band karo (Processors, Contexts, Mic, Socket)
+        if (audioProcessor) {
+            audioProcessor.disconnect();
+            audioProcessor = null;
+        }
+        if (micAudioContext) {
+            micAudioContext.close();
+            micAudioContext = null;
+        }
+        if (audioStream) audioStream.getTracks().forEach(track => track.stop());
+        if (liveSocket) liveSocket.close();
+        if (audioContext) audioContext.close();
+    }
+
+    function toggleCallMute() {
+        isMuted = !isMuted;
+        const micBtn = document.getElementById('callMicBtn');
+        if(isMuted) {
+            micBtn.classList.add('muted');
+            micBtn.innerHTML = '🔇';
+        } else {
+            micBtn.classList.remove('muted');
+            micBtn.innerHTML = '🎙️';
+        }
+    }
+
+    function simulateAminaSpeaking() {
+        if(!isCallActive) return;
+        const callScreen = document.getElementById('liveCallScreen');
+        callScreen.classList.add('speaking'); 
+        
+        setTimeout(() => {
+            if(isCallActive) callScreen.classList.remove('speaking');
+        }, 1000);
     }
 </script>
