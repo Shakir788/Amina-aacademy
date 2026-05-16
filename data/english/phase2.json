@@ -1,1 +1,663 @@
-{}
+{
+  "phase": "Phase 2: Intermediate (Fluency & God Mode)",
+  "system": "Dialogue + Memory + Chaos AI Simulation + Brain Rewire",
+  "lessons": [
+    {
+      "id": 31,
+      "title": "Talking About Your Day (Full Flow)",
+      "imageUrl": "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "What did you do today?",
+        "I woke up early",
+        "Then what?",
+        "Then I went to work",
+        "How was it?",
+        "It was good"
+      ],
+      "exercises": [
+        {
+          "en": "I woke up early and then I went to work",
+          "darija": "Fqt bkri w mchit nkhdem",
+          "fr": "Je me suis réveillé tôt et puis je suis allé travailler",
+          "ar": "استيقظت باكراً ثم ذهبت إلى العمل",
+          "thinking_trigger": "Morning → say your routine"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Explaining Clearly",
+      "imageUrl": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "Why didn't you come?",
+        "Because I was busy",
+        "Busy with what?",
+        "I had a lot of work"
+      ],
+      "exercises": [
+        {
+          "en": "Let me explain, I was busy with work",
+          "darija": "Khalini nshrah, kont mashghoul",
+          "fr": "Laisse-moi t'expliquer, j'étais occupé par le travail",
+          "ar": "دعني أشرح لك، كنت مشغولاً بالعمل",
+          "listening_trap": "Lemme explain"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Giving Reasons (Deep)",
+      "imageUrl": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "Why are you late?",
+        "Because I had traffic",
+        "Was it bad?",
+        "Yes, it was very bad"
+      ],
+      "exercises": [
+        {
+          "en": "I am late because I had traffic",
+          "darija": "T2khrt hit kan z7am",
+          "fr": "Je suis en retard parce qu'il y avait des embouteillages",
+          "ar": "أنا متأخر لأن الطريق كان مزدحماً"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Making Suggestions (Real Talk)",
+      "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "What should we do?",
+        "We should go out",
+        "Where?",
+        "Let's go to a cafe"
+      ],
+      "exercises": [
+        {
+          "en": "You should try this, it's really good",
+          "darija": "Khassk tjarrbo, zwin بزاف",
+          "fr": "Tu devrais essayer ça, c'est vraiment bien",
+          "ar": "يجب أن تجرب هذا، إنه حقاً جيد"
+        }
+      ],
+      "roleplay": {
+        "scenario": "Plan with friend",
+        "ai": "What should we do?",
+        "expected": "We should go out"
+      }
+    },
+    {
+      "id": 35,
+      "title": "Agree / Disagree (Advanced)",
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "This is good",
+        "Yes, you're right",
+        "Really?",
+        "Yes, I agree"
+      ],
+      "exercises": [
+        {
+          "en": "I agree with you because it's simple",
+          "darija": "Mtafe9 m3ak hit sahal",
+          "fr": "Je suis d'accord avec toi car c'est simple",
+          "ar": "أنا أتفق معك لأنه بسيط"
+        },
+        {
+          "en": "I don't agree because it's difficult",
+          "darija": "Ma mtafe9ch hit s3ib",
+          "fr": "Je ne suis pas d'accord parce que c'est difficile",
+          "ar": "أنا لا أتفق لأن الأمر صعب"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Asking for Details",
+      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "I did something new",
+        "What do you mean?",
+        "I started a new job",
+        "Really? Tell me more"
+      ],
+      "exercises": [
+        {
+          "en": "Can you explain more about it?",
+          "darija": "T9der tshrah aktar?",
+          "fr": "Peux-tu m'en dire plus à ce sujet ?",
+          "ar": "هل يمكنك شرح المزيد عن ذلك؟"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Future Planning (Natural)",
+      "imageUrl": "https://images.unsplash.com/photo-1506784951209-6834d9834ea1?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "What will you do tomorrow?",
+        "I will start something new",
+        "Like what?",
+        "I will start learning English"
+      ],
+      "exercises": [
+        {
+          "en": "I am planning to travel next week",
+          "darija": "Mkhattat nsafar simana jaya",
+          "fr": "Je prévois de voyager la semaine prochaine",
+          "ar": "أنا أخطط للسفر الأسبوع القادم",
+          "thinking_trigger": "Think about future → speak"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Opinion + Explanation",
+      "imageUrl": "https://images.unsplash.com/photo-1516322050882-8b419af71422?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "Do you like this?",
+        "Yes, I think it's good",
+        "Why?",
+        "Because it's easy to use"
+      ],
+      "exercises": [
+        {
+          "en": "In my opinion, this is better because it's simple",
+          "darija": "F rayi dyali hada ahsan hit sahal",
+          "fr": "À mon avis, c'est mieux parce que c'est simple",
+          "ar": "في رأيي، هذا أفضل لأنه بسيط"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Mini Story Builder",
+      "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead27d8?q=80&w=800&auto=format&fit=crop",
+      "structure": [
+        "Start",
+        "Problem",
+        "Solution"
+      ],
+      "challenge": {
+        "type": "story",
+        "instruction": "Tell a story: what happened, problem, solution"
+      },
+      "example": [
+        "Yesterday I went out",
+        "I had a problem",
+        "But I solved it"
+      ],
+      "exercises": [
+        {
+          "en": "Yesterday I went out, I had a problem but I solved it",
+          "darija": "Lbareh khrejt, kan 3andi mochkil walakin 7allito",
+          "fr": "Hier je suis sorti, j'ai eu un problème mais je l'ai résolu",
+          "ar": "بالأمس خرجت، واجهت مشكلة ولكنني قمت بحلها"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "FLUENCY TEST (REAL SIMULATION)",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "conversation",
+        "instruction": "Full conversation with speed + emotion",
+        "flow": [
+          "What did you do today?",
+          "I woke up early and went to work",
+          "Why?",
+          "Because I had work",
+          "What next?",
+          "I came home"
+        ]
+      },
+      "memory_trap": [
+        "Use past + reason + future",
+        "Answer fast (2 sec max)"
+      ],
+      "exercises": [
+        {
+          "en": "I woke up early and went to work because I had work",
+          "darija": "Fqt bkri w mchit nkhdem hit kan 3andi l-khedma",
+          "fr": "Je me suis réveillé tôt et je suis allé travailler parce que j'avais du travail",
+          "ar": "استيقظت باكراً وذهبت للعمل لأنني كان لدي عمل"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Start Conversation (Personalized)",
+      "imageUrl": "https://images.unsplash.com/photo-1511632765486-a9ea3ee40bef?q=80&w=800&auto=format&fit=crop",
+      "task": "User must start",
+      "personalization": true,
+      "examples": [
+        "Hey, how are you?",
+        "What are you doing today?",
+        "Where are you right now?"
+      ],
+      "ai_behavior": {
+        "use_name": true,
+        "example": "Shakir, what are you doing today?"
+      },
+      "exercises": [
+        {
+          "en": "Hey, what are you doing today?",
+          "darija": "Hanya, ach katdir lyoum?",
+          "fr": "Hé, qu'est-ce que tu fais aujourd'hui ?",
+          "ar": "مرحباً، ماذا تفعل اليوم؟"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Memory Conversation",
+      "imageUrl": "https://images.unsplash.com/photo-1506506200949-df8734e6f635?q=80&w=800&auto=format&fit=crop",
+      "memory": true,
+      "flow": [
+        "What do you do?",
+        "I work",
+        "Oh nice, where do you work?",
+        "Do you like your job?"
+      ],
+      "ai_memory_use": "Reuse user job later",
+      "exercises": [
+        {
+          "en": "I work in a company and I like my job",
+          "darija": "Kankhdem f charika w kat3jebni khedmti",
+          "fr": "Je travaille dans une entreprise et j'aime mon travail",
+          "ar": "أنا أعمل في شركة وأحب عملي"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Multi-Path Chaos",
+      "imageUrl": "https://images.unsplash.com/photo-1506452814420-1b250325fddb?q=80&w=800&auto=format&fit=crop",
+      "paths": [
+        {
+          "user": "I am working",
+          "ai": "Oh nice, busy?"
+        },
+        {
+          "user": "I am free",
+          "ai": "Great, let's go out"
+        },
+        {
+          "user": "Nothing",
+          "ai": "Why nothing? 😄"
+        }
+      ],
+      "random_followups": true,
+      "exercises": [
+        {
+          "en": "I am working right now, I am very busy",
+          "darija": "Kankhdem daba, ana mashghoul bazaf",
+          "fr": "Je travaille en ce moment, je suis très occupé",
+          "ar": "أنا أعمل الآن، أنا مشغول جداً"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Mistake Correction (Live)",
+      "imageUrl": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?q=80&w=800&auto=format&fit=crop",
+      "examples": [
+        {
+          "wrong": "I go work",
+          "ai": "Oh, you mean 'I am going to work'?"
+        }
+      ],
+      "mode": "interrupt_correction",
+      "exercises": [
+        {
+          "en": "I am going to work now",
+          "darija": "Gha-nemchi nkhdem daba",
+          "fr": "Je vais travailler maintenant",
+          "ar": "أنا ذاهب للعمل الآن"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Silence Breaker",
+      "imageUrl": "https://images.unsplash.com/photo-1516280440502-39c8942971cc?q=80&w=800&auto=format&fit=crop",
+      "system": "detect silence",
+      "ai_prompts": [
+        "Hey, say something",
+        "Don't stop, continue",
+        "Tell me more"
+      ],
+      "exercises": [
+        {
+          "en": "Tell me more about your day",
+          "darija": "3awd lia ktar 3la nhark",
+          "fr": "Raconte-moi en plus sur ta journée",
+          "ar": "أخبرني المزيد عن يومك"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Emotion Switch (Advanced)",
+      "imageUrl": "https://images.unsplash.com/photo-1508214751196-bfd143f25c76?q=80&w=800&auto=format&fit=crop",
+      "flow": [
+        "I am happy 😊",
+        "Why?",
+        "Because I got good news",
+        "Oh nice",
+        "But I'm also stressed 😓"
+      ],
+      "mode": "emotion_switch",
+      "exercises": [
+        {
+          "en": "I am happy because I got good news",
+          "darija": "Ana farhan hit sma3t khbar zwina",
+          "fr": "Je suis heureux parce que j'ai reçu de bonnes nouvelles",
+          "ar": "أنا سعيد لأنني تلقيت أخباراً جيدة"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Goal-Based Conversation",
+      "imageUrl": "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=800&auto=format&fit=crop",
+      "goal": "Convince me",
+      "task": "Convince AI to go out",
+      "ai_responses": [
+        "No, I am busy",
+        "Why should I come?",
+        "Give me a reason"
+      ],
+      "exercises": [
+        {
+          "en": "Come with me, it will be fun",
+          "darija": "Aji m3aya, gha-ykoun dakshi zwin",
+          "fr": "Viens avec moi, ça va être amusant",
+          "ar": "تعال معي، سيكون الأمر ممتعاً"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Chaos Mode (Real Life)",
+      "imageUrl": "https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?q=80&w=800&auto=format&fit=crop",
+      "ai_random": true,
+      "flow": [
+        "Where are you?",
+        "Why?",
+        "Anyway, what about tomorrow?",
+        "Wait, answer first",
+        "Okay continue"
+      ],
+      "exercises": [
+        {
+          "en": "Wait, let me answer your question first",
+          "darija": "Tsna, khalini njawbek 3la so2al l-awal",
+          "fr": "Attends, laisse-moi d'abord répondre à ta question",
+          "ar": "انتظر، دعني أجيب على سؤالك أولاً"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Conversation Ending (Natural)",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953eb1f5ff?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "Okay, I have to go",
+        "Talk later",
+        "Nice talking to you",
+        "Bye"
+      ],
+      "goal": "End smoothly",
+      "exercises": [
+        {
+          "en": "It was nice talking to you, bye",
+          "darija": "Kant m3arfa zwina, thala",
+          "fr": "C'était sympa de parler avec toi, au revoir",
+          "ar": "كان من اللطيف التحدث معك، وداعاً"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "title": "FINAL GOD MODE TEST",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "full_ai_simulation",
+        "features": [
+          "memory",
+          "random_questions",
+          "interruptions",
+          "emotion_change",
+          "goal_based"
+        ],
+        "instruction": "Handle full unpredictable conversation",
+        "goal": "Speak 1–2 minutes continuously"
+      },
+      "exercises": [
+        {
+          "en": "I can handle any conversation in English now",
+          "darija": "9ader nhdar f ay mowdou3 b l-onjliya daba",
+          "fr": "Je peux gérer n'importe quelle conversation en anglais maintenant",
+          "ar": "يمكنني التعامل مع أي محادثة باللغة الإنجليزية الآن"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Inner Voice Activation",
+      "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800&auto=format&fit=crop",
+      "inner_voice": [
+        "You feel thirsty → think: I need water",
+        "You wake up → think: I am tired",
+        "You see food → think: I am hungry"
+      ],
+      "goal": "Think automatically in English",
+      "exercises": [
+        {
+          "en": "I need water because I am thirsty",
+          "darija": "Khassni lma hit fiya l3tach",
+          "fr": "J'ai besoin d'eau parce que j'ai soif",
+          "ar": "أحتاج إلى الماء لأنني عطشان"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Live Environment Training",
+      "imageUrl": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=800&auto=format&fit=crop",
+      "tasks": [
+        "Describe your room in English",
+        "Describe people outside",
+        "Talk while walking"
+      ],
+      "goal": "Use English in real life",
+      "exercises": [
+        {
+          "en": "There are many people outside today",
+          "darija": "Kayn bzaf dial nas bara lyoum",
+          "fr": "Il y a beaucoup de monde dehors aujourd'hui",
+          "ar": "هناك الكثير من الناس في الخارج اليوم"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Shadowing System",
+      "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop",
+      "mode": "repeat instantly after audio",
+      "rules": [
+        "Copy speed",
+        "Copy emotion",
+        "Copy pronunciation"
+      ],
+      "goal": "Speak naturally like natives",
+      "exercises": [
+        {
+          "en": "I will repeat exactly what I hear",
+          "darija": "Gha-n3awd dakshi li sma3t b tmam",
+          "fr": "Je vais répéter exactement ce que j'entends",
+          "ar": "سأكرر بالضبط ما أسمعه"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Continuous Thinking",
+      "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "non_stop",
+        "instruction": "Speak for 1 minute continuously"
+      },
+      "support": [
+        "Hmm…",
+        "Actually…",
+        "What I mean is…"
+      ],
+      "exercises": [
+        {
+          "en": "Actually, what I mean is that it's not easy",
+          "darija": "F l-7aqiqa, li bghit ngoul houwa anaho machi sahal",
+          "fr": "En fait, ce que je veux dire, c'est que ce n'est pas facile",
+          "ar": "في الواقع، ما أعنيه هو أن الأمر ليس سهلاً"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Panic Mode",
+      "imageUrl": "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "pressure",
+        "instruction": "Answer random questions fast",
+        "questions": [
+          "Why?",
+          "What next?",
+          "Are you sure?",
+          "Explain quickly"
+        ]
+      },
+      "goal": "Stay calm while speaking",
+      "exercises": [
+        {
+          "en": "I am sure about my answer",
+          "darija": "Ana mti9en mn l-jawab dyali",
+          "fr": "Je suis sûr de ma réponse",
+          "ar": "أنا متأكد من إجابتي"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Story Expansion Engine",
+      "imageUrl": "https://images.unsplash.com/photo-1474366521946-c3d4b507abf2?q=80&w=800&auto=format&fit=crop",
+      "structure": [
+        "Start",
+        "Problem",
+        "Emotion",
+        "Solution",
+        "Opinion"
+      ],
+      "task": "Tell detailed story",
+      "exercises": [
+        {
+          "en": "It was a difficult situation but I felt happy at the end",
+          "darija": "Kan mowqif s3ib walakin knt farhan f l-lakher",
+          "fr": "C'était une situation difficile mais je me sentais heureux à la fin",
+          "ar": "لقد كان موقفاً صعباً ولكنني شعرت بالسعادة في النهاية"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Messy Human Speech",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
+      "examples": [
+        "Umm… let me think",
+        "Well… actually…",
+        "So yeah…"
+      ],
+      "goal": "Sound natural, not robotic",
+      "exercises": [
+        {
+          "en": "Umm, well, let me think about it",
+          "darija": "Emm, khalini nfakar f hadshi",
+          "fr": "Euh, eh bien, laisse-moi y réfléchir",
+          "ar": "أمـم، حسناً، دعني أفكر في الأمر"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Debate / Defense Mode",
+      "imageUrl": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop",
+      "scenario": "AI disagrees with you",
+      "examples": [
+        {
+          "ai": "I don't agree",
+          "user": "Let me explain why"
+        }
+      ],
+      "goal": "Defend opinion confidently",
+      "exercises": [
+        {
+          "en": "Let me explain why I don't agree with you",
+          "darija": "Khalini nshrah lik 3lach ma mtafe9ch m3ak",
+          "fr": "Laisse-moi t'expliquer pourquoi je ne suis pas d'accord avec toi",
+          "ar": "دعني أشرح لك لماذا لا أتفق معك"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Automatic Reaction System",
+      "imageUrl": "https://images.unsplash.com/photo-1520923642038-b4259aceeba7?q=80&w=800&auto=format&fit=crop",
+      "thinking_triggers": [
+        "Phone rings → say: I'll answer it",
+        "Someone enters → say: Someone came in",
+        "You hear noise → say: What's that sound?"
+      ],
+      "goal": "Instant English reactions",
+      "exercises": [
+        {
+          "en": "Someone is calling me, I'll answer it",
+          "darija": "Chi had kay-3ayet lia, gha-njawb",
+          "fr": "Quelqu'un m'appelle, je vais répondre",
+          "ar": "أحدهم يتصل بي، سأجيب"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": "FINAL GOD MODE FLUENCY TEST",
+      "imageUrl": "https://images.unsplash.com/photo-1506784951209-6834d9834ea1?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "ultimate_real_world",
+        "features": [
+          "inner_voice",
+          "shadowing",
+          "panic_questions",
+          "storytelling",
+          "debate",
+          "emotion",
+          "real_life_tasks"
+        ],
+        "instruction": "Speak naturally for 2–3 minutes without translation"
+      },
+      "result": {
+        "title": "Fluent Thinker Achieved 💣",
+        "level": "Real World English Speaker"
+      },
+      "exercises": [
+        {
+          "en": "I am a fluent English speaker now",
+          "darija": "Wllit kan-hdar l-onjliya b talaka daba",
+          "fr": "Je parle couramment anglais maintenant",
+          "ar": "أصبحت أتحدث الإنجليزية بطلاقة الآن"
+        }
+      ]
+    }
+  ]
+}

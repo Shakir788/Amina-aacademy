@@ -1,1 +1,785 @@
-{}
+{
+  "phase": "Phase 3: Advanced (Professional, Influence & Transcendence)",
+  "system": "Global Communication + Sales Psychology + Social Intelligence + Chaos Simulation",
+  "lessons": [
+    {
+      "id": 61,
+      "title": "Authority Introductions",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "Hello, my name is Shakir",
+        "I specialize in design and development",
+        "I help businesses build smart systems"
+      ],
+      "voice_authority": [
+        "Speak slowly",
+        "Pause confidently",
+        "Never rush"
+      ],
+      "goal": "Sound valuable instantly",
+      "exercises": [
+        {
+          "en": "I specialize in design and development to help businesses build smart systems",
+          "darija": "Ana mutakhassis f design w development, kan-3awn charikat ibniw andima dkiya",
+          "fr": "Je me spécialise dans le design et le développement pour aider les entreprises à construire des systèmes intelligents",
+          "ar": "أنا متخصص في التصميم والتطوير لمساعدة الشركات على بناء أنظمة ذكية"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Live Client Chaos",
+      "imageUrl": "https://images.unsplash.com/photo-1552581234-2612b75d8953?q=80&w=800&auto=format&fit=crop",
+      "scenario": "Client keeps changing requirements",
+      "dialogue": [
+        "Actually, can we change this?",
+        "Sure, let's discuss the best solution",
+        "Wait, I have another idea",
+        "No problem, let me understand clearly"
+      ],
+      "skills": [
+        "Stay calm",
+        "Control conversation",
+        "Clarify requirements"
+      ],
+      "exercises": [
+        {
+          "en": "No problem, let me understand your new requirements clearly",
+          "darija": "Machi mochkil, khalini nfham l-matalib l-jdida dyalk b-wodoh",
+          "fr": "Pas de problème, laissez-moi comprendre clairement vos nouvelles exigences",
+          "ar": "لا توجد مشكلة، دعني أفهم متطلباتك الجديدة بوضوح"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Sales Psychology",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "This solution will save your time",
+        "It will also improve user experience",
+        "That's why I recommend this approach"
+      ],
+      "psychology": [
+        "Sell benefits, not features",
+        "Build trust",
+        "Sound confident"
+      ],
+      "goal": "Convince professionally",
+      "exercises": [
+        {
+          "en": "This solution will save your time and improve user experience",
+          "darija": "Had l-7all gha-yowfer lik l-weqt w y-7assen tajribat l-mostakhdim",
+          "fr": "Cette solution vous fera gagner du temps et améliorera l'expérience utilisateur",
+          "ar": "هذا الحل سيوفر وقتك وسيحسن تجربة المستخدم"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Professional Storytelling",
+      "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop",
+      "structure": [
+        "Problem",
+        "Action",
+        "Result"
+      ],
+      "example": [
+        "The client had slow workflow",
+        "I automated the process",
+        "It saved hours of work"
+      ],
+      "goal": "Explain work powerfully",
+      "exercises": [
+        {
+          "en": "I automated the process and it saved hours of manual work",
+          "darija": "Rdyt l-3amaliya otomatiya w hadshi dmen lina swaye3 d l-khedma",
+          "fr": "J'ai automatisé le processus et cela a permis d'économiser des heures de travail manuel",
+          "ar": "لقد قمت بأتمتة العملية مما وفر ساعات من العمل اليدوي"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Meeting Pressure Mode",
+      "imageUrl": "https://images.unsplash.com/photo-1542744094-2ab25be78b90?q=80&w=800&auto=format&fit=crop",
+      "scenario": "Multiple people asking questions",
+      "dialogue": [
+        "One moment, let me answer that",
+        "Good question",
+        "Let me explain step by step"
+      ],
+      "pressure_rules": [
+        "Do not panic",
+        "Answer calmly",
+        "Control pace"
+      ],
+      "exercises": [
+        {
+          "en": "That is a good question, let me explain it step by step",
+          "darija": "So2al mzyan, khalini nshrah lik dakshi khotwa b khotwa",
+          "fr": "C'est une bonne question, laissez-moi vous l'expliquer étape par étape",
+          "ar": "هذا سؤال جيد، دعني أشرح ذلك خطوة بخطوة"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Professional Objection Handling",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "Your price is too high",
+        "I understand your concern",
+        "The quality and long-term value justify the cost"
+      ],
+      "skills": [
+        "Stay calm",
+        "Never sound defensive",
+        "Focus on value"
+      ],
+      "exercises": [
+        {
+          "en": "The quality and long-term value justify the investment",
+          "darija": "L-jawda w l-9ima 3la l-mada l-ba3id kat-berrer had l-istithmar",
+          "fr": "La qualité et la valeur à long terme justifient l'investissement",
+          "ar": "الجودة والقيمة على المدى الطويل تبرر هذا الاستثمار"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Global Communication Styles",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953eb1f5ff?q=80&w=800&auto=format&fit=crop",
+      "styles": {
+        "american": [
+          "Sounds good",
+          "Awesome"
+        ],
+        "british": [
+          "Quite good",
+          "Brilliant"
+        ],
+        "formal": [
+          "Certainly",
+          "Absolutely"
+        ]
+      },
+      "goal": "Adapt communication globally",
+      "exercises": [
+        {
+          "en": "Absolutely, that sounds like a brilliant idea",
+          "darija": "B-tabi3at l-7al, had l-fikra katban mofida bzaf",
+          "fr": "Absolument, cela ressemble à une idée brillante",
+          "ar": "بالتأكيد، تبدو هذه فكرة رائعة"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Email Intelligence",
+      "imageUrl": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=800&auto=format&fit=crop",
+      "scenarios": [
+        {
+          "situation": "Delay",
+          "response": "I apologize for the delay. I will update you soon."
+        },
+        {
+          "situation": "Payment reminder",
+          "response": "Just a gentle reminder regarding the pending payment."
+        },
+        {
+          "situation": "Angry client",
+          "response": "I completely understand your frustration."
+        }
+      ],
+      "goal": "Think professionally while writing",
+      "exercises": [
+        {
+          "en": "Just a gentle reminder regarding the pending payment for the project",
+          "darija": "Ghir tadkir basit b-khosos l-khlass d l-mashrou3 li ba9i m3alla9",
+          "fr": "Juste un petit rappel concernant le paiement en attente pour le projet",
+          "ar": "مجرد تذكير بسيط بخصوص الدفعة المعلقة للمشروع"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "title": "Confidence Under Attack",
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "pressure",
+        "attacks": [
+          "I don't like this design",
+          "This is too expensive",
+          "Can you do better?"
+        ]
+      },
+      "response_system": [
+        "Stay calm",
+        "Acknowledge concern",
+        "Offer solution"
+      ],
+      "goal": "Never lose confidence",
+      "exercises": [
+        {
+          "en": "I understand your concern, let's look at how we can optimize the solution",
+          "darija": "Fahim l-9ala9 dyalk, khallina nchoufou kifach n-hasnou had l-7all",
+          "fr": "Je comprends votre préoccupation, voyons comment nous pouvons optimiser la solution",
+          "ar": "أنا أفهم قلقك، دعنا نرى كيف يمكننا تحسين الحل"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "title": "FINAL GLOBAL PROFESSIONAL TEST",
+      "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "ultimate_professional_simulation",
+        "features": [
+          "client_chaos",
+          "meeting_pressure",
+          "sales_psychology",
+          "storytelling",
+          "email_thinking",
+          "objection_handling",
+          "global_style_switch"
+        ],
+        "instruction": "Handle full professional environment naturally"
+      },
+      "result": {
+        "title": "Global Professional Communicator 💣",
+        "level": "World-Class Communication Ready"
+      },
+      "exercises": [
+        {
+          "en": "I can handle high-pressure professional meetings with confidence",
+          "darija": "Ana 9ader n-sayer l-ijtima3at l-mihaniya t-ta7t l-daght b-kol ti9a",
+          "fr": "Je peux gérer des réunions professionnelles sous haute pression avec confiance",
+          "ar": "يمكنني إدارة الاجتماعات المهنية تحت ضغط عالٍ بكل ثقة"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Emotional Storytelling (Advanced)",
+      "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
+      "structure": [
+        "Hook",
+        "Emotion",
+        "Problem",
+        "Suspense",
+        "Solution"
+      ],
+      "example": [
+        "Last year, I felt completely lost…",
+        "I didn't know what to do",
+        "Then something unexpected happened",
+        "That moment changed everything"
+      ],
+      "story_psychology": [
+        "Pause before emotional words",
+        "Slow down during suspense",
+        "Use silence for impact"
+      ],
+      "exercises": [
+        {
+          "en": "Last year I felt lost, but then something unexpected changed everything",
+          "darija": "L-3am li fat knt talef, walakin wa7ed l-7aja m-mwa93ach bedlat kolshi",
+          "fr": "L'année dernière, je me sentais perdu, mais quelque chose d'inattendu a tout changé",
+          "ar": "في العام الماضي شعرت بالضياع، ولكن بعد ذلك حدث شيء غير متوقع غير كل شيء"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "title": "Attention Hooks",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "You won't believe this 😄",
+        "Something crazy happened today",
+        "Wait until you hear this"
+      ],
+      "micro_emotions": [
+        "surprise",
+        "curiosity",
+        "excitement"
+      ],
+      "goal": "Hook attention instantly",
+      "exercises": [
+        {
+          "en": "You won't believe the crazy thing that happened to me today",
+          "darija": "Ma gha-t-tiye9ch l-7aja l-7m9a li w93at lia lyoum",
+          "fr": "Tu ne croiras pas la chose folle qui m'est arrivée aujourd'hui",
+          "ar": "لن تصدق الشيء الجنوني الذي حدث لي اليوم"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "title": "Persuasion Dark Mode",
+      "imageUrl": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b7b?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "You don't want to miss this opportunity",
+        "Most people fail because they wait too long",
+        "This could change everything for you"
+      ],
+      "persuasion_triggers": [
+        "urgency",
+        "scarcity",
+        "future vision",
+        "fear of missing out"
+      ],
+      "goal": "Influence emotionally",
+      "exercises": [
+        {
+          "en": "Most people fail because they wait too long for the perfect moment",
+          "darija": "Aghlabiyat l-nas kay-fchlou hit kay-tsennaw bzaf l-lahda l-mitaliya",
+          "fr": "La plupart des gens échouent parce qu'ils attendent trop longtemps le moment idéal",
+          "ar": "يفشل معظم الناس لأنهم ينتظرون طويلاً اللحظة المثالية"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Deep Human Connection",
+      "imageUrl": "https://images.unsplash.com/photo-1516575394304-48b2440858fb?q=80&w=800&auto=format&fit=crop",
+      "dialogue": [
+        "What motivates you in life?",
+        "What are you afraid of?",
+        "What really makes you happy?"
+      ],
+      "social_intelligence": [
+        "Listen deeply",
+        "Pause before answering",
+        "React emotionally"
+      ],
+      "exercises": [
+        {
+          "en": "What truly motivates you to wake up and work every day?",
+          "darija": "Chnou l-7aja li kat-motivik b-sah bach t-fi9 w tkhdem kol nhar؟",
+          "fr": "Qu'est-ce qui te motive vraiment à te lever et à travailler chaque jour ?",
+          "ar": "ما الذي يحفزك حقاً للاستيقاظ والعمل كل يوم؟"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Charisma Engine",
+      "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+      "skills": [
+        "slow speaking",
+        "controlled pauses",
+        "voice rhythm",
+        "eye contact",
+        "energy control"
+      ],
+      "dialogue": [
+        "Interesting…",
+        "Tell me more",
+        "I understand exactly what you mean"
+      ],
+      "goal": "Sound magnetic",
+      "exercises": [
+        {
+          "en": "Tell me more, I understand exactly what you mean",
+          "darija": "Zid 3awd lia, ana fahem b-dabt chnou k-t-9sed",
+          "fr": "Dis-m'en plus, je comprends exactement ce que tu veux dire",
+          "ar": "أخبرني المزيد، أنا أفهم بالضبط ما تعنيه"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Social Recovery System",
+      "imageUrl": "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?q=80&w=800&auto=format&fit=crop",
+      "awkward_recovery": [
+        "Anyway 😄",
+        "Forget that",
+        "Let's move on",
+        "That came out wrong 😂"
+      ],
+      "goal": "Recover from awkward moments naturally",
+      "exercises": [
+        {
+          "en": "That came out wrong, let's move on to something else",
+          "darija": "Dakshi mat-9alch mzyan, khallina n-douzou l-7aja khora",
+          "fr": "C'était mal dit, passons à autre chose",
+          "ar": "لقد قلت ذلك بشكل خاطئ، فلننتقل إلى شيء آخر"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Subtext Understanding",
+      "imageUrl": "https://images.unsplash.com/photo-1506784951209-6834d9834ea1?q=80&w=800&auto=format&fit=crop",
+      "examples": [
+        {
+          "sentence": "Interesting…",
+          "hidden_meaning": "Maybe I don't agree"
+        },
+        {
+          "sentence": "We'll see",
+          "hidden_meaning": "Probably no"
+        }
+      ],
+      "goal": "Understand hidden communication",
+      "exercises": [
+        {
+          "en": "When someone says 'We'll see', it often means they aren't sure",
+          "darija": "Mli chi wa7ed kay-9oul 'Gha-nchoufou', hadchi k-y-3ni aghlaban anaho m-ma-t-aya9ch",
+          "fr": "Quand quelqu'un dit 'On verra', cela signifie souvent qu'il n'est pas sûr",
+          "ar": "عندما يقول شخص ما 'سنرى'، فهذا يعني غالباً أنه غير متأكد"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Crowd Communication",
+      "imageUrl": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=800&auto=format&fit=crop",
+      "scenario": "Speaking to group",
+      "dialogue": [
+        "Alright everyone, listen carefully",
+        "Let me explain something important",
+        "Here's what we need to do"
+      ],
+      "leadership_system": [
+        "Speak clearly",
+        "Control energy",
+        "Guide attention"
+      ],
+      "exercises": [
+        {
+          "en": "Alright everyone, listen carefully, here is what we need to do next",
+          "darija": "Wakha a drari, sma3ou mzyan, ha chnou khassna n-dirow d-aba",
+          "fr": "Très bien tout le monde, écoutez attentivement, voici ce que nous devons faire ensuite",
+          "ar": "حسناً الجميع، استمعوا جيداً، إليكم ما يجب علينا فعله تالياً"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Advanced Story Flow",
+      "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead27d8?q=80&w=800&auto=format&fit=crop",
+      "structure": [
+        "Hook",
+        "Curiosity",
+        "Emotion",
+        "Twist",
+        "Strong ending"
+      ],
+      "challenge": {
+        "type": "story_domination",
+        "instruction": "Tell unforgettable emotional story"
+      },
+      "exercises": [
+        {
+          "en": "A strong story needs an emotional twist and a powerful ending",
+          "darija": "L-9issa l-9wiya khass-ha wa7ed l-moun3ataf 3atifi w nihaya mo2atira",
+          "fr": "Une histoire forte a besoin d'un rebondissement émotionnel et d'une fin puissante",
+          "ar": "القصة القوية تحتاج إلى تحول عاطفي ونهاية مؤثرة"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "title": "FINAL HUMAN INFLUENCE TEST",
+      "imageUrl": "https://images.unsplash.com/photo-1521737711867-e3b90473958f?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "ultimate_human_simulation",
+        "features": [
+          "micro_emotions",
+          "storytelling",
+          "persuasion",
+          "charisma",
+          "subtext",
+          "social_recovery",
+          "crowd_leadership"
+        ],
+        "instruction": "Create emotional, powerful and influential conversation"
+      },
+      "result": {
+        "title": "Human Influence Master 💣",
+        "level": "Charismatic Global Communicator"
+      },
+      "exercises": [
+        {
+          "en": "I can influence people using charisma and deep storytelling",
+          "darija": "Ana 9ader n-2at-tar f l-nas b l-karizma w l-9isas l-3ami9a",
+          "fr": "Je peux influencer les gens en utilisant le charisme et le récit profond",
+          "ar": "يمكنني التأثير في الناس باستخدام الكاريزما والقصص العميقة"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "title": "Adaptive Personality System",
+      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+      "adaptation_modes": [
+        {
+          "personality": "formal",
+          "response_style": "professional and calm"
+        },
+        {
+          "personality": "funny",
+          "response_style": "relaxed and playful"
+        },
+        {
+          "personality": "angry",
+          "response_style": "calm and controlled"
+        }
+      ],
+      "goal": "Adapt communication automatically",
+      "exercises": [
+        {
+          "en": "I can adapt my personality to be professional or relaxed depending on the situation",
+          "darija": "9ader n-beddel chakhsiya dyali bach n-koun mihani w-la m-rtah 3la 7sab l-mowqif",
+          "fr": "Je peux adapter ma personnalité pour être professionnel ou détendu selon la situation",
+          "ar": "يمكنني تكييف شخصيتي لأكون مهنياً أو مسترخياً حسب الموقف"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "title": "Energy Reading Engine",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+      "emotion_detection": [
+        "nervous",
+        "excited",
+        "frustrated",
+        "confident"
+      ],
+      "response_examples": [
+        {
+          "emotion": "nervous",
+          "response": "Relax, take your time"
+        },
+        {
+          "emotion": "angry",
+          "response": "I understand your frustration"
+        }
+      ],
+      "goal": "Respond emotionally with intelligence",
+      "exercises": [
+        {
+          "en": "I understand your frustration, let's take a moment to discuss it",
+          "darija": "Fahim l-ghadab dyalk, khallina n-akhdou lahda bach n-na9chouh",
+          "fr": "Je comprends votre frustration, prenons un moment pour en discuter",
+          "ar": "أنا أتفهم إحباطك، فلنأخذ لحظة لمناقشة الأمر"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "title": "Silence Power Training",
+      "imageUrl": "https://images.unsplash.com/photo-1516280440502-39c8942971cc?q=80&w=800&auto=format&fit=crop",
+      "skills": [
+        "pause after emotional lines",
+        "slow emphasis",
+        "controlled silence"
+      ],
+      "examples": [
+        "Sometimes… silence is more powerful than words",
+        "Think about that for a second"
+      ],
+      "goal": "Create magnetic presence",
+      "exercises": [
+        {
+          "en": "Sometimes silence is more powerful than words, think about that",
+          "darija": "Ba3d l-merrat s-somt k-y-koun 9wa mn l-hdra, f-akkar f hadchi",
+          "fr": "Parfois, le silence est plus puissant que les mots, réfléchis-y",
+          "ar": "أحياناً يكون الصمت أقوى من الكلمات، فكر في ذلك"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Social Dominance Dynamics",
+      "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+      "scenarios": [
+        {
+          "situation": "Someone interrupts you",
+          "response": "One moment, let me finish"
+        },
+        {
+          "situation": "Room is distracted",
+          "response": "Everyone, focus for a second"
+        }
+      ],
+      "leadership_system": [
+        "control attention",
+        "speak with certainty",
+        "stay emotionally calm"
+      ],
+      "exercises": [
+        {
+          "en": "One moment, let me finish my point please",
+          "darija": "Wa7ed l-lahda, khallini n-kammel l-fikra dyali 3afak",
+          "fr": "Un instant, laissez-moi terminer mon propos s'il vous plaît",
+          "ar": "لحظة واحدة، دعني أنهي فكرتي من فضلك"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "title": "High-Stakes Communication",
+      "imageUrl": "https://images.unsplash.com/photo-1508696879815-4eeccfe4eb72?q=80&w=800&auto=format&fit=crop",
+      "scenarios": [
+        "angry client",
+        "public criticism",
+        "tense negotiation",
+        "emotional disagreement"
+      ],
+      "response_framework": [
+        "stay calm",
+        "acknowledge emotion",
+        "redirect conversation",
+        "offer solution"
+      ],
+      "goal": "Perform under extreme pressure",
+      "exercises": [
+        {
+          "en": "I stay calm and focused even during tense negotiations",
+          "darija": "Kan-bqA m-rtah w m-rakkez 7ta mli k-t-koun l-moufawadat s3iba",
+          "fr": "Je reste calme et concentré même lors de négociations tendues",
+          "ar": "أبقى هادئاً ومركزاً حتى أثناء المفاوضات المتوترة"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "title": "Cultural Intelligence",
+      "imageUrl": "https://images.unsplash.com/photo-1511632765486-a9ea3ee40bef?q=80&w=800&auto=format&fit=crop",
+      "communication_styles": {
+        "arab": [
+          "warm emotional communication",
+          "respect-focused"
+        ],
+        "western": [
+          "direct and confident",
+          "time-focused"
+        ],
+        "internet": [
+          "casual fast communication",
+          "meme/slang culture"
+        ]
+      },
+      "goal": "Communicate globally with awareness",
+      "exercises": [
+        {
+          "en": "I respect cultural differences in global communication",
+          "darija": "Kan-7tarm l-ikhtilafat l-thaqafiya f l-tawasol l-3alami",
+          "fr": "Je respecte les différences culturelles dans la communication mondiale",
+          "ar": "أنا أحترم الاختلافات الثقافية في التواصل العالمي"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "title": "Psychological Mirroring",
+      "imageUrl": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop",
+      "examples": [
+        {
+          "speaker_style": "slow and calm",
+          "response_style": "slow and calm"
+        },
+        {
+          "speaker_style": "energetic",
+          "response_style": "high energy"
+        }
+      ],
+      "goal": "Build trust subconsciously",
+      "exercises": [
+        {
+          "en": "Mirroring the speaker's style helps in building subconscious trust",
+          "darija": "T-9lid osloub l-motakalim k-y-3awn f bna2 ti9a la-cha3ouriya",
+          "fr": "Imiter le style de l'interlocuteur aide à instaurer une confiance inconsciente",
+          "ar": "محاكاة أسلوب المتحدث يساعد في بناء الثقة اللاواعية"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "title": "Legendary Storytelling Engine",
+      "imageUrl": "https://images.unsplash.com/photo-1513258496099-48168024addd?q=80&w=800&auto=format&fit=crop",
+      "structure": [
+        "Hook",
+        "Conflict",
+        "Vulnerability",
+        "Victory",
+        "Lesson"
+      ],
+      "example": [
+        "I almost gave up completely…",
+        "Everything was falling apart",
+        "But then I realized something important",
+        "That moment changed my life forever"
+      ],
+      "goal": "Create unforgettable emotional impact",
+      "exercises": [
+        {
+          "en": "Everything was falling apart, but that moment changed my life forever",
+          "darija": "Kolshi kan k-y-trib, walakin dik l-lahda bedlat 7ayati dima",
+          "fr": "Tout s'effondrait, mais ce moment a changé ma vie pour toujours",
+          "ar": "كل شيء كان ينهار، ولكن تلك اللحظة غيرت حياتي للأبد"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "title": "Social Chess Mode",
+      "imageUrl": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?q=80&w=800&auto=format&fit=crop",
+      "skills": [
+        "predict reactions",
+        "read hidden emotions",
+        "understand subtext",
+        "guide conversation strategically"
+      ],
+      "examples": [
+        "He sounds defensive",
+        "She needs reassurance",
+        "They're losing interest"
+      ],
+      "goal": "Think several steps ahead socially",
+      "exercises": [
+        {
+          "en": "I can read hidden emotions and guide conversations strategically",
+          "darija": "9ader n-9ra l-macha3ir l-mokhfiya w n-wajjeh l-hiwar b-dkA2",
+          "fr": "Je peux lire les émotions cachées et guider les conversations stratégiquement",
+          "ar": "يمكنني قراءة المشاعر الخفية وتوجيه المحادثات بشكل استراتيجي"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "title": "FINAL TRANSCENDENCE TEST",
+      "imageUrl": "https://images.unsplash.com/photo-1519389953810-1950811e5f80?q=80&w=800&auto=format&fit=crop",
+      "challenge": {
+        "type": "ultimate_human_mastery",
+        "features": [
+          "adaptive_personality",
+          "energy_reading",
+          "leadership",
+          "high_pressure",
+          "storytelling",
+          "cultural_intelligence",
+          "mirroring",
+          "social_chess",
+          "native_chaos"
+        ],
+        "instruction": "Handle complex human communication naturally for 10+ minutes"
+      },
+      "result": {
+        "title": "TRANSCENDENT COMMUNICATOR 💣",
+        "level": "Global Human Communication Master"
+      },
+      "exercises": [
+        {
+          "en": "I have mastered global human communication and emotional influence",
+          "darija": "At-9ant l-tawasol l-3alami w l-ta2tir l-3atifi b-kamilh",
+          "fr": "Je maîtrise la communication humaine mondiale et l'influence émotionnelle",
+          "ar": "لقد أتقنت التواصل البشري العالمي والتأثير العاطفي"
+        }
+      ]
+    }
+  ]
+}

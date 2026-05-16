@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - AMINA Académie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; margin: 0; color: #0f172a; }
+        nav { background: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; }
+        .logo { font-size: 20px; font-weight: 800; text-decoration: none; color: #0f172a; }
+        .logo span { color: #d97706; }
+        
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        h1 { font-size: 28px; margin-bottom: 30px; font-weight: 700; }
+        
+        .table-container { background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th { background: #f8fafc; padding: 16px 24px; font-size: 13px; font-weight: 700; text-transform: uppercase; color: #64748b; border-bottom: 1px solid #e2e8f0; }
+        td { padding: 18px 24px; font-size: 15px; border-bottom: 1px solid #e2e8f0; color: #334155; }
+        tr:last-child td { border-bottom: none; }
+        
+        .badge { padding: 6px 12px; border-radius: 50px; font-size: 13px; font-weight: 600; display: inline-block; }
+        .badge-free { background: #f1f5f9; color: #475569; }
+        .badge-premium { background: #fefce8; color: #a16207; border: 1px solid #fef08a; }
+        
+        .btn-action { background: #0f172a; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; transition: 0.2s; }
+        .btn-action:hover { background: #1e293b; transform: translateY(-1px); }
+        .btn-disabled { background: #e2e8f0; color: #94a3b8; cursor: not-allowed; }
+
+        /* 🚀 NAYA: Delete Button Styling */
+        .btn-delete { background: #fee2e2; color: #dc2626; border: 1px solid #fecaca; padding: 8px 12px; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; transition: 0.2s; margin-left: 10px; }
+        .btn-delete:hover { background: #dc2626; color: white; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(220, 38, 38, 0.2); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/dashboard" class="logo">AMINA <span>Admin</span></a>
+        <span style="font-weight: 600; color: #64748b;">Mode Administrateur 🛠️</span>
+    </nav>
+
+    <div class="container">
+        <h1>Gestion des Utilisateurs (<%= users.length %>)</h1>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% users.forEach(function(u) { %>
+                        <tr id="user-row-<%= u._id %>">
+                            <td style="font-weight: 600;"><%= u.name %></td>
+                            <td><%= u.email %></td>
+                            <td>
+                                <span class="badge <%= u.subscription && u.subscription.plan === 'premium' ? 'badge-premium' : 'badge-free' %>" id="status-<%= u._id %>">
+                                    <%= u.subscription && u.subscription.plan === 'premium' ? '👑 PREMIUM' : '👤 FREE' %>
+                                </span>
+                            </td>
+                            <td style="display: flex; align-items: center;">
+                                <% if(u.subscription && u.subscription.plan === 'premium') { %>
+                                    <button type="button" class="btn-action btn-disabled" disabled>Déjà Premium</button>
+                                <% } else { %>
+                                    <button type="button" class="btn-action" id="btn-<%= u._id %>" onclick="upgradeUser('<%= u._id %>')">Activer Premium</button>
+                                <% } %>
+                                
+                                <button type="button" class="btn-delete" title="Supprimer l'utilisateur" onclick="deleteUser('<%= u._id %>', '<%= u.name %>')">🗑️</button>
+                            </td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        async function upgradeUser(userId) {
+            const btn = document.getElementById(`btn-${userId}`);
+            const originalText = btn.innerText;
+            btn.innerText = '⏳...';
+            btn.disabled = true;
+
+            try {
+                const res = await fetch('/api/admin/upgrade', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userId: userId })
+                });
+
+                const data = await res.json();
+                if (res.ok) {
+                    // Update UI status live without reloading!
+                    const statusBadge = document.getElementById(`status-${userId}`);
+                    statusBadge.className = 'badge badge-premium';
+                    statusBadge.innerText = '👑 PREMIUM';
+                    
+                    btn.className = 'btn-action btn-disabled';
+                    btn.innerText = 'Déjà Premium';
+                } else {
+                    alert("Erreur: " + data.message);
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                }
+            } catch (error) {
+                console.error(error);
+                alert("Erreur de connexion.");
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        }
+
+        // 🚀 NAYA: Delete User Function
+        async function deleteUser(userId, userName) {
+            const confirmDelete = confirm(`Êtes-vous sûr de vouloir supprimer définitivement le compte de "${userName}" ? Cette action est irréversible.`);
+            
+            if (!confirmDelete) return;
+
+            try {
+                const res = await fetch('/api/admin/delete', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userId: userId })
+                });
+
+                const data = await res.json();
+                if (res.ok) {
+                    // Page reload kiye bina row delete kar do
+                    const row = document.getElementById(`user-row-${userId}`);
+                    if (row) {
+                        row.remove();
+                    }
+                } else {
+                    alert("Erreur: " + data.message);
+                }
+            } catch (error) {
+                console.error(error);
+                alert("Erreur de connexion.");
+            }
+        }
+    </script>
+
+</body>
+</html>

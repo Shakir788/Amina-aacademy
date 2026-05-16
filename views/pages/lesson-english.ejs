@@ -22,405 +22,292 @@
         body {
             background-color: var(--bg-color); font-family: 'Inter', sans-serif;
             margin: 0; padding: 0; color: var(--text-main);
-            display: flex; flex-direction: column; min-height: 100vh;
+            display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden;
         }
 
+        /* 📱 Header & Progress */
         nav {
             background: white; padding: 15px 5%; display: flex; justify-content: space-between;
             align-items: center; border-bottom: 2px solid #E2E8F0; position: sticky; top: 0; z-index: 100;
         }
         .nav-left { display: flex; align-items: center; gap: 15px; }
-        .back-btn { color: var(--text-muted); text-decoration: none; font-size: 24px; font-weight: bold; }
-        .progress-container { flex: 1; max-width: 300px; background: #E2E8F0; height: 12px; border-radius: 20px; overflow: hidden; margin: 0 20px; }
-        .progress-bar { height: 100%; background: var(--success); width: 0%; transition: width 0.5s ease; }
+        .back-btn { color: var(--text-muted); text-decoration: none; font-size: 24px; font-weight: bold; transition: 0.2s; }
+        .back-btn:hover { color: var(--error); transform: scale(1.1); }
         
-        .stats-badge { display: flex; gap: 10px; }
-        .streak-badge, .xp-badge { padding: 5px 12px; border-radius: 50px; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 5px; }
+        .progress-container { flex: 1; max-width: 400px; background: #E2E8F0; height: 10px; border-radius: 20px; overflow: hidden; margin: 0 25px; }
+        .progress-bar { height: 100%; background: linear-gradient(90deg, var(--success), #34D399); width: 0%; transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        
+        .stats-badge { display: flex; gap: 12px; }
+        .streak-badge, .xp-badge { padding: 6px 14px; border-radius: 50px; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .streak-badge { background: #FEF3C7; color: #D97706; }
         .xp-badge { background: #E0E7FF; color: var(--primary); }
 
         .game-container {
             flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            padding: 20px; max-width: 600px; margin: 0 auto; width: 100%; box-sizing: border-box;
+            padding: 20px; max-width: 700px; margin: 0 auto; width: 100%; box-sizing: border-box;
         }
 
+        /* 🃏 Premium Flashcard */
         .flashcard {
-            background: var(--card-bg); width: 100%; border-radius: 24px; padding: 25px 30px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05); border: 2px solid #E2E8F0;
-            text-align: center; transition: all 0.3s ease; position: relative;
+            background: var(--card-bg); width: 100%; border-radius: 32px; padding: 35px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.06); border: 1px solid #E2E8F0;
+            text-align: center; transition: all 0.4s ease; position: relative;
         }
 
-        .status-badge {
-            position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
-            background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px;
-            font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+        /* 🗨️ Phase 2 Special Context UI */
+        .phase2-context {
+            background: #0F172A; color: #F1F5F9; border-radius: 20px; padding: 18px;
+            margin-bottom: 25px; text-align: left; font-size: 14px; line-height: 1.6;
+            display: none; border-left: 5px solid var(--primary); box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+        .phase2-context.active { display: block; animation: slideDown 0.4s ease; }
+        .context-label { font-size: 10px; font-weight: 800; color: #818CF8; text-transform: uppercase; margin-bottom: 8px; display: block; letter-spacing: 1px; }
 
-        .exercise-img { width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-bottom: 20px; display: none; }
+        .exercise-img { width: 100%; height: 240px; object-fit: cover; border-radius: 20px; margin-bottom: 25px; display: none; box-shadow: 0 8px 15px rgba(0,0,0,0.05); }
         .exercise-img.active { display: block; }
 
-        .pronunciation { font-size: 15px; color: var(--primary); background: #EEF2FF; display: inline-block; padding: 4px 12px; border-radius: 8px; margin-bottom: 10px; font-weight: 600; letter-spacing: 1px;}
-        .target-sentence { font-family: 'Plus Jakarta Sans'; font-size: 32px; font-weight: 800; color: var(--text-main); margin: 0 0 20px; line-height: 1.3; }
+        .pronunciation-chip { font-size: 14px; color: var(--primary); background: #EEF2FF; display: inline-block; padding: 6px 16px; border-radius: 12px; margin-bottom: 12px; font-weight: 700; }
+        .target-sentence { font-family: 'Plus Jakarta Sans'; font-size: 32px; font-weight: 800; color: var(--text-main); margin-bottom: 25px; line-height: 1.2; letter-spacing: -0.5px; }
         
-        .translation-box { background: #F8FAFC; border: 1px solid #E2E8F0; padding: 15px; border-radius: 12px; margin-bottom: 25px; text-align: left; }
-        .trans-row { display: flex; justify-content: space-between; margin-bottom: 8px; align-items: center; font-size: 15px; }
-        .trans-row:last-child { margin-bottom: 0; }
-        .lang-label { font-weight: 700; color: var(--text-muted); font-size: 12px; text-transform: uppercase; width: 60px; }
-        .trans-fr { color: #334155; flex: 1; }
-        .trans-darija { color: #0F766E; font-weight: 600; flex: 1; }
-        .trans-ar { font-size: 18px; font-weight: 600; color: var(--text-main); text-align: right; flex: 1; font-family: 'Arial', sans-serif; }
+        /* 🌍 Translations Grid */
+        .translation-grid { background: #F8FAFC; border: 1px solid #E2E8F0; padding: 20px; border-radius: 18px; margin-bottom: 30px; text-align: left; display: grid; gap: 12px; }
+        .trans-row { display: flex; align-items: flex-start; gap: 15px; }
+        .lang-tag { font-weight: 800; color: var(--text-muted); font-size: 10px; text-transform: uppercase; background: #E2E8F0; padding: 3px 8px; border-radius: 6px; margin-top: 3px; min-width: 35px; text-align: center; }
+        .trans-text { font-size: 15px; color: #334155; font-weight: 500; }
+        .trans-text.darija { color: #0F766E; font-weight: 700; }
+        .trans-text.arabic { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; text-align: right; width: 100%; }
 
-        .grammar-hint { background: #FFFBEB; border-left: 4px solid var(--warning); padding: 15px; text-align: left; font-size: 14px; color: #92400E; border-radius: 0 8px 8px 0; margin-bottom: 25px; display: none; }
-        .grammar-hint.active { display: block; }
-
+        /* 🎙️ Action Controls */
         .action-area { display: flex; flex-direction: column; gap: 15px; width: 100%; }
-        .btn-action { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 18px; border-radius: 16px; font-size: 18px; font-weight: 700; border: none; cursor: pointer; transition: 0.3s; }
-        .btn-listen { background: #F1F5F9; color: var(--text-main); border: 2px solid #CBD5E1; }
-        .btn-listen:hover { background: #E2E8F0; }
-        .btn-speak { background: var(--primary); color: white; box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3); }
-        .btn-speak:hover { background: var(--primary-hover); transform: translateY(-2px); }
-        .btn-speak.listening { background: var(--error); animation: pulse 1.5s infinite; box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4); }
-        .btn-next { background: var(--success); color: white; display: none; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3); }
-        .btn-next:hover { filter: brightness(1.1); transform: translateY(-2px); }
+        .btn-main { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 20px; border-radius: 20px; font-size: 18px; font-weight: 800; border: none; cursor: pointer; transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        
+        .btn-listen { background: #F1F5F9; color: var(--text-main); border: 2px solid #E2E8F0; }
+        .btn-listen:hover { background: #E2E8F0; transform: translateY(-2px); }
+        
+        .btn-speak { background: var(--primary); color: white; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2); }
+        .btn-speak:hover { background: var(--primary-hover); transform: translateY(-3px); box-shadow: 0 15px 30px rgba(79, 70, 229, 0.3); }
+        .btn-speak.listening { background: var(--error); animation: pulse 1.2s infinite; }
+        
+        .btn-next { background: var(--success); color: white; display: none; box-shadow: 0 10px 25px rgba(16, 185, 129, 0.2); }
 
-        .feedback-msg { margin-top: 15px; font-size: 15px; text-align: left; padding: 15px; border-radius: 12px; display: none; }
-        .feedback-success { background: #D1FAE5; color: #065F46; display: block; text-align: center; font-weight: 700;}
-        .feedback-error { background: #FEE2E2; color: #991B1B; display: block; }
-        .feedback-error span { display: block; margin-top: 5px; }
+        /* 📈 Repeat Dots */
+        .dot-stack { display: flex; justify-content: center; gap: 12px; margin-bottom: 20px; }
+        .dot { width: 14px; height: 14px; border-radius: 50%; background: #E2E8F0; transition: 0.4s; }
+        .dot.active { background: var(--success); transform: scale(1.3); box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); }
 
-        .repeat-tracker { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
-        .dot { width: 12px; height: 12px; border-radius: 50%; background: #E2E8F0; }
-        .dot.filled { background: var(--success); }
+        .feedback-pop { margin-top: 15px; font-size: 15px; padding: 15px; border-radius: 16px; display: none; animation: fadeIn 0.3s ease; }
+        .feedback-pop.success { background: #D1FAE5; color: #065F46; font-weight: 700; text-align: center; }
+        .feedback-pop.error { background: #FEE2E2; color: #991B1B; text-align: left; border-left: 4px solid var(--error); }
 
-        .final-screen { display: none; text-align: center; }
-        .final-icon { font-size: 80px; margin-bottom: 20px; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); } }
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+        .final-screen { display: none; text-align: center; padding: 40px; }
+        .final-screen h1 { font-size: 72px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="nav-left">
-            <a href="/dashboard" class="back-btn">✕</a>
-        </div>
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
+        <div class="nav-left"><a href="/dashboard" class="back-btn">✕</a></div>
+        <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
         <div class="stats-badge">
-            <div class="xp-badge">⭐ <span id="xpCounter">0</span> XP</div>
-            <div class="streak-badge">🔥 <span>1</span></div>
+            <div class="xp-badge">⭐ <span id="xpCount"><%= user.xp || 0 %></span> XP</div>
+            <div class="streak-badge">🔥 <%= user.streak ? user.streak.current : 0 %></div>
         </div>
     </nav>
 
     <div class="game-container">
-        
-        <div class="flashcard" id="learningCard">
-            <div class="status-badge" id="stepIndicator">1 / 5</div>
+        <div class="flashcard" id="lessonCard">
+            <div id="cardCounter" style="font-size:12px; font-weight:800; color:var(--primary); margin-bottom:15px; text-transform:uppercase;">1 / 5</div>
             
-            <img src="" alt="Exercise context" class="exercise-img" id="exerciseImg">
-
-            <div class="pronunciation" id="pronunciation">...</div>
-            <div class="target-sentence" id="targetSentence">Loading...</div>
-            
-            <div class="translation-box" id="transBoxMain">
-                <div class="trans-row" id="rowFr"><span class="lang-label">Fr</span> <span class="trans-fr" id="transFr">...</span></div>
-                <div class="trans-row" id="rowDar"><span class="lang-label">Dar</span> <span class="trans-darija" id="transDarija">...</span></div>
-                <div class="trans-row" id="rowAr"><span class="lang-label">Ar</span> <span class="trans-ar" dir="rtl" id="transAr">...</span></div>
+            <div id="contextBox" class="phase2-context">
+                <span id="ctxType" class="context-label">Context</span>
+                <div id="ctxLines"></div>
             </div>
 
-            <div class="grammar-hint" id="grammarHint">
-                💡 <b>Indice:</b> <span id="hintText">...</span>
+            <img src="" id="exImg" class="exercise-img">
+
+            <div id="exPron" class="pronunciation-chip">...</div>
+            <div id="exTarget" class="target-sentence">Loading...</div>
+            
+            <div class="translation-grid">
+                <div class="trans-row" id="rFr"><span class="lang-tag">FR</span><span class="trans-text" id="tFr">...</span></div>
+                <div class="trans-row" id="rDar"><span class="lang-tag">DAR</span><span class="trans-text darija" id="tDar">...</span></div>
+                <div class="trans-row" id="rAr"><span class="lang-tag">AR</span><span class="trans-text arabic" dir="rtl" id="tAr">...</span></div>
             </div>
 
-            <div class="repeat-tracker" id="repeatTracker">
-                <div class="dot" id="dot1"></div>
-                <div class="dot" id="dot2"></div>
+            <div class="dot-stack">
+                <div id="d1" class="dot"></div>
+                <div id="d2" class="dot"></div>
             </div>
 
             <div class="action-area">
-                <button class="btn-action btn-listen" id="btnListen" onclick="playAudio()">🔊 Écouter</button>
-                <button class="btn-action btn-speak" id="btnSpeak" onclick="startSpeaking()">🎤 Parler</button>
-                <button class="btn-action btn-next" id="btnNext" onclick="nextCard()">Continue ➔</button>
+                <button class="btn-main btn-listen" onclick="playTTS()">🔊 Écouter</button>
+                <button class="btn-main btn-speak" id="btnSpeak" onclick="startRecognition()">🎤 Parler</button>
+                <button class="btn-main btn-next" id="btnNext" onclick="handleNext()">Continuer ➔</button>
             </div>
-
-            <div class="feedback-msg" id="feedbackMsg"></div>
+            <div id="feedback" class="feedback-pop"></div>
         </div>
 
-        <div class="final-screen" id="finalScreen">
-            <div class="final-icon">🏆</div>
-            <h1 style="font-family: 'Plus Jakarta Sans'; font-size: 32px; margin-bottom: 10px;">Session Terminée!</h1>
-            <p style="color: #64748B; font-size: 18px; margin-bottom: 30px;">+ <span id="finalXp">0</span> XP gagnés aujourd'hui.</p>
-            <button class="btn-action btn-speak" style="max-width: 300px; margin: 0 auto;" onclick="finishSession()">
-                Retour au Hub
-            </button>
+        <div class="final-screen" id="winScreen">
+            <h1>🏆</h1>
+            <h2 style="font-size: 32px; font-weight:800; margin-bottom:10px;">Phase Terminée!</h2>
+            <p style="color:var(--text-muted); font-size:18px; margin-bottom:30px;">Tu as gagné +<span id="earnedXp">0</span> XP aujourd'hui.</p>
+            <button class="btn-main btn-speak" style="max-width:280px; margin:0 auto;" onclick="exitToHub()">Retour au Hub</button>
         </div>
-
     </div>
 
-    <%- include('../partials/ai-coach') %>
-
-    <script id="lesson-data" type="application/json">
-        <%- JSON.stringify(lesson || {}) %>
-    </script>
-    
+    <script id="lesson-data" type="application/json"><%- JSON.stringify(lesson || {}) %></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
-        // 🚀 Set Course Type Globally for the AI Coach Partial
-        window.CURRENT_COURSE_TYPE = "<%= courseType %>";
-
         const rawData = JSON.parse(document.getElementById('lesson-data').textContent);
-        const CURRENT_LESSON_ID = parseInt("<%= lessonId %>");
+        const LESSON_ID = parseInt("<%= lessonId %>");
+        const COURSE = "<%= courseType %>";
 
-        let currentLessonData = null;
-        if (rawData.lessons && Array.isArray(rawData.lessons)) {
-            currentLessonData = rawData.lessons.find(l => l.id === CURRENT_LESSON_ID);
-        } else {
-            currentLessonData = rawData; 
+        let currentLesson = null;
+        if (Array.isArray(rawData)) {
+            currentLesson = rawData.find(l => l.id === LESSON_ID) || rawData[0];
+        } else if (rawData.lessons) {
+            currentLesson = rawData.lessons.find(l => l.id === LESSON_ID);
         }
 
-        if (!currentLessonData || !currentLessonData.exercises) {
-            document.getElementById('targetSentence').innerText = "Erreur: Leçon introuvable.";
-            document.getElementById('btnSpeak').style.display = 'none';
-            document.getElementById('btnListen').style.display = 'none';
-        } else {
+        const exercises = currentLesson?.exercises || [];
+        let cursor = 0;
+        let sessionXp = 0;
+        let repeats = 0;
 
-            let exercises = currentLessonData.exercises || [];
-            let currentIndex = 0;
-            const totalCards = exercises.length;
+        function render() {
+            if (!exercises.length) return;
+            const ex = exercises[cursor];
+            repeats = 0;
+            updateDots();
+
+            // Image Handler
+            const img = document.getElementById('exImg');
+            const url = ex.imageUrl || currentLesson.imageUrl;
+            if(url) { img.src = url; img.classList.add('active'); } else { img.classList.remove('active'); }
+
+            // Phase 2 Context Handler (Dialogue / Story / Inner Voice)
+            const cBox = document.getElementById('contextBox');
+            const cLines = document.getElementById('ctxLines');
+            const cLabel = document.getElementById('ctxType');
+
+            if (currentLesson.dialogue || currentLesson.structure || ex.inner_voice) {
+                cBox.classList.add('active');
+                if (currentLesson.dialogue) {
+                    cLabel.innerText = "Dialogue Context";
+                    cLines.innerHTML = currentLesson.dialogue.map(l => `<div>• ${l}</div>`).join('');
+                } else if (currentLesson.structure) {
+                    cLabel.innerText = "Story Structure";
+                    cLines.innerHTML = currentLesson.structure.map(s => `<span style="background:#4F46E5; padding:2px 10px; border-radius:6px; margin-right:6px; font-size:11px; font-weight:700;">${s}</span>`).join('');
+                } else if (ex.inner_voice) {
+                    cLabel.innerText = "Inner Voice";
+                    cLines.innerHTML = ex.inner_voice.map(v => `<div>🧠 ${v}</div>`).join('');
+                }
+            } else { cBox.classList.remove('active'); }
+
+            // Content Mapping
+            document.getElementById('exTarget').innerText = ex.en || ex.english || "...";
+            document.getElementById('tFr').innerText = ex.fr || ex.french || "...";
+            document.getElementById('tDar').innerText = ex.darija || "...";
+            document.getElementById('tAr').innerText = ex.ar || ex.arabic || "...";
             
-            let totalXp = 0;
-            let requiredSuccess = 2; 
-            let currentSuccess = 0;
+            const p = ex.pronunciation;
+            document.getElementById('exPron').innerText = p ? (typeof p === 'object' ? `🗣️ ${p.simple || p.fast}` : `🗣️ ${p}`) : "Listen & Repeat";
 
-            const elPronunciation = document.getElementById('pronunciation');
-            const elSentence = document.getElementById('targetSentence');
-            const elTransFr = document.getElementById('transFr');
-            const elTransDarija = document.getElementById('transDarija');
-            const elTransAr = document.getElementById('transAr');
-            const elHintBox = document.getElementById('grammarHint');
-            const elHintText = document.getElementById('hintText');
-            const elStepInd = document.getElementById('stepIndicator');
-            const elProgressBar = document.getElementById('progressBar');
-            const elFeedback = document.getElementById('feedbackMsg');
-            const elXp = document.getElementById('xpCounter');
-            const elImg = document.getElementById('exerciseImg');
+            document.getElementById('cardCounter').innerText = `${cursor + 1} / ${exercises.length}`;
+            document.getElementById('progressBar').style.width = `${(cursor / exercises.length) * 100}%`;
             
-            const rowFr = document.getElementById('rowFr');
-            const rowDar = document.getElementById('rowDar');
-            const rowAr = document.getElementById('rowAr');
-            
-            const btnListen = document.getElementById('btnListen');
-            const btnSpeak = document.getElementById('btnSpeak');
-            const btnNext = document.getElementById('btnNext');
+            document.getElementById('btnNext').style.display = 'none';
+            document.getElementById('btnSpeak').style.display = 'flex';
+            document.getElementById('feedback').style.display = 'none';
+        }
 
-            document.title = `${currentLessonData.title || 'Session'} | English Mastery`;
+        // 🔊 TTS
+        window.playTTS = () => {
+            const utter = new SpeechSynthesisUtterance(exercises[cursor].en || exercises[cursor].english);
+            utter.lang = 'en-US'; utter.rate = 0.8;
+            window.speechSynthesis.speak(utter);
+        };
 
-            const synth = window.speechSynthesis;
-            let femaleVoice = null;
+        // 🎤 Speech Engine
+        const Recog = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (Recog) {
+            const engine = new Recog();
+            engine.lang = 'en-US';
 
-            function setFemaleVoice() {
-                const voices = synth.getVoices();
-                femaleVoice = voices.find(v => v.name.includes('Google UK English Female') || v.name.includes('Zira') || v.name.includes('Samantha') || v.name.includes('Female')) || voices.find(v => v.lang.startsWith('en-'));
-            }
-            
-            synth.getVoices();
-            if (speechSynthesis.onvoiceschanged !== undefined) {
-                speechSynthesis.onvoiceschanged = setFemaleVoice;
-            }
+            window.startRecognition = () => {
+                engine.start();
+                const b = document.getElementById('btnSpeak');
+                b.classList.add('listening');
+                b.innerText = "🎧 Je vous écoute...";
+            };
 
-            window.playAudio = function() {
-                if (synth.speaking) { synth.cancel(); }
-                setTimeout(() => {
-                    const utterThis = new SpeechSynthesisUtterance(exercises[currentIndex].en);
-                    if (femaleVoice) { utterThis.voice = femaleVoice; }
-                    utterThis.lang = 'en-US'; 
-                    utterThis.rate = 0.85;
-                    synth.speak(utterThis);
-                }, 50);
-            }
+            engine.onresult = (e) => {
+                const speech = e.results[0][0].transcript.toLowerCase().trim();
+                const target = (exercises[cursor].en || exercises[cursor].english).toLowerCase().replace(/[^\w\s]/g, '').trim();
 
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-            let recognition;
-            
-            if (SpeechRecognition) {
-                recognition = new SpeechRecognition();
-                recognition.lang = 'en-US';
-                recognition.interimResults = false;
-
-                recognition.onstart = function() {
-                    btnSpeak.classList.add('listening');
-                    btnSpeak.innerHTML = '🎧 Je vous écoute...';
-                    elFeedback.style.display = 'none';
-                };
-
-                recognition.onresult = function(event) {
-                    const speechResult = event.results[0][0].transcript.toLowerCase().trim();
-                    const targetText = exercises[currentIndex].en.toLowerCase().replace(/[^\w\s\']/g, "").trim();
-                    const cleanSpeech = speechResult.replace(/[^\w\s\']/g, "").trim();
-
-                    let matched = false;
-                    if (cleanSpeech.includes(targetText) || targetText.includes(cleanSpeech) || cleanSpeech === targetText) {
-                        matched = true;
-                    }
-                    
-                    if (!matched && exercises[currentIndex].variations) {
-                        for(let variation of exercises[currentIndex].variations) {
-                            let cleanVar = variation.toLowerCase().replace(/[^\w\s\']/g, "").trim();
-                            if(cleanSpeech.includes(cleanVar) || cleanSpeech === cleanVar) {
-                                matched = true; break;
-                            }
-                        }
-                    }
-
-                    if (matched) {
-                        handleSuccess();
+                if (speech.includes(target) || target.includes(speech)) {
+                    repeats++; sessionXp += 10;
+                    updateDots();
+                    if (repeats >= 2) {
+                        showStatus("🎉 Parfait ! Card validée.", "success", true);
                     } else {
-                        handleFailure(speechResult, exercises[currentIndex].en);
+                        showStatus("🔥 Super ! Répète une 2ème fois.", "success", false);
                     }
-                };
-
-                recognition.onerror = function() {
-                    btnSpeak.classList.remove('listening'); btnSpeak.innerHTML = '🎤 Parler';
-                    elFeedback.className = 'feedback-msg feedback-error';
-                    elFeedback.innerHTML = "❌ Je n'ai pas bien entendu. Réessayez.";
-                    elFeedback.style.display = 'block';
-                };
-
-                recognition.onend = function() { btnSpeak.classList.remove('listening'); };
-            } else {
-                alert("Navigateur non supporté pour la voix. Utilisez Chrome.");
-                btnSpeak.style.display = 'none'; btnNext.style.display = 'flex';
-            }
-
-            window.startSpeaking = function() { if(recognition) { try { recognition.start(); } catch(e) {} } }
-
-            function loadCard() {
-                const currentEx = exercises[currentIndex];
-                currentSuccess = 0; 
-                updateDots();
-                
-                const activeImgUrl = currentEx.imageUrl || currentLessonData.imageUrl;
-                if (activeImgUrl) {
-                    elImg.src = activeImgUrl;
-                    elImg.classList.add('active');
                 } else {
-                    elImg.classList.remove('active');
+                    showStatus(`❌ Presque! Tu as dit: "${speech}"`, "error", false);
                 }
+            };
 
-                let pronunciationText = '';
-                if(currentEx.pronunciation) {
-                    if(typeof currentEx.pronunciation === 'object') pronunciationText = currentEx.pronunciation.simple || currentEx.pronunciation.fast;
-                    else pronunciationText = currentEx.pronunciation;
-                }
-
-                elPronunciation.innerText = `🗣️ ${pronunciationText || '...'}`;
-                elSentence.innerText = currentEx.en || '...';
-                
-                if(currentEx.fr) { elTransFr.innerText = currentEx.fr; rowFr.style.display = 'flex'; } 
-                else { rowFr.style.display = 'none'; }
-                
-                if(currentEx.darija) { elTransDarija.innerText = currentEx.darija; rowDar.style.display = 'flex'; } 
-                else { rowDar.style.display = 'none'; }
-                
-                if(currentEx.ar) { elTransAr.innerText = currentEx.ar; rowAr.style.display = 'flex'; } 
-                else { rowAr.style.display = 'none'; }
-
-                elStepInd.innerText = `${currentIndex + 1} / ${totalCards}`;
-                
-                const progress = (currentIndex / totalCards) * 100;
-                elProgressBar.style.width = `${progress}%`;
-
-                const hintTextData = currentEx.context || currentEx.practice || currentEx.hint;
-                if (hintTextData) { elHintBox.classList.add('active'); elHintText.innerText = hintTextData; } 
-                else { elHintBox.classList.remove('active'); }
-
-                btnListen.style.display = 'flex'; btnSpeak.style.display = 'flex';
-                btnSpeak.innerHTML = '🎤 Parler'; btnNext.style.display = 'none';
-                elFeedback.style.display = 'none';
-            }
-
-            function updateDots() {
-                document.getElementById('dot1').className = currentSuccess >= 1 ? 'dot filled' : 'dot';
-                document.getElementById('dot2').className = currentSuccess >= 2 ? 'dot filled' : 'dot';
-            }
-
-            function handleSuccess() {
-                currentSuccess++;
-                updateDots();
-                
-                totalXp += 10;
-                elXp.innerText = totalXp;
-
-                elFeedback.className = 'feedback-msg feedback-success';
-                
-                if(currentSuccess < requiredSuccess) {
-                    elFeedback.innerHTML = '🔥 Super ! Répétez encore une fois.';
-                    btnSpeak.innerHTML = '🎤 Parler (Encore)';
-                } else {
-                    elFeedback.innerHTML = '🎉 Parfait !';
-                    btnSpeak.style.display = 'none';
-                    btnListen.style.display = 'none';
-                    btnNext.style.display = 'flex';
-                }
-                elFeedback.style.display = 'block';
-            }
-
-            function handleFailure(whatTheySaid, target) {
-                elFeedback.className = 'feedback-msg feedback-error';
-                elFeedback.innerHTML = `
-                    <b>Oups, presque!</b>
-                    <span>🗣️ <b>Vous avez dit :</b> <i style="color:#475569;">"${whatTheySaid}"</i></span>
-                    <span>🎯 <b>Correct :</b> <i style="color:#0F172A;">"${target}"</i></span>
-                `;
-                elFeedback.style.display = 'block';
-                btnSpeak.innerHTML = '🎤 Réessayer';
-
-                // 🚀 Call the AI Coach from the separate partial file!
-                if (window.triggerAICoachError) {
-                    window.triggerAICoachError(whatTheySaid, target);
-                }
-            }
-
-            window.nextCard = function() {
-                currentIndex++;
-                if (currentIndex >= totalCards) {
-                    elProgressBar.style.width = `100%`;
-                    document.getElementById('learningCard').style.display = 'none';
-                    document.getElementById('finalScreen').style.display = 'block';
-                    document.getElementById('finalXp').innerText = totalXp;
-                    
-                    var duration = 3 * 1000;
-                    var end = Date.now() + duration;
-                    (function frame() {
-                        confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#4F46E5', '#10B981', '#F59E0B'] });
-                        confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#4F46E5', '#10B981', '#F59E0B'] });
-                        if (Date.now() < end) { requestAnimationFrame(frame); }
-                    }());
-                } else {
-                    loadCard();
-                }
-            }
-
-            window.finishSession = async function() {
-                const btn = document.querySelector('.final-screen .btn-speak');
-                btn.innerHTML = '⏳ Sauvegarde...';
-                btn.disabled = true;
-
-                try {
-                    const res = await fetch('/api/progress/complete', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ lessonId: parseInt(CURRENT_LESSON_ID), courseType: CURRENT_COURSE_TYPE }) 
-                    });
-                    if (res.ok) { window.location.href = '/dashboard?t=' + new Date().getTime(); } 
-                    else { alert("Erreur."); btn.innerHTML = 'Retour'; btn.disabled = false; }
-                } catch (error) { alert("Erreur."); btn.innerHTML = 'Retour'; btn.disabled = false; }
-            }
-
-            window.onload = () => { loadCard(); };
+            engine.onend = () => {
+                const b = document.getElementById('btnSpeak');
+                b.classList.remove('listening');
+                b.innerText = repeats >= 2 ? "Validé ✅" : "🎤 Parler";
+            };
         }
+
+        function updateDots() {
+            document.getElementById('d1').className = repeats >= 1 ? "dot active" : "dot";
+            document.getElementById('d2').className = repeats >= 2 ? "dot active" : "dot";
+        }
+
+        function showStatus(txt, type, done) {
+            const f = document.getElementById('feedback');
+            f.innerText = txt;
+            f.className = `feedback-pop ${type}`;
+            f.style.display = 'block';
+            if (done) {
+                document.getElementById('btnSpeak').style.display = 'none';
+                document.getElementById('btnNext').style.display = 'flex';
+            }
+        }
+
+        window.handleNext = () => {
+            cursor++;
+            if (cursor < exercises.length) render();
+            else {
+                document.getElementById('progressBar').style.width = "100%";
+                document.getElementById('lessonCard').style.display = 'none';
+                document.getElementById('winScreen').style.display = 'block';
+                document.getElementById('earnedXp').innerText = sessionXp;
+                confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
+            }
+        };
+
+        window.exitToHub = async () => {
+            await fetch('/api/progress/complete', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ lessonId: LESSON_ID, courseType: COURSE, xpEarned: sessionXp })
+            });
+            window.location.href = '/dashboard';
+        };
+
+        window.onload = render;
     </script>
 </body>
 </html>

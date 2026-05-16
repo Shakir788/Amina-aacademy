@@ -29,7 +29,7 @@
             min-height: 100vh;
         }
 
-        /* --- Elegant Navbar --- */
+        /* --- Elegant Navbar & Gamification --- */
         nav {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(15px);
@@ -42,108 +42,37 @@
             z-index: 1000;
             border-bottom: 1px solid rgba(255,255,255,0.3);
         }
+        .nav-left { display: flex; align-items: center; gap: 20px; }
         .logo { font-size: 20px; font-weight: 800; text-decoration: none; color: #0f172a; }
         .logo span { color: var(--theme-main); }
+        
+        .stats-badge { display: flex; gap: 10px; }
+        .streak-badge, .xp-badge { padding: 5px 12px; border-radius: 50px; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 5px; }
+        .streak-badge { background: #FEF3C7; color: #D97706; }
+        .xp-badge { background: #E0E7FF; color: #4F46E5; }
 
         /* --- THE PREMIUM HEADER --- */
-        .poster-header {
-            text-align: center;
-            padding: 40px 20px 20px;
-        }
-        
-        .lesson-tag {
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
-            color: var(--theme-main); 
-            margin-bottom: 10px;
-            font-weight: 700;
-            display: inline-block;
-            background: rgba(255,255,255,0.5);
-            padding: 5px 15px;
-            border-radius: 50px;
-        }
-        
-        .main-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 42px;
-            color: #0f172a;
-            margin: 0 auto;
-            max-width: 900px;
-            line-height: 1.2;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.05); 
-        }
-        
-        .ornament {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .ornament::before, .ornament::after {
-            content: '';
-            height: 2px;
-            width: 50px;
-            background: #d97706; 
-        }
+        .poster-header { text-align: center; padding: 40px 20px 20px; }
+        .lesson-tag { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--theme-main); margin-bottom: 10px; font-weight: 700; display: inline-block; background: rgba(255,255,255,0.5); padding: 5px 15px; border-radius: 50px; }
+        .main-title { font-family: 'Playfair Display', serif; font-size: 42px; color: #0f172a; margin: 0 auto; max-width: 900px; line-height: 1.2; text-shadow: 1px 1px 2px rgba(0,0,0,0.05); }
+        .ornament { display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 20px; }
+        .ornament::before, .ornament::after { content: ''; height: 2px; width: 50px; background: #d97706; }
         .ornament span { color: #d97706; font-size: 18px; line-height: 0; }
 
         /* --- Hero Image --- */
-        .hero-img-container {
-            max-width: 850px;
-            margin: 0 auto 40px;
-            padding: 0 20px;
-        }
-        .hero-img {
-            width: 100%;
-            height: 380px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border: 4px solid white; 
-        }
+        .hero-img-container { max-width: 850px; margin: 0 auto 40px; padding: 0 20px; }
+        .hero-img { width: 100%; height: 380px; object-fit: cover; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 4px solid white; }
 
         /* --- The Infographic Content Grid --- */
-        .poster-grid {
-            max-width: 850px;
-            margin: 0 auto 100px;
-            padding: 0 20px;
-            display: grid;
-            gap: 25px;
-        }
-
-        .info-card {
-            background: #ffffff;
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            border: 1px solid rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
+        .poster-grid { max-width: 850px; margin: 0 auto 100px; padding: 0 20px; display: grid; gap: 25px; }
+        .info-card { background: #ffffff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.05); transition: all 0.3s ease; }
         .info-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-
-        .card-ribbon {
-            padding: 12px 25px;
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
-            font-weight: 700;
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* 🚀 TEXT TYPOGRAPHY */
+        .card-ribbon { padding: 12px 25px; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: white; display: flex; align-items: center; gap: 10px; }
         .card-body { padding: 30px 35px; font-size: 17px; line-height: 2; color: #334155; letter-spacing: 0.3px; }
         .card-body b { color: #0f172a; font-weight: 700; }
 
         /* 🚀 FORMATTING CLASSES */
-        .premium-heading {
-            font-family: 'Playfair Display', serif; color: var(--theme-main); font-size: 22px;
-            font-weight: 700; margin-top: 35px; margin-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.05);
-            padding-bottom: 10px; display: block;
-        }
+        .premium-heading { font-family: 'Playfair Display', serif; color: var(--theme-main); font-size: 22px; font-weight: 700; margin-top: 35px; margin-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 10px; display: block; }
         .premium-bullet { color: var(--theme-gradient); margin-right: 8px; font-size: 1.1em; }
         .premium-note { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 12px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; display: block; color: #92400e; }
         .premium-list-item { display: block; margin-left: 25px; margin-bottom: 10px; position: relative; }
@@ -162,15 +91,12 @@
         .result-success { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; display: block; }
         .result-error { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; display: block; }
 
-        /* --- Dynamic Section Colors (Restored to Original) --- */
+        /* --- Dynamic Section Colors --- */
         .theme-main .card-ribbon { background: linear-gradient(to right, var(--theme-main), var(--theme-gradient)); }
-        
         .theme-teal { background: #f0fdfa; }
         .theme-teal .card-ribbon { background: linear-gradient(to right, #0f766e, #14b8a6); }
-        
         .theme-gold { background: #fffbeb; }
         .theme-gold .card-ribbon { background: linear-gradient(to right, #b45309, #f59e0b); }
-        
         .theme-dark { background: var(--theme-main); color: white; }
         .theme-dark .card-ribbon { background: linear-gradient(to right, #0f172a, #334155); color: white; }
         .theme-dark .card-body { color: #e2e8f0; }
@@ -196,11 +122,17 @@
 <body>
 
     <nav>
-        <a href="/dashboard" class="logo">AMINA <span>Académie</span></a>
+        <div class="nav-left">
+            <a href="/dashboard" class="logo">AMINA <span>Académie</span></a>
+            <div class="stats-badge">
+                <div class="xp-badge" title="Points d'expérience">⭐ <span id="navXp"><%= user && user.xp ? user.xp : 0 %></span> XP</div>
+                <div class="streak-badge" title="Série de jours">🔥 <span><%= user && user.streak && user.streak.current ? user.streak.current : 0 %></span></div>
+            </div>
+        </div>
         <div style="display:flex; gap:10px;">
-            <button class="btn-lang active" onclick="switchLang('fr', 'ltr', this)">FR</button>
-            <button class="btn-lang" onclick="switchLang('en', 'ltr', this)">EN</button>
-            <button class="btn-lang" onclick="switchLang('ar', 'rtl', this)">AR</button>
+            <button type="button" class="btn-lang active" onclick="switchLang('fr', 'ltr', this)">FR</button>
+            <button type="button" class="btn-lang" onclick="switchLang('en', 'ltr', this)">EN</button>
+            <button type="button" class="btn-lang" onclick="switchLang('ar', 'rtl', this)">AR</button>
         </div>
     </nav>
 
@@ -219,7 +151,6 @@
     </div>
 
     <div class="poster-grid">
-
         <div class="info-card theme-main">
             <div class="card-ribbon">🎯 <span id="lbl-obj">Objectif</span></div>
             <div class="card-body" id="txt-obj"></div>
@@ -249,11 +180,10 @@
         </div>
 
         <div class="action-area">
-            <button class="btn-complete" id="btn-complete" onclick="markComplete()">
+            <button type="button" class="btn-complete" id="btn-complete" onclick="markComplete()">
                 ✅ Marquer comme terminé
             </button>
         </div>
-
     </div>
 
     <%- include('../partials/ai-coach') %>
@@ -261,15 +191,16 @@
     <script id="lesson-data" type="application/json">
         <%- JSON.stringify(lesson || {}) %>
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
-        // 🚀 NAYA: AI Coach ko context dene ke liye global variable
         window.CURRENT_COURSE_TYPE = "accounting"; 
 
         const lessonData = JSON.parse(document.getElementById('lesson-data').textContent);
         const fallbackImageUrl = "<%= fallbackImg %>"; 
         const CURRENT_LESSON_ID = "<%= lessonId %>";
-        const CURRENT_COURSE_TYPE = "accounting"; // 🚀 Hardcoded to accounting for this file
+        const CURRENT_COURSE_TYPE = "accounting"; 
 
         const labels = {
             fr: { obj: "Objectif", exp: "Explication", exm: "Exemple", pra: "Tâche Pratique", res: "Résumé", btn: "✅ Marquer comme terminé" },
@@ -345,11 +276,11 @@
                         </label>
                     `;
                 });
-                html += `<button class="practice-btn" onclick="checkAnswer('radio')">Vérifier la réponse</button>`;
+                html += `<button type="button" class="practice-btn" onclick="checkAnswer('radio')">Vérifier la réponse</button>`;
             } 
             else if (pz.type === 'fifo_calculator' || pz.type === 'tva_calculator' || pz.type === 'input') {
                 html += `<input type="number" id="pz_input" class="practice-input" placeholder="Entrez votre réponse en chiffres...">`;
-                html += `<button class="practice-btn" onclick="checkAnswer('input')">Calculer & Vérifier</button>`;
+                html += `<button type="button" class="practice-btn" onclick="checkAnswer('input')">Calculer & Vérifier</button>`;
             }
 
             html += `<div id="pz_result" class="practice-result"></div>`;
@@ -405,6 +336,7 @@
             renderPracticeZone(); 
         };
 
+        // 🚀 UPGRADED MARK COMPLETE WITH CONFETTI
         async function markComplete() {
             const btn = document.getElementById('btn-complete');
             const originalText = btn.innerText;
@@ -419,16 +351,39 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ 
                         lessonId: parseInt(CURRENT_LESSON_ID), 
-                        courseType: CURRENT_COURSE_TYPE // Always sends 'accounting' now
+                        courseType: CURRENT_COURSE_TYPE 
                     }) 
                 });
                 
                 if (res.ok) {
-                    btn.innerHTML = '🎉 Terminé !';
+                    const data = await res.json();
+                    
+                    // Button UI Update with XP
+                    btn.innerHTML = `🎉 Terminé ! ${data.xpGained > 0 ? `(+${data.xpGained} XP)` : ''}`;
                     btn.style.background = '#10B981'; 
+                    btn.style.opacity = '1';
+
+                    // Update Top Nav XP live
+                    if (data.totalXp) {
+                        document.getElementById('navXp').innerText = data.totalXp;
+                    }
+
+                    // 🎊 FIRE CONFETTI!
+                    if (typeof confetti === 'function') {
+                        var duration = 1.5 * 1000;
+                        var end = Date.now() + duration;
+                        (function frame() {
+                            confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#1e3a8a', '#3b82f6', '#d97706'] });
+                            confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#1e3a8a', '#3b82f6', '#d97706'] });
+                            if (Date.now() < end) { requestAnimationFrame(frame); }
+                        }());
+                    }
+
+                    // Redirect after short delay so user sees confetti & XP
                     setTimeout(() => {
                         window.location.href = '/dashboard?t=' + new Date().getTime();
-                    }, 500);
+                    }, 1800);
+                    
                 } else {
                     const data = await res.json();
                     alert("Erreur du backend: " + (data.message || "Impossible de sauvegarder"));

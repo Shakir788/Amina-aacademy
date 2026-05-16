@@ -12,94 +12,167 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- Card Hover Effects (Original Logic) --- */
-        .lesson-card .card-img {
-            filter: grayscale(100%);
-            transition: all 0.4s ease-in-out; 
-            transform: scale(1);
-            background-size: cover;
-            background-position: center;
-            height: 160px;
+        body { 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            background-color: #f8fafc; 
+            font-family: 'Inter', sans-serif; 
+            overflow-x: hidden;
         }
-        .lesson-card:hover .card-img {
-            filter: grayscale(0%);
+
+        /* 🚀 Smooth Animated Sidebar */
+        .sidebar {
+            width: 280px;
+            height: 100vh;
+            background: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-right: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 24px;
+            box-sizing: border-box;
+            z-index: 100;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.02);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animation */
+        }
+
+        /* Jab Sidebar band hogi */
+        .sidebar.collapsed {
+            transform: translateX(-100%);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            width: calc(100% - 280px);
+            padding: 30px 50px 80px 50px;
+            box-sizing: border-box;
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animation */
+        }
+
+        /* Jab Sidebar band hogi toh main content poori screen lega */
+        .main-content.expanded {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        /* 🍔 Hamburger Button */
+        .hamburger-btn {
+            background: white;
+            border: 1px solid #e2e8f0;
+            color: #0f172a;
+            border-radius: 8px;
+            width: 45px;
+            height: 45px;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: 0.2s;
+        }
+        .hamburger-btn:hover {
+            background: #f1f5f9;
             transform: scale(1.05);
         }
-        .locked-lesson .card-img,
-        .locked-lesson:hover .card-img {
-            filter: grayscale(100%) opacity(0.6) !important;
-            transform: scale(1) !important; 
-        }
+
+        /* Sidebar Inner Elements */
+        .sidebar .logo { font-size: 24px; margin-bottom: 40px; display: block; text-decoration: none; font-weight: 800; color: #0f172a; }
+        .sidebar .logo span { color: #d97706; }
+        .sidebar-section-title { font-size: 12px; font-weight: 700; color: #94a3b8; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.5px; }
+        
+        .sidebar-gamification { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; }
+        .gami-badge { display: flex; align-items: center; gap: 10px; background: #f8fafc; padding: 12px 16px; border-radius: 12px; font-weight: 700; font-size: 14px; color: #1e293b; border: 1px solid #e2e8f0; transition: 0.2s; width: 100%; box-sizing: border-box; }
+        .gami-badge:hover { transform: translateX(5px); background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        
+        .gami-streak { color: #f97316; } 
+        .gami-xp { color: #3b82f6; }    
+        .gami-pro { color: #eab308; background: #fefce8; border-color: #fde047; } 
+
+        .sidebar-spacer { flex-grow: 1; }
+
+        .sidebar-actions { display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
+        .btn-upgrade { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 12px 16px; border-radius: 12px; font-weight: 700; font-size: 14px; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3); transition: 0.3s; border: none; cursor: pointer; text-align: center; }
+        .btn-upgrade:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4); color: white; }
+
+        .sidebar-profile { background: #f1f5f9; padding: 16px; border-radius: 16px; display: flex; flex-direction: column; gap: 12px; border: 1px solid #e2e8f0; }
+        .user-name-display { font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 8px; font-size: 15px; }
+        .btn-logout { background: white; color: #64748b; padding: 8px; border-radius: 8px; text-align: center; font-weight: 600; font-size: 13px; text-decoration: none; border: 1px solid #cbd5e1; transition: 0.2s; }
+        .btn-logout:hover { background: #ef4444; color: white; border-color: #ef4444; }
+
+
+        /* --- Card Hover & Carousel --- */
+        .lesson-card .card-img { filter: grayscale(100%); transition: all 0.4s ease-in-out; transform: scale(1); background-size: cover; background-position: center; height: 160px; }
+        .lesson-card:hover .card-img { filter: grayscale(0%); transform: scale(1.05); }
+        .locked-lesson .card-img, .locked-lesson:hover .card-img { filter: grayscale(100%) opacity(0.6) !important; transform: scale(1) !important; }
         .lesson-card { overflow: hidden; border-radius: 16px; background: white; border: 1px solid #e2e8f0; transition: 0.3s; flex: 0 0 320px; max-width: 320px; }
         .lesson-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
 
-        /* 🎬 NETFLIX STYLE CAROUSEL */
-        .carousel-container {
-            position: relative;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-        
-        .lesson-grid {
-            display: flex !important;
-            flex-wrap: nowrap !important;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            gap: 24px;
-            padding: 20px 60px 40px;
-            width: 100%;
-            scrollbar-width: none;
-        }
+        .carousel-container { position: relative; width: 100%; display: flex; align-items: center; margin-bottom: 50px; }
+        .lesson-grid { display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; scroll-behavior: smooth; gap: 24px; padding: 20px 0px 40px 0px; width: 100%; scrollbar-width: none; }
         .lesson-grid::-webkit-scrollbar { display: none; }
         
-        .scroll-btn {
-            position: absolute;
-            top: 45%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.95);
-            border: 1px solid #e2e8f0;
-            color: #0f172a;
-            width: 50px; height: 50px;
-            border-radius: 50%;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 10;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            transition: 0.3s;
-            display: flex; align-items: center; justify-content: center;
-        }
+        .scroll-btn { position: absolute; top: 40%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.95); border: 1px solid #e2e8f0; color: #0f172a; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; cursor: pointer; z-index: 10; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: 0.3s; display: flex; align-items: center; justify-content: center; }
         .scroll-btn:hover { background: #1e3a8a; color: white; transform: translateY(-50%) scale(1.1); }
-        .scroll-btn.left { left: 0px; }
-        .scroll-btn.right { right: 0px; }
+        .scroll-btn.left { left: -25px; }
+        .scroll-btn.right { right: -25px; }
 
-        .track-title {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 26px;
-            font-weight: 800;
-            margin-left: 60px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+        .track-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
         .track-title span { font-size: 14px; font-weight: 600; color: #64748b; background: #f1f5f9; padding: 4px 12px; border-radius: 50px; }
     </style>
 </head>
 <body>
 
-    <nav>
+    <aside class="sidebar" id="sidebar">
         <a href="/" class="logo">AMINA <span>Académie</span></a>
-        <div>
-            <span style="font-weight: 600; margin-right: 20px; color: var(--secondary);">👨‍💼 <%= user.name %></span>
-            <a href="/api/auth/logout" class="btn btn-outline" style="padding: 8px 16px; font-size: 13px;">Déconnexion</a>
-        </div>
-    </nav>
-
-    <div class="container" style="margin-top: 40px; margin-bottom: 80px;">
         
-        <div class="welcome-banner">
+        <% const isPremiumUser = user && user.subscription && user.subscription.plan === 'premium'; %>
+        <% const isAdmin = user && user.role === 'admin'; %>
+
+        <div class="sidebar-section-title">Vos Statistiques</div>
+        <div class="sidebar-gamification">
+            <div class="gami-badge gami-streak" title="Série de jours actifs">
+                🔥 <%= user.streak && user.streak.current > 0 ? user.streak.current : 0 %> Jours
+            </div>
+            
+            <div class="gami-badge gami-xp" title="Points d'expérience">
+                ⭐ <%= user.xp || 0 %> XP
+            </div>
+
+            <% if(isPremiumUser || isAdmin) { %>
+                <div class="gami-badge gami-pro" title="Membre Premium">
+                    👑 Membre PRO
+                </div>
+            <% } %>
+        </div>
+
+        <div class="sidebar-spacer"></div>
+
+        <div class="sidebar-actions">
+            <% if(isAdmin) { %>
+                <a href="/admin/dashboard" class="btn-upgrade" style="background: #0f172a; box-shadow: 0 4px 15px rgba(15, 23, 42, 0.3);">🛠️ Panel Admin</a>
+            <% } %>
+
+            <% if(!isPremiumUser && !isAdmin) { %>
+                <a href="/premium" class="btn-upgrade">👑 Go Premium</a>
+            <% } %>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="user-name-display">👨‍💼 <%= user.name %></div>
+            <a href="/api/auth/logout" class="btn-logout">Déconnexion</a>
+        </div>
+    </aside>
+
+    <main class="main-content" id="mainContent">
+        
+        <button class="hamburger-btn" id="toggleSidebarBtn" title="Menu">☰</button>
+        
+        <div class="welcome-banner" style="margin-top: 0;">
             <div class="banner-content">
                 <span class="gold-subtitle">Espace d'apprentissage VIP</span>
                 <h1>Bienvenue, <%= user.name %> !</h1>
@@ -121,7 +194,6 @@
             <button class="scroll-btn left" onclick="scrollGrid('accGrid', 'left')">❮</button>
             <div class="lesson-grid" id="accGrid">
                 <% 
-                // 🚀 FULL 40 Premium Accounting Images
                 const accountingImages = [
                     'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800',
                     'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?q=80&w=800',
@@ -170,12 +242,23 @@
                     <% 
                         const imgUrl = lesson.imageUrl ? lesson.imageUrl : accountingImages[(lesson.id - 1) % accountingImages.length];
                         const formattedNum = lesson.id < 10 ? '0' + lesson.id : lesson.id;
+                        
+                        let isAvailable = lesson.isUnlocked;
+                        let needsUpgrade = false;
+                        if (!isPremiumUser && !isAdmin && lesson.id > 3) {
+                            isAvailable = false;
+                            needsUpgrade = true;
+                        }
                     %>
-                    <div class="card lesson-card <%= lesson.isUnlocked ? 'active-lesson' : 'locked-lesson' %>">
+                    <div class="card lesson-card <%= isAvailable ? 'active-lesson' : 'locked-lesson' %>">
                         <div class="card-img" style="background-image: url('<%= imgUrl %>');">
-                            <span class="badge <%= lesson.isUnlocked ? 'badge-success' : 'badge-locked' %>">
-                                <%= lesson.isUnlocked ? '● Disponible' : '🔒 Verrouillé' %>
-                            </span>
+                            <% if(needsUpgrade) { %>
+                                <span class="badge" style="background: #f59e0b; color: white;">👑 Premium</span>
+                            <% } else { %>
+                                <span class="badge <%= isAvailable ? 'badge-success' : 'badge-locked' %>">
+                                    <%= isAvailable ? '● Disponible' : '🔒 Verrouillé' %>
+                                </span>
+                            <% } %>
                         </div>
                         <div class="card-content">
                             <div class="card-text">
@@ -183,9 +266,16 @@
                                 <h3 style="font-size: 18px; margin-bottom: 8px;"><%= lesson.title %></h3>
                                 <p style="font-size: 14px; color: #64748b;"><%= lesson.description %></p>
                             </div>
-                            <a href="<%= lesson.isUnlocked ? '/lesson/accounting/' + lesson.id : '#' %>" class="btn <%= lesson.isUnlocked ? 'btn-primary' : 'btn-disabled' %>" style="width: 100%; border:none; background-color: #0f766e; color: white;">
-                                <%= lesson.isUnlocked ? 'Commencer' : 'Bloqué' %>
-                            </a>
+                            
+                            <% if(needsUpgrade) { %>
+                                <a href="/premium" class="btn" style="width: 100%; border:none; background-color: #f59e0b; color: white;">
+                                    👑 Débloquer
+                                </a>
+                            <% } else { %>
+                                <a href="<%= isAvailable ? '/lesson/accounting/' + lesson.id : '#' %>" class="btn <%= isAvailable ? 'btn-primary' : 'btn-disabled' %>" style="width: 100%; border:none; background-color: #0f766e; color: white;">
+                                    <%= isAvailable ? 'Commencer' : 'Bloqué' %>
+                                </a>
+                            <% } %>
                         </div>
                     </div>
                 <% }); %>
@@ -193,7 +283,7 @@
             <button class="scroll-btn right" onclick="scrollGrid('accGrid', 'right')">❯</button>
         </div>
 
-        <div class="track-title" style="color: #4f46e5;">
+        <div class="track-title" style="color: #4f46e5; margin-top: 20px;">
             🇬🇧 English Mastery <span><%= englishLessons.length %> Sessions</span>
         </div>
 
@@ -201,7 +291,6 @@
             <button class="scroll-btn left" onclick="scrollGrid('engGrid', 'left')">❮</button>
             <div class="lesson-grid" id="engGrid">
                 <% 
-                // 🚀 FULL 30 Premium English Images
                 const englishImages = [
                     'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=800',
                     'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800',
@@ -240,12 +329,23 @@
                     <% 
                         const imgUrl = lesson.imageUrl ? lesson.imageUrl : englishImages[(lesson.id - 1) % englishImages.length];
                         const formattedNum = lesson.id < 10 ? '0' + lesson.id : lesson.id;
+
+                        let isAvailable = lesson.isUnlocked;
+                        let needsUpgrade = false;
+                        if (!isPremiumUser && !isAdmin && lesson.id > 1) {
+                            isAvailable = false;
+                            needsUpgrade = true;
+                        }
                     %>
-                    <div class="card lesson-card <%= lesson.isUnlocked ? 'active-lesson' : 'locked-lesson' %>">
+                    <div class="card lesson-card <%= isAvailable ? 'active-lesson' : 'locked-lesson' %>">
                         <div class="card-img" style="background-image: url('<%= imgUrl %>');">
-                            <span class="badge <%= lesson.isUnlocked ? 'badge-success' : 'badge-locked' %>">
-                                <%= lesson.isUnlocked ? '● Disponible' : '🔒 Bloqué' %>
-                            </span>
+                            <% if(needsUpgrade) { %>
+                                <span class="badge" style="background: #f59e0b; color: white;">👑 Premium</span>
+                            <% } else { %>
+                                <span class="badge <%= isAvailable ? 'badge-success' : 'badge-locked' %>">
+                                    <%= isAvailable ? '● Disponible' : '🔒 Bloqué' %>
+                                </span>
+                            <% } %>
                         </div>
                         <div class="card-content">
                             <div class="card-text">
@@ -253,9 +353,16 @@
                                 <h3 style="font-size: 18px; margin-bottom: 8px;"><%= lesson.title %></h3>
                                 <p style="font-size: 14px; color: #64748b;"><%= lesson.description %></p>
                             </div>
-                            <a href="<%= lesson.isUnlocked ? '/lesson/english/' + lesson.id : '#' %>" class="btn <%= lesson.isUnlocked ? 'btn-primary' : 'btn-disabled' %>" style="width: 100%; border:none; background-color: #4f46e5; color: white;">
-                                <%= lesson.isUnlocked ? 'Apprendre' : 'Bloqué' %>
-                            </a>
+                            
+                            <% if(needsUpgrade) { %>
+                                <a href="/premium" class="btn" style="width: 100%; border:none; background-color: #f59e0b; color: white;">
+                                    👑 Débloquer
+                                </a>
+                            <% } else { %>
+                                <a href="<%= isAvailable ? '/lesson/english/' + lesson.id : '#' %>" class="btn <%= isAvailable ? 'btn-primary' : 'btn-disabled' %>" style="width: 100%; border:none; background-color: #4f46e5; color: white;">
+                                    <%= isAvailable ? 'Apprendre' : 'Bloqué' %>
+                                </a>
+                            <% } %>
                         </div>
                     </div>
                 <% }); %>
@@ -263,9 +370,20 @@
             <button class="scroll-btn right" onclick="scrollGrid('engGrid', 'right')">❯</button>
         </div>
 
-    </div>
+    </main>
 
     <script>
+        // Hamburger Button Jadoo
+        const toggleBtn = document.getElementById('toggleSidebarBtn');
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('mainContent');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('expanded');
+        });
+
+        // Netflix Style Scroll
         function scrollGrid(gridId, direction) {
             const grid = document.getElementById(gridId);
             const scrollAmount = 350; 

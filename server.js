@@ -18,6 +18,10 @@ const aiRoutes = require('./routes/aiRoutes');
 const { protect } = require('./middleware/authMiddleware');
 const { getDashboard } = require('./controllers/progressController');
 
+// 🚀 Admin Imports
+const { isAdmin } = require('./middleware/adminMiddleware');
+const { getAdminDashboard, upgradeUser, deleteUser } = require('./controllers/adminController');
+
 // Database Connection
 connectDB();
 
@@ -32,7 +36,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser()); 
 app.use(express.static(path.join(__dirname, 'public'))); 
 
-// 🚀 Session Setup (Optimized for Production)
+// 🚀 Session Setup
 app.use(session({
     secret: process.env.JWT_SECRET || 'amina_secret_key',
     resave: true, 
@@ -106,6 +110,10 @@ app.use('/api/auth', authRoutes);
 app.use('/api/progress', progressRoutes); 
 app.use('/api/ai', aiRoutes); 
 
+// 🚀 Admin API Routes
+app.post('/api/admin/upgrade', protect, isAdmin, upgradeUser);
+app.post('/api/admin/delete', protect, isAdmin, deleteUser);
+
 // --- Page Routes ---
 app.get('/', (req, res) => res.render('index'));
 app.get('/register', (req, res) => res.render('pages/register'));
@@ -116,7 +124,15 @@ app.get('/complete-profile', protect, (req, res) => {
 
 app.get('/dashboard', protect, getDashboard);
 
-// 🚀 BACKWARD COMPATIBILITY: Purane accounting links ko naye route pe bhej do
+// 💰 Premium Page
+app.get('/premium', protect, (req, res) => {
+    res.render('pages/premium', { user: req.user });
+});
+
+// 🚀 Admin Dashboard Route
+app.get('/admin/dashboard', protect, isAdmin, getAdminDashboard);
+
+// 🚀 BACKWARD COMPATIBILITY
 app.get('/lesson/:id', protect, (req, res) => {
     res.redirect(`/lesson/accounting/${req.params.id}`);
 });
@@ -125,42 +141,50 @@ app.get('/lesson/:id', protect, (req, res) => {
 app.get('/lesson/:course/:id', protect, (req, res) => {
     const { course, id } = req.params;
     
-    // Check if course is English or Accounting to set folder path
-    let folder = 'data'; 
-    if (course === 'english') folder = 'data/english';
-    else if (course === 'accounting' || course === 'accountant') folder = 'data/accounting';
+    // 📂 1. Folder aur File ka naam set karo (Tree structure ke mutabiq)
+    let folder = 'data';
+    let fileName = `lesson${id}.json`; // Default
 
-    const fileName = course === 'english' ? `phase${id}.json` : `lesson${id}.json`;
-    
-    let filePath = path.join(__dirname, folder, fileName);
-
-    // Agar data/accounting folder me nahi mila, toh direct data/ me check karo (Tree structure fix)
-    if (!fs.existsSync(filePath) && course !== 'english') {
-        filePath = path.join(__dirname, 'data', fileName); 
+    if (course === 'english') {
+        folder = 'data/english';
+        fileName = `phase${id}.json`; // Tree mein phase1.json hai
+    } else if (course === 'accounting' || course === 'accountant') {
+        folder = 'data'; // Tree mein accounting files seedha data/ mein hain
+        fileName = `lesson${id}.json`;
     }
 
+    let filePath = path.join(__dirname, folder, fileName);
+
+    // 🔍 2. File Check karo
     if (fs.existsSync(filePath)) {
         try {
             const rawData = fs.readFileSync(filePath);
             const parsedData = JSON.parse(rawData);
             
-            // SMART ROUTING: Decide which EJS file to render based on the course
+            // 🚀 3. THE FIX: Nested vs Simple JSON handler
+            let lessonContent = parsedData;
+            
+            // Agar Phase 1 jaisa format hai (object jisme lessons list ho)
+            if (course === 'english' && parsedData.lessons) {
+                lessonContent = parsedData.lessons; 
+            }
+            
             const viewFile = course === 'english' ? 'pages/lesson-english' : 'pages/lesson';
             
             res.render(viewFile, { 
                 user: req.user, 
                 lessonId: id,
                 courseType: course,
-                // 🚀 THE FIX: Dono naam bhej diye, English 'lesson' use karega, Accounting 'lessonData'
-                lesson: parsedData,
-                lessonData: parsedData 
+                // Dono keys bhej rahe hain taaki kisi bhi EJS mein crash na ho
+                lesson: lessonContent, 
+                lessonData: lessonContent 
             });
         } catch (err) {
-            console.error("File Read Error:", err);
+            console.error("❌ JSON Parse Error:", err);
             res.redirect('/dashboard');
         }
     } else {
-        console.error("❌ File not found at:", filePath);
+        console.error("❌ File NOT Found at:", filePath);
         res.redirect('/dashboard');
     }
 });

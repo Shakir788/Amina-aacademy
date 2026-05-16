@@ -3,7 +3,7 @@ const path = require('path');
 const User = require('../models/User'); 
 
 /**
- * @desc    Mark a lesson as complete & unlock the next one
+ * @desc    Mark a lesson as complete, unlock the next one, & award XP/Streak
  * @route   POST /api/progress/complete
  * @access  Private
  */
@@ -20,9 +20,17 @@ exports.markLessonComplete = async (req, res) => {
             user.progress[courseType] = { completedLessons: [], lastUnlockedLesson: 1 };
         }
 
-        // 1. Mark current lesson as complete
+        let xpGained = 0;
+        let isNewCompletion = false;
+
+        // 1. Mark current lesson as complete & Add XP
         if (!user.progress[courseType].completedLessons.includes(lessonNumber)) {
             user.progress[courseType].completedLessons.push(lessonNumber);
+            
+            // 🎮 GAMIFICATION: Naya lesson complete karne par +20 XP do!
+            xpGained = 20;
+            user.xp = (user.xp || 0) + xpGained;
+            isNewCompletion = true;
         }
 
         // 2. Unlock logic (Accounting: 40 lessons, English: 30 sessions)
@@ -33,16 +41,44 @@ exports.markLessonComplete = async (req, res) => {
             user.progress[courseType].lastUnlockedLesson = nextLesson;
         }
 
-        // Save to Database
+        // 🎮 GAMIFICATION: STREAK LOGIC (Duolingo Style)
+        const now = new Date();
+        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+        
+        if (!user.streak.lastActive) {
+            // First time ever
+            user.streak.current = 1;
+        } else {
+            const lastActiveDate = new Date(user.streak.lastActive);
+            const lastActiveDay = new Date(lastActiveDate.getFullYear(), lastActiveDate.getMonth(), lastActiveDate.getDate()).getTime();
+            const oneDay = 24 * 60 * 60 * 1000;
+
+            if (today - lastActiveDay === oneDay) {
+                // Kal padha tha, aaj bhi padha -> Streak badhao!
+                user.streak.current += 1;
+            } else if (today - lastActiveDay > oneDay) {
+                // Gap kar diya -> Streak toot gayi, wapas 1 se shuru!
+                user.streak.current = 1;
+            }
+            // Agar same day pe multiple lessons kiye hain, toh streak utni hi rahegi
+        }
+        // Update last active time to right now
+        user.streak.lastActive = now;
+
+
+        // Save all changes to Database
         user.markModified('progress'); 
         await user.save(); 
 
-        console.log(`✅ Progress Updated: [${courseType.toUpperCase()}] Lesson ${lessonNumber} complete. Next: ${user.progress[courseType].lastUnlockedLesson}`);
+        console.log(`✅ Progress: [${courseType.toUpperCase()}] L${lessonNumber} complete. Next: ${user.progress[courseType].lastUnlockedLesson}. XP: ${user.xp}, Streak: ${user.streak.current}`);
 
         res.status(200).json({ 
             success: true, 
-            message: 'Progression sauvegardée !',
-            nextLesson: user.progress[courseType].lastUnlockedLesson 
+            message: xpGained > 0 ? `Progression sauvegardée ! +${xpGained} XP gagné 🌟` : 'Progression sauvegardée !',
+            nextLesson: user.progress[courseType].lastUnlockedLesson,
+            xpGained: xpGained,
+            totalXp: user.xp,
+            currentStreak: user.streak.current
         });
     } catch (error) {
         console.error("Mark Complete Error:", error);
@@ -69,17 +105,30 @@ exports.getDashboard = async (req, res) => {
         if (!user.progress.accounting) user.progress.accounting = { completedLessons: [], lastUnlockedLesson: 1 };
         if (!user.progress.english) user.progress.english = { completedLessons: [], lastUnlockedLesson: 1 };
 
+        // --- 🎮 Auto-Reset Dead Streak on Dashboard Load ---
+        const now = new Date();
+        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+        if (user.streak && user.streak.lastActive) {
+            const lastActiveDate = new Date(user.streak.lastActive);
+            const lastActiveDay = new Date(lastActiveDate.getFullYear(), lastActiveDate.getMonth(), lastActiveDate.getDate()).getTime();
+            const oneDay = 24 * 60 * 60 * 1000;
+            
+            // Agar user dashboard pe aaya hai par 1 din se zyada ho gaya hai
+            if (today - lastActiveDay > oneDay && user.streak.current > 0) {
+                user.streak.current = 0; // Streak reset ho jayegi UI pe dikhane ke liye
+                await user.save();
+            }
+        }
+
         // --- 💼 Part 1: Load Accounting Lessons (from /data) ---
         if (fs.existsSync(accountingPath)) {
             const files = fs.readdirSync(accountingPath);
             files.forEach(file => {
-                // Accounting files: "lesson1.json", "lesson2.json", etc.
                 if (file.startsWith('lesson') && file.endsWith('.json')) {
-                    try { // 🚀 BULLETPROOF: Try-Catch prevents crashes from empty JSONs
+                    try { 
                         const rawData = fs.readFileSync(path.join(accountingPath, file));
                         const data = JSON.parse(rawData);
                         
-                        // Extract ID from filename: "lesson5.json" -> 5
                         const lessonNum = parseInt(file.replace('lesson', '').replace('.json', ''));
                         
                         accountingLessons.push({
@@ -101,13 +150,11 @@ exports.getDashboard = async (req, res) => {
         if (fs.existsSync(englishPath)) {
             const files = fs.readdirSync(englishPath);
             files.forEach(file => {
-                // 🚀 NAYA: English files ab "phase1.json", "phase2.json" style me hain
                 if (file.startsWith('phase') && file.endsWith('.json')) {
-                    try { // 🚀 BULLETPROOF: Try-Catch protects English section too
+                    try { 
                         const rawData = fs.readFileSync(path.join(englishPath, file));
                         const data = JSON.parse(rawData);
                         
-                        // Extract ID from filename: "phase1.json" -> 1
                         const lessonNum = parseInt(file.replace('phase', '').replace('.json', ''));
                         
                         englishLessons.push({
@@ -131,7 +178,7 @@ exports.getDashboard = async (req, res) => {
 
         // Final Rendering
         res.render('pages/dashboard', { 
-            user: user,
+            user: user, // 🚀 Ye ab user ka 'xp' aur 'streak' bhi UI me bhejega!
             accountingLessons: accountingLessons,
             englishLessons: englishLessons
         });

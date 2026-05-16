@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
+    // 1. Basic Identity
     name: { 
         type: String, 
         required: true 
@@ -19,7 +20,7 @@ const userSchema = new mongoose.Schema({
         select: false 
     },
     
-    // 🚀 Google OAuth & Profile Flow
+    // 2. Google OAuth & Profile Flow 🚀
     googleId: {
         type: String,
         unique: true,
@@ -30,8 +31,17 @@ const userSchema = new mongoose.Schema({
         default: false 
     },
 
-    // 🏗️ NAYA: Multi-Course Progress System
-    // Ab hum har course ki progress alag-alag track karenge
+    // 3. Gamification Engine (Duolingo Style 🎮) [NAYA]
+    xp: {
+        type: Number,
+        default: 0
+    },
+    streak: {
+        current: { type: Number, default: 0 },
+        lastActive: { type: Date, default: null }
+    },
+
+    // 4. Multi-Course Progress System 🏗️
     progress: {
         accounting: {
             completedLessons: {
@@ -54,11 +64,29 @@ const userSchema = new mongoose.Schema({
             }
         }
     },
-
     
+    // 5. User Preferences
     preferences: {
-        language: { type: String, default: 'fr' }, 
+        language: { type: String, default: 'fr' }, // fr, en, ar (Darija)
         goal: { type: String } 
+    },
+
+    // 6. SaaS Monetization & Roles 💰 [NAYA]
+    subscription: {
+        plan: {
+            type: String,
+            enum: ['free', 'premium'],
+            default: 'free'
+        },
+        expiresAt: {
+            type: Date,
+            default: null
+        }
+    },
+    role: {
+        type: String,
+        enum: ['student', 'admin'],
+        default: 'student'
     }
 
 }, { timestamps: true });

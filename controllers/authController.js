@@ -19,11 +19,15 @@ exports.register = async (req, res) => {
             return res.render('pages/register', { error: 'Cet utilisateur existe déjà. Veuillez vous connecter.' });
         }
 
+        // 🔐 SECURITY FIX: Password ko encrypt (Hash) karo DB me save karne se pehle!
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+
         // Naya user banao
         const user = await User.create({
             name,
             email,
-            password,
+            password: hashedPassword, //
             isProfileComplete: true
         });
 
@@ -38,10 +42,10 @@ exports.register = async (req, res) => {
             res.redirect('/dashboard');
         }
     } catch (error) {
+        console.error("Register Error:", error);
         res.render('pages/register', { error: 'Erreur lors de la création du compte.' });
     }
 };
-
 // @desc    Login user (Email/Password)
 exports.login = async (req, res) => {
     try {

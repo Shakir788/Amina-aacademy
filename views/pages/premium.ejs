@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passer en Premium - AMINA Académie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0f172a;
+            --gold: #d97706;
+            --gold-light: #fef3c7;
+            --bg-color: #f8fafc;
+        }
+
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); margin: 0; color: #334155; }
+        
+        nav { background: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; }
+        .logo { font-size: 22px; font-weight: 800; text-decoration: none; color: var(--primary); }
+        .logo span { color: var(--gold); }
+        .back-btn { text-decoration: none; color: #64748b; font-weight: 600; transition: 0.3s; }
+        .back-btn:hover { color: var(--primary); }
+
+        .header { text-align: center; padding: 60px 20px 40px; }
+        .header h1 { font-family: 'Playfair Display', serif; font-size: 46px; color: var(--primary); margin: 0 0 15px; }
+        .header p { font-size: 18px; color: #64748b; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+
+        .pricing-grid { display: flex; justify-content: center; gap: 30px; padding: 0 20px 80px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        
+        .card { background: white; border-radius: 24px; padding: 40px; width: 100%; max-width: 320px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; position: relative; transition: 0.3s; display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        
+        .card.popular { border: 2px solid var(--gold); box-shadow: 0 15px 40px rgba(217, 119, 6, 0.15); transform: scale(1.05); z-index: 10; }
+        .card.popular:hover { transform: scale(1.05) translateY(-10px); }
+        .badge-popular { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 8px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; letter-spacing: 1px; }
+
+        .plan-name { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 15px; }
+        .plan-price { font-size: 48px; font-weight: 800; color: var(--primary); margin-bottom: 5px; }
+        .plan-price span { font-size: 18px; color: #64748b; font-weight: 500; }
+        .plan-desc { font-size: 15px; color: #64748b; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0; }
+
+        .features { list-style: none; padding: 0; margin: 0 0 40px; flex-grow: 1; }
+        .features li { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 16px; font-weight: 500; }
+        .icon-check { color: #10b981; font-size: 20px; font-weight: bold; }
+
+        .btn-buy { background: var(--bg-color); color: var(--primary); border: 2px solid #cbd5e1; padding: 18px; border-radius: 12px; font-size: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; }
+        .card.popular .btn-buy { background: var(--primary); color: white; border: none; box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2); }
+        .btn-buy:hover { opacity: 0.9; transform: translateY(-2px); }
+
+        /* 🚀 PAYMENT MODAL (CIH, WAFACASH, CARD) */
+        .modal-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(8px); display: none; justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        
+        .payment-modal { background: white; border-radius: 24px; width: 100%; max-width: 500px; padding: 40px; transform: scale(0.9); transition: transform 0.3s ease; box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
+        .modal-overlay.active .payment-modal { transform: scale(1); }
+        
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        .modal-header h2 { margin: 0; font-size: 24px; color: var(--primary); font-family: 'Playfair Display', serif; }
+        .close-modal { background: none; border: none; font-size: 24px; color: #64748b; cursor: pointer; transition: 0.2s; }
+        .close-modal:hover { color: #ef4444; }
+
+        .pay-method-btn { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 20px; border: 2px solid #e2e8f0; border-radius: 16px; background: white; margin-bottom: 15px; cursor: pointer; transition: 0.3s; font-size: 18px; font-weight: 600; font-family: 'Inter', sans-serif; color: var(--primary); }
+        .pay-method-btn:hover { border-color: var(--primary); background: #f8fafc; }
+        .method-icon { font-size: 24px; }
+
+        /* Instruction Box */
+        .cih-instructions { background: #f0fdf4; border: 2px solid #bbf7d0; border-radius: 16px; padding: 25px; margin-top: 20px; display: none; text-align: left; }
+        .rib-box { background: white; border: 1px dashed #cbd5e1; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 15px; margin: 15px 0; text-align: center; font-weight: bold; letter-spacing: 1px; color: #0f172a; }
+        .btn-whatsapp { display: flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: white; text-decoration: none; padding: 15px; border-radius: 12px; font-weight: 700; font-size: 16px; transition: 0.3s; }
+        .btn-whatsapp:hover { background: #1ebc5a; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
+
+        .order-summary { background: var(--bg-color); padding: 15px; border-radius: 12px; margin-bottom: 25px; display: flex; justify-content: space-between; font-weight: 700; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">AMINA <span>Académie</span></a>
+        <a href="/dashboard" class="back-btn">← Retour au Hub</a>
+    </nav>
+
+    <div class="header">
+        <h1>Investissez dans votre Avenir</h1>
+        <p>Débloquez tous les cours, la pratique vocale illimitée avec l'IA, et obtenez votre certificat. Zéro engagement, annulez à tout moment.</p>
+    </div>
+
+    <div class="pricing-grid">
+        
+        <div class="card">
+            <div class="plan-name">Starter</div>
+            <div class="plan-price">99 <span>DH / mois</span></div>
+            <div class="plan-desc">Parfait pour tester la méthode.</div>
+            
+            <ul class="features">
+                <li><span class="icon-check">✓</span> Accès aux 40 Leçons Compta</li>
+                <li><span class="icon-check">✓</span> Accès aux 30 Sessions Anglais</li>
+                <li><span class="icon-check">✓</span> Coach IA par Texte</li>
+                <li style="color: #94a3b8;"><span style="color:#cbd5e1;">✕</span> Appels Vocaux Illimités</li>
+            </ul>
+            <button type="button" class="btn-buy" onclick="openPaymentModal('Starter', 99)">Commencer à 99 DH</button>
+        </div>
+
+        <div class="card popular">
+            <div class="badge-popular">LE PLUS CHOISI</div>
+            <div class="plan-name">Bootcamp CEO</div>
+            <div class="plan-price">199 <span>DH / 3 mois</span></div>
+            <div class="plan-desc">Le programme intensif pour tout maîtriser.</div>
+            
+            <ul class="features">
+                <li><span class="icon-check">✓</span> Tout le contenu Starter</li>
+                <li><span class="icon-check">✓</span> <b>Appels Vocaux Illimités avec l'IA</b></li>
+                <li><span class="icon-check">✓</span> Certificat de Réussite</li>
+                <li><span class="icon-check">✓</span> Accès au groupe VIP WhatsApp</li>
+            </ul>
+            <button type="button" class="btn-buy" onclick="openPaymentModal('Bootcamp CEO', 199)">Rejoindre le Bootcamp</button>
+        </div>
+
+        <div class="card">
+            <div class="plan-name">Lifetime</div>
+            <div class="plan-price">499 <span>DH / à vie</span></div>
+            <div class="plan-desc">Payez une fois, accédez pour toujours.</div>
+            
+            <ul class="features">
+                <li><span class="icon-check">✓</span> Accès à vie sans abonnement</li>
+                <li><span class="icon-check">✓</span> Appels Vocaux Illimités</li>
+                <li><span class="icon-check">✓</span> Toutes les futures mises à jour gratuites</li>
+                <li><span class="icon-check">✓</span> Support prioritaire 24/7</li>
+            </ul>
+            <button type="button" class="btn-buy" onclick="openPaymentModal('Lifetime', 499)">Accès à Vie</button>
+        </div>
+
+    </div>
+
+    <div class="modal-overlay" id="paymentModal">
+        <div class="payment-modal">
+            <div class="modal-header">
+                <h2>Paiement Sécurisé</h2>
+                <button type="button" class="close-modal" onclick="closePaymentModal()">✕</button>
+            </div>
+
+            <div class="order-summary">
+                <span id="summaryPlan">Bootcamp CEO</span>
+                <span id="summaryPrice" style="color: var(--gold);">199 DH</span>
+            </div>
+
+            <div id="paymentOptionsList">
+                <button type="button" class="pay-method-btn" onclick="showCihDetails()">
+                    <span style="display:flex; align-items:center; gap:15px;"><span class="method-icon">🏦</span> Virement CIH Bank</span>
+                    <span style="font-size:14px; color:#10b981; background:#d1fae5; padding:4px 10px; border-radius:20px;">0% Frais</span>
+                </button>
+                
+                <button type="button" class="pay-method-btn" onclick="initiateCardPayment()">
+                    <span style="display:flex; align-items:center; gap:15px;"><span class="method-icon">💳</span> Carte Bancaire (Maroc)</span>
+                </button>
+
+                <button type="button" class="pay-method-btn" onclick="showWafacashDetails()">
+                    <span style="display:flex; align-items:center; gap:15px;"><span class="method-icon">💸</span> Wafacash / Cash Plus</span>
+                </button>
+            </div>
+
+            <div class="cih-instructions" id="cihInstructions">
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+        let currentSelectedPlan = '';
+        let currentSelectedPrice = 0;
+        
+        // 🚀 LIVE WHATSAPP NUMBER
+        const WHATSAPP_NUMBER = "212723908603"; 
+
+        function openPaymentModal(planName, price) {
+            currentSelectedPlan = planName;
+            currentSelectedPrice = price;
+            
+            document.getElementById('summaryPlan').innerText = planName;
+            document.getElementById('summaryPrice').innerText = price + ' DH';
+            
+            // Reset modal view
+            document.getElementById('paymentOptionsList').style.display = 'block';
+            document.getElementById('cihInstructions').style.display = 'none';
+
+            const modal = document.getElementById('paymentModal');
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+        }
+
+        function closePaymentModal() {
+            const modal = document.getElementById('paymentModal');
+            modal.classList.remove('active');
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        function showCihDetails() {
+            document.getElementById('paymentOptionsList').style.display = 'none';
+            const box = document.getElementById('cihInstructions');
+            box.style.display = 'block';
+            
+            const message = `Bonjour ! Je souhaite activer le plan *${currentSelectedPlan}* à *${currentSelectedPrice} DH*. Voici le reçu de mon virement CIH :`;
+            const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+            
+            // 🚀 LIVE BANK DETAILS
+            box.innerHTML = `
+                <h3 style="margin-top:0; color:#065f46;">Instructions Virement CIH</h3>
+                <p style="font-size:15px; color:#065f46;">Envoyez <b style="font-size:18px;">${currentSelectedPrice} DH</b> vers le compte CIH suivant :</p>
+                
+                <div class="rib-box">
+                    Nom : AMINA KARMI<br><br>
+                    RIB CIH :<br>230 780 2906165211003300 80
+                </div>
+                
+                <p style="font-size:14px; color:#064e3b; margin-bottom: 20px;">Une fois le virement effectué, cliquez ci-dessous pour envoyer le reçu sur WhatsApp. L'activation est immédiate !</p>
+                
+                <a href="${waLink}" class="btn-whatsapp" target="_blank">📱 Envoyer le reçu sur WhatsApp</a>
+                
+                <div style="text-align:center; margin-top:15px;">
+                    <button type="button" onclick="backToMethods()" style="background:none; border:none; color:#64748b; text-decoration:underline; cursor:pointer;">← Autre moyen de paiement</button>
+                </div>
+            `;
+        }
+
+        function showWafacashDetails() {
+            document.getElementById('paymentOptionsList').style.display = 'none';
+            const box = document.getElementById('cihInstructions');
+            box.style.display = 'block';
+            
+            const message = `Bonjour ! Voici mon reçu Wafacash/Cash Plus pour l'activation du plan *${currentSelectedPlan}* :`;
+            const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+            box.innerHTML = `
+                <h3 style="margin-top:0; color:#065f46;">Wafacash / Cash Plus</h3>
+                <p style="font-size:15px; color:#065f46;">Envoyez <b style="font-size:18px;">${currentSelectedPrice} DH</b> à l'agence la plus proche avec ces informations :</p>
+                
+                <div class="rib-box">
+                    Nom : AMINA KARMI<br>
+                    <span style="font-size: 12px; color: #64748b;">(Veuillez nous contacter sur WhatsApp si vous avez besoin du numéro de CIN)</span>
+                </div>
+                
+                <p style="font-size:14px; color:#064e3b; margin-bottom: 20px;">Envoyez la photo du reçu d'envoi sur WhatsApp pour activer votre compte.</p>
+                
+                <a href="${waLink}" class="btn-whatsapp" target="_blank">📱 Envoyer le reçu sur WhatsApp</a>
+                
+                <div style="text-align:center; margin-top:15px;">
+                    <button type="button" onclick="backToMethods()" style="background:none; border:none; color:#64748b; text-decoration:underline; cursor:pointer;">← Autre moyen de paiement</button>
+                </div>
+            `;
+        }
+
+        function backToMethods() {
+            document.getElementById('cihInstructions').style.display = 'none';
+            document.getElementById('paymentOptionsList').style.display = 'block';
+        }
+
+        function initiateCardPayment() {
+            // Placeholder for YouCan Pay / CMI integration
+            alert("La passerelle de paiement par Carte Bancaire est en cours d'installation. Veuillez utiliser CIH Bank ou Wafacash pour le moment.");
+        }
+    </script>
+</body>
+</html>
