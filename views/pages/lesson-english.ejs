@@ -30,7 +30,9 @@
             align-items: center; border-bottom: 2px solid #E2E8F0; position: sticky; top: 0; z-index: 100;
         }
         .nav-left { display: flex; align-items: center; gap: 15px; }
-        .back-btn { color: var(--text-muted); text-decoration: none; font-size: 24px; font-weight: bold; }
+        .back-btn { color: var(--text-muted); text-decoration: none; font-size: 24px; font-weight: bold; transition: 0.2s; }
+        .back-btn:hover { color: var(--error); transform: scale(1.1); }
+
         .progress-container { flex: 1; max-width: 300px; background: #E2E8F0; height: 12px; border-radius: 20px; overflow: hidden; margin: 0 20px; }
         .progress-bar { height: 100%; background: var(--success); width: 0%; transition: width 0.5s ease; }
         
@@ -56,21 +58,16 @@
             font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
         }
 
-        /* UPGRADE: Emotion Display */
         .emotion-display { font-size: 18px; margin-bottom: 10px; background: #F1F5F9; display: inline-block; padding: 5px 15px; border-radius: 12px; border: 1px solid #E2E8F0; display: none; }
-
         .exercise-img { width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-bottom: 20px; display: none; }
         .exercise-img.active { display: block; }
-
         .pronunciation { font-size: 15px; color: var(--primary); background: #EEF2FF; display: inline-block; padding: 4px 12px; border-radius: 8px; margin-bottom: 10px; font-weight: 600; letter-spacing: 1px;}
         .target-sentence { font-family: 'Plus Jakarta Sans'; font-size: 32px; font-weight: 800; color: var(--text-main); margin: 0 0 20px; line-height: 1.3; }
         
-        /* UPGRADE: Listening Trap Style */
         .trap-box { background: #FFF1F2; border: 1px dashed #FB7185; padding: 12px; border-radius: 12px; margin-bottom: 20px; color: #9F1239; font-size: 14px; text-align: left; display: none; }
 
         .translation-box { background: #F8FAFC; border: 1px solid #E2E8F0; padding: 15px; border-radius: 12px; margin-bottom: 25px; text-align: left; }
         .trans-row { display: flex; justify-content: space-between; margin-bottom: 8px; align-items: center; font-size: 15px; }
-        .trans-row:last-child { margin-bottom: 0; }
         .lang-label { font-weight: 700; color: var(--text-muted); font-size: 12px; text-transform: uppercase; width: 60px; }
         .trans-fr { color: #334155; flex: 1; }
         .trans-darija { color: #0F766E; font-weight: 600; flex: 1; }
@@ -79,7 +76,6 @@
         .grammar-hint { background: #FFFBEB; border-left: 4px solid var(--warning); padding: 15px; text-align: left; font-size: 14px; color: #92400E; border-radius: 0 8px 8px 0; margin-bottom: 25px; display: none; }
         .grammar-hint.active { display: block; }
 
-        /* UPGRADE: Speed Control Row */
         .tools-area { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; font-size: 12px; color: var(--text-muted); }
         .speed-btn { border: 1px solid #E2E8F0; background: white; padding: 4px 8px; border-radius: 6px; cursor: pointer; }
         .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
@@ -87,68 +83,50 @@
         .action-area { display: flex; flex-direction: column; gap: 15px; width: 100%; }
         .btn-action { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 18px; border-radius: 16px; font-size: 18px; font-weight: 700; border: none; cursor: pointer; transition: 0.3s; }
         .btn-listen { background: #F1F5F9; color: var(--text-main); border: 2px solid #CBD5E1; }
-        .btn-listen:hover { background: #E2E8F0; }
         .btn-speak { background: var(--primary); color: white; box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3); }
-        .btn-speak:hover { background: var(--primary-hover); transform: translateY(-2px); }
-        .btn-speak.listening { background: var(--error); animation: pulse 1.5s infinite; box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4); }
+        .btn-speak.listening { background: var(--error); animation: pulse 1.5s infinite; }
         .btn-next { background: var(--success); color: white; display: none; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3); }
-        .btn-next:hover { filter: brightness(1.1); transform: translateY(-2px); }
 
         .feedback-msg { margin-top: 15px; font-size: 15px; text-align: left; padding: 15px; border-radius: 12px; display: none; }
         .feedback-success { background: #D1FAE5; color: #065F46; display: block; text-align: center; font-weight: 700;}
         .feedback-error { background: #FEE2E2; color: #991B1B; display: block; }
-        .feedback-error span { display: block; margin-top: 5px; }
 
         .repeat-tracker { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
         .dot { width: 12px; height: 12px; border-radius: 50%; background: #E2E8F0; }
         .dot.filled { background: var(--success); }
 
         .final-screen { display: none; text-align: center; }
-        .final-icon { font-size: 80px; margin-bottom: 20px; }
-
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="nav-left">
-            <a href="/dashboard" class="back-btn">✕</a>
-        </div>
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
+        <div class="nav-left"><a href="/dashboard" class="back-btn">✕</a></div>
+        <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
         <div class="stats-badge">
-            <div class="xp-badge" title="Points d'expérience">⭐ <span id="xpCounter"><%= user && user.xp ? user.xp : 0 %></span> XP</div>
-            <div class="streak-badge" title="Série de jours">🔥 <span><%= user && user.streak && user.streak.current ? user.streak.current : 0 %></span></div>
+            <div class="xp-badge">⭐ <span id="xpCounter"><%= user.xp || 0 %></span> XP</div>
+            <div class="streak-badge">🔥 <span><%= user.streak.current || 0 %></span></div>
         </div>
     </nav>
 
     <div class="game-container">
-        
         <div class="flashcard" id="learningCard">
             <div class="status-badge" id="stepIndicator">1 / 5</div>
-            
-            <img src="" alt="Exercise context" class="exercise-img" id="exerciseImg">
-
-            <div class="emotion-display" id="emotionDisplay">😊 friendly</div>
-
+            <img src="" class="exercise-img" id="exerciseImg">
+            <div class="emotion-display" id="emotionDisplay">friendly</div>
             <div class="pronunciation" id="pronunciation">...</div>
             <div class="target-sentence" id="targetSentence">Loading...</div>
             
-            <div class="trap-box" id="trapBox">
-                ⚠️ <b>Attention Trap:</b> <span id="trapText"></span>
-            </div>
+            <div class="trap-box" id="trapBox">⚠️ <b>Attention Trap:</b> <span id="trapText"></span></div>
 
             <div class="translation-box" id="transBoxMain">
-                <div class="trans-row" id="rowFr"><span class="lang-label">Fr</span> <span class="trans-fr" id="transFr">...</span></div>
-                <div class="trans-row" id="rowDar"><span class="lang-label">Dar</span> <span class="trans-darija" id="transDarija">...</span></div>
-                <div class="trans-row" id="rowAr"><span class="lang-label">Ar</span> <span class="trans-ar" dir="rtl" id="transAr">...</span></div>
+                <div class="trans-row"><span class="lang-label">Fr</span> <span class="trans-fr" id="transFr">...</span></div>
+                <div class="trans-row"><span class="lang-label">Dar</span> <span class="trans-darija" id="transDarija">...</span></div>
+                <div class="trans-row"><span class="lang-label">Ar</span> <span class="trans-ar" dir="rtl" id="transAr">...</span></div>
             </div>
 
-            <div class="grammar-hint" id="grammarHint">
-                💡 <b>Indice:</b> <span id="hintText">...</span>
-            </div>
+            <div class="grammar-hint" id="grammarHint">💡 <b>Indice:</b> <span id="hintText">...</span></div>
 
             <div class="tools-area">
                 <span>Vitesse:</span>
@@ -157,37 +135,27 @@
                 <button class="speed-btn" onclick="updateSpeed(1.1)">Rapid</button>
             </div>
 
-            <div class="repeat-tracker" id="repeatTracker">
-                <div class="dot" id="dot1"></div>
-                <div class="dot" id="dot2"></div>
-            </div>
+            <div class="repeat-tracker"><div class="dot" id="dot1"></div><div class="dot" id="dot2"></div></div>
 
             <div class="action-area">
-                <button type="button" class="btn-action btn-listen" id="btnListen" onclick="playAudio()">🔊 Écouter</button>
-                <button type="button" class="btn-action btn-speak" id="btnSpeak" onclick="startSpeaking()">🎤 Parler</button>
-                <button type="button" class="btn-action btn-next" id="btnNext" onclick="nextCard()">Continue ➔</button>
+                <button class="btn-action btn-listen" id="btnListen" onclick="playAudio()">🔊 Écouter</button>
+                <button class="btn-action btn-speak" id="btnSpeak" onclick="startSpeaking()">🎤 Parler</button>
+                <button class="btn-action btn-next" id="btnNext" onclick="nextCard()">Continue ➔</button>
             </div>
-
             <div class="feedback-msg" id="feedbackMsg"></div>
         </div>
 
         <div class="final-screen" id="finalScreen">
-            <div class="final-icon">🏆</div>
-            <h1 style="font-family: 'Plus Jakarta Sans'; font-size: 32px; margin-bottom: 10px;">Session Terminée!</h1>
-            <p style="color: #64748B; font-size: 18px; margin-bottom: 30px;">+ <span id="finalXp">0</span> XP gagnés aujourd'hui.</p>
-            <button type="button" class="btn-action btn-speak" style="max-width: 300px; margin: 0 auto;" onclick="finishSession()">
-                Retour au Hub
-            </button>
+            <div style="font-size: 80px; margin-bottom: 20px;">🏆</div>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 10px;">Phase Terminée!</h1>
+            <p style="color: #64748B; font-size: 18px; margin-bottom: 30px;">+ <span id="finalXp">0</span> XP gagnés.</p>
+            <button class="btn-action btn-speak" style="max-width: 300px; margin: 0 auto;" onclick="finishSession()">Retour au Hub</button>
         </div>
-
     </div>
 
     <%- include('../partials/ai-coach') %>
 
-    <script id="lesson-data" type="application/json">
-        <%- JSON.stringify(lesson || {}) %>
-    </script>
-    
+    <script id="lesson-data" type="application/json"><%- JSON.stringify(lesson || {}) %></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
@@ -195,241 +163,193 @@
         const rawData = JSON.parse(document.getElementById('lesson-data').textContent);
         const CURRENT_LESSON_ID = parseInt("<%= lessonId %>");
 
-        let currentLessonData = null;
+        let exercises = [];
+        let phaseSystemInfo = null;
 
-        // 🚀 SMART NESTED DATA PICKER (Restored)
-        if (Array.isArray(rawData)) {
-            currentLessonData = rawData.find(l => l.id === CURRENT_LESSON_ID) || rawData[0];
-        } else if (rawData.lessons && Array.isArray(rawData.lessons)) {
-            currentLessonData = rawData.lessons.find(l => l.id === CURRENT_LESSON_ID);
+        // --- 🚀 AGGREGATOR ENGINE (Collects 30 lessons into one list) ---
+        if (rawData.lessons) {
+            phaseSystemInfo = rawData; 
+            rawData.lessons.forEach(l => { if(l.exercises) exercises = exercises.concat(l.exercises); });
+        } else if (Array.isArray(rawData)) {
+            rawData.forEach(l => { if(l.exercises) exercises = exercises.concat(l.exercises); });
         } else {
-            currentLessonData = rawData; 
+            exercises = rawData.exercises || [];
         }
 
-        if (!currentLessonData || !currentLessonData.exercises) {
-            document.getElementById('targetSentence').innerText = "Erreur: Données de la leçon introuvables.";
-            document.getElementById('btnSpeak').style.display = 'none';
-            document.getElementById('btnListen').style.display = 'none';
-        } else {
-            let exercises = [...currentLessonData.exercises]; // Clone for manipulation
-            let weakExercises = []; // Smart memory system
-            let currentIndex = 0;
-            const totalCardsOriginal = exercises.length;
-            
-            let sessionXp = 0; 
-            let currentTotalXp = parseInt("<%= user && user.xp ? user.xp : 0 %>"); 
-            let playbackRate = 0.85; // Default speed
-            
-            let requiredSuccess = 2; 
-            let currentSuccess = 0;
+        // --- 🧠 MEMORY ENGINE (Load last saved position) ---
+        const storageKey = `last_pos_${window.CURRENT_COURSE_TYPE}_${CURRENT_LESSON_ID}`;
+        let currentIndex = parseInt(localStorage.getItem(storageKey)) || 0;
+        
+        // Safety: If someone changed the JSON and the saved index is now too high
+        if (currentIndex >= exercises.length) currentIndex = 0;
 
-            const elPronunciation = document.getElementById('pronunciation');
-            const elSentence = document.getElementById('targetSentence');
-            const elTransFr = document.getElementById('transFr');
-            const elTransDarija = document.getElementById('transDarija');
-            const elTransAr = document.getElementById('transAr');
-            const elHintBox = document.getElementById('grammarHint');
-            const elHintText = document.getElementById('hintText');
-            const elStepInd = document.getElementById('stepIndicator');
-            const elProgressBar = document.getElementById('progressBar');
-            const elFeedback = document.getElementById('feedbackMsg');
-            const elXp = document.getElementById('xpCounter');
-            const elImg = document.getElementById('exerciseImg');
-            
-            const btnSpeak = document.getElementById('btnSpeak');
-            const btnNext = document.getElementById('btnNext');
+        let sessionXp = 0;
+        let requiredSuccess = 2; 
+        let currentSuccess = 0;
+        let playbackRate = 0.85;
+        let weakExercises = [];
 
-            const synth = window.speechSynthesis;
-            let femaleVoice = null;
+        // TTS setup
+        const synth = window.speechSynthesis;
+        let femaleVoice = null;
+        function setVoice() {
+            const voices = synth.getVoices();
+            femaleVoice = voices.find(v => v.name.includes('Google UK English Female') || v.name.includes('Zira') || v.name.includes('Samantha')) || voices[0];
+        }
+        if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = setVoice;
 
-            function setFemaleVoice() {
-                const voices = synth.getVoices();
-                femaleVoice = voices.find(v => v.name.includes('Google UK English Female') || v.name.includes('Zira') || v.name.includes('Samantha') || v.name.includes('Female')) || voices.find(v => v.lang.startsWith('en-'));
-            }
-            if (speechSynthesis.onvoiceschanged !== undefined) {
-                speechSynthesis.onvoiceschanged = setFemaleVoice;
-            }
+        window.updateSpeed = function(rate) {
+            playbackRate = rate;
+            document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        };
 
-            // Speed Control Logic
-            window.updateSpeed = function(rate) {
-                playbackRate = rate;
-                document.querySelectorAll('.speed-btn').forEach(btn => btn.classList.remove('active'));
-                event.target.classList.add('active');
+        window.playAudio = function() {
+            synth.cancel();
+            const utter = new SpeechSynthesisUtterance(exercises[currentIndex].en);
+            if (femaleVoice) utter.voice = femaleVoice;
+            utter.lang = 'en-US'; utter.rate = playbackRate;
+            synth.speak(utter);
+        };
+
+        // Speech Recognition
+        const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+        let recognition;
+        if (SpeechRec) {
+            recognition = new SpeechRec();
+            recognition.lang = 'en-US';
+            recognition.onstart = () => { 
+                document.getElementById('btnSpeak').classList.add('listening');
+                document.getElementById('btnSpeak').innerHTML = '🎧 Je vous écoute...';
             };
+            recognition.onresult = (e) => {
+                const said = e.results[0][0].transcript.toLowerCase().trim();
+                const target = exercises[currentIndex].en.toLowerCase().replace(/[^\w\s\']/g, "").trim();
+                const cleanSpeech = said.replace(/[^\w\s\']/g, "").trim();
 
-            window.playAudio = function() {
-                if (synth.speaking) { synth.cancel(); }
-                setTimeout(() => {
-                    const utterThis = new SpeechSynthesisUtterance(exercises[currentIndex].en);
-                    if (femaleVoice) { utterThis.voice = femaleVoice; }
-                    utterThis.lang = 'en-US'; 
-                    utterThis.rate = playbackRate;
-                    synth.speak(utterThis);
-                }, 50);
-            }
-
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-            let recognition;
-            if (SpeechRecognition) {
-                recognition = new SpeechRecognition();
-                recognition.lang = 'en-US';
-                recognition.interimResults = false;
-
-                recognition.onstart = () => {
-                    btnSpeak.classList.add('listening');
-                    btnSpeak.innerHTML = '🎧 Je vous écoute...';
-                    elFeedback.style.display = 'none';
-                };
-
-                recognition.onresult = (event) => {
-                    const speechResult = event.results[0][0].transcript.toLowerCase().trim();
-                    const targetText = exercises[currentIndex].en.toLowerCase().replace(/[^\w\s\']/g, "").trim();
-                    const cleanSpeech = speechResult.replace(/[^\w\s\']/g, "").trim();
-
-                    let matched = (cleanSpeech.includes(targetText) || targetText.includes(cleanSpeech) || cleanSpeech === targetText);
-                    
-                    // Variations check
-                    if (!matched && exercises[currentIndex].variations) {
-                        for(let v of exercises[currentIndex].variations) {
-                            if(cleanSpeech.includes(v.toLowerCase().trim())) { matched = true; break; }
-                        }
+                let matched = (cleanSpeech.includes(target) || target.includes(cleanSpeech));
+                if (!matched && exercises[currentIndex].variations) {
+                    for(let v of exercises[currentIndex].variations) {
+                        if(cleanSpeech.includes(v.toLowerCase().trim())) { matched = true; break; }
                     }
-
-                    if (matched) { handleSuccess(); } 
-                    else { 
-                        // Track weak sentences
-                        if(!weakExercises.includes(exercises[currentIndex])) weakExercises.push(exercises[currentIndex]);
-                        handleFailure(speechResult, exercises[currentIndex].en); 
-                    }
-                };
-
-                recognition.onerror = () => {
-                    btnSpeak.classList.remove('listening'); btnSpeak.innerHTML = '🎤 Parler';
-                    elFeedback.className = 'feedback-msg feedback-error';
-                    elFeedback.innerHTML = "❌ Je n'ai pas bien entendu. Réessayez.";
-                    elFeedback.style.display = 'block';
-                };
-                recognition.onend = () => { btnSpeak.classList.remove('listening'); };
-            }
-
-            window.startSpeaking = () => { if(recognition) try { recognition.start(); } catch(e) {} }
-
-            function loadCard() {
-                const currentEx = exercises[currentIndex];
-                currentSuccess = 0; 
-                updateDots();
-                
-                // Image Handle
-                const activeImgUrl = currentEx.imageUrl || currentLessonData.imageUrl;
-                if (activeImgUrl) { elImg.src = activeImgUrl; elImg.classList.add('active'); } 
-                else { elImg.classList.remove('active'); }
-
-                // Pronunciation Handle
-                let pronText = typeof currentEx.pronunciation === 'object' ? currentEx.pronunciation.simple : currentEx.pronunciation;
-                elPronunciation.innerText = `🗣️ ${pronText || '...'}`;
-                elSentence.innerText = currentEx.en || '...';
-                
-                // Translations
-                elTransFr.innerText = currentEx.fr || currentEx.french || '...';
-                elTransDarija.innerText = currentEx.darija || '...';
-                elTransAr.innerText = currentEx.ar || currentEx.arabic || '...';
-
-                // Trap Handle
-                const trapBox = document.getElementById('trapBox');
-                if(currentEx.listening_trap) { trapBox.style.display = 'block'; document.getElementById('trapText').innerText = currentEx.listening_trap; }
-                else { trapBox.style.display = 'none'; }
-
-                // Emotion Handle
-                const emoBox = document.getElementById('emotionDisplay');
-                if(currentEx.emotion) { emoBox.style.display = 'inline-block'; emoBox.innerText = Array.isArray(currentEx.emotion) ? currentEx.emotion[0] : currentEx.emotion; }
-                else { emoBox.style.display = 'none'; }
-
-                elStepInd.innerText = `${currentIndex + 1} / ${exercises.length}`;
-                elProgressBar.style.width = `${(currentIndex / exercises.length) * 100}%`;
-
-                const hintTextData = currentEx.context || currentEx.practice || currentEx.hint;
-                if (hintTextData) { elHintBox.classList.add('active'); elHintText.innerText = hintTextData; } 
-                else { elHintBox.classList.remove('active'); }
-
-                document.getElementById('btnListen').style.display = 'flex';
-                btnSpeak.style.display = 'flex';
-                btnSpeak.innerHTML = '🎤 Parler';
-                btnNext.style.display = 'none';
-                elFeedback.style.display = 'none';
-
-                // Shadowing Mode: Auto-play if enabled or not first card
-                if(currentLessonData.system?.includes("Shadowing") || currentIndex > 0) {
-                    setTimeout(() => playAudio(), 600);
                 }
-            }
 
-            function updateDots() {
-                document.getElementById('dot1').className = currentSuccess >= 1 ? 'dot filled' : 'dot';
-                document.getElementById('dot2').className = currentSuccess >= 2 ? 'dot filled' : 'dot';
-            }
-
-            function handleSuccess() {
-                currentSuccess++;
-                updateDots();
-                sessionXp += 10;
-                currentTotalXp += 10;
-                elXp.innerText = currentTotalXp;
-
-                elFeedback.className = 'feedback-msg feedback-success';
-                if(currentSuccess < requiredSuccess) {
-                    elFeedback.innerHTML = '🔥 Super ! Répétez encore une fois.';
-                    btnSpeak.innerHTML = '🎤 Parler (Encore)';
-                } else {
-                    elFeedback.innerHTML = '🎉 Parfait !';
-                    btnSpeak.style.display = 'none';
-                    document.getElementById('btnListen').style.display = 'none';
-                    btnNext.style.display = 'flex';
+                if (matched) handleSuccess();
+                else {
+                    if(!weakExercises.includes(exercises[currentIndex])) weakExercises.push(exercises[currentIndex]);
+                    handleFailure(said, exercises[currentIndex].en);
                 }
-                elFeedback.style.display = 'block';
-            }
-
-            function handleFailure(said, target) {
-                elFeedback.className = 'feedback-msg feedback-error';
-                elFeedback.innerHTML = `<b>Oups, presque!</b><span>🗣️ <b>Vous:</b> "${said}"</span><span>🎯 <b>Correct:</b> "${target}"</span>`;
-                elFeedback.style.display = 'block';
-                btnSpeak.innerHTML = '🎤 Réessayer';
-                if (window.triggerAICoachError) window.triggerAICoachError(said, target);
-            }
-
-            window.nextCard = function() {
-                currentIndex++;
-                if (currentIndex >= exercises.length) {
-                    // Loop back weak exercises once if any
-                    if(weakExercises.length > 0) {
-                        alert("On révise les points faibles ! 💪");
-                        exercises = [...weakExercises];
-                        weakExercises = [];
-                        currentIndex = 0;
-                        loadCard();
-                    } else {
-                        elProgressBar.style.width = `100%`;
-                        document.getElementById('learningCard').style.display = 'none';
-                        document.getElementById('finalScreen').style.display = 'block';
-                        document.getElementById('finalXp').innerText = sessionXp;
-                        confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
-                    }
-                } else { loadCard(); }
-            }
-
-            window.finishSession = async function() {
-                const btn = event.target; btn.innerHTML = '⏳ Sauvegarde...'; btn.disabled = true;
-                try {
-                    await fetch('/api/progress/complete', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ lessonId: CURRENT_LESSON_ID, courseType: CURRENT_COURSE_TYPE, xpEarned: sessionXp }) 
-                    });
-                    window.location.href = '/dashboard';
-                } catch (e) { window.location.href = '/dashboard'; }
-            }
-
-            window.onload = () => loadCard();
+            };
+            recognition.onend = () => { document.getElementById('btnSpeak').classList.remove('listening'); };
         }
+
+        window.startSpeaking = () => { if(recognition) try { recognition.start(); } catch(e) {} };
+
+        function loadCard() {
+            if (!exercises[currentIndex]) return;
+            const ex = exercises[currentIndex];
+            currentSuccess = 0;
+            updateDots();
+
+            // UI Refresh
+            document.getElementById('targetSentence').innerText = ex.en;
+            document.getElementById('pronunciation').innerText = `🗣️ ${ex.pronunciation?.simple || ex.pronunciation || '...'}`;
+            document.getElementById('transFr').innerText = ex.fr || ex.french || '...';
+            document.getElementById('transDarija').innerText = ex.darija || '...';
+            document.getElementById('transAr').innerText = ex.ar || ex.arabic || '...';
+
+            const img = document.getElementById('exerciseImg');
+            if (ex.imageUrl) { img.src = ex.imageUrl; img.classList.add('active'); } else { img.classList.remove('active'); }
+
+            const trap = document.getElementById('trapBox');
+            if(ex.listening_trap) { trap.style.display = 'block'; document.getElementById('trapText').innerText = ex.listening_trap; } else { trap.style.display = 'none'; }
+
+            const emo = document.getElementById('emotionDisplay');
+            if(ex.emotion) { emo.style.display = 'inline-block'; emo.innerText = Array.isArray(ex.emotion) ? ex.emotion[0] : ex.emotion; } else { emo.style.display = 'none'; }
+
+            const hint = document.getElementById('grammarHint');
+            const hText = ex.context || ex.hint;
+            if(hText) { hint.classList.add('active'); document.getElementById('hintText').innerText = hText; } else { hint.classList.remove('active'); }
+
+            document.getElementById('stepIndicator').innerText = `${currentIndex + 1} / ${exercises.length}`;
+            document.getElementById('progressBar').style.width = `${(currentIndex / exercises.length) * 100}%`;
+            
+            document.getElementById('btnNext').style.display = 'none';
+            document.getElementById('btnSpeak').style.display = 'flex';
+            document.getElementById('btnSpeak').innerHTML = '🎤 Parler';
+            document.getElementById('feedbackMsg').style.display = 'none';
+
+            // Auto-play / Shadowing
+            if(currentIndex > 0 || (phaseSystemInfo && phaseSystemInfo.system?.includes("Shadowing"))) {
+                setTimeout(() => playAudio(), 600);
+            }
+        }
+
+        function updateDots() {
+            document.getElementById('dot1').className = currentSuccess >= 1 ? 'dot filled' : 'dot';
+            document.getElementById('dot2').className = currentSuccess >= 2 ? 'dot filled' : 'dot';
+        }
+
+        function handleSuccess() {
+            currentSuccess++; updateDots(); sessionXp += 10;
+            document.getElementById('xpCounter').innerText = parseInt(document.getElementById('xpCounter').innerText) + 10;
+            const f = document.getElementById('feedbackMsg');
+            f.className = 'feedback-msg feedback-success';
+            if (currentSuccess < requiredSuccess) {
+                f.innerHTML = '🔥 Super ! Répétez encore une fois.';
+                document.getElementById('btnSpeak').innerHTML = '🎤 Parler (Encore)';
+            } else {
+                f.innerHTML = '🎉 Parfait !';
+                document.getElementById('btnSpeak').style.display = 'none';
+                document.getElementById('btnNext').style.display = 'flex';
+            }
+            f.style.display = 'block';
+        }
+
+        function handleFailure(said, target) {
+            const f = document.getElementById('feedbackMsg');
+            f.className = 'feedback-msg feedback-error';
+            f.innerHTML = `<b>Oups, presque!</b><span>🗣️ <b>Vous:</b> "${said}"</span><span>🎯 <b>Correct:</b> "${target}"</span>`;
+            f.style.display = 'block';
+            document.getElementById('btnSpeak').innerHTML = '🎤 Réessayer';
+            if (window.triggerAICoachError) window.triggerAICoachError(said, target);
+        }
+
+        window.nextCard = () => {
+            currentIndex++;
+            
+            // 🧠 SAVE POSITION (Memory update)
+            localStorage.setItem(storageKey, currentIndex);
+
+            if (currentIndex < exercises.length) loadCard();
+            else {
+                if(weakExercises.length > 0) {
+                    alert("On révise les points faibles ! 💪");
+                    exercises = [...weakExercises]; weakExercises = []; currentIndex = 0; loadCard();
+                } else {
+                    document.getElementById('learningCard').style.display = 'none';
+                    document.getElementById('finalScreen').style.display = 'block';
+                    document.getElementById('finalXp').innerText = sessionXp;
+                    
+                    // 🧠 CLEANUP (Mission complete, reset position for next time)
+                    localStorage.removeItem(storageKey);
+                    confetti({ particleCount: 150, spread: 70 });
+                }
+            }
+        };
+
+        window.finishSession = async () => {
+            try {
+                await fetch('/api/progress/complete', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ lessonId: CURRENT_LESSON_ID, courseType: window.CURRENT_COURSE_TYPE, xpEarned: sessionXp })
+                });
+                window.location.href = '/dashboard';
+            } catch(e) { window.location.href = '/dashboard'; }
+        };
+
+        window.onload = loadCard;
     </script>
 </body>
 </html>

@@ -6,28 +6,23 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const axios = require('axios'); 
 
 const connectDB = require('./config/db.js');
 const User = require('./models/User'); 
 
-// --- Imports ---
 const authRoutes = require('./routes/authRoutes');
 const progressRoutes = require('./routes/progressRoutes');
 const aiRoutes = require('./routes/aiRoutes'); 
 const { protect } = require('./middleware/authMiddleware');
 const { getDashboard } = require('./controllers/progressController');
 
-// 🚀 Admin Imports
 const { isAdmin } = require('./middleware/adminMiddleware');
 const { getAdminDashboard, upgradeUser, deleteUser } = require('./controllers/adminController');
 
-// Database Connection
 connectDB();
 
 const app = express();
 
-// 🚀 VERCEL FIX: Trust proxy for secure sessions
 app.set('trust proxy', 1); 
 
 // --- Middlewares ---
@@ -36,18 +31,20 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser()); 
 app.use(express.static(path.join(__dirname, 'public'))); 
 
-// 🚀 Session Setup
+// Session
 app.use(session({
     secret: process.env.JWT_SECRET || 'amina_secret_key',
-    resave: true, 
+    resave: false,           // ✅ FIX: true → false (unnecessary resaves)
     saveUninitialized: false,
     cookie: {
         secure: process.env.NODE_ENV === 'production', 
+        httpOnly: true,      // ✅ ADD: XSS protection
+        sameSite: 'lax',     // ✅ ADD: CSRF protection
         maxAge: 24 * 60 * 60 * 1000 
     }
 }));
 
-// --- Passport.js Setup ---
+// Passport
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -93,7 +90,7 @@ passport.deserializeUser(async (id, done) => {
     }
 });
 
-// 🛡️ Security: Cache-Control
+// Cache-Control
 app.use((req, res, next) => {
     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
     res.set('Pragma', 'no-cache');
@@ -101,7 +98,7 @@ app.use((req, res, next) => {
     next();
 });
 
-// --- View Engine ---
+// View Engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -110,7 +107,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/progress', progressRoutes); 
 app.use('/api/ai', aiRoutes); 
 
-// 🚀 Admin API Routes
 app.post('/api/admin/upgrade', protect, isAdmin, upgradeUser);
 app.post('/api/admin/delete', protect, isAdmin, deleteUser);
 
@@ -121,75 +117,71 @@ app.get('/login', (req, res) => res.render('pages/login'));
 app.get('/complete-profile', protect, (req, res) => {
     res.render('pages/complete-profile', { user: req.user });
 });
-
 app.get('/dashboard', protect, getDashboard);
-
-// 💰 Premium Page
 app.get('/premium', protect, (req, res) => {
     res.render('pages/premium', { user: req.user });
 });
-
-// 🚀 Admin Dashboard Route
 app.get('/admin/dashboard', protect, isAdmin, getAdminDashboard);
 
-// 🚀 BACKWARD COMPATIBILITY
+// Backward compat
 app.get('/lesson/:id', protect, (req, res) => {
     res.redirect(`/lesson/accounting/${req.params.id}`);
 });
 
-// 🚀 SMART MULTI-COURSE ROUTE (Accounting & English)
+// ✅ Course config map — easy to extend
+const COURSE_CONFIG = {
+    marketing: { folder: 'data/marketing', filePrefix: 'phase', view: 'pages/lesson-marketing' },
+    english:   { folder: 'data/english',   filePrefix: 'phase', view: 'pages/lesson-english' },
+};
+const DEFAULT_COURSE = { folder: 'data', filePrefix: 'lesson', view: 'pages/lesson' };
+
 app.get('/lesson/:course/:id', protect, (req, res) => {
     const { course, id } = req.params;
-    
-    // 📂 1. Folder aur File ka naam set karo (Tree structure ke mutabiq)
-    let folder = 'data';
-    let fileName = `lesson${id}.json`; // Default
 
-    if (course === 'english') {
-        folder = 'data/english';
-        fileName = `phase${id}.json`; // Tree mein phase1.json hai
-    } else if (course === 'accounting' || course === 'accountant') {
-        folder = 'data'; // Tree mein accounting files seedha data/ mein hain
-        fileName = `lesson${id}.json`;
+    // ✅ FIX: Validate id — only allow numbers
+    if (!/^\d+$/.test(id)) {
+        return res.redirect('/dashboard');
     }
 
-    let filePath = path.join(__dirname, folder, fileName);
+    const config = COURSE_CONFIG[course] || DEFAULT_COURSE;
+    const filePath = path.join(__dirname, config.folder, `${config.filePrefix}${id}.json`);
 
-    // 🔍 2. File Check karo
-    if (fs.existsSync(filePath)) {
-        try {
-            const rawData = fs.readFileSync(filePath);
-            const parsedData = JSON.parse(rawData);
-            
-            // 🚀 3. THE FIX: Nested vs Simple JSON handler
-            let lessonContent = parsedData;
-            
-            // Agar Phase 1 jaisa format hai (object jisme lessons list ho)
-            if (course === 'english' && parsedData.lessons) {
-                lessonContent = parsedData.lessons; 
-            }
-            
-            const viewFile = course === 'english' ? 'pages/lesson-english' : 'pages/lesson';
-            
-            res.render(viewFile, { 
-                user: req.user, 
-                lessonId: id,
-                courseType: course,
-                // Dono keys bhej rahe hain taaki kisi bhi EJS mein crash na ho
-                lesson: lessonContent, 
-                lessonData: lessonContent 
-            });
-        } catch (err) {
-            console.error("❌ JSON Parse Error:", err);
-            res.redirect('/dashboard');
-        }
-    } else {
-        console.error("❌ File NOT Found at:", filePath);
+    if (!fs.existsSync(filePath)) {
+        console.error(`❌ File NOT Found: ${filePath}`);
+        return res.redirect('/dashboard');
+    }
+
+    try {
+        const parsedData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
+        // If phase-based course → send lessons array; else send raw
+        const isPhase = course === 'marketing' || course === 'english';
+        const lessonContent = isPhase && parsedData.lessons ? parsedData.lessons : parsedData;
+
+        res.render(config.view, { 
+            user: req.user, 
+            lessonId: id,
+            courseType: course,
+            lesson: lessonContent,
+            lessonData: lessonContent  // backward compat
+        });
+    } catch (err) {
+        console.error("❌ JSON Parse Error:", err);
         res.redirect('/dashboard');
     }
 });
 
-// --- Server & Vercel Export ---
+// ✅ 404 handler
+app.use((req, res) => {
+    res.status(404).redirect('/dashboard');
+});
+
+// ✅ Global error handler
+app.use((err, req, res, next) => {
+    console.error('❌ Server Error:', err.stack);
+    res.status(500).send('Something went wrong.');
+});
+
 const PORT = process.env.PORT || 3000;
 if (process.env.NODE_ENV !== 'production') {
     app.listen(PORT, () => {

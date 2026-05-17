@@ -15,7 +15,7 @@ exports.markLessonComplete = async (req, res) => {
 
         const user = await User.findById(userId);
 
-        // 🏗️ Safety: Ensure the progress sub-object exists for the course
+        // 🏗️ Safety: Ensure the progress sub-object exists for ANY course
         if (!user.progress[courseType]) {
             user.progress[courseType] = { completedLessons: [], lastUnlockedLesson: 1 };
         }
@@ -27,14 +27,18 @@ exports.markLessonComplete = async (req, res) => {
         if (!user.progress[courseType].completedLessons.includes(lessonNumber)) {
             user.progress[courseType].completedLessons.push(lessonNumber);
             
-            // 🎮 GAMIFICATION: Naya lesson complete karne par +20 XP do!
-            xpGained = 20;
+            // 🎮 GAMIFICATION: XP Logic
+            // Marketing missions pe thoda zyada XP dete hain taaki motivation rahe
+            xpGained = courseType === 'marketing' ? 30 : 20; 
             user.xp = (user.xp || 0) + xpGained;
             isNewCompletion = true;
         }
 
-        // 2. Unlock logic (Accounting: 40 lessons, English: 30 sessions)
-        const limit = courseType === 'accounting' ? 40 : 30;
+        // 2. Unlock logic (Accounting: 40, English: 30, Marketing: 20)
+        let limit = 30;
+        if (courseType === 'accounting') limit = 40;
+        if (courseType === 'marketing') limit = 20;
+
         const nextLesson = lessonNumber + 1;
         
         if (user.progress[courseType].lastUnlockedLesson < nextLesson && nextLesson <= limit) {
@@ -46,7 +50,6 @@ exports.markLessonComplete = async (req, res) => {
         const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
         
         if (!user.streak.lastActive) {
-            // First time ever
             user.streak.current = 1;
         } else {
             const lastActiveDate = new Date(user.streak.lastActive);
@@ -54,17 +57,12 @@ exports.markLessonComplete = async (req, res) => {
             const oneDay = 24 * 60 * 60 * 1000;
 
             if (today - lastActiveDay === oneDay) {
-                // Kal padha tha, aaj bhi padha -> Streak badhao!
                 user.streak.current += 1;
             } else if (today - lastActiveDay > oneDay) {
-                // Gap kar diya -> Streak toot gayi, wapas 1 se shuru!
-                user.streak.current = 1;
+                user.streak.current = 1; // Gap ho gaya
             }
-            // Agar same day pe multiple lessons kiye hain, toh streak utni hi rahegi
         }
-        // Update last active time to right now
         user.streak.lastActive = now;
-
 
         // Save all changes to Database
         user.markModified('progress'); 
@@ -87,7 +85,7 @@ exports.markLessonComplete = async (req, res) => {
 };
 
 /**
- * @desc    Load Dashboard with Dual-Track data from separate folders
+ * @desc    Load Dashboard with Multi-Track data from separate folders
  * @route   GET /dashboard
  * @access  Private
  */
@@ -95,15 +93,18 @@ exports.getDashboard = async (req, res) => {
     try {
         const accountingPath = path.join(__dirname, '../data');
         const englishPath = path.join(__dirname, '../data/english');
+        const marketingPath = path.join(__dirname, '../data/marketing'); // 🚀 NEW MARKETING PATH
         
         let accountingLessons = [];
         let englishLessons = [];
+        let marketingLessons = []; // 🚀 NEW ARRAY
 
         const user = await User.findById(req.user.id || req.user._id);
 
         // --- 🛡️ Safety Check: Initialize progress if missing ---
         if (!user.progress.accounting) user.progress.accounting = { completedLessons: [], lastUnlockedLesson: 1 };
         if (!user.progress.english) user.progress.english = { completedLessons: [], lastUnlockedLesson: 1 };
+        if (!user.progress.marketing) user.progress.marketing = { completedLessons: [], lastUnlockedLesson: 1 }; // 🚀 INIT MARKETING
 
         // --- 🎮 Auto-Reset Dead Streak on Dashboard Load ---
         const now = new Date();
@@ -113,14 +114,13 @@ exports.getDashboard = async (req, res) => {
             const lastActiveDay = new Date(lastActiveDate.getFullYear(), lastActiveDate.getMonth(), lastActiveDate.getDate()).getTime();
             const oneDay = 24 * 60 * 60 * 1000;
             
-            // Agar user dashboard pe aaya hai par 1 din se zyada ho gaya hai
             if (today - lastActiveDay > oneDay && user.streak.current > 0) {
-                user.streak.current = 0; // Streak reset ho jayegi UI pe dikhane ke liye
+                user.streak.current = 0; 
                 await user.save();
             }
         }
 
-        // --- 💼 Part 1: Load Accounting Lessons (from /data) ---
+        // --- 💼 Part 1: Load Accounting Lessons ---
         if (fs.existsSync(accountingPath)) {
             const files = fs.readdirSync(accountingPath);
             files.forEach(file => {
@@ -128,7 +128,6 @@ exports.getDashboard = async (req, res) => {
                     try { 
                         const rawData = fs.readFileSync(path.join(accountingPath, file));
                         const data = JSON.parse(rawData);
-                        
                         const lessonNum = parseInt(file.replace('lesson', '').replace('.json', ''));
                         
                         accountingLessons.push({
@@ -139,14 +138,12 @@ exports.getDashboard = async (req, res) => {
                             isCompleted: user.progress.accounting.completedLessons.includes(lessonNum),
                             imageUrl: data.imageUrl || null
                         });
-                    } catch (err) {
-                        console.error(`⚠️ Attention: Fichier JSON corrompu ou vide ignoré -> /data/${file}`);
-                    }
+                    } catch (err) { }
                 }
             });
         }
 
-        // --- 🇬🇧 Part 2: Load English Lessons (from /data/english) ---
+        // --- 🇬🇧 Part 2: Load English Lessons ---
         if (fs.existsSync(englishPath)) {
             const files = fs.readdirSync(englishPath);
             files.forEach(file => {
@@ -154,7 +151,6 @@ exports.getDashboard = async (req, res) => {
                     try { 
                         const rawData = fs.readFileSync(path.join(englishPath, file));
                         const data = JSON.parse(rawData);
-                        
                         const lessonNum = parseInt(file.replace('phase', '').replace('.json', ''));
                         
                         englishLessons.push({
@@ -165,22 +161,50 @@ exports.getDashboard = async (req, res) => {
                             isCompleted: user.progress.english.completedLessons.includes(lessonNum),
                             imageUrl: data.imageUrl || null
                         });
-                    } catch (err) {
-                        console.error(`⚠️ Attention: Fichier JSON corrompu ou vide ignoré -> /data/english/${file}`);
-                    }
+                    } catch (err) { }
                 }
             });
         }
 
-        // Sort both arrays numerically
+       // --- 📱 Part 3: Load Marketing Lessons (GOD MODE) ---
+        if (fs.existsSync(marketingPath)) {
+            const files = fs.readdirSync(marketingPath);
+            files.forEach(file => {
+                if (file.startsWith('phase') && file.endsWith('.json')) {
+                    try { 
+                        const rawData = fs.readFileSync(path.join(marketingPath, file));
+                        const data = JSON.parse(rawData);
+                        const phaseNum = parseInt(file.replace('phase', '').replace('.json', ''));
+                        
+                        // 🧠 Extract Title and Description from the Root of Phase JSON
+                        let mktTitle = typeof data.title === 'object' ? (data.title.fr || data.title.en) : data.title;
+                        let mktDesc = typeof data.description === 'object' ? (data.description.fr || data.description.en) : data.description;
+                        
+                        marketingLessons.push({
+                            id: phaseNum, // Phase 1 = ID 1
+                            title: mktTitle || `Phase Marketing ${phaseNum}`,
+                            description: mktDesc ? mktDesc.substring(0, 75) + '...' : "Découvrez les secrets du marketing...",
+                            isUnlocked: phaseNum <= user.progress.marketing.lastUnlockedLesson,
+                            isCompleted: user.progress.marketing.completedLessons.includes(phaseNum),
+                            imageUrl: data.imageUrl || null
+                        });
+                    } catch (err) { 
+                        console.error(`⚠️ Erreur Marketing JSON: ${file}`);
+                    }
+                }
+            });
+        }
+        // Sort all arrays numerically
         accountingLessons.sort((a, b) => a.id - b.id);
         englishLessons.sort((a, b) => a.id - b.id);
+        marketingLessons.sort((a, b) => a.id - b.id);
 
         // Final Rendering
         res.render('pages/dashboard', { 
-            user: user, // 🚀 Ye ab user ka 'xp' aur 'streak' bhi UI me bhejega!
+            user: user,
             accountingLessons: accountingLessons,
-            englishLessons: englishLessons
+            englishLessons: englishLessons,
+            marketingLessons: marketingLessons // 🚀 Asli data bhej diya dashboard ko!
         });
 
     } catch (error) {

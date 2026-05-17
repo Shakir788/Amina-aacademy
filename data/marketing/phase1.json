@@ -1,0 +1,827 @@
+{
+  "phase": 1,
+  "title": {
+    "en": "Viral Content Domination (Premium Expanded)",
+    "fr": "Domination du Contenu Viral (Édition Premium)",
+    "ar": "السيطرة على المحتوى الفيروسي (النسخة المميزة الموسعة)"
+  },
+  "description": {
+    "en": "Master human attention, emotional content psychology and viral communication systems to become a dangerous content creator.",
+    "fr": "Maîtrisez la psychologie de l'attention humaine, du contenu émotionnel et des systèmes de communication virale pour devenir un créateur de contenu redoutable.",
+    "ar": "أتقن علم نفس الانتباه البشري والمحتوى العاطفي وأنظمة التواصل الفيروسي لتصبح صانع محتوى خطيراً."
+  },
+  "system_level": "Premium Expansion",
+  "estimated_time_per_lesson": "20-40 minutes",
+  "lesson_structure": {
+    "contains": {
+      "en": ["Core concept","Deep explanation","Psychology","Real examples","Mistakes","AI analysis","Missions","Challenge mode","Pro secrets","Business applications"],
+      "fr": ["Concept central","Explication approfondie","Psychologie","Exemples réels","Erreurs","Analyse IA","Missions","Mode défi","Secrets pro","Applications business"],
+      "ar": ["المفهوم الأساسي","الشرح المعمّق","علم النفس","أمثلة حقيقية","الأخطاء","تحليل الذكاء الاصطناعي","المهام","وضع التحدي","أسرار المحترفين","تطبيقات الأعمال"]
+    }
+  },
+  "lessons": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Human Attention Psychology",
+        "fr": "Psychologie de l'Attention Humaine",
+        "ar": "سيكولوجية الانتباه البشري"
+      },
+      "xp": 120,
+      "core_concept": {
+        "en": "Attention is the currency of the internet.",
+        "fr": "L'attention est la monnaie d'internet.",
+        "ar": "الانتباه هو عملة الإنترنت."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Every second, people decide if your content deserves attention. Humans scroll extremely fast because the brain filters boring information automatically.",
+          "fr": "Chaque seconde, les gens décident si votre contenu mérite leur attention. Les humains font défiler très vite car le cerveau filtre automatiquement les informations ennuyeuses.",
+          "ar": "في كل ثانية، يقرر الناس ما إذا كان محتواك يستحق الانتباه. يتصفح البشر بسرعة شديدة لأن الدماغ يصفي المعلومات المملة تلقائياً."
+        },
+        "why_it_matters": {
+          "en": "If you fail to capture attention instantly, your content dies before people even understand it.",
+          "fr": "Si vous échouez à capter l'attention instantanément, votre contenu meurt avant même que les gens le comprennent.",
+          "ar": "إذا فشلت في جذب الانتباه فوراً، يموت محتواك قبل أن يفهمه الناس."
+        },
+        "internet_truth": {
+          "en": "People don't reward effort. They reward emotion and curiosity.",
+          "fr": "Les gens ne récompensent pas l'effort. Ils récompensent l'émotion et la curiosité.",
+          "ar": "الناس لا يكافئون الجهد. يكافئون العاطفة والفضول."
+        }
+      },
+      "psychology": {
+        "en": ["Emotion beats logic","Curiosity creates stopping behavior","Faces attract human attention","Movement increases retention","Relatable pain creates emotional connection"],
+        "fr": ["L'émotion bat la logique","La curiosité crée un comportement d'arrêt","Les visages attirent l'attention humaine","Le mouvement augmente la rétention","La douleur relatable crée une connexion émotionnelle"],
+        "ar": ["العاطفة تتفوق على المنطق","الفضول يخلق سلوك التوقف","الوجوه تجذب انتباه الإنسان","الحركة تزيد المشاهدة","الألم المشترك يخلق تواصلاً عاطفياً"]
+      },
+      "real_examples": {
+        "en": ["A creator screaming in first second instantly grabs attention","Sad emotional stories increase watch time","Fast camera movement keeps brain stimulated"],
+        "fr": ["Un créateur qui crie dans la première seconde attire immédiatement l'attention","Les histoires émotionnelles tristes augmentent le temps de visionnage","Les mouvements rapides de caméra gardent le cerveau stimulé"],
+        "ar": ["صانع محتوى يصرخ في الثانية الأولى يجذب الانتباه فوراً","القصص العاطفية الحزينة تزيد وقت المشاهدة","حركة الكاميرا السريعة تبقي الدماغ منشطاً"]
+      },
+      "common_mistakes": {
+        "en": ["Long boring intros","Talking too slowly","No emotional trigger","Weak visuals"],
+        "fr": ["Longues introductions ennuyeuses","Parler trop lentement","Pas de déclencheur émotionnel","Visuels faibles"],
+        "ar": ["مقدمات طويلة ومملة","التحدث ببطء شديد","لا يوجد محفز عاطفي","مرئيات ضعيفة"]
+      },
+      "viral_analysis": {
+        "weak_intro": {
+          "en": "Hey guys welcome back...",
+          "fr": "Salut tout le monde, bienvenue...",
+          "ar": "مرحباً يا شباب، مرحباً بعودتكم..."
+        },
+        "problem": {
+          "en": "Nobody cares yet.",
+          "fr": "Personne ne s'en soucie encore.",
+          "ar": "لا أحد يهتم بعد."
+        },
+        "better_version": {
+          "en": "You are losing views because of THIS 😳",
+          "fr": "Vous perdez des vues à cause de ÇA 😳",
+          "ar": "أنت تخسر مشاهدات بسبب هذا 😳"
+        }
+      },
+      "missions": {
+        "en": ["Analyze 10 viral reels","Write why they stopped your scroll","Find emotional triggers"],
+        "fr": ["Analysez 10 reels viraux","Écrivez pourquoi ils ont arrêté votre défilement","Trouvez les déclencheurs émotionnels"],
+        "ar": ["حلل 10 ريلز فيروسية","اكتب لماذا أوقفت تصفحك","ابحث عن المحفزات العاطفية"]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Moroccan cafe",
+          "fr": "Café marocain",
+          "ar": "مقهى مغربي"
+        },
+        "task": {
+          "en": "Analyze why their reels feel boring",
+          "fr": "Analysez pourquoi leurs reels semblent ennuyeux",
+          "ar": "حلل لماذا تبدو ريلزهم مملة"
+        }
+      },
+      "pro_secrets": {
+        "en": ["The brain notices danger, emotion and movement first","Curiosity creates psychological tension"],
+        "fr": ["Le cerveau remarque le danger, l'émotion et le mouvement en premier","La curiosité crée une tension psychologique"],
+        "ar": ["يلاحظ الدماغ الخطر والعاطفة والحركة أولاً","الفضول يخلق توتراً نفسياً"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Explain why one reel goes viral and another dies",
+          "fr": "Expliquez pourquoi un reel devient viral et un autre échoue",
+          "ar": "اشرح لماذا ينتشر ريلز بشكل فيروسي بينما يفشل آخر"
+        },
+        "reward_xp": 50
+      },
+      "ai_feedback_examples": {
+        "en": ["Bro this intro died instantly 😭","THIS creates curiosity 💣","Good emotional trigger 🔥"],
+        "fr": ["Bro cette intro est morte instantanément 😭","ÇA crée de la curiosité 💣","Bon déclencheur émotionnel 🔥"],
+        "ar": ["يا صاحبي هذه المقدمة ماتت فوراً 😭","هذا يخلق الفضول 💣","محفز عاطفي جيد 🔥"]
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Viral Hook Domination",
+        "fr": "Domination de l'Accroche Virale",
+        "ar": "السيطرة على الخطاف الفيروسي"
+      },
+      "xp": 140,
+      "core_concept": {
+        "en": "The first 3 seconds decide survival.",
+        "fr": "Les 3 premières secondes décident de la survie.",
+        "ar": "الثواني الثلاث الأولى تحدد البقاء."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Hooks are psychological traps that force attention.",
+          "fr": "Les accroches sont des pièges psychologiques qui forcent l'attention.",
+          "ar": "الخطافات هي فخاخ نفسية تجبر الانتباه."
+        },
+        "why_it_matters": {
+          "en": "Without a strong hook, people never reach your actual content.",
+          "fr": "Sans une accroche forte, les gens n'atteignent jamais votre contenu réel.",
+          "ar": "بدون خطاف قوي، لن يصل الناس إلى محتواك الفعلي أبداً."
+        },
+        "internet_truth": {
+          "en": "A weak hook kills even good videos.",
+          "fr": "Une accroche faible tue même les bonnes vidéos.",
+          "ar": "الخطاف الضعيف يقتل حتى الفيديوهات الجيدة."
+        }
+      },
+      "hook_types": {
+        "en": ["Curiosity hooks","Shock hooks","Pain hooks","Question hooks","Authority hooks"],
+        "fr": ["Accroches de curiosité","Accroches de choc","Accroches de douleur","Accroches de question","Accroches d'autorité"],
+        "ar": ["خطافات الفضول","خطافات الصدمة","خطافات الألم","خطافات الأسئلة","خطافات السلطة"]
+      },
+      "real_examples": {
+        "en": ["Nobody talks about this 😳","This changed everything for me","You're wasting your content"],
+        "fr": ["Personne ne parle de ça 😳","Cela a tout changé pour moi","Vous gaspillez votre contenu"],
+        "ar": ["لا أحد يتحدث عن هذا 😳","هذا غيّر كل شيء بالنسبة لي","أنت تهدر محتواك"]
+      },
+      "common_mistakes": {
+        "en": ["Generic intros","No emotional words","Too much explaining early"],
+        "fr": ["Introductions génériques","Pas de mots émotionnels","Trop d'explications au début"],
+        "ar": ["مقدمات عامة","لا كلمات عاطفية","شرح مفرط في البداية"]
+      },
+      "hook_breakdown": {
+        "bad": {
+          "en": "Today I will teach you marketing",
+          "fr": "Aujourd'hui je vais vous enseigner le marketing",
+          "ar": "اليوم سأعلمك التسويق"
+        },
+        "good": {
+          "en": "Your content is invisible because of THIS 💣",
+          "fr": "Votre contenu est invisible à cause de ÇA 💣",
+          "ar": "محتواك غير مرئي بسبب هذا 💣"
+        }
+      },
+      "missions": {
+        "en": ["Write 20 hooks","Rewrite weak intros","Create emotional hooks"],
+        "fr": ["Écrivez 20 accroches","Réécrivez les introductions faibles","Créez des accroches émotionnelles"],
+        "ar": ["اكتب 20 خطافاً","أعد كتابة المقدمات الضعيفة","أنشئ خطافات عاطفية"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Create scroll-stopping hook for beauty salon reel",
+          "fr": "Créez une accroche qui arrête le défilement pour un reel de salon de beauté",
+          "ar": "أنشئ خطافاً يوقف التمرير لريلز صالون تجميل"
+        },
+        "reward_xp": 70
+      },
+      "pro_secrets": {
+        "en": ["The best hooks create unanswered questions","Hooks should trigger emotion immediately"],
+        "fr": ["Les meilleures accroches créent des questions sans réponse","Les accroches doivent déclencher l'émotion immédiatement"],
+        "ar": ["أفضل الخطافات تخلق أسئلة بلا إجابات","يجب أن تثير الخطافات العاطفة فوراً"]
+      },
+      "ai_feedback_examples": {
+        "en": ["Too safe 😭","THIS can stop scrolling 💣","More emotion needed"],
+        "fr": ["Trop sûr 😭","ÇA peut arrêter le défilement 💣","Plus d'émotion nécessaire"],
+        "ar": ["آمن جداً 😭","هذا يستطيع إيقاف التمرير 💣","تحتاج المزيد من العاطفة"]
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Scroll-Stopping Visuals",
+        "fr": "Visuels qui Arrêtent le Défilement",
+        "ar": "المرئيات التي توقف التمرير"
+      },
+      "xp": 150,
+      "core_concept": {
+        "en": "Visual energy controls retention.",
+        "fr": "L'énergie visuelle contrôle la rétention.",
+        "ar": "الطاقة البصرية تتحكم في المشاهدة."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "The human brain reacts to movement, contrast and emotional expressions faster than words.",
+          "fr": "Le cerveau humain réagit au mouvement, au contraste et aux expressions émotionnelles plus vite qu'aux mots.",
+          "ar": "يتفاعل الدماغ البشري مع الحركة والتباين والتعابير العاطفية أسرع من الكلمات."
+        },
+        "why_it_matters": {
+          "en": "Strong visuals keep people watching longer.",
+          "fr": "Des visuels forts gardent les gens à regarder plus longtemps.",
+          "ar": "المرئيات القوية تجعل الناس يشاهدون لفترة أطول."
+        },
+        "internet_truth": {
+          "en": "Bad visuals kill retention instantly.",
+          "fr": "Les mauvais visuels tuent la rétention instantanément.",
+          "ar": "المرئيات السيئة تقتل نسبة المشاهدة فوراً."
+        }
+      },
+      "visual_systems": {
+        "en": ["Movement","Contrast","Fast cuts","Human faces","Camera energy"],
+        "fr": ["Mouvement","Contraste","Coupes rapides","Visages humains","Énergie de caméra"],
+        "ar": ["الحركة","التباين","القطعات السريعة","الوجوه البشرية","طاقة الكاميرا"]
+      },
+      "real_examples": {
+        "en": ["Zoom transitions create energy","Bright contrast attracts attention","Human reactions increase emotional connection"],
+        "fr": ["Les transitions zoom créent de l'énergie","Le contraste vif attire l'attention","Les réactions humaines augmentent la connexion émotionnelle"],
+        "ar": ["انتقالات الزووم تخلق طاقة","التباين الساطع يجذب الانتباه","ردود الفعل البشرية تزيد التواصل العاطفي"]
+      },
+      "common_mistakes": {
+        "en": ["Static camera","Dark visuals","No movement","Empty backgrounds"],
+        "fr": ["Caméra statique","Visuels sombres","Pas de mouvement","Arrière-plans vides"],
+        "ar": ["كاميرا ثابتة","مرئيات داكنة","لا حركة","خلفيات فارغة"]
+      },
+      "missions": {
+        "en": ["Analyze 5 thumbnails","Fix weak visuals","Improve old reel ideas"],
+        "fr": ["Analysez 5 miniatures","Corrigez les visuels faibles","Améliorez d'anciennes idées de reels"],
+        "ar": ["حلل 5 صور مصغرة","أصلح المرئيات الضعيفة","حسّن أفكار الريلز القديمة"]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Restaurant",
+          "fr": "Restaurant",
+          "ar": "مطعم"
+        },
+        "task": {
+          "en": "Improve weak food reel visually",
+          "fr": "Améliorez visuellement un reel de nourriture faible",
+          "ar": "حسّن ريلز الطعام الضعيف بصرياً"
+        }
+      },
+      "pro_secrets": {
+        "en": ["Tiny visual changes massively affect retention","Human eyes follow movement automatically"],
+        "fr": ["De petits changements visuels affectent massivement la rétention","Les yeux humains suivent automatiquement le mouvement"],
+        "ar": ["التغييرات البصرية الصغيرة تؤثر بشكل كبير على المشاهدة","عيون الإنسان تتبع الحركة تلقائياً"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Transform boring reel into energetic reel",
+          "fr": "Transformez un reel ennuyeux en reel énergique",
+          "ar": "حوّل ريلز مملاً إلى ريلز نشيط"
+        },
+        "reward_xp": 80
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Emotional Content Engine",
+        "fr": "Moteur de Contenu Émotionnel",
+        "ar": "محرك المحتوى العاطفي"
+      },
+      "xp": 160,
+      "core_concept": {
+        "en": "Emotion spreads content.",
+        "fr": "L'émotion propage le contenu.",
+        "ar": "العاطفة تنشر المحتوى."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "People remember feelings more than information.",
+          "fr": "Les gens se souviennent des sentiments plus que des informations.",
+          "ar": "الناس يتذكرون المشاعر أكثر من المعلومات."
+        },
+        "why_it_matters": {
+          "en": "Emotion creates comments, shares and saves.",
+          "fr": "L'émotion crée des commentaires, des partages et des sauvegardes.",
+          "ar": "العاطفة تخلق التعليقات والمشاركات والحفظ."
+        },
+        "internet_truth": {
+          "en": "Content without emotion feels invisible.",
+          "fr": "Le contenu sans émotion semble invisible.",
+          "ar": "المحتوى بلا عاطفة يبدو غير مرئي."
+        }
+      },
+      "emotion_types": {
+        "en": ["Fear","Hope","Curiosity","Motivation","Relatability"],
+        "fr": ["Peur","Espoir","Curiosité","Motivation","Identification"],
+        "ar": ["الخوف","الأمل","الفضول","التحفيز","التماهي"]
+      },
+      "real_examples": {
+        "en": ["Transformation stories create hope","Failure stories feel relatable","Pain creates emotional connection"],
+        "fr": ["Les histoires de transformation créent de l'espoir","Les histoires d'échec semblent identifiables","La douleur crée une connexion émotionnelle"],
+        "ar": ["قصص التحول تخلق الأمل","قصص الفشل تشعر بالتماهي","الألم يخلق تواصلاً عاطفياً"]
+      },
+      "common_mistakes": {
+        "en": ["Emotionless talking","Too robotic","No relatable moments"],
+        "fr": ["Discours sans émotion","Trop robotique","Pas de moments identifiables"],
+        "ar": ["كلام بلا عاطفة","روبوتي جداً","لا لحظات قابلة للتماهي"]
+      },
+      "missions": {
+        "en": ["Turn boring topic emotional","Write emotional caption","Find emotional moments in viral reels"],
+        "fr": ["Rendez un sujet ennuyeux émotionnel","Écrivez une légende émotionnelle","Trouvez des moments émotionnels dans les reels viraux"],
+        "ar": ["حوّل موضوعاً مملاً إلى عاطفي","اكتب تعليقاً عاطفياً","ابحث عن لحظات عاطفية في الريلز الفيروسية"]
+      },
+      "pro_secrets": {
+        "en": ["Relatable pain creates loyalty","Strong emotion increases comments"],
+        "fr": ["La douleur identifiable crée de la fidélité","Une forte émotion augmente les commentaires"],
+        "ar": ["الألم المشترك يخلق الولاء","العاطفة القوية تزيد التعليقات"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Create emotional reel idea for local business",
+          "fr": "Créez une idée de reel émotionnel pour une entreprise locale",
+          "ar": "أنشئ فكرة ريلز عاطفية لمشروع محلي"
+        },
+        "reward_xp": 90
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Retention Warfare",
+        "fr": "Guerre de la Rétention",
+        "ar": "حرب الاحتفاظ بالجمهور"
+      },
+      "xp": 180,
+      "core_concept": {
+        "en": "Retention decides if content survives.",
+        "fr": "La rétention décide si le contenu survit.",
+        "ar": "الاحتفاظ بالجمهور يحدد بقاء المحتوى."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "The algorithm rewards videos people continue watching.",
+          "fr": "L'algorithme récompense les vidéos que les gens continuent de regarder.",
+          "ar": "الخوارزمية تكافئ الفيديوهات التي يستمر الناس في مشاهدتها."
+        },
+        "why_it_matters": {
+          "en": "Better retention = more reach.",
+          "fr": "Meilleure rétention = plus de portée.",
+          "ar": "احتفاظ أفضل = وصول أكبر."
+        },
+        "internet_truth": {
+          "en": "Boring middle sections destroy content.",
+          "fr": "Les sections du milieu ennuyeuses détruisent le contenu.",
+          "ar": "الأجزاء الوسطى المملة تدمر المحتوى."
+        }
+      },
+      "retention_systems": {
+        "en": ["Curiosity loops","Open loops","Pattern interruption","Micro surprises"],
+        "fr": ["Boucles de curiosité","Boucles ouvertes","Interruption de schéma","Micro surprises"],
+        "ar": ["حلقات الفضول","الحلقات المفتوحة","كسر النمط","المفاجآت الصغيرة"]
+      },
+      "real_examples": {
+        "en": ["Wait until the end 😳","But then something unexpected happened..."],
+        "fr": ["Attendez jusqu'à la fin 😳","Mais ensuite quelque chose d'inattendu s'est produit..."],
+        "ar": ["انتظر حتى النهاية 😳","لكن بعد ذلك حدث شيء غير متوقع..."]
+      },
+      "missions": {
+        "en": ["Find retention drops","Fix weak middle sections","Predict viewer exits"],
+        "fr": ["Trouvez les baisses de rétention","Corrigez les sections du milieu faibles","Prédisez les sorties des spectateurs"],
+        "ar": ["ابحث عن انخفاضات المشاهدة","أصلح الأقسام الوسطى الضعيفة","توقع خروج المشاهدين"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Increase reel retention psychologically",
+          "fr": "Augmentez psychologiquement la rétention du reel",
+          "ar": "زد الاحتفاظ بالجمهور في الريلز نفسياً"
+        },
+        "reward_xp": 100
+      },
+      "pro_secrets": {
+        "en": ["The brain hates unfinished information","Unexpected moments reset attention"],
+        "fr": ["Le cerveau déteste les informations inachevées","Les moments inattendus réinitialisent l'attention"],
+        "ar": ["الدماغ يكره المعلومات غير المكتملة","اللحظات غير المتوقعة تُعيد ضبط الانتباه"]
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "Caption & CTA Domination",
+        "fr": "Domination des Légendes et des CTA",
+        "ar": "السيطرة على التعليقات والدعوة للتفاعل"
+      },
+      "xp": 180,
+      "core_concept": {
+        "en": "Words control audience behavior.",
+        "fr": "Les mots contrôlent le comportement du public.",
+        "ar": "الكلمات تتحكم في سلوك الجمهور."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Captions and CTAs guide emotion, interaction and action.",
+          "fr": "Les légendes et CTAs guident l'émotion, l'interaction et l'action.",
+          "ar": "التعليقات والدعوات للتفاعل توجه العاطفة والتفاعل والعمل."
+        },
+        "why_it_matters": {
+          "en": "Even strong content can fail if the audience doesn't know what to do next.",
+          "fr": "Même un contenu fort peut échouer si le public ne sait pas quoi faire ensuite.",
+          "ar": "حتى المحتوى القوي قد يفشل إذا لم يعرف الجمهور ما يفعله بعد ذلك."
+        },
+        "internet_truth": {
+          "en": "People react when emotion + instruction combine together.",
+          "fr": "Les gens réagissent quand l'émotion et l'instruction se combinent.",
+          "ar": "الناس يتفاعلون عندما تتحد العاطفة مع التوجيه."
+        }
+      },
+      "psychology_systems": {
+        "en": ["Curiosity captions","Emotional captions","Comment triggers","Save triggers","Share psychology"],
+        "fr": ["Légendes de curiosité","Légendes émotionnelles","Déclencheurs de commentaires","Déclencheurs de sauvegarde","Psychologie du partage"],
+        "ar": ["تعليقات الفضول","التعليقات العاطفية","محفزات التعليق","محفزات الحفظ","سيكولوجية المشاركة"]
+      },
+      "real_examples": {
+        "en": ["Would YOU try this? 😳","Save this before you forget 💣","Tag someone who needs this","Nobody talks about this..."],
+        "fr": ["Est-ce que VOUS essaieriez ça? 😳","Sauvegardez ça avant d'oublier 💣","Taguez quelqu'un qui a besoin de ça","Personne ne parle de ça..."],
+        "ar": ["هل ستجرب هذا أنت؟ 😳","احفظ هذا قبل أن تنساه 💣","أشر إلى شخص يحتاج هذا","لا أحد يتحدث عن هذا..."]
+      },
+      "common_mistakes": {
+        "en": ["Long boring captions","No emotional trigger","Weak CTA","Too generic"],
+        "fr": ["Longues légendes ennuyeuses","Pas de déclencheur émotionnel","CTA faible","Trop générique"],
+        "ar": ["تعليقات طويلة ومملة","لا محفز عاطفي","دعوة للتفاعل ضعيفة","عامة جداً"]
+      },
+      "caption_breakdown": {
+        "bad": {
+          "en": "Today we made coffee",
+          "fr": "Aujourd'hui nous avons fait du café",
+          "ar": "اليوم صنعنا القهوة"
+        },
+        "good": {
+          "en": "This coffee shop in Morocco feels illegal 😳☕",
+          "fr": "Ce café au Maroc semble illégal 😳☕",
+          "ar": "هذا المقهى في المغرب يبدو غير قانوني 😳☕"
+        }
+      },
+      "missions": {
+        "en": ["Write 15 emotional captions","Rewrite boring captions","Create 10 powerful CTAs"],
+        "fr": ["Écrivez 15 légendes émotionnelles","Réécrivez les légendes ennuyeuses","Créez 10 CTAs puissants"],
+        "ar": ["اكتب 15 تعليقاً عاطفياً","أعد كتابة التعليقات المملة","أنشئ 10 دعوات تفاعل قوية"]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Cafe",
+          "fr": "Café",
+          "ar": "مقهى"
+        },
+        "task": {
+          "en": "Write viral caption for local Moroccan coffee reel",
+          "fr": "Écrivez une légende virale pour un reel de café marocain local",
+          "ar": "اكتب تعليقاً فيروسياً لريلز مقهى مغربي محلي"
+        }
+      },
+      "pro_secrets": {
+        "en": ["Questions increase comments naturally","Emotion + curiosity creates engagement","Short captions perform better on reels"],
+        "fr": ["Les questions augmentent naturellement les commentaires","Émotion + curiosité crée de l'engagement","Les légendes courtes fonctionnent mieux sur les reels"],
+        "ar": ["الأسئلة تزيد التعليقات بشكل طبيعي","العاطفة + الفضول يخلقان التفاعل","التعليقات القصيرة تؤدي أفضل في الريلز"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Create caption strong enough to force comments",
+          "fr": "Créez une légende assez forte pour forcer les commentaires",
+          "ar": "أنشئ تعليقاً قوياً بما يكفي لإجبار الناس على التعليق"
+        },
+        "reward_xp": 100
+      },
+      "ai_feedback_examples": {
+        "en": ["Nobody will read this 😭","THIS feels clickable 💣","Good emotional trigger 🔥"],
+        "fr": ["Personne ne lira ça 😭","ÇA semble cliquable 💣","Bon déclencheur émotionnel 🔥"],
+        "ar": ["لن يقرأ هذا أحد 😭","هذا يشعر بأنه قابل للنقر 💣","محفز عاطفي جيد 🔥"]
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "en": "Storytelling Domination",
+        "fr": "Domination du Storytelling",
+        "ar": "السيطرة على فن السرد القصصي"
+      },
+      "xp": 220,
+      "core_concept": {
+        "en": "Stories create emotional addiction.",
+        "fr": "Les histoires créent une addiction émotionnelle.",
+        "ar": "القصص تخلق الإدمان العاطفي."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Humans remember stories more than facts.",
+          "fr": "Les humains se souviennent des histoires plus que des faits.",
+          "ar": "البشر يتذكرون القصص أكثر من الحقائق."
+        },
+        "why_it_matters": {
+          "en": "Stories increase watch time, emotional connection and trust.",
+          "fr": "Les histoires augmentent le temps de visionnage, la connexion émotionnelle et la confiance.",
+          "ar": "القصص تزيد وقت المشاهدة والتواصل العاطفي والثقة."
+        },
+        "internet_truth": {
+          "en": "Good storytelling feels like emotional manipulation 😄",
+          "fr": "Un bon storytelling ressemble à une manipulation émotionnelle 😄",
+          "ar": "السرد الجيد يشبه التلاعب العاطفي 😄"
+        }
+      },
+      "story_systems": {
+        "en": ["Hook","Conflict","Emotion","Transformation","Lesson"],
+        "fr": ["Accroche","Conflit","Émotion","Transformation","Leçon"],
+        "ar": ["الخطاف","الصراع","العاطفة","التحول","الدرس"]
+      },
+      "advanced_story_psychology": {
+        "en": ["Suspense","Curiosity loops","Emotional pacing","Vulnerability","Payoff timing"],
+        "fr": ["Suspense","Boucles de curiosité","Rythme émotionnel","Vulnérabilité","Timing de la récompense"],
+        "ar": ["التشويق","حلقات الفضول","الإيقاع العاطفي","الضعف","توقيت المكافأة"]
+      },
+      "real_examples": {
+        "en": ["I almost gave up completely...","Then something unexpected happened","That moment changed everything"],
+        "fr": ["J'ai failli abandonner complètement...","Puis quelque chose d'inattendu s'est produit","Ce moment a tout changé"],
+        "ar": ["كدت أستسلم تماماً...","ثم حدث شيء غير متوقع","تلك اللحظة غيّرت كل شيء"]
+      },
+      "common_mistakes": {
+        "en": ["No emotional build-up","Too much explaining","No payoff","No suspense"],
+        "fr": ["Pas de montée émotionnelle","Trop d'explications","Pas de récompense","Pas de suspense"],
+        "ar": ["لا بناء عاطفي","شرح مفرط","لا مكافأة","لا تشويق"]
+      },
+      "missions": {
+        "en": ["Turn boring topic into story","Create suspense-based reel idea","Write emotional transformation story"],
+        "fr": ["Transformez un sujet ennuyeux en histoire","Créez une idée de reel basée sur le suspense","Écrivez une histoire de transformation émotionnelle"],
+        "ar": ["حوّل موضوعاً مملاً إلى قصة","أنشئ فكرة ريلز قائمة على التشويق","اكتب قصة تحول عاطفية"]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Beauty salon",
+          "fr": "Salon de beauté",
+          "ar": "صالون تجميل"
+        },
+        "task": {
+          "en": "Create emotional client transformation story",
+          "fr": "Créez une histoire émotionnelle de transformation client",
+          "ar": "أنشئ قصة تحول عاطفية لعميل"
+        }
+      },
+      "pro_secrets": {
+        "en": ["People connect to vulnerability","Suspense increases retention dramatically","Transformation stories feel inspiring"],
+        "fr": ["Les gens se connectent à la vulnérabilité","Le suspense augmente considérablement la rétention","Les histoires de transformation semblent inspirantes"],
+        "ar": ["الناس يتواصلون مع الضعف","التشويق يزيد المشاهدة بشكل كبير","قصص التحول تشعر بالإلهام"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Create unforgettable emotional story reel",
+          "fr": "Créez un reel d'histoire émotionnelle inoubliable",
+          "ar": "أنشئ ريلز قصة عاطفية لا تُنسى"
+        },
+        "reward_xp": 120
+      },
+      "ai_feedback_examples": {
+        "en": ["Too flat emotionally 😭","This actually FEELS real 💣","Good suspense 🔥"],
+        "fr": ["Trop plat émotionnellement 😭","Ça SEMBLE vraiment réel 💣","Bon suspense 🔥"],
+        "ar": ["مسطح عاطفياً جداً 😭","هذا يبدو حقيقياً فعلاً 💣","تشويق جيد 🔥"]
+      }
+    },
+    {
+      "id": 8,
+      "title": {
+        "en": "Trend Hijacking God Mode",
+        "fr": "Détournement de Tendances Mode Dieu",
+        "ar": "اختطاف الترند - وضع الإله"
+      },
+      "xp": 190,
+      "core_concept": {
+        "en": "Trends are emotional waves on the internet.",
+        "fr": "Les tendances sont des vagues émotionnelles sur internet.",
+        "ar": "الترندات هي موجات عاطفية على الإنترنت."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Smart creators adapt trends instead of blindly copying them.",
+          "fr": "Les créateurs intelligents adaptent les tendances au lieu de les copier aveuglément.",
+          "ar": "صناع المحتوى الأذكياء يتكيفون مع الترندات بدلاً من نسخها بشكل أعمى."
+        },
+        "why_it_matters": {
+          "en": "Trends can massively increase reach when used correctly.",
+          "fr": "Les tendances peuvent massivement augmenter la portée quand elles sont bien utilisées.",
+          "ar": "يمكن للترندات أن تزيد الوصول بشكل كبير عند استخدامها بشكل صحيح."
+        },
+        "internet_truth": {
+          "en": "Late trends are already dead 😭",
+          "fr": "Les tendances tardives sont déjà mortes 😭",
+          "ar": "الترندات المتأخرة ماتت بالفعل 😭"
+        }
+      },
+      "trend_systems": {
+        "en": ["Trend timing","Trend psychology","Trend adaptation","Local trend domination","Trend emotion matching"],
+        "fr": ["Timing des tendances","Psychologie des tendances","Adaptation des tendances","Domination des tendances locales","Correspondance émotionnelle des tendances"],
+        "ar": ["توقيت الترند","سيكولوجية الترند","تكييف الترند","السيطرة على الترند المحلي","مطابقة عاطفة الترند"]
+      },
+      "real_examples": {
+        "en": ["Using trending audio with local twist","Turning global trend into Moroccan version","Fast creators dominate trends"],
+        "fr": ["Utiliser l'audio tendance avec une touche locale","Transformer une tendance mondiale en version marocaine","Les créateurs rapides dominent les tendances"],
+        "ar": ["استخدام الصوت الشائع مع لمسة محلية","تحويل الترند العالمي إلى نسخة مغربية","صناع المحتوى السريعون يسيطرون على الترندات"]
+      },
+      "common_mistakes": {
+        "en": ["Copying trends blindly","Using dead trends","No originality","Ignoring audience emotion"],
+        "fr": ["Copier les tendances aveuglément","Utiliser des tendances mortes","Pas d'originalité","Ignorer l'émotion du public"],
+        "ar": ["نسخ الترندات بشكل أعمى","استخدام ترندات ميتة","لا أصالة","تجاهل عاطفة الجمهور"]
+      },
+      "missions": {
+        "en": ["Find 5 current trends","Create Moroccan version of trend","Predict which trend will die soon"],
+        "fr": ["Trouvez 5 tendances actuelles","Créez une version marocaine d'une tendance","Prédisez quelle tendance va bientôt mourir"],
+        "ar": ["ابحث عن 5 ترندات حالية","أنشئ نسخة مغربية من ترند","توقع أي ترند سيموت قريباً"]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Clothing brand",
+          "fr": "Marque de vêtements",
+          "ar": "علامة تجارية للملابس"
+        },
+        "task": {
+          "en": "Adapt viral fashion trend for Moroccan audience",
+          "fr": "Adaptez une tendance mode virale pour le public marocain",
+          "ar": "تكيّف مع ترند موضة فيروسي للجمهور المغربي"
+        }
+      },
+      "pro_secrets": {
+        "en": ["Fast adaptation beats perfection","Localizing trends increases relatability","Trends spread emotion faster than information"],
+        "fr": ["L'adaptation rapide bat la perfection","La localisation des tendances augmente l'identification","Les tendances diffusent les émotions plus vite que les informations"],
+        "ar": ["التكيف السريع يتفوق على الكمال","تحليل الترندات يزيد التماهي","الترندات تنشر العاطفة أسرع من المعلومات"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Create trend with unique emotional twist",
+          "fr": "Créez une tendance avec une touche émotionnelle unique",
+          "ar": "أنشئ ترنداً بلمسة عاطفية فريدة"
+        },
+        "reward_xp": 100
+      },
+      "ai_feedback_examples": {
+        "en": ["This trend already died 😭","GOOD local adaptation 💣","This has viral potential 🔥"],
+        "fr": ["Cette tendance est déjà morte 😭","BONNE adaptation locale 💣","Ça a un potentiel viral 🔥"],
+        "ar": ["هذا الترند مات بالفعل 😭","تكيف محلي جيد 💣","هذا لديه إمكانية فيروسية 🔥"]
+      }
+    },
+    {
+      "id": 9,
+      "title": {
+        "en": "Creator Mindset & Audience Psychology",
+        "fr": "État d'Esprit du Créateur et Psychologie du Public",
+        "ar": "عقلية المبدع وسيكولوجية الجمهور"
+      },
+      "xp": 250,
+      "core_concept": {
+        "en": "Great creators understand human behavior.",
+        "fr": "Les grands créateurs comprennent le comportement humain.",
+        "ar": "صناع المحتوى العظماء يفهمون السلوك البشري."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "The internet is emotional warfare for attention.",
+          "fr": "Internet est une guerre émotionnelle pour l'attention.",
+          "ar": "الإنترنت هو حرب عاطفية على الانتباه."
+        },
+        "why_it_matters": {
+          "en": "Creators who understand psychology grow faster.",
+          "fr": "Les créateurs qui comprennent la psychologie grandissent plus vite.",
+          "ar": "صناع المحتوى الذين يفهمون علم النفس ينمون بشكل أسرع."
+        },
+        "internet_truth": {
+          "en": "Most creators fail because they think like consumers.",
+          "fr": "La plupart des créateurs échouent parce qu'ils pensent comme des consommateurs.",
+          "ar": "معظم صناع المحتوى يفشلون لأنهم يفكرون كمستهلكين."
+        }
+      },
+      "mindset_training": {
+        "en": ["Attention economy","Consistency","Audience psychology","Emotional triggers","Internet behavior"],
+        "fr": ["Économie de l'attention","Régularité","Psychologie du public","Déclencheurs émotionnels","Comportement sur internet"],
+        "ar": ["اقتصاد الانتباه","الاستمرارية","سيكولوجية الجمهور","المحفزات العاطفية","السلوك على الإنترنت"]
+      },
+      "audience_psychology": {
+        "en": ["People seek emotion","People love relatability","People fear missing out","People follow confidence"],
+        "fr": ["Les gens cherchent l'émotion","Les gens aiment s'identifier","Les gens ont peur de manquer quelque chose","Les gens suivent la confiance"],
+        "ar": ["الناس يبحثون عن العاطفة","الناس يحبون التماهي","الناس يخافون من فوات الفرصة","الناس يتبعون الثقة"]
+      },
+      "common_mistakes": {
+        "en": ["Posting randomly","Thinking emotionally instead of strategically","Ignoring audience retention","Quitting too early"],
+        "fr": ["Poster aléatoirement","Penser émotionnellement au lieu de stratégiquement","Ignorer la rétention du public","Abandonner trop tôt"],
+        "ar": ["النشر عشوائياً","التفكير عاطفياً بدلاً من استراتيجياً","تجاهل الاحتفاظ بالجمهور","الاستسلام مبكراً"]
+      },
+      "missions": {
+        "en": ["Analyze creator comments","Study audience reactions","Find emotional patterns"],
+        "fr": ["Analysez les commentaires des créateurs","Étudiez les réactions du public","Trouvez les schémas émotionnels"],
+        "ar": ["حلل تعليقات صناع المحتوى","ادرس ردود فعل الجمهور","ابحث عن الأنماط العاطفية"]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Freelancer page",
+          "fr": "Page freelance",
+          "ar": "صفحة مستقل"
+        },
+        "task": {
+          "en": "Identify why engagement feels weak",
+          "fr": "Identifiez pourquoi l'engagement semble faible",
+          "ar": "حدد لماذا يبدو التفاعل ضعيفاً"
+        }
+      },
+      "pro_secrets": {
+        "en": ["Consistency builds audience trust","Attention is more valuable than followers","Emotion controls internet behavior"],
+        "fr": ["La régularité construit la confiance du public","L'attention est plus précieuse que les abonnés","L'émotion contrôle le comportement sur internet"],
+        "ar": ["الاستمرارية تبني ثقة الجمهور","الانتباه أكثر قيمة من المتابعين","العاطفة تتحكم في السلوك على الإنترنت"]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Think like a viral creator instead of normal user",
+          "fr": "Pensez comme un créateur viral plutôt qu'un utilisateur normal",
+          "ar": "فكّر كصانع محتوى فيروسي بدلاً من مستخدم عادي"
+        },
+        "reward_xp": 150
+      },
+      "ai_feedback_examples": {
+        "en": ["You're thinking too safely 😭","Now you're understanding audience psychology 💣","This mindset creates creators 🔥"],
+        "fr": ["Vous pensez trop prudemment 😭","Maintenant vous comprenez la psychologie du public 💣","Cet état d'esprit crée des créateurs 🔥"],
+        "ar": ["أنت تفكر بأمان شديد 😭","الآن أنت تفهم سيكولوجية الجمهور 💣","هذه العقلية تصنع صناع محتوى 🔥"]
+      }
+    },
+    {
+      "id": 10,
+      "title": {
+        "en": "FINAL VIRAL SIMULATION",
+        "fr": "SIMULATION VIRALE FINALE",
+        "ar": "المحاكاة الفيروسية النهائية"
+      },
+      "xp": 400,
+      "core_concept": {
+        "en": "Real creators combine psychology, emotion and strategy together.",
+        "fr": "Les vrais créateurs combinent psychologie, émotion et stratégie ensemble.",
+        "ar": "صناع المحتوى الحقيقيون يجمعون علم النفس والعاطفة والاستراتيجية معاً."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "This final simulation tests whether the user can think like a creator.",
+          "fr": "Cette simulation finale teste si l'utilisateur peut penser comme un créateur.",
+          "ar": "هذه المحاكاة النهائية تختبر ما إذا كان المستخدم يستطيع التفكير كصانع محتوى."
+        },
+        "why_it_matters": {
+          "en": "The internet rewards creators who understand human attention deeply.",
+          "fr": "Internet récompense les créateurs qui comprennent profondément l'attention humaine.",
+          "ar": "الإنترنت يكافئ صناع المحتوى الذين يفهمون الانتباه البشري بعمق."
+        },
+        "internet_truth": {
+          "en": "Viral content is engineered emotion.",
+          "fr": "Le contenu viral est une émotion engineerée.",
+          "ar": "المحتوى الفيروسي هو عاطفة مهندسة."
+        }
+      },
+      "simulation_systems": {
+        "en": ["Hook analysis","Emotion detection","Retention prediction","Visual optimization","CTA improvement","Trend adaptation"],
+        "fr": ["Analyse des accroches","Détection des émotions","Prédiction de rétention","Optimisation visuelle","Amélioration des CTA","Adaptation aux tendances"],
+        "ar": ["تحليل الخطاف","كشف العاطفة","توقع الاحتفاظ","تحسين المرئيات","تحسين الدعوة للتفاعل","التكيف مع الترندات"]
+      },
+      "final_missions": {
+        "en": ["Build complete viral reel strategy","Analyze weak content","Improve retention","Create emotional hook","Write strong CTA"],
+        "fr": ["Construire une stratégie complète de reel viral","Analyser un contenu faible","Améliorer la rétention","Créer une accroche émotionnelle","Écrire un CTA fort"],
+        "ar": ["بناء استراتيجية ريلز فيروسية كاملة","تحليل المحتوى الضعيف","تحسين الاحتفاظ","إنشاء خطاف عاطفي","كتابة دعوة تفاعل قوية"]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Moroccan local business",
+          "fr": "Entreprise locale marocaine",
+          "ar": "مشروع تجاري محلي مغربي"
+        },
+        "task": {
+          "en": "Create full viral content strategy",
+          "fr": "Créer une stratégie complète de contenu viral",
+          "ar": "إنشاء استراتيجية محتوى فيروسي كاملة"
+        }
+      },
+      "pro_secrets": {
+        "en": ["Most viral content follows hidden psychology patterns","Emotion + retention = reach","Creators shape internet culture"],
+        "fr": ["La plupart des contenus viraux suivent des schémas psychologiques cachés","Émotion + rétention = portée","Les créateurs façonnent la culture internet"],
+        "ar": ["معظم المحتوى الفيروسي يتبع أنماطاً نفسية خفية","العاطفة + الاحتفاظ = الوصول","صناع المحتوى يشكلون ثقافة الإنترنت"]
+      },
+      "challenge_mode": {
+        "type": "full_creator_simulation",
+        "instruction": {
+          "en": "Build full viral content campaign from scratch",
+          "fr": "Construire une campagne de contenu viral complète de zéro",
+          "ar": "بناء حملة محتوى فيروسي كاملة من الصفر"
+        },
+        "reward_xp": 250
+      },
+      "final_result": {
+        "title": {
+          "en": "Viral Content Brain Activated 💣",
+          "fr": "Cerveau de Contenu Viral Activé 💣",
+          "ar": "تم تفعيل عقل المحتوى الفيروسي 💣"
+        },
+        "level": {
+          "en": "Content Psychology Dominator",
+          "fr": "Dominateur de Psychologie du Contenu",
+          "ar": "مسيطر على سيكولوجية المحتوى"
+        }
+      },
+      "ai_feedback_examples": {
+        "en": ["You think like a creator now 💣","This actually has viral potential 🔥","Your psychology understanding became dangerous 😳"],
+        "fr": ["Vous pensez comme un créateur maintenant 💣","Ça a vraiment un potentiel viral 🔥","Votre compréhension de la psychologie est devenue dangereuse 😳"],
+        "ar": ["أنت تفكر كصانع محتوى الآن 💣","هذا لديه إمكانية فيروسية فعلاً 🔥","فهمك لعلم النفس أصبح خطيراً 😳"]
+      }
+    }
+  ]
+}
