@@ -137,17 +137,23 @@
         border-color: #d97706; 
         box-shadow: 0 0 10px rgba(217, 119, 6, 0.1);
     }
+    .ai-input-area input:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
     
     .stt-btn { background: none; border: none; font-size: 20px; cursor: pointer; transition: 0.3s; color: #94a3b8; margin-right: 10px; }
-    .stt-btn:hover { color: #fbbf24; transform: scale(1.1); }
+    .stt-btn:hover:not(:disabled) { color: #fbbf24; transform: scale(1.1); }
     .stt-btn.recording { color: #ef4444; animation: pulse-red 1.5s infinite; }
+    .stt-btn:disabled { opacity: 0.5; cursor: not-allowed; }
     
     .send-btn { 
         background: #ffffff; color: #000000; border: none; width: 44px; height: 44px; 
         margin-left: 12px; border-radius: 50%; cursor: pointer; font-weight: bold; 
         font-size: 16px; display: flex; align-items: center; justify-content: center; transition: 0.3s; 
     }
-    .send-btn:hover { background: #fbbf24; transform: scale(1.05); }
+    .send-btn:hover:not(:disabled) { background: #fbbf24; transform: scale(1.05); }
+    .send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
     /* =========================================
        2. FULL SCREEN LIVE CALL OVERLAY 🚀
@@ -215,7 +221,7 @@
     <div class="ai-input-area">
         <button id="sttBtn" class="stt-btn" onclick="toggleSTT()" title="Parler pour écrire">🎙️</button>
         <input type="text" id="aiInput" placeholder="Écris un message..." autocomplete="off" onkeypress="if(event.key === 'Enter') sendTextMessage()">
-        <button class="send-btn" onclick="sendTextMessage()">➔</button>
+        <button id="sendMsgBtn" class="send-btn" onclick="sendTextMessage()">➔</button>
     </div>
 </div>
 
@@ -240,7 +246,7 @@
 
 <script>
     // ==========================================
-    // 1. TEXT CHAT LOGIC (No Audio Playing)
+    // 1. TEXT CHAT LOGIC 
     // ==========================================
     function toggleAIPanel() {
         const panel = document.getElementById('aiPanel');
@@ -255,7 +261,24 @@
         document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
     }
 
-    // SPEECH TO TEXT ONLY (Fills input box)
+    // 🛑 PLG TRAP: Show Paywall UI and lock inputs
+    function lockChatWithPaywall(message) {
+        const upsellMessage = `
+            <div style="background: #FFF1F2; border: 1px solid #FECDD3; border-radius: 12px; padding: 15px; color: #9F1239; margin-top: 10px;">
+                <b style="font-size: 16px;">⚠️ Limite Atteinte !</b><br><br>
+                ${message}<br><br>
+                <a href="/premium" style="display: block; text-align: center; background: linear-gradient(135deg, #d97706, #f59e0b); color: white; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 12px; box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3);">👑 Voir les plans Premium</a>
+            </div>
+        `;
+        appendAIMessage(upsellMessage, 'ai');
+        
+        document.getElementById('aiInput').disabled = true;
+        document.getElementById('aiInput').placeholder = "Passez en Premium pour continuer...";
+        document.getElementById('sendMsgBtn').disabled = true;
+        document.getElementById('sttBtn').disabled = true;
+    }
+
+    // SPEECH TO TEXT ONLY
     let sttRecognition;
     function toggleSTT() {
         if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
@@ -279,7 +302,7 @@
         sttRecognition.start();
     }
 
-    // NORMAL TEXT CHAT (No Audio)
+    // NORMAL TEXT CHAT
     window.sendTextMessage = async function() {
         const input = document.getElementById('aiInput');
         const text = input.value.trim();
@@ -305,6 +328,12 @@
             const aiData = await aiRes.json();
             document.getElementById(typingId).remove();
             
+            // 🛑 CHECK FOR PAYWALL LIMIT
+            if (aiData.limitReached) {
+                lockChatWithPaywall(aiData.feedback || aiData.message || "Tu as atteint ta limite de messages gratuits.");
+                return;
+            }
+
             if(aiData.feedback) { 
                 appendAIMessage(aiData.feedback, 'ai');
             }
@@ -314,7 +343,7 @@
         }
     }
 
-    // Custom Error Trigger for Text Chat
+    // Custom Error Trigger
     window.triggerAICoachError = async function(whatTheySaid, target) {
         document.getElementById('aiPanel').style.display = 'flex';
         appendAIMessage(`J'ai dit "${whatTheySaid}" au lieu de "${target}". Pourquoi ?`, 'user');
@@ -340,6 +369,12 @@
             const aiData = await aiRes.json();
             document.getElementById(typingId).remove();
             
+            // 🛑 CHECK FOR PAYWALL LIMIT
+            if (aiData.limitReached) {
+                lockChatWithPaywall(aiData.feedback || aiData.message || "Tu as atteint ta limite de messages gratuits.");
+                return;
+            }
+            
             if(aiData.feedback) { 
                 appendAIMessage(aiData.feedback, 'ai'); 
             }
@@ -350,20 +385,20 @@
     }
 
     // ==========================================
-    // 2. LIVE CALL LOGIC (Raw 16kHz PCM Fix)
+    // 2. LIVE CALL LOGIC (Raw 16kHz PCM Fix + Paywall)
     // ==========================================
     let isCallActive = false;
     let isMuted = false;
     let liveSocket = null;
     let audioStream = null;
-    let audioContext = null; // To play received audio from Gemini
+    let audioContext = null; 
     
-    // Naye variables Raw PCM encoding ke liye
     let micAudioContext = null; 
     let audioProcessor = null;
 
     async function openLiveCallScreen() {
-        toggleAIPanel(); 
+        toggleAIPanel(); // Hide text chat temporarily
+        
         const callScreen = document.getElementById('liveCallScreen');
         callScreen.style.display = 'flex';
         setTimeout(() => callScreen.classList.add('active'), 10);
@@ -377,18 +412,29 @@
             audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
             console.log("🎙️ Hardware Mic Connected!");
 
-            // 🔑 STEP 2: VERCEL BACKEND SE TEMPORARY PASS LO
+            // 🔑 STEP 2: VERCEL BACKEND SE TOKEN/KEY LO
             const tokenRes = await fetch('/api/ai/live-token');
+            
+            // 🛑 403 FORBIDDEN - PAYWALL TRIGGER
+            if (tokenRes.status === 403) {
+                const errorData = await tokenRes.json();
+                if (errorData.limitReached) {
+                    closeLiveCallScreen(); // Close the call overlay immediately
+                    toggleAIPanel(); // Bring the text chat back up
+                    lockChatWithPaywall("Tu as atteint ta limite de messages/appels gratuits. Passe en Premium pour parler en illimité ! 🎙️");
+                    return; // Stop execution here
+                }
+            }
+
             const tokenData = await tokenRes.json();
 
             if(!tokenData.success) {
-                throw new Error("Token nahi mila!");
+                throw new Error("API Key nahi mili! Backend check karo.");
             }
 
             // 🚀 STEP 3: DIRECT GOOGLE WEBSOCKET CONNECTION
             liveSocket = new WebSocket(`${tokenData.url}?key=${tokenData.key}`);
             
-            // Set up audio context for playback
             window.AudioContext = window.AudioContext || window.webkitAudioContext;
             audioContext = new AudioContext();
 
@@ -397,10 +443,9 @@
                 document.getElementById('callStatusText').innerText = "● LIVE";
                 document.getElementById('callStatusText').style.color = "#22c55e"; 
                 
-                // Initial setup message required by Gemini Live API
                 const setupMessage = {
                     setup: {
-                        model: "models/gemini-2.0-flash", 
+                        model: "models/gemini-3.1-flash-live-preview",
                         generationConfig: {
                             responseModalities: ["AUDIO"]
                         }
@@ -408,15 +453,13 @@
                 };
                 liveSocket.send(JSON.stringify(setupMessage));
                 
-                // Wait a moment for setup to complete, then start sending PCM audio
                 setTimeout(startStreamingPCMAudio, 500);
             };
 
             liveSocket.onmessage = async (event) => {
                 if (event.data instanceof Blob) {
-                    // Gemini sends raw PCM audio as binary blobs
-                    console.log("🔊 Received Audio Blob from Gemini");
-                    simulateAminaSpeaking(); // Trigger UI animation
+                    // console.log("🔊 Received Audio Blob from Gemini");
+                    simulateAminaSpeaking(); 
                     
                     try {
                         const arrayBuffer = await event.data.arrayBuffer();
@@ -430,7 +473,6 @@
                         console.log("Error decoding audio buffer", e);
                     }
                 } else {
-                    // Handle JSON messages (status, text transcriptions, etc)
                     try {
                         const data = JSON.parse(event.data);
                         // console.log("Message from Gemini:", data);
@@ -449,20 +491,20 @@
 
         } catch (error) {
             console.error("Live Call Error:", error);
-            alert("Connection issue: " + error.message);
+            // Ignore error logs if user just blocked mic permission, otherwise alert
+            if (error.name !== "NotAllowedError" && error.message !== "Permission denied") {
+                alert("Erreur de connexion: " + error.message);
+            }
             closeLiveCallScreen();
         }
     }
 
-    // Ye naya function hai jo browser ki WebM ki jagah server ko raw PCM bhejega
     function startStreamingPCMAudio() {
         if(!audioStream || !liveSocket) return;
 
-        // Force browser to sample mic at 16kHz
         micAudioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
         const source = micAudioContext.createMediaStreamSource(audioStream);
         
-        // Create script processor to intercept audio data
         audioProcessor = micAudioContext.createScriptProcessor(4096, 1, 1);
         
         source.connect(audioProcessor);
@@ -472,14 +514,12 @@
             if (liveSocket.readyState === WebSocket.OPEN && !isMuted) {
                 const inputData = e.inputBuffer.getChannelData(0);
                 
-                // Convert Float32 (Browser) to Int16 (Gemini required format)
                 const pcm16 = new Int16Array(inputData.length);
                 for (let i = 0; i < inputData.length; i++) {
                     let s = Math.max(-1, Math.min(1, inputData[i]));
                     pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
                 }
                 
-                // Convert Int16Array to Base64 String
                 let binary = '';
                 const bytes = new Uint8Array(pcm16.buffer);
                 const len = bytes.byteLength;
@@ -488,7 +528,6 @@
                 }
                 const base64Audio = window.btoa(binary);
 
-                // Send strictly as audio/pcm;rate=16000
                 liveSocket.send(JSON.stringify({
                     realtimeInput: {
                         mediaChunks: [{ mimeType: "audio/pcm;rate=16000", data: base64Audio }]
@@ -506,7 +545,6 @@
         isCallActive = false;
         callScreen.classList.remove('speaking'); 
         
-        // 🛑 Sab kuch band karo (Processors, Contexts, Mic, Socket)
         if (audioProcessor) {
             audioProcessor.disconnect();
             audioProcessor = null;

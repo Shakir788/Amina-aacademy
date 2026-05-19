@@ -7,51 +7,46 @@
   },
   "content": {
     "fr": {
-      "objectif": "Comprendre profondément la différence entre les charges (Classe 6) et les produits (Classe 7), et leur impact sur le résultat.",
-
-      "explication": "🔷 Chaque entreprise fait deux choses :\n👉 Dépenser\n👉 Gagner\n\n👉 Charges = argent qui sort\n👉 Produits = argent qui entre\n\n🔷 Classe 6 = Dépenses\nExemples : loyer, salaires, électricité\n\n🔷 Classe 7 = Revenus\nExemples : ventes, services\n\n💥 Formule :\nRésultat = Produits - Charges\n\n👉 Bénéfice si positif\n👉 Perte si négatif\n\n🔷 Important :\nClasses 1-5 = situation\nClasses 6-7 = performance",
-
-      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000&auto=format&fit=crop",
-
-      "exemple": "AMINA vend pour 1200 DHS → Classe 7\n\nCoût = 400 DHS → Classe 6\n\nRésultat = 800 DHS",
-
-      "pratique": "1. Loyer → ?\n2. Vente → ?\n3. Salaire → ?\n4. Paiement client → ?",
-
-      "reponses": "1 → Classe 6\n2 → Classe 7\n3 → Classe 6\n4 → Classe 7",
-
-      "resume": "Classe 6 = dépenses\nClasse 7 = revenus\n\nRésultat = Produits - Charges"
+      "objectif": "Maîtriser le moteur de la rentabilité : Comprendre en profondeur la mécanique des Charges (Classe 6) et des Produits (Classe 7) pour analyser la performance réelle d'une entreprise.",
+      "explication": "🔹 Le Film de l'Année (Bilan vs Gestion)\nSi le Bilan (Classes 1 à 5) est une photographie de votre richesse à un instant précis, le Compte de Gestion (Classes 6 & 7) est le **film de l'année**. Il explique *comment* l'entreprise a généré son résultat.\n\n🔹 Classe 6 : Les Charges (Destruction de richesse)\nCe n'est pas juste de l'argent qui sort, c'est ce que l'entreprise **consomme** pour fonctionner au quotidien.\n- Achats de marchandises ou de matières premières\n- Frais généraux (Loyer, électricité, marketing, assurances)\n- Salaires et charges sociales\n\n🔹 Classe 7 : Les Produits (Création de richesse)\nC'est la valeur financière que l'entreprise **génère** grâce à son activité.\n- Ventes de marchandises ou de produits finis\n- Prestations de services facturées\n- Revenus financiers et subventions\n\n👍 La Règle d'Or de la Rentabilité\nLe résultat se calcule toujours ainsi : **Résultat = Total des Produits (7) - Total des Charges (6)**. \n✓ Si Produits > Charges = Bénéfice (L'entreprise s'enrichit).\n❌ Si Charges > Produits = Perte (L'entreprise s'appauvrit).",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000",
+      "exemple": "🔹 Étude de Cas : AMINA Digital Agency\nÀ la fin du mois, l'agence enregistre les opérations suivantes :\n\n- **Création (Classe 7) :** Facturation d'une campagne marketing à un client pour **30 000 DHS**.\n- **Consommation (Classe 6) :** Paiement des serveurs cloud (2 000 DHS), publicités (5 000 DHS) et salaires (10 000 DHS). Total des charges = **17 000 DHS**.\n\n👍 Analyse du Résultat\n30 000 DHS (Classe 7) - 17 000 DHS (Classe 6) = **+13 000 DHS**. L'agence a généré un bénéfice net.",
+      "pratique": "🔹 Audit Express\nAvant de passer au test interactif, mémorisez ceci : Tout ce qui enrichit l'entreprise est un produit (7), tout ce qui lui coûte pour fonctionner est une charge (6). Prêt pour le challenge ?",
+      "resume": "🔹 Classe 6 = Consommation (Dépenses d'exploitation)\n🔹 Classe 7 = Création (Chiffre d'affaires et revenus)\n👍 Résultat Net = Produits (7) - Charges (6)"
     },
-
     "en": {
-      "objectif": "Understand expenses and revenues and how they affect profit.",
-
-      "explication": "Every business spends and earns.\n\nExpenses = money out\nRevenue = money in\n\nResult = Revenue - Expenses",
-
-      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000&auto=format&fit=crop",
-
-      "exemple": "1200 DHS sale → Revenue\n400 DHS cost → Expense\n\nProfit = 800",
-
-      "pratique": "1. Rent → ?\n2. Sale → ?\n3. Salary → ?\n4. Client payment → ?",
-
-      "reponses": "1 → Expense\n2 → Revenue\n3 → Expense\n4 → Revenue",
-
-      "resume": "Expenses reduce profit, revenue increases it."
+      "objectif": "Master the engine of profitability: Deeply understand the mechanics of Expenses (Class 6) and Revenues (Class 7) to analyze a company's true performance.",
+      "explication": "🔹 The Movie of the Year (Balance Sheet vs. Income Statement)\nIf the Balance Sheet (Classes 1-5) is a snapshot of your wealth, the Income Statement (Classes 6 & 7) is the **movie of the year**. It explains *how* the business generated its profit or loss.\n\n🔹 Class 6: Expenses (Wealth Consumption)\nIt's not just \"money leaving\"; it's what the company **consumes** to operate daily.\n- Purchases of goods or raw materials\n- Overhead costs (Rent, electricity, marketing, insurance)\n- Salaries and payroll taxes\n\n🔹 Class 7: Revenues (Wealth Creation)\nThis is the financial value the company **generates** through its core activities.\n- Sales of goods or finished products\n- Billed services\n- Financial income and subsidies\n\n👍 The Golden Rule of Profitability\nThe result is always calculated as: **Result = Total Revenues (7) - Total Expenses (6)**.\n✓ If Revenues > Expenses = Profit (The company grows richer).\n❌ If Expenses > Revenues = Loss (The company burns cash).",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000",
+      "exemple": "🔹 Case Study: AMINA Digital Agency\nAt the end of the month, the agency records the following operations:\n\n- **Creation (Class 7):** Billing a client for a marketing campaign at **30,000 DHS**.\n- **Consumption (Class 6):** Payment for cloud servers (2,000 DHS), ads (5,000 DHS), and salaries (10,000 DHS). Total expenses = **17,000 DHS**.\n\n👍 Result Analysis\n30,000 DHS (Class 7) - 17,000 DHS (Class 6) = **+13,000 DHS**. The agency generated a net profit.",
+      "pratique": "🔹 Express Audit\nBefore taking the interactive test, memorize this: Everything that enriches the company is a revenue (7), everything it consumes to operate is an expense (6). Ready for the challenge?",
+      "resume": "🔹 Class 6 = Consumption (Operating Expenses)\n🔹 Class 7 = Creation (Sales and Revenues)\n👍 Net Result = Revenues (7) - Expenses (6)"
     },
-
     "ar": {
-      "objectif": "فهم التكاليف والإيرادات وتأثيرها على الربح.",
-
-      "explication": "كل شركة تنفق وتكسب.\n\nالتكاليف = مال يخرج\nالإيرادات = مال يدخل\n\nالنتيجة = الإيرادات - التكاليف",
-
-      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000&auto=format&fit=crop",
-
-      "exemple": "بيع 1200 درهم → إيراد\nتكلفة 400 درهم → مصروف\n\nالربح = 800",
-
-      "pratique": "1. إيجار → ؟\n2. بيع → ؟\n3. راتب → ؟\n4. مال من عميل → ؟",
-
-      "reponses": "1 → تكلفة\n2 → إيراد\n3 → تكلفة\n4 → إيراد",
-
-      "resume": "التكاليف تقلل الربح، والإيرادات تزيده."
+      "objectif": "إتقان محرك الربحية: الفهم العميق لآلية عمل التكاليف (الصنف 6) والإيرادات (الصنف 7) لتحليل الأداء الحقيقي للشركة.",
+      "explication": "🔹 فيلم السنة (الميزانية مقابل التسيير)\nإذا كانت الميزانية (الأصناف 1 إلى 5) هي صورة لثروتك في لحظة معينة، فإن حسابات التسيير (الأصناف 6 و 7) هي **فيلم السنة**. إنها تشرح *كيف* حققت الشركة نتيجتها.\n\n🔹 الصنف 6: التكاليف (استهلاك الثروة)\nالأمر ليس مجرد \"أموال تخرج\"، بل هو ما **تستهلكه** الشركة للعمل يومياً.\n- شراء البضائع أو المواد الأولية\n- النفقات العامة (الإيجار، الكهرباء، التسويق، التأمين)\n- الرواتب والضرائب الاجتماعية\n\n🔹 الصنف 7: الإيرادات (خلق الثروة)\nهذه هي القيمة المالية التي **تولدها** الشركة من خلال نشاطها الأساسي.\n- مبيعات البضائع أو المنتجات النهائية\n- تقديم الخدمات المفوترة\n- الدخل المالي والدعم\n\n👍 القاعدة الذهبية للربحية\nتُحسب النتيجة دائماً على النحو التالي: **النتيجة = إجمالي الإيرادات (7) - إجمالي التكاليف (6)**.\n✓ إذا كانت الإيرادات > التكاليف = ربح (تزداد ثروة الشركة).\n❌ إذا كانت التكاليف > الإيرادات = خسارة (تستنزف الشركة أموالها).",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1000",
+      "exemple": "🔹 دراسة حالة: وكالة أمينة الرقمية\nفي نهاية الشهر، سجلت الوكالة العمليات التالية:\n\n- **خلق (الصنف 7):** فوترة حملة تسويقية لعميل بمبلغ **30,000 درهم**.\n- **استهلاك (الصنف 6):** الدفع مقابل الخوادم السحابية (2,000 درهم)، والإعلانات (5,000 درهم)، والرواتب (10,000 درهم). إجمالي التكاليف = **17,000 درهم**.\n\n👍 تحليل النتيجة\n30,000 درهم (الصنف 7) - 17,000 درهم (الصنف 6) = **+13,000 درهم**. حققت الوكالة ربحاً صافياً.",
+      "pratique": "🔹 تدقيق سريع\nقبل إجراء الاختبار التفاعلي، تذكر هذا: كل ما يثري الشركة هو إيراد (7)، وكل ما تستهلكه للعمل هو تكلفة (6). هل أنت مستعد للتحدي؟",
+      "resume": "🔹 الصنف 6 = الاستهلاك (مصاريف التشغيل)\n🔹 الصنف 7 = الخلق (المبيعات والإيرادات)\n👍 النتيجة الصافية = الإيرادات (7) - التكاليف (6)"
+    }
+  },
+  "practice_zone": {
+    "type": "mcq",
+    "question": {
+      "fr": "L'achat de marchandises pour la revente et le paiement des salaires appartiennent à quelle catégorie de comptes ?",
+      "en": "Purchasing goods for resale and paying employee salaries belong to which account category?",
+      "ar": "شراء البضائع لإعادة البيع ودفع رواتب الموظفين ينتميان إلى أي فئة حسابات؟"
+    },
+    "options": {
+      "fr": ["Classe 7 (Produits)", "Classe 6 (Charges)", "Classe 2 (Immobilisations)"],
+      "en": ["Class 7 (Revenues)", "Class 6 (Expenses)", "Class 2 (Assets)"],
+      "ar": ["الصنف 7 (الإيرادات)", "الصنف 6 (التكاليف)", "الصنف 2 (الأصول)"]
+    },
+    "correct_answer": {
+      "fr": "Classe 6 (Charges)",
+      "en": "Class 6 (Expenses)",
+      "ar": "الصنف 6 (التكاليف)"
     }
   }
 }

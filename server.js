@@ -143,6 +143,24 @@ app.get('/lesson/:course/:id', protect, (req, res) => {
         return res.redirect('/dashboard');
     }
 
+    // 🔒 PREMIUM GATEKEEPER ENGINE
+    const lessonNumber = parseInt(id, 10);
+    let isLocked = false;
+
+    // 💼 Accounting: Lesson 1, 2, 3 are free. 4+ needs Premium.
+    if (course === 'accounting' && lessonNumber > 3 && !req.user.isPremium) {
+        isLocked = true;
+    }
+    // 🗣️ English & 🚀 Marketing: Phase 1 is free. Phase 2+ needs Premium.
+    else if ((course === 'english' || course === 'marketing') && lessonNumber > 1 && !req.user.isPremium) {
+        isLocked = true;
+    }
+
+    if (isLocked) {
+        console.log(`🔒 Paywall Hit: User without Premium tried to access ${course} module ${id}`);
+        return res.redirect('/premium');
+    }
+
     const config = COURSE_CONFIG[course] || DEFAULT_COURSE;
     const filePath = path.join(__dirname, config.folder, `${config.filePrefix}${id}.json`);
 

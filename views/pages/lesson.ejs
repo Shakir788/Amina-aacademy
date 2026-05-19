@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
     
     <% 
-        // 💼 PURE ACCOUNTING THEME
-        const themeMain = '#1e3a8a'; // Deep Blue
+          // 💼 PURE ACCOUNTING THEME
+        const themeMain = '#1e3a8a';  // Deep Blue
         const themeGradient = '#3b82f6';
         const fallbackImg = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200'; // Calculator image
     %>
@@ -336,11 +336,12 @@
             renderPracticeZone(); 
         };
 
-        // 🚀 UPGRADED MARK COMPLETE WITH CONFETTI
+        // 🚀 UPGRADED MARK COMPLETE WITH NEXT-LESSON REDIRECT
         async function markComplete() {
             const btn = document.getElementById('btn-complete');
             const originalText = btn.innerText;
             
+            // UI Feedback during API call
             btn.innerHTML = '⏳ Validation...';
             btn.style.opacity = '0.8';
             btn.style.pointerEvents = 'none'; 
@@ -379,9 +380,10 @@
                         }());
                     }
 
-                    // Redirect after short delay so user sees confetti & XP
+                    // 🚀 THE MAGIC REDIRECT: Go straight to the NEXT lesson
                     setTimeout(() => {
-                        window.location.href = '/dashboard?t=' + new Date().getTime();
+                        const nextLessonId = parseInt(CURRENT_LESSON_ID) + 1;
+                        window.location.href = `/lesson/${CURRENT_COURSE_TYPE}/${nextLessonId}`;
                     }, 1800);
                     
                 } else {

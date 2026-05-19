@@ -31,7 +31,7 @@ const userSchema = new mongoose.Schema({
         default: false 
     },
 
-    // 3. Gamification Engine (Duolingo Style 🎮) [NAYA]
+    // 3. Gamification Engine (Duolingo Style 🎮)
     xp: {
         type: Number,
         default: 0
@@ -41,7 +41,7 @@ const userSchema = new mongoose.Schema({
         lastActive: { type: Date, default: null }
     },
 
-    // 4. Multi-Course Progress System 🏗️
+    // 4. Multi-Course Progress System 🏗️ [UPDATED: Added Marketing]
     progress: {
         accounting: {
             completedLessons: {
@@ -62,6 +62,16 @@ const userSchema = new mongoose.Schema({
                 type: Number,
                 default: 1
             }
+        },
+        marketing: { // ✅ Added Marketing Progress tracking
+            completedLessons: {
+                type: [Number],
+                default: []
+            },
+            lastUnlockedLesson: {
+                type: Number,
+                default: 1
+            }
         }
     },
     
@@ -71,11 +81,19 @@ const userSchema = new mongoose.Schema({
         goal: { type: String } 
     },
 
-    // 6. SaaS Monetization & Roles 💰 [NAYA]
+    // 6. SaaS Monetization, AI Limits & Roles 💰 [UPDATED]
+    isPremium: {             // ✅ Quick check for Paywalls & Full Access
+        type: Boolean,
+        default: false
+    },
+    aiMessageCount: {        // ✅ Meter for 10 Free AI Messages
+        type: Number,
+        default: 0
+    },
     subscription: {
         plan: {
             type: String,
-            enum: ['free', 'premium'],
+            enum: ['free', 'premium', 'lifetime'], // Added lifetime option
             default: 'free'
         },
         expiresAt: {

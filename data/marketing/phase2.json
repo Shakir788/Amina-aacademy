@@ -1,0 +1,727 @@
+{
+  "phase": 2,
+  "title": {
+    "en": "Creator Growth & Brand Domination (Premium Expansion)",
+    "fr": "Croissance du Créateur et Domination de Marque (Édition Premium)",
+    "ar": "نمو صانع المحتوى والسيطرة على العلامة الشخصية (النسخة المميزة)"
+  },
+  "description": {
+    "en": "Transform from random creator into a recognizable online personality people trust, remember and follow.",
+    "fr": "Transformez-vous d'un créateur aléatoire en une personnalité en ligne reconnaissable que les gens suivent et en qui ils ont confiance.",
+    "ar": "تحول من صانع محتوى عشوائي إلى شخصية معروفة على الإنترنت يثق بها الناس ويتذكرونها ويتابعونها."
+  },
+  "system_level": "Premium Expansion",
+  "estimated_time_per_lesson": "25-50 minutes",
+  "phase_results": {
+    "en": [
+      "Build recognizable creator identity",
+      "Understand audience psychology",
+      "Create emotional trust",
+      "Grow consistently",
+      "Build loyal community",
+      "Position professionally"
+    ],
+    "fr": [
+      "Construire une identité de créateur reconnaissable",
+      "Comprendre la psychologie du public",
+      "Créer une confiance émotionnelle",
+      "Grandir de manière cohérente",
+      "Bâtir une communauté fidèle",
+      "Se positionner professionnellement"
+    ],
+    "ar": [
+      "بناء هوية صانع محتوى مميزة",
+      "فهم سيكولوجية الجمهور",
+      "خلق ثقة عاطفية",
+      "النمو بشكل مستمر",
+      "بناء مجتمع مخلص",
+      "التموضع بشكل احترافي"
+    ]
+  },
+  "lessons": [
+    {
+      "id": 11,
+      "title": {
+        "en": "Personal Brand Psychology",
+        "fr": "Psychologie de la Marque Personnelle",
+        "ar": "سيكولوجية العلامة الشخصية"
+      },
+      "xp": 220,
+      "core_concept": {
+        "en": "People follow personalities before content.",
+        "fr": "Les gens suivent les personnalités avant le contenu.",
+        "ar": "الناس يتابعون الشخصيات قبل المحتوى."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Most creators stay invisible because they look emotionally generic online.",
+          "fr": "La plupart des créateurs restent invisibles car ils semblent émotionnellement génériques.",
+          "ar": "يبقى معظم صناع المحتوى غير مرئيين لأنهم يبدون عاديين عاطفياً على الإنترنت."
+        },
+        "why_it_matters": {
+          "en": "Strong personal branding creates memorability and trust.",
+          "fr": "Une marque personnelle forte crée la mémorisation et la confiance.",
+          "ar": "العلامة الشخصية القوية تصنع التذكر والثقة."
+        },
+        "internet_truth": {
+          "en": "Forgettable creators rarely grow.",
+          "fr": "Les créateurs oubliables grandissent rarement.",
+          "ar": "صناع المحتوى الذين لا يُتذكرون نادراً ما ينمون."
+        }
+      },
+      "psychology": [
+        { "en": "Humans trust familiarity", "fr": "Les humains font confiance à la familiarité", "ar": "البشر يثقون في المألوف" },
+        { "en": "Emotion creates identity", "fr": "L'émotion crée l'identité", "ar": "العاطفة تصنع الهوية" },
+        { "en": "Consistency builds recognition", "fr": "La régularité construit la reconnaissance", "ar": "الاستمرارية تبني التمييز" },
+        { "en": "Confidence attracts audiences", "fr": "La confiance attire le public", "ar": "الثقة تجذب الجمهور" }
+      ],
+      "real_examples": [
+        { "en": "Creators using same visual style become recognizable", "fr": "Les créateurs utilisant le même style visuel deviennent reconnaissables", "ar": "صناع المحتوى الذين يستخدمون نفس النمط البصري يصبحون مميزين" },
+        { "en": "Confident communication increases authority", "fr": "Une communication confiante augmente l'autorité", "ar": "التواصل بثقة يزيد من السلطة" },
+        { "en": "Emotional storytelling builds audience attachment", "fr": "Le récit émotionnel construit l'attachement du public", "ar": "السرد العاطفي يبني ارتباط الجمهور" }
+      ],
+      "common_mistakes": [
+        { "en": "Copying famous creators", "fr": "Copier des créateurs célèbres", "ar": "تقليد صناع المحتوى المشاهير" },
+        { "en": "Changing identity constantly", "fr": "Changer constamment d'identité", "ar": "تغيير الهوية باستمرار" },
+        { "en": "No personality online", "fr": "Aucune personnalité en ligne", "ar": "لا توجد شخصية على الإنترنت" },
+        { "en": "Random content posting", "fr": "Publication de contenu aléatoire", "ar": "نشر محتوى عشوائي" }
+      ],
+      "missions": [
+        { "en": "Define creator identity", "fr": "Définir l'identité du créateur", "ar": "تحديد هوية صانع المحتوى" },
+        { "en": "Choose emotional energy", "fr": "Choisir l'énergie émotionnelle", "ar": "اختيار الطاقة العاطفية" },
+        { "en": "Analyze 5 famous creators", "fr": "Analyser 5 créateurs célèbres", "ar": "تحليل 5 صناع محتوى مشاهير" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Beauty Salon", "fr": "Salon de Beauté", "ar": "صالون تجميل" },
+        "task": { "en": "Identify why the salon page feels forgettable", "fr": "Identifiez pourquoi la page du salon semble oubliable", "ar": "حدد لماذا تبدو صفحة الصالون قابلة للنسيان" },
+        "darija": "Chouf 3lach page dyal salon makat39elch 3liha nass w katb9a mnsya."
+      },
+      "pro_secrets": [
+        { "en": "People remember emotional energy more than information", "fr": "Les gens retiennent l'énergie émotionnelle plus que l'information", "ar": "يتذكر الناس الطاقة العاطفية أكثر من المعلومات" },
+        { "en": "Strong positioning creates authority instantly", "fr": "Un positionnement fort crée instantanément l'autorité", "ar": "التموضع القوي يخلق السلطة فوراً" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Build memorable creator identity from scratch", "fr": "Construisez une identité de créateur mémorable de zéro", "ar": "ابنِ هوية صانع محتوى لا تُنسى من الصفر" },
+        "reward_xp": 80
+      },
+      "ai_feedback_examples": [
+        { "en": "Your profile still feels confused 😭", "fr": "Ton profil semble encore confus 😭", "ar": "بروفايلك لا يزال يبدو مشتتاً 😭" },
+        { "en": "THIS identity feels memorable 💣", "fr": "CETTE identité semble mémorable 💣", "ar": "هذه الهوية تبدو لا تُنسى 💣" },
+        { "en": "Now your audience understands you 🔥", "fr": "Maintenant, ton public te comprend 🔥", "ar": "الآن جمهورك يفهمك 🔥" }
+      ]
+    },
+    {
+      "id": 12,
+      "title": {
+        "en": "Niche Domination System",
+        "fr": "Système de Domination de Niche",
+        "ar": "نظام السيطرة على النيتش"
+      },
+      "xp": 230,
+      "core_concept": {
+        "en": "Focused creators grow faster.",
+        "fr": "Les créateurs ciblés grandissent plus vite.",
+        "ar": "صناع المحتوى المركزون ينمون أسرع."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Confused content creates confused audiences.",
+          "fr": "Le contenu confus crée un public confus.",
+          "ar": "المحتوى المشتت يخلق جمهوراً مشتتاً."
+        },
+        "why_it_matters": {
+          "en": "Niche clarity helps algorithms understand your audience.",
+          "fr": "La clarté de niche aide l'algorithme à comprendre votre public.",
+          "ar": "وضوح النيتش يساعد الخوارزمية على فهم جمهورك."
+        },
+        "internet_truth": {
+          "en": "Random creators rarely dominate markets.",
+          "fr": "Les créateurs aléatoires dominent rarement les marchés.",
+          "ar": "نادراً ما يسيطر صناع المحتوى العشوائيون على الأسواق."
+        }
+      },
+      "psychology": [
+        { "en": "Audiences follow clarity", "fr": "Le public suit la clarté", "ar": "الجمهور يتبع الوضوح" },
+        { "en": "People trust specialists", "fr": "Les gens font confiance aux spécialistes", "ar": "الناس يثقون في المتخصصين" },
+        { "en": "Focused messaging increases authority", "fr": "Un message ciblé augmente l'autorité", "ar": "الرسائل المركزة تزيد من السلطة" }
+      ],
+      "real_examples": [
+        { "en": "Fitness pages grow faster when focused on transformations", "fr": "Les pages de fitness grandissent plus vite lorsqu'elles se concentrent sur les transformations", "ar": "صفحات اللياقة تنمو أسرع عند التركيز على التحولات" },
+        { "en": "Food creators dominate with one consistent style", "fr": "Les créateurs culinaires dominent avec un style constant", "ar": "صناع محتوى الطعام يسيطرون بأسلوب واحد ثابت" }
+      ],
+      "common_mistakes": [
+        { "en": "Posting unrelated content", "fr": "Publier du contenu sans rapport", "ar": "نشر محتوى غير ذي صلة" },
+        { "en": "Trying to target everyone", "fr": "Essayer de cibler tout le monde", "ar": "محاولة استهداف الجميع" },
+        { "en": "Copying trends without relevance", "fr": "Copier des tendances sans pertinence", "ar": "تقليد التريندات بدون صلة بمجالك" }
+      ],
+      "missions": [
+        { "en": "Define ideal audience", "fr": "Définir le public idéal", "ar": "تحديد الجمهور المثالي" },
+        { "en": "Analyze competitors", "fr": "Analyser les concurrents", "ar": "تحليل المنافسين" },
+        { "en": "Create niche statement", "fr": "Créer une déclaration de niche", "ar": "إنشاء بيان النيتش الخاص بك" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Clothing Brand", "fr": "Marque de Vêtements", "ar": "علامة ملابس تجارية" },
+        "task": { "en": "Fix weak brand positioning for local clothing page", "fr": "Corrigez le positionnement faible d'une marque de vêtements locale", "ar": "إصلاح التموضع الضعيف لصفحة ملابس محلية" },
+        "darija": "Rj3 l'positionnement dyal l'marque d l'hwayj bayn w m9ad."
+      },
+      "pro_secrets": [
+        { "en": "Specific creators attract loyal audiences", "fr": "Les créateurs spécifiques attirent un public fidèle", "ar": "صناع المحتوى المتخصصون يجذبون جمهوراً مخلصاً" },
+        { "en": "Niche clarity reduces algorithm confusion", "fr": "La clarté de la niche réduit la confusion de l'algorithme", "ar": "وضوح النيتش يقلل من تشتت الخوارزمية" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Create dominant niche positioning strategy", "fr": "Créez une stratégie de positionnement de niche dominante", "ar": "اصنع استراتيجية سيطرة قوية على النيتش" },
+        "reward_xp": 90
+      },
+      "ai_feedback_examples": [
+        { "en": "Your niche still feels random 😭", "fr": "Ta niche semble encore aléatoire 😭", "ar": "النيتش الخاص بك لا يزال عشوائياً 😭" },
+        { "en": "THIS positioning builds authority 💣", "fr": "CE positionnement construit l'autorité 💣", "ar": "هذا التموضع يبني السلطة 💣" },
+        { "en": "Now your audience understands your value 🔥", "fr": "Maintenant ton public comprend ta valeur 🔥", "ar": "الآن جمهورك يفهم قيمتك 🔥" }
+      ]
+    },
+    {
+      "id": 13,
+      "title": {
+        "en": "Instagram Profile Optimization",
+        "fr": "Optimisation du Profil Instagram",
+        "ar": "تحسين بروفايل إنستغرام"
+      },
+      "xp": 240,
+      "core_concept": {
+        "en": "Profiles create first impressions.",
+        "fr": "Les profils créent les premières impressions.",
+        "ar": "البروفايلات تصنع الانطباع الأول."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Your profile decides if people trust you within seconds.",
+          "fr": "Votre profil décide si les gens vous font confiance en quelques secondes.",
+          "ar": "يحدد بروفايلك ما إذا كان الناس سيثقون بك خلال ثوانٍ."
+        },
+        "why_it_matters": {
+          "en": "Weak profiles destroy follow conversions.",
+          "fr": "Les profils faibles détruisent les conversions d'abonnés.",
+          "ar": "البروفايلات الضعيفة تدمر تحويل المتابعين."
+        },
+        "internet_truth": {
+          "en": "Professional profiles instantly feel safer and stronger.",
+          "fr": "Les profils professionnels semblent immédiatement plus fiables.",
+          "ar": "تبدو البروفايلات الاحترافية أكثر أماناً وقوة فوراً."
+        }
+      },
+      "psychology": [
+        { "en": "Clean visuals increase trust", "fr": "Des visuels épurés augmentent la confiance", "ar": "البصريات النظيفة تزيد الثقة" },
+        { "en": "Authority reduces hesitation", "fr": "L'autorité réduit l'hésitation", "ar": "السلطة تقلل من التردد" },
+        { "en": "Strong bios improve follow rate", "fr": "Des biographies fortes améliorent le taux d'abonnement", "ar": "البايو القوي يحسن معدل المتابعة" }
+      ],
+      "real_examples": [
+        { "en": "Strong creator bios explain value instantly", "fr": "Les bonnes biographies de créateurs expliquent la valeur instantanément", "ar": "بايو صناع المحتوى الأقوياء يشرح القيمة فوراً" },
+        { "en": "Highlight covers improve professionalism", "fr": "Les couvertures de highlights améliorent le professionnalisme", "ar": "أغلفة الهايلايت تحسن الاحترافية" }
+      ],
+      "common_mistakes": [
+        { "en": "Confusing bios", "fr": "Biographies confuses", "ar": "بايو غير مفهوم" },
+        { "en": "Low quality profile picture", "fr": "Photo de profil de mauvaise qualité", "ar": "صورة بروفايل منخفضة الجودة" },
+        { "en": "No brand consistency", "fr": "Aucune cohérence de marque", "ar": "لا يوجد اتساق في العلامة التجارية" }
+      ],
+      "missions": [
+        { "en": "Rewrite bio", "fr": "Réécrire la biographie", "ar": "إعادة كتابة البايو" },
+        { "en": "Optimize profile picture", "fr": "Optimiser la photo de profil", "ar": "تحسين صورة البروفايل" },
+        { "en": "Build highlight strategy", "fr": "Construire une stratégie de highlights", "ar": "بناء استراتيجية الهايلايت" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Restaurant", "fr": "Restaurant", "ar": "مطعم" },
+        "task": { "en": "Transform weak restaurant profile into trusted brand", "fr": "Transformez un profil de restaurant faible en une marque de confiance", "ar": "تحويل بروفايل مطعم ضعيف إلى علامة موثوقة" },
+        "darija": "9add l'profile dyal resto bach iban pro w ijiw l'klyan."
+      },
+      "pro_secrets": [
+        { "en": "Simple bios outperform complicated ones", "fr": "Les biographies simples surpassent les plus compliquées", "ar": "البايو البسيط يتفوق على المعقد" },
+        { "en": "Visual consistency creates authority", "fr": "La cohérence visuelle crée de l'autorité", "ar": "التناسق البصري يصنع السلطة" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Create profile that instantly feels premium", "fr": "Créez un profil qui semble instantanément premium", "ar": "اصنع بروفايل يبدو مميزاً واحترافياً فوراً" },
+        "reward_xp": 100
+      },
+      "ai_feedback_examples": [
+        { "en": "Nobody understands your bio 😭", "fr": "Personne ne comprend ta bio 😭", "ar": "لا أحد يفهم البايو الخاص بك 😭" },
+        { "en": "THIS profile feels professional 💣", "fr": "CE profil fait professionnel 💣", "ar": "هذا البروفايل يبدو احترافياً 💣" },
+        { "en": "Your branding now feels trustworthy 🔥", "fr": "Ton image de marque inspire désormais confiance 🔥", "ar": "علامتك التجارية تبدو موثوقة الآن 🔥" }
+      ]
+    },
+    {
+      "id": 14,
+      "title": {
+        "en": "Content Consistency Warfare",
+        "fr": "Guerre de la Régularité du Contenu",
+        "ar": "حرب استمرارية المحتوى"
+      },
+      "xp": 250,
+      "core_concept": {
+        "en": "Consistency creates momentum.",
+        "fr": "La régularité crée la dynamique.",
+        "ar": "الاستمرارية تخلق الزخم."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Most creators fail because they depend on motivation instead of systems.",
+          "fr": "La plupart des créateurs échouent car ils dépendent de la motivation au lieu des systèmes.",
+          "ar": "يفشل معظم صناع المحتوى لأنهم يعتمدون على التحفيز بدلاً من الأنظمة."
+        },
+        "why_it_matters": {
+          "en": "Consistency builds audience trust and algorithm confidence.",
+          "fr": "La régularité renforce la confiance du public et de l'algorithme.",
+          "ar": "الاستمرارية تبني ثقة الجمهور وثقة الخوارزمية."
+        },
+        "internet_truth": {
+          "en": "Random posting destroys growth momentum.",
+          "fr": "Publier au hasard détruit l'élan de croissance.",
+          "ar": "النشر العشوائي يدمر زخم النمو."
+        }
+      },
+      "psychology": [
+        { "en": "Audiences trust consistency", "fr": "Le public fait confiance à la régularité", "ar": "الجمهور يثق في الاستمرارية" },
+        { "en": "Repetition builds familiarity", "fr": "La répétition construit la familiarité", "ar": "التكرار يبني الألفة" },
+        { "en": "Momentum increases creator confidence", "fr": "L'élan augmente la confiance du créateur", "ar": "الزخم يزيد من ثقة صانع المحتوى" }
+      ],
+      "real_examples": [
+        { "en": "Batching content reduces burnout", "fr": "Créer du contenu par lots réduit l'épuisement", "ar": "جدولة المحتوى مسبقاً يقلل من الإرهاق" },
+        { "en": "Idea banking prevents creative blocks", "fr": "Banquer des idées évite les blocages créatifs", "ar": "بنك الأفكار يمنع الانقطاع الإبداعي" }
+      ],
+      "common_mistakes": [
+        { "en": "Waiting for motivation", "fr": "Attendre la motivation", "ar": "انتظار التحفيز" },
+        { "en": "No content system", "fr": "Aucun système de contenu", "ar": "لا يوجد نظام محتوى" },
+        { "en": "Posting emotionally", "fr": "Publier sous le coup de l'émotion", "ar": "النشر بناءً على العاطفة" }
+      ],
+      "missions": [
+        { "en": "Build weekly posting system", "fr": "Construire un système de publication hebdomadaire", "ar": "بناء نظام نشر أسبوعي" },
+        { "en": "Create idea bank", "fr": "Créer une banque d'idées", "ar": "إنشاء بنك أفكار" },
+        { "en": "Plan 7-day schedule", "fr": "Planifier un programme sur 7 jours", "ar": "تخطيط جدول زمني لـ 7 أيام" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Freelancer", "fr": "Freelance", "ar": "مستقل" },
+        "task": { "en": "Fix inconsistent content schedule", "fr": "Corrigez un planning de contenu irrégulier", "ar": "إصلاح جدول المحتوى غير المتسق" },
+        "darija": "9add programme dyal l'postat bach tb9a dima présent."
+      },
+      "pro_secrets": [
+        { "en": "Systems outperform motivation", "fr": "Les systèmes surpassent la motivation", "ar": "الأنظمة تتفوق على التحفيز" },
+        { "en": "Consistency builds algorithm trust", "fr": "La régularité construit la confiance de l'algorithme", "ar": "الاستمرارية تبني ثقة الخوارزمية" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Build unstoppable creator workflow", "fr": "Construisez un flux de travail de créateur imparable", "ar": "ابنِ سير عمل صانع محتوى لا يمكن إيقافه" },
+        "reward_xp": 100
+      },
+      "ai_feedback_examples": [
+        { "en": "Your posting still feels emotional 😭", "fr": "Tes publications semblent encore émotionnelles 😭", "ar": "نشرك لا يزال يبدو عاطفياً 😭" },
+        { "en": "THIS workflow creates momentum 💣", "fr": "CE flux de travail crée un élan 💣", "ar": "سير العمل هذا يخلق زخماً 💣" },
+        { "en": "Now you look like a serious creator 🔥", "fr": "Maintenant tu as l'air d'un créateur sérieux 🔥", "ar": "الآن تبدو كصانع محتوى جاد 🔥" }
+      ]
+    },
+    {
+      "id": 15,
+      "title": {
+        "en": "Audience Trust Engineering",
+        "fr": "Ingénierie de la Confiance du Public",
+        "ar": "هندسة ثقة الجمهور"
+      },
+      "xp": 260,
+      "core_concept": {
+        "en": "Trust creates loyal audiences.",
+        "fr": "La confiance crée des publics fidèles.",
+        "ar": "الثقة تصنع جمهوراً مخلصاً."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "People follow creators who feel emotionally real and relatable.",
+          "fr": "Les gens suivent les créateurs qui semblent émotionnellement réels et identifiables.",
+          "ar": "الناس يتابعون صناع المحتوى الذين يبدون حقيقيين عاطفياً وقريبين منهم."
+        },
+        "why_it_matters": {
+          "en": "Trust increases engagement, loyalty and long-term growth.",
+          "fr": "La confiance augmente l'engagement, la fidélité et la croissance à long terme.",
+          "ar": "الثقة تزيد من التفاعل والولاء والنمو على المدى الطويل."
+        },
+        "internet_truth": {
+          "en": "Fake energy eventually destroys audience connection.",
+          "fr": "La fausse énergie finit par détruire la connexion avec le public.",
+          "ar": "الطاقة المزيفة تدمر في النهاية اتصال الجمهور بك."
+        }
+      },
+      "psychology": [
+        { "en": "Relatability creates emotional attachment", "fr": "L'identificabilité crée un attachement émotionnel", "ar": "الواقعية تخلق ارتباطاً عاطفياً" },
+        { "en": "Vulnerability increases trust", "fr": "La vulnérabilité augmente la confiance", "ar": "إظهار الضعف البشري يزيد الثقة" },
+        { "en": "Authenticity feels human", "fr": "L'authenticité rend plus humain", "ar": "الأصالة تبدو إنسانية" }
+      ],
+      "real_examples": [
+        { "en": "Transformation stories build emotional connection", "fr": "Les histoires de transformation construisent une connexion émotionnelle", "ar": "قصص التحول تبني اتصالاً عاطفياً" },
+        { "en": "Behind-the-scenes moments increase relatability", "fr": "Les moments en coulisses augmentent l'identificabilité", "ar": "لحظات الكواليس تزيد من قربك للناس" }
+      ],
+      "common_mistakes": [
+        { "en": "Trying too hard to look perfect", "fr": "Trop essayer de paraître parfait", "ar": "المبالغة في محاولة الظهور بمثالية" },
+        { "en": "Emotionless communication", "fr": "Communication sans émotion", "ar": "تواصل خالي من المشاعر" },
+        { "en": "Overly robotic content", "fr": "Contenu trop robotique", "ar": "محتوى روبوتي زائد" }
+      ],
+      "missions": [
+        { "en": "Write emotional creator story", "fr": "Écrire une histoire de créateur émotionnelle", "ar": "كتابة قصة صانع محتوى مؤثرة" },
+        { "en": "Analyze trusted creators", "fr": "Analyser des créateurs de confiance", "ar": "تحليل صناع المحتوى الموثوقين" },
+        { "en": "Create relatable reel concept", "fr": "Créer un concept de réel identifiable", "ar": "إنشاء فكرة ريلز واقعية وقريبة" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Salon", "fr": "Salon", "ar": "صالون" },
+        "task": { "en": "Build emotional trust for local beauty brand", "fr": "Bâtir la confiance émotionnelle pour une marque de beauté locale", "ar": "بناء ثقة عاطفية لعلامة تجميل محلية" },
+        "darija": "Khli nass ti9 f l'marque dyal salon dyalk b l'emotions."
+      },
+      "pro_secrets": [
+        { "en": "Audiences connect with honesty more than perfection", "fr": "Le public se connecte plus avec l'honnêteté qu'avec la perfection", "ar": "الجمهور يتواصل مع الصدق أكثر من المثالية" },
+        { "en": "Emotional transparency builds loyalty", "fr": "La transparence émotionnelle construit la fidélité", "ar": "الشفافية العاطفية تبني الولاء" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Create content that emotionally connects instantly", "fr": "Créez un contenu qui se connecte émotionnellement instantanément", "ar": "اصنع محتوى يربط عاطفياً على الفور" },
+        "reward_xp": 110
+      },
+      "ai_feedback_examples": [
+        { "en": "Your audience still feels disconnected 😭", "fr": "Ton public se sent toujours déconnecté 😭", "ar": "جمهورك لا يزال يشعر بالانفصال عنك 😭" },
+        { "en": "THIS builds emotional trust 💣", "fr": "CECI construit la confiance émotionnelle 💣", "ar": "هذا يبني ثقة عاطفية 💣" },
+        { "en": "Now people actually relate to you 🔥", "fr": "Maintenant, les gens s'identifient vraiment à toi 🔥", "ar": "الآن الناس يتواصلون معك حقاً 🔥" }
+      ]
+    },
+    {
+      "id": 16,
+      "title": {
+        "en": "Community Building Psychology",
+        "fr": "Psychologie de la Création de Communauté",
+        "ar": "سيكولوجية بناء المجتمع"
+      },
+      "xp": 270,
+      "core_concept": {
+        "en": "Communities grow stronger than audiences.",
+        "fr": "Les communautés grandissent plus fortes que les publics.",
+        "ar": "المجتمعات تنمو بشكل أقوى من مجرد الجماهير."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "The strongest creators make followers feel emotionally included.",
+          "fr": "Les créateurs les plus forts font en sorte que leurs abonnés se sentent émotionnellement inclus.",
+          "ar": "أقوى صناع المحتوى يجعلون المتابعين يشعرون بالانتماء العاطفي."
+        },
+        "why_it_matters": {
+          "en": "Communities increase engagement, retention and loyalty.",
+          "fr": "Les communautés augmentent l'engagement, la rétention et la fidélité.",
+          "ar": "المجتمعات تزيد التفاعل والاحتفاظ والولاء."
+        },
+        "internet_truth": {
+          "en": "People stay where they feel emotionally valued.",
+          "fr": "Les gens restent là où ils se sentent émotionnellement valorisés.",
+          "ar": "الناس يبقون حيث يشعرون بالتقدير العاطفي."
+        }
+      },
+      "psychology": [
+        { "en": "Humans seek belonging", "fr": "Les humains cherchent l'appartenance", "ar": "البشر يبحثون عن الانتماء" },
+        { "en": "Recognition creates loyalty", "fr": "La reconnaissance crée la fidélité", "ar": "التقدير يصنع الولاء" },
+        { "en": "Interaction increases attachment", "fr": "L'interaction augmente l'attachement", "ar": "التفاعل يزيد الارتباط" }
+      ],
+      "real_examples": [
+        { "en": "Replying to comments increases community feeling", "fr": "Répondre aux commentaires augmente le sentiment de communauté", "ar": "الرد على التعليقات يزيد الشعور بالانتماء للمجتمع" },
+        { "en": "Naming followers creates identity", "fr": "Donner un nom aux abonnés crée une identité", "ar": "إطلاق اسم على المتابعين يخلق هوية" }
+      ],
+      "common_mistakes": [
+        { "en": "Ignoring comments", "fr": "Ignorer les commentaires", "ar": "تجاهل التعليقات" },
+        { "en": "Talking only about yourself", "fr": "Ne parler que de soi-même", "ar": "الحديث عن نفسك فقط" },
+        { "en": "No audience interaction", "fr": "Aucune interaction avec le public", "ar": "لا يوجد تفاعل مع الجمهور" }
+      ],
+      "missions": [
+        { "en": "Create reply strategy", "fr": "Créer une stratégie de réponse", "ar": "إنشاء استراتيجية للردود" },
+        { "en": "Design audience interaction system", "fr": "Concevoir un système d'interaction avec le public", "ar": "تصميم نظام تفاعل مع الجمهور" },
+        { "en": "Build engagement questions", "fr": "Construire des questions d'engagement", "ar": "بناء أسئلة تفاعلية" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Moroccan Cafe", "fr": "Café Marocain", "ar": "مقهى مغربي" },
+        "task": { "en": "Turn cafe followers into loyal supporters", "fr": "Transformez les abonnés du café en supporters fidèles", "ar": "تحويل متابعي المقهى إلى داعمين مخلصين" },
+        "darija": "Rj3 l'followers dyal l'9ahwa l'klyan w s7ab dima."
+      },
+      "pro_secrets": [
+        { "en": "Communities defend creators emotionally", "fr": "Les communautés défendent les créateurs émotionnellement", "ar": "المجتمعات تدافع عن صناع المحتوى عاطفياً" },
+        { "en": "Attention to followers builds loyalty fast", "fr": "L'attention portée aux abonnés fidélise rapidement", "ar": "الاهتمام بالمتابعين يبني الولاء بسرعة" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Build mini community around creator identity", "fr": "Construisez une mini communauté autour de l'identité du créateur", "ar": "ابنِ مجتمعاً صغيراً حول هوية صانع المحتوى" },
+        "reward_xp": 120
+      },
+      "ai_feedback_examples": [
+        { "en": "Your audience still feels cold 😭", "fr": "Ton public semble encore froid 😭", "ar": "جمهورك لا يزال يشعر بالبرود 😭" },
+        { "en": "THIS creates community energy 💣", "fr": "CECI crée une énergie communautaire 💣", "ar": "هذا يخلق طاقة مجتمعية 💣" },
+        { "en": "Now followers feel emotionally connected 🔥", "fr": "Maintenant, les abonnés se sentent émotionnellement connectés 🔥", "ar": "الآن يشعر المتابعون بالارتباط العاطفي 🔥" }
+      ]
+    },
+    {
+      "id": 17,
+      "title": {
+        "en": "Algorithm Domination",
+        "fr": "Domination de l'Algorithme",
+        "ar": "السيطرة على الخوارزمية"
+      },
+      "xp": 300,
+      "core_concept": {
+        "en": "Algorithms reward audience behavior.",
+        "fr": "Les algorithmes récompensent le comportement du public.",
+        "ar": "الخوارزميات تكافئ سلوك الجمهور."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Platforms push content that keeps people emotionally engaged.",
+          "fr": "Les plateformes mettent en avant le contenu qui maintient les gens émotionnellement engagés.",
+          "ar": "المنصات تدفع المحتوى الذي يبقي الناس متفاعلين عاطفياً."
+        },
+        "why_it_matters": {
+          "en": "Understanding retention and watch behavior increases reach massively.",
+          "fr": "Comprendre la rétention et le comportement de visionnage augmente massivement la portée.",
+          "ar": "فهم الاحتفاظ وسلوك المشاهدة يزيد الوصول بشكل هائل."
+        },
+        "internet_truth": {
+          "en": "The algorithm only cares about audience reactions.",
+          "fr": "L'algorithme ne se soucie que des réactions du public.",
+          "ar": "الخوارزمية تهتم فقط بردود فعل الجمهور."
+        }
+      },
+      "psychology": [
+        { "en": "Retention controls reach", "fr": "La rétention contrôle la portée", "ar": "الاحتفاظ يتحكم في الوصول" },
+        { "en": "Saves and shares signal value", "fr": "Les sauvegardes et les partages signalent la valeur", "ar": "الحفظ والمشاركة يشيران إلى القيمة" },
+        { "en": "Curiosity increases watch time", "fr": "La curiosité augmente le temps de visionnage", "ar": "الفضول يزيد من وقت المشاهدة" }
+      ],
+      "real_examples": [
+        { "en": "Open loops increase retention", "fr": "Les boucles ouvertes augmentent la rétention", "ar": "الحلقات المفتوحة تزيد من الاحتفاظ" },
+        { "en": "Fast pacing reduces viewer exits", "fr": "Un rythme rapide réduit les abandons des spectateurs", "ar": "الإيقاع السريع يقلل من خروج المشاهدين" }
+      ],
+      "common_mistakes": [
+        { "en": "Long intros", "fr": "Longues introductions", "ar": "مقدمات طويلة" },
+        { "en": "Boring middle sections", "fr": "Sections intermédiaires ennuyeuses", "ar": "أجزاء وسطى مملة" },
+        { "en": "Weak hooks", "fr": "Accroches faibles", "ar": "خطافات ضعيفة" }
+      ],
+      "missions": [
+        { "en": "Analyze viral reels", "fr": "Analyser des réels viraux", "ar": "تحليل ريلز فيروسية" },
+        { "en": "Identify retention drops", "fr": "Identifier les baisses de rétention", "ar": "تحديد نقاط انخفاض الاحتفاظ" },
+        { "en": "Improve watch time", "fr": "Améliorer le temps de visionnage", "ar": "تحسين وقت المشاهدة" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Restaurant", "fr": "Restaurant", "ar": "مطعم" },
+        "task": { "en": "Improve reel retention for local restaurant page", "fr": "Améliorer la rétention des réels pour un restaurant local", "ar": "تحسين الاحتفاظ بريلز لصفحة مطعم محلي" },
+        "darija": "Zid f wa9t lmouchahada dyal les videos dyal l'resto."
+      },
+      "pro_secrets": [
+        { "en": "Micro surprises reset audience attention", "fr": "Les micro-surprises réinitialisent l'attention du public", "ar": "المفاجآت الصغيرة تعيد ضبط انتباه الجمهور" },
+        { "en": "Strong endings increase replay behavior", "fr": "Les fins fortes augmentent le comportement de relecture", "ar": "النهايات القوية تزيد من سلوك إعادة المشاهدة" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Engineer high-retention content psychologically", "fr": "Concevoir psychologiquement un contenu à haute rétention", "ar": "هندسة محتوى عالي الاحتفاظ نفسياً" },
+        "reward_xp": 140
+      },
+      "ai_feedback_examples": [
+        { "en": "People are leaving too early 😭", "fr": "Les gens partent trop tôt 😭", "ar": "الناس يغادرون مبكراً جداً 😭" },
+        { "en": "THIS structure increases retention 💣", "fr": "CETTE structure augmente la rétention 💣", "ar": "هذا الهيكل يزيد الاحتفاظ 💣" },
+        { "en": "Now your content feels algorithm-friendly 🔥", "fr": "Maintenant ton contenu semble adapté à l'algorithme 🔥", "ar": "الآن محتواك يبدو صديقاً للخوارزمية 🔥" }
+      ]
+    },
+    {
+      "id": 18,
+      "title": {
+        "en": "Content Planning System",
+        "fr": "Système de Planification de Contenu",
+        "ar": "نظام تخطيط المحتوى"
+      },
+      "xp": 280,
+      "core_concept": {
+        "en": "Organized creators scale faster.",
+        "fr": "Les créateurs organisés se développent plus rapidement.",
+        "ar": "صناع المحتوى المنظمون يتوسعون أسرع."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Content planning removes stress and increases consistency.",
+          "fr": "La planification du contenu élimine le stress et augmente la régularité.",
+          "ar": "تخطيط المحتوى يزيل التوتر ويزيد من الاستمرارية."
+        },
+        "why_it_matters": {
+          "en": "Systems prevent burnout and improve quality.",
+          "fr": "Les systèmes préviennent l'épuisement et améliorent la qualité.",
+          "ar": "الأنظمة تمنع الإرهاق وتحسن الجودة."
+        },
+        "internet_truth": {
+          "en": "Most creators waste time because they create randomly.",
+          "fr": "La plupart des créateurs perdent du temps car ils créent au hasard.",
+          "ar": "يضيع معظم صناع المحتوى وقتهم لأنهم يصنعون عشوائياً."
+        }
+      },
+      "psychology": [
+        { "en": "Structure reduces decision fatigue", "fr": "La structure réduit la fatigue décisionnelle", "ar": "الهيكلة تقلل إرهاق اتخاذ القرار" },
+        { "en": "Preparation increases confidence", "fr": "La préparation augmente la confiance", "ar": "التحضير يزيد من الثقة" },
+        { "en": "Planning improves execution", "fr": "La planification améliore l'exécution", "ar": "التخطيط يحسن التنفيذ" }
+      ],
+      "real_examples": [
+        { "en": "Content calendars increase productivity", "fr": "Les calendriers de contenu augmentent la productivité", "ar": "تقويمات المحتوى تزيد الإنتاجية" },
+        { "en": "Content pillars simplify idea generation", "fr": "Les piliers de contenu simplifient la génération d'idées", "ar": "أعمدة المحتوى تبسط توليد الأفكار" }
+      ],
+      "common_mistakes": [
+        { "en": "No posting plan", "fr": "Aucun plan de publication", "ar": "لا توجد خطة نشر" },
+        { "en": "Creating content last minute", "fr": "Créer du contenu à la dernière minute", "ar": "صنع المحتوى في اللحظة الأخيرة" },
+        { "en": "No content pillars", "fr": "Pas de piliers de contenu", "ar": "لا توجد أعمدة محتوى" }
+      ],
+      "missions": [
+        { "en": "Build 30-day content plan", "fr": "Construire un plan de contenu de 30 jours", "ar": "بناء خطة محتوى لـ 30 يوماً" },
+        { "en": "Create content pillars", "fr": "Créer des piliers de contenu", "ar": "إنشاء أعمدة للمحتوى" },
+        { "en": "Recycle old content strategically", "fr": "Recycler stratégiquement l'ancien contenu", "ar": "إعادة تدوير المحتوى القديم استراتيجياً" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Freelancer", "fr": "Freelance", "ar": "مستقل" },
+        "task": { "en": "Build sustainable content workflow", "fr": "Construire un flux de contenu durable", "ar": "بناء سير عمل مستدام للمحتوى" },
+        "darija": "9add programme dyal l'khedma bach mat3yach w tb9a tposté dima."
+      },
+      "pro_secrets": [
+        { "en": "Content systems reduce creator stress", "fr": "Les systèmes de contenu réduisent le stress des créateurs", "ar": "أنظمة المحتوى تقلل من توتر صانع المحتوى" },
+        { "en": "Planning increases creative freedom", "fr": "La planification augmente la liberté créative", "ar": "التخطيط يزيد من الحرية الإبداعية" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Create scalable creator content machine", "fr": "Créer une machine de contenu de créateur évolutive", "ar": "إنشاء آلة محتوى قابلة للتوسع لصانع المحتوى" },
+        "reward_xp": 120
+      },
+      "ai_feedback_examples": [
+        { "en": "Your workflow still feels chaotic 😭", "fr": "Ton flux de travail semble encore chaotique 😭", "ar": "سير عملك لا يزال يبدو فوضوياً 😭" },
+        { "en": "THIS system creates consistency 💣", "fr": "CE système crée la régularité 💣", "ar": "هذا النظام يخلق الاستمرارية 💣" },
+        { "en": "Now you can scale content efficiently 🔥", "fr": "Maintenant tu peux développer ton contenu efficacement 🔥", "ar": "الآن يمكنك توسيع محتواك بكفاءة 🔥" }
+      ]
+    },
+    {
+      "id": 19,
+      "title": {
+        "en": "Creator Identity & Confidence",
+        "fr": "Identité et Confiance du Créateur",
+        "ar": "هوية وثقة صانع المحتوى"
+      },
+      "xp": 320,
+      "core_concept": {
+        "en": "Confidence creates creator presence.",
+        "fr": "La confiance crée la présence du créateur.",
+        "ar": "الثقة تخلق حضور صانع المحتوى."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Creators who constantly copy others lose identity and authority.",
+          "fr": "Les créateurs qui copient constamment les autres perdent identité et autorité.",
+          "ar": "صناع المحتوى الذين يقلدون الآخرين باستمرار يفقدون الهوية والسلطة."
+        },
+        "why_it_matters": {
+          "en": "Unique identity builds recognition and trust.",
+          "fr": "Une identité unique construit la reconnaissance et la confiance.",
+          "ar": "الهوية الفريدة تبني التمييز والثقة."
+        },
+        "internet_truth": {
+          "en": "The internet rewards creators who feel authentic and confident.",
+          "fr": "Internet récompense les créateurs qui semblent authentiques et confiants.",
+          "ar": "الإنترنت يكافئ صناع المحتوى الذين يبدون أصليين وواثقين."
+        }
+      },
+      "psychology": [
+        { "en": "Confidence attracts attention", "fr": "La confiance attire l'attention", "ar": "الثقة تجذب الانتباه" },
+        { "en": "Authenticity increases trust", "fr": "L'authenticité augmente la confiance", "ar": "الأصالة تزيد الثقة" },
+        { "en": "Unique creators feel memorable", "fr": "Les créateurs uniques sont mémorables", "ar": "صناع المحتوى الفريدون لا يُنسون" }
+      ],
+      "real_examples": [
+        { "en": "Strong creator voice increases authority", "fr": "La voix forte du créateur augmente l'autorité", "ar": "صوت صانع المحتوى القوي يزيد السلطة" },
+        { "en": "Unique visual style improves memorability", "fr": "Un style visuel unique améliore la mémorisation", "ar": "النمط البصري الفريد يحسن التذكر" }
+      ],
+      "common_mistakes": [
+        { "en": "Copying bigger creators", "fr": "Copier de plus grands créateurs", "ar": "تقليد صناع المحتوى الأكبر" },
+        { "en": "Fear of posting", "fr": "Peur de publier", "ar": "الخوف من النشر" },
+        { "en": "No creator personality", "fr": "Pas de personnalité de créateur", "ar": "لا توجد شخصية لصانع المحتوى" }
+      ],
+      "missions": [
+        { "en": "Define unique creator style", "fr": "Définir un style de créateur unique", "ar": "تحديد أسلوب فريد لصانع المحتوى" },
+        { "en": "Build creator confidence", "fr": "Renforcer la confiance du créateur", "ar": "بناء ثقة صانع المحتوى" },
+        { "en": "Practice confident communication", "fr": "Pratiquer une communication confiante", "ar": "التدرب على التواصل الواثق" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Clothing Brand", "fr": "Marque de Vêtements", "ar": "علامة ملابس" },
+        "task": { "en": "Build strong online identity for fashion page", "fr": "Bâtir une forte identité en ligne pour une page mode", "ar": "بناء هوية قوية على الإنترنت لصفحة أزياء" },
+        "darija": "Bni chakhsiya m9wda l'marque dyal l'hwayj f l'internet."
+      },
+      "pro_secrets": [
+        { "en": "Confidence changes audience perception instantly", "fr": "La confiance change instantanément la perception du public", "ar": "الثقة تغير نظرة الجمهور فوراً" },
+        { "en": "Original creators build stronger communities", "fr": "Les créateurs originaux bâtissent des communautés plus fortes", "ar": "صناع المحتوى الأصليون يبنون مجتمعات أقوى" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Build unforgettable creator personality", "fr": "Construire une personnalité de créateur inoubliable", "ar": "بناء شخصية صانع محتوى لا تُنسى" },
+        "reward_xp": 150
+      },
+      "ai_feedback_examples": [
+        { "en": "You're still hiding your personality 😭", "fr": "Tu caches encore ta personnalité 😭", "ar": "أنت لا تزال تخفي شخصيتك 😭" },
+        { "en": "THIS energy feels authentic 💣", "fr": "CETTE énergie semble authentique 💣", "ar": "هذه الطاقة تبدو أصلية 💣" },
+        { "en": "Now you feel like a real creator 🔥", "fr": "Maintenant tu as l'air d'un vrai créateur 🔥", "ar": "الآن تبدو كصانع محتوى حقيقي 🔥" }
+      ]
+    },
+    {
+      "id": 20,
+      "title": {
+        "en": "FINAL CREATOR GROWTH SIMULATION",
+        "fr": "SIMULATION FINALE DE CROISSANCE DU CRÉATEUR",
+        "ar": "محاكاة نمو صانع المحتوى النهائية"
+      },
+      "xp": 500,
+      "core_concept": {
+        "en": "Real creators combine psychology, strategy and identity together.",
+        "fr": "Les vrais créateurs combinent psychologie, stratégie et identité.",
+        "ar": "المبدعون الحقيقيون يجمعون بين علم النفس والاستراتيجية والهوية."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "This final simulation tests if the user can think like a real creator brand.",
+          "fr": "Cette simulation finale teste si l'utilisateur pense comme une vraie marque de créateur.",
+          "ar": "هذه المحاكاة النهائية تختبر ما إذا كان المستخدم يفكر كعلامة تجارية حقيقية لصانع المحتوى."
+        },
+        "why_it_matters": {
+          "en": "The internet rewards creators who understand human psychology deeply.",
+          "fr": "Internet récompense les créateurs qui comprennent profondément la psychologie humaine.",
+          "ar": "الإنترنت يكافئ صناع المحتوى الذين يفهمون علم النفس البشري بعمق."
+        },
+        "internet_truth": {
+          "en": "Successful creators engineer emotional experiences online.",
+          "fr": "Les créateurs à succès conçoivent des expériences émotionnelles en ligne.",
+          "ar": "صناع المحتوى الناجحون يهندسون تجارب عاطفية على الإنترنت."
+        }
+      },
+      "psychology": [
+        { "en": "Trust increases loyalty", "fr": "La confiance augmente la fidélité", "ar": "الثقة تزيد الولاء" },
+        { "en": "Identity increases memorability", "fr": "L'identité augmente la mémorisation", "ar": "الهوية تزيد من التذكر" },
+        { "en": "Emotion drives audience behavior", "fr": "L'émotion motive le comportement du public", "ar": "العاطفة تحرك سلوك الجمهور" }
+      ],
+      "real_examples": [
+        { "en": "Professional creator pages build authority instantly", "fr": "Les pages de créateurs professionnels bâtissent l'autorité instantanément", "ar": "صفحات صناع المحتوى الاحترافية تبني السلطة فوراً" },
+        { "en": "Community-driven creators grow faster", "fr": "Les créateurs axés sur la communauté grandissent plus vite", "ar": "صناع المحتوى الذين يركزون على المجتمع ينمون أسرع" }
+      ],
+      "common_mistakes": [
+        { "en": "No strategy", "fr": "Aucune stratégie", "ar": "لا توجد استراتيجية" },
+        { "en": "No emotional connection", "fr": "Aucune connexion émotionnelle", "ar": "لا يوجد اتصال عاطفي" },
+        { "en": "Weak creator identity", "fr": "Identité de créateur faible", "ar": "هوية صانع محتوى ضعيفة" }
+      ],
+      "missions": [
+        { "en": "Optimize creator profile", "fr": "Optimiser le profil du créateur", "ar": "تحسين بروفايل صانع المحتوى" },
+        { "en": "Build growth strategy", "fr": "Construire une stratégie de croissance", "ar": "بناء استراتيجية نمو" },
+        { "en": "Create emotional content plan", "fr": "Créer un plan de contenu émotionnel", "ar": "إنشاء خطة محتوى عاطفية" },
+        { "en": "Improve audience trust", "fr": "Améliorer la confiance du public", "ar": "تحسين ثقة الجمهور" }
+      ],
+      "real_business_task": {
+        "industry": { "en": "Local Business", "fr": "Entreprise Locale", "ar": "مشروع محلي" },
+        "task": { "en": "Build complete creator growth strategy for local brand", "fr": "Bâtir une stratégie complète de croissance pour une marque locale", "ar": "بناء استراتيجية نمو كاملة لصانع محتوى لعلامة تجارية محلية" },
+        "darija": "T9add strategy kamla dyal croissance l'chi projet f l'Maroc."
+      },
+      "pro_secrets": [
+        { "en": "Identity + trust + consistency creates domination", "fr": "Identité + confiance + régularité crée la domination", "ar": "الهوية + الثقة + الاستمرارية تصنع السيطرة" },
+        { "en": "Communities scale stronger than audiences", "fr": "Les communautés se développent plus fortement que les publics", "ar": "المجتمعات تتوسع بقوة أكبر من الجماهير العادية" }
+      ],
+      "challenge_mode": {
+        "task": { "en": "Build complete creator brand system from scratch", "fr": "Construisez un système complet de marque de créateur de zéro", "ar": "ابنِ نظاماً كاملاً لعلامة صانع المحتوى من الصفر" },
+        "reward_xp": 250
+      },
+      "ai_feedback_examples": [
+        { "en": "You finally think like a real creator 💣", "fr": "Tu penses enfin comme un vrai créateur 💣", "ar": "أنت أخيراً تفكر كصانع محتوى حقيقي 💣" },
+        { "en": "THIS brand feels powerful 🔥", "fr": "CETTE marque semble puissante 🔥", "ar": "هذه العلامة تبدو قوية 🔥" },
+        { "en": "Your online identity now feels unforgettable 😳", "fr": "Ton identité en ligne semble maintenant inoubliable 😳", "ar": "هويتك على الإنترنت تبدو الآن لا تُنسى 😳" }
+      ]
+    }
+  ]
+}

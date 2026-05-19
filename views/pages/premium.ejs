@@ -12,11 +12,12 @@
             --gold: #d97706;
             --gold-light: #fef3c7;
             --bg-color: #f8fafc;
+            --marketing: #4F46E5; /* Indigo for Marketing */
         }
 
         body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); margin: 0; color: #334155; }
         
-        nav { background: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; }
+        nav { background: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 50;}
         .logo { font-size: 22px; font-weight: 800; text-decoration: none; color: var(--primary); }
         .logo span { color: var(--gold); }
         .back-btn { text-decoration: none; color: #64748b; font-weight: 600; transition: 0.3s; }
@@ -26,14 +27,21 @@
         .header h1 { font-family: 'Playfair Display', serif; font-size: 46px; color: var(--primary); margin: 0 0 15px; }
         .header p { font-size: 18px; color: #64748b; max-width: 600px; margin: 0 auto; line-height: 1.6; }
 
-        .pricing-grid { display: flex; justify-content: center; gap: 30px; padding: 0 20px 80px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        /* Section Headings */
+        .tier-title { text-align: center; width: 100%; font-size: 24px; font-weight: 800; color: var(--primary); margin: 40px 0 20px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .pricing-grid { display: flex; justify-content: center; gap: 30px; padding: 0 20px 40px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
         
         .card { background: white; border-radius: 24px; padding: 40px; width: 100%; max-width: 320px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; position: relative; transition: 0.3s; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
         
-        .card.popular { border: 2px solid var(--gold); box-shadow: 0 15px 40px rgba(217, 119, 6, 0.15); transform: scale(1.05); z-index: 10; }
-        .card.popular:hover { transform: scale(1.05) translateY(-10px); }
-        .badge-popular { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 8px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; letter-spacing: 1px; }
+        /* The Marketing Card (God Mode) */
+        .card.marketing { border: 2px solid var(--marketing); box-shadow: 0 15px 40px rgba(79, 70, 229, 0.15); transform: scale(1.05); z-index: 10; background: linear-gradient(to bottom, #ffffff, #f5f3ff); }
+        .card.marketing:hover { transform: scale(1.05) translateY(-10px); }
+        .badge-marketing { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #6366F1, #4F46E5); color: white; padding: 8px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; letter-spacing: 1px; }
+
+        /* The Lifetime Card */
+        .card.lifetime { border: 2px solid var(--gold); box-shadow: 0 15px 40px rgba(217, 119, 6, 0.15); background: linear-gradient(to bottom, #ffffff, #fffbeb); }
 
         .plan-name { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 15px; }
         .plan-price { font-size: 48px; font-weight: 800; color: var(--primary); margin-bottom: 5px; }
@@ -41,11 +49,14 @@
         .plan-desc { font-size: 15px; color: #64748b; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0; }
 
         .features { list-style: none; padding: 0; margin: 0 0 40px; flex-grow: 1; }
-        .features li { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 16px; font-weight: 500; }
-        .icon-check { color: #10b981; font-size: 20px; font-weight: bold; }
+        .features li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 16px; font-weight: 500; line-height: 1.4; }
+        .icon-check { color: #10b981; font-size: 20px; font-weight: bold; flex-shrink: 0; }
 
-        .btn-buy { background: var(--bg-color); color: var(--primary); border: 2px solid #cbd5e1; padding: 18px; border-radius: 12px; font-size: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; }
-        .card.popular .btn-buy { background: var(--primary); color: white; border: none; box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2); }
+        .btn-buy { background: white; color: var(--primary); border: 2px solid #cbd5e1; padding: 18px; border-radius: 12px; font-size: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; }
+        
+        .card.marketing .btn-buy { background: var(--marketing); color: white; border: none; box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2); }
+        .card.lifetime .btn-buy { background: var(--gold); color: white; border: none; box-shadow: 0 10px 20px rgba(217, 119, 6, 0.2); }
+        
         .btn-buy:hover { opacity: 0.9; transform: translateY(-2px); }
 
         /* 🚀 PAYMENT MODAL (CIH, WAFACASH, CARD) */
@@ -82,13 +93,14 @@
 
     <div class="header">
         <h1>Investissez dans votre Avenir</h1>
-        <p>Débloquez tous les cours, la pratique vocale illimitée avec l'IA, et obtenez votre certificat. Zéro engagement, annulez à tout moment.</p>
+        <p>Choisissez le programme qui correspond à vos objectifs. Zéro engagement, annulez à tout moment.</p>
     </div>
 
+    <div class="tier-title">🏢 L'Académie (Compta & Anglais)</div>
     <div class="pricing-grid">
         
         <div class="card">
-            <div class="plan-name">Starter</div>
+            <div class="plan-name">Starter Academy</div>
             <div class="plan-price">99 <span>DH / mois</span></div>
             <div class="plan-desc">Parfait pour tester la méthode.</div>
             
@@ -98,11 +110,10 @@
                 <li><span class="icon-check">✓</span> Coach IA par Texte</li>
                 <li style="color: #94a3b8;"><span style="color:#cbd5e1;">✕</span> Appels Vocaux Illimités</li>
             </ul>
-            <button type="button" class="btn-buy" onclick="openPaymentModal('Starter', 99)">Commencer à 99 DH</button>
+            <button type="button" class="btn-buy" onclick="openPaymentModal('Starter Academy', 99)">Commencer à 99 DH</button>
         </div>
 
-        <div class="card popular">
-            <div class="badge-popular">LE PLUS CHOISI</div>
+        <div class="card">
             <div class="plan-name">Bootcamp CEO</div>
             <div class="plan-price">199 <span>DH / 3 mois</span></div>
             <div class="plan-desc">Le programme intensif pour tout maîtriser.</div>
@@ -111,25 +122,46 @@
                 <li><span class="icon-check">✓</span> Tout le contenu Starter</li>
                 <li><span class="icon-check">✓</span> <b>Appels Vocaux Illimités avec l'IA</b></li>
                 <li><span class="icon-check">✓</span> Certificat de Réussite</li>
-                <li><span class="icon-check">✓</span> Accès au groupe VIP WhatsApp</li>
             </ul>
             <button type="button" class="btn-buy" onclick="openPaymentModal('Bootcamp CEO', 199)">Rejoindre le Bootcamp</button>
         </div>
+    </div>
 
-        <div class="card">
-            <div class="plan-name">Lifetime</div>
-            <div class="plan-price">499 <span>DH / à vie</span></div>
-            <div class="plan-desc">Payez une fois, accédez pour toujours.</div>
+    <div class="tier-title" style="color: var(--marketing);">🔥 Digital Marketing (God Mode)</div>
+    <div class="pricing-grid">
+        <div class="card marketing">
+            <div class="badge-marketing">EXCLUSIF</div>
+            <div class="plan-name">Viral Mastery</div>
+            <div class="plan-price">399 <span>DH / 6 mois</span></div>
+            <div class="plan-desc">Le système exact pour dominer les réseaux sociaux.</div>
             
             <ul class="features">
-                <li><span class="icon-check">✓</span> Accès à vie sans abonnement</li>
-                <li><span class="icon-check">✓</span> Appels Vocaux Illimités</li>
-                <li><span class="icon-check">✓</span> Toutes les futures mises à jour gratuites</li>
-                <li><span class="icon-check">✓</span> Support prioritaire 24/7</li>
+                <li><span class="icon-check">✓</span> <b>Le cours "God Mode" complet</b></li>
+                <li><span class="icon-check">✓</span> Psychologie de l'attention & Rétention</li>
+                <li><span class="icon-check">✓</span> Analyse de Reels Viraux (Maroc)</li>
+                <li><span class="icon-check">✓</span> Stratégies Business Réelles</li>
+                <li><span class="icon-check">✓</span> Simulation Finale de Créateur</li>
             </ul>
-            <button type="button" class="btn-buy" onclick="openPaymentModal('Lifetime', 499)">Accès à Vie</button>
+            <button type="button" class="btn-buy" onclick="openPaymentModal('Viral Mastery (Marketing)', 399)">Débloquer le God Mode</button>
         </div>
+    </div>
 
+    <div class="tier-title" style="color: var(--gold);">👑 Pass Fondateur</div>
+    <div class="pricing-grid" style="padding-bottom: 80px;">
+        <div class="card lifetime">
+            <div class="plan-name">All-Access Lifetime</div>
+            <div class="plan-price">999 <span>DH / à vie</span></div>
+            <div class="plan-desc">L'accès total et définitif à toute l'académie.</div>
+            
+            <ul class="features">
+                <li><span class="icon-check">✓</span> <b>Comptabilité + Anglais + Marketing</b></li>
+                <li><span class="icon-check">✓</span> Accès à vie sans abonnement</li>
+                <li><span class="icon-check">✓</span> Appels Vocaux IA Illimités (À vie)</li>
+                <li><span class="icon-check">✓</span> Toutes les futures mises à jour gratuites</li>
+                <li><span class="icon-check">✓</span> Support VIP prioritaire</li>
+            </ul>
+            <button type="button" class="btn-buy" onclick="openPaymentModal('Lifetime All-Access', 999)">Obtenir l'Accès à Vie</button>
+        </div>
     </div>
 
     <div class="modal-overlay" id="paymentModal">
@@ -161,7 +193,6 @@
 
             <div class="cih-instructions" id="cihInstructions">
                 </div>
-
         </div>
     </div>
 
@@ -179,7 +210,6 @@
             document.getElementById('summaryPlan').innerText = planName;
             document.getElementById('summaryPrice').innerText = price + ' DH';
             
-            // Reset modal view
             document.getElementById('paymentOptionsList').style.display = 'block';
             document.getElementById('cihInstructions').style.display = 'none';
 
@@ -202,7 +232,6 @@
             const message = `Bonjour ! Je souhaite activer le plan *${currentSelectedPlan}* à *${currentSelectedPrice} DH*. Voici le reçu de mon virement CIH :`;
             const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
             
-            // 🚀 LIVE BANK DETAILS
             box.innerHTML = `
                 <h3 style="margin-top:0; color:#065f46;">Instructions Virement CIH</h3>
                 <p style="font-size:15px; color:#065f46;">Envoyez <b style="font-size:18px;">${currentSelectedPrice} DH</b> vers le compte CIH suivant :</p>
@@ -255,7 +284,6 @@
         }
 
         function initiateCardPayment() {
-            // Placeholder for YouCan Pay / CMI integration
             alert("La passerelle de paiement par Carte Bancaire est en cours d'installation. Veuillez utiliser CIH Bank ou Wafacash pour le moment.");
         }
     </script>
