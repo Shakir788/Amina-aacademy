@@ -3,404 +3,916 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leçon <%= lessonId %> - AMINA Académie</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
-    
-    <% 
-          // 💼 PURE ACCOUNTING THEME
-        const themeMain = '#1e3a8a';  // Deep Blue
-        const themeGradient = '#3b82f6';
-        const fallbackImg = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200'; // Calculator image
-    %>
+    <title>Leçon <%= lessonId %> — AMINA Académie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+    <% const fallbackImg = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200'; %>
 
     <style>
+        /* ══════════════════════════════════════════
+           LEDGER SYSTEM — design tokens
+           Grounded in real accounting stationery:
+           a red margin rule, ruled paper, ink colors
+           tied to "dans le vert / dans le rouge"
+           ══════════════════════════════════════════ */
         :root {
-            --theme-main: <%= themeMain %>;
-            --theme-gradient: <%= themeGradient %>;
+            --ink:          #1B2420;
+            --ink-soft:     #5B655D;
+            --ledger:       #2F5D45;
+            --ledger-deep:  #1F4432;
+            --ledger-tint:  #E9F0E9;
+            --brass:        #AD7F35;
+            --brass-tint:   #F6EDD8;
+            --margin-red:   #B24B36;
+            --rule:         #DAD3BC;
+            --paper:        #F6F3E9;
+            --paper-card:   #FCFAF3;
+            --white:        #FFFFFF;
+            --danger:       #B24B36;
+            --danger-tint:  #FBEBE5;
+            --radius-lg:    4px;
+            --radius-md:    3px;
+            --font-display: 'Fraunces', serif;
+            --font-body:    'IBM Plex Sans', 'IBM Plex Sans Arabic', sans-serif;
+            --font-mono:    'IBM Plex Mono', monospace;
         }
 
-        /* --- Poster Canvas Background --- */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            background: linear-gradient(135deg, #eef2f7 0%, #d1d9e6 100%);
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            color: #1e293b;
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink);
             min-height: 100vh;
+            background-image: repeating-linear-gradient(
+                to bottom,
+                transparent,
+                transparent 30px,
+                rgba(47,93,69,0.055) 31px
+            );
         }
 
-        /* --- Elegant Navbar & Gamification --- */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+        }
+
+        /* ─── PROGRESS RULE (ink filling a line) ─── */
+        #progress-bar-wrap {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--rule);
+            z-index: 2000;
+        }
+        #progress-bar-fill {
+            height: 100%;
+            background: var(--ledger);
+            width: 0%;
+            transition: width 0.25s ease-out;
+            position: relative;
+        }
+        #progress-bar-fill::after {
+            content: '';
+            position: absolute;
+            right: -2px; top: -1.5px;
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--brass);
+        }
+
+        /* ─── CUSTOM TOAST ALERTS ─── */
+        #custom-toast {
+            position: fixed; bottom: -100px; right: 24px;
+            background: var(--paper-card); border: 1px solid var(--ink); border-left: 4px solid var(--ledger);
+            padding: 16px 24px; font-family: var(--font-body); font-size: 14px; font-weight: 500;
+            box-shadow: 4px 4px 0 var(--rule); z-index: 9999; 
+            transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        #custom-toast.show { bottom: 24px; }
+        #custom-toast.error-toast { border-left-color: var(--danger); }
+
+        /* ─── NAV: ledger page header ─── */
         nav {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(15px);
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(255,255,255,0.3);
+            background: var(--paper-card);
+            border-bottom: 1px solid var(--ink);
+            box-shadow: 0 2px 0 var(--rule);
+            padding: 0 5%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
         }
-        .nav-left { display: flex; align-items: center; gap: 20px; }
-        .logo { font-size: 20px; font-weight: 800; text-decoration: none; color: #0f172a; }
-        .logo span { color: var(--theme-main); }
+
+        .nav-left { display: flex; align-items: center; gap: 16px; }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 700;
+            font-style: italic;
+            color: var(--ink);
+            text-decoration: none;
+            letter-spacing: -0.2px;
+            white-space: nowrap;
+        }
+        .logo span { color: var(--ledger); font-style: normal; }
+
+        .nav-divider { width: 1px; height: 20px; background: var(--rule); }
+
+        .lesson-breadcrumb {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--ink-soft);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 260px;
+            letter-spacing: 0.2px;
+        }
+
+        .nav-right { display: flex; align-items: center; gap: 18px; }
+
+        .ledger-balance {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            font-family: var(--font-mono);
+        }
+        .ledger-balance .lb-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--ink-soft);
+        }
+        .ledger-balance .lb-value {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--ledger);
+        }
+        .ledger-balance.streak .lb-value { color: var(--brass); }
+        .balance-divider { width: 1px; height: 16px; background: var(--rule); }
+
+        .lang-switcher { display: flex; }
+        .btn-lang {
+            border: 1px solid var(--rule);
+            border-left: none;
+            background: var(--white);
+            padding: 6px 12px;
+            font-family: var(--font-mono);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.4px;
+            cursor: pointer;
+            color: var(--ink-soft);
+            transition: 0.15s;
+        }
+        .lang-switcher .btn-lang:first-child { border-left: 1px solid var(--rule); border-radius: var(--radius-md) 0 0 var(--radius-md); }
+        .lang-switcher .btn-lang:last-child { border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+        .btn-lang.active { background: var(--ink); color: var(--paper-card); border-color: var(--ink); }
+        .btn-lang:hover:not(.active) { background: var(--ledger-tint); }
+
+        /* ─── LAYOUT: ledger sheet with ruled margin column ─── */
+        .lesson-layout {
+            max-width: 760px; /* TIGHTENED FOR READABILITY */
+            margin: 0 auto;
+            padding: 48px 24px 120px 96px;
+            position: relative;
+        }
+        .margin-rule {
+            position: absolute;
+            left: 68px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: var(--margin-red);
+            opacity: 0.55;
+        }
+
+        .entry-number {
+            position: absolute;
+            left: -52px;
+            top: 4px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--margin-red);
+            letter-spacing: 0.3px;
+        }
+
+        /* ─── SKELETON LOADING ─── */
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        .skeleton {
+            background: linear-gradient(90deg, #E9F0E9 25%, #F6F3E9 50%, #E9F0E9 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            color: transparent !important;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* ─── LESSON HERO ─── */
+        .lesson-hero { margin-bottom: 44px; position: relative; }
+
+        .lesson-meta {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            border: 1px solid var(--rule);
+            width: fit-content;
+        }
+        .meta-tag {
+            padding: 7px 14px;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            border-right: 1px solid var(--rule);
+        }
+        .meta-tag:last-child { border-right: none; }
+        .meta-tag.accounting { color: var(--ledger); font-weight: 600; background: var(--ledger-tint); }
+
+        .lesson-hero h1 {
+            font-family: var(--font-display);
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.12;
+            letter-spacing: -0.5px;
+            color: var(--ink);
+            margin-bottom: 14px;
+        }
+
+        .lesson-subtitle {
+            font-size: 16px;
+            color: var(--ink-soft);
+            line-height: 1.65;
+            max-width: 620px;
+        }
+
+        .hero-doc {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 10px 14px;
+            background: var(--white);
+            border: 1px solid var(--rule);
+            box-shadow: 3px 4px 0 var(--rule);
+            transform: rotate(-0.6deg);
+            filter: sepia(0.2) contrast(0.95);
+        }
+        .hero-doc img {
+            width: 100%;
+            max-width: 520px;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+        .hero-doc-caption {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding-top: 8px;
+        }
+
+        /* ─── SECTION BLOCKS: ledger entries ─── */
+        .lesson-block {
+            background: var(--paper-card);
+            border: 1px solid var(--rule);
+            border-left: 3px solid var(--ledger);
+            margin-bottom: 22px;
+            position: relative;
+        }
+        .lesson-block.blk-gold { border-left-color: var(--brass); }
+        .lesson-block.blk-dark { border-left-color: var(--ink); }
+
+        .block-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 26px;
+            border-bottom: 1px solid var(--rule);
+        }
+        .block-icon {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ledger);
+            flex-shrink: 0;
+        }
+        .blk-gold .block-icon { color: var(--brass); }
+        .blk-dark .block-icon { color: var(--paper); }
+        .block-icon svg { width: 20px; height: 20px; stroke-width: 1.6; }
+
+        .block-header h2 {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.1px;
+            color: var(--ink);
+        }
+        .blk-dark .block-header h2 { color: var(--paper); }
+
+        .block-badge {
+            margin-left: auto;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .blk-dark .block-badge { color: #9CA89E; }
+
+        .block-body {
+            padding: 26px;
+            font-size: 16px;
+            line-height: 1.85;
+            color: var(--ink);
+        }
+        .blk-dark { background: var(--ink); }
+        .blk-dark .block-header { border-bottom: 1px solid #34403A; }
+        .blk-dark .block-body { color: #D6DCD7; }
+
+        [dir="rtl"] .block-body { text-align: right; }
+
+        /* ─── RICH TEXT ─── */
+        .block-body b { color: var(--ledger-deep); font-weight: 700; }
+        .blk-dark .block-body b { color: var(--brass); }
+
+        .block-body .premium-heading {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            font-style: italic;
+            color: var(--ledger-deep);
+            margin: 26px 0 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .premium-note {
+            display: flex;
+            gap: 12px;
+            background: var(--brass-tint);
+            border-left: 2px solid var(--brass);
+            padding: 13px 18px;
+            margin: 18px 0;
+            font-size: 14.5px;
+            color: #5C4419;
+        }
+        [dir="rtl"] .premium-note { border-left: none; border-right: 2px solid var(--brass); }
+        .premium-note::before { content: '§'; font-family: var(--font-display); font-style: italic; font-weight: 700; flex-shrink: 0; color: var(--brass); }
+
+        .premium-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 8px 0;
+            padding: 9px 4px;
+            font-size: 15px;
+            border-bottom: 1px dashed var(--rule);
+        }
+        .premium-list-item::before {
+            content: '—';
+            color: var(--ledger);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* ─── PRACTICE ZONE: a worksheet ─── */
+        .practice-zone {
+            background: repeating-linear-gradient(to bottom, var(--white), var(--white) 29px, var(--ledger-tint) 30px);
+            border: 1px solid var(--rule);
+            padding: 22px 24px;
+            margin-top: 18px;
+        }
+        .pz-question {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 18px;
+        }
+
+        .mcq-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+        .mcq-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: var(--white);
+            border: 1px solid var(--rule);
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.15s;
+        }
+        .mcq-option:hover { border-color: var(--ledger); background: var(--ledger-tint); }
+        .mcq-option input[type="radio"] { accent-color: var(--ledger); width: 15px; height: 15px; flex-shrink: 0; }
+        .mcq-label-tag { font-family: var(--font-mono); font-size: 11px; background: var(--rule); padding: 2px 6px; border-radius: 2px; color: var(--ink-soft); margin-right: 8px;}
+
+        .pz-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--rule);
+            font-size: 16px;
+            font-family: var(--font-mono);
+            background: var(--white);
+            color: var(--ink);
+            margin-bottom: 14px;
+        }
+        .pz-input:focus { border-color: var(--ledger); outline: 2px solid var(--ledger-tint); outline-offset: 1px; }
+
+        .btn-verify {
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            padding: 13px 26px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+            font-family: var(--font-body);
+        }
+        .btn-verify:hover { background: var(--ledger-deep); }
+        .btn-verify:focus-visible, .mcq-option:focus-within, .btn-complete:focus-visible, .btn-lang:focus-visible { outline: 2px solid var(--margin-red); outline-offset: 2px; }
+
+        /* Smart Practice Results */
+        .pz-result {
+            margin-top: 16px;
+            padding: 12px 16px;
+            font-weight: 500;
+            font-size: 14.5px;
+            display: none;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .pz-result-content { display: flex; align-items: center; gap: 10px; width: 100%; }
+        .pz-result.success { display: flex; color: var(--ledger-deep); border-left: 2px solid var(--ledger); }
+        .pz-result.error   { display: flex; color: var(--danger); border-left: 2px solid var(--danger); background: var(--danger-tint); }
+        [dir="rtl"] .pz-result.success, [dir="rtl"] .pz-result.error { border-left: none; }
         
-        .stats-badge { display: flex; gap: 10px; }
-        .streak-badge, .xp-badge { padding: 5px 12px; border-radius: 50px; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 5px; }
-        .streak-badge { background: #FEF3C7; color: #D97706; }
-        .xp-badge { background: #E0E7FF; color: #4F46E5; }
+        .btn-solution { background: transparent; border: 1px underline var(--ink-soft); color: var(--ink-soft); font-family: var(--font-mono); font-size: 12px; cursor: pointer; margin-top: 8px; padding: 4px 0;}
 
-        /* --- THE PREMIUM HEADER --- */
-        .poster-header { text-align: center; padding: 40px 20px 20px; }
-        .lesson-tag { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--theme-main); margin-bottom: 10px; font-weight: 700; display: inline-block; background: rgba(255,255,255,0.5); padding: 5px 15px; border-radius: 50px; }
-        .main-title { font-family: 'Playfair Display', serif; font-size: 42px; color: #0f172a; margin: 0 auto; max-width: 900px; line-height: 1.2; text-shadow: 1px 1px 2px rgba(0,0,0,0.05); }
-        .ornament { display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 20px; }
-        .ornament::before, .ornament::after { content: ''; height: 2px; width: 50px; background: #d97706; }
-        .ornament span { color: #d97706; font-size: 18px; line-height: 0; }
+        .pz-stamp {
+            width: 26px; height: 26px;
+            border-radius: 50%;
+            border: 1.5px solid currentColor;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+            transform: scale(1.5) rotate(-10deg);
+            opacity: 0;
+            animation: stampDown 0.32s ease-out forwards;
+        }
+        @keyframes stampDown {
+            0%   { transform: scale(1.8) rotate(-18deg); opacity: 0; }
+            60%  { transform: scale(0.92) rotate(-8deg); opacity: 1; }
+            100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+        }
 
-        /* --- Hero Image --- */
-        .hero-img-container { max-width: 850px; margin: 0 auto 40px; padding: 0 20px; }
-        .hero-img { width: 100%; height: 380px; object-fit: cover; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 4px solid white; }
+        /* ─── KEY TAKEAWAYS: a totals reconciliation ─── */
+        .takeaway-grid { display: flex; flex-direction: column; margin-top: 4px; }
+        .takeaway-item {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            padding: 13px 0;
+            border-bottom: 1px dashed #34403A;
+            font-size: 14.5px;
+            color: #D6DCD7;
+            line-height: 1.5;
+        }
+        .takeaway-item:last-child { border-bottom: none; }
+        .takeaway-item::before {
+            content: attr(data-idx);
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--brass);
+            flex-shrink: 0;
+        }
 
-        /* --- The Infographic Content Grid --- */
-        .poster-grid { max-width: 850px; margin: 0 auto 100px; padding: 0 20px; display: grid; gap: 25px; }
-        .info-card { background: #ffffff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.05); transition: all 0.3s ease; }
-        .info-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .card-ribbon { padding: 12px 25px; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: white; display: flex; align-items: center; gap: 10px; }
-        .card-body { padding: 30px 35px; font-size: 17px; line-height: 2; color: #334155; letter-spacing: 0.3px; }
-        .card-body b { color: #0f172a; font-weight: 700; }
+        /* ─── COMPLETE ACTION ─── */
+        .action-wrap { text-align: center; margin-top: 44px; }
+        .btn-complete {
+            background: var(--ledger);
+            color: var(--paper);
+            border: none;
+            padding: 17px 48px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-complete:hover { background: var(--ledger-deep); transform: translateY(-1px); }
+        .btn-complete:disabled { opacity: 0.75; pointer-events: none; }
 
-        /* 🚀 FORMATTING CLASSES */
-        .premium-heading { font-family: 'Playfair Display', serif; color: var(--theme-main); font-size: 22px; font-weight: 700; margin-top: 35px; margin-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 10px; display: block; }
-        .premium-bullet { color: var(--theme-gradient); margin-right: 8px; font-size: 1.1em; }
-        .premium-note { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 12px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; display: block; color: #92400e; }
-        .premium-list-item { display: block; margin-left: 25px; margin-bottom: 10px; position: relative; }
-        .premium-list-item::before { content: '•'; color: #d97706; position: absolute; left: -18px; font-size: 22px; line-height: 1; }
+        .next-hint {
+            margin-top: 14px;
+            font-family: var(--font-mono);
+            font-size: 11.5px;
+            color: var(--ink-soft);
+        }
 
-        /* 🚀 INTERACTIVE PRACTICE ZONE CSS */
-        .practice-widget { margin-top: 30px; padding: 25px; background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; }
-        .practice-input { width: 100%; padding: 15px; margin: 15px 0; border: 2px solid #cbd5e1; border-radius: 8px; font-size: 18px; font-family: 'Inter', sans-serif; transition: 0.3s; box-sizing: border-box; }
-        .practice-input:focus { border-color: var(--theme-gradient); outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.2); }
-        .practice-btn { background: #0f172a; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; width: 100%; }
-        .practice-btn:hover { background: #1e293b; transform: translateY(-2px); }
-        .mcq-option { display: block; margin: 10px 0; padding: 15px; background: white; border: 2px solid #e2e8f0; border-radius: 8px; cursor: pointer; transition: 0.2s; font-weight: 500; }
-        .mcq-option:hover { border-color: #94a3b8; background: #f1f5f9; }
-        .mcq-option input { margin-right: 15px; transform: scale(1.2); }
-        .practice-result { margin-top: 20px; padding: 15px; border-radius: 8px; font-weight: 700; display: none; }
-        .result-success { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; display: block; }
-        .result-error { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; display: block; }
+        [dir="rtl"] .lesson-meta, [dir="rtl"] .nav-left { flex-direction: row-reverse; }
+        [dir="rtl"] .margin-rule { left: auto; right: 68px; }
+        [dir="rtl"] .entry-number { left: auto; right: -52px; }
+        [dir="rtl"] .lesson-layout { padding: 48px 96px 120px 24px; }
+        [dir="rtl"] .meta-tag { border-right: none; border-left: 1px solid var(--rule); }
 
-        /* --- Dynamic Section Colors --- */
-        .theme-main .card-ribbon { background: linear-gradient(to right, var(--theme-main), var(--theme-gradient)); }
-        .theme-teal { background: #f0fdfa; }
-        .theme-teal .card-ribbon { background: linear-gradient(to right, #0f766e, #14b8a6); }
-        .theme-gold { background: #fffbeb; }
-        .theme-gold .card-ribbon { background: linear-gradient(to right, #b45309, #f59e0b); }
-        .theme-dark { background: var(--theme-main); color: white; }
-        .theme-dark .card-ribbon { background: linear-gradient(to right, #0f172a, #334155); color: white; }
-        .theme-dark .card-body { color: #e2e8f0; }
-        .theme-dark .card-body b { color: #fbbf24; }
-
-        /* --- Controls --- */
-        .btn-lang { border: none; background: white; padding: 6px 15px; border-radius: 50px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1); color: var(--theme-main); transition: 0.3s; }
-        .btn-lang.active { background: var(--theme-main); color: white; }
-
-        /* --- Finish Button --- */
-        .action-area { text-align: center; margin-top: 20px; }
-        .btn-complete { background: linear-gradient(to right, #d97706, #f59e0b); color: white; border: none; padding: 18px 50px; font-size: 18px; font-weight: 700; border-radius: 50px; cursor: pointer; box-shadow: 0 5px 20px rgba(217, 119, 6, 0.4); transition: 0.3s; }
-        .btn-complete:hover { transform: scale(1.05); }
-
-        /* RTL Support */
-        [dir="rtl"] .poster-grid, [dir="rtl"] .card-body { text-align: right; }
-        [dir="rtl"] .card-ribbon { flex-direction: row-reverse; }
-        [dir="rtl"] .premium-note { border-left: none; border-right: 4px solid #f59e0b; border-radius: 8px 0 0 8px; }
-        [dir="rtl"] .premium-list-item { margin-left: 0; margin-right: 25px; }
-        [dir="rtl"] .premium-list-item::before { left: auto; right: -18px; }
+        @media (max-width: 720px) {
+            .lesson-layout { padding: 40px 20px 100px; }
+            .margin-rule, .entry-number { display: none; }
+            .lesson-hero h1 { font-size: 27px; }
+            .hero-doc img { height: 190px; }
+            .block-body { padding: 20px; }
+            .lesson-breadcrumb { display: none; }
+            .nav-divider { display: none; }
+            [dir="rtl"] .lesson-layout { padding: 40px 20px 100px; }
+        }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div class="nav-left">
-            <a href="/dashboard" class="logo">AMINA <span>Académie</span></a>
-            <div class="stats-badge">
-                <div class="xp-badge" title="Points d'expérience">⭐ <span id="navXp"><%= user && user.xp ? user.xp : 0 %></span> XP</div>
-                <div class="streak-badge" title="Série de jours">🔥 <span><%= user && user.streak && user.streak.current ? user.streak.current : 0 %></span></div>
-            </div>
-        </div>
-        <div style="display:flex; gap:10px;">
-            <button type="button" class="btn-lang active" onclick="switchLang('fr', 'ltr', this)">FR</button>
-            <button type="button" class="btn-lang" onclick="switchLang('en', 'ltr', this)">EN</button>
-            <button type="button" class="btn-lang" onclick="switchLang('ar', 'rtl', this)">AR</button>
-        </div>
-    </nav>
+<div id="progress-bar-wrap"><div id="progress-bar-fill"></div></div>
+<div id="custom-toast">Message</div>
 
-    <div class="poster-header">
-        <div class="lesson-tag">💼 Accounting Empire - Leçon <%= lessonId %></div>
-        <h1 class="main-title" id="lessonTitle">
-            <%= lesson.title?.fr || lesson.title || 'Chargement...' %>
-        </h1>
-        <div class="ornament">
-            <span>◈</span>
+<nav>
+    <div class="nav-left">
+        <a href="/dashboard" class="logo">AMINA <span>Académie</span></a>
+        <div class="nav-divider"></div>
+        <span class="lesson-breadcrumb" id="navLessonTitle">Leçon <%= lessonId %></span>
+    </div>
+    <div class="nav-right">
+        <div class="ledger-balance">
+            <span class="lb-label">Progression</span>
+            <span class="lb-value" id="navProgress">0/5</span>
+        </div>
+        <div class="balance-divider"></div>
+        <div class="ledger-balance">
+            <span class="lb-label">XP</span>
+            <span class="lb-value" id="navXp"><%= user && user.xp ? user.xp : 0 %></span>
+        </div>
+        <div class="balance-divider"></div>
+        <div class="ledger-balance streak">
+            <span class="lb-label">Série</span>
+            <span class="lb-value"><%= user && user.streak && user.streak.current ? user.streak.current : 0 %>j</span>
+        </div>
+        <div class="lang-switcher">
+            <button type="button" class="btn-lang active" onclick="switchLang('fr','ltr',this)">FR</button>
+            <button type="button" class="btn-lang" onclick="switchLang('en','ltr',this)">EN</button>
+            <button type="button" class="btn-lang" onclick="switchLang('ar','rtl',this)">AR</button>
+        </div>
+    </div>
+</nav>
+
+<div class="lesson-layout">
+    <div class="margin-rule"></div>
+
+    <div class="lesson-hero">
+        <div class="lesson-meta">
+            <span class="meta-tag accounting">Comptabilité</span>
+            <span class="meta-tag">Réf. <%= lessonId %></span>
+            <span class="meta-tag">~15 min</span>
+        </div>
+        <h1 id="lessonTitle" class="skeleton">Chargement…</h1>
+        <p class="lesson-subtitle skeleton" id="lessonSubtitle">Préparez-vous à maîtriser un concept clé de la comptabilité marocaine.</p>
+        <div class="hero-doc">
+            <img id="lessonImg" src="<%= fallbackImg %>" alt="Document de référence de la leçon">
+            <div class="hero-doc-caption">Pièce jointe — document de référence</div>
         </div>
     </div>
 
-    <div class="hero-img-container">
-        <img src="<%= fallbackImg %>" id="lessonImg" class="hero-img" alt="Cover">
+    <div class="lesson-block blk-blue" data-index="1">
+        <span class="entry-number">N&deg;01</span>
+        <div class="block-header">
+            <div class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4"></circle><circle cx="12" cy="12" r="0.5" fill="currentColor"></circle></svg></div>
+            <h2 id="lbl-obj">Objectif de la leçon</h2>
+            <span class="block-badge">À retenir</span>
+        </div>
+        <div class="block-body" id="txt-obj"></div>
     </div>
 
-    <div class="poster-grid">
-        <div class="info-card theme-main">
-            <div class="card-ribbon">🎯 <span id="lbl-obj">Objectif</span></div>
-            <div class="card-body" id="txt-obj"></div>
+    <div class="lesson-block blk-blue" data-index="2">
+        <span class="entry-number">N&deg;02</span>
+        <div class="block-header">
+            <div class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1"></rect><line x1="8" y1="9" x2="16" y2="9"></line><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="12" y2="17"></line></svg></div>
+            <h2 id="lbl-exp">Explication complète</h2>
+            <span class="block-badge">Théorie</span>
         </div>
+        <div class="block-body" id="txt-exp"></div>
+    </div>
 
-        <div class="info-card theme-main">
-            <div class="card-ribbon">📖 <span id="lbl-exp">Explication</span></div>
-            <div class="card-body" id="txt-exp"></div>
+    <div class="lesson-block blk-blue" data-index="3">
+        <span class="entry-number">N&deg;03</span>
+        <div class="block-header">
+            <div class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8Z"></path><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path><line x1="4" y1="13" x2="20" y2="13"></line></svg></div>
+            <h2 id="lbl-exm">Cas pratique</h2>
+            <span class="block-badge">Exemple réel</span>
         </div>
+        <div class="block-body" id="txt-exm"></div>
+    </div>
 
-        <div class="info-card theme-teal">
-            <div class="card-ribbon">💼 <span id="lbl-exm">Exemple</span></div>
-            <div class="card-body" id="txt-exm"></div>
+    <div class="lesson-block blk-gold" data-index="4">
+        <span class="entry-number">N&deg;04</span>
+        <div class="block-header">
+            <div class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1Z"></path><line x1="13" y1="7" x2="17" y2="11"></line></svg></div>
+            <h2 id="lbl-pra">Exercice pratique</h2>
+            <span class="block-badge">Challenge</span>
         </div>
-
-        <div class="info-card theme-gold">
-            <div class="card-ribbon">✍️ <span id="lbl-pra">Tâche Pratique</span></div>
-            <div class="card-body">
-                <div id="txt-pra"></div>
-                <div id="dynamic-practice-zone"></div>
-            </div>
-        </div>
-
-        <div class="info-card theme-dark">
-            <div class="card-ribbon">📌 <span id="lbl-res">Résumé</span></div>
-            <div class="card-body" id="txt-res"></div>
-        </div>
-
-        <div class="action-area">
-            <button type="button" class="btn-complete" id="btn-complete" onclick="markComplete()">
-                ✅ Marquer comme terminé
-            </button>
+        <div class="block-body">
+            <div id="txt-pra"></div>
+            <div id="dynamic-practice-zone"></div>
         </div>
     </div>
 
-    <%- include('../partials/ai-coach') %>
+    <div class="lesson-block blk-dark" data-index="5">
+        <span class="entry-number">N&deg;05</span>
+        <div class="block-header">
+            <div class="block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v14l-4-3H4z"></path><line x1="8" y1="9" x2="16" y2="9"></line></svg></div>
+            <h2 id="lbl-res">Points clés à retenir</h2>
+            <span class="block-badge">Résumé</span>
+        </div>
+        <div class="block-body">
+            <div id="txt-res-raw" style="display:none"></div>
+            <div class="takeaway-grid" id="takeaway-grid"></div>
+        </div>
+    </div>
 
-    <script id="lesson-data" type="application/json">
-        <%- JSON.stringify(lesson || {}) %>
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <div class="action-wrap">
+        <button type="button" class="btn-complete" id="btn-complete" onclick="markComplete()">
+            Marquer comme terminé
+        </button>
+        <p class="next-hint" id="next-hint">La leçon suivante se débloque automatiquement après validation.</p>
+    </div>
 
-    <script>
-        window.CURRENT_COURSE_TYPE = "accounting"; 
+</div>
 
-        const lessonData = JSON.parse(document.getElementById('lesson-data').textContent);
-        const fallbackImageUrl = "<%= fallbackImg %>"; 
-        const CURRENT_LESSON_ID = "<%= lessonId %>";
-        const CURRENT_COURSE_TYPE = "accounting"; 
+<%- include('../partials/ai-coach') %>
 
-        const labels = {
-            fr: { obj: "Objectif", exp: "Explication", exm: "Exemple", pra: "Tâche Pratique", res: "Résumé", btn: "✅ Marquer comme terminé" },
-            en: { obj: "Objective", exp: "Explanation", exm: "Case Study", pra: "Practice Task", res: "Summary", btn: "✅ Mark as Completed" },
-            ar: { obj: "الهدف", exp: "الشرح", exm: "مثال", pra: "تطبيق عملي", res: "ملخص", btn: "✅ تحديد كمكتمل" }
-        };
+<script id="lesson-data" type="application/json"><%- JSON.stringify(lesson || {}) %></script>
 
-        function format(text) {
-            if (!text) return "";
-            let html = text;
-            html = html.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
-            html = html.replace(/🔹\s*(\d+\..*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-heading"><span class="premium-bullet">🔹</span> $1</span>');
-            html = html.replace(/🔹/g, '<br><br><span class="premium-bullet">🔹</span>');
-            html = html.replace(/👍\s*(.*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-note"><b>💡 Note :</b> $1</span>');
-            html = html.replace(/-\s+(.*?)(?=(🔹|👍|-|❌|✓|$))/g, '<span class="premium-list-item">$1</span>');
-            html = html.replace(/❌/g, '<br><span style="color: #ef4444; font-weight: bold; margin-right: 8px;">❌</span>');
-            html = html.replace(/✓/g, '<br><span style="color: #10b981; font-weight: bold; margin-right: 8px;">✅</span>');
-            html = html.replace(/\n/g, '<br>');
-            return html;
+<script>
+    window.CURRENT_COURSE_TYPE = "accounting";
+    const lessonData = JSON.parse(document.getElementById('lesson-data').textContent);
+    const fallbackImageUrl = "<%= fallbackImg %>";
+    const CURRENT_LESSON_ID = "<%= lessonId %>";
+    let pzAttempts = 0;
+
+    // ─── TOAST NOTIFICATIONS ───
+    function showToast(message, isError = false) {
+        const toast = document.getElementById('custom-toast');
+        toast.textContent = message;
+        toast.className = isError ? 'error-toast show' : 'show';
+        setTimeout(() => toast.className = '', 4000);
+    }
+
+    // ─── READING PROGRESS & BLOCK TRACKER ───
+    window.addEventListener('load', () => {
+        const blocks = document.querySelectorAll('.lesson-block');
+        const progressEl = document.getElementById('navProgress');
+        
+        if('IntersectionObserver' in window) {
+            progressEl.textContent = `0/${blocks.length}`;
+            let readBlocks = new Set();
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        readBlocks.add(entry.target.getAttribute('data-index'));
+                        progressEl.textContent = `${readBlocks.size}/${blocks.length}`;
+                    }
+                });
+            }, { threshold: 0.6 });
+            blocks.forEach(b => observer.observe(b));
         }
 
-        window.checkAnswer = function(inputType) {
-            const pz = lessonData.practice_zone;
-            const resultDiv = document.getElementById('pz_result');
-            let userAnswer = "";
+        window.addEventListener('scroll', () => {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? (window.scrollY / docH) * 100 : 0;
+            document.getElementById('progress-bar-fill').style.width = pct + '%';
+        });
+    });
 
-            if (inputType === 'radio') {
-                const selected = document.querySelector('input[name="pz_radio"]:checked');
-                if(!selected) {
-                    resultDiv.className = 'practice-result result-error';
-                    resultDiv.innerHTML = '⚠️ Veuillez sélectionner une option avant de vérifier.';
-                    return;
-                }
-                userAnswer = selected.value;
-            } else if (inputType === 'input') {
-                userAnswer = document.getElementById('pz_input').value;
-                if(!userAnswer) {
-                    resultDiv.className = 'practice-result result-error';
-                    resultDiv.innerHTML = '⚠️ Veuillez entrer une valeur numérique.';
-                    return;
-                }
-            }
+    // ─── LABELS ───
+    const labels = {
+        fr: { obj:"Objectif de la leçon", exp:"Explication complète", exm:"Cas pratique", pra:"Exercice pratique", res:"Points clés à retenir", btn:"Marquer comme terminé", btnDone:"Écriture validée" },
+        en: { obj:"Lesson Objective",     exp:"Full Explanation",     exm:"Case Study",  pra:"Practice Task",    res:"Key Takeaways",         btn:"Mark as Completed",     btnDone:"Entry posted" },
+        ar: { obj:"هدف الدرس",            exp:"الشرح الكامل",         exm:"مثال تطبيقي", pra:"تطبيق عملي",       res:"نقاط رئيسية",           btn:"تحديد كمكتمل",          btnDone:"تم الترحيل" }
+    };
 
-            if (userAnswer.toString().trim() === pz.correct_answer.toString().trim()) {
-                resultDiv.className = 'practice-result result-success';
-                resultDiv.innerHTML = '🎉 Excellent ! Votre réponse est parfaitement correcte.';
-            } else {
-                resultDiv.className = 'practice-result result-error';
-                resultDiv.innerHTML = '❌ Incorrect. Relisez le cours et essayez encore !';
-            }
-        };
+    // ─── RICH TEXT FORMATTER ───
+    function format(text) {
+        if (!text) return '<span style="color:var(--ink-soft);font-style:italic;">Aucun contenu disponible.</span>';
+        let html = text;
+        html = html.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+        html = html.replace(/🔹\s*([^\n]+)/g, '<div class="premium-heading">$1</div>');
+        html = html.replace(/👍\s*([^\n]+)/g, '<div class="premium-note">$1</div>');
+        html = html.replace(/-\s+([^\n]+)/g, '<div class="premium-list-item">$1</div>');
+        html = html.replace(/❌/g, '<span style="color:var(--danger);font-weight:700;">✕</span>');
+        html = html.replace(/✓/g, '<span style="color:var(--ledger);font-weight:700;">✓</span>');
+        html = html.replace(/\n/g, '<br>');
+        return html;
+    }
 
-        function renderPracticeZone() {
-            const container = document.getElementById('dynamic-practice-zone');
-            const pz = lessonData.practice_zone;
-            
-            if (!pz || !pz.type || Object.keys(pz).length === 0) {
-                container.innerHTML = '';
+    // ─── TAKEAWAYS AS A RECONCILIATION LIST ───
+    function buildTakeaways(rawHtml) {
+        const grid = document.getElementById('takeaway-grid');
+        const lines = rawHtml.split('<br>').map(l => l.replace(/<[^>]+>/g,'').trim()).filter(l => l.length > 10);
+        if (lines.length === 0) { grid.innerHTML = '<span style="color:#9CA89E;font-size:14.5px;">Résumé disponible plus haut.</span>'; return; }
+        grid.innerHTML = lines.map((l, i) => `<div class="takeaway-item" data-idx="${String(i+1).padStart(2,'0')}">${l}</div>`).join('');
+    }
+
+    // ─── PRACTICE ZONE ───
+    window.showSolution = function() {
+        const pz = lessonData.practice_zone;
+        const resultEl = document.getElementById('pz_result');
+        resultEl.innerHTML = `<div class="pz-result-content"><span class="pz-stamp" style="border:none">💡</span><b>Solution:</b> La bonne réponse est "${pz.correct_answer}". Reprenez la section Explication pour comprendre le raisonnement.</div>`;
+        resultEl.className = 'pz-result success';
+    };
+
+    window.checkAnswer = function(inputType) {
+        const pz = lessonData.practice_zone;
+        const resultEl = document.getElementById('pz_result');
+        let userAnswer = '';
+
+        if (inputType === 'radio') {
+            const sel = document.querySelector('input[name="pz_radio"]:checked');
+            if (!sel) {
+                showToast('Sélectionnez une option avant de vérifier.', true);
                 return;
             }
-
-            let html = `<div class="practice-widget">`;
-            if (pz.question) {
-                html += `<h4 class="premium-heading" style="margin-top:0;">🎯 Challenge :<br><span style="color:#334155; font-size:18px; font-weight:500;">${pz.question}</span></h4>`;
-            }
-
-            if (pz.type === 'mcq' || pz.type === 'brand_audit' || pz.type === 'commitment') {
-                pz.options.forEach((opt) => {
-                    html += `
-                        <label class="mcq-option">
-                            <input type="radio" name="pz_radio" value="${opt}">
-                            ${opt}
-                        </label>
-                    `;
-                });
-                html += `<button type="button" class="practice-btn" onclick="checkAnswer('radio')">Vérifier la réponse</button>`;
-            } 
-            else if (pz.type === 'fifo_calculator' || pz.type === 'tva_calculator' || pz.type === 'input') {
-                html += `<input type="number" id="pz_input" class="practice-input" placeholder="Entrez votre réponse en chiffres...">`;
-                html += `<button type="button" class="practice-btn" onclick="checkAnswer('input')">Calculer & Vérifier</button>`;
-            }
-
-            html += `<div id="pz_result" class="practice-result"></div>`;
-            html += `</div>`;
-            
-            container.innerHTML = html;
-        }
-
-        function switchLang(lang, dir, btnElement = null) {
-            document.documentElement.setAttribute('dir', dir);
-            
-            let content = {};
-            if (lessonData.content && lessonData.content[lang]) {
-                content = lessonData.content[lang];
-            } else if (lessonData.content) {
-                content = lessonData.content; 
-            }
-
-            const l = labels[lang] || labels.fr;
-
-            if(btnElement) {
-                document.querySelectorAll('.btn-lang').forEach(btn => btn.classList.remove('active'));
-                btnElement.classList.add('active');
-            }
-
-            let titleText = `Leçon ${CURRENT_LESSON_ID}`;
-            if (lessonData.title) {
-                if (typeof lessonData.title === 'string') titleText = lessonData.title;
-                else if (lessonData.title[lang]) titleText = lessonData.title[lang];
-                else if (lessonData.title.fr) titleText = lessonData.title.fr;
-            }
-            document.getElementById('lessonTitle').innerText = titleText;
-
-            document.getElementById('lbl-obj').innerText = l.obj;
-            document.getElementById('lbl-exp').innerText = l.exp;
-            document.getElementById('lbl-exm').innerText = l.exm;
-            document.getElementById('lbl-pra').innerText = l.pra;
-            document.getElementById('lbl-res').innerText = l.res;
-            document.getElementById('btn-complete').innerText = l.btn;
-
-            document.getElementById('txt-obj').innerHTML = format(content.objectif || lessonData.description || "");
-            document.getElementById('txt-exp').innerHTML = format(content.explication || "");
-            document.getElementById('txt-exm').innerHTML = format(content.exemple || "");
-            document.getElementById('txt-pra').innerHTML = format(content.pratique || "");
-            document.getElementById('txt-res').innerHTML = format(content.resume || "");
-
-            const img = document.getElementById('lessonImg');
-            img.src = content.imageUrl || lessonData.imageUrl || fallbackImageUrl;
-        }
-
-        window.onload = () => {
-            switchLang('fr', 'ltr', document.querySelector('.btn-lang.active'));
-            renderPracticeZone(); 
-        };
-
-        // 🚀 UPGRADED MARK COMPLETE WITH NEXT-LESSON REDIRECT
-        async function markComplete() {
-            const btn = document.getElementById('btn-complete');
-            const originalText = btn.innerText;
-            
-            // UI Feedback during API call
-            btn.innerHTML = '⏳ Validation...';
-            btn.style.opacity = '0.8';
-            btn.style.pointerEvents = 'none'; 
-
-            try {
-                const res = await fetch('/api/progress/complete', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ 
-                        lessonId: parseInt(CURRENT_LESSON_ID), 
-                        courseType: CURRENT_COURSE_TYPE 
-                    }) 
-                });
-                
-                if (res.ok) {
-                    const data = await res.json();
-                    
-                    // Button UI Update with XP
-                    btn.innerHTML = `🎉 Terminé ! ${data.xpGained > 0 ? `(+${data.xpGained} XP)` : ''}`;
-                    btn.style.background = '#10B981'; 
-                    btn.style.opacity = '1';
-
-                    // Update Top Nav XP live
-                    if (data.totalXp) {
-                        document.getElementById('navXp').innerText = data.totalXp;
-                    }
-
-                    // 🎊 FIRE CONFETTI!
-                    if (typeof confetti === 'function') {
-                        var duration = 1.5 * 1000;
-                        var end = Date.now() + duration;
-                        (function frame() {
-                            confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#1e3a8a', '#3b82f6', '#d97706'] });
-                            confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#1e3a8a', '#3b82f6', '#d97706'] });
-                            if (Date.now() < end) { requestAnimationFrame(frame); }
-                        }());
-                    }
-
-                    // 🚀 THE MAGIC REDIRECT: Go straight to the NEXT lesson
-                    setTimeout(() => {
-                        const nextLessonId = parseInt(CURRENT_LESSON_ID) + 1;
-                        window.location.href = `/lesson/${CURRENT_COURSE_TYPE}/${nextLessonId}`;
-                    }, 1800);
-                    
-                } else {
-                    const data = await res.json();
-                    alert("Erreur du backend: " + (data.message || "Impossible de sauvegarder"));
-                    btn.innerHTML = originalText;
-                    btn.style.opacity = '1';
-                    btn.style.pointerEvents = 'auto';
-                }
-            } catch (error) {
-                console.error("Error updating progress:", error);
-                alert("Erreur de connexion. Vérifiez votre backend !");
-                btn.innerHTML = originalText;
-                btn.style.opacity = '1';
-                btn.style.pointerEvents = 'auto';
+            userAnswer = sel.value;
+        } else {
+            userAnswer = (document.getElementById('pz_input')?.value || '').trim();
+            if (!userAnswer) {
+                showToast('Entrez une valeur avant de vérifier.', true);
+                return;
             }
         }
-    </script>
+
+        if (userAnswer.toString().trim() === pz.correct_answer.toString().trim()) {
+            resultEl.className = 'pz-result success';
+            resultEl.innerHTML = '<div class="pz-result-content"><span class="pz-stamp">✓</span><span>Correct — écriture équilibrée.</span></div>';
+        } else {
+            pzAttempts++;
+            resultEl.className = 'pz-result error';
+            let html = `<div class="pz-result-content"><span class="pz-stamp">✕</span><span>Incorrect. ${pz.explanation || 'Relisez le cas pratique et réessayez.'}</span></div>`;
+            if (pzAttempts >= 2) {
+                html += `<button class="btn-solution" onclick="showSolution()">Bloqué ? Voir la solution</button>`;
+            }
+            resultEl.innerHTML = html;
+        }
+    };
+
+    function renderPracticeZone() {
+        const container = document.getElementById('dynamic-practice-zone');
+        const pz = lessonData.practice_zone;
+        if (!pz || !pz.type) { container.innerHTML = ''; return; }
+
+        let html = '<div class="practice-zone">';
+        if (pz.question) {
+            html += `<div class="pz-question">${pz.question}</div>`;
+        }
+
+        if (['mcq','brand_audit','commitment'].includes(pz.type)) {
+            html += '<div class="mcq-options">';
+            const chars = ['A', 'B', 'C', 'D'];
+            pz.options.forEach((opt, idx) => {
+                html += `<label class="mcq-option"><input type="radio" name="pz_radio" value="${opt}"><span class="mcq-label-tag">Compte ${chars[idx] || (idx+1)}</span> ${opt}</label>`;
+            });
+            html += '</div>';
+            html += `<button type="button" class="btn-verify" onclick="checkAnswer('radio')">Vérifier l'écriture</button>`;
+        } else {
+            html += `<input type="number" id="pz_input" class="pz-input" placeholder="Montant de l'écriture…">`;
+            html += `<button type="button" class="btn-verify" onclick="checkAnswer('input')">Calculer &amp; vérifier</button>`;
+        }
+
+        html += '<div id="pz_result" class="pz-result"></div>';
+        html += '</div>';
+        container.innerHTML = html;
+    }
+
+    // ─── LANG SWITCH ───
+    function switchLang(lang, dir, btnEl) {
+        document.documentElement.setAttribute('dir', dir);
+        document.documentElement.setAttribute('lang', lang);
+        if (btnEl) {
+            document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+            btnEl.classList.add('active');
+        }
+
+        let content = {};
+        if (lessonData.content) {
+            content = lessonData.content[lang] || lessonData.content || {};
+        }
+
+        const l = labels[lang] || labels.fr;
+
+        // Remove skeletons once loaded
+        document.getElementById('lessonTitle').classList.remove('skeleton');
+        document.getElementById('lessonSubtitle').classList.remove('skeleton');
+
+        let titleText = 'Leçon ' + CURRENT_LESSON_ID;
+        if (lessonData.title) {
+            titleText = typeof lessonData.title === 'string' ? lessonData.title : (lessonData.title[lang] || lessonData.title.fr || titleText);
+        }
+        document.getElementById('lessonTitle').textContent = titleText;
+        document.getElementById('navLessonTitle').textContent = titleText;
+
+        document.getElementById('lbl-obj').textContent = l.obj;
+        document.getElementById('lbl-exp').textContent = l.exp;
+        document.getElementById('lbl-exm').textContent = l.exm;
+        document.getElementById('lbl-pra').textContent = l.pra;
+        document.getElementById('lbl-res').textContent = l.res;
+        const btn = document.getElementById('btn-complete');
+        if (!btn.disabled) btn.textContent = l.btn;
+
+        document.getElementById('txt-obj').innerHTML = format(content.objectif || lessonData.description || '');
+        document.getElementById('txt-exp').innerHTML = format(content.explication || '');
+        document.getElementById('txt-exm').innerHTML = format(content.exemple || '');
+        document.getElementById('txt-pra').innerHTML = format(content.pratique || '');
+
+        const resumeHtml = format(content.resume || '');
+        document.getElementById('txt-res-raw').innerHTML = resumeHtml;
+        buildTakeaways(resumeHtml);
+
+        const sub = content.objectif || lessonData.description || '';
+        document.getElementById('lessonSubtitle').textContent = sub ? sub.substring(0, 120).replace(/\*\*/g,'') + '…' : '';
+
+        document.getElementById('lessonImg').src = content.imageUrl || lessonData.imageUrl || fallbackImageUrl;
+    }
+
+    // ─── MARK COMPLETE ───
+    async function markComplete() {
+        const btn = document.getElementById('btn-complete');
+        const activeLang = document.documentElement.getAttribute('lang') || 'fr';
+        const l = labels[activeLang] || labels.fr;
+        btn.disabled = true;
+        btn.textContent = 'Traitement...';
+
+        try {
+            const res = await fetch('/api/progress/complete', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ lessonId: parseInt(CURRENT_LESSON_ID), courseType: CURRENT_COURSE_TYPE })
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+
+                btn.innerHTML = `<span class="pz-stamp" style="color:var(--paper);border-color:var(--paper);">✓</span> ${l.btnDone}${data.xpGained > 0 ? ' · +' + data.xpGained + ' XP' : ''}`;
+                btn.style.background = 'var(--ledger-deep)';
+
+                if (data.totalXp) document.getElementById('navXp').textContent = data.totalXp;
+
+                showToast("Leçon complétée avec succès !");
+                document.getElementById('next-hint').textContent = 'Redirection vers la leçon suivante…';
+
+                setTimeout(() => {
+                    window.location.href = `/lesson/${CURRENT_COURSE_TYPE}/${parseInt(CURRENT_LESSON_ID) + 1}`;
+                }, 1400);
+
+            } else {
+                const data = await res.json();
+                showToast('Erreur : ' + (data.message || 'Impossible de sauvegarder.'), true);
+                btn.disabled = false;
+                btn.textContent = l.btn;
+            }
+        } catch (err) {
+            showToast('Erreur de connexion. Vérifiez votre backend.', true);
+            btn.disabled = false;
+            btn.textContent = l.btn;
+        }
+    }
+
+    // ─── INIT ───
+    window.addEventListener('load', () => {
+        switchLang('fr', 'ltr', document.querySelector('.btn-lang.active'));
+        renderPracticeZone();
+    });
+
+    window.addEventListener('pageshow', e => { if (e.persisted) window.location.reload(); });
+</script>
 </body>
 </html>
