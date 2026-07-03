@@ -1,550 +1,299 @@
 {
   "phase": 1,
   "title": {
-    "en": "Viral Content Domination (Premium Expanded)",
-    "fr": "Domination du Contenu Viral (Édition Premium)",
-    "ar": "السيطرة على المحتوى الفيروسي (النسخة المميزة الموسعة)"
+    "en": "Social Media Foundations",
+    "fr": "Fondations des Réseaux Sociaux",
+    "ar": "أساسيات التواصل الاجتماعي"
   },
   "description": {
-    "en": "Master human attention, emotional content psychology and viral communication systems to become a dangerous content creator.",
-    "fr": "Maîtrisez la psychologie de l'attention humaine, du contenu émotionnel et des systèmes de communication virale pour devenir un créateur de contenu redoutable.",
-    "ar": "أتقن علم نفس الانتباه البشري والمحتوى العاطفي وأنظمة التواصل الفيروسي لتصبح صانع محتوى خطيراً."
+    "en": "Build a rock-solid foundation in social media marketing before you create a single post. Understand platforms, audiences and strategy like a professional.",
+    "fr": "Construisez une base solide en marketing des réseaux sociaux avant de créer un seul post. Comprenez les plateformes, les audiences et la stratégie comme un professionnel.",
+    "ar": "ابنِ أساساً متيناً في التسويق عبر وسائل التواصل الاجتماعي قبل أن تنشر منشوراً واحداً. افهم المنصات والجمهور والاستراتيجية كمحترف."
   },
-  "system_level": "Premium Expansion",
-  "estimated_time_per_lesson": "20-40 minutes",
+  "system_level": "Beginner",
+  "estimated_time_per_lesson": "15-30 minutes",
   "lesson_structure": {
     "contains": {
-      "en": ["Core concept","Deep explanation","Psychology","Real examples","Mistakes","AI analysis","Missions","Challenge mode","Pro secrets","Business applications"],
-      "fr": ["Concept central","Explication approfondie","Psychologie","Exemples réels","Erreurs","Analyse IA","Missions","Mode défi","Secrets pro","Applications business"],
-      "ar": ["المفهوم الأساسي","الشرح المعمّق","علم النفس","أمثلة حقيقية","الأخطاء","تحليل الذكاء الاصطناعي","المهام","وضع التحدي","أسرار المحترفين","تطبيقات الأعمال"]
+      "en": [
+        "Core concept",
+        "Deep explanation",
+        "Psychology",
+        "Real examples",
+        "Mistakes",
+        "AI analysis",
+        "Missions",
+        "Challenge mode",
+        "Pro secrets",
+        "Business applications"
+      ],
+      "fr": [
+        "Concept central",
+        "Explication approfondie",
+        "Psychologie",
+        "Exemples réels",
+        "Erreurs",
+        "Analyse IA",
+        "Missions",
+        "Mode défi",
+        "Secrets pro",
+        "Applications business"
+      ],
+      "ar": [
+        "المفهوم الأساسي",
+        "الشرح المعمّق",
+        "علم النفس",
+        "أمثلة حقيقية",
+        "الأخطاء",
+        "تحليل الذكاء الاصطناعي",
+        "المهام",
+        "وضع التحدي",
+        "أسرار المحترفين",
+        "تطبيقات الأعمال"
+      ]
     }
   },
   "lessons": [
     {
       "id": 1,
       "title": {
-        "en": "Human Attention Psychology",
-        "fr": "Psychologie de l'Attention Humaine",
-        "ar": "سيكولوجية الانتباه البشري"
+        "en": "What Is Social Media Marketing, Really?",
+        "fr": "Qu'est-ce que le Marketing des Réseaux Sociaux, Vraiment ?",
+        "ar": "ما هو التسويق عبر وسائل التواصل الاجتماعي حقاً؟"
       },
-      "xp": 120,
+      "xp": 60,
       "core_concept": {
-        "en": "Attention is the currency of the internet.",
-        "fr": "L'attention est la monnaie d'internet.",
-        "ar": "الانتباه هو عملة الإنترنت."
+        "en": "Social media marketing is building trust at scale before asking for money.",
+        "fr": "Le marketing des réseaux sociaux consiste à construire la confiance à grande échelle avant de demander de l'argent.",
+        "ar": "التسويق عبر وسائل التواصل الاجتماعي هو بناء الثقة على نطاق واسع قبل طلب المال."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Every second, people decide if your content deserves attention. Humans scroll extremely fast because the brain filters boring information automatically.",
-          "fr": "Chaque seconde, les gens décident si votre contenu mérite leur attention. Les humains font défiler très vite car le cerveau filtre automatiquement les informations ennuyeuses.",
-          "ar": "في كل ثانية، يقرر الناس ما إذا كان محتواك يستحق الانتباه. يتصفح البشر بسرعة شديدة لأن الدماغ يصفي المعلومات المملة تلقائياً."
+          "en": "Social media marketing means using platforms like Instagram, TikTok and Facebook to attract, engage and convert an audience into customers. It is not just posting pictures — it is a system of attention, trust and action.",
+          "fr": "Le marketing des réseaux sociaux consiste à utiliser des plateformes comme Instagram, TikTok et Facebook pour attirer, engager et convertir une audience en clients. Ce n'est pas seulement publier des photos — c'est un système d'attention, de confiance et d'action.",
+          "ar": "التسويق عبر وسائل التواصل الاجتماعي يعني استخدام منصات مثل إنستغرام وتيك توك وفيسبوك لجذب الجمهور وإشراكه وتحويله إلى عملاء. إنه ليس مجرد نشر صور — إنه نظام من الانتباه والثقة والعمل."
         },
         "why_it_matters": {
-          "en": "If you fail to capture attention instantly, your content dies before people even understand it.",
-          "fr": "Si vous échouez à capter l'attention instantanément, votre contenu meurt avant même que les gens le comprennent.",
-          "ar": "إذا فشلت في جذب الانتباه فوراً، يموت محتواك قبل أن يفهمه الناس."
+          "en": "A business without social presence today is nearly invisible to new customers, no matter how good the product is.",
+          "fr": "Une entreprise sans présence sociale aujourd'hui est presque invisible pour les nouveaux clients, peu importe la qualité du produit.",
+          "ar": "المشروع بلا حضور اجتماعي اليوم يكاد يكون غير مرئي للعملاء الجدد، مهما كانت جودة المنتج."
         },
         "internet_truth": {
-          "en": "People don't reward effort. They reward emotion and curiosity.",
-          "fr": "Les gens ne récompensent pas l'effort. Ils récompensent l'émotion et la curiosité.",
-          "ar": "الناس لا يكافئون الجهد. يكافئون العاطفة والفضول."
+          "en": "People don't buy from strangers. Social media turns strangers into familiar faces.",
+          "fr": "Les gens n'achètent pas auprès d'inconnus. Les réseaux sociaux transforment les inconnus en visages familiers.",
+          "ar": "الناس لا يشترون من الغرباء. وسائل التواصل الاجتماعي تحوّل الغرباء إلى وجوه مألوفة."
         }
       },
       "psychology": {
-        "en": ["Emotion beats logic","Curiosity creates stopping behavior","Faces attract human attention","Movement increases retention","Relatable pain creates emotional connection"],
-        "fr": ["L'émotion bat la logique","La curiosité crée un comportement d'arrêt","Les visages attirent l'attention humaine","Le mouvement augmente la rétention","La douleur relatable crée une connexion émotionnelle"],
-        "ar": ["العاطفة تتفوق على المنطق","الفضول يخلق سلوك التوقف","الوجوه تجذب انتباه الإنسان","الحركة تزيد المشاهدة","الألم المشترك يخلق تواصلاً عاطفياً"]
+        "en": [
+          "Familiarity builds trust",
+          "Consistency signals reliability",
+          "Visibility creates recall",
+          "Free value creates reciprocity"
+        ],
+        "fr": [
+          "La familiarité construit la confiance",
+          "La régularité signale la fiabilité",
+          "La visibilité crée le rappel",
+          "La valeur gratuite crée la réciprocité"
+        ],
+        "ar": [
+          "الألفة تبني الثقة",
+          "الاستمرارية تدل على الموثوقية",
+          "الظهور يخلق التذكر",
+          "القيمة المجانية تخلق المعاملة بالمثل"
+        ]
       },
       "real_examples": {
-        "en": ["A creator screaming in first second instantly grabs attention","Sad emotional stories increase watch time","Fast camera movement keeps brain stimulated"],
-        "fr": ["Un créateur qui crie dans la première seconde attire immédiatement l'attention","Les histoires émotionnelles tristes augmentent le temps de visionnage","Les mouvements rapides de caméra gardent le cerveau stimulé"],
-        "ar": ["صانع محتوى يصرخ في الثانية الأولى يجذب الانتباه فوراً","القصص العاطفية الحزينة تزيد وقت المشاهدة","حركة الكاميرا السريعة تبقي الدماغ منشطاً"]
+        "en": [
+          "A local bakery posting daily behind-the-scenes builds a loyal following before ever running an ad",
+          "A freelancer sharing free tips becomes the 'go-to' person in their niche"
+        ],
+        "fr": [
+          "Une boulangerie locale qui publie quotidiennement les coulisses construit une audience fidèle avant même de lancer une publicité",
+          "Un freelance qui partage des astuces gratuites devient la personne 'incontournable' dans son domaine"
+        ],
+        "ar": [
+          "مخبز محلي ينشر يومياً كواليس عمله يبني جمهوراً مخلصاً قبل تشغيل أي إعلان",
+          "مستقل يشارك نصائح مجانية يصبح الشخص المرجعي في مجاله"
+        ]
       },
       "common_mistakes": {
-        "en": ["Long boring intros","Talking too slowly","No emotional trigger","Weak visuals"],
-        "fr": ["Longues introductions ennuyeuses","Parler trop lentement","Pas de déclencheur émotionnel","Visuels faibles"],
-        "ar": ["مقدمات طويلة ومملة","التحدث ببطء شديد","لا يوجد محفز عاطفي","مرئيات ضعيفة"]
-      },
-      "viral_analysis": {
-        "weak_intro": {
-          "en": "Hey guys welcome back...",
-          "fr": "Salut tout le monde, bienvenue...",
-          "ar": "مرحباً يا شباب، مرحباً بعودتكم..."
-        },
-        "problem": {
-          "en": "Nobody cares yet.",
-          "fr": "Personne ne s'en soucie encore.",
-          "ar": "لا أحد يهتم بعد."
-        },
-        "better_version": {
-          "en": "You are losing views because of THIS 😳",
-          "fr": "Vous perdez des vues à cause de ÇA 😳",
-          "ar": "أنت تخسر مشاهدات بسبب هذا 😳"
-        }
+        "en": [
+          "Treating social media like a digital flyer",
+          "Only posting when there's a sale",
+          "Copying competitors without a strategy"
+        ],
+        "fr": [
+          "Traiter les réseaux sociaux comme un prospectus numérique",
+          "Ne publier que lors des soldes",
+          "Copier les concurrents sans stratégie"
+        ],
+        "ar": [
+          "التعامل مع وسائل التواصل كمنشور رقمي فقط",
+          "النشر فقط عند وجود تخفيضات",
+          "تقليد المنافسين بلا استراتيجية"
+        ]
       },
       "missions": {
-        "en": ["Analyze 10 viral reels","Write why they stopped your scroll","Find emotional triggers"],
-        "fr": ["Analysez 10 reels viraux","Écrivez pourquoi ils ont arrêté votre défilement","Trouvez les déclencheurs émotionnels"],
-        "ar": ["حلل 10 ريلز فيروسية","اكتب لماذا أوقفت تصفحك","ابحث عن المحفزات العاطفية"]
+        "en": [
+          "List 3 brands you trust because of their social media",
+          "Write down what made you trust them",
+          "Identify what your own business currently lacks"
+        ],
+        "fr": [
+          "Listez 3 marques en qui vous avez confiance grâce à leurs réseaux sociaux",
+          "Notez ce qui vous a fait leur faire confiance",
+          "Identifiez ce qui manque actuellement à votre entreprise"
+        ],
+        "ar": [
+          "اذكر 3 علامات تجارية تثق بها بسبب وسائل تواصلها",
+          "اكتب ما الذي جعلك تثق بها",
+          "حدد ما ينقص مشروعك حالياً"
+        ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Moroccan cafe",
-          "fr": "Café marocain",
-          "ar": "مقهى مغربي"
+          "en": "Moroccan tailor shop",
+          "fr": "Atelier de couture marocain",
+          "ar": "محل خياطة مغربي"
         },
         "task": {
-          "en": "Analyze why their reels feel boring",
-          "fr": "Analysez pourquoi leurs reels semblent ennuyeux",
-          "ar": "حلل لماذا تبدو ريلزهم مملة"
+          "en": "List 3 reasons a customer would follow this shop on Instagram",
+          "fr": "Listez 3 raisons pour lesquelles un client suivrait ce magasin sur Instagram",
+          "ar": "اذكر 3 أسباب تجعل الزبون يتابع هذا المحل على إنستغرام"
         }
       },
       "pro_secrets": {
-        "en": ["The brain notices danger, emotion and movement first","Curiosity creates psychological tension"],
-        "fr": ["Le cerveau remarque le danger, l'émotion et le mouvement en premier","La curiosité crée une tension psychologique"],
-        "ar": ["يلاحظ الدماغ الخطر والعاطفة والحركة أولاً","الفضول يخلق توتراً نفسياً"]
+        "en": [
+          "The goal of the first post is never a sale — it's a follow",
+          "Trust is built in public, not in private DMs"
+        ],
+        "fr": [
+          "Le but du premier post n'est jamais une vente — c'est un abonnement",
+          "La confiance se construit en public, pas dans des DM privés"
+        ],
+        "ar": [
+          "هدف أول منشور ليس البيع أبداً — بل المتابعة",
+          "الثقة تُبنى علناً، وليس في الرسائل الخاصة"
+        ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Explain why one reel goes viral and another dies",
-          "fr": "Expliquez pourquoi un reel devient viral et un autre échoue",
-          "ar": "اشرح لماذا ينتشر ريلز بشكل فيروسي بينما يفشل آخر"
+          "en": "Explain social media marketing to a shop owner who has never used it, in 3 sentences",
+          "fr": "Expliquez le marketing des réseaux sociaux à un commerçant qui ne l'a jamais utilisé, en 3 phrases",
+          "ar": "اشرح التسويق عبر وسائل التواصل لصاحب محل لم يستخدمه من قبل، في 3 جمل"
         },
-        "reward_xp": 50
+        "reward_xp": 30
       },
       "ai_feedback_examples": {
-        "en": ["Bro this intro died instantly 😭","THIS creates curiosity 💣","Good emotional trigger 🔥"],
-        "fr": ["Bro cette intro est morte instantanément 😭","ÇA crée de la curiosité 💣","Bon déclencheur émotionnel 🔥"],
-        "ar": ["يا صاحبي هذه المقدمة ماتت فوراً 😭","هذا يخلق الفضول 💣","محفز عاطفي جيد 🔥"]
+        "en": [
+          "Good, you're thinking about trust not just posts 🔥",
+          "This still sounds like an ad, not a relationship 😭"
+        ],
+        "fr": [
+          "Bien, vous pensez confiance et pas seulement publications 🔥",
+          "Ça sonne encore comme une pub, pas une relation 😭"
+        ],
+        "ar": [
+          "جيد، أنت تفكر بالثقة وليس فقط المنشورات 🔥",
+          "هذا لا يزال يبدو كإعلان، وليس علاقة 😭"
+        ]
       }
     },
     {
       "id": 2,
       "title": {
-        "en": "Viral Hook Domination",
-        "fr": "Domination de l'Accroche Virale",
-        "ar": "السيطرة على الخطاف الفيروسي"
+        "en": "Know Your Audience Before You Post",
+        "fr": "Connaissez Votre Audience Avant de Publier",
+        "ar": "اعرف جمهورك قبل أن تنشر"
       },
-      "xp": 140,
+      "xp": 70,
       "core_concept": {
-        "en": "The first 3 seconds decide survival.",
-        "fr": "Les 3 premières secondes décident de la survie.",
-        "ar": "الثواني الثلاث الأولى تحدد البقاء."
+        "en": "Content made for everyone gets ignored by everyone.",
+        "fr": "Le contenu fait pour tout le monde est ignoré par tout le monde.",
+        "ar": "المحتوى الموجه للجميع يتجاهله الجميع."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Hooks are psychological traps that force attention.",
-          "fr": "Les accroches sont des pièges psychologiques qui forcent l'attention.",
-          "ar": "الخطافات هي فخاخ نفسية تجبر الانتباه."
+          "en": "Before writing a single caption, you need to know who you're talking to: their age, problems, dreams, and the language they actually use.",
+          "fr": "Avant d'écrire une seule légende, vous devez savoir à qui vous parlez : leur âge, leurs problèmes, leurs rêves, et le langage qu'ils utilisent réellement.",
+          "ar": "قبل كتابة أي تعليق، يجب أن تعرف مع من تتحدث: عمره، مشاكله، أحلامه، واللغة التي يستخدمها فعلاً."
         },
         "why_it_matters": {
-          "en": "Without a strong hook, people never reach your actual content.",
-          "fr": "Sans une accroche forte, les gens n'atteignent jamais votre contenu réel.",
-          "ar": "بدون خطاف قوي، لن يصل الناس إلى محتواك الفعلي أبداً."
+          "en": "Speaking to everyone means speaking to no one specifically, and specific messages are what stop the scroll.",
+          "fr": "Parler à tout le monde signifie ne parler spécifiquement à personne, et les messages spécifiques sont ce qui arrête le défilement.",
+          "ar": "التحدث للجميع يعني عدم التحدث لأحد بشكل محدد، والرسائل المحددة هي ما توقف التصفح."
         },
         "internet_truth": {
-          "en": "A weak hook kills even good videos.",
-          "fr": "Une accroche faible tue même les bonnes vidéos.",
-          "ar": "الخطاف الضعيف يقتل حتى الفيديوهات الجيدة."
+          "en": "The audience decides in one glance: 'is this for me?'",
+          "fr": "L'audience décide en un coup d'œil : 'est-ce pour moi ?'",
+          "ar": "الجمهور يقرر بنظرة واحدة: 'هل هذا لي؟'"
         }
       },
-      "hook_types": {
-        "en": ["Curiosity hooks","Shock hooks","Pain hooks","Question hooks","Authority hooks"],
-        "fr": ["Accroches de curiosité","Accroches de choc","Accroches de douleur","Accroches de question","Accroches d'autorité"],
-        "ar": ["خطافات الفضول","خطافات الصدمة","خطافات الألم","خطافات الأسئلة","خطافات السلطة"]
+      "psychology": {
+        "en": [
+          "People respond to content that mirrors their identity",
+          "Specificity feels personal",
+          "Generic messaging feels like noise"
+        ],
+        "fr": [
+          "Les gens répondent au contenu qui reflète leur identité",
+          "La spécificité semble personnelle",
+          "Un message générique ressemble à du bruit"
+        ],
+        "ar": [
+          "الناس يتفاعلون مع محتوى يعكس هويتهم",
+          "التحديد يشعر بالخصوصية",
+          "الرسائل العامة تبدو كضجيج"
+        ]
       },
       "real_examples": {
-        "en": ["Nobody talks about this 😳","This changed everything for me","You're wasting your content"],
-        "fr": ["Personne ne parle de ça 😳","Cela a tout changé pour moi","Vous gaspillez votre contenu"],
-        "ar": ["لا أحد يتحدث عن هذا 😳","هذا غيّر كل شيء بالنسبة لي","أنت تهدر محتواك"]
+        "en": [
+          "'Tips for busy moms' outperforms 'Tips for everyone'",
+          "A gym targeting '9-to-5 workers with no time' gets more replies than 'Get fit today'"
+        ],
+        "fr": [
+          "'Astuces pour mamans occupées' surpasse 'Astuces pour tous'",
+          "Une salle de sport ciblant 'les employés 9h-17h sans temps' obtient plus de réponses que 'Mettez-vous en forme aujourd'hui'"
+        ],
+        "ar": [
+          "'نصائح للأمهات المشغولات' تتفوق على 'نصائح للجميع'",
+          "نادي رياضي يستهدف 'موظفين بلا وقت' يحصل على ردود أكثر من 'مارس الرياضة اليوم'"
+        ]
       },
       "common_mistakes": {
-        "en": ["Generic intros","No emotional words","Too much explaining early"],
-        "fr": ["Introductions génériques","Pas de mots émotionnels","Trop d'explications au début"],
-        "ar": ["مقدمات عامة","لا كلمات عاطفية","شرح مفرط في البداية"]
-      },
-      "hook_breakdown": {
-        "bad": {
-          "en": "Today I will teach you marketing",
-          "fr": "Aujourd'hui je vais vous enseigner le marketing",
-          "ar": "اليوم سأعلمك التسويق"
-        },
-        "good": {
-          "en": "Your content is invisible because of THIS 💣",
-          "fr": "Votre contenu est invisible à cause de ÇA 💣",
-          "ar": "محتواك غير مرئي بسبب هذا 💣"
-        }
-      },
-      "missions": {
-        "en": ["Write 20 hooks","Rewrite weak intros","Create emotional hooks"],
-        "fr": ["Écrivez 20 accroches","Réécrivez les introductions faibles","Créez des accroches émotionnelles"],
-        "ar": ["اكتب 20 خطافاً","أعد كتابة المقدمات الضعيفة","أنشئ خطافات عاطفية"]
-      },
-      "challenge_mode": {
-        "task": {
-          "en": "Create scroll-stopping hook for beauty salon reel",
-          "fr": "Créez une accroche qui arrête le défilement pour un reel de salon de beauté",
-          "ar": "أنشئ خطافاً يوقف التمرير لريلز صالون تجميل"
-        },
-        "reward_xp": 70
-      },
-      "pro_secrets": {
-        "en": ["The best hooks create unanswered questions","Hooks should trigger emotion immediately"],
-        "fr": ["Les meilleures accroches créent des questions sans réponse","Les accroches doivent déclencher l'émotion immédiatement"],
-        "ar": ["أفضل الخطافات تخلق أسئلة بلا إجابات","يجب أن تثير الخطافات العاطفة فوراً"]
-      },
-      "ai_feedback_examples": {
-        "en": ["Too safe 😭","THIS can stop scrolling 💣","More emotion needed"],
-        "fr": ["Trop sûr 😭","ÇA peut arrêter le défilement 💣","Plus d'émotion nécessaire"],
-        "ar": ["آمن جداً 😭","هذا يستطيع إيقاف التمرير 💣","تحتاج المزيد من العاطفة"]
-      }
-    },
-    {
-      "id": 3,
-      "title": {
-        "en": "Scroll-Stopping Visuals",
-        "fr": "Visuels qui Arrêtent le Défilement",
-        "ar": "المرئيات التي توقف التمرير"
-      },
-      "xp": 150,
-      "core_concept": {
-        "en": "Visual energy controls retention.",
-        "fr": "L'énergie visuelle contrôle la rétention.",
-        "ar": "الطاقة البصرية تتحكم في المشاهدة."
-      },
-      "deep_explanation": {
-        "summary": {
-          "en": "The human brain reacts to movement, contrast and emotional expressions faster than words.",
-          "fr": "Le cerveau humain réagit au mouvement, au contraste et aux expressions émotionnelles plus vite qu'aux mots.",
-          "ar": "يتفاعل الدماغ البشري مع الحركة والتباين والتعابير العاطفية أسرع من الكلمات."
-        },
-        "why_it_matters": {
-          "en": "Strong visuals keep people watching longer.",
-          "fr": "Des visuels forts gardent les gens à regarder plus longtemps.",
-          "ar": "المرئيات القوية تجعل الناس يشاهدون لفترة أطول."
-        },
-        "internet_truth": {
-          "en": "Bad visuals kill retention instantly.",
-          "fr": "Les mauvais visuels tuent la rétention instantanément.",
-          "ar": "المرئيات السيئة تقتل نسبة المشاهدة فوراً."
-        }
-      },
-      "visual_systems": {
-        "en": ["Movement","Contrast","Fast cuts","Human faces","Camera energy"],
-        "fr": ["Mouvement","Contraste","Coupes rapides","Visages humains","Énergie de caméra"],
-        "ar": ["الحركة","التباين","القطعات السريعة","الوجوه البشرية","طاقة الكاميرا"]
-      },
-      "real_examples": {
-        "en": ["Zoom transitions create energy","Bright contrast attracts attention","Human reactions increase emotional connection"],
-        "fr": ["Les transitions zoom créent de l'énergie","Le contraste vif attire l'attention","Les réactions humaines augmentent la connexion émotionnelle"],
-        "ar": ["انتقالات الزووم تخلق طاقة","التباين الساطع يجذب الانتباه","ردود الفعل البشرية تزيد التواصل العاطفي"]
-      },
-      "common_mistakes": {
-        "en": ["Static camera","Dark visuals","No movement","Empty backgrounds"],
-        "fr": ["Caméra statique","Visuels sombres","Pas de mouvement","Arrière-plans vides"],
-        "ar": ["كاميرا ثابتة","مرئيات داكنة","لا حركة","خلفيات فارغة"]
+        "en": [
+          "Writing content for 'everyone who might buy'",
+          "Guessing the audience instead of researching them",
+          "Ignoring language and tone preferences"
+        ],
+        "fr": [
+          "Écrire du contenu pour 'tous ceux qui pourraient acheter'",
+          "Deviner l'audience au lieu de la rechercher",
+          "Ignorer les préférences de langue et de ton"
+        ],
+        "ar": [
+          "كتابة محتوى لـ'كل من قد يشتري'",
+          "تخمين الجمهور بدلاً من البحث عنه",
+          "تجاهل تفضيلات اللغة والأسلوب"
+        ]
       },
       "missions": {
-        "en": ["Analyze 5 thumbnails","Fix weak visuals","Improve old reel ideas"],
-        "fr": ["Analysez 5 miniatures","Corrigez les visuels faibles","Améliorez d'anciennes idées de reels"],
-        "ar": ["حلل 5 صور مصغرة","أصلح المرئيات الضعيفة","حسّن أفكار الريلز القديمة"]
-      },
-      "real_business_task": {
-        "industry": {
-          "en": "Restaurant",
-          "fr": "Restaurant",
-          "ar": "مطعم"
-        },
-        "task": {
-          "en": "Improve weak food reel visually",
-          "fr": "Améliorez visuellement un reel de nourriture faible",
-          "ar": "حسّن ريلز الطعام الضعيف بصرياً"
-        }
-      },
-      "pro_secrets": {
-        "en": ["Tiny visual changes massively affect retention","Human eyes follow movement automatically"],
-        "fr": ["De petits changements visuels affectent massivement la rétention","Les yeux humains suivent automatiquement le mouvement"],
-        "ar": ["التغييرات البصرية الصغيرة تؤثر بشكل كبير على المشاهدة","عيون الإنسان تتبع الحركة تلقائياً"]
-      },
-      "challenge_mode": {
-        "task": {
-          "en": "Transform boring reel into energetic reel",
-          "fr": "Transformez un reel ennuyeux en reel énergique",
-          "ar": "حوّل ريلز مملاً إلى ريلز نشيط"
-        },
-        "reward_xp": 80
-      }
-    },
-    {
-      "id": 4,
-      "title": {
-        "en": "Emotional Content Engine",
-        "fr": "Moteur de Contenu Émotionnel",
-        "ar": "محرك المحتوى العاطفي"
-      },
-      "xp": 160,
-      "core_concept": {
-        "en": "Emotion spreads content.",
-        "fr": "L'émotion propage le contenu.",
-        "ar": "العاطفة تنشر المحتوى."
-      },
-      "deep_explanation": {
-        "summary": {
-          "en": "People remember feelings more than information.",
-          "fr": "Les gens se souviennent des sentiments plus que des informations.",
-          "ar": "الناس يتذكرون المشاعر أكثر من المعلومات."
-        },
-        "why_it_matters": {
-          "en": "Emotion creates comments, shares and saves.",
-          "fr": "L'émotion crée des commentaires, des partages et des sauvegardes.",
-          "ar": "العاطفة تخلق التعليقات والمشاركات والحفظ."
-        },
-        "internet_truth": {
-          "en": "Content without emotion feels invisible.",
-          "fr": "Le contenu sans émotion semble invisible.",
-          "ar": "المحتوى بلا عاطفة يبدو غير مرئي."
-        }
-      },
-      "emotion_types": {
-        "en": ["Fear","Hope","Curiosity","Motivation","Relatability"],
-        "fr": ["Peur","Espoir","Curiosité","Motivation","Identification"],
-        "ar": ["الخوف","الأمل","الفضول","التحفيز","التماهي"]
-      },
-      "real_examples": {
-        "en": ["Transformation stories create hope","Failure stories feel relatable","Pain creates emotional connection"],
-        "fr": ["Les histoires de transformation créent de l'espoir","Les histoires d'échec semblent identifiables","La douleur crée une connexion émotionnelle"],
-        "ar": ["قصص التحول تخلق الأمل","قصص الفشل تشعر بالتماهي","الألم يخلق تواصلاً عاطفياً"]
-      },
-      "common_mistakes": {
-        "en": ["Emotionless talking","Too robotic","No relatable moments"],
-        "fr": ["Discours sans émotion","Trop robotique","Pas de moments identifiables"],
-        "ar": ["كلام بلا عاطفة","روبوتي جداً","لا لحظات قابلة للتماهي"]
-      },
-      "missions": {
-        "en": ["Turn boring topic emotional","Write emotional caption","Find emotional moments in viral reels"],
-        "fr": ["Rendez un sujet ennuyeux émotionnel","Écrivez une légende émotionnelle","Trouvez des moments émotionnels dans les reels viraux"],
-        "ar": ["حوّل موضوعاً مملاً إلى عاطفي","اكتب تعليقاً عاطفياً","ابحث عن لحظات عاطفية في الريلز الفيروسية"]
-      },
-      "pro_secrets": {
-        "en": ["Relatable pain creates loyalty","Strong emotion increases comments"],
-        "fr": ["La douleur identifiable crée de la fidélité","Une forte émotion augmente les commentaires"],
-        "ar": ["الألم المشترك يخلق الولاء","العاطفة القوية تزيد التعليقات"]
-      },
-      "challenge_mode": {
-        "task": {
-          "en": "Create emotional reel idea for local business",
-          "fr": "Créez une idée de reel émotionnel pour une entreprise locale",
-          "ar": "أنشئ فكرة ريلز عاطفية لمشروع محلي"
-        },
-        "reward_xp": 90
-      }
-    },
-    {
-      "id": 5,
-      "title": {
-        "en": "Retention Warfare",
-        "fr": "Guerre de la Rétention",
-        "ar": "حرب الاحتفاظ بالجمهور"
-      },
-      "xp": 180,
-      "core_concept": {
-        "en": "Retention decides if content survives.",
-        "fr": "La rétention décide si le contenu survit.",
-        "ar": "الاحتفاظ بالجمهور يحدد بقاء المحتوى."
-      },
-      "deep_explanation": {
-        "summary": {
-          "en": "The algorithm rewards videos people continue watching.",
-          "fr": "L'algorithme récompense les vidéos que les gens continuent de regarder.",
-          "ar": "الخوارزمية تكافئ الفيديوهات التي يستمر الناس في مشاهدتها."
-        },
-        "why_it_matters": {
-          "en": "Better retention = more reach.",
-          "fr": "Meilleure rétention = plus de portée.",
-          "ar": "احتفاظ أفضل = وصول أكبر."
-        },
-        "internet_truth": {
-          "en": "Boring middle sections destroy content.",
-          "fr": "Les sections du milieu ennuyeuses détruisent le contenu.",
-          "ar": "الأجزاء الوسطى المملة تدمر المحتوى."
-        }
-      },
-      "retention_systems": {
-        "en": ["Curiosity loops","Open loops","Pattern interruption","Micro surprises"],
-        "fr": ["Boucles de curiosité","Boucles ouvertes","Interruption de schéma","Micro surprises"],
-        "ar": ["حلقات الفضول","الحلقات المفتوحة","كسر النمط","المفاجآت الصغيرة"]
-      },
-      "real_examples": {
-        "en": ["Wait until the end 😳","But then something unexpected happened..."],
-        "fr": ["Attendez jusqu'à la fin 😳","Mais ensuite quelque chose d'inattendu s'est produit..."],
-        "ar": ["انتظر حتى النهاية 😳","لكن بعد ذلك حدث شيء غير متوقع..."]
-      },
-      "missions": {
-        "en": ["Find retention drops","Fix weak middle sections","Predict viewer exits"],
-        "fr": ["Trouvez les baisses de rétention","Corrigez les sections du milieu faibles","Prédisez les sorties des spectateurs"],
-        "ar": ["ابحث عن انخفاضات المشاهدة","أصلح الأقسام الوسطى الضعيفة","توقع خروج المشاهدين"]
-      },
-      "challenge_mode": {
-        "task": {
-          "en": "Increase reel retention psychologically",
-          "fr": "Augmentez psychologiquement la rétention du reel",
-          "ar": "زد الاحتفاظ بالجمهور في الريلز نفسياً"
-        },
-        "reward_xp": 100
-      },
-      "pro_secrets": {
-        "en": ["The brain hates unfinished information","Unexpected moments reset attention"],
-        "fr": ["Le cerveau déteste les informations inachevées","Les moments inattendus réinitialisent l'attention"],
-        "ar": ["الدماغ يكره المعلومات غير المكتملة","اللحظات غير المتوقعة تُعيد ضبط الانتباه"]
-      }
-    },
-    {
-      "id": 6,
-      "title": {
-        "en": "Caption & CTA Domination",
-        "fr": "Domination des Légendes et des CTA",
-        "ar": "السيطرة على التعليقات والدعوة للتفاعل"
-      },
-      "xp": 180,
-      "core_concept": {
-        "en": "Words control audience behavior.",
-        "fr": "Les mots contrôlent le comportement du public.",
-        "ar": "الكلمات تتحكم في سلوك الجمهور."
-      },
-      "deep_explanation": {
-        "summary": {
-          "en": "Captions and CTAs guide emotion, interaction and action.",
-          "fr": "Les légendes et CTAs guident l'émotion, l'interaction et l'action.",
-          "ar": "التعليقات والدعوات للتفاعل توجه العاطفة والتفاعل والعمل."
-        },
-        "why_it_matters": {
-          "en": "Even strong content can fail if the audience doesn't know what to do next.",
-          "fr": "Même un contenu fort peut échouer si le public ne sait pas quoi faire ensuite.",
-          "ar": "حتى المحتوى القوي قد يفشل إذا لم يعرف الجمهور ما يفعله بعد ذلك."
-        },
-        "internet_truth": {
-          "en": "People react when emotion + instruction combine together.",
-          "fr": "Les gens réagissent quand l'émotion et l'instruction se combinent.",
-          "ar": "الناس يتفاعلون عندما تتحد العاطفة مع التوجيه."
-        }
-      },
-      "psychology_systems": {
-        "en": ["Curiosity captions","Emotional captions","Comment triggers","Save triggers","Share psychology"],
-        "fr": ["Légendes de curiosité","Légendes émotionnelles","Déclencheurs de commentaires","Déclencheurs de sauvegarde","Psychologie du partage"],
-        "ar": ["تعليقات الفضول","التعليقات العاطفية","محفزات التعليق","محفزات الحفظ","سيكولوجية المشاركة"]
-      },
-      "real_examples": {
-        "en": ["Would YOU try this? 😳","Save this before you forget 💣","Tag someone who needs this","Nobody talks about this..."],
-        "fr": ["Est-ce que VOUS essaieriez ça? 😳","Sauvegardez ça avant d'oublier 💣","Taguez quelqu'un qui a besoin de ça","Personne ne parle de ça..."],
-        "ar": ["هل ستجرب هذا أنت؟ 😳","احفظ هذا قبل أن تنساه 💣","أشر إلى شخص يحتاج هذا","لا أحد يتحدث عن هذا..."]
-      },
-      "common_mistakes": {
-        "en": ["Long boring captions","No emotional trigger","Weak CTA","Too generic"],
-        "fr": ["Longues légendes ennuyeuses","Pas de déclencheur émotionnel","CTA faible","Trop générique"],
-        "ar": ["تعليقات طويلة ومملة","لا محفز عاطفي","دعوة للتفاعل ضعيفة","عامة جداً"]
-      },
-      "caption_breakdown": {
-        "bad": {
-          "en": "Today we made coffee",
-          "fr": "Aujourd'hui nous avons fait du café",
-          "ar": "اليوم صنعنا القهوة"
-        },
-        "good": {
-          "en": "This coffee shop in Morocco feels illegal 😳☕",
-          "fr": "Ce café au Maroc semble illégal 😳☕",
-          "ar": "هذا المقهى في المغرب يبدو غير قانوني 😳☕"
-        }
-      },
-      "missions": {
-        "en": ["Write 15 emotional captions","Rewrite boring captions","Create 10 powerful CTAs"],
-        "fr": ["Écrivez 15 légendes émotionnelles","Réécrivez les légendes ennuyeuses","Créez 10 CTAs puissants"],
-        "ar": ["اكتب 15 تعليقاً عاطفياً","أعد كتابة التعليقات المملة","أنشئ 10 دعوات تفاعل قوية"]
-      },
-      "real_business_task": {
-        "industry": {
-          "en": "Cafe",
-          "fr": "Café",
-          "ar": "مقهى"
-        },
-        "task": {
-          "en": "Write viral caption for local Moroccan coffee reel",
-          "fr": "Écrivez une légende virale pour un reel de café marocain local",
-          "ar": "اكتب تعليقاً فيروسياً لريلز مقهى مغربي محلي"
-        }
-      },
-      "pro_secrets": {
-        "en": ["Questions increase comments naturally","Emotion + curiosity creates engagement","Short captions perform better on reels"],
-        "fr": ["Les questions augmentent naturellement les commentaires","Émotion + curiosité crée de l'engagement","Les légendes courtes fonctionnent mieux sur les reels"],
-        "ar": ["الأسئلة تزيد التعليقات بشكل طبيعي","العاطفة + الفضول يخلقان التفاعل","التعليقات القصيرة تؤدي أفضل في الريلز"]
-      },
-      "challenge_mode": {
-        "task": {
-          "en": "Create caption strong enough to force comments",
-          "fr": "Créez une légende assez forte pour forcer les commentaires",
-          "ar": "أنشئ تعليقاً قوياً بما يكفي لإجبار الناس على التعليق"
-        },
-        "reward_xp": 100
-      },
-      "ai_feedback_examples": {
-        "en": ["Nobody will read this 😭","THIS feels clickable 💣","Good emotional trigger 🔥"],
-        "fr": ["Personne ne lira ça 😭","ÇA semble cliquable 💣","Bon déclencheur émotionnel 🔥"],
-        "ar": ["لن يقرأ هذا أحد 😭","هذا يشعر بأنه قابل للنقر 💣","محفز عاطفي جيد 🔥"]
-      }
-    },
-    {
-      "id": 7,
-      "title": {
-        "en": "Storytelling Domination",
-        "fr": "Domination du Storytelling",
-        "ar": "السيطرة على فن السرد القصصي"
-      },
-      "xp": 220,
-      "core_concept": {
-        "en": "Stories create emotional addiction.",
-        "fr": "Les histoires créent une addiction émotionnelle.",
-        "ar": "القصص تخلق الإدمان العاطفي."
-      },
-      "deep_explanation": {
-        "summary": {
-          "en": "Humans remember stories more than facts.",
-          "fr": "Les humains se souviennent des histoires plus que des faits.",
-          "ar": "البشر يتذكرون القصص أكثر من الحقائق."
-        },
-        "why_it_matters": {
-          "en": "Stories increase watch time, emotional connection and trust.",
-          "fr": "Les histoires augmentent le temps de visionnage, la connexion émotionnelle et la confiance.",
-          "ar": "القصص تزيد وقت المشاهدة والتواصل العاطفي والثقة."
-        },
-        "internet_truth": {
-          "en": "Good storytelling feels like emotional manipulation 😄",
-          "fr": "Un bon storytelling ressemble à une manipulation émotionnelle 😄",
-          "ar": "السرد الجيد يشبه التلاعب العاطفي 😄"
-        }
-      },
-      "story_systems": {
-        "en": ["Hook","Conflict","Emotion","Transformation","Lesson"],
-        "fr": ["Accroche","Conflit","Émotion","Transformation","Leçon"],
-        "ar": ["الخطاف","الصراع","العاطفة","التحول","الدرس"]
-      },
-      "advanced_story_psychology": {
-        "en": ["Suspense","Curiosity loops","Emotional pacing","Vulnerability","Payoff timing"],
-        "fr": ["Suspense","Boucles de curiosité","Rythme émotionnel","Vulnérabilité","Timing de la récompense"],
-        "ar": ["التشويق","حلقات الفضول","الإيقاع العاطفي","الضعف","توقيت المكافأة"]
-      },
-      "real_examples": {
-        "en": ["I almost gave up completely...","Then something unexpected happened","That moment changed everything"],
-        "fr": ["J'ai failli abandonner complètement...","Puis quelque chose d'inattendu s'est produit","Ce moment a tout changé"],
-        "ar": ["كدت أستسلم تماماً...","ثم حدث شيء غير متوقع","تلك اللحظة غيّرت كل شيء"]
-      },
-      "common_mistakes": {
-        "en": ["No emotional build-up","Too much explaining","No payoff","No suspense"],
-        "fr": ["Pas de montée émotionnelle","Trop d'explications","Pas de récompense","Pas de suspense"],
-        "ar": ["لا بناء عاطفي","شرح مفرط","لا مكافأة","لا تشويق"]
-      },
-      "missions": {
-        "en": ["Turn boring topic into story","Create suspense-based reel idea","Write emotional transformation story"],
-        "fr": ["Transformez un sujet ennuyeux en histoire","Créez une idée de reel basée sur le suspense","Écrivez une histoire de transformation émotionnelle"],
-        "ar": ["حوّل موضوعاً مملاً إلى قصة","أنشئ فكرة ريلز قائمة على التشويق","اكتب قصة تحول عاطفية"]
+        "en": [
+          "Write a 5-line profile of your ideal follower",
+          "List their top 3 daily frustrations",
+          "Find 3 accounts your ideal follower already follows"
+        ],
+        "fr": [
+          "Écrivez un profil de 5 lignes de votre abonné idéal",
+          "Listez leurs 3 principales frustrations quotidiennes",
+          "Trouvez 3 comptes que votre abonné idéal suit déjà"
+        ],
+        "ar": [
+          "اكتب وصفاً من 5 أسطر لمتابعك المثالي",
+          "اذكر أكبر 3 مصادر إحباط يومية لديه",
+          "ابحث عن 3 حسابات يتابعها متابعك المثالي بالفعل"
+        ]
       },
       "real_business_task": {
         "industry": {
@@ -553,274 +302,1213 @@
           "ar": "صالون تجميل"
         },
         "task": {
-          "en": "Create emotional client transformation story",
-          "fr": "Créez une histoire émotionnelle de transformation client",
-          "ar": "أنشئ قصة تحول عاطفية لعميل"
+          "en": "Describe the exact woman this salon should target in one sentence",
+          "fr": "Décrivez en une phrase la femme exacte que ce salon devrait cibler",
+          "ar": "صف في جملة واحدة المرأة المحددة التي يجب أن يستهدفها هذا الصالون"
         }
       },
       "pro_secrets": {
-        "en": ["People connect to vulnerability","Suspense increases retention dramatically","Transformation stories feel inspiring"],
-        "fr": ["Les gens se connectent à la vulnérabilité","Le suspense augmente considérablement la rétention","Les histoires de transformation semblent inspirantes"],
-        "ar": ["الناس يتواصلون مع الضعف","التشويق يزيد المشاهدة بشكل كبير","قصص التحول تشعر بالإلهام"]
+        "en": [
+          "Read the comments on competitor pages — that's free research",
+          "One clear persona beats five vague ones"
+        ],
+        "fr": [
+          "Lisez les commentaires sur les pages concurrentes — c'est une recherche gratuite",
+          "Un persona clair vaut mieux que cinq vagues"
+        ],
+        "ar": [
+          "اقرأ التعليقات على صفحات المنافسين — هذا بحث مجاني",
+          "شخصية واحدة واضحة أفضل من خمس غامضة"
+        ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Create unforgettable emotional story reel",
-          "fr": "Créez un reel d'histoire émotionnelle inoubliable",
-          "ar": "أنشئ ريلز قصة عاطفية لا تُنسى"
+          "en": "Build a full audience persona for your business in 5 bullet points",
+          "fr": "Construisez un persona d'audience complet pour votre entreprise en 5 points",
+          "ar": "ابنِ شخصية جمهور كاملة لمشروعك في 5 نقاط"
         },
-        "reward_xp": 120
+        "reward_xp": 40
       },
       "ai_feedback_examples": {
-        "en": ["Too flat emotionally 😭","This actually FEELS real 💣","Good suspense 🔥"],
-        "fr": ["Trop plat émotionnellement 😭","Ça SEMBLE vraiment réel 💣","Bon suspense 🔥"],
-        "ar": ["مسطح عاطفياً جداً 😭","هذا يبدو حقيقياً فعلاً 💣","تشويق جيد 🔥"]
+        "en": [
+          "Too vague — 'everyone' is not an audience 😭",
+          "Now THIS is a real person you can talk to 🔥"
+        ],
+        "fr": [
+          "Trop vague — 'tout le monde' n'est pas une audience 😭",
+          "Maintenant ÇA c'est une vraie personne à qui parler 🔥"
+        ],
+        "ar": [
+          "غامض جداً — 'الجميع' ليس جمهوراً 😭",
+          "الآن هذا شخص حقيقي يمكنك التحدث إليه 🔥"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Choosing the Right Platform",
+        "fr": "Choisir la Bonne Plateforme",
+        "ar": "اختيار المنصة الصحيحة"
+      },
+      "xp": 70,
+      "core_concept": {
+        "en": "Every platform is a different room with different people and different rules.",
+        "fr": "Chaque plateforme est une pièce différente avec des personnes différentes et des règles différentes.",
+        "ar": "كل منصة هي غرفة مختلفة بأشخاص مختلفين وقواعد مختلفة."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Instagram, TikTok, Facebook and LinkedIn each attract different age groups, moods and intentions. Posting the same content everywhere wastes effort.",
+          "fr": "Instagram, TikTok, Facebook et LinkedIn attirent chacun des groupes d'âge, des humeurs et des intentions différents. Publier le même contenu partout gaspille des efforts.",
+          "ar": "إنستغرام وتيك توك وفيسبوك ولينكد إن يجذب كل منها فئات عمرية ومزاجات ونوايا مختلفة. نشر نفس المحتوى في كل مكان يهدر الجهد."
+        },
+        "why_it_matters": {
+          "en": "Being everywhere badly is worse than being somewhere excellently.",
+          "fr": "Être partout mal vaut moins qu'être excellent quelque part.",
+          "ar": "التواجد في كل مكان بشكل سيء أسوأ من التميز في مكان واحد."
+        },
+        "internet_truth": {
+          "en": "Your customer is already choosing where they scroll — meet them there.",
+          "fr": "Votre client choisit déjà où il défile — retrouvez-le là.",
+          "ar": "عميلك يختار مسبقاً أين يتصفح — قابله هناك."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Facebook = trust and local community",
+          "Instagram = lifestyle and visuals",
+          "TikTok = entertainment and discovery",
+          "LinkedIn = professional credibility"
+        ],
+        "fr": [
+          "Facebook = confiance et communauté locale",
+          "Instagram = style de vie et visuels",
+          "TikTok = divertissement et découverte",
+          "LinkedIn = crédibilité professionnelle"
+        ],
+        "ar": [
+          "فيسبوك = الثقة والمجتمع المحلي",
+          "إنستغرام = أسلوب الحياة والمرئيات",
+          "تيك توك = الترفيه والاكتشاف",
+          "لينكد إن = المصداقية المهنية"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A restaurant thrives on Instagram + TikTok, not LinkedIn",
+          "A B2B consultant gets clients from LinkedIn, not TikTok",
+          "An older local audience is easier to reach on Facebook"
+        ],
+        "fr": [
+          "Un restaurant prospère sur Instagram + TikTok, pas LinkedIn",
+          "Un consultant B2B trouve des clients sur LinkedIn, pas TikTok",
+          "Une audience locale plus âgée est plus facile à atteindre sur Facebook"
+        ],
+        "ar": [
+          "مطعم يزدهر على إنستغرام وتيك توك، وليس لينكد إن",
+          "مستشار أعمال يجد عملاء من لينكد إن، وليس تيك توك",
+          "جمهور محلي أكبر سناً يسهل الوصول إليه عبر فيسبوك"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Being on every platform with no strategy",
+          "Choosing a platform because it's trendy, not because the audience is there",
+          "Posting LinkedIn-style content on TikTok"
+        ],
+        "fr": [
+          "Être sur toutes les plateformes sans stratégie",
+          "Choisir une plateforme parce qu'elle est tendance, pas parce que l'audience y est",
+          "Publier du contenu style LinkedIn sur TikTok"
+        ],
+        "ar": [
+          "التواجد على كل منصة بلا استراتيجية",
+          "اختيار منصة لأنها رائجة وليس لأن الجمهور موجود بها",
+          "نشر محتوى بأسلوب لينكد إن على تيك توك"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Pick your top 2 platforms and justify why",
+          "Study 3 top accounts in your niche on each platform",
+          "Note the tone difference between platforms"
+        ],
+        "fr": [
+          "Choisissez vos 2 meilleures plateformes et justifiez pourquoi",
+          "Étudiez 3 comptes leaders de votre secteur sur chaque plateforme",
+          "Notez la différence de ton entre les plateformes"
+        ],
+        "ar": [
+          "اختر أفضل منصتين لك وبرر السبب",
+          "ادرس 3 حسابات رائدة في مجالك على كل منصة",
+          "لاحظ اختلاف الأسلوب بين المنصات"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Handmade jewelry brand",
+          "fr": "Marque de bijoux artisanaux",
+          "ar": "علامة مجوهرات يدوية"
+        },
+        "task": {
+          "en": "Pick the best 2 platforms for this brand and explain why",
+          "fr": "Choisissez les 2 meilleures plateformes pour cette marque et expliquez pourquoi",
+          "ar": "اختر أفضل منصتين لهذه العلامة واشرح السبب"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Master one platform before expanding to a second",
+          "Each platform rewards a different content format — study it first"
+        ],
+        "fr": [
+          "Maîtrisez une plateforme avant de vous étendre à une deuxième",
+          "Chaque plateforme récompense un format de contenu différent — étudiez-le d'abord"
+        ],
+        "ar": [
+          "أتقن منصة واحدة قبل التوسع لثانية",
+          "كل منصة تكافئ شكل محتوى مختلف — ادرسه أولاً"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Match 4 different business types to their ideal platform",
+          "fr": "Associez 4 types d'entreprises différents à leur plateforme idéale",
+          "ar": "طابق 4 أنواع مشاريع مختلفة مع منصتها المثالية"
+        },
+        "reward_xp": 40
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Spreading too thin, focus first 😭",
+          "Smart — this platform truly fits this audience 🔥"
+        ],
+        "fr": [
+          "Trop dispersé, concentrez-vous d'abord 😭",
+          "Intelligent — cette plateforme correspond vraiment à cette audience 🔥"
+        ],
+        "ar": [
+          "مشتت جداً، ركّز أولاً 😭",
+          "ذكي — هذه المنصة تناسب هذا الجمهور فعلاً 🔥"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Building a Profile That Converts",
+        "fr": "Construire un Profil Qui Convertit",
+        "ar": "بناء ملف شخصي يُحوّل الزوار إلى عملاء"
+      },
+      "xp": 80,
+      "core_concept": {
+        "en": "Your profile is your storefront — people judge it in 3 seconds.",
+        "fr": "Votre profil est votre vitrine — les gens le jugent en 3 secondes.",
+        "ar": "ملفك الشخصي هو واجهة متجرك — الناس يحكمون عليه في 3 ثوانٍ."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "A profile picture, bio, and highlights work together to answer three questions instantly: who are you, what do you offer, and why should I stay?",
+          "fr": "Une photo de profil, une bio et des stories à la une répondent instantanément à trois questions : qui êtes-vous, que proposez-vous, et pourquoi devrais-je rester ?",
+          "ar": "صورة الملف الشخصي والسيرة الذاتية والقصص المميزة تجيب فوراً على ثلاثة أسئلة: من أنت، ماذا تقدم، ولماذا يجب أن أبقى؟"
+        },
+        "why_it_matters": {
+          "en": "Great content sends people to a weak profile that fails to convert them into followers or customers.",
+          "fr": "Un excellent contenu envoie des gens vers un profil faible qui échoue à les convertir en abonnés ou clients.",
+          "ar": "المحتوى الرائع يرسل الناس إلى ملف شخصي ضعيف يفشل في تحويلهم إلى متابعين أو عملاء."
+        },
+        "internet_truth": {
+          "en": "People decide to follow before they decide to buy.",
+          "fr": "Les gens décident de suivre avant de décider d'acheter.",
+          "ar": "الناس يقررون المتابعة قبل أن يقرروا الشراء."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Clarity beats cleverness in a bio",
+          "Social proof (reviews, numbers) builds instant trust",
+          "A clear call-to-action removes decision fatigue"
+        ],
+        "fr": [
+          "La clarté bat l'ingéniosité dans une bio",
+          "La preuve sociale (avis, chiffres) construit une confiance instantanée",
+          "Un appel à l'action clair supprime la fatigue décisionnelle"
+        ],
+        "ar": [
+          "الوضوح يتفوق على الذكاء في السيرة الذاتية",
+          "الدليل الاجتماعي (التقييمات، الأرقام) يبني ثقة فورية",
+          "دعوة واضحة للعمل تزيل إرهاق اتخاذ القرار"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Bio: 'Helping Moroccan brides look stunning ✨ | 500+ happy clients | Book below 👇'",
+          "Weak bio: 'Beauty. Passion. Life.'"
+        ],
+        "fr": [
+          "Bio : 'J'aide les mariées marocaines à briller ✨ | 500+ clientes satisfaites | Réservez ci-dessous 👇'",
+          "Bio faible : 'Beauté. Passion. Vie.'"
+        ],
+        "ar": [
+          "سيرة ذاتية: 'أساعد العرائس المغربيات ليكن رائعات ✨ | +500 عميلة سعيدة | احجزي أدناه 👇'",
+          "سيرة ضعيفة: 'جمال. شغف. حياة.'"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Vague bios with no clear offer",
+          "No link or unclear call-to-action",
+          "Low-quality or unclear profile picture"
+        ],
+        "fr": [
+          "Bios vagues sans offre claire",
+          "Pas de lien ou appel à l'action peu clair",
+          "Photo de profil de mauvaise qualité ou peu claire"
+        ],
+        "ar": [
+          "سير ذاتية غامضة بلا عرض واضح",
+          "لا رابط أو دعوة غير واضحة للعمل",
+          "صورة ملف شخصي رديئة أو غير واضحة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Rewrite your bio in 3 lines: who, what, why follow",
+          "Audit your profile picture for clarity at small size",
+          "Add one clear call-to-action to your bio"
+        ],
+        "fr": [
+          "Réécrivez votre bio en 3 lignes : qui, quoi, pourquoi suivre",
+          "Vérifiez la clarté de votre photo de profil en petite taille",
+          "Ajoutez un appel à l'action clair à votre bio"
+        ],
+        "ar": [
+          "أعد كتابة سيرتك في 3 أسطر: من، ماذا، لماذا يتابعونك",
+          "تحقق من وضوح صورتك الشخصية بحجم صغير",
+          "أضف دعوة واضحة للعمل في سيرتك الذاتية"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Personal trainer",
+          "fr": "Coach sportif",
+          "ar": "مدرب شخصي"
+        },
+        "task": {
+          "en": "Write a 3-line bio that instantly builds trust and drives bookings",
+          "fr": "Écrivez une bio de 3 lignes qui construit instantanément la confiance et génère des réservations",
+          "ar": "اكتب سيرة ذاتية من 3 أسطر تبني الثقة فوراً وتدفع للحجز"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Numbers in a bio (clients, years, results) build instant credibility",
+          "Highlights should answer FAQs before people even ask"
+        ],
+        "fr": [
+          "Les chiffres dans une bio (clients, années, résultats) construisent une crédibilité instantanée",
+          "Les stories à la une doivent répondre aux FAQ avant même qu'on les pose"
+        ],
+        "ar": [
+          "الأرقام في السيرة الذاتية (عملاء، سنوات، نتائج) تبني مصداقية فورية",
+          "القصص المميزة يجب أن تجيب عن الأسئلة الشائعة قبل طرحها"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Redesign a weak bio into a converting one in under 3 lines",
+          "fr": "Retransformez une bio faible en une bio qui convertit en moins de 3 lignes",
+          "ar": "أعد تصميم سيرة ذاتية ضعيفة لتصبح محوّلة في أقل من 3 أسطر"
+        },
+        "reward_xp": 45
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This bio says nothing useful 😭",
+          "Now I know exactly who you help and why 🔥"
+        ],
+        "fr": [
+          "Cette bio ne dit rien d'utile 😭",
+          "Maintenant je sais exactement qui vous aidez et pourquoi 🔥"
+        ],
+        "ar": [
+          "هذه السيرة لا تقول شيئاً مفيداً 😭",
+          "الآن أعرف بالضبط من تساعد ولماذا 🔥"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Content Formats 101",
+        "fr": "Les Formats de Contenu 101",
+        "ar": "أشكال المحتوى الأساسية"
+      },
+      "xp": 90,
+      "core_concept": {
+        "en": "Different formats do different jobs — none is 'the best' in isolation.",
+        "fr": "Différents formats font différents travaux — aucun n'est 'le meilleur' isolément.",
+        "ar": "الأشكال المختلفة تؤدي وظائف مختلفة — لا يوجد شكل 'الأفضل' بمعزل عن غيره."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Reels/short videos drive reach, carousels drive saves and education, stories drive intimacy, and static posts drive branding. A strategy uses all of them with purpose.",
+          "fr": "Les reels/vidéos courtes génèrent de la portée, les carrousels génèrent des sauvegardes et de l'éducation, les stories créent de l'intimité, et les posts statiques renforcent la marque. Une stratégie utilise tout cela avec un but précis.",
+          "ar": "الريلز/الفيديوهات القصيرة تحقق الانتشار، والكاروسيل يحقق الحفظ والتثقيف، والقصص تخلق الألفة، والمنشورات الثابتة تبني العلامة التجارية. الاستراتيجية تستخدم كل هذا بهدف واضح."
+        },
+        "why_it_matters": {
+          "en": "Posting only one format limits both your reach and your relationship with the audience.",
+          "fr": "Ne publier qu'un seul format limite à la fois votre portée et votre relation avec l'audience.",
+          "ar": "نشر شكل واحد فقط يحد من وصولك وعلاقتك بالجمهور معاً."
+        },
+        "internet_truth": {
+          "en": "Reach gets you seen. Saves and shares get you remembered.",
+          "fr": "La portée vous fait voir. Les sauvegardes et partages vous font retenir.",
+          "ar": "الوصول يجعلك تُرى. الحفظ والمشاركة تجعلك تُتذكر."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Video triggers movement-based attention",
+          "Carousels reward curiosity with each swipe",
+          "Stories feel private and build closeness",
+          "Static posts build recognizable identity over time"
+        ],
+        "fr": [
+          "La vidéo déclenche une attention basée sur le mouvement",
+          "Les carrousels récompensent la curiosité à chaque glissement",
+          "Les stories semblent privées et créent de la proximité",
+          "Les posts statiques construisent une identité reconnaissable dans le temps"
+        ],
+        "ar": [
+          "الفيديو يحفز انتباهاً قائماً على الحركة",
+          "الكاروسيل يكافئ الفضول مع كل تمرير",
+          "القصص تشعر بالخصوصية وتبني القرب",
+          "المنشورات الثابتة تبني هوية مميزة بمرور الوقت"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A '5 mistakes to avoid' carousel gets saved for later reference",
+          "A behind-the-scenes story gets replies and DMs",
+          "A quick before/after reel gets shared to friends"
+        ],
+        "fr": [
+          "Un carrousel '5 erreurs à éviter' est sauvegardé pour référence future",
+          "Une story des coulisses reçoit des réponses et DM",
+          "Un reel rapide avant/après est partagé aux amis"
+        ],
+        "ar": [
+          "كاروسيل '5 أخطاء يجب تجنبها' يُحفظ للرجوع إليه لاحقاً",
+          "قصة كواليس تحصل على ردود ورسائل خاصة",
+          "ريلز سريع قبل/بعد يُشارك مع الأصدقاء"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Only posting static images and wondering why reach is low",
+          "Never using stories, missing daily connection",
+          "Ignoring carousels which build the deepest trust"
+        ],
+        "fr": [
+          "Ne publier que des images statiques et se demander pourquoi la portée est faible",
+          "Ne jamais utiliser les stories, manquant la connexion quotidienne",
+          "Ignorer les carrousels qui construisent la confiance la plus profonde"
+        ],
+        "ar": [
+          "نشر صور ثابتة فقط والتساؤل عن سبب ضعف الوصول",
+          "عدم استخدام القصص أبداً، وفقدان التواصل اليومي",
+          "تجاهل الكاروسيل الذي يبني أعمق ثقة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Plan one reel, one carousel, one story for this week",
+          "Identify which format your competitors underuse",
+          "Match 3 upcoming content ideas to the best format for each"
+        ],
+        "fr": [
+          "Planifiez un reel, un carrousel, une story pour cette semaine",
+          "Identifiez quel format vos concurrents sous-utilisent",
+          "Associez 3 idées de contenu à venir au meilleur format pour chacune"
+        ],
+        "ar": [
+          "خطط لريلز واحد وكاروسيل وقصة واحدة لهذا الأسبوع",
+          "حدد أي شكل يقلل منافسوك من استخدامه",
+          "طابق 3 أفكار محتوى قادمة مع أفضل شكل لكل منها"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Skincare brand",
+          "fr": "Marque de soins de la peau",
+          "ar": "علامة عناية بالبشرة"
+        },
+        "task": {
+          "en": "Assign the best content format to 3 different messages this brand wants to share",
+          "fr": "Attribuez le meilleur format de contenu à 3 messages différents que cette marque veut partager",
+          "ar": "خصص أفضل شكل محتوى لـ3 رسائل مختلفة تريد هذه العلامة مشاركتها"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Carousels get the highest save rate of any format",
+          "Stories are the fastest way to test an idea before a big post"
+        ],
+        "fr": [
+          "Les carrousels ont le taux de sauvegarde le plus élevé de tous les formats",
+          "Les stories sont le moyen le plus rapide de tester une idée avant un gros post"
+        ],
+        "ar": [
+          "الكاروسيل يحقق أعلى معدل حفظ بين جميع الأشكال",
+          "القصص هي أسرع طريقة لاختبار فكرة قبل منشور كبير"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Turn one static post idea into a reel, a carousel AND a story",
+          "fr": "Transformez une idée de post statique en reel, carrousel ET story",
+          "ar": "حوّل فكرة منشور ثابت إلى ريلز وكاروسيل وقصة"
+        },
+        "reward_xp": 50
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "One format only? You're leaving reach on the table 😭",
+          "Great mix — this uses each format for what it's best at 🔥"
+        ],
+        "fr": [
+          "Un seul format ? Vous laissez de la portée sur la table 😭",
+          "Excellent mélange — cela utilise chaque format pour ce qu'il fait de mieux 🔥"
+        ],
+        "ar": [
+          "شكل واحد فقط؟ أنت تترك وصولاً كبيراً دون استغلال 😭",
+          "مزيج رائع — هذا يستخدم كل شكل لما يبرع فيه 🔥"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "Consistency & The Content Calendar",
+        "fr": "Régularité & Calendrier de Contenu",
+        "ar": "الاستمرارية وتقويم المحتوى"
+      },
+      "xp": 90,
+      "core_concept": {
+        "en": "Algorithms and audiences both reward what shows up reliably.",
+        "fr": "Les algorithmes et les audiences récompensent tous deux ce qui apparaît de manière fiable.",
+        "ar": "الخوارزميات والجمهور كلاهما يكافئ ما يظهر بشكل موثوق."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "A content calendar turns random posting into a predictable system, removing daily stress and decision fatigue.",
+          "fr": "Un calendrier de contenu transforme la publication aléatoire en un système prévisible, supprimant le stress quotidien et la fatigue décisionnelle.",
+          "ar": "تقويم المحتوى يحوّل النشر العشوائي إلى نظام يمكن التنبؤ به، ويزيل التوتر اليومي وإرهاق اتخاذ القرار."
+        },
+        "why_it_matters": {
+          "en": "Accounts that post inconsistently lose the momentum the algorithm needs to keep showing them to new people.",
+          "fr": "Les comptes qui publient de manière incohérente perdent l'élan dont l'algorithme a besoin pour continuer à les montrer à de nouvelles personnes.",
+          "ar": "الحسابات التي تنشر بشكل غير منتظم تفقد الزخم الذي تحتاجه الخوارزمية لمواصلة عرضها لأشخاص جدد."
+        },
+        "internet_truth": {
+          "en": "One viral post means nothing without a system behind it to capture the attention it brings.",
+          "fr": "Un post viral ne signifie rien sans un système derrière lui pour capter l'attention qu'il apporte.",
+          "ar": "منشور فيروسي واحد لا يعني شيئاً بدون نظام خلفه لاستثمار الانتباه الذي يجلبه."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Predictability builds audience habit",
+          "Batching reduces decision fatigue",
+          "A content pillar system prevents 'what do I post today' panic"
+        ],
+        "fr": [
+          "La prévisibilité construit une habitude d'audience",
+          "Le batching réduit la fatigue décisionnelle",
+          "Un système de piliers de contenu évite la panique du 'que dois-je poster aujourd'hui'"
+        ],
+        "ar": [
+          "القابلية للتنبؤ تبني عادة لدى الجمهور",
+          "التجميع الدفعي يقلل إرهاق القرار",
+          "نظام أعمدة المحتوى يمنع ذعر 'ماذا أنشر اليوم'"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A brand posting 3x/week consistently outperforms one posting daily then vanishing for two weeks",
+          "Batch-filming 10 reels in one day removes the daily pressure to create"
+        ],
+        "fr": [
+          "Une marque publiant 3x/semaine de façon régulière surpasse celle publiant quotidiennement puis disparaissant deux semaines",
+          "Filmer 10 reels en une journée supprime la pression quotidienne de créer"
+        ],
+        "ar": [
+          "علامة تنشر 3 مرات أسبوعياً بانتظام تتفوق على أخرى تنشر يومياً ثم تختفي أسبوعين",
+          "تصوير 10 ريلز دفعة واحدة في يوم واحد يزيل ضغط الإنشاء اليومي"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Posting daily for a week then disappearing for a month",
+          "No content pillars, so every day feels like starting from zero",
+          "Never planning ahead, always creating last-minute"
+        ],
+        "fr": [
+          "Publier quotidiennement pendant une semaine puis disparaître pendant un mois",
+          "Pas de piliers de contenu, donc chaque jour ressemble à repartir de zéro",
+          "Ne jamais planifier à l'avance, toujours créer à la dernière minute"
+        ],
+        "ar": [
+          "النشر يومياً لأسبوع ثم الاختفاء لشهر",
+          "لا أعمدة محتوى، فكل يوم يبدو كبداية من الصفر",
+          "عدم التخطيط المسبق أبداً، والإنشاء دائماً في اللحظة الأخيرة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Define 3-4 content pillars for your page",
+          "Build a 2-week posting calendar",
+          "Batch-plan 5 post ideas in one sitting"
+        ],
+        "fr": [
+          "Définissez 3-4 piliers de contenu pour votre page",
+          "Construisez un calendrier de publication de 2 semaines",
+          "Planifiez 5 idées de posts en une seule session"
+        ],
+        "ar": [
+          "حدد 3-4 أعمدة محتوى لصفحتك",
+          "ابنِ تقويم نشر لأسبوعين",
+          "خطط دفعة واحدة لـ5 أفكار منشورات في جلسة واحدة"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Coffee shop",
+          "fr": "Café",
+          "ar": "مقهى"
+        },
+        "task": {
+          "en": "Design a realistic weekly posting schedule with content pillars",
+          "fr": "Concevez un calendrier de publication hebdomadaire réaliste avec des piliers de contenu",
+          "ar": "صمم جدول نشر أسبوعي واقعي بأعمدة محتوى"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Batching content one day a week beats daily last-minute posting",
+          "3-4 content pillars are enough — more creates decision overload"
+        ],
+        "fr": [
+          "Regrouper le contenu un jour par semaine bat la publication quotidienne de dernière minute",
+          "3-4 piliers de contenu suffisent — plus crée une surcharge décisionnelle"
+        ],
+        "ar": [
+          "تجميع المحتوى يوماً واحداً أسبوعياً أفضل من النشر اليومي في اللحظة الأخيرة",
+          "3-4 أعمدة محتوى كافية — الزيادة تخلق إرهاقاً في القرار"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Build a full 7-day content calendar with pillars assigned to each day",
+          "fr": "Construisez un calendrier de contenu complet de 7 jours avec des piliers assignés à chaque jour",
+          "ar": "ابنِ تقويم محتوى كاملاً لـ7 أيام مع تخصيص عمود لكل يوم"
+        },
+        "reward_xp": 50
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "No structure here, this will burn you out fast 😭",
+          "This system could run itself for months 🔥"
+        ],
+        "fr": [
+          "Aucune structure ici, ça va vous épuiser rapidement 😭",
+          "Ce système pourrait tourner tout seul pendant des mois 🔥"
+        ],
+        "ar": [
+          "لا يوجد هيكل هنا، سيرهقك هذا بسرعة 😭",
+          "هذا النظام يمكن أن يعمل بمفرده لأشهر 🔥"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "en": "Reading Basic Analytics",
+        "fr": "Lire les Statistiques de Base",
+        "ar": "قراءة التحليلات الأساسية"
+      },
+      "xp": 100,
+      "core_concept": {
+        "en": "Numbers tell you the truth your opinion can't.",
+        "fr": "Les chiffres vous disent la vérité que votre opinion ne peut pas dire.",
+        "ar": "الأرقام تخبرك بالحقيقة التي لا يستطيع رأيك إخبارك بها."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Reach, engagement rate, saves and profile visits tell a real story about what's working — far more reliable than gut feeling.",
+          "fr": "La portée, le taux d'engagement, les sauvegardes et les visites de profil racontent une histoire réelle sur ce qui fonctionne — bien plus fiable que l'instinct.",
+          "ar": "الوصول ومعدل التفاعل والحفظ وزيارات الملف الشخصي تروي قصة حقيقية عمّا ينجح — أكثر موثوقية بكثير من الحدس."
+        },
+        "why_it_matters": {
+          "en": "Without checking numbers, you keep repeating content that feels good but performs poorly.",
+          "fr": "Sans vérifier les chiffres, vous continuez à répéter un contenu qui semble bon mais performe mal.",
+          "ar": "بدون التحقق من الأرقام، تستمر في تكرار محتوى يبدو جيداً لكنه يؤدي بشكل ضعيف."
+        },
+        "internet_truth": {
+          "en": "Your favorite post and your best-performing post are rarely the same one.",
+          "fr": "Votre post préféré et votre post le plus performant sont rarement les mêmes.",
+          "ar": "منشورك المفضل ومنشورك الأفضل أداءً نادراً ما يكونان نفس المنشور."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Saves indicate long-term value, not just momentary interest",
+          "Profile visits signal curiosity about your brand",
+          "Engagement rate matters more than raw follower count"
+        ],
+        "fr": [
+          "Les sauvegardes indiquent une valeur à long terme, pas seulement un intérêt momentané",
+          "Les visites de profil signalent une curiosité pour votre marque",
+          "Le taux d'engagement compte plus que le nombre brut d'abonnés"
+        ],
+        "ar": [
+          "الحفظ يشير إلى قيمة طويلة الأمد، وليس مجرد اهتمام لحظي",
+          "زيارات الملف الشخصي تدل على الفضول تجاه علامتك",
+          "معدل التفاعل أهم من عدد المتابعين الخام"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A post with 500 views but 50 saves is more valuable than one with 5000 views and 2 saves",
+          "A page with 2,000 engaged followers can outsell one with 20,000 inactive followers"
+        ],
+        "fr": [
+          "Un post avec 500 vues mais 50 sauvegardes vaut plus qu'un avec 5000 vues et 2 sauvegardes",
+          "Une page avec 2 000 abonnés engagés peut vendre plus qu'une avec 20 000 abonnés inactifs"
+        ],
+        "ar": [
+          "منشور بـ500 مشاهدة و50 حفظ أقيم من منشور بـ5000 مشاهدة وحفظين فقط",
+          "صفحة بـ2000 متابع متفاعل يمكن أن تبيع أكثر من صفحة بـ20000 متابع غير نشط"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Chasing follower count instead of engagement",
+          "Never checking insights/analytics at all",
+          "Judging performance by personal opinion only"
+        ],
+        "fr": [
+          "Poursuivre le nombre d'abonnés au lieu de l'engagement",
+          "Ne jamais consulter les statistiques du tout",
+          "Juger la performance uniquement par opinion personnelle"
+        ],
+        "ar": [
+          "مطاردة عدد المتابعين بدلاً من التفاعل",
+          "عدم التحقق من التحليلات إطلاقاً",
+          "الحكم على الأداء بناءً على الرأي الشخصي فقط"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Open your insights and find your top 3 posts by saves",
+          "Compare your favorite post's performance to your top performer",
+          "Note one pattern across your best posts"
+        ],
+        "fr": [
+          "Ouvrez vos statistiques et trouvez vos 3 meilleurs posts par sauvegardes",
+          "Comparez la performance de votre post préféré à votre meilleur performer",
+          "Notez un schéma commun entre vos meilleurs posts"
+        ],
+        "ar": [
+          "افتح تحليلاتك وابحث عن أفضل 3 منشورات حسب الحفظ",
+          "قارن أداء منشورك المفضل بأفضل منشور أداءً",
+          "لاحظ نمطاً مشتركاً بين أفضل منشوراتك"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Fitness coach",
+          "fr": "Coach fitness",
+          "ar": "مدرب لياقة"
+        },
+        "task": {
+          "en": "Identify which metric matters most for this coach's goal of getting new clients",
+          "fr": "Identifiez quelle métrique compte le plus pour l'objectif de ce coach d'obtenir de nouveaux clients",
+          "ar": "حدد أي مقياس هو الأهم لهدف هذا المدرب في الحصول على عملاء جدد"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Saves predict future reach better than likes do",
+          "Check analytics weekly, not daily — daily checking creates anxiety, not insight"
+        ],
+        "fr": [
+          "Les sauvegardes prédisent mieux la portée future que les likes",
+          "Vérifiez les statistiques hebdomadairement, pas quotidiennement — la vérification quotidienne crée de l'anxiété, pas des insights"
+        ],
+        "ar": [
+          "الحفظ يتنبأ بالوصول المستقبلي أفضل من الإعجابات",
+          "تحقق من التحليلات أسبوعياً وليس يومياً — التحقق اليومي يخلق قلقاً وليس رؤية"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Given 3 posts' stats, decide which one to turn into a follow-up post and explain why",
+          "fr": "Étant donné les statistiques de 3 posts, décidez lequel transformer en post de suivi et expliquez pourquoi",
+          "ar": "بناءً على إحصائيات 3 منشورات، قرر أيها تحوّله إلى منشور متابعة واشرح السبب"
+        },
+        "reward_xp": 55
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "You're guessing, not reading the data 😭",
+          "Now you're making decisions like a strategist 🔥"
+        ],
+        "fr": [
+          "Vous devinez, vous ne lisez pas les données 😭",
+          "Maintenant vous prenez des décisions comme un stratège 🔥"
+        ],
+        "ar": [
+          "أنت تخمّن، ولا تقرأ البيانات 😭",
+          "الآن أنت تتخذ قرارات كاستراتيجي 🔥"
+        ]
       }
     },
     {
       "id": 8,
       "title": {
-        "en": "Trend Hijacking God Mode",
-        "fr": "Détournement de Tendances Mode Dieu",
-        "ar": "اختطاف الترند - وضع الإله"
+        "en": "Engagement & Community Basics",
+        "fr": "Bases de l'Engagement & Communauté",
+        "ar": "أساسيات التفاعل وبناء المجتمع"
       },
-      "xp": 190,
+      "xp": 100,
       "core_concept": {
-        "en": "Trends are emotional waves on the internet.",
-        "fr": "Les tendances sont des vagues émotionnelles sur internet.",
-        "ar": "الترندات هي موجات عاطفية على الإنترنت."
+        "en": "A comment section is a conversation, not a comment box to ignore.",
+        "fr": "Une section de commentaires est une conversation, pas une boîte à ignorer.",
+        "ar": "قسم التعليقات هو محادثة، وليس صندوقاً يُتجاهل."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Smart creators adapt trends instead of blindly copying them.",
-          "fr": "Les créateurs intelligents adaptent les tendances au lieu de les copier aveuglément.",
-          "ar": "صناع المحتوى الأذكياء يتكيفون مع الترندات بدلاً من نسخها بشكل أعمى."
+          "en": "Replying to comments and DMs quickly signals to the algorithm and the audience that your account is active and human.",
+          "fr": "Répondre rapidement aux commentaires et DM signale à l'algorithme et à l'audience que votre compte est actif et humain.",
+          "ar": "الرد على التعليقات والرسائل الخاصة بسرعة يشير للخوارزمية والجمهور أن حسابك نشط وبشري."
         },
         "why_it_matters": {
-          "en": "Trends can massively increase reach when used correctly.",
-          "fr": "Les tendances peuvent massivement augmenter la portée quand elles sont bien utilisées.",
-          "ar": "يمكن للترندات أن تزيد الوصول بشكل كبير عند استخدامها بشكل صحيح."
+          "en": "Followers who feel heard become customers who feel loyal.",
+          "fr": "Les abonnés qui se sentent entendus deviennent des clients fidèles.",
+          "ar": "المتابعون الذين يشعرون بأن صوتهم مسموع يصبحون عملاء مخلصين."
         },
         "internet_truth": {
-          "en": "Late trends are already dead 😭",
-          "fr": "Les tendances tardives sont déjà mortes 😭",
-          "ar": "الترندات المتأخرة ماتت بالفعل 😭"
+          "en": "The algorithm treats early engagement as a signal to push your post further.",
+          "fr": "L'algorithme traite l'engagement précoce comme un signal pour pousser votre post plus loin.",
+          "ar": "الخوارزمية تعامل التفاعل المبكر كإشارة لدفع منشورك أبعد."
         }
       },
-      "trend_systems": {
-        "en": ["Trend timing","Trend psychology","Trend adaptation","Local trend domination","Trend emotion matching"],
-        "fr": ["Timing des tendances","Psychologie des tendances","Adaptation des tendances","Domination des tendances locales","Correspondance émotionnelle des tendances"],
-        "ar": ["توقيت الترند","سيكولوجية الترند","تكييف الترند","السيطرة على الترند المحلي","مطابقة عاطفة الترند"]
+      "psychology": {
+        "en": [
+          "People feel valued when a brand replies personally",
+          "Fast replies create a sense of reliability",
+          "Asking questions in captions invites participation"
+        ],
+        "fr": [
+          "Les gens se sentent valorisés quand une marque répond personnellement",
+          "Des réponses rapides créent un sentiment de fiabilité",
+          "Poser des questions dans les légendes invite à la participation"
+        ],
+        "ar": [
+          "الناس يشعرون بالتقدير عندما ترد العلامة التجارية شخصياً",
+          "الردود السريعة تخلق شعوراً بالموثوقية",
+          "طرح الأسئلة في التعليقات يدعو للمشاركة"
+        ]
       },
       "real_examples": {
-        "en": ["Using trending audio with local twist","Turning global trend into Moroccan version","Fast creators dominate trends"],
-        "fr": ["Utiliser l'audio tendance avec une touche locale","Transformer une tendance mondiale en version marocaine","Les créateurs rapides dominent les tendances"],
-        "ar": ["استخدام الصوت الشائع مع لمسة محلية","تحويل الترند العالمي إلى نسخة مغربية","صناع المحتوى السريعون يسيطرون على الترندات"]
+        "en": [
+          "A brand replying with a question turns a one-word comment into a real conversation",
+          "Liking and replying to every comment in the first hour boosts a post's reach"
+        ],
+        "fr": [
+          "Une marque qui répond avec une question transforme un commentaire d'un mot en vraie conversation",
+          "Aimer et répondre à chaque commentaire dans la première heure booste la portée d'un post"
+        ],
+        "ar": [
+          "علامة ترد بسؤال تحوّل تعليقاً من كلمة واحدة إلى محادثة حقيقية",
+          "الإعجاب والرد على كل تعليق في الساعة الأولى يعزز وصول المنشور"
+        ]
       },
       "common_mistakes": {
-        "en": ["Copying trends blindly","Using dead trends","No originality","Ignoring audience emotion"],
-        "fr": ["Copier les tendances aveuglément","Utiliser des tendances mortes","Pas d'originalité","Ignorer l'émotion du public"],
-        "ar": ["نسخ الترندات بشكل أعمى","استخدام ترندات ميتة","لا أصالة","تجاهل عاطفة الجمهور"]
+        "en": [
+          "Leaving comments unanswered for days",
+          "Giving one-word replies with no personality",
+          "Ignoring DMs from interested customers"
+        ],
+        "fr": [
+          "Laisser des commentaires sans réponse pendant des jours",
+          "Donner des réponses d'un mot sans personnalité",
+          "Ignorer les DM de clients intéressés"
+        ],
+        "ar": [
+          "ترك التعليقات دون رد لأيام",
+          "إعطاء ردود من كلمة واحدة بلا شخصية",
+          "تجاهل الرسائل الخاصة من عملاء مهتمين"
+        ]
       },
       "missions": {
-        "en": ["Find 5 current trends","Create Moroccan version of trend","Predict which trend will die soon"],
-        "fr": ["Trouvez 5 tendances actuelles","Créez une version marocaine d'une tendance","Prédisez quelle tendance va bientôt mourir"],
-        "ar": ["ابحث عن 5 ترندات حالية","أنشئ نسخة مغربية من ترند","توقع أي ترند سيموت قريباً"]
+        "en": [
+          "Reply to every comment on your last 3 posts today",
+          "Write 3 caption questions designed to spark replies",
+          "Set a daily 15-minute engagement routine"
+        ],
+        "fr": [
+          "Répondez à tous les commentaires de vos 3 derniers posts aujourd'hui",
+          "Écrivez 3 questions de légende conçues pour susciter des réponses",
+          "Établissez une routine d'engagement quotidienne de 15 minutes"
+        ],
+        "ar": [
+          "رد على كل تعليق في آخر 3 منشورات لك اليوم",
+          "اكتب 3 أسئلة في التعليقات مصممة لإثارة الردود",
+          "حدد روتيناً يومياً للتفاعل مدته 15 دقيقة"
+        ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Clothing brand",
-          "fr": "Marque de vêtements",
-          "ar": "علامة تجارية للملابس"
+          "en": "Online clothing store",
+          "fr": "Boutique de vêtements en ligne",
+          "ar": "متجر ملابس إلكتروني"
         },
         "task": {
-          "en": "Adapt viral fashion trend for Moroccan audience",
-          "fr": "Adaptez une tendance mode virale pour le public marocain",
-          "ar": "تكيّف مع ترند موضة فيروسي للجمهور المغربي"
+          "en": "Write 3 warm, on-brand replies to common customer comments",
+          "fr": "Écrivez 3 réponses chaleureuses et conformes à la marque à des commentaires clients courants",
+          "ar": "اكتب 3 ردود دافئة تتماشى مع العلامة على تعليقات شائعة من العملاء"
         }
       },
       "pro_secrets": {
-        "en": ["Fast adaptation beats perfection","Localizing trends increases relatability","Trends spread emotion faster than information"],
-        "fr": ["L'adaptation rapide bat la perfection","La localisation des tendances augmente l'identification","Les tendances diffusent les émotions plus vite que les informations"],
-        "ar": ["التكيف السريع يتفوق على الكمال","تحليل الترندات يزيد التماهي","الترندات تنشر العاطفة أسرع من المعلومات"]
+        "en": [
+          "Replying within the first hour has outsized impact on reach",
+          "Turning DMs into a habit builds real relationships, not just sales"
+        ],
+        "fr": [
+          "Répondre dans la première heure a un impact disproportionné sur la portée",
+          "Faire des DM une habitude construit de vraies relations, pas seulement des ventes"
+        ],
+        "ar": [
+          "الرد خلال الساعة الأولى له تأثير كبير على الوصول",
+          "جعل الرسائل الخاصة عادة يبني علاقات حقيقية، وليس فقط مبيعات"
+        ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Create trend with unique emotional twist",
-          "fr": "Créez une tendance avec une touche émotionnelle unique",
-          "ar": "أنشئ ترنداً بلمسة عاطفية فريدة"
+          "en": "Turn a single flat comment into a full back-and-forth conversation",
+          "fr": "Transformez un simple commentaire plat en une véritable conversation",
+          "ar": "حوّل تعليقاً واحداً باهتاً إلى محادثة كاملة متبادلة"
         },
-        "reward_xp": 100
+        "reward_xp": 55
       },
       "ai_feedback_examples": {
-        "en": ["This trend already died 😭","GOOD local adaptation 💣","This has viral potential 🔥"],
-        "fr": ["Cette tendance est déjà morte 😭","BONNE adaptation locale 💣","Ça a un potentiel viral 🔥"],
-        "ar": ["هذا الترند مات بالفعل 😭","تكيف محلي جيد 💣","هذا لديه إمكانية فيروسية 🔥"]
+        "en": [
+          "Silence here kills the relationship 😭",
+          "This reply makes people feel like a real person is behind the page 🔥"
+        ],
+        "fr": [
+          "Le silence ici tue la relation 😭",
+          "Cette réponse donne l'impression qu'une vraie personne est derrière la page 🔥"
+        ],
+        "ar": [
+          "الصمت هنا يقتل العلاقة 😭",
+          "هذا الرد يجعل الناس يشعرون أن شخصاً حقيقياً وراء الصفحة 🔥"
+        ]
       }
     },
     {
       "id": 9,
       "title": {
-        "en": "Creator Mindset & Audience Psychology",
-        "fr": "État d'Esprit du Créateur et Psychologie du Public",
-        "ar": "عقلية المبدع وسيكولوجية الجمهور"
+        "en": "Branding Basics on Social Media",
+        "fr": "Bases du Branding sur les Réseaux Sociaux",
+        "ar": "أساسيات بناء العلامة التجارية على وسائل التواصل"
       },
-      "xp": 250,
+      "xp": 110,
       "core_concept": {
-        "en": "Great creators understand human behavior.",
-        "fr": "Les grands créateurs comprennent le comportement humain.",
-        "ar": "صناع المحتوى العظماء يفهمون السلوك البشري."
+        "en": "A recognizable brand is remembered even with the sound off and the name hidden.",
+        "fr": "Une marque reconnaissable est mémorisée même sans son et sans nom visible.",
+        "ar": "العلامة التجارية المميزة تُتذكر حتى بدون صوت أو اسم ظاهر."
       },
       "deep_explanation": {
         "summary": {
-          "en": "The internet is emotional warfare for attention.",
-          "fr": "Internet est une guerre émotionnelle pour l'attention.",
-          "ar": "الإنترنت هو حرب عاطفية على الانتباه."
+          "en": "Consistent colors, fonts, tone of voice and visual style let people recognize your content before they even read the caption.",
+          "fr": "Des couleurs, polices, ton de voix et style visuel cohérents permettent aux gens de reconnaître votre contenu avant même de lire la légende.",
+          "ar": "الألوان والخطوط ونبرة الصوت والأسلوب البصري المتسق تجعل الناس يتعرفون على محتواك قبل حتى قراءة التعليق."
         },
         "why_it_matters": {
-          "en": "Creators who understand psychology grow faster.",
-          "fr": "Les créateurs qui comprennent la psychologie grandissent plus vite.",
-          "ar": "صناع المحتوى الذين يفهمون علم النفس ينمون بشكل أسرع."
+          "en": "Inconsistent branding forces the brain to work harder to recognize you, and it usually just scrolls past instead.",
+          "fr": "Un branding incohérent oblige le cerveau à travailler plus dur pour vous reconnaître, et il fait généralement défiler à la place.",
+          "ar": "الهوية غير المتسقة تجبر الدماغ على العمل أكثر للتعرف عليك، وعادة ما يتصفح بعيداً بدلاً من ذلك."
         },
         "internet_truth": {
-          "en": "Most creators fail because they think like consumers.",
-          "fr": "La plupart des créateurs échouent parce qu'ils pensent comme des consommateurs.",
-          "ar": "معظم صناع المحتوى يفشلون لأنهم يفكرون كمستهلكين."
+          "en": "People follow personalities and identities, not just products.",
+          "fr": "Les gens suivent des personnalités et des identités, pas seulement des produits.",
+          "ar": "الناس يتابعون الشخصيات والهويات، وليس فقط المنتجات."
         }
       },
-      "mindset_training": {
-        "en": ["Attention economy","Consistency","Audience psychology","Emotional triggers","Internet behavior"],
-        "fr": ["Économie de l'attention","Régularité","Psychologie du public","Déclencheurs émotionnels","Comportement sur internet"],
-        "ar": ["اقتصاد الانتباه","الاستمرارية","سيكولوجية الجمهور","المحفزات العاطفية","السلوك على الإنترنت"]
+      "psychology": {
+        "en": [
+          "Visual consistency builds instant recognition",
+          "A distinct tone of voice makes a brand feel human",
+          "Repetition of colors and style builds memory over time"
+        ],
+        "fr": [
+          "La cohérence visuelle construit une reconnaissance instantanée",
+          "Un ton de voix distinct rend une marque humaine",
+          "La répétition des couleurs et du style construit la mémoire dans le temps"
+        ],
+        "ar": [
+          "الاتساق البصري يبني تعرفاً فورياً",
+          "نبرة صوت مميزة تجعل العلامة التجارية تبدو إنسانية",
+          "تكرار الألوان والأسلوب يبني الذاكرة بمرور الوقت"
+        ]
       },
-      "audience_psychology": {
-        "en": ["People seek emotion","People love relatability","People fear missing out","People follow confidence"],
-        "fr": ["Les gens cherchent l'émotion","Les gens aiment s'identifier","Les gens ont peur de manquer quelque chose","Les gens suivent la confiance"],
-        "ar": ["الناس يبحثون عن العاطفة","الناس يحبون التماهي","الناس يخافون من فوات الفرصة","الناس يتبعون الثقة"]
+      "real_examples": {
+        "en": [
+          "A brand using the same 2 colors and font in every post becomes instantly recognizable in the feed",
+          "A page with a signature emoji or phrase feels more human and memorable"
+        ],
+        "fr": [
+          "Une marque utilisant les mêmes 2 couleurs et police dans chaque post devient instantanément reconnaissable dans le fil",
+          "Une page avec un emoji ou une phrase signature semble plus humaine et mémorable"
+        ],
+        "ar": [
+          "علامة تستخدم نفس اللونين والخط في كل منشور تصبح مميزة فوراً في الخلاصة",
+          "صفحة بإيموجي أو عبارة مميزة تبدو أكثر إنسانية وتُذكر بسهولة أكبر"
+        ]
       },
       "common_mistakes": {
-        "en": ["Posting randomly","Thinking emotionally instead of strategically","Ignoring audience retention","Quitting too early"],
-        "fr": ["Poster aléatoirement","Penser émotionnellement au lieu de stratégiquement","Ignorer la rétention du public","Abandonner trop tôt"],
-        "ar": ["النشر عشوائياً","التفكير عاطفياً بدلاً من استراتيجياً","تجاهل الاحتفاظ بالجمهور","الاستسلام مبكراً"]
+        "en": [
+          "Changing colors, fonts and tone with every post",
+          "No consistent voice — sometimes formal, sometimes very casual",
+          "Copying a competitor's visual identity exactly"
+        ],
+        "fr": [
+          "Changer les couleurs, polices et ton à chaque post",
+          "Pas de voix cohérente — parfois formelle, parfois très décontractée",
+          "Copier exactement l'identité visuelle d'un concurrent"
+        ],
+        "ar": [
+          "تغيير الألوان والخطوط والأسلوب مع كل منشور",
+          "لا صوت متسق — أحياناً رسمي وأحياناً غير رسمي جداً",
+          "نسخ الهوية البصرية لمنافس بالضبط"
+        ]
       },
       "missions": {
-        "en": ["Analyze creator comments","Study audience reactions","Find emotional patterns"],
-        "fr": ["Analysez les commentaires des créateurs","Étudiez les réactions du public","Trouvez les schémas émotionnels"],
-        "ar": ["حلل تعليقات صناع المحتوى","ادرس ردود فعل الجمهور","ابحث عن الأنماط العاطفية"]
+        "en": [
+          "Pick 2 brand colors and one font for all future posts",
+          "Write 3 words that describe your brand's tone of voice",
+          "Audit your last 9 posts for visual consistency"
+        ],
+        "fr": [
+          "Choisissez 2 couleurs de marque et une police pour tous les futurs posts",
+          "Écrivez 3 mots décrivant le ton de voix de votre marque",
+          "Vérifiez la cohérence visuelle de vos 9 derniers posts"
+        ],
+        "ar": [
+          "اختر لونين للعلامة التجارية وخطاً واحداً لجميع المنشورات القادمة",
+          "اكتب 3 كلمات تصف نبرة صوت علامتك",
+          "تحقق من الاتساق البصري لآخر 9 منشورات لك"
+        ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Freelancer page",
-          "fr": "Page freelance",
-          "ar": "صفحة مستقل"
+          "en": "Perfume brand",
+          "fr": "Marque de parfum",
+          "ar": "علامة عطور"
         },
         "task": {
-          "en": "Identify why engagement feels weak",
-          "fr": "Identifiez pourquoi l'engagement semble faible",
-          "ar": "حدد لماذا يبدو التفاعل ضعيفاً"
+          "en": "Define 2 brand colors, a font style, and 3 tone-of-voice words for this brand",
+          "fr": "Définissez 2 couleurs de marque, un style de police, et 3 mots de ton de voix pour cette marque",
+          "ar": "حدد لونين للعلامة، ونمط خط، و3 كلمات لنبرة الصوت لهذه العلامة"
         }
       },
       "pro_secrets": {
-        "en": ["Consistency builds audience trust","Attention is more valuable than followers","Emotion controls internet behavior"],
-        "fr": ["La régularité construit la confiance du public","L'attention est plus précieuse que les abonnés","L'émotion contrôle le comportement sur internet"],
-        "ar": ["الاستمرارية تبني ثقة الجمهور","الانتباه أكثر قيمة من المتابعين","العاطفة تتحكم في السلوك على الإنترنت"]
+        "en": [
+          "A visible content grid with consistent style outperforms a mismatched one in follows",
+          "Tone of voice is often more memorable than visuals alone"
+        ],
+        "fr": [
+          "Une grille de contenu visible avec un style cohérent surpasse une grille dépareillée en abonnements",
+          "Le ton de voix est souvent plus mémorable que les visuels seuls"
+        ],
+        "ar": [
+          "شبكة محتوى متسقة بصرياً تتفوق على شبكة غير متناسقة من حيث المتابعة",
+          "نبرة الصوت غالباً أكثر تذكراً من المرئيات وحدها"
+        ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Think like a viral creator instead of normal user",
-          "fr": "Pensez comme un créateur viral plutôt qu'un utilisateur normal",
-          "ar": "فكّر كصانع محتوى فيروسي بدلاً من مستخدم عادي"
+          "en": "Create a mini brand style guide: 2 colors, 1 font, 3 tone words",
+          "fr": "Créez un mini guide de style de marque : 2 couleurs, 1 police, 3 mots de ton",
+          "ar": "أنشئ دليل هوية مصغر: لونان، خط واحد، 3 كلمات للنبرة"
         },
-        "reward_xp": 150
+        "reward_xp": 60
       },
       "ai_feedback_examples": {
-        "en": ["You're thinking too safely 😭","Now you're understanding audience psychology 💣","This mindset creates creators 🔥"],
-        "fr": ["Vous pensez trop prudemment 😭","Maintenant vous comprenez la psychologie du public 💣","Cet état d'esprit crée des créateurs 🔥"],
-        "ar": ["أنت تفكر بأمان شديد 😭","الآن أنت تفهم سيكولوجية الجمهور 💣","هذه العقلية تصنع صناع محتوى 🔥"]
+        "en": [
+          "This feed looks like 5 different brands 😭",
+          "Now this feels like ONE recognizable identity 🔥"
+        ],
+        "fr": [
+          "Ce fil ressemble à 5 marques différentes 😭",
+          "Maintenant ça ressemble à UNE identité reconnaissable 🔥"
+        ],
+        "ar": [
+          "هذه الخلاصة تبدو وكأنها 5 علامات مختلفة 😭",
+          "الآن هذا يبدو كهوية واحدة مميزة 🔥"
+        ]
       }
     },
     {
       "id": 10,
       "title": {
-        "en": "FINAL VIRAL SIMULATION",
-        "fr": "SIMULATION VIRALE FINALE",
-        "ar": "المحاكاة الفيروسية النهائية"
+        "en": "FINAL FOUNDATIONS SIMULATION",
+        "fr": "SIMULATION FINALE DES FONDATIONS",
+        "ar": "المحاكاة النهائية للأساسيات"
       },
-      "xp": 400,
+      "xp": 300,
       "core_concept": {
-        "en": "Real creators combine psychology, emotion and strategy together.",
-        "fr": "Les vrais créateurs combinent psychologie, émotion et stratégie ensemble.",
-        "ar": "صناع المحتوى الحقيقيون يجمعون علم النفس والعاطفة والاستراتيجية معاً."
+        "en": "A real strategist combines audience, platform, format, consistency and branding into one plan.",
+        "fr": "Un vrai stratège combine audience, plateforme, format, régularité et branding en un seul plan.",
+        "ar": "الاستراتيجي الحقيقي يجمع الجمهور والمنصة والشكل والاستمرارية والهوية في خطة واحدة."
       },
       "deep_explanation": {
         "summary": {
-          "en": "This final simulation tests whether the user can think like a creator.",
-          "fr": "Cette simulation finale teste si l'utilisateur peut penser comme un créateur.",
-          "ar": "هذه المحاكاة النهائية تختبر ما إذا كان المستخدم يستطيع التفكير كصانع محتوى."
+          "en": "This final simulation tests whether you can build a complete beginner-level social media foundation for a real business.",
+          "fr": "Cette simulation finale teste si vous pouvez construire une fondation complète de réseaux sociaux niveau débutant pour une vraie entreprise.",
+          "ar": "هذه المحاكاة النهائية تختبر ما إذا كنت تستطيع بناء أساس كامل لوسائل التواصل الاجتماعي لمشروع حقيقي."
         },
         "why_it_matters": {
-          "en": "The internet rewards creators who understand human attention deeply.",
-          "fr": "Internet récompense les créateurs qui comprennent profondément l'attention humaine.",
-          "ar": "الإنترنت يكافئ صناع المحتوى الذين يفهمون الانتباه البشري بعمق."
+          "en": "Without solid foundations, every future tactic — ads, virality, growth hacks — is built on sand.",
+          "fr": "Sans fondations solides, chaque tactique future — publicités, viralité, growth hacks — est construite sur du sable.",
+          "ar": "بدون أساس متين، كل تكتيك مستقبلي — الإعلانات، الانتشار الفيروسي، حيل النمو — يُبنى على رمال."
         },
         "internet_truth": {
-          "en": "Viral content is engineered emotion.",
-          "fr": "Le contenu viral est une émotion engineerée.",
-          "ar": "المحتوى الفيروسي هو عاطفة مهندسة."
+          "en": "Strategy beats luck, every single time, in the long run.",
+          "fr": "La stratégie bat la chance, à chaque fois, sur le long terme.",
+          "ar": "الاستراتيجية تتفوق على الحظ، في كل مرة، على المدى الطويل."
         }
       },
       "simulation_systems": {
-        "en": ["Hook analysis","Emotion detection","Retention prediction","Visual optimization","CTA improvement","Trend adaptation"],
-        "fr": ["Analyse des accroches","Détection des émotions","Prédiction de rétention","Optimisation visuelle","Amélioration des CTA","Adaptation aux tendances"],
-        "ar": ["تحليل الخطاف","كشف العاطفة","توقع الاحتفاظ","تحسين المرئيات","تحسين الدعوة للتفاعل","التكيف مع الترندات"]
+        "en": [
+          "Audience definition",
+          "Platform selection",
+          "Profile optimization",
+          "Format planning",
+          "Content calendar",
+          "Analytics reading",
+          "Engagement routine",
+          "Brand consistency"
+        ],
+        "fr": [
+          "Définition d'audience",
+          "Sélection de plateforme",
+          "Optimisation de profil",
+          "Planification de format",
+          "Calendrier de contenu",
+          "Lecture d'analyses",
+          "Routine d'engagement",
+          "Cohérence de marque"
+        ],
+        "ar": [
+          "تحديد الجمهور",
+          "اختيار المنصة",
+          "تحسين الملف الشخصي",
+          "تخطيط الشكل",
+          "تقويم المحتوى",
+          "قراءة التحليلات",
+          "روتين التفاعل",
+          "اتساق العلامة التجارية"
+        ]
       },
       "final_missions": {
-        "en": ["Build complete viral reel strategy","Analyze weak content","Improve retention","Create emotional hook","Write strong CTA"],
-        "fr": ["Construire une stratégie complète de reel viral","Analyser un contenu faible","Améliorer la rétention","Créer une accroche émotionnelle","Écrire un CTA fort"],
-        "ar": ["بناء استراتيجية ريلز فيروسية كاملة","تحليل المحتوى الضعيف","تحسين الاحتفاظ","إنشاء خطاف عاطفي","كتابة دعوة تفاعل قوية"]
+        "en": [
+          "Define your audience persona",
+          "Choose your top platform and justify it",
+          "Write a converting bio",
+          "Build a 7-day content calendar with formats",
+          "Set your brand colors, font and tone"
+        ],
+        "fr": [
+          "Définissez votre persona d'audience",
+          "Choisissez votre meilleure plateforme et justifiez-la",
+          "Écrivez une bio qui convertit",
+          "Construisez un calendrier de contenu de 7 jours avec formats",
+          "Définissez vos couleurs de marque, police et ton"
+        ],
+        "ar": [
+          "حدد شخصية جمهورك",
+          "اختر منصتك الأفضل وبررها",
+          "اكتب سيرة ذاتية محوّلة",
+          "ابنِ تقويم محتوى لـ7 أيام بالأشكال",
+          "حدد ألوان علامتك وخطها ونبرتها"
+        ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Moroccan local business",
-          "fr": "Entreprise locale marocaine",
-          "ar": "مشروع تجاري محلي مغربي"
+          "en": "Any Moroccan local business of your choice",
+          "fr": "Toute entreprise locale marocaine de votre choix",
+          "ar": "أي مشروع محلي مغربي من اختيارك"
         },
         "task": {
-          "en": "Create full viral content strategy",
-          "fr": "Créer une stratégie complète de contenu viral",
-          "ar": "إنشاء استراتيجية محتوى فيروسي كاملة"
+          "en": "Build a complete social media foundation plan from scratch",
+          "fr": "Construisez un plan de fondation complet de réseaux sociaux à partir de zéro",
+          "ar": "ابنِ خطة أساس كاملة لوسائل التواصل الاجتماعي من الصفر"
         }
       },
       "pro_secrets": {
-        "en": ["Most viral content follows hidden psychology patterns","Emotion + retention = reach","Creators shape internet culture"],
-        "fr": ["La plupart des contenus viraux suivent des schémas psychologiques cachés","Émotion + rétention = portée","Les créateurs façonnent la culture internet"],
-        "ar": ["معظم المحتوى الفيروسي يتبع أنماطاً نفسية خفية","العاطفة + الاحتفاظ = الوصول","صناع المحتوى يشكلون ثقافة الإنترنت"]
+        "en": [
+          "Most accounts fail not from lack of talent but lack of foundation",
+          "A clear foundation makes every future post easier to create"
+        ],
+        "fr": [
+          "La plupart des comptes échouent non par manque de talent mais par manque de fondation",
+          "Une fondation claire rend chaque futur post plus facile à créer"
+        ],
+        "ar": [
+          "معظم الحسابات تفشل ليس بسبب نقص الموهبة بل بسبب نقص الأساس",
+          "الأساس الواضح يجعل كل منشور مستقبلي أسهل في الإنشاء"
+        ]
       },
       "challenge_mode": {
-        "type": "full_creator_simulation",
+        "type": "full_foundation_simulation",
         "instruction": {
-          "en": "Build full viral content campaign from scratch",
-          "fr": "Construire une campagne de contenu viral complète de zéro",
-          "ar": "بناء حملة محتوى فيروسي كاملة من الصفر"
+          "en": "Build a complete beginner-to-professional social media foundation for one real business",
+          "fr": "Construisez une fondation complète de réseaux sociaux du niveau débutant à professionnel pour une vraie entreprise",
+          "ar": "ابنِ أساساً كاملاً لوسائل التواصل الاجتماعي من المبتدئ إلى المحترف لمشروع حقيقي واحد"
         },
-        "reward_xp": 250
+        "reward_xp": 150
       },
       "final_result": {
         "title": {
-          "en": "Viral Content Brain Activated 💣",
-          "fr": "Cerveau de Contenu Viral Activé 💣",
-          "ar": "تم تفعيل عقل المحتوى الفيروسي 💣"
+          "en": "Foundation Mastered 🏗️",
+          "fr": "Fondation Maîtrisée 🏗️",
+          "ar": "تم إتقان الأساس 🏗️"
         },
         "level": {
-          "en": "Content Psychology Dominator",
-          "fr": "Dominateur de Psychologie du Contenu",
-          "ar": "مسيطر على سيكولوجية المحتوى"
+          "en": "Certified Strategy Beginner",
+          "fr": "Débutant Stratégie Certifié",
+          "ar": "مبتدئ استراتيجية معتمد"
         }
       },
       "ai_feedback_examples": {
-        "en": ["You think like a creator now 💣","This actually has viral potential 🔥","Your psychology understanding became dangerous 😳"],
-        "fr": ["Vous pensez comme un créateur maintenant 💣","Ça a vraiment un potentiel viral 🔥","Votre compréhension de la psychologie est devenue dangereuse 😳"],
-        "ar": ["أنت تفكر كصانع محتوى الآن 💣","هذا لديه إمكانية فيروسية فعلاً 🔥","فهمك لعلم النفس أصبح خطيراً 😳"]
+        "en": [
+          "You now think in systems, not random posts 🔥",
+          "This foundation could support real growth 💣"
+        ],
+        "fr": [
+          "Vous pensez maintenant en systèmes, pas en posts aléatoires 🔥",
+          "Cette fondation pourrait soutenir une vraie croissance 💣"
+        ],
+        "ar": [
+          "أنت الآن تفكر بأنظمة، وليس بمنشورات عشوائية 🔥",
+          "هذا الأساس يمكن أن يدعم نمواً حقيقياً 💣"
+        ]
       }
     }
   ]

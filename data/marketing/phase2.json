@@ -1,727 +1,1516 @@
 {
   "phase": 2,
   "title": {
-    "en": "Creator Growth & Brand Domination (Premium Expansion)",
-    "fr": "Croissance du Créateur et Domination de Marque (Édition Premium)",
-    "ar": "نمو صانع المحتوى والسيطرة على العلامة الشخصية (النسخة المميزة)"
+    "en": "Content Creation & Viral Psychology",
+    "fr": "Création de Contenu et Psychologie Virale",
+    "ar": "إنشاء المحتوى وعلم النفس الفيروسي"
   },
   "description": {
-    "en": "Transform from random creator into a recognizable online personality people trust, remember and follow.",
-    "fr": "Transformez-vous d'un créateur aléatoire en une personnalité en ligne reconnaissable que les gens suivent et en qui ils ont confiance.",
-    "ar": "تحول من صانع محتوى عشوائي إلى شخصية معروفة على الإنترنت يثق بها الناس ويتذكرونها ويتابعونها."
+    "en": "Master the science of attention. Learn how to craft hooks that stop the scroll, trigger emotions that force shares, and design content that perfectly manipulates the algorithm.",
+    "fr": "Maîtrisez la science de l'attention. Apprenez à créer des accroches qui arrêtent le défilement, à déclencher des émotions qui forcent le partage, et à concevoir un contenu qui manipule parfaitement l'algorithme.",
+    "ar": "أتقن علم الانتباه. تعلم كيف تصنع خطافات توقف التصفح، وتثير مشاعر تجبر على المشاركة، وتصمم محتوى يتلاعب بالخوارزمية بشكل مثالي."
   },
-  "system_level": "Premium Expansion",
-  "estimated_time_per_lesson": "25-50 minutes",
-  "phase_results": {
-    "en": [
-      "Build recognizable creator identity",
-      "Understand audience psychology",
-      "Create emotional trust",
-      "Grow consistently",
-      "Build loyal community",
-      "Position professionally"
-    ],
-    "fr": [
-      "Construire une identité de créateur reconnaissable",
-      "Comprendre la psychologie du public",
-      "Créer une confiance émotionnelle",
-      "Grandir de manière cohérente",
-      "Bâtir une communauté fidèle",
-      "Se positionner professionnellement"
-    ],
-    "ar": [
-      "بناء هوية صانع محتوى مميزة",
-      "فهم سيكولوجية الجمهور",
-      "خلق ثقة عاطفية",
-      "النمو بشكل مستمر",
-      "بناء مجتمع مخلص",
-      "التموضع بشكل احترافي"
-    ]
+  "system_level": "Intermediate",
+  "estimated_time_per_lesson": "20-40 minutes",
+  "lesson_structure": {
+    "contains": {
+      "en": [
+        "Core concept",
+        "Deep explanation",
+        "Psychology",
+        "Real examples",
+        "Mistakes",
+        "AI analysis",
+        "Missions",
+        "Challenge mode",
+        "Pro secrets",
+        "Business applications"
+      ],
+      "fr": [
+        "Concept central",
+        "Explication approfondie",
+        "Psychologie",
+        "Exemples réels",
+        "Erreurs",
+        "Analyse IA",
+        "Missions",
+        "Mode défi",
+        "Secrets pro",
+        "Applications business"
+      ],
+      "ar": [
+        "المفهوم الأساسي",
+        "الشرح المعمّق",
+        "علم النفس",
+        "أمثلة حقيقية",
+        "الأخطاء",
+        "تحليل الذكاء الاصطناعي",
+        "المهام",
+        "وضع التحدي",
+        "أسرار المحترفين",
+        "تطبيقات الأعمال"
+      ]
+    }
   },
   "lessons": [
     {
       "id": 11,
       "title": {
-        "en": "Personal Brand Psychology",
-        "fr": "Psychologie de la Marque Personnelle",
-        "ar": "سيكولوجية العلامة الشخصية"
+        "en": "The 3-Second Rule & Hook Anatomy",
+        "fr": "La Règle des 3 Secondes et l'Anatomie de l'Accroche",
+        "ar": "قاعدة الـ 3 ثواني وتشريح الخطاف"
       },
-      "xp": 220,
+      "xp": 120,
       "core_concept": {
-        "en": "People follow personalities before content.",
-        "fr": "Les gens suivent les personnalités avant le contenu.",
-        "ar": "الناس يتابعون الشخصيات قبل المحتوى."
+        "en": "If you don't win the first 3 seconds, the rest of your video does not exist.",
+        "fr": "Si vous ne gagnez pas les 3 premières secondes, le reste de votre vidéo n'existe pas.",
+        "ar": "إذا لم تفز بالثواني الثلاث الأولى، فإن بقية الفيديو الخاص بك لا وجود له."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Most creators stay invisible because they look emotionally generic online.",
-          "fr": "La plupart des créateurs restent invisibles car ils semblent émotionnellement génériques.",
-          "ar": "يبقى معظم صناع المحتوى غير مرئيين لأنهم يبدون عاديين عاطفياً على الإنترنت."
+          "en": "A hook is a pattern interrupt. It uses motion, sound, and a bold claim to literally break the user's scrolling trance. The algorithm judges your entire post based on how many people stay past second 3.",
+          "fr": "Une accroche est une interruption de schéma. Elle utilise le mouvement, le son et une affirmation audacieuse pour briser littéralement la transe de défilement de l'utilisateur. L'algorithme juge l'intégralité de votre post sur le nombre de personnes qui restent après la 3ème seconde.",
+          "ar": "الخطاف هو كسر للنمط. يستخدم الحركة والصوت وادعاءً جريئاً لكسر غيبوبة التصفح لدى المستخدم حرفياً. تحكم الخوارزمية على منشورك بالكامل بناءً على عدد الأشخاص الذين يبقون بعد الثانية الثالثة."
         },
         "why_it_matters": {
-          "en": "Strong personal branding creates memorability and trust.",
-          "fr": "Une marque personnelle forte crée la mémorisation et la confiance.",
-          "ar": "العلامة الشخصية القوية تصنع التذكر والثقة."
+          "en": "You can have a cinematic 4K masterpiece, but a weak hook means a 90% swipe-away rate before your message even starts.",
+          "fr": "Vous pouvez avoir un chef-d'œuvre cinématographique en 4K, mais une accroche faible signifie un taux de rejet de 90 % avant même que votre message ne commence.",
+          "ar": "يمكنك امتلاك تحفة سينمائية بدقة 4K، لكن الخطاف الضعيف يعني نسبة تجاوز تصل إلى 90٪ قبل أن تبدأ رسالتك حتى."
         },
         "internet_truth": {
-          "en": "Forgettable creators rarely grow.",
-          "fr": "Les créateurs oubliables grandissent rarement.",
-          "ar": "صناع المحتوى الذين لا يُتذكرون نادراً ما ينمون."
+          "en": "Attention is not freely given; it is aggressively stolen.",
+          "fr": "L'attention n'est pas donnée librement ; elle est volée agressivement.",
+          "ar": "الانتباه لا يُمنح مجاناً؛ بل يُسرق بقوة."
         }
       },
-      "psychology": [
-        { "en": "Humans trust familiarity", "fr": "Les humains font confiance à la familiarité", "ar": "البشر يثقون في المألوف" },
-        { "en": "Emotion creates identity", "fr": "L'émotion crée l'identité", "ar": "العاطفة تصنع الهوية" },
-        { "en": "Consistency builds recognition", "fr": "La régularité construit la reconnaissance", "ar": "الاستمرارية تبني التمييز" },
-        { "en": "Confidence attracts audiences", "fr": "La confiance attire le public", "ar": "الثقة تجذب الجمهور" }
-      ],
-      "real_examples": [
-        { "en": "Creators using same visual style become recognizable", "fr": "Les créateurs utilisant le même style visuel deviennent reconnaissables", "ar": "صناع المحتوى الذين يستخدمون نفس النمط البصري يصبحون مميزين" },
-        { "en": "Confident communication increases authority", "fr": "Une communication confiante augmente l'autorité", "ar": "التواصل بثقة يزيد من السلطة" },
-        { "en": "Emotional storytelling builds audience attachment", "fr": "Le récit émotionnel construit l'attachement du public", "ar": "السرد العاطفي يبني ارتباط الجمهور" }
-      ],
-      "common_mistakes": [
-        { "en": "Copying famous creators", "fr": "Copier des créateurs célèbres", "ar": "تقليد صناع المحتوى المشاهير" },
-        { "en": "Changing identity constantly", "fr": "Changer constamment d'identité", "ar": "تغيير الهوية باستمرار" },
-        { "en": "No personality online", "fr": "Aucune personnalité en ligne", "ar": "لا توجد شخصية على الإنترنت" },
-        { "en": "Random content posting", "fr": "Publication de contenu aléatoire", "ar": "نشر محتوى عشوائي" }
-      ],
-      "missions": [
-        { "en": "Define creator identity", "fr": "Définir l'identité du créateur", "ar": "تحديد هوية صانع المحتوى" },
-        { "en": "Choose emotional energy", "fr": "Choisir l'énergie émotionnelle", "ar": "اختيار الطاقة العاطفية" },
-        { "en": "Analyze 5 famous creators", "fr": "Analyser 5 créateurs célèbres", "ar": "تحليل 5 صناع محتوى مشاهير" }
-      ],
+      "psychology": {
+        "en": [
+          "Curiosity gap: Make them need to know the answer",
+          "Visual disruption: Fast movement or odd angles wake up the brain",
+          "Negative bias: People care more about 'what to avoid' than 'what to do'",
+          "Direct address: Pointing or saying 'You' triggers instinctual focus"
+        ],
+        "fr": [
+          "Écart de curiosité : Faites en sorte qu'ils aient besoin de connaître la réponse",
+          "Perturbation visuelle : Mouvements rapides ou angles étranges réveillent le cerveau",
+          "Biais de négativité : Les gens se soucient plus de 'ce qu'il faut éviter' que de 'ce qu'il faut faire'",
+          "Adresse directe : Pointer du doigt ou dire 'Vous' déclenche une concentration instinctive"
+        ],
+        "ar": [
+          "فجوة الفضول: اجعلهم بحاجة لمعرفة الإجابة",
+          "الاضطراب البصري: الحركة السريعة أو الزوايا الغريبة توقظ الدماغ",
+          "الانحياز السلبي: يهتم الناس بـ 'ما يجب تجنبه' أكثر من 'ما يجب فعله'",
+          "المخاطبة المباشرة: الإشارة أو قول 'أنت' يحفز التركيز الفطري"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Weak: 'Here is how to style our new dress.' | Strong: 'Stop styling your abaya like this if you want to look expensive.'",
+          "Weak: 'Welcome to my cafe.' | Strong: 'We spent 5 months perfecting this single cup of coffee.'"
+        ],
+        "fr": [
+          "Faible : 'Voici comment porter notre nouvelle robe.' | Fort : 'Arrêtez de porter votre abaya comme ça si vous voulez avoir l'air chic.'",
+          "Faible : 'Bienvenue dans mon café.' | Fort : 'Nous avons passé 5 mois à perfectionner cette seule tasse de café.'"
+        ],
+        "ar": [
+          "ضعيف: 'إليك كيفية تنسيق فستاننا الجديد.' | قوي: 'توقفي عن تنسيق العباءة بهذا الشكل إذا أردتِ مظهراً فاخراً.'",
+          "ضعيف: 'مرحباً بكم في مقهاي.' | قوي: 'قضينا 5 أشهر في إتقان كوب القهوة هذا فقط.'"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Starting with 'Hey guys, welcome back'",
+          "Having a silent, still frame for the first 2 seconds",
+          "Burying the main value at the end of a long introduction"
+        ],
+        "fr": [
+          "Commencer par 'Salut les gars, bienvenue'",
+          "Avoir une image silencieuse et immobile pendant les 2 premières secondes",
+          "Enterrer la valeur principale à la fin d'une longue introduction"
+        ],
+        "ar": [
+          "البدء بـ 'مرحباً يا رفاق، أهلاً بكم'",
+          "وجود إطار صامت وثابت لأول ثانيتين",
+          "دفن القيمة الأساسية في نهاية مقدمة طويلة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Scroll your feed and analyze the first 3 seconds of 5 videos you watched fully",
+          "Rewrite your last video's hook using the 'Negative Bias' technique",
+          "Record a hook using physical movement toward the camera"
+        ],
+        "fr": [
+          "Faites défiler votre fil et analysez les 3 premières secondes de 5 vidéos que vous avez regardées en entier",
+          "Réécrivez l'accroche de votre dernière vidéo en utilisant la technique du 'Biais de négativité'",
+          "Enregistrez une accroche en utilisant un mouvement physique vers la caméra"
+        ],
+        "ar": [
+          "تصفح خلاصتك وحلل أول 3 ثوانٍ لـ 5 مقاطع فيديو شاهدتها بالكامل",
+          "أعد كتابة خطاف آخر فيديو لك باستخدام تقنية 'الانحياز السلبي'",
+          "سجل خطافاً باستخدام حركة جسدية نحو الكاميرا"
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Beauty Salon", "fr": "Salon de Beauté", "ar": "صالون تجميل" },
-        "task": { "en": "Identify why the salon page feels forgettable", "fr": "Identifiez pourquoi la page du salon semble oubliable", "ar": "حدد لماذا تبدو صفحة الصالون قابلة للنسيان" },
-        "darija": "Chouf 3lach page dyal salon makat39elch 3liha nass w katb9a mnsya."
+        "industry": {
+          "en": "Luxury modest fashion brand",
+          "fr": "Marque de mode pudique de luxe",
+          "ar": "علامة تجارية فاخرة للأزياء المحتشمة"
+        },
+        "task": {
+          "en": "Write a text hook and describe the visual action for the first 3 seconds to sell a premium silk hijab without sounding like a cheap ad.",
+          "fr": "Écrivez une accroche textuelle et décrivez l'action visuelle des 3 premières secondes pour vendre un hijab en soie premium sans ressembler à une publicité bon marché.",
+          "ar": "اكتب خطافاً نصياً وصف الحركة البصرية لأول 3 ثوانٍ لبيع حجاب حريري فاخر دون أن يبدو كإعلان رخيص."
+        }
       },
-      "pro_secrets": [
-        { "en": "People remember emotional energy more than information", "fr": "Les gens retiennent l'énergie émotionnelle plus que l'information", "ar": "يتذكر الناس الطاقة العاطفية أكثر من المعلومات" },
-        { "en": "Strong positioning creates authority instantly", "fr": "Un positionnement fort crée instantanément l'autorité", "ar": "التموضع القوي يخلق السلطة فوراً" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "Text on screen matching the spoken word in the first second increases retention by 30%",
+          "Starting mid-action (in medias res) bypasses the viewer's defense mechanisms"
+        ],
+        "fr": [
+          "Le texte à l'écran correspondant à la parole dans la première seconde augmente la rétention de 30 %",
+          "Commencer au milieu de l'action contourne les mécanismes de défense du spectateur"
+        ],
+        "ar": [
+          "تطابق النص على الشاشة مع الكلمة المنطوقة في الثانية الأولى يزيد الاحتفاظ بنسبة 30٪",
+          "البدء في منتصف الحدث يتجاوز آليات الدفاع لدى المشاهد"
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Build memorable creator identity from scratch", "fr": "Construisez une identité de créateur mémorable de zéro", "ar": "ابنِ هوية صانع محتوى لا تُنسى من الصفر" },
-        "reward_xp": 80
+        "task": {
+          "en": "Take a boring industry (like accounting or plumbing) and write a 3-second hook that forces someone to keep watching.",
+          "fr": "Prenez un secteur ennuyeux (comme la comptabilité ou la plomberie) et écrivez une accroche de 3 secondes qui force quelqu'un à continuer à regarder.",
+          "ar": "خذ مجالاً مملاً (مثل المحاسبة أو السباكة) واكتب خطافاً مدته 3 ثوانٍ يجبر الشخص على مواصلة المشاهدة."
+        },
+        "reward_xp": 60
       },
-      "ai_feedback_examples": [
-        { "en": "Your profile still feels confused 😭", "fr": "Ton profil semble encore confus 😭", "ar": "بروفايلك لا يزال يبدو مشتتاً 😭" },
-        { "en": "THIS identity feels memorable 💣", "fr": "CETTE identité semble mémorable 💣", "ar": "هذه الهوية تبدو لا تُنسى 💣" },
-        { "en": "Now your audience understands you 🔥", "fr": "Maintenant, ton public te comprend 🔥", "ar": "الآن جمهورك يفهمك 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "Too slow. By the time they read this, they've scrolled to the next video. 😭",
+          "Boom! This hits a pain point immediately and creates deep curiosity. 🔥"
+        ],
+        "fr": [
+          "Trop lent. Le temps qu'ils lisent ceci, ils sont passés à la vidéo suivante. 😭",
+          "Boum ! Cela touche un point sensible immédiatement et crée une profonde curiosité. 🔥"
+        ],
+        "ar": [
+          "بطيء جداً. بحلول الوقت الذي يقرأون فيه هذا، يكونون قد مرروا للفيديو التالي. 😭",
+          "بوم! هذا يضرب نقطة ألم على الفور ويخلق فضولاً عميقاً. 🔥"
+        ]
+      }
     },
     {
       "id": 12,
       "title": {
-        "en": "Niche Domination System",
-        "fr": "Système de Domination de Niche",
-        "ar": "نظام السيطرة على النيتش"
+        "en": "The Psychology of Virality & Sharing",
+        "fr": "La Psychologie de la Viralité et du Partage",
+        "ar": "سيكولوجية الانتشار الفيروسي والمشاركة"
       },
-      "xp": 230,
+      "xp": 150,
       "core_concept": {
-        "en": "Focused creators grow faster.",
-        "fr": "Les créateurs ciblés grandissent plus vite.",
-        "ar": "صناع المحتوى المركزون ينمون أسرع."
+        "en": "People don't share content to help your brand; they share it to look good, smart, or funny to their own friends.",
+        "fr": "Les gens ne partagent pas de contenu pour aider votre marque ; ils le partagent pour paraître cool, intelligents ou drôles auprès de leurs propres amis.",
+        "ar": "الناس لا يشاركون المحتوى لمساعدة علامتك التجارية؛ بل يشاركونه ليبدوا رائعين، أذكياء، أو مضحكين أمام أصدقائهم."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Confused content creates confused audiences.",
-          "fr": "Le contenu confus crée un public confus.",
-          "ar": "المحتوى المشتت يخلق جمهوراً مشتتاً."
+          "en": "Virality is not magic; it's social currency. A post goes viral when it serves as a vehicle for the user's own identity. If sharing your post says 'I am smart/trendy/caring', they will send it to everyone.",
+          "fr": "La viralité n'est pas magique ; c'est une monnaie sociale. Un post devient viral lorsqu'il sert de véhicule à l'identité même de l'utilisateur. Si partager votre post dit 'Je suis intelligent/tendance/attentionné', ils l'enverront à tout le monde.",
+          "ar": "الانتشار ليس سحراً؛ إنه عملة اجتماعية. يصبح المنشور فيروسياً عندما يعمل كمركبة لهوية المستخدم نفسه. إذا كانت مشاركة منشورك تعني 'أنا ذكي/عصري/مهتم'، فسوف يرسلونه للجميع."
         },
         "why_it_matters": {
-          "en": "Niche clarity helps algorithms understand your audience.",
-          "fr": "La clarté de niche aide l'algorithme à comprendre votre public.",
-          "ar": "وضوح النيتش يساعد الخوارزمية على فهم جمهورك."
+          "en": "Saves and Shares are the most heavily weighted metrics by the algorithm. High shares equal infinite free reach.",
+          "fr": "Les sauvegardes et les partages sont les métriques les plus pondérées par l'algorithme. Des partages élevés équivalent à une portée gratuite infinie.",
+          "ar": "الحفظ والمشاركة هي المقاييس الأثقل وزناً في الخوارزمية. المشاركات العالية تعني وصولاً مجانياً لا نهائياً."
         },
         "internet_truth": {
-          "en": "Random creators rarely dominate markets.",
-          "fr": "Les créateurs aléatoires dominent rarement les marchés.",
-          "ar": "نادراً ما يسيطر صناع المحتوى العشوائيون على الأسواق."
+          "en": "Content that triggers high arousal emotions (awe, anger, intense humor) spreads faster than pure logic.",
+          "fr": "Le contenu qui déclenche des émotions à forte excitation (émerveillement, colère, humour intense) se propage plus vite que la logique pure.",
+          "ar": "المحتوى الذي يثير مشاعر عالية الإثارة (الذهول، الغضب، الفكاهة الشديدة) ينتشر أسرع من المنطق البحت."
         }
       },
-      "psychology": [
-        { "en": "Audiences follow clarity", "fr": "Le public suit la clarté", "ar": "الجمهور يتبع الوضوح" },
-        { "en": "People trust specialists", "fr": "Les gens font confiance aux spécialistes", "ar": "الناس يثقون في المتخصصين" },
-        { "en": "Focused messaging increases authority", "fr": "Un message ciblé augmente l'autorité", "ar": "الرسائل المركزة تزيد من السلطة" }
-      ],
-      "real_examples": [
-        { "en": "Fitness pages grow faster when focused on transformations", "fr": "Les pages de fitness grandissent plus vite lorsqu'elles se concentrent sur les transformations", "ar": "صفحات اللياقة تنمو أسرع عند التركيز على التحولات" },
-        { "en": "Food creators dominate with one consistent style", "fr": "Les créateurs culinaires dominent avec un style constant", "ar": "صناع محتوى الطعام يسيطرون بأسلوب واحد ثابت" }
-      ],
-      "common_mistakes": [
-        { "en": "Posting unrelated content", "fr": "Publier du contenu sans rapport", "ar": "نشر محتوى غير ذي صلة" },
-        { "en": "Trying to target everyone", "fr": "Essayer de cibler tout le monde", "ar": "محاولة استهداف الجميع" },
-        { "en": "Copying trends without relevance", "fr": "Copier des tendances sans pertinence", "ar": "تقليد التريندات بدون صلة بمجالك" }
-      ],
-      "missions": [
-        { "en": "Define ideal audience", "fr": "Définir le public idéal", "ar": "تحديد الجمهور المثالي" },
-        { "en": "Analyze competitors", "fr": "Analyser les concurrents", "ar": "تحليل المنافسين" },
-        { "en": "Create niche statement", "fr": "Créer une déclaration de niche", "ar": "إنشاء بيان النيتش الخاص بك" }
-      ],
+      "psychology": {
+        "en": [
+          "Social Currency: 'If I share this, I look like an insider.'",
+          "Triggers: Tying your content to everyday environments (e.g., morning coffee)",
+          "Emotion: High arousal (anger, awe, anxiety) vs. Low arousal (sadness, contentment)",
+          "Practical Value: News you can use immediately (life hacks)"
+        ],
+        "fr": [
+          "Monnaie Sociale : 'Si je partage ça, j'ai l'air d'un initié.'",
+          "Déclencheurs : Lier votre contenu à des environnements quotidiens (ex. le café du matin)",
+          "Émotion : Forte excitation (colère, émerveillement) vs. Faible excitation (tristesse, satisfaction)",
+          "Valeur Pratique : Des infos utilisables immédiatement (astuces de vie)"
+        ],
+        "ar": [
+          "العملة الاجتماعية: 'إذا شاركت هذا، أبدو كخبير.'",
+          "المحفزات: ربط محتواك ببيئات يومية (مثل قهوة الصباح)",
+          "العاطفة: إثارة عالية (غضب، ذهول) مقابل إثارة منخفضة (حزن، رضا)",
+          "قيمة عملية: معلومات يمكنك استخدامها فوراً (حيل حياتية)"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A tax consultant making a video '3 things the IRS doesn't want you to know' gets shared for practical value.",
+          "A beautiful cinematic transition video gets shared because it creates 'Awe'."
+        ],
+        "fr": [
+          "Un conseiller fiscal faisant une vidéo '3 choses que le fisc vous cache' est partagée pour sa valeur pratique.",
+          "Une magnifique vidéo de transition cinématographique est partagée car elle crée de 'l'Émerveillement'."
+        ],
+        "ar": [
+          "مستشار ضريبي يصنع فيديو '3 أشياء لا تريد مصلحة الضرائب أن تعرفها' يُشارك لقيمته العملية.",
+          "فيديو انتقال سينمائي جميل يُشارك لأنه يخلق 'الذهول'."
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Asking people to 'share with a friend' when the content is purely a self-promotional ad",
+          "Creating content that is polite and nice, but evokes zero strong emotion",
+          "Making the 'share' reason about supporting your business instead of serving the viewer's ego"
+        ],
+        "fr": [
+          "Demander aux gens de 'partager avec un ami' quand le contenu est purement promotionnel",
+          "Créer un contenu poli et gentil, mais qui n'évoque aucune émotion forte",
+          "Faire du 'partage' une question de soutien à votre entreprise au lieu de servir l'ego du spectateur"
+        ],
+        "ar": [
+          "الطلب من الناس 'المشاركة مع صديق' عندما يكون المحتوى مجرد إعلان ترويجي ذاتي",
+          "إنشاء محتوى مهذب ولطيف، لكنه لا يثير أي عاطفة قوية",
+          "جعل سبب 'المشاركة' هو دعم عملك بدلاً من خدمة غرور المشاهد"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Check your DMs: Analyze the last 3 reels you sent to a friend. Why did you send them?",
+          "Create a content idea that uses 'Social Currency' for your brand",
+          "Identify one high-arousal emotion you can ethically trigger in your niche"
+        ],
+        "fr": [
+          "Vérifiez vos DM : Analysez les 3 derniers reels que vous avez envoyés à un ami. Pourquoi les avez-vous envoyés ?",
+          "Créez une idée de contenu qui utilise la 'Monnaie Sociale' pour votre marque",
+          "Identifiez une émotion à forte excitation que vous pouvez déclencher éthiquement dans votre niche"
+        ],
+        "ar": [
+          "تحقق من رسائلك الخاصة: حلل آخر 3 مقاطع ريلز أرسلتها لصديق. لماذا أرسلتها؟",
+          "أنشئ فكرة محتوى تستخدم 'العملة الاجتماعية' لعلامتك التجارية",
+          "حدد عاطفة عالية الإثارة يمكنك إثارتها أخلاقياً في مجالك"
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Clothing Brand", "fr": "Marque de Vêtements", "ar": "علامة ملابس تجارية" },
-        "task": { "en": "Fix weak brand positioning for local clothing page", "fr": "Corrigez le positionnement faible d'une marque de vêtements locale", "ar": "إصلاح التموضع الضعيف لصفحة ملابس محلية" },
-        "darija": "Rj3 l'positionnement dyal l'marque d l'hwayj bayn w m9ad."
+        "industry": {
+          "en": "Online Language Academy",
+          "fr": "Académie de Langues en Ligne",
+          "ar": "أكاديمية لغات عبر الإنترنت"
+        },
+        "task": {
+          "en": "Design a 15-second video script designed specifically to be shared in group chats by university students.",
+          "fr": "Concevez un script vidéo de 15 secondes conçu spécifiquement pour être partagé dans des discussions de groupe par des étudiants universitaires.",
+          "ar": "صمم نص فيديو مدته 15 ثانية مصمم خصيصاً ليتم مشاركته في محادثات المجموعات من قبل طلاب الجامعات."
+        }
       },
-      "pro_secrets": [
-        { "en": "Specific creators attract loyal audiences", "fr": "Les créateurs spécifiques attirent un public fidèle", "ar": "صناع المحتوى المتخصصون يجذبون جمهوراً مخلصاً" },
-        { "en": "Niche clarity reduces algorithm confusion", "fr": "La clarté de la niche réduit la confusion de l'algorithme", "ar": "وضوح النيتش يقلل من تشتت الخوارزمية" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "Relatability + Slight Exaggeration = The ultimate recipe for tagging friends.",
+          "If a post answers a question the user has been struggling to explain to others, they will share it as their mouthpiece."
+        ],
+        "fr": [
+          "Identification + Légère exagération = La recette ultime pour identifier des amis.",
+          "Si un post répond à une question que l'utilisateur a du mal à expliquer aux autres, il le partagera comme porte-parole."
+        ],
+        "ar": [
+          "الارتباط بالواقع + مبالغة خفيفة = الوصفة المثالية للإشارة للأصدقاء.",
+          "إذا كان المنشور يجيب على سؤال كان المستخدم يكافح لشرحه للآخرين، فسيشاركونه كمتحدث باسمهم."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Create dominant niche positioning strategy", "fr": "Créez une stratégie de positionnement de niche dominante", "ar": "اصنع استراتيجية سيطرة قوية على النيتش" },
-        "reward_xp": 90
+        "task": {
+          "en": "Write a prompt for a video that provides 'Practical Value' so high that a user feels compelled to save it instantly.",
+          "fr": "Rédigez une invite pour une vidéo qui fournit une 'Valeur Pratique' si élevée qu'un utilisateur se sent obligé de la sauvegarder instantanément.",
+          "ar": "اكتب فكرة لفيديو يقدم 'قيمة عملية' عالية جداً لدرجة أن المستخدم يشعر بأنه مضطر لحفظه على الفور."
+        },
+        "reward_xp": 75
       },
-      "ai_feedback_examples": [
-        { "en": "Your niche still feels random 😭", "fr": "Ta niche semble encore aléatoire 😭", "ar": "النيتش الخاص بك لا يزال عشوائياً 😭" },
-        { "en": "THIS positioning builds authority 💣", "fr": "CE positionnement construit l'autorité 💣", "ar": "هذا التموضع يبني السلطة 💣" },
-        { "en": "Now your audience understands your value 🔥", "fr": "Maintenant ton public comprend ta valeur 🔥", "ar": "الآن جمهورك يفهم قيمتك 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "This is informational, but it lacks the 'WOW' factor that forces a share. 😭",
+          "Masterpiece! You tapped perfectly into their ego. They will share this to look like experts. 🔥"
+        ],
+        "fr": [
+          "C'est informatif, mais ça manque du facteur 'WOW' qui force le partage. 😭",
+          "Chef-d'œuvre ! Vous avez parfaitement exploité leur ego. Ils partageront ça pour avoir l'air d'experts. 🔥"
+        ],
+        "ar": [
+          "هذا معلوماتي، لكنه يفتقر إلى عامل 'الابهار' الذي يجبر على المشاركة. 😭",
+          "تحفة! لقد لمست غرورهم بشكل مثالي. سيشاركون هذا ليبدوا كخبراء. 🔥"
+        ]
+      }
     },
     {
       "id": 13,
       "title": {
-        "en": "Instagram Profile Optimization",
-        "fr": "Optimisation du Profil Instagram",
-        "ar": "تحسين بروفايل إنستغرام"
+        "en": "Micro-Storytelling: The 60-Second Hero's Journey",
+        "fr": "Micro-Storytelling : Le Voyage du Héros en 60 Secondes",
+        "ar": "السرد القصصي المصغر: رحلة البطل في 60 ثانية"
       },
-      "xp": 240,
+      "xp": 140,
       "core_concept": {
-        "en": "Profiles create first impressions.",
-        "fr": "Les profils créent les premières impressions.",
-        "ar": "البروفايلات تصنع الانطباع الأول."
+        "en": "Facts tell, stories sell. A list of product features will be scrolled past, but a story with conflict retains attention to the very end.",
+        "fr": "Les faits informent, les histoires vendent. Une liste de caractéristiques d'un produit sera ignorée, mais une histoire avec des conflits retient l'attention jusqu'à la fin.",
+        "ar": "الحقائق تخبر، القصص تبيع. سيتم تجاوز قائمة ميزات المنتج، لكن القصة التي تحتوي على صراع تحتفظ بالانتباه حتى النهاية."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Your profile decides if people trust you within seconds.",
-          "fr": "Votre profil décide si les gens vous font confiance en quelques secondes.",
-          "ar": "يحدد بروفايلك ما إذا كان الناس سيثقون بك خلال ثوانٍ."
+          "en": "Every great piece of content follows a structure: The Setup (Hook), The Conflict (The Problem), The Escalation (Why it's hard), and The Resolution (Your product/service). In social media, this must happen in under 60 seconds.",
+          "fr": "Chaque grand contenu suit une structure : L'Amorce (Accroche), Le Conflit (Le Problème), L'Escalade (Pourquoi c'est difficile) et La Résolution (Votre produit/service). Sur les réseaux sociaux, cela doit se produire en moins de 60 secondes.",
+          "ar": "يتبع كل محتوى رائع هيكلاً: الإعداد (الخطاف)، الصراع (المشكلة)، التصعيد (لماذا هو صعب)، والحل (منتجك/خدمتك). في وسائل التواصل الاجتماعي، يجب أن يحدث هذا في أقل من 60 ثانية."
         },
         "why_it_matters": {
-          "en": "Weak profiles destroy follow conversions.",
-          "fr": "Les profils faibles détruisent les conversions d'abonnés.",
-          "ar": "البروفايلات الضعيفة تدمر تحويل المتابعين."
+          "en": "Human brains are hardwired for stories. It's an evolutionary survival mechanism. When you tell a story, the viewer's brain synchronizes with yours, bypassing critical ad-blockers.",
+          "fr": "Le cerveau humain est programmé pour les histoires. C'est un mécanisme de survie évolutif. Quand vous racontez une histoire, le cerveau du spectateur se synchronise avec le vôtre, contournant les bloqueurs de pub critiques.",
+          "ar": "أدمغة البشر مبرمجة على القصص. إنها آلية بقاء تطورية. عندما تحكي قصة، يتزامن دماغ المشاهد مع دماغك، متجاوزاً حواجز الإعلانات الحرجة."
         },
         "internet_truth": {
-          "en": "Professional profiles instantly feel safer and stronger.",
-          "fr": "Les profils professionnels semblent immédiatement plus fiables.",
-          "ar": "تبدو البروفايلات الاحترافية أكثر أماناً وقوة فوراً."
+          "en": "Vulnerability is the ultimate growth hack. Perfection is boring; struggles are relatable.",
+          "fr": "La vulnérabilité est l'ultime astuce de croissance. La perfection est ennuyeuse ; les difficultés créent des liens.",
+          "ar": "الضعف هو حيلة النمو المطلقة. الكمال ممل؛ المعاناة واقعية ويمكن الارتباط بها."
         }
       },
-      "psychology": [
-        { "en": "Clean visuals increase trust", "fr": "Des visuels épurés augmentent la confiance", "ar": "البصريات النظيفة تزيد الثقة" },
-        { "en": "Authority reduces hesitation", "fr": "L'autorité réduit l'hésitation", "ar": "السلطة تقلل من التردد" },
-        { "en": "Strong bios improve follow rate", "fr": "Des biographies fortes améliorent le taux d'abonnement", "ar": "البايو القوي يحسن معدل المتابعة" }
-      ],
-      "real_examples": [
-        { "en": "Strong creator bios explain value instantly", "fr": "Les bonnes biographies de créateurs expliquent la valeur instantanément", "ar": "بايو صناع المحتوى الأقوياء يشرح القيمة فوراً" },
-        { "en": "Highlight covers improve professionalism", "fr": "Les couvertures de highlights améliorent le professionnalisme", "ar": "أغلفة الهايلايت تحسن الاحترافية" }
-      ],
-      "common_mistakes": [
-        { "en": "Confusing bios", "fr": "Biographies confuses", "ar": "بايو غير مفهوم" },
-        { "en": "Low quality profile picture", "fr": "Photo de profil de mauvaise qualité", "ar": "صورة بروفايل منخفضة الجودة" },
-        { "en": "No brand consistency", "fr": "Aucune cohérence de marque", "ar": "لا يوجد اتساق في العلامة التجارية" }
-      ],
-      "missions": [
-        { "en": "Rewrite bio", "fr": "Réécrire la biographie", "ar": "إعادة كتابة البايو" },
-        { "en": "Optimize profile picture", "fr": "Optimiser la photo de profil", "ar": "تحسين صورة البروفايل" },
-        { "en": "Build highlight strategy", "fr": "Construire une stratégie de highlights", "ar": "بناء استراتيجية الهايلايت" }
-      ],
+      "psychology": {
+        "en": [
+          "The Zeigarnik Effect: People remember uncompleted or interrupted tasks better. Open a loop early in the video to keep them watching.",
+          "Mirror Neurons: When you show struggle, the viewer feels the struggle.",
+          "The Underdog Effect: People root for the business that fought against the odds, not the giant corporation."
+        ],
+        "fr": [
+          "L'Effet Zeigarnik : Les gens se souviennent mieux des tâches inachevées ou interrompues. Ouvrez une boucle tôt pour les faire rester.",
+          "Neurones Miroirs : Quand vous montrez des difficultés, le spectateur ressent la difficulté.",
+          "L'Effet Outsider : Les gens soutiennent l'entreprise qui s'est battue contre vents et marées, pas la multinationale."
+        ],
+        "ar": [
+          "تأثير زيجارنيك: يتذكر الناس المهام غير المكتملة أو المنقطعة بشكل أفضل. افتح حلقة في وقت مبكر لإبقائهم يشاهدون.",
+          "الخلايا العصبية المرآتية: عندما تظهر المعاناة، يشعر المشاهد بالمعاناة.",
+          "تأثير المستضعف: يشجع الناس الشركة التي كافحت ضد الصعاب، وليس الشركة العملاقة."
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Instead of 'Buy my handmade soap', use 'Everyone told me I couldn't quit my job to make soap. Here's my first batch.'",
+          "Opening a loop: 'I made the biggest mistake with my agency yesterday. Here is how I fixed it.'"
+        ],
+        "fr": [
+          "Au lieu de 'Achetez mon savon', utilisez 'Tout le monde m'a dit de ne pas quitter mon emploi pour faire du savon. Voici mon 1er lot.'",
+          "Ouvrir une boucle : 'J'ai fait la plus grosse erreur avec mon agence hier. Voici comment je l'ai réparée.'"
+        ],
+        "ar": [
+          "بدلاً من 'اشترِ صابوني اليدوي'، استخدم 'أخبرني الجميع ألا أترك وظيفتي لصنع الصابون. إليكم الدفعة الأولى.'",
+          "فتح حلقة: 'ارتكبت أكبر خطأ مع وكالتي بالأمس. إليك كيف أصلحته.'"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Making the brand the hero (The customer should be the hero, your brand is the guide)",
+          "Skipping the conflict and only showing the glamorous final result",
+          "Using corporate, robotic language instead of conversational storytelling"
+        ],
+        "fr": [
+          "Faire de la marque le héros (Le client doit être le héros, votre marque est le guide)",
+          "Sauter le conflit et ne montrer que le résultat final glamour",
+          "Utiliser un langage d'entreprise robotique au lieu d'une narration conversationnelle"
+        ],
+        "ar": [
+          "جعل العلامة التجارية هي البطل (العميل يجب أن يكون البطل، علامتك هي الدليل)",
+          "تخطي الصراع وإظهار النتيجة النهائية الساحرة فقط",
+          "استخدام لغة روبوتية خاصة بالشركات بدلاً من السرد القصصي الحواري"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Write the 'Origin Story' of your business in 4 sentences (Setup, Problem, Solution, Result)",
+          "Find a video on TikTok/Reels that kept you watching to the end and identify the 'Conflict'",
+          "Create a 'Behind the Scenes' post showing a real failure or mistake"
+        ],
+        "fr": [
+          "Écrivez l''Histoire des Origines' de votre entreprise en 4 phrases (Amorce, Problème, Solution, Résultat)",
+          "Trouvez une vidéo qui vous a fait regarder jusqu'à la fin et identifiez le 'Conflit'",
+          "Créez un post 'Coulisses' montrant un véritable échec ou erreur"
+        ],
+        "ar": [
+          "اكتب 'قصة المنشأ' لمشروعك في 4 جمل (الإعداد، المشكلة، الحل، النتيجة)",
+          "ابحث عن فيديو جعلك تشاهد للنهاية وحدد 'الصراع'",
+          "أنشئ منشور 'كواليس' يظهر فشلاً أو خطأ حقيقياً"
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Restaurant", "fr": "Restaurant", "ar": "مطعم" },
-        "task": { "en": "Transform weak restaurant profile into trusted brand", "fr": "Transformez un profil de restaurant faible en une marque de confiance", "ar": "تحويل بروفايل مطعم ضعيف إلى علامة موثوقة" },
-        "darija": "9add l'profile dyal resto bach iban pro w ijiw l'klyan."
+        "industry": {
+          "en": "Artisan Leather Shoes",
+          "fr": "Chaussures en Cuir Artisanales",
+          "ar": "أحذية جلدية يدوية الصنع"
+        },
+        "task": {
+          "en": "Structure a 60-second video script detailing the painstaking process of crafting one shoe, emphasizing the human struggle over the product features.",
+          "fr": "Structurez un script de 60 secondes détaillant le processus minutieux de fabrication d'une chaussure, en insistant sur la difficulté humaine plutôt que sur les caractéristiques.",
+          "ar": "هيكل نص فيديو مدته 60 ثانية يفصل العملية الشاقة لصنع حذاء واحد، مع التأكيد على المعاناة البشرية بدلاً من ميزات المنتج."
+        }
       },
-      "pro_secrets": [
-        { "en": "Simple bios outperform complicated ones", "fr": "Les biographies simples surpassent les plus compliquées", "ar": "البايو البسيط يتفوق على المعقد" },
-        { "en": "Visual consistency creates authority", "fr": "La cohérence visuelle crée de l'autorité", "ar": "التناسق البصري يصنع السلطة" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "The 'Show, Don't Tell' rule: Don't say your product is strong, show it surviving a drop from a building.",
+          "B-Roll footage layered with a deeply personal voiceover creates massive emotional connection."
+        ],
+        "fr": [
+          "La règle 'Montrez, Ne Dites Pas' : Ne dites pas que c'est solide, montrez-le survivre à une chute.",
+          "Des images d'illustration superposées à une voix off très personnelle créent une connexion émotionnelle massive."
+        ],
+        "ar": [
+          "قاعدة 'أظهر، لا تخبر': لا تقل إن منتجك قوي، بل أظهره وهو ينجو من السقوط من مبنى.",
+          "لقطات (B-Roll) المتداخلة مع تعليق صوتي شخصي عميق تخلق اتصالاً عاطفياً هائلاً."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Create profile that instantly feels premium", "fr": "Créez un profil qui semble instantanément premium", "ar": "اصنع بروفايل يبدو مميزاً واحترافياً فوراً" },
-        "reward_xp": 100
+        "task": {
+          "en": "Turn this boring feature: 'Our software saves you 2 hours a day' into an emotional 3-sentence story.",
+          "fr": "Transformez cette fonctionnalité ennuyeuse : 'Notre logiciel vous fait gagner 2h par jour' en une histoire émotionnelle de 3 phrases.",
+          "ar": "حوّل هذه الميزة المملة: 'برنامجنا يوفر لك ساعتين يومياً' إلى قصة عاطفية من 3 جمل."
+        },
+        "reward_xp": 80
       },
-      "ai_feedback_examples": [
-        { "en": "Nobody understands your bio 😭", "fr": "Personne ne comprend ta bio 😭", "ar": "لا أحد يفهم البايو الخاص بك 😭" },
-        { "en": "THIS profile feels professional 💣", "fr": "CE profil fait professionnel 💣", "ar": "هذا البروفايل يبدو احترافياً 💣" },
-        { "en": "Your branding now feels trustworthy 🔥", "fr": "Ton image de marque inspire désormais confiance 🔥", "ar": "علامتك التجارية تبدو موثوقة الآن 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "You just listed the features again in a paragraph. Where is the conflict? 😭",
+          "Brilliant! You made me feel the stress of losing time, and then presented the software as the ultimate savior. 🔥"
+        ],
+        "fr": [
+          "Vous avez juste listé les fonctionnalités dans un paragraphe. Où est le conflit ? 😭",
+          "Brillant ! Vous m'avez fait ressentir le stress de la perte de temps, puis présenté le logiciel comme le sauveur ultime. 🔥"
+        ],
+        "ar": [
+          "لقد قمت للتو بسرد الميزات مرة أخرى في فقرة. أين الصراع؟ 😭",
+          "رائع! لقد جعلتني أشعر بضغط إضاعة الوقت، ثم قدمت البرنامج كمنقذ نهائي. 🔥"
+        ]
+      }
     },
     {
       "id": 14,
       "title": {
-        "en": "Content Consistency Warfare",
-        "fr": "Guerre de la Régularité du Contenu",
-        "ar": "حرب استمرارية المحتوى"
+        "en": "The Invisible Call to Action (CTA)",
+        "fr": "L'Appel à l'Action (CTA) Invisible",
+        "ar": "الدعوة إلى اتخاذ إجراء (CTA) غير المرئية"
       },
-      "xp": 250,
+      "xp": 130,
       "core_concept": {
-        "en": "Consistency creates momentum.",
-        "fr": "La régularité crée la dynamique.",
-        "ar": "الاستمرارية تخلق الزخم."
+        "en": "If you don't tell them exactly what to do next, they will do nothing. But if you beg, they will leave.",
+        "fr": "Si vous ne leur dites pas exactement quoi faire ensuite, ils ne feront rien. Mais si vous suppliez, ils partiront.",
+        "ar": "إذا لم تخبرهم بالضبط بما يجب عليهم فعله بعد ذلك، فلن يفعلوا شيئاً. ولكن إذا توسلت، فسيغادرون."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Most creators fail because they depend on motivation instead of systems.",
-          "fr": "La plupart des créateurs échouent car ils dépendent de la motivation au lieu des systèmes.",
-          "ar": "يفشل معظم صناع المحتوى لأنهم يعتمدون على التحفيز بدلاً من الأنظمة."
+          "en": "A Call to Action (CTA) is the bridge between a viewer's attention and your business goal (Follow, Save, Buy, Click). The best CTAs don't feel like sales pitches; they feel like the logical next step to solve the viewer's problem.",
+          "fr": "Un Appel à l'Action (CTA) est le pont entre l'attention d'un spectateur et votre objectif commercial. Les meilleurs CTA ne ressemblent pas à des discours de vente ; ils semblent être la prochaine étape logique pour résoudre le problème du spectateur.",
+          "ar": "الدعوة إلى اتخاذ إجراء هي الجسر بين انتباه المشاهد وهدف عملك. أفضل الدعوات لا تبدو وكأنها عروض مبيعات؛ بل تبدو وكأنها الخطوة المنطقية التالية لحل مشكلة المشاهد."
         },
         "why_it_matters": {
-          "en": "Consistency builds audience trust and algorithm confidence.",
-          "fr": "La régularité renforce la confiance du public et de l'algorithme.",
-          "ar": "الاستمرارية تبني ثقة الجمهور وثقة الخوارزمية."
+          "en": "Millions of views mean zero revenue if you cannot direct that traffic. A strong CTA converts a passive scroller into an active participant.",
+          "fr": "Des millions de vues signifient zéro revenu si vous ne pouvez pas diriger ce trafic. Un CTA fort convertit un scrolleur passif en un participant actif.",
+          "ar": "ملايين المشاهدات تعني صفراً من الإيرادات إذا لم تتمكن من توجيه هذا الزيارات. الدعوة القوية تحول المتصفح السلبي إلى مشارك نشط."
         },
         "internet_truth": {
-          "en": "Random posting destroys growth momentum.",
-          "fr": "Publier au hasard détruit l'élan de croissance.",
-          "ar": "النشر العشوائي يدمر زخم النمو."
+          "en": "People are lazy online. Reduce the friction. 'Link in bio' is harder than 'Comment INFO and I will DM you the link.'",
+          "fr": "Les gens sont paresseux en ligne. Réduisez les frictions. 'Lien dans la bio' est plus difficile que 'Commentez INFO et je vous enverrai le lien par DM.'",
+          "ar": "الناس كسالى على الإنترنت. قلل الاحتكاك. 'الرابط في البايو' أصعب من 'علق بكلمة INFO وسأرسل لك الرابط في رسالة خاصة'."
         }
       },
-      "psychology": [
-        { "en": "Audiences trust consistency", "fr": "Le public fait confiance à la régularité", "ar": "الجمهور يثق في الاستمرارية" },
-        { "en": "Repetition builds familiarity", "fr": "La répétition construit la familiarité", "ar": "التكرار يبني الألفة" },
-        { "en": "Momentum increases creator confidence", "fr": "L'élan augmente la confiance du créateur", "ar": "الزخم يزيد من ثقة صانع المحتوى" }
-      ],
-      "real_examples": [
-        { "en": "Batching content reduces burnout", "fr": "Créer du contenu par lots réduit l'épuisement", "ar": "جدولة المحتوى مسبقاً يقلل من الإرهاق" },
-        { "en": "Idea banking prevents creative blocks", "fr": "Banquer des idées évite les blocages créatifs", "ar": "بنك الأفكار يمنع الانقطاع الإبداعي" }
-      ],
-      "common_mistakes": [
-        { "en": "Waiting for motivation", "fr": "Attendre la motivation", "ar": "انتظار التحفيز" },
-        { "en": "No content system", "fr": "Aucun système de contenu", "ar": "لا يوجد نظام محتوى" },
-        { "en": "Posting emotionally", "fr": "Publier sous le coup de l'émotion", "ar": "النشر بناءً على العاطفة" }
-      ],
-      "missions": [
-        { "en": "Build weekly posting system", "fr": "Construire un système de publication hebdomadaire", "ar": "بناء نظام نشر أسبوعي" },
-        { "en": "Create idea bank", "fr": "Créer une banque d'idées", "ar": "إنشاء بنك أفكار" },
-        { "en": "Plan 7-day schedule", "fr": "Planifier un programme sur 7 jours", "ar": "تخطيط جدول زمني لـ 7 أيام" }
-      ],
+      "psychology": {
+        "en": [
+          "The Value Exchange: Give them a selfish reason to click (e.g., 'Save this so you don't forget' instead of 'Please save').",
+          "Urgency vs. Scarcity: Urgency (Time-based: '24 hours left') works better on stories. Scarcity (Quantity-based: 'Only 5 left') works better on feed posts.",
+          "Micro-Commitments: Asking for a comment is a smaller psychological hurdle than asking for a credit card."
+        ],
+        "fr": [
+          "L'Échange de Valeur : Donnez-leur une raison égoïste de cliquer (ex. 'Sauvegardez ceci pour ne pas oublier' au lieu de 'S'il vous plaît, sauvegardez').",
+          "Urgence vs. Rareté : L'urgence (basée sur le temps) fonctionne mieux en stories. La rareté (basée sur la quantité) fonctionne mieux dans le fil.",
+          "Micro-Engagements : Demander un commentaire est un obstacle psychologique plus petit que de demander une carte de crédit."
+        ],
+        "ar": [
+          "تبادل القيمة: أعطهم سبباً أنانياً للنقر (مثل 'احفظ هذا لكي لا تنسى' بدلاً من 'أرجوك احفظ').",
+          "الإلحاح مقابل الندرة: الإلحاح (مبني على الوقت) يعمل بشكل أفضل في القصص. الندرة (مبنية على الكمية) تعمل بشكل أفضل في المنشورات.",
+          "الالتزامات الصغيرة: طلب تعليق يمثل عقبة نفسية أصغر من طلب بطاقة ائتمان."
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Weak CTA: 'Follow for more.' | Strong CTA: 'Follow if you want to pass your accounting exam this month.'",
+          "Weak CTA: 'Buy my course, link in bio.' | Strong CTA: 'Comment AMINA and my AI assistant will instantly send you the free simulator module.'"
+        ],
+        "fr": [
+          "CTA Faible : 'Abonnez-vous pour plus.' | CTA Fort : 'Abonnez-vous si vous voulez réussir votre examen de comptabilité ce mois-ci.'",
+          "CTA Faible : 'Achetez mon cours.' | CTA Fort : 'Commentez AMINA et mon assistant IA vous enverra instantanément le module simulateur gratuit.'"
+        ],
+        "ar": [
+          "دعوة ضعيفة: 'تابع للمزيد.' | دعوة قوية: 'تابع إذا كنت تريد اجتياز امتحان المحاسبة هذا الشهر.'",
+          "دعوة ضعيفة: 'اشترِ دورتي.' | دعوة قوية: 'علق بكلمة AMINA وسيقوم مساعدي الذكي بإرسال وحدة المحاكاة المجانية إليك فوراً.'"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Having 3 different CTAs in one post ('Like, save, follow, and click the link!') - causes decision paralysis.",
+          "Putting the CTA in the middle of the video where the viewer isn't ready yet.",
+          "Using generic, boring language."
+        ],
+        "fr": [
+          "Avoir 3 CTA différents dans un seul post ('Aimez, sauvegardez, abonnez-vous et cliquez sur le lien !') - provoque la paralysie décisionnelle.",
+          "Placer le CTA au milieu de la vidéo, là où le spectateur n'est pas encore prêt.",
+          "Utiliser un langage générique et ennuyeux."
+        ],
+        "ar": [
+          "وجود 3 دعوات مختلفة في منشور واحد ('إعجاب، حفظ، متابعة، وانقر على الرابط!') - يسبب شلل اتخاذ القرار.",
+          "وضع الدعوة في منتصف الفيديو حيث لا يكون المشاهد مستعداً بعد.",
+          "استخدام لغة عامة ومملة."
+        ]
+      },
+      "missions": {
+        "en": [
+          "Find a post you recently liked. Did it have a CTA? What was it?",
+          "Rewrite a 'Link in bio' CTA into a 'Comment a keyword' CTA.",
+          "Write a CTA that uses the 'Value Exchange' psychology."
+        ],
+        "fr": [
+          "Trouvez un post que vous avez récemment aimé. Avait-il un CTA ? Quel était-il ?",
+          "Transformez un CTA 'Lien dans la bio' en un CTA 'Commentez un mot-clé'.",
+          "Écrivez un CTA qui utilise la psychologie de 'L'Échange de Valeur'."
+        ],
+        "ar": [
+          "ابحث عن منشور أعجبك مؤخراً. هل كان يحتوي على دعوة؟ ماذا كانت؟",
+          "أعد كتابة دعوة 'الرابط في البايو' إلى دعوة 'علق بكلمة مفتاحية'.",
+          "اكتب دعوة تستخدم سيكولوجية 'تبادل القيمة'."
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Freelancer", "fr": "Freelance", "ar": "مستقل" },
-        "task": { "en": "Fix inconsistent content schedule", "fr": "Corrigez un planning de contenu irrégulier", "ar": "إصلاح جدول المحتوى غير المتسق" },
-        "darija": "9add programme dyal l'postat bach tb9a dima présent."
+        "industry": {
+          "en": "Interactive Learning Platform",
+          "fr": "Plateforme d'Apprentissage Interactive",
+          "ar": "منصة تعليمية تفاعلية"
+        },
+        "task": {
+          "en": "Write a CTA for a video explaining the difference between 'Charges' and 'Produits'. The goal is to get users to try the free simulator on Amina Academy.",
+          "fr": "Écrivez un CTA pour une vidéo expliquant la différence entre 'Charges' et 'Produits'. L'objectif est d'amener les utilisateurs à essayer le simulateur gratuit sur Amina Academy.",
+          "ar": "اكتب دعوة لفيديو يشرح الفرق بين 'التكاليف' و'الإيرادات'. الهدف هو حث المستخدمين على تجربة المحاكي المجاني في أكاديمية أمينة."
+        }
       },
-      "pro_secrets": [
-        { "en": "Systems outperform motivation", "fr": "Les systèmes surpassent la motivation", "ar": "الأنظمة تتفوق على التحفيز" },
-        { "en": "Consistency builds algorithm trust", "fr": "La régularité construit la confiance de l'algorithme", "ar": "الاستمرارية تبني ثقة الخوارزمية" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "The 'Manychat' strategy: Auto-DMing links when people comment a specific word is currently the highest-converting tactic on Instagram.",
+          "Point at the screen or use a sound effect exactly when the CTA appears to physically guide the eye."
+        ],
+        "fr": [
+          "La stratégie 'Manychat' : Envoyer des liens par DM auto quand les gens commentent un mot spécifique est actuellement la tactique qui convertit le mieux.",
+          "Pointez l'écran ou utilisez un effet sonore exactement au moment où le CTA apparaît pour guider physiquement l'œil."
+        ],
+        "ar": [
+          "استراتيجية 'Manychat': الإرسال التلقائي للروابط عبر الرسائل الخاصة عندما يعلق الأشخاص بكلمة محددة هي أعلى تكتيك تحويل حالياً.",
+          "أشر إلى الشاشة أو استخدم تأثيراً صوتياً بالضبط عندما تظهر الدعوة لتوجيه العين جسدياً."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Build unstoppable creator workflow", "fr": "Construisez un flux de travail de créateur imparable", "ar": "ابنِ سير عمل صانع محتوى لا يمكن إيقافه" },
-        "reward_xp": 100
+        "task": {
+          "en": "Design a frictionless CTA for a high-ticket B2B service without using the word 'buy' or 'book'.",
+          "fr": "Concevez un CTA sans friction pour un service B2B à prix élevé sans utiliser le mot 'acheter' ou 'réserver'.",
+          "ar": "صمم دعوة سلسة لخدمة B2B عالية التكلفة دون استخدام كلمة 'شراء' أو 'حجز'."
+        },
+        "reward_xp": 70
       },
-      "ai_feedback_examples": [
-        { "en": "Your posting still feels emotional 😭", "fr": "Tes publications semblent encore émotionnelles 😭", "ar": "نشرك لا يزال يبدو عاطفياً 😭" },
-        { "en": "THIS workflow creates momentum 💣", "fr": "CE flux de travail crée un élan 💣", "ar": "سير العمل هذا يخلق زخماً 💣" },
-        { "en": "Now you look like a serious creator 🔥", "fr": "Maintenant tu as l'air d'un créateur sérieux 🔥", "ar": "الآن تبدو كصانع محتوى جاد 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "Asking them to click the link in your bio to fill out a form is too much friction. 😭",
+          "Brilliant! 'Comment AUDIT and I'll send you the free checklist' creates curiosity and zero pressure. 🔥"
+        ],
+        "fr": [
+          "Leur demander de cliquer sur le lien dans votre bio pour remplir un formulaire, c'est trop de friction. 😭",
+          "Brillant ! 'Commentez AUDIT et je vous envoie la checklist' crée de la curiosité et zéro pression. 🔥"
+        ],
+        "ar": [
+          "الطلب منهم النقر على الرابط في البايو لملء نموذج به الكثير من الاحتكاك. 😭",
+          "عبقري! 'علق بكلمة تدقيق وسأرسل لك القائمة المجانية' يخلق فضولاً وبدون ضغط. 🔥"
+        ]
+      }
     },
     {
       "id": 15,
       "title": {
-        "en": "Audience Trust Engineering",
-        "fr": "Ingénierie de la Confiance du Public",
-        "ar": "هندسة ثقة الجمهور"
+        "en": "Trend Surfing & Audio Psychology",
+        "fr": "Surfer sur les Tendances et Psychologie Audio",
+        "ar": "ركوب الموجة (الترند) وعلم النفس الصوتي"
       },
-      "xp": 260,
+      "xp": 110,
       "core_concept": {
-        "en": "Trust creates loyal audiences.",
-        "fr": "La confiance crée des publics fidèles.",
-        "ar": "الثقة تصنع جمهوراً مخلصاً."
+        "en": "Trends give you a temporary algorithmic boost, but your unique spin on the trend builds the brand.",
+        "fr": "Les tendances vous donnent un coup de pouce algorithmique temporaire, mais votre touche personnelle sur la tendance construit la marque.",
+        "ar": "تمنحك الترندات دفعة خوارزمية مؤقتة، لكن لمستك الفريدة على الترند تبني العلامة التجارية."
       },
       "deep_explanation": {
         "summary": {
-          "en": "People follow creators who feel emotionally real and relatable.",
-          "fr": "Les gens suivent les créateurs qui semblent émotionnellement réels et identifiables.",
-          "ar": "الناس يتابعون صناع المحتوى الذين يبدون حقيقيين عاطفياً وقريبين منهم."
+          "en": "Audio drives emotion. Using trending audios, meme formats, or specific editing styles acts like a 'Trojan Horse'. Users stay because they recognize the trend, but they follow because they love how you applied it to your niche.",
+          "fr": "L'audio pilote l'émotion. L'utilisation d'audios tendance, de formats mèmes ou de styles de montage spécifiques agit comme un 'Cheval de Troie'. Les utilisateurs restent car ils reconnaissent la tendance, mais s'abonnent parce qu'ils aiment comment vous l'avez appliquée à votre niche.",
+          "ar": "الصوت يقود العاطفة. استخدام الصوتيات الشائعة، أو تنسيقات الميمز، أو أساليب المونتاج المحددة يعمل بمثابة 'حصان طروادة'. يبقى المستخدمون لأنهم يتعرفون على الترند، لكنهم يتابعون لأنهم يحبون كيف طبقته على مجالك."
         },
         "why_it_matters": {
-          "en": "Trust increases engagement, loyalty and long-term growth.",
-          "fr": "La confiance augmente l'engagement, la fidélité et la croissance à long terme.",
-          "ar": "الثقة تزيد من التفاعل والولاء والنمو على المدى الطويل."
+          "en": "Original content is vital, but trend-surfing puts your brand in front of massive existing traffic streams for free.",
+          "fr": "Le contenu original est vital, mais surfer sur les tendances place gratuitement votre marque devant des flux de trafic massifs existants.",
+          "ar": "المحتوى الأصلي حيوي، لكن ركوب الترند يضع علامتك التجارية مجاناً أمام تيارات ضخمة من الزيارات الحالية."
         },
         "internet_truth": {
-          "en": "Fake energy eventually destroys audience connection.",
-          "fr": "La fausse énergie finit par détruire la connexion avec le public.",
-          "ar": "الطاقة المزيفة تدمر في النهاية اتصال الجمهور بك."
+          "en": "If you jump on a trend two weeks late, it's not a trend anymore; it's cringe.",
+          "fr": "Si vous sautez sur une tendance avec deux semaines de retard, ce n'est plus une tendance ; c'est ringard.",
+          "ar": "إذا ركبت ترنداً متأخراً بأسبوعين، لم يعد ترنداً؛ لقد أصبح محرجاً."
         }
       },
-      "psychology": [
-        { "en": "Relatability creates emotional attachment", "fr": "L'identificabilité crée un attachement émotionnel", "ar": "الواقعية تخلق ارتباطاً عاطفياً" },
-        { "en": "Vulnerability increases trust", "fr": "La vulnérabilité augmente la confiance", "ar": "إظهار الضعف البشري يزيد الثقة" },
-        { "en": "Authenticity feels human", "fr": "L'authenticité rend plus humain", "ar": "الأصالة تبدو إنسانية" }
-      ],
-      "real_examples": [
-        { "en": "Transformation stories build emotional connection", "fr": "Les histoires de transformation construisent une connexion émotionnelle", "ar": "قصص التحول تبني اتصالاً عاطفياً" },
-        { "en": "Behind-the-scenes moments increase relatability", "fr": "Les moments en coulisses augmentent l'identificabilité", "ar": "لحظات الكواليس تزيد من قربك للناس" }
-      ],
-      "common_mistakes": [
-        { "en": "Trying too hard to look perfect", "fr": "Trop essayer de paraître parfait", "ar": "المبالغة في محاولة الظهور بمثالية" },
-        { "en": "Emotionless communication", "fr": "Communication sans émotion", "ar": "تواصل خالي من المشاعر" },
-        { "en": "Overly robotic content", "fr": "Contenu trop robotique", "ar": "محتوى روبوتي زائد" }
-      ],
-      "missions": [
-        { "en": "Write emotional creator story", "fr": "Écrire une histoire de créateur émotionnelle", "ar": "كتابة قصة صانع محتوى مؤثرة" },
-        { "en": "Analyze trusted creators", "fr": "Analyser des créateurs de confiance", "ar": "تحليل صناع المحتوى الموثوقين" },
-        { "en": "Create relatable reel concept", "fr": "Créer un concept de réel identifiable", "ar": "إنشاء فكرة ريلز واقعية وقريبة" }
-      ],
+      "psychology": {
+        "en": [
+          "The Mere Exposure Effect: People prefer things they are already familiar with. A trending audio creates instant familiarity.",
+          "In-Group Bias: Understanding a meme makes the viewer feel part of an exclusive club.",
+          "Pacing: Fast, beat-synced editing holds attention span infinitely better than static talking heads."
+        ],
+        "fr": [
+          "L'Effet de Simple Exposition : Les gens préfèrent les choses qui leur sont familières. Un audio tendance crée une familiarité instantanée.",
+          "Biais d'Endogroupe : Comprendre un mème donne au spectateur le sentiment d'appartenir à un club exclusif.",
+          "Rythme : Un montage rapide, synchronisé sur le rythme, retient l'attention infiniment mieux qu'une tête parlante statique."
+        ],
+        "ar": [
+          "تأثير مجرد التعرض: يفضل الناس الأشياء التي يألفونها بالفعل. الصوت الشائع يخلق ألفة فورية.",
+          "تحيز المجموعة: فهم الميم يجعل المشاهد يشعر بأنه جزء من نادٍ حصري.",
+          "الإيقاع: المونتاج السريع والمتزامن مع الإيقاع يحافظ على الانتباه بشكل أفضل بكثير من الوجوه الثابتة المتحدثة."
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A bakery using a trending lip-sync audio about 'doing something illegal' but applying it to eating a second croissant.",
+          "Using a dramatic Hans Zimmer track to reveal a newly designed website."
+        ],
+        "fr": [
+          "Une boulangerie utilisant un playback tendance sur le fait de 'faire quelque chose d'illégal' mais l'appliquant au fait de manger un 2ème croissant.",
+          "Utiliser un morceau dramatique de Hans Zimmer pour révéler un site web fraîchement conçu."
+        ],
+        "ar": [
+          "مخبز يستخدم صوتاً شائعاً لمزامنة الشفاه حول 'القيام بشيء غير قانوني' ولكنه يطبقه على تناول كرواسون ثانٍ.",
+          "استخدام مقطوعة موسيقية درامية لهانز زيمر للكشف عن موقع إلكتروني مصمم حديثاً."
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Using a trending audio but ignoring the 'joke' or format associated with it.",
+          "Overpowering your voiceover with loud trending music.",
+          "Only doing trends and never creating your own original evergreen content."
+        ],
+        "fr": [
+          "Utiliser un audio tendance mais ignorer la 'blague' ou le format qui y est associé.",
+          "Couvrir votre voix off avec une musique tendance trop forte.",
+          "Ne faire que des tendances et ne jamais créer votre propre contenu intemporel original."
+        ],
+        "ar": [
+          "استخدام صوت شائع ولكن تجاهل 'النكتة' أو التنسيق المرتبط به.",
+          "التغطية على تعليقك الصوتي بموسيقى ترند صاخبة.",
+          "القيام بالترندات فقط وعدم إنشاء محتوى دائم الخضرة (مستمر الصلاحية) خاص بك أبداً."
+        ]
+      },
+      "missions": {
+        "en": [
+          "Spend 10 minutes on the Reels/TikTok explore page. Identify 2 repeating audios.",
+          "Write down how you could adapt one of those audios to your specific industry.",
+          "Find an evergreen piece of content you can remake using a trending format."
+        ],
+        "fr": [
+          "Passez 10 minutes sur la page d'exploration Reels/TikTok. Identifiez 2 audios qui se répètent.",
+          "Notez comment vous pourriez adapter l'un de ces audios à votre secteur spécifique.",
+          "Trouvez un contenu intemporel que vous pouvez refaire en utilisant un format tendance."
+        ],
+        "ar": [
+          "اقض 10 دقائق في صفحة الاستكشاف في الريلز/تيك توك. حدد صوتين متكررين.",
+          "اكتب كيف يمكنك تكييف أحد هذه الأصوات مع مجالك الخاص.",
+          "ابحث عن محتوى دائم الخضرة يمكنك إعادة صنعه باستخدام تنسيق ترند."
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Salon", "fr": "Salon", "ar": "صالون" },
-        "task": { "en": "Build emotional trust for local beauty brand", "fr": "Bâtir la confiance émotionnelle pour une marque de beauté locale", "ar": "بناء ثقة عاطفية لعلامة تجميل محلية" },
-        "darija": "Khli nass ti9 f l'marque dyal salon dyalk b l'emotions."
+        "industry": {
+          "en": "Freelance Web Developer",
+          "fr": "Développeur Web Indépendant",
+          "ar": "مطور ويب مستقل"
+        },
+        "task": {
+          "en": "Take a trending meme format (e.g., 'Expectation vs. Reality') and apply it to a client asking for an 'ultra-modern Apple-style website' for $50.",
+          "fr": "Prenez un format de mème tendance (ex. 'Attente vs. Réalité') et appliquez-le à un client demandant un 'site ultra-moderne style Apple' pour 50$.",
+          "ar": "خذ تنسيق ميم شائع (مثل 'التوقع مقابل الواقع') وطبقه على عميل يطلب 'موقعاً إلكترونياً حديثاً جداً بأسلوب آبل' مقابل 50 دولاراً."
+        }
       },
-      "pro_secrets": [
-        { "en": "Audiences connect with honesty more than perfection", "fr": "Le public se connecte plus avec l'honnêteté qu'avec la perfection", "ar": "الجمهور يتواصل مع الصدق أكثر من المثالية" },
-        { "en": "Emotional transparency builds loyalty", "fr": "La transparence émotionnelle construit la fidélité", "ar": "الشفافية العاطفية تبني الولاء" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "Turn original audio volume to 100%, and trending background audio to 2-5%. You get the algorithmic boost without ruining the video.",
+          "Look at accounts in completely different niches to find trends before they hit your industry."
+        ],
+        "fr": [
+          "Mettez le volume audio original à 100 % et l'audio de fond tendance à 2-5 %. Vous obtenez le boost sans ruiner la vidéo.",
+          "Regardez les comptes dans des niches complètement différentes pour trouver les tendances avant qu'elles n'atteignent votre secteur."
+        ],
+        "ar": [
+          "اجعل حجم الصوت الأصلي 100٪، وصوت الخلفية الشائع 2-5٪. تحصل على الدفعة الخوارزمية دون إفساد الفيديو.",
+          "انظر إلى الحسابات في مجالات مختلفة تماماً للعثور على الترندات قبل أن تضرب مجالك."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Create content that emotionally connects instantly", "fr": "Créez un contenu qui se connecte émotionnellement instantanément", "ar": "اصنع محتوى يربط عاطفياً على الفور" },
-        "reward_xp": 110
+        "task": {
+          "en": "Explain how you would use a highly aggressive hip-hop audio trend to promote a quiet luxury brand.",
+          "fr": "Expliquez comment vous utiliseriez une tendance audio hip-hop très agressive pour promouvoir une marque de luxe discrète.",
+          "ar": "اشرح كيف ستستخدم ترنداً صوتياً عدوانياً من الهيب هوب للترويج لعلامة تجارية فاخرة وهادئة."
+        },
+        "reward_xp": 80
       },
-      "ai_feedback_examples": [
-        { "en": "Your audience still feels disconnected 😭", "fr": "Ton public se sent toujours déconnecté 😭", "ar": "جمهورك لا يزال يشعر بالانفصال عنك 😭" },
-        { "en": "THIS builds emotional trust 💣", "fr": "CECI construit la confiance émotionnelle 💣", "ar": "هذا يبني ثقة عاطفية 💣" },
-        { "en": "Now people actually relate to you 🔥", "fr": "Maintenant, les gens s'identifient vraiment à toi 🔥", "ar": "الآن الناس يتواصلون معك حقاً 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "Mismatch. The brand identity is totally lost in the trend. 😭",
+          "Genius juxtaposition. Slow-motion elegant visuals over hard beats creates incredible visual tension. 🔥"
+        ],
+        "fr": [
+          "Incompatibilité. L'identité de la marque est totalement perdue dans la tendance. 😭",
+          "Juxtaposition de génie. Des visuels élégants au ralenti sur des rythmes durs créent une tension visuelle incroyable. 🔥"
+        ],
+        "ar": [
+          "عدم تطابق. تضيع هوية العلامة التجارية تماماً في الترند. 😭",
+          "تجاور عبقري. بصريات أنيقة بالحركة البطيئة على إيقاعات قوية تخلق توتراً بصرياً مذهلاً. 🔥"
+        ]
+      }
     },
     {
       "id": 16,
       "title": {
-        "en": "Community Building Psychology",
-        "fr": "Psychologie de la Création de Communauté",
-        "ar": "سيكولوجية بناء المجتمع"
+        "en": "FINAL CONTENT SIMULATION: The Viral Architect",
+        "fr": "SIMULATION DE CONTENU FINALE : L'Architecte Viral",
+        "ar": "محاكاة المحتوى النهائية: المهندس الفيروسي"
       },
-      "xp": 270,
+      "xp": 400,
       "core_concept": {
-        "en": "Communities grow stronger than audiences.",
-        "fr": "Les communautés grandissent plus fortes que les publics.",
-        "ar": "المجتمعات تنمو بشكل أقوى من مجرد الجماهير."
+        "en": "True viral content is engineered, not guessed. It perfectly combines the Hook, the Story, the Psychology, and the Action.",
+        "fr": "Le véritable contenu viral est conçu, pas deviné. Il combine parfaitement l'Accroche, l'Histoire, la Psychologie et l'Action.",
+        "ar": "المحتوى الفيروسي الحقيقي يتم هندسته، ولا يُخمّن. إنه يجمع بشكل مثالي بين الخطاف، والقصة، وعلم النفس، والإجراء."
       },
       "deep_explanation": {
         "summary": {
-          "en": "The strongest creators make followers feel emotionally included.",
-          "fr": "Les créateurs les plus forts font en sorte que leurs abonnés se sentent émotionnellement inclus.",
-          "ar": "أقوى صناع المحتوى يجعلون المتابعين يشعرون بالانتماء العاطفي."
+          "en": "This final phase tests your ability to architect a piece of content from scratch. You must apply everything: 3-second hook, emotional triggers, micro-storytelling, and a frictionless CTA.",
+          "fr": "Cette phase finale teste votre capacité à concevoir un contenu de A à Z. Vous devez tout appliquer : accroche de 3 secondes, déclencheurs émotionnels, micro-storytelling et un CTA sans friction.",
+          "ar": "تختبر هذه المرحلة النهائية قدرتك على تصميم قطعة محتوى من الصفر. يجب عليك تطبيق كل شيء: خطاف الـ 3 ثوانٍ، والمحفزات العاطفية، والسرد القصصي المصغر، والدعوة السلسة."
         },
         "why_it_matters": {
-          "en": "Communities increase engagement, retention and loyalty.",
-          "fr": "Les communautés augmentent l'engagement, la rétention et la fidélité.",
-          "ar": "المجتمعات تزيد التفاعل والاحتفاظ والولاء."
+          "en": "A great hook with a bad story loses retention. A great story with a bad CTA loses sales. You need the complete package.",
+          "fr": "Une bonne accroche avec une mauvaise histoire perd de la rétention. Une bonne histoire avec un mauvais CTA perd des ventes. Vous avez besoin du package complet.",
+          "ar": "الخطاف الرائع مع القصة السيئة يفقد الاحتفاظ. القصة الرائعة مع الدعوة السيئة تفقد المبيعات. أنت بحاجة إلى الحزمة الكاملة."
         },
         "internet_truth": {
-          "en": "People stay where they feel emotionally valued.",
-          "fr": "Les gens restent là où ils se sentent émotionnellement valorisés.",
-          "ar": "الناس يبقون حيث يشعرون بالتقدير العاطفي."
+          "en": "The algorithm doesn't decide what goes viral; human psychology does. The algorithm just measures the psychology.",
+          "fr": "L'algorithme ne décide pas de ce qui devient viral ; c'est la psychologie humaine. L'algorithme ne fait que mesurer la psychologie.",
+          "ar": "الخوارزمية لا تقرر ما ينتشر؛ علم النفس البشري هو من يفعل. الخوارزمية تقيس علم النفس فقط."
         }
       },
-      "psychology": [
-        { "en": "Humans seek belonging", "fr": "Les humains cherchent l'appartenance", "ar": "البشر يبحثون عن الانتماء" },
-        { "en": "Recognition creates loyalty", "fr": "La reconnaissance crée la fidélité", "ar": "التقدير يصنع الولاء" },
-        { "en": "Interaction increases attachment", "fr": "L'interaction augmente l'attachement", "ar": "التفاعل يزيد الارتباط" }
-      ],
-      "real_examples": [
-        { "en": "Replying to comments increases community feeling", "fr": "Répondre aux commentaires augmente le sentiment de communauté", "ar": "الرد على التعليقات يزيد الشعور بالانتماء للمجتمع" },
-        { "en": "Naming followers creates identity", "fr": "Donner un nom aux abonnés crée une identité", "ar": "إطلاق اسم على المتابعين يخلق هوية" }
-      ],
-      "common_mistakes": [
-        { "en": "Ignoring comments", "fr": "Ignorer les commentaires", "ar": "تجاهل التعليقات" },
-        { "en": "Talking only about yourself", "fr": "Ne parler que de soi-même", "ar": "الحديث عن نفسك فقط" },
-        { "en": "No audience interaction", "fr": "Aucune interaction avec le public", "ar": "لا يوجد تفاعل مع الجمهور" }
-      ],
-      "missions": [
-        { "en": "Create reply strategy", "fr": "Créer une stratégie de réponse", "ar": "إنشاء استراتيجية للردود" },
-        { "en": "Design audience interaction system", "fr": "Concevoir un système d'interaction avec le public", "ar": "تصميم نظام تفاعل مع الجمهور" },
-        { "en": "Build engagement questions", "fr": "Construire des questions d'engagement", "ar": "بناء أسئلة تفاعلية" }
-      ],
+      "simulation_systems": {
+        "en": [
+          "Visual & Text Hook Assembly",
+          "Emotional Resonance Mapping",
+          "Pacing & Story Structure",
+          "Automated CTA Integration"
+        ],
+        "fr": [
+          "Assemblage de l'Accroche Visuelle & Textuelle",
+          "Cartographie de la Résonance Émotionnelle",
+          "Rythme & Structure de l'Histoire",
+          "Intégration de CTA Automatisé"
+        ],
+        "ar": [
+          "تجميع الخطاف البصري والنصي",
+          "تخطيط الصدى العاطفي",
+          "الإيقاع وهيكل القصة",
+          "دمج الدعوة التلقائية"
+        ]
+      },
+      "final_missions": {
+        "en": [
+          "Write a 3-second hook (text + visual) that stops the scroll.",
+          "Draft a 45-second script focusing on an underdog struggle.",
+          "Define the specific emotion (Social Currency/Awe/Anger) you are targeting.",
+          "Create a Manychat-style CTA to generate a lead."
+        ],
+        "fr": [
+          "Écrivez une accroche de 3 secondes (texte + visuel) qui arrête le défilement.",
+          "Rédigez un script de 45 secondes centré sur la lutte d'un outsider.",
+          "Définissez l'émotion spécifique (Monnaie Sociale/Émerveillement/Colère) que vous ciblez.",
+          "Créez un CTA style Manychat pour générer un prospect."
+        ],
+        "ar": [
+          "اكتب خطافاً من 3 ثوانٍ (نص + بصري) يوقف التصفح.",
+          "صغ نصاً مدته 45 ثانية يركز على كفاح المستضعف.",
+          "حدد العاطفة المحددة (العملة الاجتماعية / الذهول / الغضب) التي تستهدفها.",
+          "أنشئ دعوة بأسلوب Manychat لتوليد عميل محتمل."
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Moroccan Cafe", "fr": "Café Marocain", "ar": "مقهى مغربي" },
-        "task": { "en": "Turn cafe followers into loyal supporters", "fr": "Transformez les abonnés du café en supporters fidèles", "ar": "تحويل متابعي المقهى إلى داعمين مخلصين" },
-        "darija": "Rj3 l'followers dyal l'9ahwa l'klyan w s7ab dima."
+        "industry": {
+          "en": "Your Own Business (or current project)",
+          "fr": "Votre Propre Entreprise (ou projet actuel)",
+          "ar": "مشروعك الخاص (أو مشروعك الحالي)"
+        },
+        "task": {
+          "en": "Act as the 'Viral Content Architect' and map out the ultimate flagship Reel/TikTok for your brand.",
+          "fr": "Agissez en tant que 'Architecte de Contenu Viral' et tracez le Reel/TikTok phare ultime pour votre marque.",
+          "ar": "تصرف كـ 'مهندس محتوى فيروسي' وخطط لمقطع الريلز/تيك توك الرئيسي الأهم لعلامتك التجارية."
+        }
       },
-      "pro_secrets": [
-        { "en": "Communities defend creators emotionally", "fr": "Les communautés défendent les créateurs émotionnellement", "ar": "المجتمعات تدافع عن صناع المحتوى عاطفياً" },
-        { "en": "Attention to followers builds loyalty fast", "fr": "L'attention portée aux abonnés fidélise rapidement", "ar": "الاهتمام بالمتابعين يبني الولاء بسرعة" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "Review your final script and cut 20% of the words. Tight pacing creates virality.",
+          "The best creators spend 50% of their time just crafting the Hook."
+        ],
+        "fr": [
+          "Revoyez votre script final et coupez 20 % des mots. Un rythme serré crée la viralité.",
+          "Les meilleurs créateurs passent 50 % de leur temps uniquement à peaufiner l'Accroche."
+        ],
+        "ar": [
+          "راجع نصك النهائي واحذف 20٪ من الكلمات. الإيقاع المشدود يخلق الانتشار.",
+          "أفضل صناع المحتوى يقضون 50٪ من وقتهم فقط في صياغة الخطاف."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Build mini community around creator identity", "fr": "Construisez une mini communauté autour de l'identité du créateur", "ar": "ابنِ مجتمعاً صغيراً حول هوية صانع المحتوى" },
-        "reward_xp": 120
+        "type": "viral_script_blueprint",
+        "instruction": {
+          "en": "Submit your complete viral script blueprint: Hook, Body, Emotion, and CTA.",
+          "fr": "Soumettez votre plan complet de script viral : Accroche, Corps, Émotion et CTA.",
+          "ar": "أرسل مخطط نصك الفيروسي الكامل: الخطاف، الجسد، العاطفة، والدعوة."
+        },
+        "reward_xp": 200
       },
-      "ai_feedback_examples": [
-        { "en": "Your audience still feels cold 😭", "fr": "Ton public semble encore froid 😭", "ar": "جمهورك لا يزال يشعر بالبرود 😭" },
-        { "en": "THIS creates community energy 💣", "fr": "CECI crée une énergie communautaire 💣", "ar": "هذا يخلق طاقة مجتمعية 💣" },
-        { "en": "Now followers feel emotionally connected 🔥", "fr": "Maintenant, les abonnés se sentent émotionnellement connectés 🔥", "ar": "الآن يشعر المتابعون بالارتباط العاطفي 🔥" }
-      ]
-    },
-    {
+      "final_result": {
+        "title": {
+          "en": "Content Architect Certified 🚀",
+          "fr": "Architecte de Contenu Certifié 🚀",
+          "ar": "مهندس محتوى معتمد 🚀"
+        },
+        "level": {
+          "en": "Viral Psychology Expert",
+          "fr": "Expert en Psychologie Virale",
+          "ar": "خبير علم النفس الفيروسي"
+        }
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "The hook is strong, but the story gets boring in the middle. Cut the fluff. 😭",
+          "Absolute fire. This is mathematically designed to go viral and drive sales. 💣🔥"
+        ],
+        "fr": [
+          "L'accroche est forte, mais l'histoire devient ennuyeuse au milieu. Coupez le superflu. 😭",
+          "Du feu absolu. C'est mathématiquement conçu pour devenir viral et générer des ventes. 💣🔥"
+        ],
+        "ar": [
+          "الخطاف قوي، لكن القصة تصبح مملة في المنتصف. اقطع الحشو. 😭",
+          "نار مطلقة. هذا مصمم رياضياً للانتشار الفيروسي وتحفيز المبيعات. 💣🔥"
+        ]
+      }
+    }
+,    {
+
       "id": 17,
       "title": {
-        "en": "Algorithm Domination",
-        "fr": "Domination de l'Algorithme",
-        "ar": "السيطرة على الخوارزمية"
+        "en": "Caption Copywriting: Words That Sell Without Selling",
+        "fr": "Rédaction de Légendes : Des Mots Qui Vendent Sans Vendre",
+        "ar": "كتابة التعليقات: كلمات تبيع دون أن تبيع"
       },
-      "xp": 300,
+      "xp": 140,
       "core_concept": {
-        "en": "Algorithms reward audience behavior.",
-        "fr": "Les algorithmes récompensent le comportement du public.",
-        "ar": "الخوارزميات تكافئ سلوك الجمهور."
+        "en": "The caption is your silent salesperson. A great visual stops the scroll; the caption closes the deal.",
+        "fr": "La légende est votre vendeur silencieux. Un bon visuel arrête le défilement ; la légende conclut l'affaire.",
+        "ar": "التعليق هو مندوب مبيعاتك الصامت. المرئي الجيد يوقف التصفح؛ والتعليق يُغلق الصفقة."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Platforms push content that keeps people emotionally engaged.",
-          "fr": "Les plateformes mettent en avant le contenu qui maintient les gens émotionnellement engagés.",
-          "ar": "المنصات تدفع المحتوى الذي يبقي الناس متفاعلين عاطفياً."
+          "en": "A caption is not a description of your image — it is a continuation of your story. The best captions use the PAS formula (Problem → Agitate → Solution), pull the reader into conversation, and end with an invisible CTA that feels natural, not pushy.",
+          "fr": "Une légende n'est pas une description de votre image — c'est la continuation de votre histoire. Les meilleures légendes utilisent la formule PAS (Problème → Agitation → Solution), entraînent le lecteur dans la conversation et se terminent par un CTA invisible qui semble naturel, pas insistant.",
+          "ar": "التعليق ليس وصفاً لصورتك — بل هو استمرار لقصتك. أفضل التعليقات تستخدم صيغة PAS (المشكلة ← التهييج ← الحل)، تجذب القارئ إلى محادثة وتنتهي بدعوة غير مرئية تبدو طبيعية وليست متسرعة."
         },
         "why_it_matters": {
-          "en": "Understanding retention and watch behavior increases reach massively.",
-          "fr": "Comprendre la rétention et le comportement de visionnage augmente massivement la portée.",
-          "ar": "فهم الاحتفاظ وسلوك المشاهدة يزيد الوصول بشكل هائل."
+          "en": "Instagram and TikTok now count 'time spent reading the caption' as an engagement signal. A long, compelling caption literally boosts your algorithmic distribution.",
+          "fr": "Instagram et TikTok comptent désormais 'le temps passé à lire la légende' comme signal d'engagement. Une légende longue et convaincante booste littéralement votre distribution algorithmique.",
+          "ar": "يعدّ إنستغرام وتيك توك الآن 'الوقت المُقضى في قراءة التعليق' إشارةً للتفاعل. التعليق الطويل والمقنع يعزز توزيعك الخوارزمي حرفياً."
         },
         "internet_truth": {
-          "en": "The algorithm only cares about audience reactions.",
-          "fr": "L'algorithme ne se soucie que des réactions du public.",
-          "ar": "الخوارزمية تهتم فقط بردود فعل الجمهور."
+          "en": "People read the caption when they are already interested. Your job is to turn 'interested' into 'convinced'.",
+          "fr": "Les gens lisent la légende quand ils sont déjà intéressés. Votre travail est de transformer 'intéressé' en 'convaincu'.",
+          "ar": "يقرأ الناس التعليق عندما يكونون مهتمين بالفعل. مهمتك هي تحويل 'الاهتمام' إلى 'الاقتناع'."
         }
       },
-      "psychology": [
-        { "en": "Retention controls reach", "fr": "La rétention contrôle la portée", "ar": "الاحتفاظ يتحكم في الوصول" },
-        { "en": "Saves and shares signal value", "fr": "Les sauvegardes et les partages signalent la valeur", "ar": "الحفظ والمشاركة يشيران إلى القيمة" },
-        { "en": "Curiosity increases watch time", "fr": "La curiosité augmente le temps de visionnage", "ar": "الفضول يزيد من وقت المشاهدة" }
-      ],
-      "real_examples": [
-        { "en": "Open loops increase retention", "fr": "Les boucles ouvertes augmentent la rétention", "ar": "الحلقات المفتوحة تزيد من الاحتفاظ" },
-        { "en": "Fast pacing reduces viewer exits", "fr": "Un rythme rapide réduit les abandons des spectateurs", "ar": "الإيقاع السريع يقلل من خروج المشاهدين" }
-      ],
-      "common_mistakes": [
-        { "en": "Long intros", "fr": "Longues introductions", "ar": "مقدمات طويلة" },
-        { "en": "Boring middle sections", "fr": "Sections intermédiaires ennuyeuses", "ar": "أجزاء وسطى مملة" },
-        { "en": "Weak hooks", "fr": "Accroches faibles", "ar": "خطافات ضعيفة" }
-      ],
-      "missions": [
-        { "en": "Analyze viral reels", "fr": "Analyser des réels viraux", "ar": "تحليل ريلز فيروسية" },
-        { "en": "Identify retention drops", "fr": "Identifier les baisses de rétention", "ar": "تحديد نقاط انخفاض الاحتفاظ" },
-        { "en": "Improve watch time", "fr": "Améliorer le temps de visionnage", "ar": "تحسين وقت المشاهدة" }
-      ],
+      "psychology": {
+        "en": [
+          "PAS Formula: Problem (name their pain) → Agitate (make them feel it deeply) → Solution (position your offer as the relief)",
+          "The Line Break Trick: Short lines create suspense. Every line break is a micro-cliffhanger.",
+          "First-line dominance: Instagram shows only the first line before 'more'. That first line is the hook inside the hook.",
+          "Social proof language: 'Over 200 students passed using this method' is more powerful than any adjective."
+        ],
+        "fr": [
+          "Formule PAS : Problème (nommez leur douleur) → Agitation (faites-les la ressentir) → Solution (positionnez votre offre comme le soulagement)",
+          "L'Astuce du Saut de Ligne : Les lignes courtes créent du suspense. Chaque saut de ligne est un mini-cliffhanger.",
+          "Dominance de la première ligne : Instagram ne montre que la première ligne avant 'voir plus'. Cette ligne est l'accroche dans l'accroche.",
+          "Langage de preuve sociale : 'Plus de 200 étudiants ont réussi grâce à cette méthode' est plus puissant que n'importe quel adjectif."
+        ],
+        "ar": [
+          "صيغة PAS: المشكلة (اذكر ألمهم) ← التهييج (اجعلهم يشعرون به بعمق) ← الحل (ضع عرضك كالراحة)",
+          "خدعة فاصل الأسطر: الأسطر القصيرة تخلق التشويق. كل فاصل سطر هو ذروة مصغرة.",
+          "هيمنة السطر الأول: يظهر إنستغرام السطر الأول فقط قبل 'المزيد'. هذا السطر هو الخطاف داخل الخطاف.",
+          "لغة الدليل الاجتماعي: 'أكثر من 200 طالب اجتازوا الاختبار بهذه الطريقة' أقوى من أي صفة."
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Weak: 'New collection available. Shop now. Link in bio.' | Strong: 'You have been wearing the wrong size hijab for years. Here is how to know yours in 30 seconds. ↓'",
+          "Weak: 'We offer accounting services.' | Strong: 'I lost 40,000 MAD in my first year because I did not understand one simple tax rule. I made this video so you never repeat my mistake.'"
+        ],
+        "fr": [
+          "Faible : 'Nouvelle collection disponible. Achetez maintenant.' | Fort : 'Vous portez la mauvaise taille de hijab depuis des années. Voici comment connaître la vôtre en 30 secondes. ↓'",
+          "Faible : 'Nous proposons des services comptables.' | Fort : 'J'ai perdu 40 000 MAD ma première année parce que je ne comprenais pas une règle fiscale simple. J'ai fait cette vidéo pour que vous ne répétiez jamais mon erreur.'"
+        ],
+        "ar": [
+          "ضعيف: 'مجموعة جديدة متاحة. تسوّق الآن.' | قوي: 'لقد كنتِ ترتدين الحجاب بالمقاس الخاطئ لسنوات. إليكِ طريقة معرفة مقاسك في 30 ثانية. ↓'",
+          "ضعيف: 'نقدم خدمات محاسبية.' | قوي: 'خسرت 40,000 درهم في سنتي الأولى لأنني لم أفهم قاعدة ضريبية بسيطة. صنعت هذا الفيديو حتى لا تكرر خطئي أبداً.'"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Writing the caption as a product description ('This dress is available in 3 colors')",
+          "Starting with 'I' or the brand name — nobody cares yet",
+          "No line breaks — presenting a wall of text that nobody reads"
+        ],
+        "fr": [
+          "Écrire la légende comme une description produit ('Cette robe est disponible en 3 couleurs')",
+          "Commencer par 'Je' ou le nom de la marque — personne ne s'en soucie encore",
+          "Pas de sauts de ligne — présenter un mur de texte que personne ne lit"
+        ],
+        "ar": [
+          "كتابة التعليق كوصف للمنتج ('هذا الفستان متاح بـ3 ألوان')",
+          "البدء بـ'أنا' أو اسم العلامة — لا أحد يهتم بعد",
+          "لا فواصل أسطر — تقديم جدار من النص لا يقرأه أحد"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Rewrite your last 3 captions using the PAS formula",
+          "Find a caption you loved reading — break down exactly why it worked",
+          "Write a 150-word caption for your business with line breaks every 1-2 lines"
+        ],
+        "fr": [
+          "Réécrivez vos 3 dernières légendes en utilisant la formule PAS",
+          "Trouvez une légende que vous avez adoré lire — décortiquez exactement pourquoi elle fonctionne",
+          "Rédigez une légende de 150 mots pour votre entreprise avec des sauts de ligne toutes les 1-2 lignes"
+        ],
+        "ar": [
+          "أعد كتابة آخر 3 تعليقات لك باستخدام صيغة PAS",
+          "ابحث عن تعليق أحببت قراءته — حلل بالضبط لماذا نجح",
+          "اكتب تعليقاً من 150 كلمة لمشروعك مع فواصل أسطر كل 1-2 سطر"
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Restaurant", "fr": "Restaurant", "ar": "مطعم" },
-        "task": { "en": "Improve reel retention for local restaurant page", "fr": "Améliorer la rétention des réels pour un restaurant local", "ar": "تحسين الاحتفاظ بريلز لصفحة مطعم محلي" },
-        "darija": "Zid f wa9t lmouchahada dyal les videos dyal l'resto."
+        "industry": {
+          "en": "Moroccan Argan Oil Brand",
+          "fr": "Marque d'Huile d'Argan Marocaine",
+          "ar": "علامة زيت أركان مغربية"
+        },
+        "task": {
+          "en": "Write a full PAS caption for a Reel showing the extraction process of argan oil. Target: Moroccan women aged 25-40 who have tried every hair product with no results.",
+          "fr": "Rédigez une légende PAS complète pour un Reel montrant le processus d'extraction de l'huile d'argan. Cible : femmes marocaines de 25-40 ans ayant essayé tous les produits capillaires sans résultat.",
+          "ar": "اكتب تعليق PAS كاملاً لمقطع ريلز يُظهر عملية استخراج زيت الأركان. الجمهور المستهدف: نساء مغربيات عمر 25-40 جربن كل منتجات الشعر دون نتيجة."
+        }
       },
-      "pro_secrets": [
-        { "en": "Micro surprises reset audience attention", "fr": "Les micro-surprises réinitialisent l'attention du public", "ar": "المفاجآت الصغيرة تعيد ضبط انتباه الجمهور" },
-        { "en": "Strong endings increase replay behavior", "fr": "Les fins fortes augmentent le comportement de relecture", "ar": "النهايات القوية تزيد من سلوك إعادة المشاهدة" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "Use the word 'you' at least 3 times in every caption — it creates a 1-on-1 conversation illusion.",
+          "End your caption with a question. Questions get 40% more comments than statements."
+        ],
+        "fr": [
+          "Utilisez le mot 'vous' au moins 3 fois dans chaque légende — cela crée l'illusion d'une conversation 1-à-1.",
+          "Terminez votre légende par une question. Les questions obtiennent 40 % de commentaires en plus que les affirmations."
+        ],
+        "ar": [
+          "استخدم كلمة 'أنت' على الأقل 3 مرات في كل تعليق — فهذا يخلق وهم محادثة فردية.",
+          "اختم تعليقك بسؤال. الأسئلة تحصل على تعليقات أكثر بنسبة 40٪ مقارنة بالعبارات."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Engineer high-retention content psychologically", "fr": "Concevoir psychologiquement un contenu à haute rétention", "ar": "هندسة محتوى عالي الاحتفاظ نفسياً" },
-        "reward_xp": 140
+        "task": {
+          "en": "Take this generic caption: 'We offer high-quality accounting courses. Sign up today.' and transform it into a PAS caption under 100 words that stops a distracted person mid-scroll.",
+          "fr": "Prenez cette légende générique : 'Nous proposons des cours de comptabilité de haute qualité. Inscrivez-vous aujourd'hui.' et transformez-la en une légende PAS de moins de 100 mots qui arrête une personne distraite.",
+          "ar": "خذ هذا التعليق العام: 'نقدم دورات محاسبة عالية الجودة. سجّل اليوم.' وحوّله إلى تعليق PAS بأقل من 100 كلمة يوقف شخصاً مشتت الذهن أثناء التصفح."
+        },
+        "reward_xp": 70
       },
-      "ai_feedback_examples": [
-        { "en": "People are leaving too early 😭", "fr": "Les gens partent trop tôt 😭", "ar": "الناس يغادرون مبكراً جداً 😭" },
-        { "en": "THIS structure increases retention 💣", "fr": "CETTE structure augmente la rétention 💣", "ar": "هذا الهيكل يزيد الاحتفاظ 💣" },
-        { "en": "Now your content feels algorithm-friendly 🔥", "fr": "Maintenant ton contenu semble adapté à l'algorithme 🔥", "ar": "الآن محتواك يبدو صديقاً للخوارزمية 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "You described the product instead of speaking to the reader's pain. Start over. 😭",
+          "Perfect PAS execution. I felt the problem personally and clicked the link before finishing reading. 🔥"
+        ],
+        "fr": [
+          "Vous avez décrit le produit au lieu de parler à la douleur du lecteur. Recommencez. 😭",
+          "Exécution PAS parfaite. J'ai ressenti le problème personnellement et cliqué sur le lien avant de finir de lire. 🔥"
+        ],
+        "ar": [
+          "وصفت المنتج بدلاً من التحدث إلى ألم القارئ. ابدأ من جديد. 😭",
+          "تنفيذ PAS مثالي. شعرت بالمشكلة شخصياً ونقرت على الرابط قبل إنهاء القراءة. 🔥"
+        ]
+      }
     },
     {
       "id": 18,
       "title": {
-        "en": "Content Planning System",
-        "fr": "Système de Planification de Contenu",
-        "ar": "نظام تخطيط المحتوى"
+        "en": "Visual Design Psychology: Thumbnails, Colors & Layouts",
+        "fr": "Psychologie du Design Visuel : Miniatures, Couleurs et Mises en Page",
+        "ar": "سيكولوجية التصميم البصري: المصغرات والألوان والتخطيطات"
       },
-      "xp": 280,
+      "xp": 150,
       "core_concept": {
-        "en": "Organized creators scale faster.",
-        "fr": "Les créateurs organisés se développent plus rapidement.",
-        "ar": "صناع المحتوى المنظمون يتوسعون أسرع."
+        "en": "Design is not decoration. Every color, font size, and frame composition is a subconscious instruction to the viewer's brain.",
+        "fr": "Le design n'est pas de la décoration. Chaque couleur, taille de police et composition de cadre est une instruction subconsciente au cerveau du spectateur.",
+        "ar": "التصميم ليس زينة. كل لون وحجم خط وتركيب إطار هو تعليمة لاواعية لدماغ المشاهد."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Content planning removes stress and increases consistency.",
-          "fr": "La planification du contenu élimine le stress et augmente la régularité.",
-          "ar": "تخطيط المحتوى يزيل التوتر ويزيد من الاستمرارية."
+          "en": "Human beings process visuals 60,000 times faster than text. Before anyone reads your caption or hears your audio, the visual has already created an emotion, a level of trust, and a judgment about your brand quality. The scroll-stopping thumbnail is the first filter every piece of content must pass.",
+          "fr": "Les êtres humains traitent les visuels 60 000 fois plus vite que le texte. Avant que quiconque lise votre légende ou entende votre audio, le visuel a déjà créé une émotion, un niveau de confiance, et un jugement sur la qualité de votre marque. La miniature qui arrête le défilement est le premier filtre que chaque contenu doit franchir.",
+          "ar": "يعالج البشر المرئيات بسرعة أعلى 60,000 مرة من النص. قبل أن يقرأ أحد تعليقك أو يسمع صوتك، خلق المرئي مشاعر ومستوى ثقة وحكماً على جودة علامتك. الصورة المصغرة الموقفة للتصفح هي أول فلتر يجب أن يجتازه كل محتوى."
         },
         "why_it_matters": {
-          "en": "Systems prevent burnout and improve quality.",
-          "fr": "Les systèmes préviennent l'épuisement et améliorent la qualité.",
-          "ar": "الأنظمة تمنع الإرهاق وتحسن الجودة."
+          "en": "A professional visual signals a professional product. An amateur thumbnail signals an amateur business — even if the content inside is world-class.",
+          "fr": "Un visuel professionnel signale un produit professionnel. Une miniature amateur signale une entreprise amateur — même si le contenu intérieur est de classe mondiale.",
+          "ar": "المرئي الاحترافي يُشير إلى منتج احترافي. الصورة المصغرة الهاوية تُشير إلى عمل هاوٍ — حتى لو كان المحتوى الداخلي على مستوى عالمي."
         },
         "internet_truth": {
-          "en": "Most creators waste time because they create randomly.",
-          "fr": "La plupart des créateurs perdent du temps car ils créent au hasard.",
-          "ar": "يضيع معظم صناع المحتوى وقتهم لأنهم يصنعون عشوائياً."
+          "en": "You have exactly 50 milliseconds to make a first impression. Design decides it, not your personality.",
+          "fr": "Vous avez exactement 50 millisecondes pour faire une première impression. Le design en décide, pas votre personnalité.",
+          "ar": "لديك 50 ميلي ثانية بالضبط لإحداث انطباع أول. التصميم هو ما يقرره، وليس شخصيتك."
         }
       },
-      "psychology": [
-        { "en": "Structure reduces decision fatigue", "fr": "La structure réduit la fatigue décisionnelle", "ar": "الهيكلة تقلل إرهاق اتخاذ القرار" },
-        { "en": "Preparation increases confidence", "fr": "La préparation augmente la confiance", "ar": "التحضير يزيد من الثقة" },
-        { "en": "Planning improves execution", "fr": "La planification améliore l'exécution", "ar": "التخطيط يحسن التنفيذ" }
-      ],
-      "real_examples": [
-        { "en": "Content calendars increase productivity", "fr": "Les calendriers de contenu augmentent la productivité", "ar": "تقويمات المحتوى تزيد الإنتاجية" },
-        { "en": "Content pillars simplify idea generation", "fr": "Les piliers de contenu simplifient la génération d'idées", "ar": "أعمدة المحتوى تبسط توليد الأفكار" }
-      ],
-      "common_mistakes": [
-        { "en": "No posting plan", "fr": "Aucun plan de publication", "ar": "لا توجد خطة نشر" },
-        { "en": "Creating content last minute", "fr": "Créer du contenu à la dernière minute", "ar": "صنع المحتوى في اللحظة الأخيرة" },
-        { "en": "No content pillars", "fr": "Pas de piliers de contenu", "ar": "لا توجد أعمدة محتوى" }
-      ],
-      "missions": [
-        { "en": "Build 30-day content plan", "fr": "Construire un plan de contenu de 30 jours", "ar": "بناء خطة محتوى لـ 30 يوماً" },
-        { "en": "Create content pillars", "fr": "Créer des piliers de contenu", "ar": "إنشاء أعمدة للمحتوى" },
-        { "en": "Recycle old content strategically", "fr": "Recycler stratégiquement l'ancien contenu", "ar": "إعادة تدوير المحتوى القديم استراتيجياً" }
-      ],
+      "psychology": {
+        "en": [
+          "Color Psychology: Red = urgency/danger. Blue = trust/authority. Green = growth/health. Yellow = attention/optimism. Black = luxury/exclusivity.",
+          "The F-Pattern: Eyes scan the top-left first. Place your most important text there on thumbnails.",
+          "Contrast Principle: High contrast between text and background increases readability by 300%. Low contrast gets scrolled past.",
+          "Face Bias: Human brains are hardwired to look at faces. A clear human expression on a thumbnail outperforms any graphic element."
+        ],
+        "fr": [
+          "Psychologie des Couleurs : Rouge = urgence. Bleu = confiance. Vert = croissance. Jaune = attention. Noir = luxe.",
+          "Le Modèle en F : Les yeux balaient le coin supérieur gauche en premier. Placez votre texte le plus important là.",
+          "Principe de Contraste : Un contraste élevé augmente la lisibilité de 300%.",
+          "Biais du Visage : Le cerveau est câblé pour regarder les visages. Une expression humaine claire surpasse tout élément graphique."
+        ],
+        "ar": [
+          "سيكولوجية الألوان: الأحمر = إلحاح. الأزرق = ثقة. الأخضر = نمو. الأصفر = انتباه. الأسود = فخامة.",
+          "النمط F: تمسح العيون الزاوية العلوية اليسرى أولاً. ضع نصك الأهم هناك.",
+          "مبدأ التباين: التباين العالي يزيد قابلية القراءة بنسبة 300٪.",
+          "تحيز الوجه: الدماغ البشري مبرمج للنظر إلى الوجوه. تعبير وجه واضح يتفوق على أي عنصر رسومي."
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "MrBeast thumbnails always use: extreme facial expression + bold text + 2-3 colors max + a clear subject. This is not accident — it is a formula.",
+          "A Moroccan restaurant using a dark background with close-up food photography immediately signals premium quality versus a blurry photo with a white background."
+        ],
+        "fr": [
+          "Les miniatures de MrBeast utilisent toujours : expression faciale extrême + texte gras + 2-3 couleurs max + un sujet clair. Ce n'est pas un hasard — c'est une formule.",
+          "Un restaurant marocain utilisant un fond sombre avec une photographie rapprochée de plats signale immédiatement une qualité premium par rapport à une photo floue sur fond blanc."
+        ],
+        "ar": [
+          "صور MrBeast المصغرة تستخدم دائماً: تعبير وجه متطرف + نص عريض + 2-3 ألوان كحد أقصى + موضوع واضح. هذا ليس صدفة — إنه صيغة.",
+          "مطعم مغربي يستخدم خلفية داكنة مع تصوير مقرّب للطعام يُشير فوراً لجودة متميزة مقارنةً بصورة ضبابية على خلفية بيضاء."
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Using 5+ colors in one thumbnail — creates visual chaos and signals unprofessionalism",
+          "Text so small it cannot be read on a mobile screen without zooming",
+          "Using low-resolution or heavily filtered images that look cheap on high-quality phone screens"
+        ],
+        "fr": [
+          "Utiliser 5+ couleurs dans une miniature — crée un chaos visuel et signale l'amateurisme",
+          "Texte si petit qu'il ne peut être lu sur un écran mobile sans zoomer",
+          "Utiliser des images basse résolution ou très filtrées qui semblent bon marché"
+        ],
+        "ar": [
+          "استخدام 5+ ألوان في صورة مصغرة واحدة — يخلق فوضى بصرية ويُشير للهواية",
+          "نص صغير جداً لا يمكن قراءته على شاشة الجوال دون تكبير",
+          "استخدام صور منخفضة الدقة أو ذات فلاتر مفرطة تبدو رخيصة على شاشات الهاتف الحديثة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Screenshot your last 9 posts and view them as a grid. Do they look like one coherent brand?",
+          "Create 2 versions of the same thumbnail — one with a face, one without. Show them to 3 people and record which they click first.",
+          "Pick your brand's 2 primary colors and design a template for all future thumbnails using Canva."
+        ],
+        "fr": [
+          "Faites une capture de vos 9 derniers posts et visualisez-les comme une grille. Ressemblent-ils à une marque cohérente ?",
+          "Créez 2 versions de la même miniature — une avec un visage, une sans. Montrez-les à 3 personnes et notez laquelle elles cliquent en premier.",
+          "Choisissez 2 couleurs principales de votre marque et concevez un modèle pour toutes les futures miniatures sur Canva."
+        ],
+        "ar": [
+          "خذ لقطة شاشة لآخر 9 منشورات لك وانظر إليها كشبكة. هل تبدو كعلامة تجارية واحدة متماسكة؟",
+          "أنشئ نسختين من نفس الصورة المصغرة — إحداهما بوجه والأخرى بدون. أظهرهما لـ3 أشخاص وسجّل أيهما ينقرون أولاً.",
+          "اختر لوني علامتك الأساسيين وصمم قالباً لجميع الصور المصغرة المستقبلية باستخدام Canva."
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Freelancer", "fr": "Freelance", "ar": "مستقل" },
-        "task": { "en": "Build sustainable content workflow", "fr": "Construire un flux de contenu durable", "ar": "بناء سير عمل مستدام للمحتوى" },
-        "darija": "9add programme dyal l'khedma bach mat3yach w tb9a tposté dima."
+        "industry": {
+          "en": "Online Accounting Course",
+          "fr": "Cours de Comptabilité en Ligne",
+          "ar": "دورة محاسبة عبر الإنترنت"
+        },
+        "task": {
+          "en": "Design (describe in detail) a YouTube-style thumbnail for a video titled 'I passed the CPA exam without a tutor'. Specify: background color, facial expression, text size and placement, and max 3 accent colors.",
+          "fr": "Concevez (décrivez en détail) une miniature style YouTube pour une vidéo intitulée 'J'ai réussi l'examen CPA sans tuteur'. Précisez : couleur de fond, expression faciale, taille et placement du texte, et max 3 couleurs d'accent.",
+          "ar": "صمم (صف بالتفصيل) صورة مصغرة بأسلوب يوتيوب لفيديو بعنوان 'اجتزت اختبار المحاسبة بدون مدرس'. حدد: لون الخلفية، تعبير الوجه، حجم ومكان النص، وحد أقصى 3 ألوان إضافية."
+        }
       },
-      "pro_secrets": [
-        { "en": "Content systems reduce creator stress", "fr": "Les systèmes de contenu réduisent le stress des créateurs", "ar": "أنظمة المحتوى تقلل من توتر صانع المحتوى" },
-        { "en": "Planning increases creative freedom", "fr": "La planification augmente la liberté créative", "ar": "التخطيط يزيد من الحرية الإبداعية" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "A/B test your thumbnails using Instagram stories polls before publishing the main post — it reveals the winner in 24 hours for free.",
+          "Squint test: Blur your thumbnail slightly. If the main subject and text are still readable, it will perform. If not, redesign."
+        ],
+        "fr": [
+          "Testez A/B vos miniatures via les sondages des stories Instagram avant de publier le post principal — cela révèle le gagnant en 24h gratuitement.",
+          "Test des yeux plissés : Flouez légèrement votre miniature. Si le sujet principal et le texte sont encore lisibles, elle performera. Sinon, redesignez."
+        ],
+        "ar": [
+          "اختبر صورك المصغرة A/B عبر استطلاعات قصص إنستغرام قبل نشر المنشور الرئيسي — يكشف الفائز في 24 ساعة مجاناً.",
+          "اختبار التعشية: ضبّب صورتك المصغرة قليلاً. إذا كان الموضوع الرئيسي والنص لا يزالان مقروئين، فستؤدي جيداً. إذا لم يكن كذلك، أعد التصميم."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Create scalable creator content machine", "fr": "Créer une machine de contenu de créateur évolutive", "ar": "إنشاء آلة محتوى قابلة للتوسع لصانع المحتوى" },
-        "reward_xp": 120
+        "task": {
+          "en": "You have a video about a boring topic: 'How to file VAT in Morocco'. Design a thumbnail concept so visually compelling that a non-accountant would feel curious enough to click.",
+          "fr": "Vous avez une vidéo sur un sujet ennuyeux : 'Comment déclarer la TVA au Maroc'. Concevez un concept de miniature si visuellement convaincant qu'un non-comptable serait suffisamment curieux pour cliquer.",
+          "ar": "لديك فيديو عن موضوع ممل: 'كيفية تقديم ضريبة القيمة المضافة في المغرب'. صمم مفهوم صورة مصغرة جذاب بصرياً لدرجة أن غير المحاسب سيكون فضولياً بما يكفي للنقر."
+        },
+        "reward_xp": 80
       },
-      "ai_feedback_examples": [
-        { "en": "Your workflow still feels chaotic 😭", "fr": "Ton flux de travail semble encore chaotique 😭", "ar": "سير عملك لا يزال يبدو فوضوياً 😭" },
-        { "en": "THIS system creates consistency 💣", "fr": "CE système crée la régularité 💣", "ar": "هذا النظام يخلق الاستمرارية 💣" },
-        { "en": "Now you can scale content efficiently 🔥", "fr": "Maintenant tu peux développer ton contenu efficacement 🔥", "ar": "الآن يمكنك توسيع محتواك بكفاءة 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "Text too small, colors clashing, no focal point. This gets scrolled past in 0.05 seconds. 😭",
+          "Incredible. The shocked face + red background + bold white number creates irresistible curiosity even without reading the title. 🔥"
+        ],
+        "fr": [
+          "Texte trop petit, couleurs qui s'affrontent, pas de point focal. Ça passe en 0,05 secondes. 😭",
+          "Incroyable. Le visage choqué + fond rouge + chiffre blanc gras crée une curiosité irrésistible sans même lire le titre. 🔥"
+        ],
+        "ar": [
+          "النص صغير جداً، الألوان متضاربة، لا نقطة تركيز. يُتجاوز هذا في 0.05 ثانية. 😭",
+          "مذهل. الوجه المصدوم + الخلفية الحمراء + الرقم الأبيض العريض يخلقان فضولاً لا يُقاوم حتى دون قراءة العنوان. 🔥"
+        ]
+      }
     },
     {
       "id": 19,
       "title": {
-        "en": "Creator Identity & Confidence",
-        "fr": "Identité et Confiance du Créateur",
-        "ar": "هوية وثقة صانع المحتوى"
+        "en": "Algorithm Decoded: Timing, Frequency & Distribution",
+        "fr": "L'Algorithme Décodé : Timing, Fréquence & Distribution",
+        "ar": "فك شفرة الخوارزمية: التوقيت والتكرار والتوزيع"
       },
-      "xp": 320,
+      "xp": 160,
       "core_concept": {
-        "en": "Confidence creates creator presence.",
-        "fr": "La confiance crée la présence du créateur.",
-        "ar": "الثقة تخلق حضور صانع المحتوى."
+        "en": "The algorithm is not your enemy. It is a machine that rewards content humans love. Feed it correctly and it becomes your most powerful free distribution tool.",
+        "fr": "L'algorithme n'est pas votre ennemi. C'est une machine qui récompense le contenu que les humains aiment. Nourrissez-le correctement et il devient votre outil de distribution gratuit le plus puissant.",
+        "ar": "الخوارزمية ليست عدوّك. إنها آلة تكافئ المحتوى الذي يحبه البشر. أطعمها بشكل صحيح وستصبح أقوى أداة توزيع مجانية لديك."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Creators who constantly copy others lose identity and authority.",
-          "fr": "Les créateurs qui copient constamment les autres perdent identité et autorité.",
-          "ar": "صناع المحتوى الذين يقلدون الآخرين باستمرار يفقدون الهوية والسلطة."
+          "en": "Every major platform (Instagram, TikTok, YouTube) runs on a recommendation algorithm that asks one core question: 'Does this content make users stay on our platform longer?' If yes, it distributes it. If no, it suppresses it. Your entire strategy must answer that question before posting anything.",
+          "fr": "Chaque grande plateforme fonctionne avec un algorithme de recommandation qui pose une question centrale : 'Ce contenu fait-il rester les utilisateurs plus longtemps sur notre plateforme ?' Si oui, il le distribue. Sinon, il le supprime. Votre stratégie entière doit répondre à cette question avant de publier quoi que ce soit.",
+          "ar": "تعمل كل منصة كبرى بخوارزمية توصية تطرح سؤالاً جوهرياً واحداً: 'هل يجعل هذا المحتوى المستخدمين يبقون على منصتنا لفترة أطول؟' إذا كانت الإجابة نعم، توزّعه. إذا كانت لا، تُخفيه. يجب أن تجيب استراتيجيتك بأكملها على هذا السؤال قبل نشر أي شيء."
         },
         "why_it_matters": {
-          "en": "Unique identity builds recognition and trust.",
-          "fr": "Une identité unique construit la reconnaissance et la confiance.",
-          "ar": "الهوية الفريدة تبني التمييز والثقة."
+          "en": "The same piece of content posted at the wrong time, at the wrong frequency, or with wrong engagement patterns can underperform by 400% compared to an identical post done correctly.",
+          "fr": "Le même contenu publié au mauvais moment, à la mauvaise fréquence ou avec de mauvais schémas d'engagement peut sous-performer de 400 % par rapport à un post identique bien exécuté.",
+          "ar": "نفس المحتوى المنشور في الوقت الخاطئ، بالتكرار الخاطئ، أو بأنماط تفاعل خاطئة قد يكون أداؤه أضعف بنسبة 400٪ مقارنةً بمنشور مطابق منفَّذ بشكل صحيح."
         },
         "internet_truth": {
-          "en": "The internet rewards creators who feel authentic and confident.",
-          "fr": "Internet récompense les créateurs qui semblent authentiques et confiants.",
-          "ar": "الإنترنت يكافئ صناع المحتوى الذين يبدون أصليين وواثقين."
+          "en": "The algorithm watches how your audience reacts in the first 60 minutes. That window determines if it stays local or goes global.",
+          "fr": "L'algorithme observe la réaction de votre audience dans les 60 premières minutes. Cette fenêtre détermine si ça reste local ou devient mondial.",
+          "ar": "تراقب الخوارزمية رد فعل جمهورك خلال أول 60 دقيقة. تلك النافذة تحدد ما إذا كان يبقى محلياً أم يصبح عالمياً."
         }
       },
-      "psychology": [
-        { "en": "Confidence attracts attention", "fr": "La confiance attire l'attention", "ar": "الثقة تجذب الانتباه" },
-        { "en": "Authenticity increases trust", "fr": "L'authenticité augmente la confiance", "ar": "الأصالة تزيد الثقة" },
-        { "en": "Unique creators feel memorable", "fr": "Les créateurs uniques sont mémorables", "ar": "صناع المحتوى الفريدون لا يُنسون" }
-      ],
-      "real_examples": [
-        { "en": "Strong creator voice increases authority", "fr": "La voix forte du créateur augmente l'autorité", "ar": "صوت صانع المحتوى القوي يزيد السلطة" },
-        { "en": "Unique visual style improves memorability", "fr": "Un style visuel unique améliore la mémorisation", "ar": "النمط البصري الفريد يحسن التذكر" }
-      ],
-      "common_mistakes": [
-        { "en": "Copying bigger creators", "fr": "Copier de plus grands créateurs", "ar": "تقليد صناع المحتوى الأكبر" },
-        { "en": "Fear of posting", "fr": "Peur de publier", "ar": "الخوف من النشر" },
-        { "en": "No creator personality", "fr": "Pas de personnalité de créateur", "ar": "لا توجد شخصية لصانع المحتوى" }
-      ],
-      "missions": [
-        { "en": "Define unique creator style", "fr": "Définir un style de créateur unique", "ar": "تحديد أسلوب فريد لصانع المحتوى" },
-        { "en": "Build creator confidence", "fr": "Renforcer la confiance du créateur", "ar": "بناء ثقة صانع المحتوى" },
-        { "en": "Practice confident communication", "fr": "Pratiquer une communication confiante", "ar": "التدرب على التواصل الواثق" }
-      ],
+      "psychology": {
+        "en": [
+          "The Golden Hour: Replying to every comment within the first 60 minutes after posting signals high engagement velocity to the algorithm.",
+          "Posting Frequency Trap: Posting 7 times a week with low engagement hurts more than posting 3 times with high engagement.",
+          "Cross-Distribution: Sharing a Reel to Stories the moment it's posted generates an immediate spike of views from your existing audience.",
+          "Save Rate Priority: Instagram's algorithm currently prioritizes saves and shares over likes and comments. Design content to be saved."
+        ],
+        "fr": [
+          "L'Heure d'Or : Répondre à chaque commentaire dans les 60 premières minutes signale une vélocité d'engagement élevée.",
+          "Le Piège de la Fréquence : Publier 7 fois par semaine avec peu d'engagement nuit plus que 3 fois avec un engagement élevé.",
+          "Distribution Croisée : Partager un Reel en Story au moment de sa publication génère un pic immédiat de vues.",
+          "Priorité au Taux de Sauvegarde : L'algorithme d'Instagram priorise actuellement les sauvegardes et partages sur les likes."
+        ],
+        "ar": [
+          "الساعة الذهبية: الرد على كل تعليق في أول 60 دقيقة يُشير لسرعة تفاعل عالية للخوارزمية.",
+          "فخ تكرار النشر: النشر 7 مرات أسبوعياً بتفاعل منخفض يضر أكثر من النشر 3 مرات بتفاعل عالٍ.",
+          "التوزيع المتقاطع: مشاركة الريلز في القصص لحظة نشره يُنشئ ارتفاعاً فورياً في المشاهدات.",
+          "أولوية معدل الحفظ: تُعطي خوارزمية إنستغرام حالياً الأولوية للحفظ والمشاركة على الإعجابات."
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "An account posting 3x per week at peak hours (7-9am or 6-9pm local time) with a 60-minute engagement sprint consistently outgrows an account posting daily with no engagement strategy.",
+          "A content creator who asks a question in the caption and replies to every early comment can see 3x the reach of an identical post with zero engagement."
+        ],
+        "fr": [
+          "Un compte publiant 3x/semaine aux heures de pointe (7-9h ou 18-21h) avec un sprint d'engagement de 60 minutes dépasse constamment un compte publiant quotidiennement sans stratégie.",
+          "Un créateur qui pose une question en légende et répond à chaque commentaire précoce peut voir 3x la portée d'un post identique sans engagement."
+        ],
+        "ar": [
+          "حساب ينشر 3 مرات أسبوعياً في أوقات الذروة (7-9 صباحاً أو 6-9 مساءً بالتوقيت المحلي) مع سبرينت تفاعل لـ60 دقيقة يتفوق باستمرار على حساب ينشر يومياً بدون استراتيجية.",
+          "مُنشئ محتوى يطرح سؤالاً في التعليق ويرد على كل تعليق مبكر يمكنه رؤية وصول أعلى بـ3 أضعاف من منشور مطابق بدون تفاعل."
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Posting at random times based on personal convenience, not audience behavior data",
+          "Going silent after posting — missing the critical 60-minute engagement window",
+          "Deleting and reposting a post that did not perform well (this permanently signals poor content to the algorithm)"
+        ],
+        "fr": [
+          "Publier à des heures aléatoires selon votre convenance, pas selon les données de comportement de l'audience",
+          "Rester silencieux après la publication — manquant la fenêtre d'engagement critique de 60 minutes",
+          "Supprimer et republier un post qui n'a pas bien performé (cela signale définitivement un mauvais contenu à l'algorithme)"
+        ],
+        "ar": [
+          "النشر في أوقات عشوائية بناءً على الراحة الشخصية، وليس بيانات سلوك الجمهور",
+          "الصمت بعد النشر — تفويت نافذة التفاعل الحرجة للـ60 دقيقة",
+          "حذف وإعادة نشر منشور ضعيف الأداء (هذا يُشير بشكل دائم لمحتوى سيئ للخوارزمية)"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Go to your Instagram/TikTok insights and find the exact days and hours your audience is most active",
+          "Set a 60-minute timer after your next post and actively reply to every single comment during that window",
+          "Plan your next 2 weeks of content: batch-create on Sunday, schedule with Meta Business Suite or Later.com"
+        ],
+        "fr": [
+          "Allez dans vos statistiques et trouvez les jours et heures exacts où votre audience est la plus active",
+          "Programmez une minuterie de 60 minutes après votre prochain post et répondez activement à chaque commentaire",
+          "Planifiez vos 2 prochaines semaines de contenu : créez en lot le dimanche, programmez avec Meta Business Suite ou Later.com"
+        ],
+        "ar": [
+          "اذهب إلى تحليلاتك وابحث عن الأيام والساعات التي يكون فيها جمهورك أكثر نشاطاً",
+          "اضبط مؤقتاً لـ60 دقيقة بعد منشورك التالي ورد بنشاط على كل تعليق خلال تلك النافذة",
+          "خطط لأسبوعين قادمين من المحتوى: أنشئ دفعة واحدة يوم الأحد، وجدوِل عبر Meta Business Suite أو Later.com"
+        ]
+      },
       "real_business_task": {
-        "industry": { "en": "Clothing Brand", "fr": "Marque de Vêtements", "ar": "علامة ملابس" },
-        "task": { "en": "Build strong online identity for fashion page", "fr": "Bâtir une forte identité en ligne pour une page mode", "ar": "بناء هوية قوية على الإنترنت لصفحة أزياء" },
-        "darija": "Bni chakhsiya m9wda l'marque dyal l'hwayj f l'internet."
+        "industry": {
+          "en": "Moroccan E-Commerce Fashion Store",
+          "fr": "Boutique de Mode E-Commerce Marocaine",
+          "ar": "متجر أزياء مغربي إلكتروني"
+        },
+        "task": {
+          "en": "Build a 7-day algorithmic posting plan for this store during Ramadan season. Specify the content type, posting time, and the 60-minute engagement action for each day.",
+          "fr": "Construisez un plan de publication algorithmique sur 7 jours pour cette boutique pendant la saison du Ramadan. Précisez le type de contenu, l'heure de publication et l'action d'engagement de 60 minutes pour chaque jour.",
+          "ar": "ابنِ خطة نشر خوارزمية لمدة 7 أيام لهذا المتجر خلال موسم رمضان. حدد نوع المحتوى، ووقت النشر، وإجراء التفاعل لـ60 دقيقة لكل يوم."
+        }
       },
-      "pro_secrets": [
-        { "en": "Confidence changes audience perception instantly", "fr": "La confiance change instantanément la perception du public", "ar": "الثقة تغير نظرة الجمهور فوراً" },
-        { "en": "Original creators build stronger communities", "fr": "Les créateurs originaux bâtissent des communautés plus fortes", "ar": "صناع المحتوى الأصليون يبنون مجتمعات أقوى" }
-      ],
+      "pro_secrets": {
+        "en": [
+          "Never post and ghost. The algorithm's velocity score is calculated in the first hour. Be present, respond, and like comments immediately.",
+          "Carousel posts on Instagram have the highest average reach of any static format because users swipe multiple times, signaling strong engagement."
+        ],
+        "fr": [
+          "Ne publiez jamais et ne disparaissez pas. Le score de vélocité de l'algorithme est calculé dans la première heure. Soyez présent, répondez et aimez les commentaires immédiatement.",
+          "Les posts carrousel sur Instagram ont la portée moyenne la plus élevée de tous les formats statiques car les utilisateurs balayent plusieurs fois."
+        ],
+        "ar": [
+          "لا تنشر وتختفي أبداً. يُحسب مؤشر السرعة للخوارزمية في الساعة الأولى. كن حاضراً، ورد، وأعجب بالتعليقات فوراً.",
+          "منشورات الكاروسيل على إنستغرام لها أعلى متوسط وصول من أي شكل ثابت لأن المستخدمين يتمررون عدة مرات."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Build unforgettable creator personality", "fr": "Construire une personnalité de créateur inoubliable", "ar": "بناء شخصية صانع محتوى لا تُنسى" },
-        "reward_xp": 150
+        "task": {
+          "en": "You post a video at 2am and it gets zero views in the first hour. Explain exactly what went wrong algorithmically and write a step-by-step recovery plan without deleting the post.",
+          "fr": "Vous publiez une vidéo à 2h du matin et elle obtient zéro vue dans la première heure. Expliquez exactement ce qui s'est mal passé algorithmiquement et écrivez un plan de récupération sans supprimer le post.",
+          "ar": "نشرت فيديو الساعة 2 صباحاً ولم يحصل على أي مشاهدة في الساعة الأولى. اشرح بالضبط ما الخطأ الذي حدث خوارزمياً واكتب خطة استرداد خطوة بخطوة دون حذف المنشور."
+        },
+        "reward_xp": 90
       },
-      "ai_feedback_examples": [
-        { "en": "You're still hiding your personality 😭", "fr": "Tu caches encore ta personnalité 😭", "ar": "أنت لا تزال تخفي شخصيتك 😭" },
-        { "en": "THIS energy feels authentic 💣", "fr": "CETTE énergie semble authentique 💣", "ar": "هذه الطاقة تبدو أصلية 💣" },
-        { "en": "Now you feel like a real creator 🔥", "fr": "Maintenant tu as l'air d'un vrai créateur 🔥", "ar": "الآن تبدو كصانع محتوى حقيقي 🔥" }
-      ]
+      "ai_feedback_examples": {
+        "en": [
+          "You posted at midnight, replied to no one, and then asked 'why no views?' Classic algorithm mistake. 😭",
+          "Precise. You identified the timing error, executed a 60-minute comment sprint at the right hour, and turned a dead post into a top performer. 🔥"
+        ],
+        "fr": [
+          "Vous avez posté à minuit, n'avez répondu à personne, puis vous avez demandé 'pourquoi pas de vues ?'. Erreur algorithmique classique. 😭",
+          "Précis. Vous avez identifié l'erreur de timing, exécuté un sprint de commentaires de 60 minutes à la bonne heure et transformé un post mort en top performer. 🔥"
+        ],
+        "ar": [
+          "نشرت منتصف الليل، ولم ترد على أحد، ثم سألت 'لماذا لا توجد مشاهدات؟'. خطأ خوارزمي كلاسيكي. 😭",
+          "دقيق. حددت خطأ التوقيت، ونفّذت سبرينت تعليقات لـ60 دقيقة في الوقت الصحيح، وحوّلت منشوراً ميتاً إلى أعلى أداء. 🔥"
+        ]
+      }
     },
     {
       "id": 20,
       "title": {
-        "en": "FINAL CREATOR GROWTH SIMULATION",
-        "fr": "SIMULATION FINALE DE CROISSANCE DU CRÉATEUR",
-        "ar": "محاكاة نمو صانع المحتوى النهائية"
+        "en": "PHASE 2 GRAND FINALE: The Complete Content Machine",
+        "fr": "GRANDE FINALE PHASE 2 : La Machine à Contenu Complète",
+        "ar": "النهاية الكبرى للمرحلة 2: آلة المحتوى الكاملة"
       },
       "xp": 500,
       "core_concept": {
-        "en": "Real creators combine psychology, strategy and identity together.",
-        "fr": "Les vrais créateurs combinent psychologie, stratégie et identité.",
-        "ar": "المبدعون الحقيقيون يجمعون بين علم النفس والاستراتيجية والهوية."
+        "en": "A content machine is not one viral post. It is a repeatable system that produces scroll-stopping content on demand, every single week.",
+        "fr": "Une machine à contenu n'est pas un post viral. C'est un système reproductible qui produit du contenu arrêtant le défilement à la demande, chaque semaine.",
+        "ar": "آلة المحتوى ليست منشوراً فيروسياً واحداً. إنها نظام قابل للتكرار يُنتج محتوى موقفاً للتصفح عند الطلب، كل أسبوع."
       },
       "deep_explanation": {
         "summary": {
-          "en": "This final simulation tests if the user can think like a real creator brand.",
-          "fr": "Cette simulation finale teste si l'utilisateur pense comme une vraie marque de créateur.",
-          "ar": "هذه المحاكاة النهائية تختبر ما إذا كان المستخدم يفكر كعلامة تجارية حقيقية لصانع المحتوى."
+          "en": "This Grand Finale challenges you to integrate everything from Phase 2 into one unified content machine for a real business. You must combine: the 3-second hook engineering, viral psychology triggers, micro-storytelling structure, PAS caption writing, visual design rules, invisible CTAs, trend adaptation, and algorithmic posting strategy — all in one complete campaign brief.",
+          "fr": "Cette Grande Finale vous défie d'intégrer tout ce qui concerne la Phase 2 dans une machine à contenu unifiée pour une vraie entreprise. Vous devez combiner : l'ingénierie d'accroche de 3 secondes, les déclencheurs psychologiques viraux, la structure de micro-storytelling, la rédaction PAS, les règles de design visuel, les CTA invisibles, l'adaptation des tendances et la stratégie de publication algorithmique.",
+          "ar": "تتحداك هذه النهاية الكبرى لدمج كل شيء من المرحلة 2 في آلة محتوى موحدة لمشروع حقيقي. يجب أن تجمع: هندسة خطاف الـ3 ثوانٍ، ومحفزات علم النفس الفيروسي، وهيكل السرد القصصي المصغر، وكتابة تعليقات PAS، وقواعد التصميم البصري، والدعوات غير المرئية، وتكييف الترند، واستراتيجية النشر الخوارزمي — كل ذلك في موجز حملة واحد متكامل."
         },
         "why_it_matters": {
-          "en": "The internet rewards creators who understand human psychology deeply.",
-          "fr": "Internet récompense les créateurs qui comprennent profondément la psychologie humaine.",
-          "ar": "الإنترنت يكافئ صناع المحتوى الذين يفهمون علم النفس البشري بعمق."
+          "en": "Any single skill from Phase 2 used alone produces mediocre results. Combined as a system, these skills become a content machine that generates consistent growth without paid ads.",
+          "fr": "N'importe quelle compétence isolée de la Phase 2 produit des résultats médiocres. Combinées en système, ces compétences deviennent une machine à contenu qui génère une croissance constante sans publicités payantes.",
+          "ar": "أي مهارة منفردة من المرحلة 2 تُنتج نتائج متوسطة. مجتمعةً كنظام، تصبح هذه المهارات آلة محتوى تُولّد نمواً ثابتاً دون إعلانات مدفوعة."
         },
         "internet_truth": {
-          "en": "Successful creators engineer emotional experiences online.",
-          "fr": "Les créateurs à succès conçoivent des expériences émotionnelles en ligne.",
-          "ar": "صناع المحتوى الناجحون يهندسون تجارب عاطفية على الإنترنت."
+          "en": "Creators who think in systems grow. Creators who think in individual posts struggle.",
+          "fr": "Les créateurs qui pensent en systèmes grandissent. Les créateurs qui pensent en posts individuels peinent.",
+          "ar": "صُنّاع المحتوى الذين يفكرون بأنظمة ينمون. أولئك الذين يفكرون في منشورات فردية يكافحون."
         }
       },
-      "psychology": [
-        { "en": "Trust increases loyalty", "fr": "La confiance augmente la fidélité", "ar": "الثقة تزيد الولاء" },
-        { "en": "Identity increases memorability", "fr": "L'identité augmente la mémorisation", "ar": "الهوية تزيد من التذكر" },
-        { "en": "Emotion drives audience behavior", "fr": "L'émotion motive le comportement du public", "ar": "العاطفة تحرك سلوك الجمهور" }
-      ],
-      "real_examples": [
-        { "en": "Professional creator pages build authority instantly", "fr": "Les pages de créateurs professionnels bâtissent l'autorité instantanément", "ar": "صفحات صناع المحتوى الاحترافية تبني السلطة فوراً" },
-        { "en": "Community-driven creators grow faster", "fr": "Les créateurs axés sur la communauté grandissent plus vite", "ar": "صناع المحتوى الذين يركزون على المجتمع ينمون أسرع" }
-      ],
-      "common_mistakes": [
-        { "en": "No strategy", "fr": "Aucune stratégie", "ar": "لا توجد استراتيجية" },
-        { "en": "No emotional connection", "fr": "Aucune connexion émotionnelle", "ar": "لا يوجد اتصال عاطفي" },
-        { "en": "Weak creator identity", "fr": "Identité de créateur faible", "ar": "هوية صانع محتوى ضعيفة" }
-      ],
-      "missions": [
-        { "en": "Optimize creator profile", "fr": "Optimiser le profil du créateur", "ar": "تحسين بروفايل صانع المحتوى" },
-        { "en": "Build growth strategy", "fr": "Construire une stratégie de croissance", "ar": "بناء استراتيجية نمو" },
-        { "en": "Create emotional content plan", "fr": "Créer un plan de contenu émotionnel", "ar": "إنشاء خطة محتوى عاطفية" },
-        { "en": "Improve audience trust", "fr": "Améliorer la confiance du public", "ar": "تحسين ثقة الجمهور" }
-      ],
-      "real_business_task": {
-        "industry": { "en": "Local Business", "fr": "Entreprise Locale", "ar": "مشروع محلي" },
-        "task": { "en": "Build complete creator growth strategy for local brand", "fr": "Bâtir une stratégie complète de croissance pour une marque locale", "ar": "بناء استراتيجية نمو كاملة لصانع محتوى لعلامة تجارية محلية" },
-        "darija": "T9add strategy kamla dyal croissance l'chi projet f l'Maroc."
+      "simulation_systems": {
+        "en": [
+          "Hook Engineering (3-second visual + text)",
+          "Viral Psychology Trigger Selection",
+          "60-Second Story Architecture",
+          "PAS Caption Copywriting",
+          "Thumbnail & Visual Design Brief",
+          "Frictionless CTA Integration",
+          "Trend Adaptation Framework",
+          "Algorithmic Posting Schedule"
+        ],
+        "fr": [
+          "Ingénierie d'Accroche (visuel + texte 3 secondes)",
+          "Sélection de Déclencheur Psychologique Viral",
+          "Architecture d'Histoire de 60 Secondes",
+          "Rédaction de Légende PAS",
+          "Brief de Design Visuel & Miniature",
+          "Intégration de CTA Sans Friction",
+          "Cadre d'Adaptation des Tendances",
+          "Calendrier de Publication Algorithmique"
+        ],
+        "ar": [
+          "هندسة الخطاف (بصري + نص لـ3 ثوانٍ)",
+          "اختيار المحفز النفسي الفيروسي",
+          "بنية قصة 60 ثانية",
+          "كتابة تعليق PAS",
+          "موجز التصميم البصري والصورة المصغرة",
+          "دمج الدعوة السلسة",
+          "إطار تكييف الترند",
+          "جدول النشر الخوارزمي"
+        ]
       },
-      "pro_secrets": [
-        { "en": "Identity + trust + consistency creates domination", "fr": "Identité + confiance + régularité crée la domination", "ar": "الهوية + الثقة + الاستمرارية تصنع السيطرة" },
-        { "en": "Communities scale stronger than audiences", "fr": "Les communautés se développent plus fortement que les publics", "ar": "المجتمعات تتوسع بقوة أكبر من الجماهير العادية" }
-      ],
+      "final_missions": {
+        "en": [
+          "Write a 3-second hook (text + visual description) designed to stop your exact target audience",
+          "Build a 60-second video script using the Hero's Journey structure",
+          "Write the full PAS caption for the video (minimum 100 words with line breaks)",
+          "Describe the thumbnail design: colors, face expression, text placement",
+          "Define the CTA using the Value Exchange technique",
+          "Identify a current trend you can ride and explain your unique spin on it",
+          "Schedule the post: exact day, time, and 60-minute engagement plan"
+        ],
+        "fr": [
+          "Rédigez une accroche de 3 secondes (texte + description visuelle) conçue pour arrêter votre audience cible exacte",
+          "Construisez un script de 60 secondes en utilisant la structure du Voyage du Héros",
+          "Rédigez la légende PAS complète (minimum 100 mots avec sauts de ligne)",
+          "Décrivez le design de la miniature : couleurs, expression du visage, placement du texte",
+          "Définissez le CTA en utilisant la technique de l'Échange de Valeur",
+          "Identifiez une tendance actuelle et expliquez votre propre façon de l'adapter",
+          "Programmez le post : jour exact, heure et plan d'engagement de 60 minutes"
+        ],
+        "ar": [
+          "اكتب خطافاً من 3 ثوانٍ (نص + وصف بصري) مصمم لإيقاف جمهورك المستهدف بالضبط",
+          "ابنِ نصاً مدته 60 ثانية باستخدام هيكل رحلة البطل",
+          "اكتب تعليق PAS الكامل للفيديو (100 كلمة على الأقل مع فواصل أسطر)",
+          "صف تصميم الصورة المصغرة: الألوان، تعبير الوجه، مكان النص",
+          "حدد الدعوة باستخدام تقنية تبادل القيمة",
+          "حدد ترنداً حالياً يمكنك ركوبه واشرح لمستك الفريدة عليه",
+          "جدوِل المنشور: اليوم والوقت المحددان وخطة التفاعل لـ60 دقيقة"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Your Own Business or Current Project (any industry)",
+          "fr": "Votre Propre Entreprise ou Projet Actuel (tout secteur)",
+          "ar": "مشروعك الخاص أو مشروعك الحالي (أي مجال)"
+        },
+        "task": {
+          "en": "Deliver the complete Content Machine Blueprint: one fully engineered piece of content from zero to scheduled, covering every system from Phase 2.",
+          "fr": "Livrez le Plan Complet de la Machine à Contenu : un contenu entièrement conçu de zéro à programmé, couvrant chaque système de la Phase 2.",
+          "ar": "سلّم المخطط الكامل لآلة المحتوى: قطعة محتوى مُهندَسة بالكامل من الصفر حتى الجدولة، تغطي كل نظام من المرحلة 2."
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "The best creators build templates, not individual posts. Once your content machine is built once, creating the next piece takes 30 minutes instead of 3 hours.",
+          "Document your top 5 performing post formats and rotate them. Novelty of topic + reliability of format = consistent growth."
+        ],
+        "fr": [
+          "Les meilleurs créateurs construisent des modèles, pas des posts individuels. Une fois votre machine à contenu construite, créer la pièce suivante prend 30 minutes au lieu de 3 heures.",
+          "Documentez vos 5 meilleurs formats de posts performants et faites-les tourner. Nouveauté du sujet + fiabilité du format = croissance constante."
+        ],
+        "ar": [
+          "أفضل صُنّاع المحتوى يبنون قوالب، وليس منشورات فردية. بمجرد بناء آلة محتواك مرة واحدة، إنشاء القطعة التالية يستغرق 30 دقيقة بدلاً من 3 ساعات.",
+          "وثّق أفضل 5 تنسيقات منشورات أداءً وقم بتدويرها. حداثة الموضوع + موثوقية التنسيق = نمو مستمر."
+        ]
+      },
       "challenge_mode": {
-        "task": { "en": "Build complete creator brand system from scratch", "fr": "Construisez un système complet de marque de créateur de zéro", "ar": "ابنِ نظاماً كاملاً لعلامة صانع المحتوى من الصفر" },
+        "type": "content_machine_blueprint",
+        "instruction": {
+          "en": "Submit your complete Content Machine Blueprint document covering all 7 systems. The AI evaluator will score you on hook strength, story structure, caption quality, visual design clarity, CTA effectiveness, trend relevance, and algorithmic intelligence.",
+          "fr": "Soumettez votre document complet de Plan de Machine à Contenu couvrant les 7 systèmes. L'évaluateur IA vous notera sur la force de l'accroche, la structure narrative, la qualité de la légende, la clarté du design visuel, l'efficacité du CTA, la pertinence des tendances et l'intelligence algorithmique.",
+          "ar": "أرسل وثيقة مخطط آلة المحتوى الكاملة التي تغطي جميع الأنظمة السبعة. سيقيّمك المقيّم الذكي على قوة الخطاف، وبنية القصة، وجودة التعليق، ووضوح التصميم البصري، وفاعلية الدعوة، وصلة الترند، والذكاء الخوارزمي."
+        },
         "reward_xp": 250
       },
-      "ai_feedback_examples": [
-        { "en": "You finally think like a real creator 💣", "fr": "Tu penses enfin comme un vrai créateur 💣", "ar": "أنت أخيراً تفكر كصانع محتوى حقيقي 💣" },
-        { "en": "THIS brand feels powerful 🔥", "fr": "CETTE marque semble puissante 🔥", "ar": "هذه العلامة تبدو قوية 🔥" },
-        { "en": "Your online identity now feels unforgettable 😳", "fr": "Ton identité en ligne semble maintenant inoubliable 😳", "ar": "هويتك على الإنترنت تبدو الآن لا تُنسى 😳" }
-      ]
+      "final_result": {
+        "title": {
+          "en": "Content Machine Builder Certified 🏭",
+          "fr": "Constructeur de Machine à Contenu Certifié 🏭",
+          "ar": "بناء آلة المحتوى معتمد 🏭"
+        },
+        "level": {
+          "en": "Intermediate Content Strategist",
+          "fr": "Stratège de Contenu Intermédiaire",
+          "ar": "استراتيجي محتوى متوسط المستوى"
+        },
+        "unlocks": {
+          "en": "Phase 3: Monetization & Growth Systems",
+          "fr": "Phase 3 : Monétisation & Systèmes de Croissance",
+          "ar": "المرحلة 3: تحقيق الدخل وأنظمة النمو"
+        }
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Hook is weak, caption is a wall of text, no CTA, posted at 3am. This content machine has no engine. 😭",
+          "Surgical precision. Every system is connected. The hook creates curiosity, the story builds trust, the CTA converts — and the algorithmic timing ensures maximum reach. This is how professionals operate. 💣🔥"
+        ],
+        "fr": [
+          "Accroche faible, légende en mur de texte, pas de CTA, publié à 3h du matin. Cette machine à contenu n'a pas de moteur. 😭",
+          "Précision chirurgicale. Chaque système est connecté. L'accroche crée la curiosité, l'histoire construit la confiance, le CTA convertit — et le timing algorithmique assure une portée maximale. C'est ainsi que travaillent les professionnels. 💣🔥"
+        ],
+        "ar": [
+          "خطاف ضعيف، التعليق جدار نصي، لا دعوة، نُشر الساعة 3 صباحاً. آلة المحتوى هذه ليس لها محرك. 😭",
+          "دقة جراحية. كل نظام مرتبط. الخطاف يخلق الفضول، القصة تبني الثقة، الدعوة تُحوّل — والتوقيت الخوارزمي يضمن أقصى وصول. هكذا يعمل المحترفون. 💣🔥"
+        
+]
+      }
     }
   ]
 }
