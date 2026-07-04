@@ -1,1 +1,1500 @@
-[]
+{
+  "phase": 3,
+  "title": {
+    "en": "Platform Growth & Algorithms",
+    "fr": "Croissance des Plateformes & Algorithmes",
+    "ar": "نمو المنصات والخوارزميات"
+  },
+  "description": {
+    "en": "Understand how algorithms actually decide what to show, and use that knowledge to grow faster on any platform.",
+    "fr": "Comprenez comment les algorithmes décident réellement quoi montrer, et utilisez cette connaissance pour croître plus vite sur n'importe quelle plateforme.",
+    "ar": "افهم كيف تقرر الخوارزميات فعلياً ما تعرضه، واستخدم هذه المعرفة للنمو بشكل أسرع على أي منصة."
+  },
+  "system_level": "Intermediate",
+  "estimated_time_per_lesson": "20-35 minutes",
+  "lesson_structure": {
+    "contains": {
+      "en": [
+        "Core concept",
+        "Deep explanation",
+        "Psychology",
+        "Real examples",
+        "Mistakes",
+        "AI analysis",
+        "Missions",
+        "Challenge mode",
+        "Pro secrets",
+        "Business applications"
+      ],
+      "fr": [
+        "Concept central",
+        "Explication approfondie",
+        "Psychologie",
+        "Exemples réels",
+        "Erreurs",
+        "Analyse IA",
+        "Missions",
+        "Mode défi",
+        "Secrets pro",
+        "Applications business"
+      ],
+      "ar": [
+        "المفهوم الأساسي",
+        "الشرح المعمّق",
+        "علم النفس",
+        "أمثلة حقيقية",
+        "الأخطاء",
+        "تحليل الذكاء الاصطناعي",
+        "المهام",
+        "وضع التحدي",
+        "أسرار المحترفين",
+        "تطبيقات الأعمال"
+      ]
+    }
+  },
+  "lessons": [
+    {
+      "id": 1,
+      "title": {
+        "en": "How Algorithms Actually Think",
+        "fr": "Comment les Algorithmes Pensent Vraiment",
+        "ar": "كيف تفكر الخوارزميات فعلياً"
+      },
+      "xp": 130,
+      "core_concept": {
+        "en": "The algorithm is not your enemy — it's a machine trying to keep people scrolling.",
+        "fr": "L'algorithme n'est pas votre ennemi — c'est une machine qui essaie de garder les gens en train de défiler.",
+        "ar": "الخوارزمية ليست عدوك — إنها آلة تحاول إبقاء الناس يتصفحون."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Every platform's algorithm has one job: keep users on the app as long as possible. It tests your content on a small group first, then decides whether to push it further based on how people react.",
+          "fr": "L'algorithme de chaque plateforme a un seul travail : garder les utilisateurs sur l'app le plus longtemps possible. Il teste votre contenu sur un petit groupe d'abord, puis décide de le pousser plus loin selon les réactions.",
+          "ar": "خوارزمية كل منصة لديها مهمة واحدة: إبقاء المستخدمين على التطبيق أطول فترة ممكنة. تختبر محتواك على مجموعة صغيرة أولاً، ثم تقرر دفعه أبعد بناءً على ردود الفعل."
+        },
+        "why_it_matters": {
+          "en": "If you understand what the algorithm measures, you can create content designed to pass its first test.",
+          "fr": "Si vous comprenez ce que l'algorithme mesure, vous pouvez créer du contenu conçu pour passer son premier test.",
+          "ar": "إذا فهمت ما تقيسه الخوارزمية، يمكنك إنشاء محتوى مصمم لاجتياز اختبارها الأول."
+        },
+        "internet_truth": {
+          "en": "The algorithm doesn't care about your effort — it only cares about behavior it can measure.",
+          "fr": "L'algorithme se moque de vos efforts — il ne se soucie que du comportement qu'il peut mesurer.",
+          "ar": "الخوارزمية لا تهتم بجهدك — تهتم فقط بالسلوك الذي يمكنها قياسه."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Watch time signals value more than likes",
+          "Early engagement in the first hour predicts wider distribution",
+          "Completion rate matters more than total views"
+        ],
+        "fr": [
+          "Le temps de visionnage signale plus de valeur que les likes",
+          "L'engagement précoce dans la première heure prédit une distribution plus large",
+          "Le taux de complétion compte plus que le total de vues"
+        ],
+        "ar": [
+          "وقت المشاهدة يدل على قيمة أكبر من الإعجابات",
+          "التفاعل المبكر في الساعة الأولى يتنبأ بانتشار أوسع",
+          "معدل الإكمال أهم من إجمالي المشاهدات"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A reel watched to the end by 80% of viewers gets pushed to a wider audience",
+          "A post with slow early engagement rarely recovers, even if it's high quality"
+        ],
+        "fr": [
+          "Un reel regardé jusqu'à la fin par 80% des spectateurs est poussé vers une audience plus large",
+          "Un post avec un engagement précoce lent se rétablit rarement, même s'il est de haute qualité"
+        ],
+        "ar": [
+          "ريلز يشاهده 80% من المشاهدين حتى النهاية يُدفع لجمهور أوسع",
+          "منشور بتفاعل مبكر بطيء نادراً ما يتعافى، حتى لو كان عالي الجودة"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Blaming 'the algorithm is broken' instead of analyzing the content",
+          "Posting at random times with no regard for audience activity",
+          "Ignoring completion/retention rate entirely"
+        ],
+        "fr": [
+          "Blâmer 'l'algorithme est cassé' au lieu d'analyser le contenu",
+          "Publier à des heures aléatoires sans tenir compte de l'activité de l'audience",
+          "Ignorer complètement le taux de complétion/rétention"
+        ],
+        "ar": [
+          "إلقاء اللوم على 'الخوارزمية معطلة' بدلاً من تحليل المحتوى",
+          "النشر في أوقات عشوائية دون مراعاة نشاط الجمهور",
+          "تجاهل معدل الإكمال/المشاهدة تماماً"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Check your last 5 posts' completion rates",
+          "Identify the post with the best early engagement and study why",
+          "Test posting at a new time this week"
+        ],
+        "fr": [
+          "Vérifiez les taux de complétion de vos 5 derniers posts",
+          "Identifiez le post avec le meilleur engagement précoce et étudiez pourquoi",
+          "Testez une publication à une nouvelle heure cette semaine"
+        ],
+        "ar": [
+          "تحقق من معدلات إكمال آخر 5 منشورات لك",
+          "حدد المنشور بأفضل تفاعل مبكر وادرس السبب",
+          "جرب النشر في وقت جديد هذا الأسبوع"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Restaurant page with inconsistent reach",
+          "fr": "Page de restaurant avec une portée incohérente",
+          "ar": "صفحة مطعم بوصول غير منتظم"
+        },
+        "task": {
+          "en": "Diagnose why reach is inconsistent using completion rate data",
+          "fr": "Diagnostiquez pourquoi la portée est incohérente en utilisant les données de taux de complétion",
+          "ar": "شخّص سبب عدم انتظام الوصول باستخدام بيانات معدل الإكمال"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "The first 30 minutes after posting matter more than the next 30 days",
+          "Algorithms change, but 'keep people watching longer' never does"
+        ],
+        "fr": [
+          "Les 30 premières minutes après publication comptent plus que les 30 jours suivants",
+          "Les algorithmes changent, mais 'garder les gens à regarder plus longtemps' ne change jamais"
+        ],
+        "ar": [
+          "أول 30 دقيقة بعد النشر أهم من الـ30 يوماً التالية",
+          "الخوارزميات تتغير، لكن 'إبقاء الناس يشاهدون أطول' لا يتغير أبداً"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Explain to a client why their view count is high but sales are zero, using algorithm logic",
+          "fr": "Expliquez à un client pourquoi son nombre de vues est élevé mais les ventes sont nulles, en utilisant la logique de l'algorithme",
+          "ar": "اشرح لعميل لماذا عدد مشاهداته مرتفع لكن مبيعاته صفر، باستخدام منطق الخوارزمية"
+        },
+        "reward_xp": 60
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "You're blaming the algorithm instead of reading it 😭",
+          "Now you're thinking like the algorithm itself 💣"
+        ],
+        "fr": [
+          "Vous blâmez l'algorithme au lieu de le lire 😭",
+          "Maintenant vous pensez comme l'algorithme lui-même 💣"
+        ],
+        "ar": [
+          "أنت تلوم الخوارزمية بدلاً من قراءتها 😭",
+          "الآن أنت تفكر مثل الخوارزمية نفسها 💣"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "The First 3 Seconds Rule (Growth Edition)",
+        "fr": "La Règle des 3 Premières Secondes (Édition Croissance)",
+        "ar": "قاعدة الثواني الثلاث الأولى (نسخة النمو)"
+      },
+      "xp": 140,
+      "core_concept": {
+        "en": "Retention starts before the video even really begins.",
+        "fr": "La rétention commence avant même que la vidéo ne commence vraiment.",
+        "ar": "الاحتفاظ بالمشاهد يبدأ قبل أن يبدأ الفيديو فعلياً."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "The algorithm samples early drop-off rate aggressively. If people leave in the first 3 seconds, the platform assumes the content is low-value and stops distributing it.",
+          "fr": "L'algorithme échantillonne agressivement le taux d'abandon précoce. Si les gens partent dans les 3 premières secondes, la plateforme suppose que le contenu est de faible valeur et arrête de le distribuer.",
+          "ar": "الخوارزمية تقيس بشكل عدواني معدل الانسحاب المبكر. إذا غادر الناس في أول 3 ثوانٍ، تفترض المنصة أن المحتوى منخفض القيمة وتتوقف عن توزيعه."
+        },
+        "why_it_matters": {
+          "en": "Growth is decided in seconds, not minutes.",
+          "fr": "La croissance se décide en secondes, pas en minutes.",
+          "ar": "النمو يُقرر في ثوانٍ، وليس دقائق."
+        },
+        "internet_truth": {
+          "en": "A perfect video with a weak first 3 seconds still fails to grow.",
+          "fr": "Une vidéo parfaite avec de faibles 3 premières secondes échoue quand même à croître.",
+          "ar": "الفيديو المثالي بثوانٍ أولى ضعيفة يفشل في النمو رغم ذلك."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Drop-off rate is measured in the algorithm's first sample group",
+          "Growth compounds only after passing the early retention test",
+          "A confusing opening frame causes instant scroll-away"
+        ],
+        "fr": [
+          "Le taux d'abandon est mesuré dans le premier groupe échantillon de l'algorithme",
+          "La croissance ne s'accumule qu'après avoir passé le test de rétention précoce",
+          "Une image d'ouverture confuse cause un défilement instantané"
+        ],
+        "ar": [
+          "معدل الانسحاب يُقاس في مجموعة العينة الأولى للخوارزمية",
+          "النمو يتراكم فقط بعد اجتياز اختبار الاحتفاظ المبكر",
+          "الإطار الافتتاحي المربك يسبب تصفحاً فورياً بعيداً"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Text overlay in frame 1 stating the outcome ('I made 10k from this') stops the scroll instantly",
+          "A slow zoom-in intro loses viewers before the point is even made"
+        ],
+        "fr": [
+          "Un texte superposé dans l'image 1 indiquant le résultat ('J'ai gagné 10k grâce à ça') arrête le défilement instantanément",
+          "Une intro en zoom lent perd des spectateurs avant même que le point soit fait"
+        ],
+        "ar": [
+          "نص فوق الإطار الأول يوضح النتيجة ('حققت 10 آلاف من هذا') يوقف التصفح فوراً",
+          "مقدمة بزووم بطيء تفقد المشاهدين قبل أن تصل للفكرة أصلاً"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Starting with a logo animation or intro sequence",
+          "Explaining context before showing the payoff",
+          "Slow, unclear opening visuals"
+        ],
+        "fr": [
+          "Commencer par une animation de logo ou une séquence d'introduction",
+          "Expliquer le contexte avant de montrer la récompense",
+          "Visuels d'ouverture lents et flous"
+        ],
+        "ar": [
+          "البدء بأنيميشن الشعار أو مقدمة طويلة",
+          "شرح السياق قبل إظهار النتيجة",
+          "مرئيات افتتاحية بطيئة وغير واضحة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Cut the first 3 seconds off your last 3 posts and see if they still make sense",
+          "Rewrite 3 openings to lead with the payoff",
+          "Test one 'result-first' opening this week"
+        ],
+        "fr": [
+          "Coupez les 3 premières secondes de vos 3 derniers posts et voyez si elles ont encore du sens",
+          "Réécrivez 3 ouvertures pour mener avec la récompense",
+          "Testez une ouverture 'résultat d'abord' cette semaine"
+        ],
+        "ar": [
+          "احذف أول 3 ثوانٍ من آخر 3 منشورات لك وانظر إن كانت لا تزال منطقية",
+          "أعد كتابة 3 مقدمات لتبدأ بالنتيجة",
+          "جرب مقدمة 'النتيجة أولاً' هذا الأسبوع"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Real estate agent",
+          "fr": "Agent immobilier",
+          "ar": "وكيل عقاري"
+        },
+        "task": {
+          "en": "Design a result-first opening for a property tour reel",
+          "fr": "Concevez une ouverture axée sur le résultat pour un reel de visite immobilière",
+          "ar": "صمم مقدمة تبدأ بالنتيجة لريلز جولة عقارية"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Never explain what you're about to do — just do it",
+          "The strongest frame of the whole video should be frame 1, not frame 30"
+        ],
+        "fr": [
+          "N'expliquez jamais ce que vous êtes sur le point de faire — faites-le simplement",
+          "L'image la plus forte de toute la vidéo devrait être l'image 1, pas l'image 30"
+        ],
+        "ar": [
+          "لا تشرح أبداً ما ستفعله — افعله فقط",
+          "أقوى إطار في الفيديو بأكمله يجب أن يكون الإطار الأول، وليس الإطار 30"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Rebuild a weak intro to survive the first-3-second test",
+          "fr": "Reconstruisez une intro faible pour survivre au test des 3 premières secondes",
+          "ar": "أعد بناء مقدمة ضعيفة لتجتاز اختبار الثواني الثلاث الأولى"
+        },
+        "reward_xp": 70
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This intro would already be scrolled past 😭",
+          "This opens with the payoff — that's how you survive the test 💣"
+        ],
+        "fr": [
+          "Cette intro serait déjà défilée 😭",
+          "Ça s'ouvre avec la récompense — c'est comme ça qu'on survit au test 💣"
+        ],
+        "ar": [
+          "هذه المقدمة كان سيتم تجاوزها بالفعل 😭",
+          "هذا يبدأ بالنتيجة — هكذا تنجو من الاختبار 💣"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Hashtags & Discoverability",
+        "fr": "Hashtags & Découvrabilité",
+        "ar": "الهاشتاغات وقابلية الاكتشاف"
+      },
+      "xp": 140,
+      "core_concept": {
+        "en": "Hashtags are search terms, not magic growth spells.",
+        "fr": "Les hashtags sont des termes de recherche, pas des formules magiques de croissance.",
+        "ar": "الهاشتاغات هي مصطلحات بحث، وليست تعاويذ سحرية للنمو."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Hashtags help categorize content for search and niche discovery, but they don't override poor retention or weak hooks.",
+          "fr": "Les hashtags aident à catégoriser le contenu pour la recherche et la découverte de niche, mais ils ne compensent pas une mauvaise rétention ou des accroches faibles.",
+          "ar": "الهاشتاغات تساعد في تصنيف المحتوى للبحث واكتشاف المجال، لكنها لا تعوّض ضعف الاحتفاظ أو الخطافات الضعيفة."
+        },
+        "why_it_matters": {
+          "en": "Using relevant, specific hashtags helps the right people find your content faster.",
+          "fr": "Utiliser des hashtags pertinents et spécifiques aide les bonnes personnes à trouver votre contenu plus rapidement.",
+          "ar": "استخدام هاشتاغات ملائمة ومحددة يساعد الأشخاص المناسبين على إيجاد محتواك بشكل أسرع."
+        },
+        "internet_truth": {
+          "en": "30 generic hashtags won't save a video nobody wants to watch.",
+          "fr": "30 hashtags génériques ne sauveront pas une vidéo que personne ne veut regarder.",
+          "ar": "30 هاشتاغاً عاماً لن تنقذ فيديو لا يريد أحد مشاهدته."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Specific niche hashtags reach more relevant viewers than broad ones",
+          "Overly broad hashtags compete against millions of posts",
+          "Branded hashtags build community identity over time"
+        ],
+        "fr": [
+          "Les hashtags de niche spécifiques atteignent des spectateurs plus pertinents que les larges",
+          "Les hashtags trop larges rivalisent avec des millions de posts",
+          "Les hashtags de marque construisent une identité communautaire dans le temps"
+        ],
+        "ar": [
+          "الهاشتاغات المتخصصة الدقيقة تصل لمشاهدين أكثر ملاءمة من العامة",
+          "الهاشتاغات العامة جداً تنافس ملايين المنشورات",
+          "الهاشتاغات الخاصة بالعلامة تبني هوية مجتمعية بمرور الوقت"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "#MoroccanBakeryCasablanca reaches far more relevant people than #food",
+          "A branded hashtag like #AminaAcademyStudents builds a searchable community"
+        ],
+        "fr": [
+          "#PâtisserieMarocaineCasablanca atteint bien plus de gens pertinents que #nourriture",
+          "Un hashtag de marque comme #ÉtudiantsAminaAcademy construit une communauté recherchable"
+        ],
+        "ar": [
+          "#مخبز_مغربي_الدار_البيضاء يصل لأشخاص أكثر ملاءمة من #طعام",
+          "هاشتاغ خاص بالعلامة مثل #طلاب_أمينة_أكاديمي يبني مجتمعاً قابلاً للبحث"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Using only huge generic hashtags like #love or #instagood",
+          "Copy-pasting the same hashtag set on every single post",
+          "Believing more hashtags always equals more reach"
+        ],
+        "fr": [
+          "Utiliser uniquement d'énormes hashtags génériques comme #amour ou #instagood",
+          "Copier-coller le même ensemble de hashtags sur chaque post",
+          "Croire que plus de hashtags égale toujours plus de portée"
+        ],
+        "ar": [
+          "استخدام هاشتاغات عامة ضخمة فقط مثل #حب أو #انستغرام",
+          "نسخ نفس مجموعة الهاشتاغات على كل منشور",
+          "الاعتقاد أن المزيد من الهاشتاغات يعني دائماً وصولاً أكبر"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Research 10 niche-specific hashtags for your business",
+          "Create one branded hashtag for your community",
+          "Test a niche hashtag set on your next 3 posts"
+        ],
+        "fr": [
+          "Recherchez 10 hashtags spécifiques à votre niche",
+          "Créez un hashtag de marque pour votre communauté",
+          "Testez un ensemble de hashtags de niche sur vos 3 prochains posts"
+        ],
+        "ar": [
+          "ابحث عن 10 هاشتاغات متخصصة لمشروعك",
+          "أنشئ هاشتاغاً خاصاً بعلامتك لمجتمعك",
+          "جرب مجموعة هاشتاغات متخصصة على 3 منشورات قادمة"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Handmade candle shop",
+          "fr": "Boutique de bougies artisanales",
+          "ar": "متجر شموع يدوية"
+        },
+        "task": {
+          "en": "Build a set of 10 relevant niche hashtags for this shop",
+          "fr": "Construisez un ensemble de 10 hashtags de niche pertinents pour cette boutique",
+          "ar": "ابنِ مجموعة من 10 هاشتاغات متخصصة ملائمة لهذا المتجر"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Mix a few mid-size hashtags with a few small niche ones for the best reach-to-relevance ratio",
+          "Check hashtag post-counts before using them — millions of posts means you'll get buried"
+        ],
+        "fr": [
+          "Mélangez quelques hashtags de taille moyenne avec quelques petits de niche pour le meilleur ratio portée-pertinence",
+          "Vérifiez le nombre de posts des hashtags avant de les utiliser — des millions de posts signifie que vous serez enterré"
+        ],
+        "ar": [
+          "امزج بضعة هاشتاغات متوسطة الحجم مع بضعة صغيرة متخصصة لأفضل نسبة وصول-ملاءمة",
+          "تحقق من عدد منشورات الهاشتاغ قبل استخدامه — ملايين المنشورات تعني أنك ستُدفن"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Build a hashtag strategy mixing branded, niche and mid-size tags",
+          "fr": "Construisez une stratégie de hashtags mélangeant des tags de marque, de niche et de taille moyenne",
+          "ar": "ابنِ استراتيجية هاشتاغ تمزج بين الخاص بالعلامة والمتخصص والمتوسط الحجم"
+        },
+        "reward_xp": 65
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "These hashtags are way too competitive to ever be seen 😭",
+          "This mix is specific enough to actually get found 🔥"
+        ],
+        "fr": [
+          "Ces hashtags sont bien trop compétitifs pour jamais être vus 😭",
+          "Ce mélange est assez spécifique pour vraiment être trouvé 🔥"
+        ],
+        "ar": [
+          "هذه الهاشتاغات تنافسية جداً بحيث لن تُرى أبداً 😭",
+          "هذا المزيج محدد بما يكفي ليتم اكتشافه فعلاً 🔥"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Best Posting Times & Frequency",
+        "fr": "Meilleurs Horaires & Fréquence de Publication",
+        "ar": "أفضل أوقات وتكرار النشر"
+      },
+      "xp": 130,
+      "core_concept": {
+        "en": "Timing amplifies good content — it doesn't fix bad content.",
+        "fr": "Le timing amplifie le bon contenu — il ne répare pas le mauvais contenu.",
+        "ar": "التوقيت يضخّم المحتوى الجيد — لا يصلح المحتوى السيء."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Posting when your specific audience is active gives your content a stronger initial engagement signal, which the algorithm rewards with more distribution.",
+          "fr": "Publier quand votre audience spécifique est active donne à votre contenu un signal d'engagement initial plus fort, que l'algorithme récompense avec plus de distribution.",
+          "ar": "النشر عندما يكون جمهورك المحدد نشطاً يمنح محتواك إشارة تفاعل أولية أقوى، تكافئها الخوارزمية بتوزيع أكبر."
+        },
+        "why_it_matters": {
+          "en": "The same video posted at the wrong time can get half the reach of the same video posted at the right time.",
+          "fr": "La même vidéo publiée au mauvais moment peut obtenir la moitié de la portée de la même vidéo publiée au bon moment.",
+          "ar": "نفس الفيديو المنشور في الوقت الخطأ يمكن أن يحصل على نصف وصول نفس الفيديو المنشور في الوقت الصحيح."
+        },
+        "internet_truth": {
+          "en": "Your audience's schedule matters more than generic 'best time to post' lists online.",
+          "fr": "L'horaire de votre audience compte plus que les listes génériques 'meilleur moment pour publier' en ligne.",
+          "ar": "جدول جمهورك أهم من قوائم 'أفضل وقت للنشر' العامة على الإنترنت."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Early engagement momentum compounds over the following hours",
+          "Posting frequency signals reliability to both the algorithm and the audience",
+          "Too frequent posting without quality dilutes engagement per post"
+        ],
+        "fr": [
+          "L'élan d'engagement précoce s'accumule dans les heures suivantes",
+          "La fréquence de publication signale la fiabilité à l'algorithme et à l'audience",
+          "Publier trop fréquemment sans qualité dilue l'engagement par post"
+        ],
+        "ar": [
+          "زخم التفاعل المبكر يتراكم في الساعات التالية",
+          "تكرار النشر يشير للموثوقية للخوارزمية والجمهور معاً",
+          "النشر المتكرر جداً بدون جودة يخفف التفاعل لكل منشور"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A gym posting workout content at 6-7am catches early risers actively scrolling before work",
+          "A restaurant posting food content around 11am-12pm catches lunch-decision scrollers"
+        ],
+        "fr": [
+          "Une salle de sport publiant du contenu d'entraînement à 6-7h capte les lève-tôt qui défilent avant le travail",
+          "Un restaurant publiant du contenu culinaire vers 11h-12h capte les défileurs en décision de déjeuner"
+        ],
+        "ar": [
+          "نادي رياضي ينشر محتوى تمارين الساعة 6-7 صباحاً يجذب من يستيقظون مبكراً ويتصفحون قبل العمل",
+          "مطعم ينشر محتوى طعام حوالي الساعة 11-12 ظهراً يجذب من يقررون الغداء"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Copying generic 'best time to post' lists without checking your own analytics",
+          "Posting inconsistently — sometimes 5x a day, sometimes nothing for a week",
+          "Ignoring time zone differences for the target audience"
+        ],
+        "fr": [
+          "Copier des listes génériques 'meilleur moment pour publier' sans vérifier vos propres statistiques",
+          "Publier de manière incohérente — parfois 5x par jour, parfois rien pendant une semaine",
+          "Ignorer les différences de fuseau horaire pour l'audience cible"
+        ],
+        "ar": [
+          "نسخ قوائم 'أفضل وقت للنشر' العامة دون التحقق من تحليلاتك الخاصة",
+          "النشر بشكل غير منتظم — أحياناً 5 مرات يومياً وأحياناً لا شيء لأسبوع",
+          "تجاهل فروق التوقيت للجمهور المستهدف"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Check your analytics for when your specific audience is most active",
+          "Test posting at 3 different times over 2 weeks",
+          "Set a realistic, sustainable posting frequency"
+        ],
+        "fr": [
+          "Vérifiez vos statistiques pour savoir quand votre audience spécifique est la plus active",
+          "Testez la publication à 3 horaires différents sur 2 semaines",
+          "Établissez une fréquence de publication réaliste et durable"
+        ],
+        "ar": [
+          "تحقق من تحليلاتك لمعرفة متى يكون جمهورك المحدد أكثر نشاطاً",
+          "جرب النشر في 3 أوقات مختلفة على مدى أسبوعين",
+          "حدد تكراراً واقعياً ومستداماً للنشر"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Late-night food delivery service",
+          "fr": "Service de livraison de nourriture nocturne",
+          "ar": "خدمة توصيل طعام ليلية"
+        },
+        "task": {
+          "en": "Determine the ideal posting window for this specific business",
+          "fr": "Déterminez la fenêtre de publication idéale pour cette entreprise spécifique",
+          "ar": "حدد النافذة الزمنية المثالية للنشر لهذا المشروع تحديداً"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Your own analytics beat any generic 'best time' article every time",
+          "Sustainable frequency beats an unsustainable burst that burns you out in a month"
+        ],
+        "fr": [
+          "Vos propres statistiques battent tout article générique 'meilleur moment' à chaque fois",
+          "Une fréquence durable bat une rafale insoutenable qui vous épuise en un mois"
+        ],
+        "ar": [
+          "تحليلاتك الخاصة تتفوق دائماً على أي مقال عام عن 'أفضل وقت'",
+          "التكرار المستدام يتفوق على اندفاع غير مستدام يرهقك خلال شهر"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Build a realistic weekly posting schedule based on audience activity data",
+          "fr": "Construisez un calendrier de publication hebdomadaire réaliste basé sur les données d'activité de l'audience",
+          "ar": "ابنِ جدول نشر أسبوعي واقعي بناءً على بيانات نشاط الجمهور"
+        },
+        "reward_xp": 60
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Random timing means random results 😭",
+          "This is based on real data, not guessing 🔥"
+        ],
+        "fr": [
+          "Un timing aléatoire signifie des résultats aléatoires 😭",
+          "C'est basé sur des données réelles, pas des suppositions 🔥"
+        ],
+        "ar": [
+          "التوقيت العشوائي يعني نتائج عشوائية 😭",
+          "هذا مبني على بيانات حقيقية، وليس تخميناً 🔥"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "The Shareability Factor",
+        "fr": "Le Facteur de Partageabilité",
+        "ar": "عامل قابلية المشاركة"
+      },
+      "xp": 150,
+      "core_concept": {
+        "en": "Shares are the algorithm's strongest signal — sharing means someone is putting their name behind your content.",
+        "fr": "Les partages sont le signal le plus fort de l'algorithme — partager signifie que quelqu'un met son nom derrière votre contenu.",
+        "ar": "المشاركات هي أقوى إشارة للخوارزمية — المشاركة تعني أن شخصاً يضع اسمه وراء محتواك."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Content gets shared when it makes the sharer look good, feel understood, or gives them a reason to tag a friend.",
+          "fr": "Le contenu est partagé quand il fait bien paraître celui qui partage, le fait se sentir compris, ou lui donne une raison de taguer un ami.",
+          "ar": "يُشارك المحتوى عندما يجعل المُشارك يبدو جيداً، أو يشعر بالفهم، أو يمنحه سبباً للإشارة إلى صديق."
+        },
+        "why_it_matters": {
+          "en": "Shares reach people outside your existing follower base entirely — the fastest form of real growth.",
+          "fr": "Les partages atteignent des gens complètement en dehors de votre base d'abonnés existante — la forme de croissance réelle la plus rapide.",
+          "ar": "المشاركات تصل لأشخاص خارج قاعدة متابعيك الحالية تماماً — أسرع شكل من النمو الحقيقي."
+        },
+        "internet_truth": {
+          "en": "People share things that represent who they want to be seen as.",
+          "fr": "Les gens partagent des choses qui représentent qui ils veulent être vus comme étant.",
+          "ar": "الناس يشاركون أشياء تمثل من يريدون أن يُنظر إليهم كأنهم."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Relatable pain gets tagged to friends who share the same pain",
+          "Useful/educational content gets saved and shared as a resource",
+          "Funny content gets shared to start a conversation"
+        ],
+        "fr": [
+          "La douleur relatable est taguée à des amis qui partagent la même douleur",
+          "Le contenu utile/éducatif est sauvegardé et partagé comme ressource",
+          "Le contenu drôle est partagé pour démarrer une conversation"
+        ],
+        "ar": [
+          "الألم المشترك يُشار إليه للأصدقاء الذين يشاركون نفس الألم",
+          "المحتوى المفيد/التعليمي يُحفظ ويُشارك كمصدر",
+          "المحتوى المضحك يُشارك لبدء محادثة"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "'Tag someone who does this 😭' captions drive tag-based shares",
+          "A genuinely useful checklist post gets saved and shared as a reference tool"
+        ],
+        "fr": [
+          "Des légendes 'Taguez quelqu'un qui fait ça 😭' génèrent des partages basés sur les tags",
+          "Un post de checklist vraiment utile est sauvegardé et partagé comme outil de référence"
+        ],
+        "ar": [
+          "تعليقات 'أشر إلى شخص يفعل هذا 😭' تدفع للمشاركة عبر الإشارة",
+          "منشور قائمة تحقق مفيد فعلاً يُحفظ ويُشارك كأداة مرجعية"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Creating content with no reason to tag anyone",
+          "Making content too personal/specific to relate to",
+          "Never explicitly inviting people to share or tag"
+        ],
+        "fr": [
+          "Créer du contenu sans raison de taguer qui que ce soit",
+          "Rendre le contenu trop personnel/spécifique pour s'identifier",
+          "Ne jamais inviter explicitement les gens à partager ou taguer"
+        ],
+        "ar": [
+          "إنشاء محتوى بلا سبب للإشارة لأي شخص",
+          "جعل المحتوى شخصياً/محدداً جداً بحيث لا يمكن التماهي معه",
+          "عدم دعوة الناس صراحة للمشاركة أو الإشارة أبداً"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Add a 'tag someone' CTA to your next 3 posts",
+          "Create one genuinely useful checklist or resource post",
+          "Identify what makes your top competitor's shared posts shareable"
+        ],
+        "fr": [
+          "Ajoutez un CTA 'taguez quelqu'un' à vos 3 prochains posts",
+          "Créez un post de checklist ou ressource vraiment utile",
+          "Identifiez ce qui rend les posts partagés de votre principal concurrent partageables"
+        ],
+        "ar": [
+          "أضف دعوة 'أشر إلى شخص' في 3 منشورات قادمة",
+          "أنشئ منشور قائمة تحقق أو مصدر مفيد فعلاً",
+          "حدد ما الذي يجعل منشورات منافسك الأبرز قابلة للمشاركة"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Language learning app/tutor",
+          "fr": "Application/tuteur d'apprentissage des langues",
+          "ar": "تطبيق/مدرس تعلم لغات"
+        },
+        "task": {
+          "en": "Design a highly shareable post idea for this niche",
+          "fr": "Concevez une idée de post hautement partageable pour cette niche",
+          "ar": "صمم فكرة منشور قابلة للمشاركة بقوة لهذا المجال"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Shareable content usually says something the sharer wishes they'd said themselves",
+          "Explicitly asking people to tag/share works better than hoping they will"
+        ],
+        "fr": [
+          "Le contenu partageable dit généralement quelque chose que le partageur aurait aimé dire lui-même",
+          "Demander explicitement aux gens de taguer/partager fonctionne mieux qu'espérer qu'ils le fassent"
+        ],
+        "ar": [
+          "المحتوى القابل للمشاركة عادة يقول شيئاً كان المُشارك يتمنى قوله بنفسه",
+          "الطلب الصريح من الناس بالإشارة/المشاركة يعمل أفضل من مجرد الأمل بذلك"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Turn a plain informational post into a highly shareable one",
+          "fr": "Transformez un post informatif ordinaire en un post hautement partageable",
+          "ar": "حوّل منشوراً معلوماتياً عادياً إلى منشور قابل للمشاركة بقوة"
+        },
+        "reward_xp": 70
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Nobody has a reason to share this 😭",
+          "This gives people a reason to tag their friend right now 🔥"
+        ],
+        "fr": [
+          "Personne n'a de raison de partager ça 😭",
+          "Ça donne aux gens une raison de taguer leur ami maintenant 🔥"
+        ],
+        "ar": [
+          "لا أحد لديه سبب لمشاركة هذا 😭",
+          "هذا يمنح الناس سبباً للإشارة لصديقهم الآن 🔥"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "Growing With Collaborations & Cross-Promotion",
+        "fr": "Croître avec les Collaborations & Promotion Croisée",
+        "ar": "النمو عبر التعاون والترويج المتبادل"
+      },
+      "xp": 150,
+      "core_concept": {
+        "en": "Borrowed audiences grow faster than audiences built alone.",
+        "fr": "Les audiences empruntées grandissent plus vite que les audiences construites seules.",
+        "ar": "الجماهير المستعارة تنمو أسرع من الجماهير المبنية بمفردها."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Partnering with complementary (not competing) accounts exposes you to a pre-warmed, trusting audience that already fits your niche.",
+          "fr": "S'associer avec des comptes complémentaires (pas concurrents) vous expose à une audience déjà réchauffée et confiante qui correspond déjà à votre niche.",
+          "ar": "الشراكة مع حسابات مكملة (وليست منافسة) تعرّضك لجمهور دافئ مسبقاً وواثق يناسب مجالك بالفعل."
+        },
+        "why_it_matters": {
+          "en": "Growing purely through the algorithm is slow; growing through trusted introductions is fast.",
+          "fr": "Croître uniquement via l'algorithme est lent ; croître via des introductions de confiance est rapide.",
+          "ar": "النمو عبر الخوارزمية وحدها بطيء؛ النمو عبر التعريفات الموثوقة سريع."
+        },
+        "internet_truth": {
+          "en": "People trust who they follow — a shoutout is borrowed trust.",
+          "fr": "Les gens font confiance à ceux qu'ils suivent — un shoutout est une confiance empruntée.",
+          "ar": "الناس يثقون بمن يتابعونه — الإشادة العلنية هي ثقة مستعارة."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Endorsement from a trusted account transfers credibility instantly",
+          "Complementary (not competing) niches make the best partners",
+          "Reciprocal promotion feels fair and builds long-term relationships"
+        ],
+        "fr": [
+          "L'approbation d'un compte de confiance transfère instantanément la crédibilité",
+          "Les niches complémentaires (pas concurrentes) font les meilleurs partenaires",
+          "La promotion réciproque semble juste et construit des relations à long terme"
+        ],
+        "ar": [
+          "التزكية من حساب موثوق تنقل المصداقية فوراً",
+          "المجالات المكملة (وليست المنافسة) تصنع أفضل الشركاء",
+          "الترويج المتبادل يشعر بالعدالة ويبني علاقات طويلة الأمد"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A makeup artist collaborating with a hair salon reaches a fully relevant, warm audience",
+          "A fitness coach and a nutritionist doing a joint reel cross-pollinates two aligned audiences"
+        ],
+        "fr": [
+          "Une maquilleuse collaborant avec un salon de coiffure atteint une audience entièrement pertinente et chaleureuse",
+          "Un coach fitness et un nutritionniste faisant un reel commun fait se croiser deux audiences alignées"
+        ],
+        "ar": [
+          "فنانة مكياج تتعاون مع صالون شعر تصل لجمهور دافئ وملائم تماماً",
+          "مدرب لياقة وأخصائية تغذية يصنعان ريلز مشترك يتبادلان جمهورين متوافقين"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Collaborating with direct competitors instead of complementary businesses",
+          "Only reaching out when you need something, not building the relationship first",
+          "One-sided promotion with no value for the partner"
+        ],
+        "fr": [
+          "Collaborer avec des concurrents directs au lieu d'entreprises complémentaires",
+          "Ne contacter que lorsque vous avez besoin de quelque chose, sans construire la relation d'abord",
+          "Promotion à sens unique sans valeur pour le partenaire"
+        ],
+        "ar": [
+          "التعاون مع منافسين مباشرين بدلاً من مشاريع مكملة",
+          "التواصل فقط عندما تحتاج شيئاً، دون بناء العلاقة أولاً",
+          "ترويج أحادي الجانب بلا قيمة للشريك"
+        ]
+      },
+      "missions": {
+        "en": [
+          "List 5 complementary (non-competing) accounts in your area",
+          "Reach out to one with a genuine collaboration idea",
+          "Plan one joint content piece with a partner"
+        ],
+        "fr": [
+          "Listez 5 comptes complémentaires (non concurrents) dans votre région",
+          "Contactez-en un avec une idée de collaboration authentique",
+          "Planifiez un contenu commun avec un partenaire"
+        ],
+        "ar": [
+          "اذكر 5 حسابات مكملة (غير منافسة) في منطقتك",
+          "تواصل مع أحدها بفكرة تعاون حقيقية",
+          "خطط لمحتوى مشترك واحد مع شريك"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Wedding photographer",
+          "fr": "Photographe de mariage",
+          "ar": "مصور أعراس"
+        },
+        "task": {
+          "en": "List 3 ideal collaboration partners and a joint content idea for each",
+          "fr": "Listez 3 partenaires de collaboration idéaux et une idée de contenu commun pour chacun",
+          "ar": "اذكر 3 شركاء تعاون مثاليين وفكرة محتوى مشترك لكل منهم"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "The best collaborations feel natural, not forced or purely transactional",
+          "Offer value first before asking for a shoutout"
+        ],
+        "fr": [
+          "Les meilleures collaborations semblent naturelles, ni forcées ni purement transactionnelles",
+          "Offrez de la valeur d'abord avant de demander un shoutout"
+        ],
+        "ar": [
+          "أفضل التعاونات تبدو طبيعية، وليست قسرية أو تجارية بحتة",
+          "قدّم قيمة أولاً قبل طلب إشادة علنية"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Pitch a collaboration idea to a complementary business in your niche",
+          "fr": "Proposez une idée de collaboration à une entreprise complémentaire de votre niche",
+          "ar": "اقترح فكرة تعاون لمشروع مكمل في مجالك"
+        },
+        "reward_xp": 70
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This pitch only benefits you, not them 😭",
+          "This partnership actually benefits both audiences 🔥"
+        ],
+        "fr": [
+          "Cette proposition ne bénéficie qu'à vous, pas à eux 😭",
+          "Ce partenariat bénéficie vraiment aux deux audiences 🔥"
+        ],
+        "ar": [
+          "هذا الاقتراح يفيدك أنت فقط، وليس هم 😭",
+          "هذه الشراكة تفيد الجمهورين فعلاً 🔥"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "en": "User-Generated Content & Social Proof",
+        "fr": "Contenu Généré par les Utilisateurs & Preuve Sociale",
+        "ar": "محتوى من إنشاء المستخدمين والدليل الاجتماعي"
+      },
+      "xp": 160,
+      "core_concept": {
+        "en": "Your customers are more convincing than you are.",
+        "fr": "Vos clients sont plus convaincants que vous.",
+        "ar": "عملاؤك أكثر إقناعاً منك."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Reposting real customer photos, reviews and testimonials builds trust that self-promotion never can, because it's not coming from the brand itself.",
+          "fr": "Republier de vraies photos, avis et témoignages de clients construit une confiance que l'auto-promotion ne peut jamais atteindre, car ça ne vient pas de la marque elle-même.",
+          "ar": "إعادة نشر صور وتقييمات وشهادات حقيقية من العملاء تبني ثقة لا يمكن للترويج الذاتي أن يحققها أبداً، لأنها لا تأتي من العلامة نفسها."
+        },
+        "why_it_matters": {
+          "en": "People trust other people more than they trust brands talking about themselves.",
+          "fr": "Les gens font plus confiance aux autres personnes qu'aux marques parlant d'elles-mêmes.",
+          "ar": "الناس يثقون بالآخرين أكثر من ثقتهم بالعلامات التجارية التي تتحدث عن نفسها."
+        },
+        "internet_truth": {
+          "en": "A messy real photo from a happy customer often converts better than a polished studio shot.",
+          "fr": "Une vraie photo un peu brouillonne d'un client satisfait convertit souvent mieux qu'une photo de studio soignée.",
+          "ar": "صورة حقيقية غير مرتبة من عميل سعيد غالباً ما تحوّل أفضل من صورة استوديو منمقة."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Third-party validation is more persuasive than self-promotion",
+          "Real, imperfect content feels more trustworthy than polished ads",
+          "Featuring customers makes them feel valued and likely to share again"
+        ],
+        "fr": [
+          "La validation par des tiers est plus persuasive que l'auto-promotion",
+          "Un contenu réel et imparfait semble plus digne de confiance qu'une publicité soignée",
+          "Mettre en avant les clients les fait se sentir valorisés et enclins à repartager"
+        ],
+        "ar": [
+          "التحقق من طرف ثالث أكثر إقناعاً من الترويج الذاتي",
+          "المحتوى الحقيقي غير الكامل يبدو أكثر موثوقية من الإعلانات المصقولة",
+          "إبراز العملاء يجعلهم يشعرون بالتقدير ومن المرجح أن يشاركوا مرة أخرى"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Reposting a customer's unboxing story to Stories drives other customers to do the same",
+          "A page filled with real client transformation photos builds more trust than any ad copy"
+        ],
+        "fr": [
+          "Republier l'histoire de déballage d'un client dans les Stories pousse d'autres clients à faire de même",
+          "Une page remplie de vraies photos de transformation client construit plus de confiance que n'importe quel texte publicitaire"
+        ],
+        "ar": [
+          "إعادة نشر قصة فتح صندوق من عميل في القصص تدفع عملاء آخرين لفعل الشيء نفسه",
+          "صفحة مليئة بصور تحول حقيقية للعملاء تبني ثقة أكثر من أي نص إعلاني"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Never asking customers to tag the brand or share their experience",
+          "Only showing polished, staged content with no real customer voice",
+          "Not crediting or thanking customers who create content"
+        ],
+        "fr": [
+          "Ne jamais demander aux clients de taguer la marque ou de partager leur expérience",
+          "Ne montrer que du contenu soigné et mis en scène sans vraie voix client",
+          "Ne pas créditer ou remercier les clients qui créent du contenu"
+        ],
+        "ar": [
+          "عدم طلب من العملاء الإشارة للعلامة أو مشاركة تجربتهم أبداً",
+          "عرض محتوى مصقول ومنظم فقط بلا صوت عميل حقيقي",
+          "عدم نسب الفضل أو شكر العملاء الذين ينشئون محتوى"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Ask 3 recent customers to share their experience and tag you",
+          "Create a highlight/album dedicated to customer content",
+          "Repost one piece of user-generated content this week"
+        ],
+        "fr": [
+          "Demandez à 3 clients récents de partager leur expérience et de vous taguer",
+          "Créez une story à la une/album dédié au contenu client",
+          "Republiez un contenu généré par un utilisateur cette semaine"
+        ],
+        "ar": [
+          "اطلب من 3 عملاء حديثين مشاركة تجربتهم والإشارة إليك",
+          "أنشئ قصة مميزة/ألبوماً مخصصاً لمحتوى العملاء",
+          "أعد نشر محتوى واحد من إنشاء المستخدمين هذا الأسبوع"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Skincare brand launching a new product",
+          "fr": "Marque de soins de la peau lançant un nouveau produit",
+          "ar": "علامة عناية بالبشرة تطلق منتجاً جديداً"
+        },
+        "task": {
+          "en": "Design a simple system to collect and repost customer content for this launch",
+          "fr": "Concevez un système simple pour collecter et republier le contenu client pour ce lancement",
+          "ar": "صمم نظاماً بسيطاً لجمع وإعادة نشر محتوى العملاء لهذا الإطلاق"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "A simple branded hashtag makes collecting UGC effortless",
+          "Always ask permission and credit the original creator"
+        ],
+        "fr": [
+          "Un simple hashtag de marque rend la collecte de CGU sans effort",
+          "Demandez toujours la permission et créditez le créateur original"
+        ],
+        "ar": [
+          "هاشتاغ بسيط خاص بالعلامة يجعل جمع محتوى المستخدمين سهلاً",
+          "اطلب الإذن دائماً وانسب الفضل للمنشئ الأصلي"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Design a UGC collection system for a real business, start to finish",
+          "fr": "Concevez un système de collecte de CGU pour une vraie entreprise, du début à la fin",
+          "ar": "صمم نظاماً كاملاً لجمع محتوى المستخدمين لمشروع حقيقي من البداية للنهاية"
+        },
+        "reward_xp": 80
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Everything here is self-promotion, nothing feels real 😭",
+          "This actually shows real people trusting the brand 🔥"
+        ],
+        "fr": [
+          "Tout ici est de l'auto-promotion, rien ne semble réel 😭",
+          "Ça montre vraiment de vraies personnes qui font confiance à la marque 🔥"
+        ],
+        "ar": [
+          "كل شيء هنا ترويج ذاتي، لا شيء يبدو حقيقياً 😭",
+          "هذا يُظهر فعلاً أشخاصاً حقيقيين يثقون بالعلامة 🔥"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": {
+        "en": "Handling the Algorithm's Mood Swings",
+        "fr": "Gérer les Sautes d'Humeur de l'Algorithme",
+        "ar": "التعامل مع تقلبات مزاج الخوارزمية"
+      },
+      "xp": 160,
+      "core_concept": {
+        "en": "Reach naturally fluctuates — panic is not a strategy.",
+        "fr": "La portée fluctue naturellement — la panique n'est pas une stratégie.",
+        "ar": "الوصول يتقلب بشكل طبيعي — الذعر ليس استراتيجية."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Platforms constantly test and update their algorithms, causing normal ups and downs in reach that have nothing to do with your content quality.",
+          "fr": "Les plateformes testent et mettent constamment à jour leurs algorithmes, causant des hauts et des bas normaux dans la portée qui n'ont rien à voir avec la qualité de votre contenu.",
+          "ar": "المنصات تختبر وتحدّث خوارزمياتها باستمرار، مما يسبب صعوداً وهبوطاً طبيعياً في الوصول لا علاقة له بجودة محتواك."
+        },
+        "why_it_matters": {
+          "en": "Creators who quit during a temporary dip miss the recovery that almost always follows.",
+          "fr": "Les créateurs qui abandonnent pendant une baisse temporaire manquent la reprise qui suit presque toujours.",
+          "ar": "صناع المحتوى الذين يستسلمون خلال انخفاض مؤقت يفوتون التعافي الذي يتبع ذلك دائماً تقريباً."
+        },
+        "internet_truth": {
+          "en": "Every account, even huge ones, experiences reach drops — it's part of the system, not a personal failure.",
+          "fr": "Chaque compte, même les énormes, connaît des baisses de portée — ça fait partie du système, pas un échec personnel.",
+          "ar": "كل حساب، حتى الكبيرة منها، يمر بانخفاضات في الوصول — إنه جزء من النظام، وليس فشلاً شخصياً."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Consistency during a dip signals long-term reliability to the algorithm",
+          "Panicking and deleting content erases the data the algorithm needs to recover you",
+          "Comparing your dip to someone else's peak distorts reality"
+        ],
+        "fr": [
+          "La constance pendant une baisse signale une fiabilité à long terme à l'algorithme",
+          "Paniquer et supprimer du contenu efface les données dont l'algorithme a besoin pour vous rétablir",
+          "Comparer votre baisse au pic de quelqu'un d'autre déforme la réalité"
+        ],
+        "ar": [
+          "الاستمرارية خلال الانخفاض تشير للموثوقية طويلة الأمد للخوارزمية",
+          "الذعر وحذف المحتوى يمحو البيانات التي تحتاجها الخوارزمية لاستعادتك",
+          "مقارنة انخفاضك بذروة شخص آخر تشوّه الواقع"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "An account that kept posting through a 3-week reach dip recovered fully by month two",
+          "An account that deleted its account and restarted lost all accumulated algorithm trust"
+        ],
+        "fr": [
+          "Un compte qui a continué à publier pendant une baisse de portée de 3 semaines s'est complètement rétabli au deuxième mois",
+          "Un compte qui a supprimé son compte et recommencé a perdu toute la confiance accumulée de l'algorithme"
+        ],
+        "ar": [
+          "حساب استمر في النشر خلال انخفاض وصول لمدة 3 أسابيع تعافى بالكامل بحلول الشهر الثاني",
+          "حساب حذف حسابه وأعاد البدء فقد كل ثقة الخوارزمية المتراكمة"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Deleting the account or starting over after one bad week",
+          "Making drastic content changes based on a single low-performing post",
+          "Comparing your growth curve to unrelated viral accounts"
+        ],
+        "fr": [
+          "Supprimer le compte ou recommencer après une mauvaise semaine",
+          "Faire des changements drastiques de contenu basés sur un seul post peu performant",
+          "Comparer votre courbe de croissance à des comptes viraux non liés"
+        ],
+        "ar": [
+          "حذف الحساب أو البدء من جديد بعد أسبوع سيء واحد",
+          "إجراء تغييرات جذرية في المحتوى بناءً على منشور ضعيف الأداء واحد",
+          "مقارنة منحنى نموك بحسابات فيروسية غير ذات صلة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Look back at your reach history and find one past dip that recovered",
+          "Write a personal 'reach dip protocol' to follow calmly next time",
+          "Identify 3 things you control regardless of algorithm changes"
+        ],
+        "fr": [
+          "Revoyez votre historique de portée et trouvez une baisse passée qui s'est rétablie",
+          "Écrivez un 'protocole de baisse de portée' personnel à suivre calmement la prochaine fois",
+          "Identifiez 3 choses que vous contrôlez indépendamment des changements d'algorithme"
+        ],
+        "ar": [
+          "راجع تاريخ وصولك وابحث عن انخفاض سابق تعافى",
+          "اكتب 'بروتوكول انخفاض الوصول' الشخصي لاتباعه بهدوء المرة القادمة",
+          "حدد 3 أشياء تتحكم بها بغض النظر عن تغييرات الخوارزمية"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Small clothing brand panicking over a reach drop",
+          "fr": "Petite marque de vêtements paniquant à cause d'une baisse de portée",
+          "ar": "علامة ملابس صغيرة تشعر بالذعر من انخفاض الوصول"
+        },
+        "task": {
+          "en": "Write a calm, data-based response plan instead of a panic reaction",
+          "fr": "Écrivez un plan de réponse calme et basé sur les données au lieu d'une réaction de panique",
+          "ar": "اكتب خطة استجابة هادئة مبنية على البيانات بدلاً من رد فعل الذعر"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Reach dips are almost always temporary if you keep showing up consistently",
+          "The accounts that survive dips are the ones that don't overreact to them"
+        ],
+        "fr": [
+          "Les baisses de portée sont presque toujours temporaires si vous continuez à vous montrer de manière cohérente",
+          "Les comptes qui survivent aux baisses sont ceux qui n'y réagissent pas de manière excessive"
+        ],
+        "ar": [
+          "انخفاضات الوصول تكون مؤقتة دائماً تقريباً إذا استمررت في الظهور بانتظام",
+          "الحسابات التي تنجو من الانخفاضات هي تلك التي لا تبالغ في رد الفعل تجاهها"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Coach a panicking creator through a reach dip using only calm, data-driven logic",
+          "fr": "Coachez un créateur paniqué à travers une baisse de portée en utilisant seulement une logique calme et basée sur les données",
+          "ar": "وجّه صانع محتوى متوتراً خلال انخفاض في الوصول باستخدام منطق هادئ ومبني على البيانات فقط"
+        },
+        "reward_xp": 75
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Panic-quitting throws away weeks of algorithm trust 😭",
+          "This calm, steady response is exactly how you survive a dip 🔥"
+        ],
+        "fr": [
+          "Abandonner par panique jette des semaines de confiance de l'algorithme 😭",
+          "Cette réponse calme et stable est exactement comment on survit à une baisse 🔥"
+        ],
+        "ar": [
+          "الاستسلام بذعر يهدر أسابيع من ثقة الخوارزمية 😭",
+          "هذا الرد الهادئ والثابت هو بالضبط كيف تنجو من انخفاض 🔥"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": {
+        "en": "Turning Followers Into a Real Community",
+        "fr": "Transformer les Abonnés en Vraie Communauté",
+        "ar": "تحويل المتابعين إلى مجتمع حقيقي"
+      },
+      "xp": 180,
+      "core_concept": {
+        "en": "Followers scroll past you. A community shows up for you.",
+        "fr": "Les abonnés vous font défiler. Une communauté se présente pour vous.",
+        "ar": "المتابعون يتصفحون متجاوزين إياك. المجتمع يحضر من أجلك."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "A true community forms when followers feel like insiders — through shared language, recurring formats, and genuine two-way interaction over time.",
+          "fr": "Une véritable communauté se forme quand les abonnés se sentent comme des initiés — par un langage partagé, des formats récurrents, et une interaction bidirectionnelle authentique dans le temps.",
+          "ar": "المجتمع الحقيقي يتشكل عندما يشعر المتابعون بأنهم من الداخل — عبر لغة مشتركة، وأشكال متكررة، وتفاعل حقيقي ثنائي الاتجاه بمرور الوقت."
+        },
+        "why_it_matters": {
+          "en": "A real community keeps buying, defending your brand, and inviting friends — long after any single algorithm trend fades.",
+          "fr": "Une vraie communauté continue d'acheter, de défendre votre marque et d'inviter des amis — bien après que n'importe quelle tendance d'algorithme se soit estompée.",
+          "ar": "المجتمع الحقيقي يستمر في الشراء والدفاع عن علامتك ودعوة الأصدقاء — لفترة طويلة بعد تلاشي أي اتجاه للخوارزمية."
+        },
+        "internet_truth": {
+          "en": "Numbers fade with algorithm changes; community loyalty doesn't.",
+          "fr": "Les chiffres s'estompent avec les changements d'algorithme ; la loyauté communautaire non.",
+          "ar": "الأرقام تتلاشى مع تغييرات الخوارزمية؛ ولاء المجتمع لا يتلاشى."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Recurring formats create anticipation and ritual",
+          "Inside jokes and shared language create belonging",
+          "Being seen and replied to personally deepens loyalty"
+        ],
+        "fr": [
+          "Les formats récurrents créent de l'anticipation et du rituel",
+          "Les blagues internes et le langage partagé créent l'appartenance",
+          "Être vu et recevoir une réponse personnelle approfondit la loyauté"
+        ],
+        "ar": [
+          "الأشكال المتكررة تخلق ترقباً وطقساً",
+          "النكت الداخلية واللغة المشتركة تخلق انتماء",
+          "أن تُرى وتحصل على رد شخصي يعمّق الولاء"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A weekly 'Q&A Friday' format becomes a ritual followers look forward to",
+          "A brand that consistently replies with the community's inside jokes builds a tight-knit following"
+        ],
+        "fr": [
+          "Un format hebdomadaire 'Q&R Vendredi' devient un rituel que les abonnés attendent",
+          "Une marque qui répond systématiquement avec les blagues internes de la communauté construit un public soudé"
+        ],
+        "ar": [
+          "شكل أسبوعي 'أسئلة وأجوبة الجمعة' يصبح طقساً يترقبه المتابعون",
+          "علامة ترد باستمرار بنكت المجتمع الداخلية تبني جمهوراً مترابطاً"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Treating followers as a number instead of individual people",
+          "Never creating recurring formats that build anticipation",
+          "Broadcasting only, with no space for two-way interaction"
+        ],
+        "fr": [
+          "Traiter les abonnés comme un nombre au lieu d'individus",
+          "Ne jamais créer de formats récurrents qui créent de l'anticipation",
+          "Ne faire que diffuser, sans espace pour une interaction bidirectionnelle"
+        ],
+        "ar": [
+          "التعامل مع المتابعين كرقم بدلاً من أفراد",
+          "عدم إنشاء أشكال متكررة تخلق الترقب أبداً",
+          "البث فقط، دون مساحة للتفاعل ثنائي الاتجاه"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Create one recurring weekly content format",
+          "Reply personally to 10 followers this week, using their name",
+          "Ask your audience one open question and actually read the replies"
+        ],
+        "fr": [
+          "Créez un format de contenu hebdomadaire récurrent",
+          "Répondez personnellement à 10 abonnés cette semaine, en utilisant leur nom",
+          "Posez une question ouverte à votre audience et lisez vraiment les réponses"
+        ],
+        "ar": [
+          "أنشئ شكل محتوى أسبوعي متكرر",
+          "رد شخصياً على 10 متابعين هذا الأسبوع، مستخدماً اسمهم",
+          "اطرح سؤالاً مفتوحاً على جمهورك واقرأ الردود فعلاً"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Online book club/reading community page",
+          "fr": "Page de club de lecture/communauté de lecture en ligne",
+          "ar": "صفحة نادي كتاب/مجتمع قراءة إلكتروني"
+        },
+        "task": {
+          "en": "Design a recurring weekly ritual format for this community",
+          "fr": "Concevez un format de rituel hebdomadaire récurrent pour cette communauté",
+          "ar": "صمم شكل طقس أسبوعي متكرر لهذا المجتمع"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Community loyalty survives algorithm changes that kill pure-reach strategies",
+          "Small, engaged communities often outsell large, passive follower counts"
+        ],
+        "fr": [
+          "La loyauté communautaire survit aux changements d'algorithme qui tuent les stratégies de pure portée",
+          "Les petites communautés engagées surpassent souvent en ventes de grands nombres d'abonnés passifs"
+        ],
+        "ar": [
+          "ولاء المجتمع ينجو من تغييرات الخوارزمية التي تقتل استراتيجيات الوصول البحت",
+          "المجتمعات الصغيرة المتفاعلة غالباً تبيع أكثر من أعداد كبيرة من المتابعين السلبيين"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Design a full community-building system with recurring rituals and interaction habits",
+          "fr": "Concevez un système complet de construction communautaire avec rituels récurrents et habitudes d'interaction",
+          "ar": "صمم نظاماً كاملاً لبناء المجتمع بطقوس متكررة وعادات تفاعل"
+        },
+        "reward_xp": 90
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This is a broadcast, not a community 😭",
+          "People here would actually notice if you disappeared 🔥"
+        ],
+        "fr": [
+          "C'est une diffusion, pas une communauté 😭",
+          "Les gens ici remarqueraient vraiment si vous disparaissiez 🔥"
+        ],
+        "ar": [
+          "هذا بث، وليس مجتمعاً 😭",
+          "الناس هنا سيلاحظون فعلاً إن اختفيت 🔥"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": {
+        "en": "FINAL GROWTH SIMULATION",
+        "fr": "SIMULATION FINALE DE CROISSANCE",
+        "ar": "المحاكاة النهائية للنمو"
+      },
+      "xp": 350,
+      "core_concept": {
+        "en": "Real growth combines algorithm understanding, discoverability, timing, shareability and community into one engine.",
+        "fr": "La vraie croissance combine la compréhension de l'algorithme, la découvrabilité, le timing, la partageabilité et la communauté en un seul moteur.",
+        "ar": "النمو الحقيقي يجمع فهم الخوارزمية وقابلية الاكتشاف والتوقيت وقابلية المشاركة والمجتمع في محرك واحد."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "This simulation tests whether you can build a complete growth engine for a real account, not just isolated tactics.",
+          "fr": "Cette simulation teste si vous pouvez construire un moteur de croissance complet pour un vrai compte, pas seulement des tactiques isolées.",
+          "ar": "هذه المحاكاة تختبر ما إذا كنت تستطيع بناء محرك نمو كامل لحساب حقيقي، وليس مجرد تكتيكات معزولة."
+        },
+        "why_it_matters": {
+          "en": "Isolated growth tactics fade fast; a full growth system compounds over months.",
+          "fr": "Les tactiques de croissance isolées s'estompent rapidement ; un système de croissance complet s'accumule sur des mois.",
+          "ar": "تكتيكات النمو المعزولة تتلاشى بسرعة؛ نظام النمو الكامل يتراكم على مدى أشهر."
+        },
+        "internet_truth": {
+          "en": "Sustainable growth is boring, consistent, and system-driven — not one lucky viral post.",
+          "fr": "La croissance durable est ennuyeuse, cohérente et pilotée par un système — pas un post viral chanceux.",
+          "ar": "النمو المستدام مملّ ومتسق ومبني على نظام — وليس منشوراً فيروسياً محظوظاً واحداً."
+        }
+      },
+      "simulation_systems": {
+        "en": [
+          "Algorithm logic",
+          "Retention optimization",
+          "Hashtag strategy",
+          "Timing strategy",
+          "Shareability design",
+          "Collaboration planning",
+          "UGC systems",
+          "Community building"
+        ],
+        "fr": [
+          "Logique de l'algorithme",
+          "Optimisation de la rétention",
+          "Stratégie de hashtags",
+          "Stratégie de timing",
+          "Design de partageabilité",
+          "Planification de collaboration",
+          "Systèmes de CGU",
+          "Construction de communauté"
+        ],
+        "ar": [
+          "منطق الخوارزمية",
+          "تحسين الاحتفاظ",
+          "استراتيجية الهاشتاغ",
+          "استراتيجية التوقيت",
+          "تصميم قابلية المشاركة",
+          "تخطيط التعاون",
+          "أنظمة محتوى المستخدمين",
+          "بناء المجتمع"
+        ]
+      },
+      "final_missions": {
+        "en": [
+          "Diagnose a stalled account using algorithm logic",
+          "Build a hashtag and timing strategy",
+          "Design one highly shareable post",
+          "Plan a collaboration and a UGC system",
+          "Create one recurring community ritual"
+        ],
+        "fr": [
+          "Diagnostiquez un compte stagnant en utilisant la logique de l'algorithme",
+          "Construisez une stratégie de hashtags et de timing",
+          "Concevez un post hautement partageable",
+          "Planifiez une collaboration et un système de CGU",
+          "Créez un rituel communautaire récurrent"
+        ],
+        "ar": [
+          "شخّص حساباً متوقفاً باستخدام منطق الخوارزمية",
+          "ابنِ استراتيجية هاشتاغ وتوقيت",
+          "صمم منشوراً قابلاً للمشاركة بقوة",
+          "خطط لتعاون ونظام محتوى مستخدمين",
+          "أنشئ طقساً مجتمعياً متكرراً واحداً"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Any Moroccan business stuck at a growth plateau",
+          "fr": "Toute entreprise marocaine bloquée à un plateau de croissance",
+          "ar": "أي مشروع مغربي عالق عند مستوى نمو ثابت"
+        },
+        "task": {
+          "en": "Build a complete 30-day growth engine plan from scratch",
+          "fr": "Construisez un plan complet de moteur de croissance sur 30 jours à partir de zéro",
+          "ar": "ابنِ خطة محرك نمو كاملة لـ30 يوماً من الصفر"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Growth is a system of small compounding advantages, not one big trick",
+          "The accounts that grow steadily for years always have a system behind them"
+        ],
+        "fr": [
+          "La croissance est un système de petits avantages qui s'accumulent, pas une grande astuce",
+          "Les comptes qui croissent régulièrement pendant des années ont toujours un système derrière eux"
+        ],
+        "ar": [
+          "النمو هو نظام من مزايا صغيرة متراكمة، وليس حيلة كبيرة واحدة",
+          "الحسابات التي تنمو بثبات لسنوات لديها دائماً نظام خلفها"
+        ]
+      },
+      "challenge_mode": {
+        "type": "full_growth_simulation",
+        "instruction": {
+          "en": "Build a complete growth engine combining every system learned in this phase",
+          "fr": "Construisez un moteur de croissance complet combinant chaque système appris dans cette phase",
+          "ar": "ابنِ محرك نمو كاملاً يجمع كل نظام تعلمته في هذه المرحلة"
+        },
+        "reward_xp": 180
+      },
+      "final_result": {
+        "title": {
+          "en": "Growth Engine Activated 🚀",
+          "fr": "Moteur de Croissance Activé 🚀",
+          "ar": "تم تفعيل محرك النمو 🚀"
+        },
+        "level": {
+          "en": "Platform Growth Strategist",
+          "fr": "Stratège de Croissance de Plateforme",
+          "ar": "استراتيجي نمو المنصات"
+        }
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "You now build systems, not one-off lucky posts 🔥",
+          "This growth engine could genuinely run for months 💣"
+        ],
+        "fr": [
+          "Vous construisez maintenant des systèmes, pas des posts chanceux ponctuels 🔥",
+          "Ce moteur de croissance pourrait vraiment tourner pendant des mois 💣"
+        ],
+        "ar": [
+          "أنت الآن تبني أنظمة، وليس منشورات محظوظة عابرة 🔥",
+          "محرك النمو هذا يمكن أن يعمل فعلاً لأشهر 💣"
+        ]
+      }
+    }
+  ]
+}
