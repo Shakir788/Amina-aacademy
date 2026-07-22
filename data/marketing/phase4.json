@@ -1,16 +1,16 @@
 {
   "phase": 4,
   "title": {
-    "en": "Paid Ads & Analytics",
-    "fr": "Publicités Payantes & Analytique",
-    "ar": "الإعلانات المدفوعة والتحليلات"
+    "en": "Paid Ads & Analytics Mastery",
+    "fr": "Maîtrise des Publicités Payantes & Analytique",
+    "ar": "إتقان الإعلانات المدفوعة والتحليلات"
   },
   "description": {
-    "en": "Turn organic content into a predictable sales machine using paid advertising, targeting, budgeting and real data-driven decisions.",
-    "fr": "Transformez le contenu organique en une machine de vente prévisible grâce à la publicité payante, le ciblage, la budgétisation et des décisions réellement basées sur les données.",
-    "ar": "حوّل المحتوى العضوي إلى آلة مبيعات يمكن التنبؤ بها باستخدام الإعلانات المدفوعة والاستهداف والميزانية والقرارات المبنية فعلياً على البيانات."
+    "en": "Turn organic skills into paid growth. Learn to run profitable ads, read real numbers, and stop guessing what's working.",
+    "fr": "Transformez vos compétences organiques en croissance payante. Apprenez à lancer des publicités rentables, lire les vrais chiffres, et arrêter de deviner ce qui fonctionne.",
+    "ar": "حوّل مهاراتك العضوية إلى نمو مدفوع. تعلّم تشغيل إعلانات مربحة، وقراءة الأرقام الحقيقية، والتوقف عن التخمين حول ما ينجح."
   },
-  "system_level": "Intermediate-Advanced",
+  "system_level": "Advanced",
   "estimated_time_per_lesson": "25-40 minutes",
   "lesson_structure": {
     "contains": {
@@ -58,286 +58,286 @@
       "title": {
         "en": "Why Pay When Organic Is Free?",
         "fr": "Pourquoi Payer Quand l'Organique Est Gratuit ?",
-        "ar": "لماذا الدفع بينما العضوي مجاني؟"
+        "ar": "لماذا تدفع بينما العضوي مجاني؟"
       },
       "xp": 150,
       "core_concept": {
-        "en": "Ads don't replace organic content — they amplify what already works.",
-        "fr": "Les publicités ne remplacent pas le contenu organique — elles amplifient ce qui fonctionne déjà.",
-        "ar": "الإعلانات لا تحل محل المحتوى العضوي — إنها تضخّم ما ينجح بالفعل."
+        "en": "Paid ads don't replace organic content — they amplify what already works.",
+        "fr": "Les publicités payantes ne remplacent pas le contenu organique — elles amplifient ce qui fonctionne déjà.",
+        "ar": "الإعلانات المدفوعة لا تحل محل المحتوى العضوي — بل تضخّم ما ينجح بالفعل."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Organic reach depends on the algorithm's mood and audience size. Paid ads guarantee your content reaches a specific number of the exact people you choose, on demand.",
-          "fr": "La portée organique dépend de l'humeur de l'algorithme et de la taille de l'audience. Les publicités payantes garantissent que votre contenu atteint un nombre spécifique des personnes exactes que vous choisissez, à la demande.",
-          "ar": "الوصول العضوي يعتمد على مزاج الخوارزمية وحجم الجمهور. الإعلانات المدفوعة تضمن وصول محتواك لعدد محدد من الأشخاص المحددين الذين تختارهم، عند الطلب."
+          "en": "Organic reach is unpredictable and slow to scale. Ads let you put money behind proven content and reach exactly the people who are likely to buy, on demand.",
+          "fr": "La portée organique est imprévisible et lente à mettre à l'échelle. Les publicités vous permettent de mettre de l'argent derrière un contenu éprouvé et d'atteindre exactement les personnes susceptibles d'acheter, à la demande.",
+          "ar": "الوصول العضوي غير متوقع وبطيء التوسع. الإعلانات تتيح لك وضع المال خلف محتوى مثبت والوصول تحديداً للأشخاص المرجح شراؤهم، عند الطلب."
         },
         "why_it_matters": {
-          "en": "Relying only on organic reach means your growth is at the mercy of the algorithm's decisions, not yours.",
-          "fr": "Compter uniquement sur la portée organique signifie que votre croissance dépend des décisions de l'algorithme, pas des vôtres.",
-          "ar": "الاعتماد فقط على الوصول العضوي يعني أن نموك رهين قرارات الخوارزمية، وليس قراراتك."
+          "en": "Businesses that rely only on organic growth hit a ceiling; ads remove that ceiling when used correctly.",
+          "fr": "Les entreprises qui dépendent uniquement de la croissance organique atteignent un plafond ; les publicités suppriment ce plafond lorsqu'elles sont utilisées correctement.",
+          "ar": "المشاريع التي تعتمد فقط على النمو العضوي تصطدم بسقف؛ الإعلانات تزيل هذا السقف عند استخدامها بشكل صحيح."
         },
         "internet_truth": {
-          "en": "Ads don't fix bad content — they just show bad content to more people, faster.",
-          "fr": "Les publicités ne réparent pas un mauvais contenu — elles montrent juste un mauvais contenu à plus de gens, plus vite.",
-          "ar": "الإعلانات لا تصلح المحتوى السيء — إنها فقط تعرض المحتوى السيء لعدد أكبر من الناس، بشكل أسرع."
+          "en": "Ads spent on weak content just make a weak offer fail faster and more expensively.",
+          "fr": "Les publicités dépensées sur un contenu faible font juste échouer une offre faible plus rapidement et plus cher.",
+          "ar": "الإعلانات المُنفقة على محتوى ضعيف تجعل العرض الضعيف يفشل بشكل أسرع وأكثر تكلفة."
         }
       },
       "psychology": {
         "en": [
-          "Paid reach removes the uncertainty of algorithm mood swings",
-          "Boosting proven organic winners multiplies existing trust",
-          "Ads work best on content that already has social proof (likes, comments)"
+          "Paid reach removes the algorithm's guesswork about who sees your content",
+          "Money spent on already-proven content multiplies existing trust signals",
+          "Retargeting keeps your brand visible to people who already showed interest"
         ],
         "fr": [
-          "La portée payante élimine l'incertitude des sautes d'humeur de l'algorithme",
-          "Booster des gagnants organiques prouvés multiplie la confiance existante",
-          "Les publicités fonctionnent mieux sur du contenu qui a déjà une preuve sociale (likes, commentaires)"
+          "La portée payante élimine les suppositions de l'algorithme sur qui voit votre contenu",
+          "L'argent dépensé sur un contenu déjà éprouvé multiplie les signaux de confiance existants",
+          "Le retargeting garde votre marque visible pour les personnes qui ont déjà montré de l'intérêt"
         ],
         "ar": [
-          "الوصول المدفوع يزيل عدم اليقين من تقلبات مزاج الخوارزمية",
-          "تعزيز الفائزين العضويين المثبتين يضاعف الثقة الموجودة",
-          "الإعلانات تعمل بشكل أفضل على محتوى لديه دليل اجتماعي بالفعل (إعجابات، تعليقات)"
+          "الوصول المدفوع يزيل تخمين الخوارزمية حول من يرى محتواك",
+          "المال المُنفق على محتوى مثبت مسبقاً يضاعف إشارات الثقة الموجودة",
+          "إعادة الاستهداف تبقي علامتك مرئية للأشخاص الذين أظهروا اهتماماً بالفعل"
         ]
       },
       "real_examples": {
         "en": [
-          "A reel that performed well organically, once boosted, converts even better because it already has social proof",
-          "A brand-new account with zero trust struggles to convert even with ad spend, until organic trust is built first"
+          "A reel that organically performed well, boosted with $20, reached 10x the audience at a low cost per result",
+          "A brand new offer with zero organic proof, boosted immediately, burned budget with no return"
         ],
         "fr": [
-          "Un reel qui a bien performé organiquement, une fois boosté, convertit encore mieux car il a déjà une preuve sociale",
-          "Un tout nouveau compte sans confiance a du mal à convertir même avec des dépenses publicitaires, jusqu'à ce que la confiance organique soit d'abord construite"
+          "Un reel qui a bien performé organiquement, boosté avec 20$, a atteint 10x l'audience à faible coût par résultat",
+          "Une toute nouvelle offre sans preuve organique, boostée immédiatement, a brûlé le budget sans retour"
         ],
         "ar": [
-          "ريلز أدى جيداً عضوياً، عند تعزيزه، يحوّل بشكل أفضل لأنه يملك دليلاً اجتماعياً بالفعل",
-          "حساب جديد تماماً بلا ثقة يعاني من التحويل حتى مع الإنفاق الإعلاني، حتى تُبنى الثقة العضوية أولاً"
+          "ريلز أدى بشكل جيد عضوياً، تم تعزيزه بـ20 دولاراً، وصل لـ10 أضعاف الجمهور بتكلفة منخفضة لكل نتيجة",
+          "عرض جديد تماماً بلا إثبات عضوي، تم تعزيزه فوراً، أحرق الميزانية بلا عائد"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Boosting a post that performed poorly organically, hoping money will fix it",
-          "Running ads with zero prior organic presence or trust",
-          "Treating ads as a magic solution instead of an amplifier"
+          "Boosting posts that never performed organically",
+          "Running ads without a clear goal (awareness vs sales vs leads)",
+          "Expecting ads to fix a weak offer or bad product"
         ],
         "fr": [
-          "Booster un post qui a mal performé organiquement, en espérant que l'argent le répare",
-          "Diffuser des publicités sans présence ou confiance organique préalable",
-          "Traiter les publicités comme une solution magique au lieu d'un amplificateur"
+          "Booster des posts qui n'ont jamais bien performé organiquement",
+          "Lancer des publicités sans objectif clair (notoriété vs ventes vs leads)",
+          "S'attendre à ce que les publicités réparent une offre faible ou un mauvais produit"
         ],
         "ar": [
-          "تعزيز منشور أدى بشكل ضعيف عضوياً، على أمل أن يصلحه المال",
-          "تشغيل إعلانات بدون حضور أو ثقة عضوية مسبقة",
-          "التعامل مع الإعلانات كحل سحري بدلاً من مضخّم"
+          "تعزيز منشورات لم تؤدِ جيداً عضوياً أبداً",
+          "تشغيل إعلانات بلا هدف واضح (وعي مقابل مبيعات مقابل عملاء محتملين)",
+          "توقع أن تصلح الإعلانات عرضاً ضعيفاً أو منتجاً سيئاً"
         ]
       },
       "missions": {
         "en": [
           "Identify your best-performing organic post from the last month",
-          "List 3 reasons that post performed well",
-          "Decide if it's a good candidate to boost"
+          "Write down one clear goal for your first ad (awareness, leads, or sales)",
+          "List what proof you have that this offer already resonates"
         ],
         "fr": [
-          "Identifiez votre meilleur post organique du dernier mois",
-          "Listez 3 raisons pour lesquelles ce post a bien performé",
-          "Décidez s'il est un bon candidat pour être boosté"
+          "Identifiez votre meilleur post organique du mois dernier",
+          "Écrivez un objectif clair pour votre première publicité (notoriété, leads ou ventes)",
+          "Listez les preuves que cette offre résonne déjà"
         ],
         "ar": [
-          "حدد أفضل منشور عضوي أداءً لديك الشهر الماضي",
-          "اذكر 3 أسباب لأداء هذا المنشور الجيد",
-          "قرر إن كان مرشحاً جيداً للتعزيز"
+          "حدد أفضل منشور عضوي أداءً لديك في الشهر الماضي",
+          "اكتب هدفاً واحداً واضحاً لإعلانك الأول (وعي، عملاء محتملون، أو مبيعات)",
+          "اذكر الدليل الذي لديك على أن هذا العرض يلقى صدى بالفعل"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "New skincare brand with 500 followers",
-          "fr": "Nouvelle marque de soins avec 500 abonnés",
-          "ar": "علامة عناية بالبشرة جديدة بـ500 متابع"
+          "en": "Local clothing store with one strong organic reel",
+          "fr": "Boutique de vêtements locale avec un reel organique fort",
+          "ar": "متجر ملابس محلي بريلز عضوي قوي واحد"
         },
         "task": {
-          "en": "Decide whether this brand should run ads now or build organic trust first",
-          "fr": "Décidez si cette marque devrait diffuser des publicités maintenant ou construire d'abord la confiance organique",
-          "ar": "قرر إن كان يجب على هذه العلامة تشغيل إعلانات الآن أو بناء الثقة العضوية أولاً"
+          "en": "Decide whether to boost this reel and define the goal if so",
+          "fr": "Décidez s'il faut booster ce reel et définissez l'objectif si oui",
+          "ar": "قرر ما إذا كان يجب تعزيز هذا الريلز وحدد الهدف إن كان كذلك"
         }
       },
       "pro_secrets": {
         "en": [
-          "The best ad budget is spent amplifying what's already proven to work organically",
-          "A small organic following with real engagement often outperforms ads with zero foundation"
+          "Never spend real ad budget on unproven content — test organically first",
+          "The best ad campaigns start from a post that already worked for free"
         ],
         "fr": [
-          "Le meilleur budget publicitaire est dépensé pour amplifier ce qui a déjà prouvé fonctionner organiquement",
-          "Une petite audience organique avec un engagement réel surpasse souvent les publicités sans fondation"
+          "Ne dépensez jamais un vrai budget publicitaire sur un contenu non prouvé — testez d'abord organiquement",
+          "Les meilleures campagnes publicitaires partent d'un post qui a déjà fonctionné gratuitement"
         ],
         "ar": [
-          "أفضل ميزانية إعلانية تُنفق على تضخيم ما ثبت نجاحه عضوياً بالفعل",
-          "متابعون عضويون قليلون بتفاعل حقيقي غالباً يتفوقون على إعلانات بلا أساس"
+          "لا تنفق ميزانية إعلانية حقيقية على محتوى غير مثبت أبداً — اختبر عضوياً أولاً",
+          "أفضل الحملات الإعلانية تبدأ من منشور نجح مجاناً بالفعل"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Given 3 posts' organic stats, choose which one deserves ad budget and explain why",
-          "fr": "Étant donné les statistiques organiques de 3 posts, choisissez celui qui mérite un budget publicitaire et expliquez pourquoi",
-          "ar": "بناءً على إحصائيات عضوية لـ3 منشورات، اختر أيها يستحق ميزانية إعلانية واشرح السبب"
+          "en": "Decide, with reasoning, whether a given post deserves ad spend",
+          "fr": "Décidez, avec justification, si un post donné mérite un budget publicitaire",
+          "ar": "قرر، مع التبرير، ما إذا كان منشور معين يستحق إنفاقاً إعلانياً"
         },
-        "reward_xp": 80
+        "reward_xp": 70
       },
       "ai_feedback_examples": {
         "en": [
-          "Boosting a weak post just wastes money faster 😭",
-          "Smart — you're amplifying something that already works 🔥"
+          "Spending on unproven content is gambling, not marketing 😭",
+          "This is exactly the kind of proof you should scale with ads 🔥"
         ],
         "fr": [
-          "Booster un post faible ne fait que gaspiller de l'argent plus vite 😭",
-          "Intelligent — vous amplifiez quelque chose qui fonctionne déjà 🔥"
+          "Dépenser sur du contenu non prouvé est du pari, pas du marketing 😭",
+          "C'est exactement le genre de preuve à faire évoluer avec des publicités 🔥"
         ],
         "ar": [
-          "تعزيز منشور ضعيف يهدر المال بشكل أسرع فقط 😭",
-          "ذكي — أنت تضخّم شيئاً ينجح بالفعل 🔥"
+          "الإنفاق على محتوى غير مثبت هو مقامرة وليس تسويقاً 😭",
+          "هذا بالضبط نوع الدليل الذي يجب أن توسّعه بالإعلانات 🔥"
         ]
       }
     },
     {
       "id": 2,
       "title": {
-        "en": "Understanding the Ads Manager",
-        "fr": "Comprendre le Gestionnaire de Publicités",
-        "ar": "فهم مدير الإعلانات"
+        "en": "Understanding Ad Objectives",
+        "fr": "Comprendre les Objectifs Publicitaires",
+        "ar": "فهم أهداف الإعلانات"
       },
       "xp": 150,
       "core_concept": {
-        "en": "The Ads Manager is a control panel, not a slot machine.",
-        "fr": "Le Gestionnaire de Publicités est un panneau de contrôle, pas une machine à sous.",
-        "ar": "مدير الإعلانات هو لوحة تحكم، وليس آلة قمار."
+        "en": "Every ad platform asks you one question first: what do you actually want to happen?",
+        "fr": "Chaque plateforme publicitaire vous pose une question en premier : que voulez-vous réellement qu'il se passe ?",
+        "ar": "كل منصة إعلانية تسألك سؤالاً واحداً أولاً: ماذا تريد أن يحدث فعلياً؟"
       },
       "deep_explanation": {
         "summary": {
-          "en": "Campaigns, ad sets, and ads form a 3-level structure: campaign sets the goal, ad set defines the audience and budget, and the ad is the actual creative shown.",
-          "fr": "Les campagnes, ensembles de publicités et publicités forment une structure à 3 niveaux : la campagne définit l'objectif, l'ensemble de publicités définit l'audience et le budget, et la publicité est le créatif réel montré.",
-          "ar": "الحملات ومجموعات الإعلانات والإعلانات تشكل هيكلاً من 3 مستويات: الحملة تحدد الهدف، ومجموعة الإعلانات تحدد الجمهور والميزانية، والإعلان هو المحتوى الإبداعي الفعلي المعروض."
+          "en": "Awareness, traffic, engagement, leads and sales are different objectives that train the algorithm to optimize for different actions — choosing the wrong one wastes budget on the wrong outcome.",
+          "fr": "Notoriété, trafic, engagement, leads et ventes sont des objectifs différents qui entraînent l'algorithme à optimiser pour différentes actions — choisir le mauvais gaspille le budget sur le mauvais résultat.",
+          "ar": "الوعي والزيارات والتفاعل والعملاء المحتملون والمبيعات كلها أهداف مختلفة تدرّب الخوارزمية على التحسين لأفعال مختلفة — اختيار الهدف الخاطئ يهدر الميزانية على نتيجة خاطئة."
         },
         "why_it_matters": {
-          "en": "Choosing the wrong campaign objective wastes budget on the wrong outcome, even with a perfect ad.",
-          "fr": "Choisir le mauvais objectif de campagne gaspille le budget sur le mauvais résultat, même avec une publicité parfaite.",
-          "ar": "اختيار هدف حملة خاطئ يهدر الميزانية على نتيجة خاطئة، حتى مع إعلان مثالي."
+          "en": "An ad optimized for 'engagement' will get you comments and likes, not necessarily customers.",
+          "fr": "Une publicité optimisée pour 'l'engagement' vous donnera des commentaires et des likes, pas nécessairement des clients.",
+          "ar": "الإعلان المحسّن لـ'التفاعل' سيمنحك تعليقات وإعجابات، ليس بالضرورة عملاء."
         },
         "internet_truth": {
-          "en": "The platform will optimize exactly for what you tell it to — even if that's the wrong goal.",
-          "fr": "La plateforme optimisera exactement pour ce que vous lui dites — même si c'est le mauvais objectif.",
-          "ar": "المنصة ستحسّن بالضبط لما تخبرها به — حتى لو كان هذا الهدف خاطئاً."
+          "en": "The algorithm does exactly what you tell it to optimize for — not what you secretly hoped it would do.",
+          "fr": "L'algorithme fait exactement ce que vous lui dites d'optimiser — pas ce que vous espériez secrètement.",
+          "ar": "الخوارزمية تفعل بالضبط ما تطلب منها تحسينه — وليس ما كنت تأمله سراً."
         }
       },
       "psychology": {
         "en": [
-          "Clear objectives let the algorithm find the right people faster",
-          "Ad sets separate audiences so you can test what works",
-          "Budget pacing affects how fast the algorithm can learn"
+          "Matching the objective to the actual business goal prevents wasted spend",
+          "Cold audiences need awareness/engagement objectives before sales objectives work well",
+          "Warm audiences (past visitors, past customers) respond well to sales objectives"
         ],
         "fr": [
-          "Des objectifs clairs permettent à l'algorithme de trouver les bonnes personnes plus vite",
-          "Les ensembles de publicités séparent les audiences pour que vous puissiez tester ce qui fonctionne",
-          "Le rythme du budget affecte la vitesse d'apprentissage de l'algorithme"
+          "Faire correspondre l'objectif à l'objectif commercial réel évite le gaspillage de dépenses",
+          "Les audiences froides ont besoin d'objectifs de notoriété/engagement avant que les objectifs de vente fonctionnent bien",
+          "Les audiences chaudes (visiteurs passés, anciens clients) répondent bien aux objectifs de vente"
         ],
         "ar": [
-          "الأهداف الواضحة تتيح للخوارزمية إيجاد الأشخاص المناسبين بشكل أسرع",
-          "مجموعات الإعلانات تفصل الجماهير حتى تتمكن من اختبار ما ينجح",
-          "وتيرة الميزانية تؤثر على سرعة تعلّم الخوارزمية"
+          "مطابقة الهدف مع هدف العمل الفعلي يمنع هدر الإنفاق",
+          "الجماهير الباردة تحتاج أهداف وعي/تفاعل قبل أن تعمل أهداف المبيعات بشكل جيد",
+          "الجماهير الدافئة (زوار سابقون، عملاء سابقون) تستجيب جيداً لأهداف المبيعات"
         ]
       },
       "real_examples": {
         "en": [
-          "Choosing 'Traffic' objective when the real goal is sales sends clicks, not buyers",
-          "Choosing 'Conversions' objective when there's no pixel data yet wastes the learning phase"
+          "A brand new page running a 'sales' objective to total strangers gets almost no conversions",
+          "The same brand running 'awareness' first, then retargeting with 'sales', converts far better"
         ],
         "fr": [
-          "Choisir l'objectif 'Trafic' quand le but réel est les ventes envoie des clics, pas des acheteurs",
-          "Choisir l'objectif 'Conversions' sans données de pixel gaspille la phase d'apprentissage"
+          "Une toute nouvelle page lançant un objectif 'ventes' à des inconnus n'obtient presque aucune conversion",
+          "La même marque lançant d'abord 'notoriété', puis reciblant avec 'ventes', convertit bien mieux"
         ],
         "ar": [
-          "اختيار هدف 'الزيارات' بينما الهدف الحقيقي هو المبيعات يرسل نقرات، وليس مشترين",
-          "اختيار هدف 'التحويلات' بدون بيانات بكسل بعد يهدر مرحلة التعلم"
+          "صفحة جديدة تماماً تشغّل هدف 'مبيعات' لغرباء تماماً لا تحصل على تحويلات تقريباً",
+          "نفس العلامة تشغّل 'وعي' أولاً، ثم إعادة استهداف بـ'مبيعات'، تحوّل أفضل بكثير"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Picking a campaign objective randomly without understanding what it optimizes for",
-          "Running too many ad sets on a tiny budget, splitting it too thin",
-          "Changing the ad mid-learning-phase, resetting the algorithm's progress"
+          "Choosing 'sales' as the objective for a cold, unfamiliar audience",
+          "Picking objectives randomly without matching to the funnel stage",
+          "Optimizing for likes when the real goal is website visits or purchases"
         ],
         "fr": [
-          "Choisir un objectif de campagne au hasard sans comprendre ce qu'il optimise",
-          "Diffuser trop d'ensembles de publicités sur un petit budget, le divisant trop finement",
-          "Changer la publicité en pleine phase d'apprentissage, réinitialisant la progression de l'algorithme"
+          "Choisir 'ventes' comme objectif pour une audience froide et non familière",
+          "Choisir des objectifs au hasard sans les faire correspondre à l'étape de l'entonnoir",
+          "Optimiser pour les likes alors que le vrai objectif est les visites du site ou les achats"
         ],
         "ar": [
-          "اختيار هدف حملة عشوائياً دون فهم ما يُحسّنه",
-          "تشغيل الكثير من مجموعات الإعلانات بميزانية صغيرة، مما يقسّمها كثيراً",
-          "تغيير الإعلان في منتصف مرحلة التعلم، مما يعيد ضبط تقدم الخوارزمية"
+          "اختيار 'المبيعات' كهدف لجمهور بارد وغير مألوف",
+          "اختيار الأهداف عشوائياً دون مطابقتها مع مرحلة القمع",
+          "التحسين من أجل الإعجابات بينما الهدف الحقيقي هو زيارات الموقع أو المشتريات"
         ]
       },
       "missions": {
         "en": [
-          "Open the Ads Manager and identify the 3-level structure",
-          "Match 3 business goals to their correct campaign objective",
-          "Research what the learning phase means for your platform"
+          "Map your customer journey: stranger → aware → interested → buyer",
+          "Match an ad objective to each stage of that journey",
+          "Identify which stage your current audience mostly sits in"
         ],
         "fr": [
-          "Ouvrez le Gestionnaire de Publicités et identifiez la structure à 3 niveaux",
-          "Associez 3 objectifs commerciaux à leur objectif de campagne correct",
-          "Recherchez ce que signifie la phase d'apprentissage pour votre plateforme"
+          "Cartographiez le parcours client : inconnu → conscient → intéressé → acheteur",
+          "Faites correspondre un objectif publicitaire à chaque étape de ce parcours",
+          "Identifiez à quelle étape se situe majoritairement votre audience actuelle"
         ],
         "ar": [
-          "افتح مدير الإعلانات وحدد الهيكل ذا 3 مستويات",
-          "طابق 3 أهداف تجارية مع هدف الحملة الصحيح لها",
-          "ابحث عن معنى مرحلة التعلم لمنصتك"
+          "ارسم رحلة العميل: غريب ← واعٍ ← مهتم ← مشترٍ",
+          "طابق هدف إعلان مع كل مرحلة من هذه الرحلة",
+          "حدد أي مرحلة يقع فيها جمهورك الحالي في الغالب"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Local gym wanting new membership sign-ups",
-          "fr": "Salle de sport locale voulant de nouvelles inscriptions",
-          "ar": "نادي رياضي محلي يريد اشتراكات جديدة"
+          "en": "New online furniture store with no past customers",
+          "fr": "Nouveau magasin de meubles en ligne sans clients passés",
+          "ar": "متجر أثاث إلكتروني جديد بلا عملاء سابقين"
         },
         "task": {
-          "en": "Choose the correct campaign objective and explain the reasoning",
-          "fr": "Choisissez l'objectif de campagne correct et expliquez le raisonnement",
-          "ar": "اختر هدف الحملة الصحيح واشرح المنطق وراءه"
+          "en": "Design a 3-stage ad objective sequence from cold to sale",
+          "fr": "Concevez une séquence d'objectifs publicitaires en 3 étapes du froid à la vente",
+          "ar": "صمم تسلسل أهداف إعلانية من 3 مراحل من البارد إلى البيع"
         }
       },
       "pro_secrets": {
         "en": [
-          "Never touch an ad while it's still in the learning phase — it resets progress",
-          "Fewer, well-funded ad sets outperform many tiny fragmented ones"
+          "Never send cold traffic straight to a 'buy now' ad — warm them up first",
+          "The objective you pick trains the algorithm's targeting, not just the button text"
         ],
         "fr": [
-          "Ne touchez jamais à une publicité pendant qu'elle est encore en phase d'apprentissage — ça réinitialise la progression",
-          "Moins d'ensembles de publicités bien financés surpassent de nombreux petits ensembles fragmentés"
+          "N'envoyez jamais de trafic froid directement vers une publicité 'achetez maintenant' — réchauffez-le d'abord",
+          "L'objectif que vous choisissez entraîne le ciblage de l'algorithme, pas seulement le texte du bouton"
         ],
         "ar": [
-          "لا تلمس إعلاناً أبداً وهو لا يزال في مرحلة التعلم — هذا يعيد ضبط التقدم",
-          "مجموعات إعلانية أقل وممولة جيداً تتفوق على مجموعات صغيرة مجزأة كثيرة"
+          "لا ترسل زيارات باردة مباشرة إلى إعلان 'اشترِ الآن' — قم بتدفئتهم أولاً",
+          "الهدف الذي تختاره يدرّب استهداف الخوارزمية، وليس فقط نص الزر"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Structure a full campaign (objective, ad set, ad) for a real business goal",
-          "fr": "Structurez une campagne complète (objectif, ensemble de publicités, publicité) pour un objectif commercial réel",
-          "ar": "صمم هيكل حملة كاملة (الهدف، مجموعة الإعلانات، الإعلان) لهدف تجاري حقيقي"
+          "en": "Build a full 3-objective ad funnel for a real business launch",
+          "fr": "Construisez un entonnoir publicitaire complet à 3 objectifs pour un lancement d'entreprise réel",
+          "ar": "ابنِ قمع إعلانات كاملاً بـ3 أهداف لإطلاق مشروع حقيقي"
         },
-        "reward_xp": 85
+        "reward_xp": 80
       },
       "ai_feedback_examples": {
         "en": [
-          "This objective sends the wrong signal to the algorithm 😭",
-          "This structure gives the algorithm exactly what it needs to succeed 🔥"
+          "This objective doesn't match the audience temperature 😭",
+          "This funnel warms people up before ever asking for the sale 🔥"
         ],
         "fr": [
-          "Cet objectif envoie le mauvais signal à l'algorithme 😭",
-          "Cette structure donne à l'algorithme exactement ce dont il a besoin pour réussir 🔥"
+          "Cet objectif ne correspond pas à la température de l'audience 😭",
+          "Cet entonnoir réchauffe les gens avant même de demander la vente 🔥"
         ],
         "ar": [
-          "هذا الهدف يرسل إشارة خاطئة للخوارزمية 😭",
-          "هذا الهيكل يمنح الخوارزمية بالضبط ما تحتاجه للنجاح 🔥"
+          "هذا الهدف لا يتناسب مع درجة حرارة الجمهور 😭",
+          "هذا القمع يُدفئ الناس قبل طلب البيع أبداً 🔥"
         ]
       }
     },
@@ -350,1002 +350,1002 @@
       },
       "xp": 160,
       "core_concept": {
-        "en": "A great ad shown to the wrong person is money wasted.",
-        "fr": "Une excellente publicité montrée à la mauvaise personne est de l'argent gaspillé.",
-        "ar": "إعلان رائع يُعرض للشخص الخطأ هو مال مهدور."
+        "en": "The best ad creative fails if it's shown to the wrong person.",
+        "fr": "La meilleure création publicitaire échoue si elle est montrée à la mauvaise personne.",
+        "ar": "أفضل إعلان إبداعي يفشل إذا عُرض للشخص الخطأ."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Targeting lets you narrow an ad's audience by location, age, interests and behaviors — or let the algorithm find lookalikes of your existing customers.",
-          "fr": "Le ciblage vous permet de restreindre l'audience d'une publicité par localisation, âge, intérêts et comportements — ou de laisser l'algorithme trouver des sosies de vos clients existants.",
-          "ar": "الاستهداف يتيح لك تضييق جمهور الإعلان حسب الموقع والعمر والاهتمامات والسلوكيات — أو ترك الخوارزمية تجد أشخاصاً مشابهين لعملائك الحاليين."
+          "en": "Ad platforms let you target by location, age, interests, behaviors, and custom audiences built from your own data — narrowing this correctly is what makes budget efficient.",
+          "fr": "Les plateformes publicitaires vous permettent de cibler par localisation, âge, intérêts, comportements, et audiences personnalisées construites à partir de vos propres données — bien restreindre cela rend le budget efficace.",
+          "ar": "منصات الإعلانات تتيح لك الاستهداف حسب الموقع والعمر والاهتمامات والسلوكيات والجماهير المخصصة المبنية من بياناتك الخاصة — تضييق هذا بشكل صحيح هو ما يجعل الميزانية فعالة."
         },
         "why_it_matters": {
-          "en": "Even the best creative fails if it's shown to people who were never going to buy in the first place.",
-          "fr": "Même le meilleur créatif échoue s'il est montré à des personnes qui n'allaient jamais acheter en premier lieu.",
-          "ar": "حتى أفضل محتوى إبداعي يفشل إذا عُرض على أشخاص لم يكونوا ليشتروا أصلاً."
+          "en": "A too-broad audience wastes budget on people who will never buy; a too-narrow audience runs out of people to show ads to.",
+          "fr": "Une audience trop large gaspille le budget sur des gens qui n'achèteront jamais ; une audience trop étroite manque de personnes à qui montrer des publicités.",
+          "ar": "الجمهور الواسع جداً يهدر الميزانية على أشخاص لن يشتروا أبداً؛ الجمهور الضيق جداً ينفد من الأشخاص لعرض الإعلانات لهم."
         },
         "internet_truth": {
-          "en": "Broad targeting works well once you have data; narrow targeting works better when you don't yet.",
-          "fr": "Le ciblage large fonctionne bien une fois que vous avez des données ; le ciblage étroit fonctionne mieux quand vous n'en avez pas encore.",
-          "ar": "الاستهداف الواسع يعمل جيداً بمجرد حصولك على بيانات؛ الاستهداف الضيق يعمل بشكل أفضل عندما لا تملكها بعد."
+          "en": "Your own customer list is often the single most valuable targeting asset you own.",
+          "fr": "Votre propre liste de clients est souvent l'atout de ciblage le plus précieux que vous possédez.",
+          "ar": "قائمة عملائك الخاصة غالباً ما تكون أثمن أصل استهداف تملكه."
         }
       },
       "psychology": {
         "en": [
-          "Lookalike audiences replicate the traits of your best existing customers",
-          "Interest-based targeting reaches people already primed for the topic",
-          "Retargeting reaches people who already showed intent, making them easier to convert"
+          "Lookalike audiences find new people who resemble your best existing customers",
+          "Custom audiences from website visitors convert far better than cold interest targeting",
+          "Overly broad targeting dilutes budget across uninterested people"
         ],
         "fr": [
-          "Les audiences similaires répliquent les traits de vos meilleurs clients existants",
-          "Le ciblage par intérêt atteint des gens déjà prêts pour le sujet",
-          "Le retargeting atteint des gens qui ont déjà montré de l'intention, les rendant plus faciles à convertir"
+          "Les audiences similaires trouvent de nouvelles personnes qui ressemblent à vos meilleurs clients existants",
+          "Les audiences personnalisées des visiteurs du site convertissent bien mieux que le ciblage d'intérêt froid",
+          "Un ciblage trop large dilue le budget sur des personnes non intéressées"
         ],
         "ar": [
-          "الجماهير المشابهة تكرر سمات أفضل عملائك الحاليين",
-          "الاستهداف القائم على الاهتمام يصل لأشخاص مهيّئين بالفعل للموضوع",
-          "إعادة الاستهداف يصل لأشخاص أظهروا نية بالفعل، مما يجعلهم أسهل في التحويل"
+          "الجماهير المتشابهة تجد أشخاصاً جدداً يشبهون أفضل عملائك الحاليين",
+          "الجماهير المخصصة من زوار الموقع تحوّل أفضل بكثير من استهداف الاهتمام البارد",
+          "الاستهداف الواسع جداً يخفف الميزانية على أشخاص غير مهتمين"
         ]
       },
       "real_examples": {
         "en": [
-          "A lookalike audience built from past buyers converts better than pure interest targeting",
-          "Retargeting people who visited the website but didn't buy recovers lost sales cheaply"
+          "A skincare brand targeting a lookalike of past buyers gets a much lower cost-per-sale than broad interest targeting",
+          "Retargeting website visitors who viewed a product but didn't buy recovers many 'almost' customers"
         ],
         "fr": [
-          "Une audience similaire construite à partir d'anciens acheteurs convertit mieux que le ciblage par intérêt pur",
-          "Recibler les gens qui ont visité le site sans acheter récupère des ventes perdues à moindre coût"
+          "Une marque de soins de la peau ciblant un sosie d'anciens acheteurs obtient un coût par vente bien plus bas que le ciblage d'intérêt large",
+          "Recibler les visiteurs du site qui ont vu un produit sans acheter récupère de nombreux clients 'presque' convertis"
         ],
         "ar": [
-          "جمهور مشابه مبني من مشترين سابقين يحوّل أفضل من الاستهداف بالاهتمام البحت",
-          "إعادة استهداف من زاروا الموقع دون الشراء يستعيد مبيعات مفقودة بتكلفة منخفضة"
+          "علامة عناية بالبشرة تستهدف جمهوراً مشابهاً للمشترين السابقين تحصل على تكلفة أقل بكثير لكل بيع من الاستهداف الواسع بالاهتمام",
+          "إعادة استهداف زوار الموقع الذين شاهدوا منتجاً دون الشراء يستعيد العديد من العملاء 'شبه المقتنعين'"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Targeting far too broad an audience with no data to guide the algorithm",
-          "Layering too many narrow interests, shrinking the audience to almost nothing",
-          "Never using retargeting for people who already showed interest"
+          "Targeting an audience so broad it includes people who could never be customers",
+          "Never using your own customer list or website visitors as a targeting source",
+          "Ignoring location targeting when the business only serves a specific city"
         ],
         "fr": [
-          "Cibler une audience beaucoup trop large sans données pour guider l'algorithme",
-          "Superposer trop d'intérêts étroits, réduisant l'audience à presque rien",
-          "Ne jamais utiliser le retargeting pour les gens qui ont déjà montré de l'intérêt"
+          "Cibler une audience si large qu'elle inclut des personnes qui ne pourraient jamais être clientes",
+          "Ne jamais utiliser sa propre liste de clients ou les visiteurs du site comme source de ciblage",
+          "Ignorer le ciblage géographique quand l'entreprise ne dessert qu'une ville spécifique"
         ],
         "ar": [
-          "استهداف جمهور واسع جداً بدون بيانات لتوجيه الخوارزمية",
-          "تكديس الكثير من الاهتمامات الضيقة، مما يقلص الجمهور إلى لا شيء تقريباً",
-          "عدم استخدام إعادة الاستهداف أبداً لمن أظهروا اهتماماً بالفعل"
+          "استهداف جمهور واسع لدرجة أنه يشمل أشخاصاً لن يكونوا عملاء أبداً",
+          "عدم استخدام قائمة عملائك الخاصة أو زوار الموقع كمصدر استهداف أبداً",
+          "تجاهل استهداف الموقع الجغرافي عندما يخدم المشروع مدينة محددة فقط"
         ]
       },
       "missions": {
         "en": [
-          "Build a lookalike audience from your existing customer list if possible",
-          "Set up a basic retargeting audience for website visitors",
-          "Test 2 different interest-based audiences against each other"
+          "Define your ideal ad audience by age, location and interest",
+          "Set up a custom audience from your website visitors or customer list if possible",
+          "Create a lookalike audience based on your best customers"
         ],
         "fr": [
-          "Construisez une audience similaire à partir de votre liste de clients existants si possible",
-          "Configurez une audience de retargeting basique pour les visiteurs du site",
-          "Testez 2 audiences différentes basées sur les intérêts l'une contre l'autre"
+          "Définissez votre audience publicitaire idéale par âge, localisation et intérêt",
+          "Configurez une audience personnalisée à partir des visiteurs de votre site ou liste de clients si possible",
+          "Créez une audience similaire basée sur vos meilleurs clients"
         ],
         "ar": [
-          "ابنِ جمهوراً مشابهاً من قائمة عملائك الحاليين إن أمكن",
-          "أعدّ جمهور إعادة استهداف أساسي لزوار الموقع",
-          "اختبر جمهورين مختلفين قائمين على الاهتمام ضد بعضهما"
+          "حدد جمهورك الإعلاني المثالي حسب العمر والموقع والاهتمام",
+          "أنشئ جمهوراً مخصصاً من زوار موقعك أو قائمة عملائك إن أمكن",
+          "أنشئ جمهوراً مشابهاً بناءً على أفضل عملائك"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Online furniture store with a customer email list",
-          "fr": "Boutique de meubles en ligne avec une liste d'emails clients",
-          "ar": "متجر أثاث إلكتروني بقائمة بريد إلكتروني للعملاء"
+          "en": "Moroccan travel agency targeting Morocco-based tourists",
+          "fr": "Agence de voyage marocaine ciblant les touristes basés au Maroc",
+          "ar": "وكالة سفر مغربية تستهدف سياحاً مقيمين في المغرب"
         },
         "task": {
-          "en": "Design a targeting strategy using lookalikes and retargeting together",
-          "fr": "Concevez une stratégie de ciblage utilisant des audiences similaires et le retargeting ensemble",
-          "ar": "صمم استراتيجية استهداف تجمع بين الجماهير المشابهة وإعادة الاستهداف معاً"
+          "en": "Build a full targeting profile: location, age, interests, and a custom audience idea",
+          "fr": "Construisez un profil de ciblage complet : localisation, âge, intérêts, et une idée d'audience personnalisée",
+          "ar": "ابنِ ملف استهداف كاملاً: الموقع، العمر، الاهتمامات، وفكرة جمهور مخصص"
         }
       },
       "pro_secrets": {
         "en": [
-          "Retargeting audiences almost always convert cheaper than cold audiences",
-          "A 1% lookalike is usually more precise than a 5-10% lookalike"
+          "A small, well-targeted audience often outperforms a huge, vague one",
+          "Your existing customers are the fastest path to finding new similar customers"
         ],
         "fr": [
-          "Les audiences de retargeting convertissent presque toujours moins cher que les audiences froides",
-          "Une audience similaire à 1% est généralement plus précise qu'une à 5-10%"
+          "Une petite audience bien ciblée surpasse souvent une grande audience vague",
+          "Vos clients existants sont le chemin le plus rapide pour trouver de nouveaux clients similaires"
         ],
         "ar": [
-          "جماهير إعادة الاستهداف تحوّل دائماً تقريباً بتكلفة أقل من الجماهير الباردة",
-          "جمهور مشابه بنسبة 1% عادة أدق من جمهور مشابه بنسبة 5-10%"
+          "الجمهور الصغير المستهدف جيداً غالباً يتفوق على جمهور كبير وغامض",
+          "عملاؤك الحاليون هم أسرع طريق لإيجاد عملاء جدد مشابهين"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Build a 3-layer targeting strategy: cold, warm (interest), and hot (retargeting)",
-          "fr": "Construisez une stratégie de ciblage à 3 niveaux : froid, tiède (intérêt), et chaud (retargeting)",
-          "ar": "ابنِ استراتيجية استهداف من 3 طبقات: بارد، دافئ (اهتمام)، وحار (إعادة استهداف)"
+          "en": "Fix an ad campaign that's targeting way too broad an audience",
+          "fr": "Corrigez une campagne publicitaire qui cible une audience beaucoup trop large",
+          "ar": "أصلح حملة إعلانية تستهدف جمهوراً واسعاً جداً"
         },
-        "reward_xp": 90
+        "reward_xp": 85
       },
       "ai_feedback_examples": {
         "en": [
-          "This audience is so broad it's basically random 😭",
-          "This 3-layer funnel targets people at exactly the right moment 🔥"
+          "This targeting is so broad it's basically random 😭",
+          "This audience is specific enough to actually convert 🔥"
         ],
         "fr": [
-          "Cette audience est tellement large qu'elle est essentiellement aléatoire 😭",
-          "Cet entonnoir à 3 niveaux cible les gens exactement au bon moment 🔥"
+          "Ce ciblage est si large qu'il est essentiellement aléatoire 😭",
+          "Cette audience est assez spécifique pour vraiment convertir 🔥"
         ],
         "ar": [
-          "هذا الجمهور واسع جداً لدرجة أنه عشوائي عملياً 😭",
-          "هذا القمع ذو 3 طبقات يستهدف الناس في اللحظة المناسبة تماماً 🔥"
+          "هذا الاستهداف واسع جداً لدرجة أنه عشوائي عملياً 😭",
+          "هذا الجمهور محدد بما يكفي ليُحوّل فعلاً 🔥"
         ]
       }
     },
     {
       "id": 4,
       "title": {
-        "en": "Budgeting Like a Strategist",
-        "fr": "Budgétiser Comme un Stratège",
-        "ar": "وضع الميزانية كاستراتيجي"
+        "en": "Writing Ad Copy That Converts",
+        "fr": "Écrire un Texte Publicitaire Qui Convertit",
+        "ar": "كتابة نص إعلاني يُحوّل"
       },
       "xp": 160,
       "core_concept": {
-        "en": "Your budget should follow proof, not hope.",
-        "fr": "Votre budget devrait suivre la preuve, pas l'espoir.",
-        "ar": "ميزانيتك يجب أن تتبع الدليل، وليس الأمل."
+        "en": "An ad has one job: make the scroll stop and the click happen.",
+        "fr": "Une publicité a un seul travail : arrêter le défilement et provoquer le clic.",
+        "ar": "الإعلان له مهمة واحدة: إيقاف التصفح وجعل النقر يحدث."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Start small to test, then scale spend only on what data proves is working — never the other way around.",
-          "fr": "Commencez petit pour tester, puis augmentez les dépenses uniquement sur ce que les données prouvent fonctionner — jamais l'inverse.",
-          "ar": "ابدأ صغيراً للاختبار، ثم وسّع الإنفاق فقط على ما تثبت البيانات نجاحه — وليس العكس أبداً."
+          "en": "Effective ad copy leads with the customer's problem or desire, not the brand's features, and ends with one clear, low-friction action.",
+          "fr": "Un texte publicitaire efficace commence par le problème ou le désir du client, pas les caractéristiques de la marque, et se termine par une action claire et à faible friction.",
+          "ar": "النص الإعلاني الفعال يبدأ بمشكلة العميل أو رغبته، وليس بميزات العلامة التجارية، وينتهي بفعل واحد واضح وسهل."
         },
         "why_it_matters": {
-          "en": "Spending big before testing means scaling mistakes instead of scaling wins.",
-          "fr": "Dépenser gros avant de tester signifie mettre à l'échelle des erreurs au lieu de succès.",
-          "ar": "الإنفاق الكبير قبل الاختبار يعني توسيع الأخطاء بدلاً من النجاحات."
+          "en": "People don't click on ads about products — they click on ads about themselves.",
+          "fr": "Les gens ne cliquent pas sur des publicités concernant des produits — ils cliquent sur des publicités qui parlent d'eux-mêmes.",
+          "ar": "الناس لا ينقرون على إعلانات عن المنتجات — بل ينقرون على إعلانات تتحدث عنهم هم."
         },
         "internet_truth": {
-          "en": "A bigger budget on a losing ad just loses money faster.",
-          "fr": "Un budget plus important sur une publicité perdante ne fait que perdre de l'argent plus vite.",
-          "ar": "ميزانية أكبر على إعلان خاسر تخسر المال فقط بشكل أسرع."
+          "en": "Feature-focused copy gets ignored; problem-focused copy gets clicked.",
+          "fr": "Le texte axé sur les fonctionnalités est ignoré ; le texte axé sur le problème est cliqué.",
+          "ar": "النص المركز على الميزات يُتجاهل؛ النص المركز على المشكلة يُنقر عليه."
         }
       },
       "psychology": {
         "en": [
-          "Small test budgets reduce the emotional and financial risk of being wrong",
-          "Gradual scaling avoids disrupting the algorithm's learning phase",
-          "Cost-per-result data reveals truth that gut feeling can't"
+          "Leading with a specific pain point creates instant relevance",
+          "A single, clear call-to-action outperforms multiple competing ones",
+          "Urgency and specificity increase click-through when used honestly"
         ],
         "fr": [
-          "De petits budgets de test réduisent le risque émotionnel et financier de se tromper",
-          "Une mise à l'échelle graduelle évite de perturber la phase d'apprentissage de l'algorithme",
-          "Les données de coût par résultat révèlent une vérité que l'instinct ne peut pas"
+          "Commencer par un point de douleur spécifique crée une pertinence instantanée",
+          "Un seul appel à l'action clair surpasse plusieurs qui se font concurrence",
+          "L'urgence et la spécificité augmentent le taux de clic quand elles sont utilisées honnêtement"
         ],
         "ar": [
-          "ميزانيات الاختبار الصغيرة تقلل المخاطرة العاطفية والمالية من الخطأ",
-          "التوسع التدريجي يتجنب تعطيل مرحلة تعلم الخوارزمية",
-          "بيانات التكلفة لكل نتيجة تكشف حقيقة لا يستطيع الحدس كشفها"
+          "البدء بنقطة ألم محددة يخلق ملاءمة فورية",
+          "دعوة واحدة واضحة للعمل تتفوق على عدة دعوات متنافسة",
+          "الإلحاح والتحديد يزيدان معدل النقر عند استخدامهما بصدق"
         ]
       },
       "real_examples": {
         "en": [
-          "Testing 3 ad variations with $5/day each reveals a clear winner before scaling to $50/day",
-          "Doubling budget gradually (not suddenly) keeps performance stable while scaling"
+          "'Tired of your Instagram posts getting 10 likes?' outperforms 'We offer social media management'",
+          "'Book your free consultation today — only 5 spots left' beats a vague 'Contact us'"
         ],
         "fr": [
-          "Tester 3 variations de publicité avec 5$/jour chacune révèle un gagnant clair avant de passer à 50$/jour",
-          "Doubler le budget graduellement (pas soudainement) maintient la performance stable en évoluant"
+          "'Fatigué que vos posts Instagram n'obtiennent que 10 likes ?' surpasse 'Nous offrons la gestion des réseaux sociaux'",
+          "'Réservez votre consultation gratuite aujourd'hui — seulement 5 places restantes' bat un vague 'Contactez-nous'"
         ],
         "ar": [
-          "اختبار 3 نسخ إعلانية بـ5 دولارات يومياً لكل منها يكشف فائزاً واضحاً قبل التوسع لـ50 دولاراً يومياً",
-          "مضاعفة الميزانية تدريجياً (وليس فجأة) تحافظ على استقرار الأداء أثناء التوسع"
+          "'مللت من حصول منشورات إنستغرام على 10 إعجابات فقط؟' يتفوق على 'نقدم إدارة وسائل التواصل الاجتماعي'",
+          "'احجز استشارتك المجانية اليوم — 5 أماكن فقط متبقية' يتفوق على 'اتصل بنا' الغامضة"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Putting the entire budget behind one untested ad",
-          "Doubling the budget overnight, which resets the learning phase",
-          "Judging results after only a few hours instead of a few days"
+          "Leading with brand name and features instead of the customer's problem",
+          "Multiple calls-to-action confusing what the viewer should actually do",
+          "Fake or exaggerated urgency that damages trust when discovered"
         ],
         "fr": [
-          "Mettre tout le budget derrière une seule publicité non testée",
-          "Doubler le budget du jour au lendemain, ce qui réinitialise la phase d'apprentissage",
-          "Juger les résultats après seulement quelques heures au lieu de quelques jours"
+          "Commencer par le nom de la marque et les fonctionnalités au lieu du problème du client",
+          "Plusieurs appels à l'action qui confondent ce que le spectateur doit réellement faire",
+          "Une urgence fausse ou exagérée qui endommage la confiance quand elle est découverte"
         ],
         "ar": [
-          "وضع الميزانية بأكملها خلف إعلان واحد غير مختبر",
-          "مضاعفة الميزانية بين عشية وضحاها، مما يعيد ضبط مرحلة التعلم",
-          "الحكم على النتائج بعد ساعات قليلة فقط بدلاً من أيام قليلة"
+          "البدء باسم العلامة التجارية والميزات بدلاً من مشكلة العميل",
+          "عدة دعوات للعمل تربك ما يجب أن يفعله المشاهد فعلياً",
+          "إلحاح مزيف أو مبالغ فيه يضر بالثقة عند اكتشافه"
         ]
       },
       "missions": {
         "en": [
-          "Design a small test budget plan for 3 ad variations",
-          "Calculate a realistic cost-per-result target for your product",
-          "Plan a gradual scaling schedule for a winning ad"
+          "Write 3 versions of ad copy leading with a customer pain point",
+          "Cut each version down to one single call-to-action",
+          "Test honest urgency (real limited spots/time) in one version"
         ],
         "fr": [
-          "Concevez un petit plan de budget de test pour 3 variations de publicité",
-          "Calculez un objectif réaliste de coût par résultat pour votre produit",
-          "Planifiez un calendrier de mise à l'échelle graduelle pour une publicité gagnante"
+          "Écrivez 3 versions de texte publicitaire commençant par un point de douleur client",
+          "Réduisez chaque version à un seul appel à l'action",
+          "Testez une urgence honnête (places/temps réellement limités) dans une version"
         ],
         "ar": [
-          "صمم خطة ميزانية اختبار صغيرة لـ3 نسخ إعلانية",
-          "احسب هدف تكلفة لكل نتيجة واقعياً لمنتجك",
-          "خطط لجدول توسع تدريجي لإعلان فائز"
+          "اكتب 3 نسخ من نص إعلاني تبدأ بنقطة ألم للعميل",
+          "اختصر كل نسخة لدعوة عمل واحدة فقط",
+          "جرب إلحاحاً صادقاً (أماكن/وقت محدود فعلياً) في نسخة واحدة"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Handmade soap brand with a $150 monthly ad budget",
-          "fr": "Marque de savon artisanal avec un budget publicitaire mensuel de 150$",
-          "ar": "علامة صابون يدوي بميزانية إعلانية شهرية 150 دولاراً"
+          "en": "Dental clinic offering teeth whitening",
+          "fr": "Clinique dentaire proposant le blanchiment des dents",
+          "ar": "عيادة أسنان تقدم تبييض الأسنان"
         },
         "task": {
-          "en": "Split this budget into a smart test-then-scale plan",
-          "fr": "Répartissez ce budget en un plan intelligent de test puis mise à l'échelle",
-          "ar": "قسّم هذه الميزانية إلى خطة اختبار ثم توسع ذكية"
+          "en": "Write a problem-first ad copy with one clear call-to-action",
+          "fr": "Écrivez un texte publicitaire axé sur le problème avec un seul appel à l'action clair",
+          "ar": "اكتب نصاً إعلانياً يركز على المشكلة أولاً بدعوة عمل واحدة واضحة"
         }
       },
       "pro_secrets": {
         "en": [
-          "A 20% budget increase every few days scales safely without resetting learning",
-          "Never judge an ad's performance before it exits the learning phase"
+          "The first line of ad copy does the same job as a video hook — stop the scroll",
+          "Specific numbers and details make claims more believable than vague promises"
         ],
         "fr": [
-          "Une augmentation de budget de 20% tous les quelques jours évolue en toute sécurité sans réinitialiser l'apprentissage",
-          "Ne jugez jamais la performance d'une publicité avant qu'elle ne sorte de la phase d'apprentissage"
+          "La première ligne du texte publicitaire fait le même travail qu'une accroche vidéo — arrêter le défilement",
+          "Des chiffres et détails spécifiques rendent les affirmations plus crédibles que des promesses vagues"
         ],
         "ar": [
-          "زيادة الميزانية بنسبة 20% كل بضعة أيام توسّع بأمان دون إعادة ضبط التعلم",
-          "لا تحكم أبداً على أداء إعلان قبل خروجه من مرحلة التعلم"
+          "السطر الأول من النص الإعلاني يقوم بنفس عمل خطاف الفيديو — إيقاف التصفح",
+          "الأرقام والتفاصيل المحددة تجعل الادعاءات أكثر مصداقية من الوعود الغامضة"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Design a full test-to-scale budget plan for a $300 monthly ad budget",
-          "fr": "Concevez un plan complet de budget test-à-échelle pour un budget publicitaire mensuel de 300$",
-          "ar": "صمم خطة ميزانية كاملة من الاختبار إلى التوسع لميزانية إعلانية شهرية 300 دولار"
+          "en": "Rewrite a feature-focused ad into a problem-focused one with a single CTA",
+          "fr": "Réécrivez une publicité axée sur les fonctionnalités en une axée sur le problème avec un seul CTA",
+          "ar": "أعد كتابة إعلان يركز على الميزات إلى إعلان يركز على المشكلة بدعوة عمل واحدة"
         },
-        "reward_xp": 90
+        "reward_xp": 85
       },
       "ai_feedback_examples": {
         "en": [
-          "This budget plan is gambling, not strategy 😭",
-          "This test-then-scale plan protects the budget while finding winners 🔥"
+          "This reads like a brochure, not an ad that converts 😭",
+          "This speaks directly to the reader's problem 🔥"
         ],
         "fr": [
-          "Ce plan de budget est du jeu, pas une stratégie 😭",
-          "Ce plan de test puis échelle protège le budget tout en trouvant des gagnants 🔥"
+          "Ça ressemble à une brochure, pas à une publicité qui convertit 😭",
+          "Ça parle directement au problème du lecteur 🔥"
         ],
         "ar": [
-          "خطة الميزانية هذه مقامرة، وليست استراتيجية 😭",
-          "خطة الاختبار ثم التوسع هذه تحمي الميزانية أثناء إيجاد الفائزين 🔥"
+          "هذا يبدو ككتيب، وليس إعلاناً يُحوّل 😭",
+          "هذا يتحدث مباشرة إلى مشكلة القارئ 🔥"
         ]
       }
     },
     {
       "id": 5,
       "title": {
-        "en": "Writing Ad Copy That Converts",
-        "fr": "Écrire un Texte Publicitaire Qui Convertit",
-        "ar": "كتابة نص إعلاني يحوّل"
+        "en": "Budgeting Without Guessing",
+        "fr": "Établir un Budget Sans Deviner",
+        "ar": "وضع الميزانية دون تخمين"
       },
       "xp": 170,
       "core_concept": {
-        "en": "An ad has one job: get the click or the action, not tell the whole story.",
-        "fr": "Une publicité a un seul travail : obtenir le clic ou l'action, pas raconter toute l'histoire.",
-        "ar": "الإعلان له مهمة واحدة: الحصول على النقرة أو الإجراء، وليس سرد القصة كاملة."
+        "en": "A budget without a target cost-per-result is just hoping.",
+        "fr": "Un budget sans coût cible par résultat n'est que de l'espoir.",
+        "ar": "الميزانية بدون تكلفة مستهدفة لكل نتيجة هي مجرد أمل."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Strong ad copy identifies a specific pain or desire, promises a clear outcome, and removes friction with a simple, obvious next step.",
-          "fr": "Un texte publicitaire fort identifie une douleur ou un désir spécifique, promet un résultat clair, et supprime la friction avec une prochaine étape simple et évidente.",
-          "ar": "النص الإعلاني القوي يحدد ألماً أو رغبة محددة، ويعد بنتيجة واضحة، ويزيل الاحتكاك بخطوة تالية بسيطة وواضحة."
+          "en": "Before spending anything, calculate what a customer is worth to the business, so you know the maximum you can afford to pay per lead or per sale.",
+          "fr": "Avant de dépenser quoi que ce soit, calculez ce que vaut un client pour l'entreprise, afin de connaître le maximum que vous pouvez vous permettre de payer par lead ou par vente.",
+          "ar": "قبل إنفاق أي شيء، احسب قيمة العميل للمشروع، حتى تعرف الحد الأقصى الذي يمكنك دفعه لكل عميل محتمل أو بيع."
         },
         "why_it_matters": {
-          "en": "People decide to click or scroll past an ad in under 2 seconds — copy has to work fast.",
-          "fr": "Les gens décident de cliquer ou de faire défiler une publicité en moins de 2 secondes — le texte doit fonctionner vite.",
-          "ar": "الناس يقررون النقر أو تجاوز الإعلان في أقل من ثانيتين — النص يجب أن يعمل بسرعة."
+          "en": "Without this number, you can't tell if an ad is working or quietly losing money.",
+          "fr": "Sans ce chiffre, vous ne pouvez pas savoir si une publicité fonctionne ou perd silencieusement de l'argent.",
+          "ar": "بدون هذا الرقم، لا يمكنك معرفة ما إذا كان الإعلان يعمل أو يخسر المال بصمت."
         },
         "internet_truth": {
-          "en": "People don't click because your product is good — they click because it solves their problem, right now.",
-          "fr": "Les gens ne cliquent pas parce que votre produit est bon — ils cliquent parce qu'il résout leur problème, maintenant.",
-          "ar": "الناس لا ينقرون لأن منتجك جيد — ينقرون لأنه يحل مشكلتهم، الآن."
+          "en": "'It got a lot of clicks' means nothing if those clicks cost more than the product's profit.",
+          "fr": "'Ça a eu beaucoup de clics' ne signifie rien si ces clics coûtent plus que le profit du produit.",
+          "ar": "'حصل على الكثير من النقرات' لا يعني شيئاً إذا كانت تلك النقرات تكلف أكثر من ربح المنتج."
         }
       },
       "psychology": {
         "en": [
-          "Specific numbers and outcomes feel more credible than vague promises",
-          "A single, clear call-to-action outperforms multiple competing ones",
-          "Addressing objections directly in the copy builds pre-emptive trust"
+          "A clear cost ceiling removes emotional decision-making from ad spend",
+          "Small test budgets reduce the psychological pain of experimentation",
+          "Knowing customer lifetime value reframes what 'expensive' actually means"
         ],
         "fr": [
-          "Des chiffres et résultats spécifiques semblent plus crédibles que des promesses vagues",
-          "Un appel à l'action unique et clair surpasse plusieurs qui se font concurrence",
-          "Adresser les objections directement dans le texte construit une confiance préventive"
+          "Un plafond de coût clair élimine la prise de décision émotionnelle dans les dépenses publicitaires",
+          "De petits budgets de test réduisent la douleur psychologique de l'expérimentation",
+          "Connaître la valeur vie client redéfinit ce que 'cher' signifie réellement"
         ],
         "ar": [
-          "الأرقام والنتائج المحددة تبدو أكثر مصداقية من الوعود الغامضة",
-          "دعوة واحدة واضحة للعمل تتفوق على عدة دعوات متنافسة",
-          "معالجة الاعتراضات مباشرة في النص تبني ثقة استباقية"
+          "سقف تكلفة واضح يزيل اتخاذ القرار العاطفي في الإنفاق الإعلاني",
+          "ميزانيات اختبار صغيرة تقلل الألم النفسي للتجريب",
+          "معرفة القيمة الدائمة للعميل تعيد تعريف ما يعنيه 'مكلف' فعلياً"
         ]
       },
       "real_examples": {
         "en": [
-          "'Lose access to your booking slot in 24h' creates urgency without being pushy",
-          "'No results in 30 days? Full refund' removes the risk objection before it's raised"
+          "A business knowing their average customer is worth $50 can confidently pay up to $15 per lead",
+          "A business with no idea of customer value panics over a $5 cost-per-lead that might actually be profitable"
         ],
         "fr": [
-          "'Perdez l'accès à votre créneau de réservation en 24h' crée l'urgence sans être insistant",
-          "'Pas de résultats en 30 jours? Remboursement complet' supprime l'objection de risque avant qu'elle soit soulevée"
+          "Une entreprise sachant que son client moyen vaut 50$ peut payer avec confiance jusqu'à 15$ par lead",
+          "Une entreprise n'ayant aucune idée de la valeur client panique à propos d'un coût par lead de 5$ qui pourrait être en fait rentable"
         ],
         "ar": [
-          "'ستفقد موعد حجزك خلال 24 ساعة' يخلق إلحاحاً دون أن يكون مزعجاً",
-          "'لا نتائج خلال 30 يوماً؟ استرداد كامل' يزيل اعتراض المخاطرة قبل طرحه"
+          "مشروع يعرف أن عميله المتوسط يساوي 50 دولاراً يمكنه دفع حتى 15 دولاراً لكل عميل محتمل بثقة",
+          "مشروع ليس لديه فكرة عن قيمة العميل يشعر بالذعر من تكلفة 5 دولارات لكل عميل محتمل قد تكون مربحة فعلاً"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Writing long paragraphs nobody reads in an ad",
-          "Listing features instead of the outcome/benefit",
-          "Having 3 different calls-to-action competing for attention"
+          "Setting a budget with no idea what a good cost-per-result looks like",
+          "Spending the entire monthly budget on day one without testing",
+          "Judging an ad as 'expensive' without knowing the customer's actual value"
         ],
         "fr": [
-          "Écrire de longs paragraphes que personne ne lit dans une publicité",
-          "Lister des fonctionnalités au lieu du résultat/bénéfice",
-          "Avoir 3 appels à l'action différents qui se disputent l'attention"
+          "Fixer un budget sans idée de ce à quoi ressemble un bon coût par résultat",
+          "Dépenser tout le budget mensuel dès le premier jour sans tester",
+          "Juger une publicité 'chère' sans connaître la valeur réelle du client"
         ],
         "ar": [
-          "كتابة فقرات طويلة لا يقرأها أحد في الإعلان",
-          "سرد الميزات بدلاً من النتيجة/الفائدة",
-          "وجود 3 دعوات مختلفة للعمل تتنافس على الانتباه"
+          "تحديد ميزانية دون معرفة شكل تكلفة جيدة لكل نتيجة",
+          "إنفاق الميزانية الشهرية بأكملها في اليوم الأول دون اختبار",
+          "الحكم على إعلان بأنه 'مكلف' دون معرفة القيمة الفعلية للعميل"
         ]
       },
       "missions": {
         "en": [
-          "Write one ad focused on a single pain point and outcome",
-          "Cut your ad copy down to under 40 words",
-          "Test 2 different calls-to-action against each other"
+          "Calculate your average customer's value to the business",
+          "Set a maximum acceptable cost-per-lead or cost-per-sale",
+          "Plan a small test budget (5-7 days) before scaling"
         ],
         "fr": [
-          "Écrivez une publicité axée sur un seul point de douleur et résultat",
-          "Réduisez votre texte publicitaire à moins de 40 mots",
-          "Testez 2 appels à l'action différents l'un contre l'autre"
+          "Calculez la valeur moyenne d'un client pour l'entreprise",
+          "Fixez un coût maximum acceptable par lead ou par vente",
+          "Planifiez un petit budget de test (5-7 jours) avant de passer à l'échelle"
         ],
         "ar": [
-          "اكتب إعلاناً واحداً يركز على نقطة ألم واحدة ونتيجة واحدة",
-          "اختصر نصك الإعلاني إلى أقل من 40 كلمة",
-          "اختبر دعوتين مختلفتين للعمل ضد بعضهما"
+          "احسب قيمة عميلك المتوسط للمشروع",
+          "حدد أقصى تكلفة مقبولة لكل عميل محتمل أو بيع",
+          "خطط لميزانية اختبار صغيرة (5-7 أيام) قبل التوسع"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Online Arabic tutoring service",
-          "fr": "Service de tutorat en arabe en ligne",
-          "ar": "خدمة تدريس لغة عربية عبر الإنترنت"
+          "en": "Online course seller with a $100 course",
+          "fr": "Vendeur de cours en ligne avec un cours à 100$",
+          "ar": "بائع دورة إلكترونية بسعر 100 دولار"
         },
         "task": {
-          "en": "Write a short, high-converting ad copy for this service",
-          "fr": "Écrivez un texte publicitaire court et à fort taux de conversion pour ce service",
-          "ar": "اكتب نصاً إعلانياً قصيراً وعالي التحويل لهذه الخدمة"
+          "en": "Calculate a realistic maximum cost-per-sale for this course",
+          "fr": "Calculez un coût maximum réaliste par vente pour ce cours",
+          "ar": "احسب أقصى تكلفة واقعية لكل بيع لهذه الدورة"
         }
       },
       "pro_secrets": {
         "en": [
-          "The strongest ads sound like a friend giving advice, not a company selling",
-          "Addressing the #1 objection directly in the copy often beats hiding from it"
+          "Test with small budgets across multiple ad variations before committing big spend",
+          "A high cost-per-click isn't bad if the cost-per-sale still leaves profit"
         ],
         "fr": [
-          "Les publicités les plus fortes sonnent comme un ami donnant un conseil, pas une entreprise qui vend",
-          "Adresser l'objection n°1 directement dans le texte bat souvent le fait de la cacher"
+          "Testez avec de petits budgets sur plusieurs variations publicitaires avant de vous engager sur de grosses dépenses",
+          "Un coût par clic élevé n'est pas mauvais si le coût par vente laisse toujours du profit"
         ],
         "ar": [
-          "أقوى الإعلانات تبدو كصديق يقدم نصيحة، وليس شركة تبيع",
-          "معالجة الاعتراض الأول مباشرة في النص غالباً أفضل من تجنبه"
+          "اختبر بميزانيات صغيرة عبر عدة نسخ إعلانية قبل الالتزام بإنفاق كبير",
+          "تكلفة نقرة مرتفعة ليست سيئة إذا كانت تكلفة البيع لا تزال تترك ربحاً"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Write 3 versions of the same ad targeting 3 different pain points",
-          "fr": "Écrivez 3 versions de la même publicité ciblant 3 points de douleur différents",
-          "ar": "اكتب 3 نسخ من نفس الإعلان تستهدف 3 نقاط ألم مختلفة"
+          "en": "Given customer value and current ad costs, decide whether to scale, pause, or fix a campaign",
+          "fr": "Étant donné la valeur client et les coûts publicitaires actuels, décidez de faire évoluer, mettre en pause ou corriger une campagne",
+          "ar": "بناءً على قيمة العميل وتكاليف الإعلان الحالية، قرر ما إذا كنت ستوسّع أو توقف أو تصلح حملة"
         },
-        "reward_xp": 95
+        "reward_xp": 90
       },
       "ai_feedback_examples": {
         "en": [
-          "This reads like a brochure, not an ad 😭",
-          "This copy speaks directly to a real problem 🔥"
+          "You have no idea if this is profitable or not 😭",
+          "Now you know exactly when to scale and when to stop 🔥"
         ],
         "fr": [
-          "Ça se lit comme une brochure, pas une publicité 😭",
-          "Ce texte parle directement à un vrai problème 🔥"
+          "Vous n'avez aucune idée si c'est rentable ou non 😭",
+          "Maintenant vous savez exactement quand évoluer et quand arrêter 🔥"
         ],
         "ar": [
-          "هذا يبدو كنشرة، وليس إعلاناً 😭",
-          "هذا النص يتحدث مباشرة إلى مشكلة حقيقية 🔥"
+          "ليس لديك أي فكرة عما إذا كان هذا مربحاً أم لا 😭",
+          "الآن تعرف بالضبط متى توسّع ومتى تتوقف 🔥"
         ]
       }
     },
     {
       "id": 6,
       "title": {
-        "en": "Understanding the Sales Funnel",
-        "fr": "Comprendre l'Entonnoir de Vente",
-        "ar": "فهم قمع المبيعات"
+        "en": "A/B Testing Like a Strategist",
+        "fr": "Faire des Tests A/B Comme un Stratège",
+        "ar": "إجراء اختبارات A/B كاستراتيجي"
       },
       "xp": 170,
       "core_concept": {
-        "en": "Nobody buys from a stranger on the first ad they see.",
-        "fr": "Personne n'achète auprès d'un inconnu à la première publicité qu'il voit.",
-        "ar": "لا أحد يشتري من غريب من أول إعلان يراه."
+        "en": "Never guess which ad is better when you can test it.",
+        "fr": "Ne devinez jamais quelle publicité est meilleure quand vous pouvez la tester.",
+        "ar": "لا تخمّن أبداً أي إعلان أفضل بينما يمكنك اختباره."
       },
       "deep_explanation": {
         "summary": {
-          "en": "A funnel guides a cold stranger through awareness, consideration, and decision stages before asking for the sale, rather than pitching immediately.",
-          "fr": "Un entonnoir guide un inconnu froid à travers les étapes de sensibilisation, de considération et de décision avant de demander la vente, plutôt que de proposer immédiatement.",
-          "ar": "القمع يوجّه الغريب البارد عبر مراحل الوعي والتفكير والقرار قبل طلب البيع، بدلاً من العرض فوراً."
+          "en": "A/B testing changes one variable at a time — the image, the headline, or the audience — so you can clearly see what caused a difference in performance.",
+          "fr": "Les tests A/B changent une variable à la fois — l'image, le titre, ou l'audience — pour que vous puissiez clairement voir ce qui a causé une différence de performance.",
+          "ar": "اختبار A/B يغيّر متغيراً واحداً في كل مرة — الصورة أو العنوان أو الجمهور — حتى تتمكن من رؤية ما الذي سبب الفرق في الأداء بوضوح."
         },
         "why_it_matters": {
-          "en": "Skipping straight to 'buy now' with cold traffic wastes budget on people who aren't ready yet.",
-          "fr": "Passer directement à 'achetez maintenant' avec du trafic froid gaspille le budget sur des gens qui ne sont pas encore prêts.",
-          "ar": "القفز مباشرة إلى 'اشترِ الآن' مع زوار باردين يهدر الميزانية على أشخاص غير مستعدين بعد."
+          "en": "Changing multiple things at once means you never know what actually caused the improvement or the failure.",
+          "fr": "Changer plusieurs choses à la fois signifie que vous ne saurez jamais ce qui a réellement causé l'amélioration ou l'échec.",
+          "ar": "تغيير أشياء متعددة في نفس الوقت يعني أنك لن تعرف أبداً ما الذي سبب التحسن أو الفشل فعلياً."
         },
         "internet_truth": {
-          "en": "Trust is built in stages — skipping stages just means losing the sale.",
-          "fr": "La confiance se construit par étapes — sauter des étapes signifie juste perdre la vente.",
-          "ar": "الثقة تُبنى على مراحل — تخطي المراحل يعني ببساطة خسارة البيعة."
+          "en": "Opinions about which ad is 'better' are usually wrong until tested with real money and real people.",
+          "fr": "Les opinions sur quelle publicité est 'meilleure' sont généralement fausses jusqu'à ce qu'elles soient testées avec de l'argent réel et de vraies personnes.",
+          "ar": "الآراء حول أي إعلان 'أفضل' عادة ما تكون خاطئة حتى يتم اختبارها بمال حقيقي وأشخاص حقيقيين."
         }
       },
       "psychology": {
         "en": [
-          "Cold audiences need value/education before a sales pitch",
-          "Warm audiences (engaged with content) convert better with an offer",
-          "Hot audiences (past visitors/buyers) respond best to urgency and reminders"
+          "Isolating one variable at a time produces reliable, trustworthy data",
+          "Small sample tests before big spend reduce financial risk",
+          "Confirmation bias makes creators overestimate their favorite version"
         ],
         "fr": [
-          "Les audiences froides ont besoin de valeur/éducation avant un argumentaire de vente",
-          "Les audiences tièdes (engagées avec le contenu) convertissent mieux avec une offre",
-          "Les audiences chaudes (visiteurs/acheteurs passés) répondent mieux à l'urgence et aux rappels"
+          "Isoler une variable à la fois produit des données fiables et dignes de confiance",
+          "De petits tests d'échantillon avant de grosses dépenses réduisent le risque financier",
+          "Le biais de confirmation fait que les créateurs surestiment leur version préférée"
         ],
         "ar": [
-          "الجماهير الباردة تحتاج قيمة/تثقيفاً قبل عرض البيع",
-          "الجماهير الدافئة (المتفاعلة مع المحتوى) تحوّل أفضل مع عرض",
-          "الجماهير الحارة (زوار/مشترون سابقون) تستجيب أفضل للإلحاح والتذكيرات"
+          "عزل متغير واحد في كل مرة ينتج بيانات موثوقة وجديرة بالثقة",
+          "اختبارات عينة صغيرة قبل الإنفاق الكبير تقلل المخاطر المالية",
+          "التحيز التأكيدي يجعل صناع المحتوى يبالغون في تقدير نسختهم المفضلة"
         ]
       },
       "real_examples": {
         "en": [
-          "A cold ad offering a free guide builds the email list before ever pitching a product",
-          "A warm retargeting ad to people who watched 50% of a video offers a discount to convert them"
+          "Testing 2 identical ads with only different thumbnails reveals a 3x difference in click rate",
+          "A creator's 'gut feeling' favorite ad often loses to a version they didn't expect to win"
         ],
         "fr": [
-          "Une publicité froide offrant un guide gratuit construit la liste d'emails avant de jamais proposer un produit",
-          "Une publicité de retargeting tiède aux gens qui ont regardé 50% d'une vidéo offre une réduction pour les convertir"
+          "Tester 2 publicités identiques avec seulement des miniatures différentes révèle une différence de 3x dans le taux de clic",
+          "La publicité préférée 'à l'instinct' d'un créateur perd souvent face à une version qu'il ne s'attendait pas à voir gagner"
         ],
         "ar": [
-          "إعلان بارد يقدم دليلاً مجانياً يبني قائمة البريد الإلكتروني قبل عرض أي منتج أبداً",
-          "إعلان إعادة استهداف دافئ لمن شاهدوا 50% من فيديو يقدم خصماً لتحويلهم"
+          "اختبار إعلانين متطابقين بصور مصغرة مختلفة فقط يكشف فرقاً 3 أضعاف في معدل النقر",
+          "الإعلان المفضل 'بالحدس' لصانع المحتوى غالباً ما يخسر أمام نسخة لم يتوقع فوزها"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Pitching a hard sale directly to a completely cold audience",
-          "Having no retargeting layer for people who showed interest but didn't buy",
-          "Using the same message across every funnel stage"
+          "Changing the image, headline and audience all at once",
+          "Calling a test result too early before enough data comes in",
+          "Trusting personal opinion over actual test data"
         ],
         "fr": [
-          "Proposer une vente difficile directement à une audience complètement froide",
-          "N'avoir aucune couche de retargeting pour les gens qui ont montré de l'intérêt mais n'ont pas acheté",
-          "Utiliser le même message à travers chaque étape de l'entonnoir"
+          "Changer l'image, le titre et l'audience tous en même temps",
+          "Déclarer un résultat de test trop tôt avant que suffisamment de données n'arrivent",
+          "Faire confiance à l'opinion personnelle plutôt qu'aux données réelles du test"
         ],
         "ar": [
-          "عرض بيع مباشر وصعب لجمهور بارد تماماً",
-          "عدم وجود طبقة إعادة استهداف لمن أظهروا اهتماماً دون الشراء",
-          "استخدام نفس الرسالة في كل مرحلة من القمع"
+          "تغيير الصورة والعنوان والجمهور كلها دفعة واحدة",
+          "إعلان نتيجة اختبار مبكراً جداً قبل وصول بيانات كافية",
+          "الثقة بالرأي الشخصي بدلاً من بيانات الاختبار الفعلية"
         ]
       },
       "missions": {
         "en": [
-          "Map out a simple 3-stage funnel for your product (cold, warm, hot)",
-          "Write one message for each funnel stage",
-          "Identify what content you're missing for the middle of the funnel"
+          "Design an A/B test changing only the thumbnail/image",
+          "Design a second test changing only the headline",
+          "Let both tests run long enough to gather meaningful data before deciding"
         ],
         "fr": [
-          "Cartographiez un entonnoir simple à 3 étapes pour votre produit (froid, tiède, chaud)",
-          "Écrivez un message pour chaque étape de l'entonnoir",
-          "Identifiez le contenu qui vous manque pour le milieu de l'entonnoir"
+          "Concevez un test A/B ne changeant que la miniature/image",
+          "Concevez un deuxième test ne changeant que le titre",
+          "Laissez les deux tests durer assez longtemps pour recueillir des données significatives avant de décider"
         ],
         "ar": [
-          "ارسم قمعاً بسيطاً من 3 مراحل لمنتجك (بارد، دافئ، حار)",
-          "اكتب رسالة واحدة لكل مرحلة من القمع",
-          "حدد المحتوى الناقص لديك لمنتصف القمع"
+          "صمم اختبار A/B يغيّر الصورة المصغرة/الصورة فقط",
+          "صمم اختباراً ثانياً يغيّر العنوان فقط",
+          "اترك كلا الاختبارين يعملان لفترة كافية لجمع بيانات ذات معنى قبل القرار"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Online course selling business skills",
-          "fr": "Entreprise vendant un cours en ligne de compétences commerciales",
-          "ar": "مشروع يبيع دورة تعليمية عبر الإنترنت لمهارات الأعمال"
+          "en": "Fitness app with two different ad thumbnail ideas",
+          "fr": "Application fitness avec deux idées de miniatures publicitaires différentes",
+          "ar": "تطبيق لياقة بفكرتي صورة مصغرة إعلانية مختلفتين"
         },
         "task": {
-          "en": "Build a 3-stage funnel from a cold ad to the final sale",
-          "fr": "Construisez un entonnoir à 3 étapes d'une publicité froide à la vente finale",
-          "ar": "ابنِ قمعاً من 3 مراحل من إعلان بارد إلى البيع النهائي"
+          "en": "Design a clean A/B test to determine the winning thumbnail",
+          "fr": "Concevez un test A/B propre pour déterminer la miniature gagnante",
+          "ar": "صمم اختبار A/B نظيفاً لتحديد الصورة المصغرة الفائزة"
         }
       },
       "pro_secrets": {
         "en": [
-          "The middle of the funnel (consideration) is where most businesses have nothing — and where most sales are lost",
-          "A funnel doesn't need to be complex, just intentional at each stage"
+          "Test only one variable per experiment or the results become meaningless",
+          "Let statistical significance guide decisions, not impatience"
         ],
         "fr": [
-          "Le milieu de l'entonnoir (considération) est là où la plupart des entreprises n'ont rien — et où la plupart des ventes sont perdues",
-          "Un entonnoir n'a pas besoin d'être complexe, juste intentionnel à chaque étape"
+          "Ne testez qu'une seule variable par expérience ou les résultats deviennent inutiles",
+          "Laissez la significativité statistique guider les décisions, pas l'impatience"
         ],
         "ar": [
-          "منتصف القمع (التفكير) هو حيث لا تملك معظم المشاريع شيئاً — وحيث تُفقد معظم المبيعات",
-          "القمع لا يحتاج أن يكون معقداً، فقط مقصوداً في كل مرحلة"
+          "اختبر متغيراً واحداً فقط لكل تجربة وإلا أصبحت النتائج بلا معنى",
+          "دع الدلالة الإحصائية توجّه القرارات، وليس نفاد الصبر"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Design a full funnel with specific ad copy for each of the 3 stages",
-          "fr": "Concevez un entonnoir complet avec un texte publicitaire spécifique pour chacune des 3 étapes",
-          "ar": "صمم قمعاً كاملاً بنص إعلاني محدد لكل مرحلة من المراحل الثلاث"
+          "en": "Design a full A/B testing plan for a new product launch ad",
+          "fr": "Concevez un plan de test A/B complet pour une publicité de lancement de nouveau produit",
+          "ar": "صمم خطة اختبار A/B كاملة لإعلان إطلاق منتج جديد"
         },
-        "reward_xp": 100
+        "reward_xp": 95
       },
       "ai_feedback_examples": {
         "en": [
-          "This jumps straight to 'buy now' with zero warm-up 😭",
-          "This funnel earns the sale step by step 🔥"
+          "Too many variables changed — you'll never know why 😭",
+          "Clean, isolated test — now you'll get a real answer 🔥"
         ],
         "fr": [
-          "Ça saute directement à 'achetez maintenant' sans aucun réchauffement 😭",
-          "Cet entonnoir gagne la vente étape par étape 🔥"
+          "Trop de variables changées — vous ne saurez jamais pourquoi 😭",
+          "Test propre et isolé — maintenant vous aurez une vraie réponse 🔥"
         ],
         "ar": [
-          "هذا يقفز مباشرة إلى 'اشترِ الآن' بلا تمهيد إطلاقاً 😭",
-          "هذا القمع يكسب البيعة خطوة بخطوة 🔥"
+          "تغيرت متغيرات كثيرة جداً — لن تعرف السبب أبداً 😭",
+          "اختبار نظيف ومعزول — الآن ستحصل على إجابة حقيقية 🔥"
         ]
       }
     },
     {
       "id": 7,
       "title": {
-        "en": "Reading Key Ad Metrics",
-        "fr": "Lire les Métriques Publicitaires Clés",
-        "ar": "قراءة مقاييس الإعلانات الرئيسية"
+        "en": "Reading the Ads Dashboard",
+        "fr": "Lire le Tableau de Bord Publicitaire",
+        "ar": "قراءة لوحة تحكم الإعلانات"
       },
       "xp": 180,
       "core_concept": {
-        "en": "CTR, CPC and ROAS tell three different parts of the same story.",
-        "fr": "Le CTR, CPC et ROAS racontent trois parties différentes de la même histoire.",
-        "ar": "معدل النقر وتكلفة النقرة وعائد الإنفاق الإعلاني تروي 3 أجزاء مختلفة من نفس القصة."
+        "en": "The dashboard tells a story — most people only read the first sentence.",
+        "fr": "Le tableau de bord raconte une histoire — la plupart des gens ne lisent que la première phrase.",
+        "ar": "لوحة التحكم تروي قصة — معظم الناس يقرؤون الجملة الأولى فقط."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Click-through rate shows if the ad grabs attention, cost-per-click shows how efficiently it does, and return on ad spend shows if it actually made money.",
-          "fr": "Le taux de clics montre si la publicité attire l'attention, le coût par clic montre son efficacité, et le retour sur dépense publicitaire montre si elle a réellement rapporté de l'argent.",
-          "ar": "معدل النقر يُظهر إن كان الإعلان يجذب الانتباه، وتكلفة النقرة تُظهر كفاءته، وعائد الإنفاق الإعلاني يُظهر إن كان قد حقق ربحاً فعلياً."
+          "en": "Metrics like CTR (click-through rate), CPC (cost per click), CPM (cost per thousand impressions) and conversion rate each tell a different part of the story about where money is being won or lost.",
+          "fr": "Des métriques comme le CTR (taux de clic), le CPC (coût par clic), le CPM (coût pour mille impressions) et le taux de conversion racontent chacune une partie différente de l'histoire sur où l'argent est gagné ou perdu.",
+          "ar": "مقاييس مثل CTR (معدل النقر) وCPC (تكلفة النقرة) وCPM (تكلفة الألف ظهور) ومعدل التحويل تروي كل منها جزءاً مختلفاً من القصة حول أين يُكسب المال أو يُخسر."
         },
         "why_it_matters": {
-          "en": "A high CTR with low ROAS means people click but don't buy — the problem is after the click, not the ad itself.",
-          "fr": "Un CTR élevé avec un faible ROAS signifie que les gens cliquent mais n'achètent pas — le problème est après le clic, pas la publicité elle-même.",
-          "ar": "معدل نقر مرتفع مع عائد ضعيف يعني أن الناس ينقرون لكن لا يشترون — المشكلة بعد النقرة، وليست في الإعلان نفسه."
+          "en": "A low CTR points to a creative problem; a good CTR but low conversion rate points to a landing page or offer problem.",
+          "fr": "Un CTR bas pointe vers un problème créatif ; un bon CTR mais un faible taux de conversion pointe vers un problème de page de destination ou d'offre.",
+          "ar": "معدل نقر منخفض يشير لمشكلة إبداعية؛ معدل نقر جيد لكن معدل تحويل منخفض يشير لمشكلة في صفحة الهبوط أو العرض."
         },
         "internet_truth": {
-          "en": "Vanity metrics like impressions feel good but rarely pay the bills.",
-          "fr": "Les métriques de vanité comme les impressions font du bien mais paient rarement les factures.",
-          "ar": "المقاييس التفاخرية مثل مرات الظهور تشعر بالرضا لكنها نادراً ما تدفع الفواتير."
+          "en": "Every underperforming ad has a specific, findable reason in the data — it's rarely a mystery.",
+          "fr": "Chaque publicité peu performante a une raison spécifique et trouvable dans les données — c'est rarement un mystère.",
+          "ar": "كل إعلان ضعيف الأداء له سبب محدد وقابل للإيجاد في البيانات — نادراً ما يكون لغزاً."
         }
       },
       "psychology": {
         "en": [
-          "High CTR + low ROAS points to a landing page or offer problem, not the ad",
-          "Low CTR points to a creative or hook problem",
-          "Comparing metrics against your own past campaigns is more useful than industry averages"
+          "Each metric isolates a different stage of the funnel",
+          "Diagnosing before fixing prevents wasted changes",
+          "Comparing metrics against your own historical average is more useful than industry benchmarks alone"
         ],
         "fr": [
-          "CTR élevé + ROAS faible pointe vers un problème de page de destination ou d'offre, pas la publicité",
-          "CTR faible pointe vers un problème de créatif ou d'accroche",
-          "Comparer les métriques à vos propres campagnes passées est plus utile que les moyennes de l'industrie"
+          "Chaque métrique isole une étape différente de l'entonnoir",
+          "Diagnostiquer avant de réparer évite les changements gaspillés",
+          "Comparer les métriques à votre propre moyenne historique est plus utile que les seuls repères de l'industrie"
         ],
         "ar": [
-          "معدل نقر مرتفع + عائد ضعيف يشير لمشكلة في صفحة الهبوط أو العرض، وليس الإعلان",
-          "معدل نقر ضعيف يشير لمشكلة في المحتوى الإبداعي أو الخطاف",
-          "مقارنة المقاييس بحملاتك السابقة أفضل من متوسطات الصناعة"
+          "كل مقياس يعزل مرحلة مختلفة من القمع",
+          "التشخيص قبل الإصلاح يمنع التغييرات المهدرة",
+          "مقارنة المقاييس بمتوسطك التاريخي الخاص أكثر فائدة من معايير الصناعة وحدها"
         ]
       },
       "real_examples": {
         "en": [
-          "An ad with 5% CTR but only 0.5 ROAS signals a broken checkout page, not a bad ad",
-          "Comparing this month's CPC to last month's reveals if costs are rising due to competition"
+          "High CTR + low conversion means the ad works but the landing page fails to close the sale",
+          "Low CTR + high CPM means the creative itself isn't stopping the scroll"
         ],
         "fr": [
-          "Une publicité avec 5% de CTR mais seulement 0.5 ROAS signale une page de paiement cassée, pas une mauvaise publicité",
-          "Comparer le CPC de ce mois à celui du mois dernier révèle si les coûts augmentent à cause de la concurrence"
+          "CTR élevé + faible conversion signifie que la publicité fonctionne mais la page de destination échoue à conclure la vente",
+          "CTR bas + CPM élevé signifie que la création elle-même n'arrête pas le défilement"
         ],
         "ar": [
-          "إعلان بمعدل نقر 5% لكن عائد 0.5 فقط يشير إلى صفحة دفع معطلة، وليس إعلاناً سيئاً",
-          "مقارنة تكلفة النقرة هذا الشهر بالشهر الماضي يكشف إن كانت التكاليف ترتفع بسبب المنافسة"
+          "معدل نقر مرتفع + تحويل منخفض يعني أن الإعلان يعمل لكن صفحة الهبوط تفشل في إتمام البيع",
+          "معدل نقر منخفض + CPM مرتفع يعني أن الإبداع نفسه لا يوقف التصفح"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Judging an ad's success only by impressions or reach",
-          "Not distinguishing between a creative problem and a landing page problem",
-          "Ignoring ROAS entirely and focusing only on CTR"
+          "Only looking at total spend and total sales, ignoring the metrics in between",
+          "Blaming the whole campaign instead of isolating which stage is failing",
+          "Never comparing current performance to past campaigns"
         ],
         "fr": [
-          "Juger le succès d'une publicité uniquement par les impressions ou la portée",
-          "Ne pas distinguer entre un problème créatif et un problème de page de destination",
-          "Ignorer complètement le ROAS et se concentrer uniquement sur le CTR"
+          "Ne regarder que les dépenses totales et les ventes totales, en ignorant les métriques intermédiaires",
+          "Blâmer toute la campagne au lieu d'isoler quelle étape échoue",
+          "Ne jamais comparer la performance actuelle aux campagnes passées"
         ],
         "ar": [
-          "الحكم على نجاح الإعلان فقط بمرات الظهور أو الوصول",
-          "عدم التمييز بين مشكلة إبداعية ومشكلة في صفحة الهبوط",
-          "تجاهل عائد الإنفاق تماماً والتركيز فقط على معدل النقر"
+          "النظر فقط إلى إجمالي الإنفاق وإجمالي المبيعات، وتجاهل المقاييس الوسيطة",
+          "لوم الحملة بأكملها بدلاً من عزل المرحلة الفاشلة",
+          "عدم مقارنة الأداء الحالي بالحملات السابقة أبداً"
         ]
       },
       "missions": {
         "en": [
-          "Pull up CTR, CPC and ROAS for your last campaign",
-          "Diagnose whether any underperformance is a creative or a funnel issue",
-          "Set a target ROAS for your next campaign"
+          "Open a real ad dashboard and identify CTR, CPC, CPM and conversion rate",
+          "Diagnose one underperforming metric and hypothesize the cause",
+          "Compare this campaign's numbers to a past one"
         ],
         "fr": [
-          "Consultez le CTR, CPC et ROAS de votre dernière campagne",
-          "Diagnostiquez si une sous-performance est un problème créatif ou d'entonnoir",
-          "Définissez un ROAS cible pour votre prochaine campagne"
+          "Ouvrez un vrai tableau de bord publicitaire et identifiez le CTR, CPC, CPM et taux de conversion",
+          "Diagnostiquez une métrique sous-performante et formulez une hypothèse sur la cause",
+          "Comparez les chiffres de cette campagne à une campagne passée"
         ],
         "ar": [
-          "اطّلع على معدل النقر وتكلفة النقرة والعائد لآخر حملة لك",
-          "شخّص إن كان ضعف الأداء مشكلة إبداعية أو مشكلة في القمع",
-          "حدد هدف عائد استثمار لحملتك القادمة"
+          "افتح لوحة تحكم إعلانية حقيقية وحدد CTR وCPC وCPM ومعدل التحويل",
+          "شخّص مقياساً ضعيف الأداء وضع فرضية عن السبب",
+          "قارن أرقام هذه الحملة بحملة سابقة"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "E-commerce store with high CTR but low sales",
-          "fr": "Boutique e-commerce avec un CTR élevé mais peu de ventes",
-          "ar": "متجر إلكتروني بمعدل نقر مرتفع لكن مبيعات منخفضة"
+          "en": "E-commerce store with high clicks but very few purchases",
+          "fr": "Boutique e-commerce avec beaucoup de clics mais très peu d'achats",
+          "ar": "متجر إلكتروني بنقرات عالية لكن مشتريات قليلة جداً"
         },
         "task": {
-          "en": "Diagnose the likely cause using CTR and ROAS data",
-          "fr": "Diagnostiquez la cause probable en utilisant les données CTR et ROAS",
-          "ar": "شخّص السبب المحتمل باستخدام بيانات معدل النقر والعائد"
+          "en": "Diagnose whether the problem is the ad, the landing page, or the offer",
+          "fr": "Diagnostiquez si le problème vient de la publicité, de la page de destination, ou de l'offre",
+          "ar": "شخّص ما إذا كانت المشكلة في الإعلان أو صفحة الهبوط أو العرض"
         }
       },
       "pro_secrets": {
         "en": [
-          "ROAS is the only metric that truly tells you if an ad is profitable",
-          "A drop in CTR over time often signals ad fatigue — time for new creative"
+          "CTR problems are creative problems; conversion problems are usually offer or landing page problems",
+          "Your own historical data is the best benchmark you'll ever have"
         ],
         "fr": [
-          "Le ROAS est la seule métrique qui vous dit vraiment si une publicité est rentable",
-          "Une baisse du CTR dans le temps signale souvent une fatigue publicitaire — il est temps pour un nouveau créatif"
+          "Les problèmes de CTR sont des problèmes créatifs ; les problèmes de conversion sont généralement des problèmes d'offre ou de page de destination",
+          "Vos propres données historiques sont le meilleur repère que vous aurez jamais"
         ],
         "ar": [
-          "عائد الإنفاق الإعلاني هو المقياس الوحيد الذي يخبرك فعلاً إن كان الإعلان مربحاً",
-          "انخفاض معدل النقر بمرور الوقت غالباً يشير لإرهاق الإعلان — حان وقت محتوى إبداعي جديد"
+          "مشاكل CTR هي مشاكل إبداعية؛ مشاكل التحويل عادة مشاكل عرض أو صفحة هبوط",
+          "بياناتك التاريخية الخاصة هي أفضل معيار ستحصل عليه أبداً"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Given a full metrics table, diagnose the exact problem and prescribe a fix",
-          "fr": "Étant donné un tableau complet de métriques, diagnostiquez le problème exact et prescrivez une solution",
-          "ar": "بناءً على جدول مقاييس كامل، شخّص المشكلة بالضبط وصف الحل"
+          "en": "Given a full set of ad metrics, diagnose exactly where the funnel is breaking",
+          "fr": "Étant donné un ensemble complet de métriques publicitaires, diagnostiquez exactement où l'entonnoir se brise",
+          "ar": "بناءً على مجموعة كاملة من مقاييس الإعلانات، شخّص بالضبط أين ينكسر القمع"
         },
         "reward_xp": 100
       },
       "ai_feedback_examples": {
         "en": [
-          "You're celebrating impressions while losing money 😭",
-          "Now you're diagnosing the funnel like a real strategist 🔥"
+          "You looked at one number and ignored the whole story 😭",
+          "This is a real diagnosis, not a guess 🔥"
         ],
         "fr": [
-          "Vous célébrez les impressions tout en perdant de l'argent 😭",
-          "Maintenant vous diagnostiquez l'entonnoir comme un vrai stratège 🔥"
+          "Vous avez regardé un seul chiffre et ignoré toute l'histoire 😭",
+          "C'est un vrai diagnostic, pas une supposition 🔥"
         ],
         "ar": [
-          "أنت تحتفل بمرات الظهور بينما تخسر المال 😭",
-          "الآن أنت تشخّص القمع كاستراتيجي حقيقي 🔥"
+          "نظرت إلى رقم واحد وتجاهلت القصة بأكملها 😭",
+          "هذا تشخيص حقيقي، وليس تخميناً 🔥"
         ]
       }
     },
     {
       "id": 8,
       "title": {
-        "en": "A/B Testing Like a Scientist",
-        "fr": "Tester A/B Comme un Scientifique",
-        "ar": "اختبار A/B كعالم"
+        "en": "Retargeting: Selling to Warm Leads",
+        "fr": "Retargeting : Vendre aux Leads Chauds",
+        "ar": "إعادة الاستهداف: البيع للعملاء المحتملين الدافئين"
       },
-      "xp": 180,
+      "xp": 190,
       "core_concept": {
-        "en": "Never guess what works — test it, one variable at a time.",
-        "fr": "Ne devinez jamais ce qui fonctionne — testez-le, une variable à la fois.",
-        "ar": "لا تخمّن أبداً ما ينجح — اختبره، متغيراً واحداً في كل مرة."
+        "en": "The easiest sale is to someone who already looked.",
+        "fr": "La vente la plus facile est à quelqu'un qui a déjà regardé.",
+        "ar": "أسهل بيع هو لشخص نظر بالفعل."
       },
       "deep_explanation": {
         "summary": {
-          "en": "A/B testing changes exactly one variable (hook, image, copy, audience) between two ad versions to isolate what actually drives performance.",
-          "fr": "Le test A/B change exactement une variable (accroche, image, texte, audience) entre deux versions de publicité pour isoler ce qui pilote réellement la performance.",
-          "ar": "اختبار A/B يغيّر متغيراً واحداً بالضبط (الخطاف، الصورة، النص، الجمهور) بين نسختين إعلانيتين لعزل ما يقود الأداء فعلياً."
+          "en": "Retargeting shows ads specifically to people who already visited your page, watched a video, or added to cart but didn't buy — the warmest possible audience.",
+          "fr": "Le retargeting montre des publicités spécifiquement aux personnes qui ont déjà visité votre page, regardé une vidéo, ou ajouté au panier sans acheter — l'audience la plus chaude possible.",
+          "ar": "إعادة الاستهداف تعرض إعلانات تحديداً للأشخاص الذين زاروا صفحتك بالفعل، أو شاهدوا فيديو، أو أضافوا للسلة دون الشراء — أكثر جمهور ممكن دفئاً."
         },
         "why_it_matters": {
-          "en": "Changing multiple things at once means you never actually know what caused the improvement or decline.",
-          "fr": "Changer plusieurs choses à la fois signifie que vous ne savez jamais vraiment ce qui a causé l'amélioration ou la baisse.",
-          "ar": "تغيير عدة أشياء في وقت واحد يعني أنك لن تعرف أبداً فعلياً ما الذي سبب التحسن أو الانخفاض."
+          "en": "Most people don't buy on the first exposure — retargeting recovers sales that would otherwise be lost forever.",
+          "fr": "La plupart des gens n'achètent pas à la première exposition — le retargeting récupère des ventes qui seraient autrement perdues à jamais.",
+          "ar": "معظم الناس لا يشترون عند أول تعرض — إعادة الاستهداف تستعيد مبيعات كانت ستُفقد للأبد."
         },
         "internet_truth": {
-          "en": "Your opinion about which ad is better is often wrong — the data usually surprises you.",
-          "fr": "Votre opinion sur quelle publicité est meilleure est souvent fausse — les données vous surprennent généralement.",
-          "ar": "رأيك حول أي إعلان أفضل غالباً خاطئ — البيانات عادة تفاجئك."
+          "en": "'They saw it once and didn't buy' doesn't mean they said no forever — it usually means 'not yet'.",
+          "fr": "'Ils l'ont vu une fois et n'ont pas acheté' ne signifie pas qu'ils ont dit non pour toujours — ça signifie généralement 'pas encore'.",
+          "ar": "'رأوه مرة واحدة ولم يشتروا' لا يعني أنهم رفضوا للأبد — عادة يعني 'ليس بعد'."
         }
       },
       "psychology": {
         "en": [
-          "Isolating one variable at a time produces reliable, actionable data",
-          "Testing removes personal bias from creative decisions",
-          "Small sample tests before big spend protect the budget"
+          "Repeated, non-annoying exposure builds familiarity and trust over time",
+          "Cart abandoners are often one small nudge away from buying",
+          "Showing social proof in retargeting ads overcomes last-minute hesitation"
         ],
         "fr": [
-          "Isoler une variable à la fois produit des données fiables et exploitables",
-          "Tester supprime le biais personnel des décisions créatives",
-          "De petits tests d'échantillon avant une grosse dépense protègent le budget"
+          "Une exposition répétée et non agaçante construit la familiarité et la confiance dans le temps",
+          "Les abandonneurs de panier sont souvent à un petit coup de pouce d'acheter",
+          "Montrer une preuve sociale dans les publicités de retargeting surmonte l'hésitation de dernière minute"
         ],
         "ar": [
-          "عزل متغير واحد في كل مرة ينتج بيانات موثوقة وقابلة للتنفيذ",
-          "الاختبار يزيل التحيز الشخصي من القرارات الإبداعية",
-          "اختبارات العينة الصغيرة قبل الإنفاق الكبير تحمي الميزانية"
+          "التعرض المتكرر وغير المزعج يبني الألفة والثقة بمرور الوقت",
+          "من يتخلون عن سلة التسوق غالباً على بعد دفعة صغيرة من الشراء",
+          "إظهار الدليل الاجتماعي في إعلانات إعادة الاستهداف يتغلب على التردد في اللحظة الأخيرة"
         ]
       },
       "real_examples": {
         "en": [
-          "Testing only the hook line between two identical ads reveals which opening line converts better",
-          "Testing a video ad against a static image ad with the same copy isolates the format's impact"
+          "A retargeting ad showing '50 people bought this today' to cart-abandoners recovers many lost sales",
+          "A simple reminder ad to website visitors who didn't purchase, shown 2 days later, converts at a high rate"
         ],
         "fr": [
-          "Tester uniquement la ligne d'accroche entre deux publicités identiques révèle quelle ligne d'ouverture convertit mieux",
-          "Tester une publicité vidéo contre une publicité image statique avec le même texte isole l'impact du format"
+          "Une publicité de retargeting montrant '50 personnes ont acheté ça aujourd'hui' aux abandonneurs de panier récupère de nombreuses ventes perdues",
+          "Une simple publicité de rappel aux visiteurs du site qui n'ont pas acheté, montrée 2 jours plus tard, convertit à un taux élevé"
         ],
         "ar": [
-          "اختبار خط الخطاف فقط بين إعلانين متطابقين يكشف أي سطر افتتاحي يحوّل أفضل",
-          "اختبار إعلان فيديو ضد إعلان صورة ثابتة بنفس النص يعزل تأثير الشكل"
+          "إعلان إعادة استهداف يُظهر '50 شخصاً اشتروا هذا اليوم' لمن تخلوا عن السلة يستعيد مبيعات مفقودة كثيرة",
+          "إعلان تذكير بسيط لزوار الموقع الذين لم يشتروا، يُعرض بعد يومين، يُحوّل بمعدل مرتفع"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Testing multiple variables at once and not knowing what caused the result",
-          "Ending a test too early before statistically meaningful data arrives",
-          "Never testing at all and relying purely on personal preference"
+          "Never setting up retargeting at all and relying only on cold traffic",
+          "Showing the exact same ad repeatedly until it becomes annoying",
+          "Retargeting people who already purchased with the same offer"
         ],
         "fr": [
-          "Tester plusieurs variables à la fois et ne pas savoir ce qui a causé le résultat",
-          "Terminer un test trop tôt avant que des données statistiquement significatives arrivent",
-          "Ne jamais tester du tout et se fier purement à la préférence personnelle"
+          "Ne jamais configurer de retargeting du tout et compter uniquement sur le trafic froid",
+          "Montrer exactement la même publicité de manière répétée jusqu'à ce qu'elle devienne agaçante",
+          "Recibler des personnes qui ont déjà acheté avec la même offre"
         ],
         "ar": [
-          "اختبار عدة متغيرات مرة واحدة وعدم معرفة سبب النتيجة",
-          "إنهاء الاختبار مبكراً جداً قبل وصول بيانات ذات دلالة إحصائية",
-          "عدم الاختبار أبداً والاعتماد فقط على التفضيل الشخصي"
+          "عدم إعداد إعادة استهداف على الإطلاق والاعتماد فقط على الزيارات الباردة",
+          "عرض نفس الإعلان بالضبط بشكل متكرر حتى يصبح مزعجاً",
+          "إعادة استهداف أشخاص اشتروا بالفعل بنفس العرض"
         ]
       },
       "missions": {
         "en": [
-          "Design an A/B test changing only the hook of an ad",
-          "Design a second test changing only the image/thumbnail",
-          "Run one test for at least 3-4 days before judging results"
+          "Set up a retargeting audience of website visitors from the last 14 days",
+          "Design a retargeting ad with social proof (reviews, sales numbers)",
+          "Plan to exclude past purchasers from this specific retargeting campaign"
         ],
         "fr": [
-          "Concevez un test A/B changeant uniquement l'accroche d'une publicité",
-          "Concevez un deuxième test changeant uniquement l'image/miniature",
-          "Exécutez un test pendant au moins 3-4 jours avant de juger les résultats"
+          "Configurez une audience de retargeting des visiteurs du site des 14 derniers jours",
+          "Concevez une publicité de retargeting avec preuve sociale (avis, chiffres de vente)",
+          "Prévoyez d'exclure les acheteurs passés de cette campagne de retargeting spécifique"
         ],
         "ar": [
-          "صمم اختبار A/B يغيّر فقط خطاف الإعلان",
-          "صمم اختباراً ثانياً يغيّر فقط الصورة/الصورة المصغرة",
-          "شغّل اختباراً واحداً لمدة 3-4 أيام على الأقل قبل الحكم على النتائج"
+          "أنشئ جمهور إعادة استهداف من زوار الموقع في آخر 14 يوماً",
+          "صمم إعلان إعادة استهداف بدليل اجتماعي (تقييمات، أرقام مبيعات)",
+          "خطط لاستبعاد المشترين السابقين من حملة إعادة الاستهداف هذه تحديداً"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Online sneaker resale shop",
-          "fr": "Boutique de revente de baskets en ligne",
-          "ar": "متجر إعادة بيع أحذية رياضية عبر الإنترنت"
+          "en": "Online shoe store with many cart abandoners",
+          "fr": "Boutique de chaussures en ligne avec de nombreux abandonneurs de panier",
+          "ar": "متجر أحذية إلكتروني بعدد كبير ممن يتخلون عن السلة"
         },
         "task": {
-          "en": "Design a proper A/B test isolating one variable to improve conversions",
-          "fr": "Concevez un test A/B correct isolant une variable pour améliorer les conversions",
-          "ar": "صمم اختبار A/B صحيحاً يعزل متغيراً واحداً لتحسين التحويلات"
+          "en": "Design a full retargeting sequence to recover abandoned carts",
+          "fr": "Concevez une séquence complète de retargeting pour récupérer les paniers abandonnés",
+          "ar": "صمم تسلسل إعادة استهداف كاملاً لاستعادة السلات المتروكة"
         }
       },
       "pro_secrets": {
         "en": [
-          "Test the hook/thumbnail first — it has the biggest impact on performance",
-          "Let tests run long enough to reach statistical significance, not just a gut feeling"
+          "Retargeting ads almost always have a lower cost-per-sale than cold campaigns",
+          "Rotate creative regularly to avoid 'ad fatigue' with the same warm audience"
         ],
         "fr": [
-          "Testez d'abord l'accroche/miniature — elle a le plus grand impact sur la performance",
-          "Laissez les tests durer assez longtemps pour atteindre une signification statistique, pas juste un instinct"
+          "Les publicités de retargeting ont presque toujours un coût par vente plus bas que les campagnes froides",
+          "Faites tourner régulièrement les créations pour éviter la 'fatigue publicitaire' avec la même audience chaude"
         ],
         "ar": [
-          "اختبر الخطاف/الصورة المصغرة أولاً — لها أكبر تأثير على الأداء",
-          "اترك الاختبارات تعمل لفترة كافية للوصول لدلالة إحصائية، وليس مجرد شعور"
+          "إعلانات إعادة الاستهداف دائماً تقريباً لديها تكلفة أقل لكل بيع من الحملات الباردة",
+          "بدّل الإبداع بانتظام لتجنب 'إرهاق الإعلان' مع نفس الجمهور الدافئ"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Design a full A/B testing roadmap testing 3 different variables in sequence",
-          "fr": "Concevez une feuille de route complète de test A/B testant 3 variables différentes en séquence",
-          "ar": "صمم خارطة طريق كاملة لاختبار A/B تختبر 3 متغيرات مختلفة بالتسلسل"
+          "en": "Build a complete retargeting funnel for cart-abandoners with 3 sequenced ads",
+          "fr": "Construisez un entonnoir de retargeting complet pour les abandonneurs de panier avec 3 publicités séquencées",
+          "ar": "ابنِ قمع إعادة استهداف كاملاً لمن تخلوا عن السلة بـ3 إعلانات متسلسلة"
         },
         "reward_xp": 100
       },
       "ai_feedback_examples": {
         "en": [
-          "Changing 3 things at once tells you nothing 😭",
-          "This isolates exactly one variable — now you'll know what actually works 🔥"
+          "You're leaving warm, almost-ready buyers on the table 😭",
+          "This sequence brings abandoners right back to the checkout 🔥"
         ],
         "fr": [
-          "Changer 3 choses à la fois ne vous dit rien 😭",
-          "Ça isole exactement une variable — maintenant vous saurez ce qui fonctionne vraiment 🔥"
+          "Vous laissez de côté des acheteurs chauds, presque prêts 😭",
+          "Cette séquence ramène les abandonneurs directement au paiement 🔥"
         ],
         "ar": [
-          "تغيير 3 أشياء مرة واحدة لا يخبرك بشيء 😭",
-          "هذا يعزل متغيراً واحداً بالضبط — الآن ستعرف ما ينجح فعلاً 🔥"
+          "أنت تترك مشترين دافئين وشبه جاهزين دون استغلال 😭",
+          "هذا التسلسل يعيد من تخلوا مباشرة إلى صفحة الدفع 🔥"
         ]
       }
     },
     {
       "id": 9,
       "title": {
-        "en": "Scaling a Winning Ad",
-        "fr": "Mettre à l'Échelle une Publicité Gagnante",
-        "ar": "توسيع إعلان فائز"
+        "en": "Scaling a Winning Campaign",
+        "fr": "Faire Évoluer une Campagne Gagnante",
+        "ar": "توسيع حملة رابحة"
       },
-      "xp": 190,
+      "xp": 200,
       "core_concept": {
-        "en": "Scaling too fast kills the very winner you're trying to grow.",
-        "fr": "Mettre à l'échelle trop vite tue le gagnant même que vous essayez de faire croître.",
-        "ar": "التوسع بسرعة كبيرة جداً يقتل الفائز نفسه الذي تحاول تنميته."
+        "en": "Scaling too fast kills the very campaign that was working.",
+        "fr": "Une évolution trop rapide tue la campagne même qui fonctionnait.",
+        "ar": "التوسع بسرعة كبيرة جداً يقتل نفس الحملة التي كانت تعمل."
       },
       "deep_explanation": {
         "summary": {
-          "en": "Vertical scaling increases budget on the same ad set gradually; horizontal scaling duplicates the winning ad into new audiences or platforms.",
-          "fr": "La mise à l'échelle verticale augmente graduellement le budget sur le même ensemble de publicités ; la mise à l'échelle horizontale duplique la publicité gagnante vers de nouvelles audiences ou plateformes.",
-          "ar": "التوسع العمودي يزيد الميزانية تدريجياً على نفس مجموعة الإعلانات؛ التوسع الأفقي يكرر الإعلان الفائز لجماهير أو منصات جديدة."
+          "en": "Increasing budget too aggressively resets the algorithm's learning phase, often destroying performance that took time to build. Gradual, planned scaling preserves what's working.",
+          "fr": "Augmenter le budget trop agressivement réinitialise la phase d'apprentissage de l'algorithme, détruisant souvent la performance qui a pris du temps à construire. Une évolution graduelle et planifiée préserve ce qui fonctionne.",
+          "ar": "زيادة الميزانية بعدوانية شديدة تعيد ضبط مرحلة تعلّم الخوارزمية، وغالباً تدمر الأداء الذي استغرق وقتاً لبنائه. التوسع التدريجي والمخطط له يحافظ على ما ينجح."
         },
         "why_it_matters": {
-          "en": "A winning ad's performance often degrades if you scale it incorrectly, wasting the exact win you worked to find.",
-          "fr": "La performance d'une publicité gagnante se dégrade souvent si vous l'échelonnez incorrectement, gaspillant le gain exact que vous avez travaillé à trouver.",
-          "ar": "أداء الإعلان الفائز غالباً يتدهور إذا وسّعته بشكل خاطئ، مما يهدر الفوز نفسه الذي عملت لإيجاده."
+          "en": "A campaign that works at $10/day doesn't automatically work the same way at $200/day.",
+          "fr": "Une campagne qui fonctionne à 10$/jour ne fonctionne pas automatiquement de la même manière à 200$/jour.",
+          "ar": "الحملة التي تعمل بـ10 دولارات يومياً لا تعمل تلقائياً بنفس الطريقة بـ200 دولار يومياً."
         },
         "internet_truth": {
-          "en": "What worked at $10/day doesn't automatically work at $200/day without adjustment.",
-          "fr": "Ce qui a fonctionné à 10$/jour ne fonctionne pas automatiquement à 200$/jour sans ajustement.",
-          "ar": "ما نجح بـ10 دولارات يومياً لا ينجح تلقائياً بـ200 دولار يومياً دون تعديل."
+          "en": "Doubling the budget overnight often doubles the cost-per-result too, not just the results.",
+          "fr": "Doubler le budget du jour au lendemain double souvent aussi le coût par résultat, pas seulement les résultats.",
+          "ar": "مضاعفة الميزانية بين ليلة وضحاها غالباً تضاعف تكلفة كل نتيجة أيضاً، وليس فقط النتائج."
         }
       },
       "psychology": {
         "en": [
-          "Gradual budget increases preserve algorithm learning and stability",
-          "Horizontal scaling into new audiences avoids audience fatigue in the original one",
-          "Ad fatigue sets in when the same audience sees the same ad too many times"
+          "Gradual budget increases (20-30% at a time) preserve algorithm learning",
+          "Horizontal scaling (new audiences/campaigns) is often safer than vertical (bigger budget on one)",
+          "Impatience to scale fast often destroys campaigns that needed more time"
         ],
         "fr": [
-          "Des augmentations graduelles de budget préservent l'apprentissage et la stabilité de l'algorithme",
-          "La mise à l'échelle horizontale vers de nouvelles audiences évite la fatigue d'audience dans l'audience originale",
-          "La fatigue publicitaire s'installe quand la même audience voit la même publicité trop de fois"
+          "Des augmentations graduelles de budget (20-30% à la fois) préservent l'apprentissage de l'algorithme",
+          "L'évolution horizontale (nouvelles audiences/campagnes) est souvent plus sûre que verticale (plus gros budget sur une seule)",
+          "L'impatience à évoluer rapidement détruit souvent des campagnes qui avaient besoin de plus de temps"
         ],
         "ar": [
-          "الزيادات التدريجية في الميزانية تحافظ على تعلم واستقرار الخوارزمية",
-          "التوسع الأفقي لجماهير جديدة يتجنب إرهاق الجمهور في الجمهور الأصلي",
-          "إرهاق الإعلان يحدث عندما يرى نفس الجمهور نفس الإعلان مرات كثيرة جداً"
+          "زيادات الميزانية التدريجية (20-30% في كل مرة) تحافظ على تعلّم الخوارزمية",
+          "التوسع الأفقي (جماهير/حملات جديدة) غالباً أكثر أماناً من العمودي (ميزانية أكبر على واحدة)",
+          "نفاد الصبر للتوسع بسرعة غالباً يدمر حملات كانت بحاجة لمزيد من الوقت"
         ]
       },
       "real_examples": {
         "en": [
-          "Increasing budget by 20% every 3 days keeps a winning ad set stable while growing",
-          "Duplicating a winning ad into a new lookalike audience extends its life instead of over-saturating the original"
+          "A campaign scaled 20% every 3 days maintained its cost-per-result while growing",
+          "A campaign that jumped from $20 to $200/day overnight saw its cost-per-result triple within a day"
         ],
         "fr": [
-          "Augmenter le budget de 20% tous les 3 jours maintient un ensemble de publicités gagnant stable en croissant",
-          "Dupliquer une publicité gagnante vers une nouvelle audience similaire prolonge sa vie au lieu de sursaturer l'originale"
+          "Une campagne mise à l'échelle de 20% tous les 3 jours a maintenu son coût par résultat en croissant",
+          "Une campagne qui est passée de 20$ à 200$/jour du jour au lendemain a vu son coût par résultat tripler en une journée"
         ],
         "ar": [
-          "زيادة الميزانية بنسبة 20% كل 3 أيام تحافظ على استقرار مجموعة إعلانية فائزة أثناء النمو",
-          "تكرار إعلان فائز لجمهور مشابه جديد يطيل عمره بدلاً من إشباع الجمهور الأصلي بشكل مفرط"
+          "حملة تم توسيعها بنسبة 20% كل 3 أيام حافظت على تكلفتها لكل نتيجة أثناء نموها",
+          "حملة قفزت من 20 إلى 200 دولار يومياً بين ليلة وضحاها شهدت تكلفتها لكل نتيجة تتضاعف 3 مرات خلال يوم واحد"
         ]
       },
       "common_mistakes": {
         "en": [
-          "Doubling or tripling budget overnight on a winning ad",
-          "Scaling into the exact same audience over and over until it's saturated",
-          "Never refreshing creative, leading to ad fatigue"
+          "Doubling or tripling budget overnight the moment a campaign shows early success",
+          "Editing a winning ad's creative or targeting mid-scale, resetting its learning",
+          "Scaling before confirming the result is consistent, not a lucky day"
         ],
         "fr": [
-          "Doubler ou tripler le budget du jour au lendemain sur une publicité gagnante",
-          "Mettre à l'échelle vers la même audience exacte encore et encore jusqu'à saturation",
-          "Ne jamais rafraîchir le créatif, menant à la fatigue publicitaire"
+          "Doubler ou tripler le budget du jour au lendemain dès qu'une campagne montre un succès précoce",
+          "Modifier la création ou le ciblage d'une publicité gagnante en cours d'évolution, réinitialisant son apprentissage",
+          "Passer à l'échelle avant de confirmer que le résultat est cohérent, pas un jour de chance"
         ],
         "ar": [
-          "مضاعفة أو مضاعفة الميزانية ثلاث مرات بين عشية وضحاها على إعلان فائز",
-          "التوسع لنفس الجمهور بالضبط مراراً وتكراراً حتى التشبع",
-          "عدم تجديد المحتوى الإبداعي أبداً، مما يؤدي لإرهاق الإعلان"
+          "مضاعفة الميزانية أو تثليثها بين ليلة وضحاها بمجرد أن تُظهر الحملة نجاحاً مبكراً",
+          "تعديل إبداع أو استهداف إعلان رابح أثناء التوسع، مما يعيد ضبط تعلّمه",
+          "التوسع قبل تأكيد أن النتيجة ثابتة وليست يوماً محظوظاً"
         ]
       },
       "missions": {
         "en": [
-          "Identify your current best-performing ad, if any",
-          "Plan a vertical scaling schedule (gradual budget increases)",
-          "Plan a horizontal scaling move (new audience or platform)"
+          "Identify a campaign that's ready to scale based on 5+ days of consistent data",
+          "Plan a 20-30% gradual budget increase schedule",
+          "List 2 new audiences to test horizontally instead of only scaling one"
         ],
         "fr": [
-          "Identifiez votre publicité la plus performante actuelle, le cas échéant",
-          "Planifiez un calendrier de mise à l'échelle verticale (augmentations graduelles de budget)",
-          "Planifiez un mouvement de mise à l'échelle horizontale (nouvelle audience ou plateforme)"
+          "Identifiez une campagne prête à évoluer sur la base de 5+ jours de données cohérentes",
+          "Planifiez un calendrier d'augmentation graduelle du budget de 20-30%",
+          "Listez 2 nouvelles audiences à tester horizontalement au lieu de ne faire évoluer qu'une seule"
         ],
         "ar": [
-          "حدد إعلانك الأفضل أداءً حالياً، إن وجد",
-          "خطط لجدول توسع عمودي (زيادات تدريجية في الميزانية)",
-          "خطط لخطوة توسع أفقي (جمهور أو منصة جديدة)"
+          "حدد حملة جاهزة للتوسع بناءً على 5+ أيام من بيانات ثابتة",
+          "خطط لجدول زيادة ميزانية تدريجي بنسبة 20-30%",
+          "اذكر جمهورين جديدين لاختبارهما أفقياً بدلاً من توسيع واحد فقط"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Fitness app with one ad performing well at $20/day",
-          "fr": "Application fitness avec une publicité performant bien à 20$/jour",
-          "ar": "تطبيق لياقة بإعلان واحد يؤدي جيداً بـ20 دولاراً يومياً"
+          "en": "Skincare ad campaign profitable at $15/day for one week straight",
+          "fr": "Campagne publicitaire de soins de la peau rentable à 15$/jour pendant une semaine complète",
+          "ar": "حملة إعلانية للعناية بالبشرة مربحة بـ15 دولاراً يومياً لأسبوع كامل"
         },
         "task": {
-          "en": "Design a safe scaling plan to reach $150/day without killing performance",
-          "fr": "Concevez un plan de mise à l'échelle sûr pour atteindre 150$/jour sans tuer la performance",
-          "ar": "صمم خطة توسع آمنة للوصول لـ150 دولاراً يومياً دون قتل الأداء"
+          "en": "Design a safe scaling plan for this campaign over the next 2 weeks",
+          "fr": "Concevez un plan d'évolution sûr pour cette campagne sur les 2 prochaines semaines",
+          "ar": "صمم خطة توسع آمنة لهذه الحملة على مدى الأسبوعين القادمين"
         }
       },
       "pro_secrets": {
         "en": [
-          "Horizontal scaling (new audiences) is often safer than pure vertical scaling",
-          "Refresh ad creative every 1-2 weeks to prevent fatigue in scaled campaigns"
+          "Never scale and edit the creative at the same time — isolate the change",
+          "Horizontal scaling (duplicating to new audiences) often outperforms just raising one budget"
         ],
         "fr": [
-          "La mise à l'échelle horizontale (nouvelles audiences) est souvent plus sûre que la mise à l'échelle verticale pure",
-          "Rafraîchissez le créatif publicitaire toutes les 1-2 semaines pour prévenir la fatigue dans les campagnes échelonnées"
+          "Ne faites jamais évoluer et modifiez la création en même temps — isolez le changement",
+          "L'évolution horizontale (dupliquer vers de nouvelles audiences) surpasse souvent le simple fait d'augmenter un budget"
         ],
         "ar": [
-          "التوسع الأفقي (جماهير جديدة) غالباً أكثر أماناً من التوسع العمودي البحت",
-          "جدّد المحتوى الإبداعي كل 1-2 أسبوع لمنع الإرهاق في الحملات الموسّعة"
+          "لا توسّع وتعدّل الإبداع في نفس الوقت أبداً — اعزل التغيير",
+          "التوسع الأفقي (التكرار لجماهير جديدة) غالباً يتفوق على مجرد رفع ميزانية واحدة"
         ]
       },
       "challenge_mode": {
         "task": {
-          "en": "Build a complete 30-day scaling plan combining vertical and horizontal tactics",
-          "fr": "Construisez un plan complet de mise à l'échelle sur 30 jours combinant des tactiques verticales et horizontales",
-          "ar": "ابنِ خطة توسع كاملة لـ30 يوماً تجمع بين التكتيكات العمودية والأفقية"
+          "en": "Design a 2-week scaling roadmap for a campaign that just proved profitable",
+          "fr": "Concevez une feuille de route d'évolution de 2 semaines pour une campagne qui vient de prouver sa rentabilité",
+          "ar": "صمم خارطة طريق توسع لأسبوعين لحملة أثبتت ربحيتها للتو"
         },
         "reward_xp": 110
       },
       "ai_feedback_examples": {
         "en": [
-          "Doubling overnight just killed your winning ad 😭",
-          "This gradual scale protects the win while growing it 🔥"
+          "This scaling speed will reset everything that was working 😭",
+          "This gradual plan protects the results while growing them 🔥"
         ],
         "fr": [
-          "Doubler du jour au lendemain vient de tuer votre publicité gagnante 😭",
-          "Cette échelle graduelle protège le gain tout en le faisant croître 🔥"
+          "Cette vitesse d'évolution va tout réinitialiser de ce qui fonctionnait 😭",
+          "Ce plan graduel protège les résultats tout en les faisant croître 🔥"
         ],
         "ar": [
-          "المضاعفة بين عشية وضحاها قتلت للتو إعلانك الفائز 😭",
-          "هذا التوسع التدريجي يحمي الفوز أثناء تنميته 🔥"
+          "سرعة التوسع هذه ستعيد ضبط كل ما كان يعمل 😭",
+          "هذه الخطة التدريجية تحمي النتائج بينما تنمّيها 🔥"
         ]
       }
     },
@@ -1358,141 +1358,141 @@
       },
       "xp": 400,
       "core_concept": {
-        "en": "A real media buyer combines targeting, budgeting, copy, funnels, testing and scaling into one profitable system.",
-        "fr": "Un vrai acheteur média combine ciblage, budgétisation, texte, entonnoirs, tests et mise à l'échelle en un système rentable.",
-        "ar": "المشتري الإعلاني الحقيقي يجمع الاستهداف والميزانية والنص والقمع والاختبار والتوسع في نظام واحد مربح."
+        "en": "A real media buyer combines objectives, targeting, copy, budget, testing and scaling into one profitable system.",
+        "fr": "Un vrai acheteur média combine objectifs, ciblage, texte, budget, tests et évolution en un système rentable.",
+        "ar": "المُشتري الإعلاني الحقيقي يجمع الأهداف والاستهداف والنص والميزانية والاختبار والتوسع في نظام واحد مربح."
       },
       "deep_explanation": {
         "summary": {
-          "en": "This final simulation tests whether you can plan, launch, analyze and scale a real ad campaign end to end.",
-          "fr": "Cette simulation finale teste si vous pouvez planifier, lancer, analyser et mettre à l'échelle une vraie campagne publicitaire de bout en bout.",
-          "ar": "هذه المحاكاة النهائية تختبر ما إذا كنت تستطيع تخطيط وإطلاق وتحليل وتوسيع حملة إعلانية حقيقية من البداية للنهاية."
+          "en": "This final simulation tests whether you can plan, launch, diagnose and scale a full paid ad campaign from scratch.",
+          "fr": "Cette simulation finale teste si vous pouvez planifier, lancer, diagnostiquer et faire évoluer une campagne publicitaire payante complète à partir de zéro.",
+          "ar": "هذه المحاكاة النهائية تختبر ما إذا كنت تستطيع التخطيط لحملة إعلانية مدفوعة كاملة وإطلاقها وتشخيصها وتوسيعها من الصفر."
         },
         "why_it_matters": {
-          "en": "Isolated ad skills mean nothing without a system connecting them from strategy to profit.",
-          "fr": "Des compétences publicitaires isolées ne signifient rien sans un système les reliant de la stratégie au profit.",
-          "ar": "مهارات الإعلان المعزولة لا تعني شيئاً بدون نظام يربطها من الاستراتيجية إلى الربح."
+          "en": "Ads without this full system waste money; ads with it become a predictable growth machine.",
+          "fr": "Les publicités sans ce système complet gaspillent de l'argent ; les publicités avec lui deviennent une machine de croissance prévisible.",
+          "ar": "الإعلانات بدون هذا النظام الكامل تهدر المال؛ الإعلانات معه تصبح آلة نمو يمكن التنبؤ بها."
         },
         "internet_truth": {
-          "en": "Profitable ads are engineered systems, not lucky guesses.",
-          "fr": "Les publicités rentables sont des systèmes ingénieusement conçus, pas des suppositions chanceuses.",
-          "ar": "الإعلانات المربحة هي أنظمة مهندسة، وليست تخمينات محظوظة."
+          "en": "Profitable ad accounts are built on process, not luck or a single genius idea.",
+          "fr": "Les comptes publicitaires rentables sont construits sur un processus, pas sur la chance ou une seule idée géniale.",
+          "ar": "الحسابات الإعلانية المربحة تُبنى على عملية، وليس على الحظ أو فكرة عبقرية واحدة."
         }
       },
       "simulation_systems": {
         "en": [
-          "Campaign structure",
+          "Objective selection",
           "Audience targeting",
-          "Budget strategy",
           "Ad copywriting",
-          "Funnel design",
-          "Metric diagnosis",
+          "Budget calculation",
           "A/B testing",
+          "Dashboard diagnosis",
+          "Retargeting",
           "Scaling strategy"
         ],
         "fr": [
-          "Structure de campagne",
+          "Sélection d'objectif",
           "Ciblage d'audience",
-          "Stratégie budgétaire",
           "Rédaction publicitaire",
-          "Design d'entonnoir",
-          "Diagnostic de métriques",
-          "Test A/B",
-          "Stratégie de mise à l'échelle"
+          "Calcul de budget",
+          "Tests A/B",
+          "Diagnostic du tableau de bord",
+          "Retargeting",
+          "Stratégie d'évolution"
         ],
         "ar": [
-          "هيكل الحملة",
+          "اختيار الهدف",
           "استهداف الجمهور",
-          "استراتيجية الميزانية",
           "كتابة النص الإعلاني",
-          "تصميم القمع",
-          "تشخيص المقاييس",
+          "حساب الميزانية",
           "اختبار A/B",
+          "تشخيص لوحة التحكم",
+          "إعادة الاستهداف",
           "استراتيجية التوسع"
         ]
       },
       "final_missions": {
         "en": [
-          "Structure a full campaign with the correct objective",
-          "Design a 3-layer targeting strategy",
-          "Write ad copy for cold and warm audiences",
-          "Diagnose a set of underperforming metrics",
-          "Build a scaling plan for the winning ad"
+          "Choose the right objective for a real launch",
+          "Define targeting and budget with a clear cost ceiling",
+          "Write problem-first ad copy with one CTA",
+          "Design an A/B test and a retargeting sequence",
+          "Build a safe scaling plan if it succeeds"
         ],
         "fr": [
-          "Structurez une campagne complète avec l'objectif correct",
-          "Concevez une stratégie de ciblage à 3 niveaux",
-          "Écrivez un texte publicitaire pour les audiences froides et tièdes",
-          "Diagnostiquez un ensemble de métriques sous-performantes",
-          "Construisez un plan de mise à l'échelle pour la publicité gagnante"
+          "Choisissez le bon objectif pour un vrai lancement",
+          "Définissez le ciblage et le budget avec un plafond de coût clair",
+          "Écrivez un texte publicitaire axé sur le problème avec un seul CTA",
+          "Concevez un test A/B et une séquence de retargeting",
+          "Construisez un plan d'évolution sûr en cas de succès"
         ],
         "ar": [
-          "صمم هيكل حملة كاملة بالهدف الصحيح",
-          "صمم استراتيجية استهداف من 3 طبقات",
-          "اكتب نصاً إعلانياً للجماهير الباردة والدافئة",
-          "شخّص مجموعة من المقاييس ضعيفة الأداء",
-          "ابنِ خطة توسع للإعلان الفائز"
+          "اختر الهدف الصحيح لإطلاق حقيقي",
+          "حدد الاستهداف والميزانية بسقف تكلفة واضح",
+          "اكتب نصاً إعلانياً يركز على المشكلة بدعوة عمل واحدة",
+          "صمم اختبار A/B وتسلسل إعادة استهداف",
+          "ابنِ خطة توسع آمنة في حال النجاح"
         ]
       },
       "real_business_task": {
         "industry": {
-          "en": "Any Moroccan business ready to launch its first ad campaign",
-          "fr": "Toute entreprise marocaine prête à lancer sa première campagne publicitaire",
-          "ar": "أي مشروع مغربي جاهز لإطلاق أول حملة إعلانية له"
+          "en": "Any Moroccan business ready to launch its first paid campaign",
+          "fr": "Toute entreprise marocaine prête à lancer sa première campagne payante",
+          "ar": "أي مشروع مغربي جاهز لإطلاق حملته المدفوعة الأولى"
         },
         "task": {
-          "en": "Build a complete ad campaign strategy from objective to scaling",
-          "fr": "Construisez une stratégie de campagne publicitaire complète de l'objectif à la mise à l'échelle",
-          "ar": "ابنِ استراتيجية حملة إعلانية كاملة من الهدف إلى التوسع"
+          "en": "Build a complete paid ad strategy from objective to scaling plan",
+          "fr": "Construisez une stratégie publicitaire payante complète, de l'objectif au plan d'évolution",
+          "ar": "ابنِ استراتيجية إعلانات مدفوعة كاملة من الهدف إلى خطة التوسع"
         }
       },
       "pro_secrets": {
         "en": [
-          "The businesses that win with ads treat every campaign as a data source, not just a sales attempt",
-          "A profitable ad system compounds — each test makes the next campaign smarter"
+          "The businesses that win with ads treat every campaign as a system to refine, not a one-time bet",
+          "Data beats intuition every single time in paid advertising"
         ],
         "fr": [
-          "Les entreprises qui gagnent avec les publicités traitent chaque campagne comme une source de données, pas juste une tentative de vente",
-          "Un système publicitaire rentable s'accumule — chaque test rend la prochaine campagne plus intelligente"
+          "Les entreprises qui gagnent avec les publicités traitent chaque campagne comme un système à affiner, pas un pari ponctuel",
+          "Les données battent l'intuition à chaque fois dans la publicité payante"
         ],
         "ar": [
-          "المشاريع التي تفوز بالإعلانات تعامل كل حملة كمصدر بيانات، وليس مجرد محاولة بيع",
-          "نظام إعلاني مربح يتراكم — كل اختبار يجعل الحملة التالية أذكى"
+          "المشاريع التي تفوز بالإعلانات تعامل كل حملة كنظام يجب تحسينه، وليس رهاناً لمرة واحدة",
+          "البيانات تتفوق على الحدس في كل مرة في الإعلانات المدفوعة"
         ]
       },
       "challenge_mode": {
         "type": "full_ads_simulation",
         "instruction": {
-          "en": "Plan, launch (on paper), diagnose and scale a complete ad campaign for one real business",
-          "fr": "Planifiez, lancez (sur papier), diagnostiquez et mettez à l'échelle une campagne publicitaire complète pour une vraie entreprise",
-          "ar": "خطط وأطلق (على الورق) وشخّص ووسّع حملة إعلانية كاملة لمشروع حقيقي واحد"
+          "en": "Plan, launch (on paper), diagnose and scale a complete paid ad campaign",
+          "fr": "Planifiez, lancez (sur papier), diagnostiquez et faites évoluer une campagne publicitaire payante complète",
+          "ar": "خطط وأطلق (على الورق) وشخّص ووسّع حملة إعلانية مدفوعة كاملة"
         },
         "reward_xp": 200
       },
       "final_result": {
         "title": {
-          "en": "Media Buyer Activated 📊",
-          "fr": "Acheteur Média Activé 📊",
-          "ar": "تم تفعيل المشتري الإعلاني 📊"
+          "en": "Ads Engine Activated 💰",
+          "fr": "Moteur Publicitaire Activé 💰",
+          "ar": "تم تفعيل محرك الإعلانات 💰"
         },
         "level": {
-          "en": "Certified Paid Ads Strategist",
-          "fr": "Stratège Publicités Payantes Certifié",
+          "en": "Certified Paid Media Strategist",
+          "fr": "Stratège Média Payant Certifié",
           "ar": "استراتيجي إعلانات مدفوعة معتمد"
         }
       },
       "ai_feedback_examples": {
         "en": [
-          "You now think in systems and data, not guesses 🔥",
-          "This campaign plan could actually turn a profit 💣"
+          "You now think in systems and data, not hope 🔥",
+          "This is a real, fundable ad strategy 💣"
         ],
         "fr": [
-          "Vous pensez maintenant en systèmes et données, pas en suppositions 🔥",
-          "Ce plan de campagne pourrait vraiment générer un profit 💣"
+          "Vous pensez maintenant en systèmes et en données, pas en espoir 🔥",
+          "C'est une vraie stratégie publicitaire finançable 💣"
         ],
         "ar": [
-          "أنت الآن تفكر بأنظمة وبيانات، وليس تخمينات 🔥",
-          "خطة الحملة هذه يمكن أن تحقق ربحاً فعلاً 💣"
+          "أنت الآن تفكر بأنظمة وبيانات، وليس بالأمل 🔥",
+          "هذه استراتيجية إعلانية حقيقية وقابلة للتمويل 💣"
         ]
       }
     }

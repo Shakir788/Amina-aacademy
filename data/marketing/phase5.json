@@ -1,1 +1,1506 @@
-{}
+{
+  "phase": 5,
+  "title": {
+    "en": "Advanced Branding, Client Work & Monetization",
+    "fr": "Branding Avancé, Travail Client & Monétisation",
+    "ar": "الهوية المتقدمة والعمل مع العملاء والتحقيق الربحي"
+  },
+  "description": {
+    "en": "Turn your marketing skills into a real income. Master personal branding, land and manage clients, price your work, and build a business that scales.",
+    "fr": "Transformez vos compétences marketing en un vrai revenu. Maîtrisez le branding personnel, trouvez et gérez des clients, fixez le prix de votre travail, et construisez une entreprise qui évolue.",
+    "ar": "حوّل مهاراتك التسويقية إلى دخل حقيقي. أتقن الهوية الشخصية، واحصل على عملاء وأدرهم، وسعّر عملك، وابنِ مشروعاً قابلاً للتوسع."
+  },
+  "system_level": "Advanced",
+  "estimated_time_per_lesson": "25-40 minutes",
+  "lesson_structure": {
+    "contains": {
+      "en": [
+        "Core concept",
+        "Deep explanation",
+        "Psychology",
+        "Real examples",
+        "Mistakes",
+        "AI analysis",
+        "Missions",
+        "Challenge mode",
+        "Pro secrets",
+        "Business applications"
+      ],
+      "fr": [
+        "Concept central",
+        "Explication approfondie",
+        "Psychologie",
+        "Exemples réels",
+        "Erreurs",
+        "Analyse IA",
+        "Missions",
+        "Mode défi",
+        "Secrets pro",
+        "Applications business"
+      ],
+      "ar": [
+        "المفهوم الأساسي",
+        "الشرح المعمّق",
+        "علم النفس",
+        "أمثلة حقيقية",
+        "الأخطاء",
+        "تحليل الذكاء الاصطناعي",
+        "المهام",
+        "وضع التحدي",
+        "أسرار المحترفين",
+        "تطبيقات الأعمال"
+      ]
+    }
+  },
+  "lessons": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Building a Personal Brand People Trust",
+        "fr": "Construire une Marque Personnelle en Qui les Gens ont Confiance",
+        "ar": "بناء علامة شخصية يثق بها الناس"
+      },
+      "xp": 200,
+      "core_concept": {
+        "en": "People hire people, not portfolios.",
+        "fr": "Les gens embauchent des personnes, pas des portfolios.",
+        "ar": "الناس يوظفون أشخاصاً، وليس ملفات أعمال."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "A strong personal brand shows your face, your voice, your process and your results consistently, so potential clients feel like they already know you before the first call.",
+          "fr": "Une marque personnelle forte montre votre visage, votre voix, votre processus et vos résultats de manière cohérente, afin que les clients potentiels aient l'impression de déjà vous connaître avant le premier appel.",
+          "ar": "الهوية الشخصية القوية تُظهر وجهك وصوتك وعمليتك ونتائجك باستمرار، حتى يشعر العملاء المحتملون أنهم يعرفونك بالفعل قبل أول مكالمة."
+        },
+        "why_it_matters": {
+          "en": "In a crowded market of freelancers, trust is the actual differentiator, not skill alone.",
+          "fr": "Dans un marché saturé de freelances, la confiance est le véritable facteur de différenciation, pas seulement la compétence.",
+          "ar": "في سوق مزدحم بالمستقلين، الثقة هي الفارق الحقيقي، وليس المهارة وحدها."
+        },
+        "internet_truth": {
+          "en": "Clients don't buy the cheapest option — they buy the option that feels the safest.",
+          "fr": "Les clients n'achètent pas l'option la moins chère — ils achètent l'option qui semble la plus sûre.",
+          "ar": "العملاء لا يشترون الخيار الأرخص — بل يشترون الخيار الذي يشعرون أنه الأكثر أماناً."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Showing your face on camera builds familiarity faster than text alone",
+          "Sharing your process, not just results, builds perceived expertise",
+          "Consistency across platforms compounds recognition over time"
+        ],
+        "fr": [
+          "Montrer votre visage à la caméra construit la familiarité plus vite que le texte seul",
+          "Partager votre processus, pas seulement les résultats, construit une expertise perçue",
+          "La cohérence sur les plateformes accumule la reconnaissance dans le temps"
+        ],
+        "ar": [
+          "إظهار وجهك على الكاميرا يبني الألفة أسرع من النص وحده",
+          "مشاركة عمليتك، وليس فقط نتائجك، تبني خبرة متصورة",
+          "الاتساق عبر المنصات يراكم التعرف بمرور الوقت"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A freelancer sharing 'a day in my process managing a client account' builds more trust than a polished results-only post",
+          "A consultant posting consistent talking-head videos becomes the recognizable face of their niche"
+        ],
+        "fr": [
+          "Un freelance partageant 'une journée dans mon processus de gestion d'un compte client' construit plus de confiance qu'un post uniquement axé résultats",
+          "Un consultant publiant des vidéos de tête parlante cohérentes devient le visage reconnaissable de sa niche"
+        ],
+        "ar": [
+          "مستقل يشارك 'يوم في عمليتي لإدارة حساب عميل' يبني ثقة أكثر من منشور يركز على النتائج فقط",
+          "مستشار ينشر فيديوهات وجه متحدث متسقة يصبح الوجه المعروف في مجاله"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Hiding behind a logo instead of showing your actual face and voice",
+          "Only posting finished results with no visible process",
+          "Inconsistent posting that makes the brand feel unreliable"
+        ],
+        "fr": [
+          "Se cacher derrière un logo au lieu de montrer son propre visage et sa voix",
+          "Ne publier que des résultats finis sans processus visible",
+          "Une publication incohérente qui rend la marque peu fiable"
+        ],
+        "ar": [
+          "الاختباء وراء شعار بدلاً من إظهار وجهك وصوتك الفعليين",
+          "نشر النتائج النهائية فقط بلا عملية مرئية",
+          "نشر غير منتظم يجعل العلامة تبدو غير موثوقة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Record one video showing your face talking about your work",
+          "Share one behind-the-scenes look at your actual process",
+          "Post consistently for 7 days straight and track the response"
+        ],
+        "fr": [
+          "Enregistrez une vidéo montrant votre visage parlant de votre travail",
+          "Partagez un aperçu des coulisses de votre processus réel",
+          "Publiez de manière cohérente pendant 7 jours d'affilée et suivez la réponse"
+        ],
+        "ar": [
+          "سجّل فيديو واحداً يُظهر وجهك وأنت تتحدث عن عملك",
+          "شارك نظرة كواليس واحدة على عمليتك الفعلية",
+          "انشر بانتظام لمدة 7 أيام متتالية وتتبع رد الفعل"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "New freelance social media manager with zero clients",
+          "fr": "Nouveau gestionnaire de réseaux sociaux freelance sans aucun client",
+          "ar": "مدير وسائل تواصل مستقل جديد بلا عملاء"
+        },
+        "task": {
+          "en": "Design a 2-week personal branding content plan to attract the first client",
+          "fr": "Concevez un plan de contenu de branding personnel de 2 semaines pour attirer le premier client",
+          "ar": "صمم خطة محتوى هوية شخصية لأسبوعين لجذب العميل الأول"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Clients trust the person they've seen speak more than the portfolio they've only read",
+          "Sharing failures and lessons learned builds more trust than only showing wins"
+        ],
+        "fr": [
+          "Les clients font confiance à la personne qu'ils ont vue parler plus qu'au portfolio qu'ils n'ont fait que lire",
+          "Partager les échecs et les leçons apprises construit plus de confiance que de ne montrer que les victoires"
+        ],
+        "ar": [
+          "العملاء يثقون بالشخص الذي رأوه يتحدث أكثر من ملف الأعمال الذي قرؤوه فقط",
+          "مشاركة الإخفاقات والدروس المستفادة تبني ثقة أكثر من إظهار الانتصارات فقط"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Design a full personal brand content pillar system for a freelancer starting from zero",
+          "fr": "Concevez un système complet de piliers de contenu de marque personnelle pour un freelance partant de zéro",
+          "ar": "صمم نظام أعمدة محتوى كامل للهوية الشخصية لمستقل يبدأ من الصفر"
+        },
+        "reward_xp": 100
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Hiding behind a logo makes you forgettable 😭",
+          "People will remember and trust this face 🔥"
+        ],
+        "fr": [
+          "Se cacher derrière un logo vous rend oubliable 😭",
+          "Les gens se souviendront et feront confiance à ce visage 🔥"
+        ],
+        "ar": [
+          "الاختباء وراء شعار يجعلك تُنسى 😭",
+          "الناس سيتذكرون هذا الوجه ويثقون به 🔥"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Finding Your First Clients",
+        "fr": "Trouver Vos Premiers Clients",
+        "ar": "إيجاد عملائك الأوائل"
+      },
+      "xp": 200,
+      "core_concept": {
+        "en": "Your first clients come from people who already know, like or need you — not cold strangers.",
+        "fr": "Vos premiers clients viennent de personnes qui vous connaissent déjà, vous apprécient ou ont besoin de vous — pas d'inconnus froids.",
+        "ar": "أول عملائك يأتون من أشخاص يعرفونك بالفعل أو يحبونك أو يحتاجونك — وليس غرباء تماماً."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Warm outreach (friends, family, local businesses, past coworkers) converts far faster than cold DMs to strangers when you're starting out with no track record.",
+          "fr": "La prospection chaude (amis, famille, entreprises locales, anciens collègues) convertit bien plus vite que les DM froids à des inconnus quand vous démarrez sans historique.",
+          "ar": "التواصل الدافئ (الأصدقاء، العائلة، المشاريع المحلية، زملاء العمل السابقون) يُحوّل أسرع بكثير من الرسائل الباردة للغرباء عندما تبدأ بلا سجل حافل."
+        },
+        "why_it_matters": {
+          "en": "One real result for a real client becomes the proof that attracts the next 10 clients.",
+          "fr": "Un résultat réel pour un vrai client devient la preuve qui attire les 10 prochains clients.",
+          "ar": "نتيجة حقيقية واحدة لعميل حقيقي تصبح الدليل الذي يجذب العملاء العشرة التاليين."
+        },
+        "internet_truth": {
+          "en": "Nobody trusts a freelancer with zero proof — the first client is about proof, not profit.",
+          "fr": "Personne ne fait confiance à un freelance sans aucune preuve — le premier client est une question de preuve, pas de profit.",
+          "ar": "لا أحد يثق بمستقل بلا أي دليل — العميل الأول يتعلق بالدليل، وليس الربح."
+        }
+      },
+      "psychology": {
+        "en": [
+          "People are more likely to trust a referral from someone they know",
+          "Offering a discounted or free first project in exchange for a testimonial lowers the barrier to yes",
+          "Local businesses are often more accessible first clients than global brands"
+        ],
+        "fr": [
+          "Les gens sont plus susceptibles de faire confiance à une recommandation de quelqu'un qu'ils connaissent",
+          "Offrir un premier projet à prix réduit ou gratuit en échange d'un témoignage abaisse la barrière du oui",
+          "Les entreprises locales sont souvent des premiers clients plus accessibles que les marques mondiales"
+        ],
+        "ar": [
+          "الناس أكثر ميلاً للثقة بتوصية من شخص يعرفونه",
+          "تقديم مشروع أول بسعر مخفض أو مجاني مقابل شهادة يخفض حاجز الموافقة",
+          "المشاريع المحلية غالباً عملاء أوائل أكثر سهولة من العلامات العالمية"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A freelancer's first client came from a family friend's local shop, leading to a testimonial that landed 3 more clients",
+          "A cold DM campaign to strangers with zero portfolio got almost no replies"
+        ],
+        "fr": [
+          "Le premier client d'un freelance est venu de la boutique locale d'un ami de la famille, menant à un témoignage qui a rapporté 3 clients de plus",
+          "Une campagne de DM froids à des inconnus sans portfolio n'a obtenu presque aucune réponse"
+        ],
+        "ar": [
+          "أول عميل لمستقل جاء من متجر محلي لصديق العائلة، مما أدى إلى شهادة جلبت 3 عملاء إضافيين",
+          "حملة رسائل باردة لغرباء بلا ملف أعمال لم تحصل على ردود تقريباً"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Only sending cold DMs to strangers as a brand new freelancer",
+          "Charging full price for the very first project with zero proof",
+          "Not asking satisfied first clients for a testimonial or referral"
+        ],
+        "fr": [
+          "N'envoyer que des DM froids à des inconnus en tant que nouveau freelance",
+          "Facturer le plein prix pour le tout premier projet sans aucune preuve",
+          "Ne pas demander de témoignage ou de recommandation aux premiers clients satisfaits"
+        ],
+        "ar": [
+          "إرسال رسائل باردة للغرباء فقط كمستقل جديد تماماً",
+          "فرض السعر الكامل على المشروع الأول دون أي دليل",
+          "عدم طلب شهادة أو توصية من أول عملاء راضين"
+        ]
+      },
+      "missions": {
+        "en": [
+          "List 10 people in your existing network who might need or know someone who needs your service",
+          "Reach out to 3 of them this week with a clear, specific offer",
+          "Prepare a simple testimonial request to send after your first project"
+        ],
+        "fr": [
+          "Listez 10 personnes de votre réseau existant qui pourraient avoir besoin ou connaître quelqu'un qui a besoin de votre service",
+          "Contactez 3 d'entre elles cette semaine avec une offre claire et spécifique",
+          "Préparez une demande de témoignage simple à envoyer après votre premier projet"
+        ],
+        "ar": [
+          "اذكر 10 أشخاص في شبكتك الحالية قد يحتاجون خدمتك أو يعرفون من يحتاجها",
+          "تواصل مع 3 منهم هذا الأسبوع بعرض واضح ومحدد",
+          "جهّز طلب شهادة بسيط لإرساله بعد مشروعك الأول"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "New freelancer with a strong portfolio but zero paying clients",
+          "fr": "Nouveau freelance avec un fort portfolio mais aucun client payant",
+          "ar": "مستقل جديد بملف أعمال قوي لكن بلا عملاء مدفوعين"
+        },
+        "task": {
+          "en": "Build a warm outreach plan to land the first 3 paying clients",
+          "fr": "Construisez un plan de prospection chaude pour décrocher les 3 premiers clients payants",
+          "ar": "ابنِ خطة تواصل دافئ للحصول على أول 3 عملاء مدفوعين"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Your network almost always knows someone who needs what you offer — ask directly",
+          "A slightly discounted first project that gets a real result is worth more long-term than a full-price project with no case study"
+        ],
+        "fr": [
+          "Votre réseau connaît presque toujours quelqu'un qui a besoin de ce que vous offrez — demandez directement",
+          "Un premier projet légèrement réduit qui obtient un vrai résultat vaut plus à long terme qu'un projet à prix plein sans étude de cas"
+        ],
+        "ar": [
+          "شبكتك تعرف دائماً تقريباً شخصاً يحتاج ما تقدمه — اسأل مباشرة",
+          "مشروع أول بسعر مخفض قليلاً يحقق نتيجة حقيقية يستحق أكثر على المدى الطويل من مشروع بسعر كامل بلا دراسة حالة"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Write 3 warm outreach messages to people in your existing network",
+          "fr": "Écrivez 3 messages de prospection chaude à des personnes de votre réseau existant",
+          "ar": "اكتب 3 رسائل تواصل دافئ لأشخاص في شبكتك الحالية"
+        },
+        "reward_xp": 100
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "Cold strangers won't trust a freelancer with no proof yet 😭",
+          "This warm approach is exactly how first clients get won 🔥"
+        ],
+        "fr": [
+          "Les inconnus froids ne feront pas confiance à un freelance sans preuve pour l'instant 😭",
+          "Cette approche chaude est exactement comment on gagne les premiers clients 🔥"
+        ],
+        "ar": [
+          "الغرباء الباردون لن يثقوا بمستقل بلا دليل بعد 😭",
+          "هذا النهج الدافئ هو بالضبط كيف يُكسب العملاء الأوائل 🔥"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Pricing Your Services Without Underselling",
+        "fr": "Fixer le Prix de Vos Services Sans Se Sous-Vendre",
+        "ar": "تسعير خدماتك دون بيع نفسك بأقل من قيمتك"
+      },
+      "xp": 210,
+      "core_concept": {
+        "en": "Price communicates value before the client even sees the work.",
+        "fr": "Le prix communique la valeur avant même que le client ne voie le travail.",
+        "ar": "السعر يوصل القيمة قبل أن يرى العميل العمل حتى."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Pricing based on time alone ignores the actual business results you create; pricing based on outcomes and packages reflects true value and scales better.",
+          "fr": "Fixer le prix uniquement sur le temps ignore les résultats commerciaux réels que vous créez ; fixer le prix sur les résultats et les forfaits reflète la vraie valeur et évolue mieux.",
+          "ar": "التسعير بناءً على الوقت وحده يتجاهل النتائج التجارية الفعلية التي تخلقها؛ التسعير بناءً على النتائج والباقات يعكس القيمة الحقيقية ويتوسع بشكل أفضل."
+        },
+        "why_it_matters": {
+          "en": "Charging too little attracts clients who don't value the work and burns you out fast.",
+          "fr": "Facturer trop peu attire des clients qui ne valorisent pas le travail et vous épuise rapidement.",
+          "ar": "فرض سعر منخفض جداً يجذب عملاء لا يقدّرون العمل ويرهقك بسرعة."
+        },
+        "internet_truth": {
+          "en": "A client who negotiates your price down to almost nothing rarely becomes your best client.",
+          "fr": "Un client qui négocie votre prix jusqu'à presque rien devient rarement votre meilleur client.",
+          "ar": "العميل الذي يفاوض على سعرك حتى يصبح شبه معدوم نادراً ما يصبح أفضل عميل لديك."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Package pricing removes the anxiety of hourly negotiation for both sides",
+          "Clients associate higher prices with higher perceived quality and lower risk",
+          "Value-based pricing shifts the conversation from cost to results"
+        ],
+        "fr": [
+          "Le prix forfaitaire élimine l'anxiété de la négociation horaire des deux côtés",
+          "Les clients associent des prix plus élevés à une qualité perçue plus élevée et un risque plus faible",
+          "Le prix basé sur la valeur déplace la conversation du coût vers les résultats"
+        ],
+        "ar": [
+          "التسعير بالباقات يزيل قلق التفاوض بالساعة من كلا الجانبين",
+          "العملاء يربطون الأسعار المرتفعة بجودة متصورة أعلى ومخاطر أقل",
+          "التسعير القائم على القيمة ينقل المحادثة من التكلفة إلى النتائج"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A freelancer charging $5/hour attracts clients who question every invoice",
+          "A freelancer offering a $500 'growth package' with clear deliverables attracts clients focused on results, not haggling"
+        ],
+        "fr": [
+          "Un freelance facturant 5$/heure attire des clients qui questionnent chaque facture",
+          "Un freelance offrant un 'forfait croissance' à 500$ avec des livrables clairs attire des clients concentrés sur les résultats, pas le marchandage"
+        ],
+        "ar": [
+          "مستقل يفرض 5 دولارات في الساعة يجذب عملاء يشككون في كل فاتورة",
+          "مستقل يقدم 'باقة نمو' بـ500 دولار بمخرجات واضحة يجذب عملاء يركزون على النتائج، وليس المساومة"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Charging by the hour and constantly justifying time spent",
+          "Pricing based on fear of rejection instead of actual value delivered",
+          "Discounting immediately the moment a client pushes back"
+        ],
+        "fr": [
+          "Facturer à l'heure et justifier constamment le temps passé",
+          "Fixer le prix basé sur la peur du rejet au lieu de la valeur réelle livrée",
+          "Réduire le prix immédiatement dès qu'un client résiste"
+        ],
+        "ar": [
+          "الفرض بالساعة والتبرير المستمر للوقت المستغرق",
+          "التسعير بناءً على الخوف من الرفض بدلاً من القيمة الفعلية المقدمة",
+          "التخفيض فوراً بمجرد أن يعترض العميل"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Create 3 clear service packages instead of hourly pricing",
+          "Calculate the actual business value your work creates for a typical client",
+          "Practice saying your price out loud without immediately justifying it"
+        ],
+        "fr": [
+          "Créez 3 forfaits de service clairs au lieu d'une tarification horaire",
+          "Calculez la valeur commerciale réelle que votre travail crée pour un client type",
+          "Entraînez-vous à dire votre prix à voix haute sans le justifier immédiatement"
+        ],
+        "ar": [
+          "أنشئ 3 باقات خدمة واضحة بدلاً من التسعير بالساعة",
+          "احسب القيمة التجارية الفعلية التي يخلقها عملك لعميل نموذجي",
+          "تدرب على قول سعرك بصوت عالٍ دون تبريره فوراً"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Social media manager currently charging $10/hour and overwhelmed",
+          "fr": "Gestionnaire de réseaux sociaux facturant actuellement 10$/heure et débordé",
+          "ar": "مدير وسائل تواصل يفرض حالياً 10 دولارات في الساعة ومرهق"
+        },
+        "task": {
+          "en": "Redesign their pricing into 3 value-based packages",
+          "fr": "Repensez leur tarification en 3 forfaits basés sur la valeur",
+          "ar": "أعد تصميم تسعيرهم إلى 3 باقات قائمة على القيمة"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Package pricing lets clients choose a tier instead of negotiating a number",
+          "The right price filters out clients who were never going to be a good fit anyway"
+        ],
+        "fr": [
+          "Le prix forfaitaire permet aux clients de choisir un niveau au lieu de négocier un chiffre",
+          "Le bon prix filtre les clients qui n'allaient de toute façon jamais être un bon fit"
+        ],
+        "ar": [
+          "التسعير بالباقات يتيح للعملاء اختيار مستوى بدلاً من التفاوض على رقم",
+          "السعر الصحيح يُصفّي العملاء الذين لم يكونوا مناسبين أصلاً"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Build 3 value-based service packages with clear deliverables and pricing",
+          "fr": "Construisez 3 forfaits de service basés sur la valeur avec des livrables et une tarification clairs",
+          "ar": "ابنِ 3 باقات خدمة قائمة على القيمة بمخرجات وتسعير واضحين"
+        },
+        "reward_xp": 110
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This pricing invites endless negotiation 😭",
+          "This pricing structure commands respect and clarity 🔥"
+        ],
+        "fr": [
+          "Cette tarification invite à une négociation sans fin 😭",
+          "Cette structure de prix commande respect et clarté 🔥"
+        ],
+        "ar": [
+          "هذا التسعير يدعو لتفاوض لا نهاية له 😭",
+          "هيكل التسعير هذا يفرض الاحترام والوضوح 🔥"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Writing Proposals That Win",
+        "fr": "Écrire des Propositions Qui Gagnent",
+        "ar": "كتابة عروض تفوز"
+      },
+      "xp": 210,
+      "core_concept": {
+        "en": "A proposal isn't a quote — it's proof you understood the client's actual problem.",
+        "fr": "Une proposition n'est pas un devis — c'est la preuve que vous avez compris le vrai problème du client.",
+        "ar": "العرض ليس عرض سعر — إنه دليل على أنك فهمت مشكلة العميل الفعلية."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Winning proposals restate the client's specific problem in their own words, then show a clear plan and outcome, before ever mentioning price.",
+          "fr": "Les propositions gagnantes reformulent le problème spécifique du client dans ses propres mots, puis montrent un plan et un résultat clairs, avant même de mentionner le prix.",
+          "ar": "العروض الفائزة تعيد صياغة مشكلة العميل المحددة بكلماته الخاصة، ثم تُظهر خطة ونتيجة واضحتين، قبل ذكر السعر إطلاقاً."
+        },
+        "why_it_matters": {
+          "en": "A generic, copy-pasted proposal signals low effort and gets ignored among competing bids.",
+          "fr": "Une proposition générique et copiée-collée signale un faible effort et est ignorée parmi les offres concurrentes.",
+          "ar": "العرض العام المنسوخ يشير لجهد منخفض ويُتجاهل بين العروض المنافسة."
+        },
+        "internet_truth": {
+          "en": "Clients hire the freelancer who clearly understood the problem, not the cheapest bid.",
+          "fr": "Les clients embauchent le freelance qui a clairement compris le problème, pas l'offre la moins chère.",
+          "ar": "العملاء يوظفون المستقل الذي فهم المشكلة بوضوح، وليس العرض الأرخص."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Reflecting the client's own words back builds instant rapport",
+          "A clear, simple plan reduces perceived risk of hiring you",
+          "Leading with understanding before price shifts the frame from cost to solution"
+        ],
+        "fr": [
+          "Refléter les propres mots du client construit un rapport instantané",
+          "Un plan clair et simple réduit le risque perçu de vous embaucher",
+          "Commencer par la compréhension avant le prix déplace le cadre du coût vers la solution"
+        ],
+        "ar": [
+          "عكس كلمات العميل الخاصة يبني تواصلاً فورياً",
+          "خطة واضحة وبسيطة تقلل المخاطر المتصورة لتوظيفك",
+          "البدء بالفهم قبل السعر ينقل الإطار من التكلفة إلى الحل"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A proposal opening with 'You mentioned your reach dropped after changing posting times — here's exactly why' feels personal and expert",
+          "A generic proposal starting with 'We are a social media agency offering...' feels like spam"
+        ],
+        "fr": [
+          "Une proposition commençant par 'Vous avez mentionné que votre portée a chuté après avoir changé les horaires de publication — voici exactement pourquoi' semble personnelle et experte",
+          "Une proposition générique commençant par 'Nous sommes une agence de réseaux sociaux offrant...' ressemble à du spam"
+        ],
+        "ar": [
+          "عرض يبدأ بـ'ذكرت أن وصولك انخفض بعد تغيير أوقات النشر — إليك السبب بالضبط' يبدو شخصياً وخبيراً",
+          "عرض عام يبدأ بـ'نحن وكالة وسائل تواصل نقدم...' يبدو كرسالة مزعجة"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Sending the exact same generic proposal to every client",
+          "Leading with price and company info instead of the client's problem",
+          "Making the proposal too long and generic instead of specific and short"
+        ],
+        "fr": [
+          "Envoyer exactement la même proposition générique à chaque client",
+          "Commencer par le prix et les informations de l'entreprise au lieu du problème du client",
+          "Rendre la proposition trop longue et générique au lieu de spécifique et courte"
+        ],
+        "ar": [
+          "إرسال نفس العرض العام بالضبط لكل عميل",
+          "البدء بالسعر ومعلومات الشركة بدلاً من مشكلة العميل",
+          "جعل العرض طويلاً وعاماً جداً بدلاً من محدد وقصير"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Rewrite one past proposal to open with the client's own words about their problem",
+          "Cut a proposal down to the shortest version that still communicates the plan",
+          "Move the price to the end of the proposal, after value is established"
+        ],
+        "fr": [
+          "Réécrivez une proposition passée pour commencer par les propres mots du client sur son problème",
+          "Réduisez une proposition à la version la plus courte qui communique toujours le plan",
+          "Déplacez le prix à la fin de la proposition, après que la valeur soit établie"
+        ],
+        "ar": [
+          "أعد كتابة عرض سابق ليبدأ بكلمات العميل الخاصة عن مشكلته",
+          "اختصر عرضاً لأقصر نسخة لا تزال توصل الخطة",
+          "انقل السعر إلى نهاية العرض، بعد إثبات القيمة"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Potential client who complained their ads aren't converting",
+          "fr": "Client potentiel qui s'est plaint que ses publicités ne convertissent pas",
+          "ar": "عميل محتمل اشتكى من أن إعلاناته لا تُحوّل"
+        },
+        "task": {
+          "en": "Write a short proposal opening that reflects their exact problem back to them",
+          "fr": "Écrivez une courte ouverture de proposition qui reflète leur problème exact",
+          "ar": "اكتب فتحة عرض قصيرة تعكس مشكلتهم بالضبط لهم"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "A short, specific proposal beats a long generic one almost every time",
+          "Mentioning price too early can end the conversation before value is established"
+        ],
+        "fr": [
+          "Une proposition courte et spécifique bat presque toujours une longue générique",
+          "Mentionner le prix trop tôt peut mettre fin à la conversation avant que la valeur ne soit établie"
+        ],
+        "ar": [
+          "العرض القصير والمحدد يتفوق على العرض الطويل والعام في كل مرة تقريباً",
+          "ذكر السعر مبكراً جداً قد ينهي المحادثة قبل إثبات القيمة"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Write a full winning proposal for a real client scenario, price last",
+          "fr": "Écrivez une proposition gagnante complète pour un scénario client réel, le prix en dernier",
+          "ar": "اكتب عرضاً فائزاً كاملاً لسيناريو عميل حقيقي، والسعر في النهاية"
+        },
+        "reward_xp": 110
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This proposal could be sent to literally anyone — that's the problem 😭",
+          "This proposal proves you actually listened 🔥"
+        ],
+        "fr": [
+          "Cette proposition pourrait être envoyée à littéralement n'importe qui — c'est le problème 😭",
+          "Cette proposition prouve que vous avez vraiment écouté 🔥"
+        ],
+        "ar": [
+          "هذا العرض يمكن إرساله لأي شخص حرفياً — هذه هي المشكلة 😭",
+          "هذا العرض يثبت أنك استمعت فعلاً 🔥"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Onboarding & Managing Clients Professionally",
+        "fr": "Intégrer et Gérer les Clients Professionnellement",
+        "ar": "استقبال وإدارة العملاء باحترافية"
+      },
+      "xp": 210,
+      "core_concept": {
+        "en": "A messy start to a client relationship guarantees a messy ending.",
+        "fr": "Un début désordonné d'une relation client garantit une fin désordonnée.",
+        "ar": "بداية فوضوية لعلاقة عميل تضمن نهاية فوضوية."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "A clear onboarding process — contract, expectations, communication schedule, and deliverables — prevents the majority of client conflicts before they start.",
+          "fr": "Un processus d'intégration clair — contrat, attentes, calendrier de communication et livrables — prévient la majorité des conflits clients avant qu'ils ne commencent.",
+          "ar": "عملية استقبال واضحة — عقد، توقعات، جدول تواصل، ومخرجات — تمنع معظم نزاعات العملاء قبل أن تبدأ."
+        },
+        "why_it_matters": {
+          "en": "Most client conflicts come from unclear expectations, not bad work.",
+          "fr": "La plupart des conflits clients viennent d'attentes floues, pas d'un mauvais travail.",
+          "ar": "معظم نزاعات العملاء تأتي من توقعات غير واضحة، وليس من عمل سيء."
+        },
+        "internet_truth": {
+          "en": "'The client is difficult' is often actually 'the expectations were never set clearly'.",
+          "fr": "'Le client est difficile' est souvent en réalité 'les attentes n'ont jamais été clairement définies'.",
+          "ar": "'العميل صعب' غالباً ما يكون فعلياً 'لم تُحدد التوقعات بوضوح أبداً'."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Clear boundaries set early prevent resentment later",
+          "Written agreements reduce anxiety and disputes on both sides",
+          "Regular scheduled updates prevent clients from feeling ignored"
+        ],
+        "fr": [
+          "Des limites claires établies tôt préviennent le ressentiment plus tard",
+          "Les accords écrits réduisent l'anxiété et les différends des deux côtés",
+          "Des mises à jour régulières et programmées empêchent les clients de se sentir ignorés"
+        ],
+        "ar": [
+          "الحدود الواضحة المحددة مبكراً تمنع الاستياء لاحقاً",
+          "الاتفاقيات المكتوبة تقلل القلق والنزاعات من الجانبين",
+          "التحديثات المنتظمة المجدولة تمنع شعور العملاء بالإهمال"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A freelancer using a simple onboarding doc (goals, timeline, communication days) avoided a common client conflict",
+          "A freelancer with no clear scope ended up doing unpaid extra work indefinitely"
+        ],
+        "fr": [
+          "Un freelance utilisant un document d'intégration simple (objectifs, calendrier, jours de communication) a évité un conflit client courant",
+          "Un freelance sans périmètre clair a fini par faire du travail supplémentaire non payé indéfiniment"
+        ],
+        "ar": [
+          "مستقل يستخدم وثيقة استقبال بسيطة (أهداف، جدول زمني، أيام تواصل) تجنب نزاعاً شائعاً مع العميل",
+          "مستقل بلا نطاق واضح انتهى به الأمر بعمل إضافي غير مدفوع إلى أجل غير مسمى"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Starting work with no written agreement on scope or deliverables",
+          "Being available 24/7 with no communication boundaries",
+          "Avoiding difficult conversations about scope creep until resentment builds"
+        ],
+        "fr": [
+          "Commencer le travail sans accord écrit sur le périmètre ou les livrables",
+          "Être disponible 24/7 sans limites de communication",
+          "Éviter les conversations difficiles sur le dérapage du périmètre jusqu'à ce que le ressentiment s'installe"
+        ],
+        "ar": [
+          "بدء العمل دون اتفاق مكتوب على النطاق أو المخرجات",
+          "التواجد على مدار الساعة دون حدود تواصل",
+          "تجنب المحادثات الصعبة حول توسع النطاق حتى يتراكم الاستياء"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Create a simple onboarding document template for new clients",
+          "Define your communication boundaries (response times, days available)",
+          "Write a clear scope-of-work statement for your current or next client"
+        ],
+        "fr": [
+          "Créez un modèle de document d'intégration simple pour les nouveaux clients",
+          "Définissez vos limites de communication (temps de réponse, jours disponibles)",
+          "Écrivez un énoncé clair du périmètre de travail pour votre client actuel ou prochain"
+        ],
+        "ar": [
+          "أنشئ نموذج وثيقة استقبال بسيط للعملاء الجدد",
+          "حدد حدود تواصلك (أوقات الرد، الأيام المتاحة)",
+          "اكتب بياناً واضحاً لنطاق العمل لعميلك الحالي أو القادم"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Freelancer experiencing constant scope creep with a current client",
+          "fr": "Freelance vivant un dérapage constant du périmètre avec un client actuel",
+          "ar": "مستقل يواجه توسعاً مستمراً في النطاق مع عميل حالي"
+        },
+        "task": {
+          "en": "Write a professional message resetting the scope and boundaries",
+          "fr": "Écrivez un message professionnel réinitialisant le périmètre et les limites",
+          "ar": "اكتب رسالة احترافية تعيد ضبط النطاق والحدود"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "A simple written scope document prevents most client disputes before they happen",
+          "Setting communication hours upfront is respected far more often than people fear"
+        ],
+        "fr": [
+          "Un simple document de périmètre écrit prévient la plupart des différends clients avant qu'ils ne se produisent",
+          "Définir des heures de communication à l'avance est respecté bien plus souvent qu'on ne le craint"
+        ],
+        "ar": [
+          "وثيقة نطاق مكتوبة بسيطة تمنع معظم نزاعات العملاء قبل حدوثها",
+          "تحديد ساعات التواصل مسبقاً يُحترم أكثر بكثير مما يُخشى"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Design a complete onboarding process for a new client from contract to first update",
+          "fr": "Concevez un processus d'intégration complet pour un nouveau client, du contrat à la première mise à jour",
+          "ar": "صمم عملية استقبال كاملة لعميل جديد من العقد إلى أول تحديث"
+        },
+        "reward_xp": 110
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "No boundaries here means burnout is coming 😭",
+          "This process protects both you and the client 🔥"
+        ],
+        "fr": [
+          "Aucune limite ici signifie que l'épuisement arrive 😭",
+          "Ce processus vous protège vous et le client 🔥"
+        ],
+        "ar": [
+          "لا حدود هنا يعني أن الإرهاق قادم 😭",
+          "هذه العملية تحميك أنت والعميل 🔥"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "Delivering Reports Clients Actually Understand",
+        "fr": "Livrer des Rapports Que les Clients Comprennent Vraiment",
+        "ar": "تقديم تقارير يفهمها العملاء فعلياً"
+      },
+      "xp": 200,
+      "core_concept": {
+        "en": "A confusing report makes great work look invisible.",
+        "fr": "Un rapport confus rend un excellent travail invisible.",
+        "ar": "التقرير المربك يجعل العمل الرائع يبدو غير مرئي."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Clients rarely understand marketing jargon or raw analytics screenshots — reports need to translate numbers into plain business impact.",
+          "fr": "Les clients comprennent rarement le jargon marketing ou les captures d'écran brutes d'analyses — les rapports doivent traduire les chiffres en impact commercial simple.",
+          "ar": "العملاء نادراً ما يفهمون مصطلحات التسويق أو لقطات التحليلات الخام — التقارير يجب أن تترجم الأرقام إلى تأثير تجاري بسيط."
+        },
+        "why_it_matters": {
+          "en": "Clients renew contracts based on perceived value, and perceived value is created by clear reporting.",
+          "fr": "Les clients renouvellent les contrats en fonction de la valeur perçue, et la valeur perçue est créée par des rapports clairs.",
+          "ar": "العملاء يجددون العقود بناءً على القيمة المتصورة، والقيمة المتصورة تُخلق عبر تقارير واضحة."
+        },
+        "internet_truth": {
+          "en": "Good work that's poorly reported often gets credit for nothing.",
+          "fr": "Un bon travail mal rapporté n'obtient souvent aucun crédit.",
+          "ar": "العمل الجيد المُبلّغ عنه بشكل سيء غالباً لا يحصل على أي تقدير."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Simple visuals communicate progress faster than raw data tables",
+          "Connecting metrics to business outcomes (leads, sales) matters more to clients than vanity numbers",
+          "Regular reporting builds ongoing trust and justifies contract renewal"
+        ],
+        "fr": [
+          "Les visuels simples communiquent le progrès plus rapidement que les tableaux de données bruts",
+          "Relier les métriques aux résultats commerciaux (leads, ventes) compte plus pour les clients que les chiffres de vanité",
+          "Un rapport régulier construit une confiance continue et justifie le renouvellement du contrat"
+        ],
+        "ar": [
+          "المرئيات البسيطة توصل التقدم أسرع من جداول البيانات الخام",
+          "ربط المقاييس بالنتائج التجارية (عملاء محتملون، مبيعات) أهم للعملاء من الأرقام الشكلية",
+          "التقارير المنتظمة تبني ثقة مستمرة وتبرر تجديد العقد"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A report saying 'Your reach grew 40%, which brought 12 new inquiries this month' means more than a raw analytics screenshot",
+          "A client renewed a contract specifically because the monthly report clearly showed ROI"
+        ],
+        "fr": [
+          "Un rapport disant 'Votre portée a augmenté de 40%, ce qui a apporté 12 nouvelles demandes ce mois-ci' signifie plus qu'une capture d'écran brute d'analyses",
+          "Un client a renouvelé un contrat spécifiquement parce que le rapport mensuel montrait clairement le ROI"
+        ],
+        "ar": [
+          "تقرير يقول 'وصولك نما بنسبة 40%، مما جلب 12 استفساراً جديداً هذا الشهر' يعني أكثر من لقطة شاشة تحليلات خام",
+          "عميل جدد عقداً تحديداً لأن التقرير الشهري أظهر عائد الاستثمار بوضوح"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Sending raw analytics screenshots with no explanation",
+          "Using marketing jargon the client doesn't understand",
+          "Reporting inconsistently or only when asked"
+        ],
+        "fr": [
+          "Envoyer des captures d'écran brutes d'analyses sans explication",
+          "Utiliser un jargon marketing que le client ne comprend pas",
+          "Rapporter de manière incohérente ou seulement quand on le demande"
+        ],
+        "ar": [
+          "إرسال لقطات شاشة تحليلات خام دون شرح",
+          "استخدام مصطلحات تسويقية لا يفهمها العميل",
+          "التقرير بشكل غير منتظم أو فقط عند الطلب"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Redesign your last report into plain, jargon-free language",
+          "Connect at least 2 metrics directly to business outcomes",
+          "Set a consistent monthly reporting schedule for all clients"
+        ],
+        "fr": [
+          "Repensez votre dernier rapport en langage simple, sans jargon",
+          "Reliez au moins 2 métriques directement à des résultats commerciaux",
+          "Établissez un calendrier de rapport mensuel cohérent pour tous les clients"
+        ],
+        "ar": [
+          "أعد تصميم آخر تقرير لك بلغة بسيطة بلا مصطلحات",
+          "اربط مقياسين على الأقل مباشرة بنتائج تجارية",
+          "حدد جدول تقارير شهري ثابت لجميع العملاء"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Client who doesn't understand marketing terms and questions the value of the service",
+          "fr": "Client qui ne comprend pas les termes marketing et remet en question la valeur du service",
+          "ar": "عميل لا يفهم مصطلحات التسويق ويشكك في قيمة الخدمة"
+        },
+        "task": {
+          "en": "Rewrite a jargon-heavy report into plain language connected to business results",
+          "fr": "Réécrivez un rapport chargé de jargon en langage simple lié aux résultats commerciaux",
+          "ar": "أعد كتابة تقرير مليء بالمصطلحات إلى لغة بسيطة مرتبطة بالنتائج التجارية"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Every metric in a report should answer 'so what does this mean for my business?'",
+          "A short, clear report beats a long, comprehensive one clients never fully read"
+        ],
+        "fr": [
+          "Chaque métrique dans un rapport devrait répondre à 'donc qu'est-ce que ça signifie pour mon entreprise ?'",
+          "Un rapport court et clair bat un rapport long et exhaustif que les clients ne lisent jamais entièrement"
+        ],
+        "ar": [
+          "كل مقياس في التقرير يجب أن يجيب على 'إذن ماذا يعني هذا لعملي؟'",
+          "التقرير القصير والواضح يتفوق على تقرير طويل وشامل لا يقرؤه العملاء بالكامل أبداً"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Turn a raw analytics export into a client-friendly, results-focused report",
+          "fr": "Transformez un export d'analyses brut en un rapport axé sur les résultats et adapté au client",
+          "ar": "حوّل تصدير تحليلات خام إلى تقرير مناسب للعميل يركز على النتائج"
+        },
+        "reward_xp": 105
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "The client will have no idea what any of this means 😭",
+          "This makes your work's impact impossible to miss 🔥"
+        ],
+        "fr": [
+          "Le client n'aura aucune idée de ce que tout cela signifie 😭",
+          "Ça rend l'impact de votre travail impossible à manquer 🔥"
+        ],
+        "ar": [
+          "العميل لن يفهم ماذا يعني كل هذا 😭",
+          "هذا يجعل تأثير عملك مستحيل التجاهل 🔥"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "en": "Handling Difficult Clients & Feedback",
+        "fr": "Gérer les Clients Difficiles & les Retours",
+        "ar": "التعامل مع العملاء الصعبين والملاحظات"
+      },
+      "xp": 210,
+      "core_concept": {
+        "en": "Difficult moments are a test of process, not a personal attack.",
+        "fr": "Les moments difficiles sont un test de processus, pas une attaque personnelle.",
+        "ar": "اللحظات الصعبة اختبار للعملية، وليست هجوماً شخصياً."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Calm, structured responses to criticism preserve the relationship, while defensive or emotional reactions almost always escalate the conflict.",
+          "fr": "Des réponses calmes et structurées à la critique préservent la relation, tandis que des réactions défensives ou émotionnelles font presque toujours dégénérer le conflit.",
+          "ar": "الردود الهادئة والمنظمة على النقد تحافظ على العلاقة، بينما ردود الفعل الدفاعية أو العاطفية دائماً تقريباً تصعّد النزاع."
+        },
+        "why_it_matters": {
+          "en": "How you handle the first difficult moment often determines whether the client stays or leaves.",
+          "fr": "La façon dont vous gérez le premier moment difficile détermine souvent si le client reste ou part.",
+          "ar": "كيفية تعاملك مع أول لحظة صعبة غالباً تحدد ما إذا كان العميل سيبقى أو يرحل."
+        },
+        "internet_truth": {
+          "en": "Most 'difficult clients' are actually anxious clients who feel out of the loop.",
+          "fr": "La plupart des 'clients difficiles' sont en fait des clients anxieux qui se sentent hors de la boucle.",
+          "ar": "معظم 'العملاء الصعبين' هم في الواقع عملاء قلقون يشعرون بأنهم خارج الحلقة."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Acknowledging a concern before defending yourself lowers tension immediately",
+          "Written, calm responses prevent misread tone that inflames conflict",
+          "Clients often just want to feel heard before they want a solution"
+        ],
+        "fr": [
+          "Reconnaître une préoccupation avant de se défendre réduit immédiatement la tension",
+          "Des réponses écrites et calmes évitent une mauvaise interprétation du ton qui enflamme le conflit",
+          "Les clients veulent souvent juste se sentir entendus avant de vouloir une solution"
+        ],
+        "ar": [
+          "الاعتراف بالمخاوف قبل الدفاع عن نفسك يخفف التوتر فوراً",
+          "الردود المكتوبة والهادئة تمنع سوء فهم النبرة الذي يؤجج النزاع",
+          "العملاء غالباً يريدون فقط الشعور بالاستماع إليهم قبل أن يريدوا حلاً"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "Responding to harsh feedback with 'I understand the concern, here's what happened and how we'll fix it' de-escalates most situations",
+          "Responding defensively to criticism turned a small complaint into a lost client"
+        ],
+        "fr": [
+          "Répondre à des retours durs avec 'Je comprends la préoccupation, voici ce qui s'est passé et comment nous allons le réparer' désamorce la plupart des situations",
+          "Répondre de manière défensive à la critique a transformé une petite plainte en client perdu"
+        ],
+        "ar": [
+          "الرد على ملاحظات قاسية بـ'أفهم القلق، إليك ما حدث وكيف سنصلحه' يهدئ معظم المواقف",
+          "الرد بدفاعية على النقد حوّل شكوى صغيرة إلى عميل مفقود"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Getting defensive at the first sign of criticism",
+          "Responding emotionally in the heat of the moment instead of pausing first",
+          "Avoiding the difficult conversation entirely until it's too late"
+        ],
+        "fr": [
+          "Devenir défensif au premier signe de critique",
+          "Répondre émotionnellement dans le feu de l'action au lieu de faire une pause d'abord",
+          "Éviter complètement la conversation difficile jusqu'à ce qu'il soit trop tard"
+        ],
+        "ar": [
+          "الدفاعية عند أول إشارة نقد",
+          "الرد عاطفياً في حرارة اللحظة بدلاً من التوقف أولاً",
+          "تجنب المحادثة الصعبة تماماً حتى يفوت الأوان"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Write a calm response template for receiving harsh feedback",
+          "Practice waiting 1 hour before responding to any tense message",
+          "Identify one recurring source of client friction and address it proactively"
+        ],
+        "fr": [
+          "Écrivez un modèle de réponse calme pour recevoir des retours durs",
+          "Entraînez-vous à attendre 1 heure avant de répondre à tout message tendu",
+          "Identifiez une source récurrente de friction client et abordez-la de manière proactive"
+        ],
+        "ar": [
+          "اكتب نموذج رد هادئ لاستقبال ملاحظات قاسية",
+          "تدرب على الانتظار ساعة قبل الرد على أي رسالة متوترة",
+          "حدد مصدراً متكرراً لاحتكاك العملاء وعالجه بشكل استباقي"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Client sending an angry message about slow results",
+          "fr": "Client envoyant un message en colère à propos de résultats lents",
+          "ar": "عميل يرسل رسالة غاضبة بشأن بطء النتائج"
+        },
+        "task": {
+          "en": "Write a calm, professional response that de-escalates the situation",
+          "fr": "Écrivez une réponse calme et professionnelle qui désamorce la situation",
+          "ar": "اكتب رداً هادئاً واحترافياً يهدئ الموقف"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Acknowledge first, explain second, solve third — in that order, every time",
+          "Most conflicts de-escalate the moment the client feels genuinely heard"
+        ],
+        "fr": [
+          "Reconnaissez d'abord, expliquez ensuite, résolvez en troisième — dans cet ordre, à chaque fois",
+          "La plupart des conflits se désamorcent au moment où le client se sent vraiment entendu"
+        ],
+        "ar": [
+          "اعترف أولاً، اشرح ثانياً، حل ثالثاً — بهذا الترتيب، في كل مرة",
+          "معظم النزاعات تهدأ عندما يشعر العميل بالاستماع إليه فعلياً"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "De-escalate a written client conflict scenario using calm, structured responses",
+          "fr": "Désamorcez un scénario de conflit client écrit en utilisant des réponses calmes et structurées",
+          "ar": "هدّئ سيناريو نزاع عميل مكتوب باستخدام ردود هادئة ومنظمة"
+        },
+        "reward_xp": 115
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This defensive tone will make things worse 😭",
+          "This response actually calms the situation down 🔥"
+        ],
+        "fr": [
+          "Ce ton défensif va empirer les choses 😭",
+          "Cette réponse calme vraiment la situation 🔥"
+        ],
+        "ar": [
+          "هذه النبرة الدفاعية ستزيد الأمور سوءاً 😭",
+          "هذا الرد يهدئ الموقف فعلاً 🔥"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": {
+        "en": "Beyond Clients: Digital Products & Passive Income",
+        "fr": "Au-delà des Clients : Produits Numériques & Revenu Passif",
+        "ar": "ما بعد العملاء: المنتجات الرقمية والدخل السلبي"
+      },
+      "xp": 220,
+      "core_concept": {
+        "en": "Trading time for money has a ceiling — products don't.",
+        "fr": "Échanger du temps contre de l'argent a un plafond — pas les produits.",
+        "ar": "مبادلة الوقت بالمال لها سقف — المنتجات ليس لها سقف."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Templates, courses, guides and toolkits built once can be sold repeatedly, creating income that doesn't require new hours for every new sale.",
+          "fr": "Les modèles, cours, guides et boîtes à outils construits une fois peuvent être vendus à plusieurs reprises, créant un revenu qui ne nécessite pas de nouvelles heures pour chaque nouvelle vente.",
+          "ar": "القوالب والدورات والأدلة ومجموعات الأدوات المبنية مرة واحدة يمكن بيعها بشكل متكرر، مما يخلق دخلاً لا يتطلب ساعات جديدة لكل عملية بيع جديدة."
+        },
+        "why_it_matters": {
+          "en": "Client work alone caps income at the number of hours in a day; products remove that cap.",
+          "fr": "Le travail client seul plafonne le revenu au nombre d'heures dans une journée ; les produits suppriment ce plafond.",
+          "ar": "العمل مع العملاء وحده يحدد سقف الدخل بعدد الساعات في اليوم؛ المنتجات تزيل هذا السقف."
+        },
+        "internet_truth": {
+          "en": "The audience you built through content is also a ready market for products, if you have something worth selling them.",
+          "fr": "L'audience que vous avez construite grâce au contenu est aussi un marché prêt pour des produits, si vous avez quelque chose qui vaut la peine de leur vendre.",
+          "ar": "الجمهور الذي بنيته عبر المحتوى هو أيضاً سوق جاهز للمنتجات، إن كان لديك شيء يستحق بيعه لهم."
+        }
+      },
+      "psychology": {
+        "en": [
+          "An existing audience trusts recommendations from someone who's already helped them for free",
+          "Low-priced entry products (templates, mini-guides) build a buying habit before bigger offers",
+          "Bundling knowledge into a reusable product removes the time ceiling of 1-on-1 work"
+        ],
+        "fr": [
+          "Une audience existante fait confiance aux recommandations de quelqu'un qui l'a déjà aidée gratuitement",
+          "Des produits d'entrée à bas prix (modèles, mini-guides) construisent une habitude d'achat avant de plus grandes offres",
+          "Regrouper les connaissances dans un produit réutilisable supprime le plafond de temps du travail individuel"
+        ],
+        "ar": [
+          "الجمهور الحالي يثق بتوصيات من شخص ساعده بالفعل مجاناً",
+          "المنتجات منخفضة السعر (قوالب، أدلة مصغرة) تبني عادة شراء قبل العروض الأكبر",
+          "تجميع المعرفة في منتج قابل لإعادة الاستخدام يزيل سقف الوقت للعمل الفردي"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A social media manager selling a $19 content calendar template earns while sleeping",
+          "A freelancer turning their client process into a $99 mini-course reaches people they could never serve 1-on-1"
+        ],
+        "fr": [
+          "Un gestionnaire de réseaux sociaux vendant un modèle de calendrier de contenu à 19$ gagne en dormant",
+          "Un freelance transformant son processus client en mini-cours à 99$ atteint des gens qu'il ne pourrait jamais servir individuellement"
+        ],
+        "ar": [
+          "مدير وسائل تواصل يبيع قالب تقويم محتوى بـ19 دولاراً يكسب أثناء نومه",
+          "مستقل يحوّل عمليته مع العملاء إلى دورة مصغرة بـ99 دولاراً يصل لأشخاص لن يستطيع خدمتهم فردياً أبداً"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Trying to build a big course before ever testing a small, simple product",
+          "Launching a product to an audience that was never nurtured or warmed up",
+          "Overcomplicating the first digital product instead of starting simple"
+        ],
+        "fr": [
+          "Essayer de construire un gros cours avant même de tester un petit produit simple",
+          "Lancer un produit à une audience qui n'a jamais été nourrie ou réchauffée",
+          "Trop compliquer le premier produit numérique au lieu de commencer simplement"
+        ],
+        "ar": [
+          "محاولة بناء دورة كبيرة قبل اختبار منتج صغير وبسيط أصلاً",
+          "إطلاق منتج لجمهور لم يُرعَ أو يُدفَّأ أبداً",
+          "تعقيد المنتج الرقمي الأول بدلاً من البدء ببساطة"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Identify one piece of knowledge from your client work that could become a product",
+          "Design a simple, low-priced first digital product",
+          "Plan a short content series to warm up your audience before launching it"
+        ],
+        "fr": [
+          "Identifiez une connaissance de votre travail client qui pourrait devenir un produit",
+          "Concevez un premier produit numérique simple et à bas prix",
+          "Planifiez une courte série de contenu pour réchauffer votre audience avant de le lancer"
+        ],
+        "ar": [
+          "حدد معرفة واحدة من عملك مع العملاء يمكن أن تصبح منتجاً",
+          "صمم منتجاً رقمياً أول بسيطاً ومنخفض السعر",
+          "خطط لسلسلة محتوى قصيرة لتدفئة جمهورك قبل إطلاقه"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Freelance marketer with a growing audience but only client income",
+          "fr": "Marketeur freelance avec une audience croissante mais seulement un revenu client",
+          "ar": "مسوّق مستقل بجمهور متنامٍ لكن دخل من العملاء فقط"
+        },
+        "task": {
+          "en": "Design a first simple digital product idea based on their existing expertise",
+          "fr": "Concevez une première idée de produit numérique simple basée sur leur expertise existante",
+          "ar": "صمم فكرة منتج رقمي أول بسيطة بناءً على خبرتهم الحالية"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Start with the smallest possible version of a product before building something huge",
+          "Your existing content audience is your first, warmest customer base for products"
+        ],
+        "fr": [
+          "Commencez par la plus petite version possible d'un produit avant d'en construire un énorme",
+          "Votre audience de contenu existante est votre première base de clients la plus chaude pour des produits"
+        ],
+        "ar": [
+          "ابدأ بأصغر نسخة ممكنة من منتج قبل بناء شيء ضخم",
+          "جمهور المحتوى الحالي لديك هو أول وأدفأ قاعدة عملاء لمنتجاتك"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Design a complete mini-product launch plan from idea to first sale",
+          "fr": "Concevez un plan complet de lancement de mini-produit, de l'idée à la première vente",
+          "ar": "صمم خطة إطلاق منتج مصغر كاملة من الفكرة إلى أول بيع"
+        },
+        "reward_xp": 120
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This is too big and complex for a first product 😭",
+          "This is a perfect, simple first product to test the market 🔥"
+        ],
+        "fr": [
+          "C'est trop grand et complexe pour un premier produit 😭",
+          "C'est un premier produit parfait et simple pour tester le marché 🔥"
+        ],
+        "ar": [
+          "هذا كبير ومعقد جداً لمنتج أول 😭",
+          "هذا منتج أول مثالي وبسيط لاختبار السوق 🔥"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": {
+        "en": "Scaling From Freelancer to Small Agency",
+        "fr": "Passer de Freelance à Petite Agence",
+        "ar": "التوسع من مستقل إلى وكالة صغيرة"
+      },
+      "xp": 230,
+      "core_concept": {
+        "en": "You can't scale hours, but you can scale a system.",
+        "fr": "Vous ne pouvez pas faire évoluer les heures, mais vous pouvez faire évoluer un système.",
+        "ar": "لا يمكنك توسيع الساعات، لكن يمكنك توسيع النظام."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "Turning your personal process into documented systems and checklists allows you to delegate to other people without sacrificing quality.",
+          "fr": "Transformer votre processus personnel en systèmes documentés et listes de contrôle vous permet de déléguer à d'autres personnes sans sacrifier la qualité.",
+          "ar": "تحويل عمليتك الشخصية إلى أنظمة موثقة وقوائم تحقق يتيح لك التفويض لأشخاص آخرين دون التضحية بالجودة."
+        },
+        "why_it_matters": {
+          "en": "A freelancer who is the entire business has a hard income ceiling; an agency with systems can serve many more clients at once.",
+          "fr": "Un freelance qui est toute l'entreprise a un plafond de revenu difficile ; une agence avec des systèmes peut servir beaucoup plus de clients à la fois.",
+          "ar": "المستقل الذي يمثل المشروع بأكمله لديه سقف دخل صعب؛ الوكالة بأنظمة يمكنها خدمة عملاء أكثر بكثير في نفس الوقت."
+        },
+        "internet_truth": {
+          "en": "Hiring too early without systems just multiplies chaos instead of multiplying output.",
+          "fr": "Embaucher trop tôt sans systèmes multiplie juste le chaos au lieu de multiplier la production.",
+          "ar": "التوظيف مبكراً جداً دون أنظمة يضاعف الفوضى فقط بدلاً من مضاعفة الإنتاج."
+        }
+      },
+      "psychology": {
+        "en": [
+          "Documented processes reduce dependency on any single person, including yourself",
+          "Clear checklists maintain quality even as new team members join",
+          "Delegating repetitive tasks frees up capacity for higher-value strategic work"
+        ],
+        "fr": [
+          "Des processus documentés réduisent la dépendance envers une seule personne, y compris vous-même",
+          "Des listes de contrôle claires maintiennent la qualité même quand de nouveaux membres d'équipe rejoignent",
+          "Déléguer les tâches répétitives libère de la capacité pour un travail stratégique à plus haute valeur"
+        ],
+        "ar": [
+          "العمليات الموثقة تقلل الاعتماد على شخص واحد، بمن فيهم أنت",
+          "قوائم التحقق الواضحة تحافظ على الجودة حتى مع انضمام أعضاء فريق جدد",
+          "تفويض المهام المتكررة يحرر القدرة لعمل استراتيجي أعلى قيمة"
+        ]
+      },
+      "real_examples": {
+        "en": [
+          "A freelancer who documented their exact content process was able to hire a junior editor and double output",
+          "A freelancer who tried to hire without any system ended up redoing all the delegated work themselves"
+        ],
+        "fr": [
+          "Un freelance qui a documenté son processus de contenu exact a pu embaucher un éditeur junior et doubler la production",
+          "Un freelance qui a essayé d'embaucher sans aucun système a fini par refaire lui-même tout le travail délégué"
+        ],
+        "ar": [
+          "مستقل وثّق عمليته الدقيقة للمحتوى استطاع توظيف محرر مبتدئ ومضاعفة الإنتاج",
+          "مستقل حاول التوظيف بلا أي نظام انتهى به الأمر بإعادة كل العمل المفوض بنفسه"
+        ]
+      },
+      "common_mistakes": {
+        "en": [
+          "Hiring help before any process is documented",
+          "Keeping all client knowledge in your head instead of shared systems",
+          "Trying to grow team size before proving the business model works with one person"
+        ],
+        "fr": [
+          "Embaucher de l'aide avant qu'un processus ne soit documenté",
+          "Garder toutes les connaissances client dans votre tête au lieu de systèmes partagés",
+          "Essayer d'agrandir la taille de l'équipe avant de prouver que le modèle d'affaires fonctionne avec une personne"
+        ],
+        "ar": [
+          "توظيف مساعدة قبل توثيق أي عملية",
+          "الاحتفاظ بكل معرفة العملاء في رأسك بدلاً من أنظمة مشتركة",
+          "محاولة تكبير حجم الفريق قبل إثبات أن نموذج العمل ينجح بشخص واحد"
+        ]
+      },
+      "missions": {
+        "en": [
+          "Document your exact client workflow step by step",
+          "Create a checklist someone else could follow to deliver your service",
+          "Identify one repetitive task ready to delegate first"
+        ],
+        "fr": [
+          "Documentez votre flux de travail client exact étape par étape",
+          "Créez une liste de contrôle que quelqu'un d'autre pourrait suivre pour livrer votre service",
+          "Identifiez une tâche répétitive prête à être déléguée en premier"
+        ],
+        "ar": [
+          "وثّق سير عمل عميلك بالضبط خطوة بخطوة",
+          "أنشئ قائمة تحقق يمكن لشخص آخر اتباعها لتقديم خدمتك",
+          "حدد مهمة متكررة واحدة جاهزة للتفويض أولاً"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Solo freelancer overwhelmed with too many clients to handle alone",
+          "fr": "Freelance solo débordé avec trop de clients à gérer seul",
+          "ar": "مستقل منفرد مرهق بعملاء كثيرين جداً للتعامل معهم بمفرده"
+        },
+        "task": {
+          "en": "Design their first documented process ready for delegation",
+          "fr": "Concevez leur premier processus documenté prêt pour la délégation",
+          "ar": "صمم عمليتهم الموثقة الأولى الجاهزة للتفويض"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "Document the process before you need to hire, not after you're already overwhelmed",
+          "The goal of systems isn't to remove you — it's to remove the bottleneck of only you"
+        ],
+        "fr": [
+          "Documentez le processus avant d'avoir besoin d'embaucher, pas après être déjà débordé",
+          "Le but des systèmes n'est pas de vous supprimer — c'est de supprimer le goulot d'étranglement que vous seul représentez"
+        ],
+        "ar": [
+          "وثّق العملية قبل أن تحتاج للتوظيف، وليس بعد أن تكون مرهقاً بالفعل",
+          "هدف الأنظمة ليس إزالتك — بل إزالة عنق الزجاجة المتمثل بك وحدك"
+        ]
+      },
+      "challenge_mode": {
+        "task": {
+          "en": "Turn a personal workflow into a documented system ready to hand off to a new hire",
+          "fr": "Transformez un flux de travail personnel en un système documenté prêt à être transmis à une nouvelle recrue",
+          "ar": "حوّل سير عمل شخصي إلى نظام موثق جاهز للتسليم لموظف جديد"
+        },
+        "reward_xp": 130
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "This only works if it stays in your head forever 😭",
+          "This system could run without you in the room 🔥"
+        ],
+        "fr": [
+          "Ça ne fonctionne que si ça reste dans votre tête pour toujours 😭",
+          "Ce système pourrait fonctionner sans que vous soyez dans la pièce 🔥"
+        ],
+        "ar": [
+          "هذا يعمل فقط إذا بقي في رأسك للأبد 😭",
+          "هذا النظام يمكن أن يعمل دون وجودك في الغرفة 🔥"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": {
+        "en": "FINAL BUSINESS SIMULATION",
+        "fr": "SIMULATION FINALE D'ENTREPRISE",
+        "ar": "المحاكاة النهائية للأعمال"
+      },
+      "xp": 450,
+      "core_concept": {
+        "en": "A real marketing entrepreneur combines brand, clients, pricing, delivery and systems into one sustainable business.",
+        "fr": "Un vrai entrepreneur marketing combine marque, clients, tarification, livraison et systèmes en une entreprise durable.",
+        "ar": "رائد الأعمال التسويقي الحقيقي يجمع العلامة والعملاء والتسعير والتسليم والأنظمة في مشروع مستدام واحد."
+      },
+      "deep_explanation": {
+        "summary": {
+          "en": "This final simulation tests whether you can build a complete, real marketing business — not just isolated marketing skills.",
+          "fr": "Cette simulation finale teste si vous pouvez construire une entreprise marketing complète et réelle — pas seulement des compétences marketing isolées.",
+          "ar": "هذه المحاكاة النهائية تختبر ما إذا كنت تستطيع بناء مشروع تسويقي كامل وحقيقي — وليس فقط مهارات تسويقية معزولة."
+        },
+        "why_it_matters": {
+          "en": "Marketing skills without a business system around them stay a hobby; with the system, they become a career.",
+          "fr": "Les compétences marketing sans un système d'entreprise autour restent un passe-temps ; avec le système, elles deviennent une carrière.",
+          "ar": "المهارات التسويقية بلا نظام عمل حولها تبقى هواية؛ مع النظام، تصبح مهنة."
+        },
+        "internet_truth": {
+          "en": "The freelancers who build real, lasting businesses are the ones who treat marketing skill as only one piece of a bigger system.",
+          "fr": "Les freelances qui construisent de vraies entreprises durables sont ceux qui traitent la compétence marketing comme une seule pièce d'un système plus grand.",
+          "ar": "المستقلون الذين يبنون مشاريع حقيقية ودائمة هم من يعاملون المهارة التسويقية كقطعة واحدة فقط من نظام أكبر."
+        }
+      },
+      "simulation_systems": {
+        "en": [
+          "Personal branding",
+          "Client acquisition",
+          "Value-based pricing",
+          "Winning proposals",
+          "Client management",
+          "Clear reporting",
+          "Conflict resolution",
+          "Digital products",
+          "Systemized delegation"
+        ],
+        "fr": [
+          "Branding personnel",
+          "Acquisition client",
+          "Tarification basée sur la valeur",
+          "Propositions gagnantes",
+          "Gestion client",
+          "Rapports clairs",
+          "Résolution de conflits",
+          "Produits numériques",
+          "Délégation systématisée"
+        ],
+        "ar": [
+          "الهوية الشخصية",
+          "اكتساب العملاء",
+          "التسعير القائم على القيمة",
+          "العروض الفائزة",
+          "إدارة العملاء",
+          "التقارير الواضحة",
+          "حل النزاعات",
+          "المنتجات الرقمية",
+          "التفويض المنظم"
+        ]
+      },
+      "final_missions": {
+        "en": [
+          "Build a personal brand content plan",
+          "Design a warm outreach plan for first clients",
+          "Create value-based pricing packages",
+          "Write a winning proposal",
+          "Design an onboarding process and a reporting template",
+          "Plan a first digital product and a delegation-ready system"
+        ],
+        "fr": [
+          "Construisez un plan de contenu de marque personnelle",
+          "Concevez un plan de prospection chaude pour les premiers clients",
+          "Créez des forfaits de tarification basés sur la valeur",
+          "Écrivez une proposition gagnante",
+          "Concevez un processus d'intégration et un modèle de rapport",
+          "Planifiez un premier produit numérique et un système prêt pour la délégation"
+        ],
+        "ar": [
+          "ابنِ خطة محتوى للهوية الشخصية",
+          "صمم خطة تواصل دافئ للعملاء الأوائل",
+          "أنشئ باقات تسعير قائمة على القيمة",
+          "اكتب عرضاً فائزاً",
+          "صمم عملية استقبال ونموذج تقرير",
+          "خطط لمنتج رقمي أول ونظام جاهز للتفويض"
+        ]
+      },
+      "real_business_task": {
+        "industry": {
+          "en": "Your own future marketing business, agency, or freelance practice",
+          "fr": "Votre propre future entreprise marketing, agence, ou pratique freelance",
+          "ar": "مشروعك التسويقي المستقبلي الخاص، أو وكالتك، أو ممارستك المستقلة"
+        },
+        "task": {
+          "en": "Build a complete end-to-end business plan using every system learned across all 5 phases",
+          "fr": "Construisez un plan d'entreprise complet de bout en bout en utilisant chaque système appris à travers les 5 phases",
+          "ar": "ابنِ خطة عمل كاملة من البداية للنهاية باستخدام كل نظام تعلمته عبر المراحل الخمس"
+        }
+      },
+      "pro_secrets": {
+        "en": [
+          "The people who succeed long-term treat their marketing skill as a business, not just a talent",
+          "Every system in this course compounds — branding attracts clients, pricing protects your time, systems let you grow"
+        ],
+        "fr": [
+          "Les personnes qui réussissent à long terme traitent leur compétence marketing comme une entreprise, pas seulement un talent",
+          "Chaque système de ce cours s'accumule — le branding attire les clients, la tarification protège votre temps, les systèmes vous permettent de croître"
+        ],
+        "ar": [
+          "من ينجحون على المدى الطويل يعاملون مهارتهم التسويقية كمشروع، وليس مجرد موهبة",
+          "كل نظام في هذه الدورة يتراكم — الهوية تجذب العملاء، التسعير يحمي وقتك، الأنظمة تتيح لك النمو"
+        ]
+      },
+      "challenge_mode": {
+        "type": "full_business_simulation",
+        "instruction": {
+          "en": "Build a complete marketing business from personal brand to systemized delegation",
+          "fr": "Construisez une entreprise marketing complète, de la marque personnelle à la délégation systématisée",
+          "ar": "ابنِ مشروعاً تسويقياً كاملاً من الهوية الشخصية إلى التفويض المنظم"
+        },
+        "reward_xp": 250
+      },
+      "final_result": {
+        "title": {
+          "en": "Marketing Business Activated 👑",
+          "fr": "Entreprise Marketing Activée 👑",
+          "ar": "تم تفعيل المشروع التسويقي 👑"
+        },
+        "level": {
+          "en": "Certified Marketing Entrepreneur",
+          "fr": "Entrepreneur Marketing Certifié",
+          "ar": "رائد أعمال تسويقي معتمد"
+        }
+      },
+      "ai_feedback_examples": {
+        "en": [
+          "You now think like a business owner, not just a marketer 🔥",
+          "This is a real, fundable business plan, not just a skill list 💣"
+        ],
+        "fr": [
+          "Vous pensez maintenant comme un propriétaire d'entreprise, pas seulement un marketeur 🔥",
+          "C'est un vrai plan d'entreprise finançable, pas juste une liste de compétences 💣"
+        ],
+        "ar": [
+          "أنت الآن تفكر كصاحب مشروع، وليس فقط كمسوّق 🔥",
+          "هذه خطة عمل حقيقية وقابلة للتمويل، وليست مجرد قائمة مهارات 💣"
+        ]
+      }
+    }
+  ]
+}

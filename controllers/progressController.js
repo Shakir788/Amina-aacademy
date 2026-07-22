@@ -28,7 +28,6 @@ exports.markLessonComplete = async (req, res) => {
             user.progress[courseType].completedLessons.push(lessonNumber);
             
             // 🎮 GAMIFICATION: XP Logic
-            // Marketing missions pe thoda zyada XP dete hain taaki motivation rahe
             xpGained = courseType === 'marketing' ? 30 : 20; 
             user.xp = (user.xp || 0) + xpGained;
             isNewCompletion = true;
@@ -68,7 +67,7 @@ exports.markLessonComplete = async (req, res) => {
         user.markModified('progress'); 
         await user.save(); 
 
-        console.log(`✅ Progress: [${courseType.toUpperCase()}] L${lessonNumber} complete. Next: ${user.progress[courseType].lastUnlockedLesson}. XP: ${user.xp}, Streak: ${user.streak.current}`);
+        console.log(`✅ Progress: [${courseType.toUpperCase()}] Phase ${lessonNumber} complete. Next: ${user.progress[courseType].lastUnlockedLesson}. XP: ${user.xp}, Streak: ${user.streak.current}`);
 
         res.status(200).json({ 
             success: true, 
@@ -91,20 +90,20 @@ exports.markLessonComplete = async (req, res) => {
  */
 exports.getDashboard = async (req, res) => {
     try {
-        const accountingPath = path.join(__dirname, '../data');
+        const accountingPath = path.join(__dirname, '../data/accounting');
         const englishPath = path.join(__dirname, '../data/english');
-        const marketingPath = path.join(__dirname, '../data/marketing'); // 🚀 NEW MARKETING PATH
+        const marketingPath = path.join(__dirname, '../data/marketing'); 
         
         let accountingLessons = [];
         let englishLessons = [];
-        let marketingLessons = []; // 🚀 NEW ARRAY
+        let marketingLessons = []; 
 
         const user = await User.findById(req.user.id || req.user._id);
 
         // --- 🛡️ Safety Check: Initialize progress if missing ---
         if (!user.progress.accounting) user.progress.accounting = { completedLessons: [], lastUnlockedLesson: 1 };
         if (!user.progress.english) user.progress.english = { completedLessons: [], lastUnlockedLesson: 1 };
-        if (!user.progress.marketing) user.progress.marketing = { completedLessons: [], lastUnlockedLesson: 1 }; // 🚀 INIT MARKETING
+        if (!user.progress.marketing) user.progress.marketing = { completedLessons: [], lastUnlockedLesson: 1 };
 
         // --- 🎮 Auto-Reset Dead Streak on Dashboard Load ---
         const now = new Date();
@@ -120,25 +119,58 @@ exports.getDashboard = async (req, res) => {
             }
         }
 
+        // 🛠️ Helper function to parse Phase files correctly
+        const parsePhaseData = (filePath, fileNumber, lastUnlocked, completedArr) => {
+            const rawData = fs.readFileSync(filePath);
+            const data = JSON.parse(rawData);
+            
+            let firstLessonId = fileNumber;
+            let lastLessonId = fileNumber;
+            let title = `Phase ${fileNumber}`;
+            let desc = "Continuez votre apprentissage...";
+            let image = null;
+
+            if (Array.isArray(data) && data.length > 0) {
+                firstLessonId = data[0].id;
+                lastLessonId = data[data.length - 1].id;
+                title = data[0].title;
+                if (typeof title === 'object') title = title.fr || title.en;
+                if (data[0].content && data[0].content.fr && data[0].content.fr.objectif) desc = data[0].content.fr.objectif;
+                image = data[0].imageUrl;
+            } else if (!Array.isArray(data)) {
+                firstLessonId = data.id || fileNumber;
+                lastLessonId = firstLessonId;
+                title = data.title;
+                if (typeof title === 'object') title = title.fr || title.en;
+                if (data.description) desc = typeof data.description === 'object' ? (data.description.fr || data.description.en) : data.description;
+                else if (data.content && data.content.fr && data.content.fr.objectif) desc = data.content.fr.objectif;
+                image = data.imageUrl;
+            }
+
+            return {
+                id: firstLessonId, // Use exact lesson ID so links route correctly
+                title: title || `Phase ${fileNumber}`,
+                description: desc ? desc.substring(0, 70) + '...' : "...",
+                isUnlocked: lastUnlocked >= firstLessonId,
+                isCompleted: completedArr.includes(lastLessonId),
+                imageUrl: image
+            };
+        };
+
         // --- 💼 Part 1: Load Accounting Lessons ---
         if (fs.existsSync(accountingPath)) {
             const files = fs.readdirSync(accountingPath);
             files.forEach(file => {
-                if (file.startsWith('lesson') && file.endsWith('.json')) {
+                if (file.startsWith('phase') && file.endsWith('.json')) {
                     try { 
-                        const rawData = fs.readFileSync(path.join(accountingPath, file));
-                        const data = JSON.parse(rawData);
-                        const lessonNum = parseInt(file.replace('lesson', '').replace('.json', ''));
-                        
-                        accountingLessons.push({
-                            id: lessonNum,
-                            title: data.title?.fr || data.title || `Leçon ${lessonNum}`,
-                            description: data.content?.fr?.objectif?.substring(0, 70) + '...' || "Maîtrisez la comptabilité...",
-                            isUnlocked: lessonNum <= user.progress.accounting.lastUnlockedLesson,
-                            isCompleted: user.progress.accounting.completedLessons.includes(lessonNum),
-                            imageUrl: data.imageUrl || null
-                        });
-                    } catch (err) { }
+                        const fileNum = parseInt(file.replace('phase', '').replace('.json', ''));
+                        accountingLessons.push(parsePhaseData(
+                            path.join(accountingPath, file), 
+                            fileNum, 
+                            user.progress.accounting.lastUnlockedLesson, 
+                            user.progress.accounting.completedLessons
+                        ));
+                    } catch (err) { console.error(`⚠️ Error parsing Accounting file: ${file}`, err); }
                 }
             });
         }
@@ -149,52 +181,37 @@ exports.getDashboard = async (req, res) => {
             files.forEach(file => {
                 if (file.startsWith('phase') && file.endsWith('.json')) {
                     try { 
-                        const rawData = fs.readFileSync(path.join(englishPath, file));
-                        const data = JSON.parse(rawData);
-                        const lessonNum = parseInt(file.replace('phase', '').replace('.json', ''));
-                        
-                        englishLessons.push({
-                            id: lessonNum,
-                            title: data.title || `English Phase ${lessonNum}`,
-                            description: data.description || "Maîtrisez l'anglais pas à pas...",
-                            isUnlocked: lessonNum <= user.progress.english.lastUnlockedLesson,
-                            isCompleted: user.progress.english.completedLessons.includes(lessonNum),
-                            imageUrl: data.imageUrl || null
-                        });
-                    } catch (err) { }
+                        const fileNum = parseInt(file.replace('phase', '').replace('.json', ''));
+                        englishLessons.push(parsePhaseData(
+                            path.join(englishPath, file), 
+                            fileNum, 
+                            user.progress.english.lastUnlockedLesson, 
+                            user.progress.english.completedLessons
+                        ));
+                    } catch (err) {}
                 }
             });
         }
 
-       // --- 📱 Part 3: Load Marketing Lessons (GOD MODE) ---
+       // --- 📱 Part 3: Load Marketing Lessons ---
         if (fs.existsSync(marketingPath)) {
             const files = fs.readdirSync(marketingPath);
             files.forEach(file => {
                 if (file.startsWith('phase') && file.endsWith('.json')) {
                     try { 
-                        const rawData = fs.readFileSync(path.join(marketingPath, file));
-                        const data = JSON.parse(rawData);
-                        const phaseNum = parseInt(file.replace('phase', '').replace('.json', ''));
-                        
-                        // 🧠 Extract Title and Description from the Root of Phase JSON
-                        let mktTitle = typeof data.title === 'object' ? (data.title.fr || data.title.en) : data.title;
-                        let mktDesc = typeof data.description === 'object' ? (data.description.fr || data.description.en) : data.description;
-                        
-                        marketingLessons.push({
-                            id: phaseNum, // Phase 1 = ID 1
-                            title: mktTitle || `Phase Marketing ${phaseNum}`,
-                            description: mktDesc ? mktDesc.substring(0, 75) + '...' : "Découvrez les secrets du marketing...",
-                            isUnlocked: phaseNum <= user.progress.marketing.lastUnlockedLesson,
-                            isCompleted: user.progress.marketing.completedLessons.includes(phaseNum),
-                            imageUrl: data.imageUrl || null
-                        });
-                    } catch (err) { 
-                        console.error(`⚠️ Erreur Marketing JSON: ${file}`);
-                    }
+                        const fileNum = parseInt(file.replace('phase', '').replace('.json', ''));
+                        marketingLessons.push(parsePhaseData(
+                            path.join(marketingPath, file), 
+                            fileNum, 
+                            user.progress.marketing.lastUnlockedLesson, 
+                            user.progress.marketing.completedLessons
+                        ));
+                    } catch (err) { console.error(`⚠️ Erreur Marketing JSON: ${file}`); }
                 }
             });
         }
-        // Sort all arrays numerically
+
+        // Sort all arrays numerically by their first lesson ID
         accountingLessons.sort((a, b) => a.id - b.id);
         englishLessons.sort((a, b) => a.id - b.id);
         marketingLessons.sort((a, b) => a.id - b.id);
@@ -204,11 +221,74 @@ exports.getDashboard = async (req, res) => {
             user: user,
             accountingLessons: accountingLessons,
             englishLessons: englishLessons,
-            marketingLessons: marketingLessons // 🚀 Asli data bhej diya dashboard ko!
+            marketingLessons: marketingLessons 
         });
 
     } catch (error) {
         console.error("Dashboard Loading Error:", error);
         res.redirect('/');
+    }
+};
+
+/**
+ * @desc    Load Individual Lesson Page dynamically based on course type
+ * @route   GET /lesson/:courseType/:id
+ * @access  Private
+ */
+exports.getLessonPage = async (req, res) => {
+    try {
+        const courseType = req.params.courseType; // Example: 'accounting'
+        const lessonId = req.params.id;           // Example: '4'
+        const user = req.user;
+
+        console.log(`\n🚀 [SMART SEARCH] Looking for Lesson ID: ${lessonId} in ${courseType}...`);
+
+        const folderPath = path.join(__dirname, `../data/${courseType}`);
+        let correctLessonData = null;
+
+        // Sabhi phase files mein search karo
+        if (fs.existsSync(folderPath)) {
+            const files = fs.readdirSync(folderPath);
+            
+            for (const file of files) {
+                if (file.startsWith('phase') && file.endsWith('.json')) {
+                    const rawData = fs.readFileSync(path.join(folderPath, file));
+                    const dataArray = JSON.parse(rawData);
+
+                    // Agar file ke andar array hai (like phase1.json)
+                    if (Array.isArray(dataArray)) {
+                        const foundLesson = dataArray.find(l => String(l.id) === String(lessonId));
+                        if (foundLesson) {
+                            console.log(`✅ SUCCESS: Found Lesson ${lessonId} inside file: ${file}`);
+                            // SIRF WAHI LESSON BHEJO, POORA ARRAY NAHI
+                            correctLessonData = foundLesson; 
+                            break; 
+                        }
+                    } else if (String(dataArray.id) === String(lessonId)) {
+                        console.log(`✅ SUCCESS: Found Lesson ${lessonId} inside file: ${file}`);
+                        correctLessonData = dataArray;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Agar kisi bhi file mein lesson nahi mila
+        if (!correctLessonData) {
+            console.error(`❌ ERROR: Lesson ID ${lessonId} kisi bhi JSON file mein nahi mila!`);
+            return res.redirect('/dashboard');
+        }
+
+        // Render the correct EJS file
+        res.render(`pages/${courseType}`, { 
+            lesson: correctLessonData,
+            lessonId: lessonId,
+            courseType: courseType,
+            user: user
+        });
+
+    } catch (error) {
+        console.error("❌ Catch Error in getLessonPage:", error);
+        res.redirect('/dashboard');
     }
 };

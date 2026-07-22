@@ -4,121 +4,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Session <%= lessonId %> | English Mastery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
     <style>
+        /* ══════════════════════════════════════
+           LANGUAGE-LAB CONSOLE SYSTEM
+           Grounded in the subject: a speaking/
+           listening drill reads like audio gear —
+           VU-meter LEDs, tape speed dial, a live
+           waveform that reacts to real playback
+           and real listening.
+           ══════════════════════════════════════ */
         :root {
-            --primary: #4F46E5;
-            --primary-hover: #4338CA;
-            --success: #10B981;
-            --warning: #F59E0B;
-            --error: #EF4444;
-            --bg-color: #F8FAFC;
-            --card-bg: #FFFFFF;
-            --text-main: #0F172A;
-            --text-muted: #64748B;
+            --panel:        #FFFFFF;
+            --panel-deep:   #F3EDDF;
+            --panel-line:   #E6DEC9;
+            --cream:        #FFFFFF;
+            --cream-dim:    #F6F0E1;
+            --ink:          #241F1A;
+            --muted:        #8B8477;
+            --amber:        #D68F2A;
+            --amber-dim:    #FBF0DC;
+            --rec:          #C64B41;
+            --rec-dim:      #FBEAE7;
+            --led:          #3E8C63;
+            --led-dim:      #E5F3EA;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body:    'Inter', sans-serif;
+            --font-mono:    'IBM Plex Mono', monospace;
         }
 
+        * { box-sizing: border-box; }
         body {
-            background-color: var(--bg-color); font-family: 'Inter', sans-serif;
-            margin: 0; padding: 0; color: var(--text-main);
-            display: flex; flex-direction: column; min-height: 100vh;
+            margin: 0; min-height: 100vh;
+            font-family: var(--font-body);
+            color: var(--ink);
+            background: var(--panel-deep);
+            display: flex; flex-direction: column;
         }
 
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+        }
+
+        /* ─── CONSOLE TOP PANEL (nav) ─── */
         nav {
-            background: white; padding: 15px 5%; display: flex; justify-content: space-between;
-            align-items: center; border-bottom: 2px solid #E2E8F0; position: sticky; top: 0; z-index: 100;
+            background: var(--panel);
+            border-bottom: 1px solid var(--panel-line);
+            padding: 14px 5%;
+            display: flex; align-items: center; gap: 18px;
+            position: sticky; top: 0; z-index: 100;
         }
-        .nav-left { display: flex; align-items: center; gap: 15px; }
-        .back-btn { color: var(--text-muted); text-decoration: none; font-size: 24px; font-weight: bold; transition: 0.2s; }
-        .back-btn:hover { color: var(--error); transform: scale(1.1); }
+        .back-btn {
+            width: 34px; height: 34px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--muted); text-decoration: none; flex-shrink: 0;
+            border: 1px solid var(--panel-line); transition: 0.2s;
+        }
+        .back-btn:hover { border-color: var(--rec); color: var(--rec); background: var(--rec-dim); }
+        .back-btn svg { width: 16px; height: 16px; }
 
-        .progress-container { flex: 1; max-width: 300px; background: #E2E8F0; height: 12px; border-radius: 20px; overflow: hidden; margin: 0 20px; }
-        .progress-bar { height: 100%; background: var(--success); width: 0%; transition: width 0.5s ease; }
-        
-        .stats-badge { display: flex; gap: 10px; }
-        .streak-badge, .xp-badge { padding: 5px 12px; border-radius: 50px; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 5px; }
-        .streak-badge { background: #FEF3C7; color: #D97706; }
-        .xp-badge { background: #E0E7FF; color: var(--primary); }
+        /* tape-counter progress: LED segments, not a rounded blob bar */
+        .progress-container {
+            flex: 1; max-width: 320px;
+            display: flex; gap: 3px;
+        }
+        .progress-container .seg {
+            height: 8px; flex: 1; background: var(--panel-line); border-radius: 1px;
+            transition: background 0.3s;
+        }
+        .progress-container .seg.lit { background: var(--led); box-shadow: 0 0 6px var(--led-dim); }
 
+        .stats-badge { display: flex; gap: 14px; align-items: center; flex-shrink: 0; }
+        .readout {
+            display: flex; align-items: center; gap: 6px;
+            font-family: var(--font-mono); font-size: 13px; font-weight: 600;
+            color: var(--ink);
+        }
+        .readout svg { width: 14px; height: 14px; flex-shrink: 0; }
+        .readout.xp svg { color: var(--amber); }
+        .readout.streak svg { color: var(--rec); }
+
+        /* ─── GAME AREA ─── */
         .game-container {
-            flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            padding: 20px; max-width: 600px; margin: 0 auto; width: 100%; box-sizing: border-box;
+            flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 40px 20px; max-width: 600px; margin: 0 auto; width: 100%;
         }
 
+        /* the flashcard reads as a cue-card, not a SaaS card */
         .flashcard {
-            background: var(--card-bg); width: 100%; border-radius: 24px; padding: 25px 30px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05); border: 2px solid #E2E8F0;
-            text-align: center; transition: all 0.3s ease; position: relative;
+            background: var(--cream); width: 100%; border-radius: 10px;
+            padding: 30px 30px 26px; text-align: center; position: relative;
+            box-shadow: 0 10px 34px rgba(36,31,26,0.09);
+            border: 1px solid var(--panel-line);
+            border-top: 3px solid var(--amber);
         }
 
         .status-badge {
-            position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
-            background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px;
-            font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+            position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+            background: var(--ink); color: var(--cream); padding: 4px 16px; border-radius: 20px;
+            font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 1px;
         }
 
-        .emotion-display { font-size: 18px; margin-bottom: 10px; background: #F1F5F9; display: inline-block; padding: 5px 15px; border-radius: 12px; border: 1px solid #E2E8F0; display: none; }
-        .exercise-img { width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-bottom: 20px; display: none; }
+        .emotion-display {
+            font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase;
+            margin-bottom: 12px; background: var(--cream-dim); display: none; padding: 5px 14px; border-radius: 20px;
+            color: var(--muted); border: 1px solid rgba(0,0,0,0.06);
+        }
+        .exercise-img { width: 100%; height: 190px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; display: none; }
         .exercise-img.active { display: block; }
-        .pronunciation { font-size: 15px; color: var(--primary); background: #EEF2FF; display: inline-block; padding: 4px 12px; border-radius: 8px; margin-bottom: 10px; font-weight: 600; letter-spacing: 1px;}
-        .target-sentence { font-family: 'Plus Jakarta Sans'; font-size: 32px; font-weight: 800; color: var(--text-main); margin: 0 0 20px; line-height: 1.3; }
-        
-        .trap-box { background: #FFF1F2; border: 1px dashed #FB7185; padding: 12px; border-radius: 12px; margin-bottom: 20px; color: #9F1239; font-size: 14px; text-align: left; display: none; }
 
-        .translation-box { background: #F8FAFC; border: 1px solid #E2E8F0; padding: 15px; border-radius: 12px; margin-bottom: 25px; text-align: left; }
-        .trans-row { display: flex; justify-content: space-between; margin-bottom: 8px; align-items: center; font-size: 15px; }
-        .lang-label { font-weight: 700; color: var(--text-muted); font-size: 12px; text-transform: uppercase; width: 60px; }
-        .trans-fr { color: #334155; flex: 1; }
-        .trans-darija { color: #0F766E; font-weight: 600; flex: 1; }
-        .trans-ar { font-size: 18px; font-weight: 600; color: var(--text-main); text-align: right; flex: 1; font-family: 'Arial', sans-serif; }
+        .pronunciation {
+            font-family: var(--font-mono); font-size: 14px; color: var(--ink); background: var(--cream-dim);
+            display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 6px;
+            margin-bottom: 14px; letter-spacing: 0.3px;
+        }
+        .pronunciation svg { width: 13px; height: 13px; color: var(--muted); }
 
-        .grammar-hint { background: #FFFBEB; border-left: 4px solid var(--warning); padding: 15px; text-align: left; font-size: 14px; color: #92400E; border-radius: 0 8px 8px 0; margin-bottom: 25px; display: none; }
-        .grammar-hint.active { display: block; }
+        .target-sentence {
+            font-family: var(--font-display); font-size: 30px; font-weight: 700; color: var(--ink);
+            margin: 0 0 18px; line-height: 1.28;
+        }
 
-        .tools-area { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; font-size: 12px; color: var(--text-muted); }
-        .speed-btn { border: 1px solid #E2E8F0; background: white; padding: 4px 8px; border-radius: 6px; cursor: pointer; }
-        .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+        /* live waveform — the signature element, reacts to real playback/listening */
+        .waveform {
+            display: flex; align-items: flex-end; justify-content: center; gap: 3px;
+            height: 26px; margin-bottom: 20px;
+        }
+        .waveform span {
+            width: 3px; height: 6px; border-radius: 2px; background: rgba(0,0,0,0.12);
+            transition: background 0.2s, height 0.2s;
+        }
+        .waveform.playing span { background: var(--amber); animation: wv 0.9s ease-in-out infinite; animation-delay: calc(var(--i) * 0.045s); }
+        .waveform.listening span { background: var(--rec); animation: wv 0.55s ease-in-out infinite; animation-delay: calc(var(--i) * 0.04s); }
+        @keyframes wv { 0%, 100% { height: 6px; } 50% { height: 24px; } }
 
-        .action-area { display: flex; flex-direction: column; gap: 15px; width: 100%; }
-        .btn-action { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 18px; border-radius: 16px; font-size: 18px; font-weight: 700; border: none; cursor: pointer; transition: 0.3s; }
-        .btn-listen { background: #F1F5F9; color: var(--text-main); border: 2px solid #CBD5E1; }
-        .btn-speak { background: var(--primary); color: white; box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3); }
-        .btn-speak.listening { background: var(--error); animation: pulse 1.5s infinite; }
-        .btn-next { background: var(--success); color: white; display: none; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3); }
+        .trap-box {
+            background: var(--rec-dim); border-left: 3px solid var(--rec); padding: 12px 14px; border-radius: 0 8px 8px 0;
+            margin-bottom: 18px; color: #7A2620; font-size: 13.5px; text-align: left; display: none;
+            display: flex; gap: 10px; align-items: flex-start;
+        }
+        .trap-box svg { width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; color: var(--rec); }
 
-        .feedback-msg { margin-top: 15px; font-size: 15px; text-align: left; padding: 15px; border-radius: 12px; display: none; }
-        .feedback-success { background: #D1FAE5; color: #065F46; display: block; text-align: center; font-weight: 700;}
-        .feedback-error { background: #FEE2E2; color: #991B1B; display: block; }
+        .translation-box { background: var(--cream-dim); padding: 14px 16px; border-radius: 8px; margin-bottom: 22px; text-align: left; }
+        .trans-row { display: flex; justify-content: space-between; margin-bottom: 7px; align-items: baseline; font-size: 14.5px; gap: 10px; }
+        .trans-row:last-child { margin-bottom: 0; }
+        .lang-label { font-family: var(--font-mono); font-weight: 600; color: var(--muted); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.5px; width: 34px; flex-shrink: 0; }
+        .trans-fr { color: #4A453C; flex: 1; }
+        .trans-darija { color: #2E6B5E; font-weight: 600; flex: 1; }
+        .trans-ar { font-size: 17px; font-weight: 600; color: var(--ink); text-align: right; flex: 1; }
 
-        .repeat-tracker { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
-        .dot { width: 12px; height: 12px; border-radius: 50%; background: #E2E8F0; }
-        .dot.filled { background: var(--success); }
+        .grammar-hint {
+            background: var(--amber-dim); border-left: 3px solid var(--amber); padding: 12px 14px; text-align: left;
+            font-size: 13.5px; color: #6B4A17; border-radius: 0 8px 8px 0; margin-bottom: 22px; display: none;
+            gap: 10px; align-items: flex-start;
+        }
+        .grammar-hint.active { display: flex; }
+        .grammar-hint svg { width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; color: var(--amber); }
 
+        /* speed dial rendered as a physical 3-position switch */
+        .tools-area { display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 20px; }
+        .tools-area .tools-label { font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+        .speed-switch { display: flex; border: 1px solid rgba(0,0,0,0.12); border-radius: 7px; overflow: hidden; }
+        .speed-btn {
+            border: none; border-right: 1px solid rgba(0,0,0,0.1); background: var(--cream); color: var(--muted);
+            padding: 6px 12px; font-family: var(--font-mono); font-size: 11.5px; font-weight: 600; cursor: pointer; transition: 0.15s;
+        }
+        .speed-btn:last-child { border-right: none; }
+        .speed-btn.active { background: var(--ink); color: var(--cream); }
+        .speed-btn:hover:not(.active) { background: var(--cream-dim); }
+
+        /* repeat tracker as VU-meter LEDs, not plain dots */
+        .repeat-tracker { display: flex; justify-content: center; gap: 12px; margin-bottom: 22px; }
+        .dot { width: 11px; height: 11px; border-radius: 50%; background: rgba(0,0,0,0.12); transition: 0.25s; }
+        .dot.filled { background: var(--led); box-shadow: 0 0 8px var(--led-dim); }
+
+        .action-area { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+        .btn-action {
+            display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 16px;
+            border-radius: 10px; font-size: 16px; font-weight: 700; font-family: var(--font-body);
+            border: none; cursor: pointer; transition: 0.2s;
+        }
+        .btn-action svg { width: 19px; height: 19px; flex-shrink: 0; }
+        .btn-listen { background: var(--cream-dim); color: var(--ink); border: 1.5px solid rgba(0,0,0,0.12); }
+        .btn-listen:hover { border-color: var(--amber); }
+        .btn-speak { background: var(--ink); color: var(--cream); }
+        .btn-speak:hover { background: #34302A; }
+        .btn-speak.listening { background: var(--rec); animation: recPulse 1.4s infinite; }
+        @keyframes recPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(214,82,74,0.45); } 50% { box-shadow: 0 0 0 10px rgba(214,82,74,0); } }
+        .btn-next { background: var(--led); color: #0E2419; display: none; }
+        .btn-next:hover { background: #5CAE7B; }
+
+        /* ─── SECONDARY ACTIONS (PREV / RESTART) ─── */
+        .secondary-actions { display: flex; gap: 10px; margin-top: 4px; width: 100%; }
+        .btn-secondary {
+            display: flex; align-items: center; justify-content: center; gap: 8px; flex: 1; padding: 12px;
+            border-radius: 8px; font-size: 14px; font-weight: 600; font-family: var(--font-body);
+            background: transparent; color: var(--muted); border: 1px solid var(--panel-line);
+            cursor: pointer; transition: 0.2s;
+        }
+        .btn-secondary:hover:not(:disabled) { background: var(--cream-dim); color: var(--ink); border-color: var(--muted); }
+        .btn-secondary:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn-secondary svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+        .feedback-msg { margin-top: 16px; font-size: 14.5px; text-align: left; padding: 14px 16px; border-radius: 8px; display: none; }
+        .feedback-success { background: var(--led-dim); color: #1F4D34; display: flex !important; align-items: center; gap: 10px; justify-content: center; font-weight: 700; }
+        .feedback-success svg { width: 18px; height: 18px; flex-shrink: 0; }
+        .feedback-error { background: var(--rec-dim); color: #7A2620; display: flex !important; flex-direction: column; gap: 5px; }
+        .feedback-error .fb-label { font-weight: 700; }
+        .feedback-error .fb-row { font-family: var(--font-mono); font-size: 13px; }
+
+        /* ─── TOAST (replaces alert) ─── */
+        #toast-wrap { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(12px); z-index: 3000; opacity: 0; pointer-events: none; transition: 0.25s; max-width: 90vw; }
+        #toast-wrap.visible { opacity: 1; transform: translateX(-50%) translateY(0); }
+        .toast { background: var(--ink); color: var(--cream); border-left: 3px solid var(--amber); padding: 13px 20px; font-size: 14px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+
+        /* ─── FINAL SCREEN ─── */
         .final-screen { display: none; text-align: center; }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+        .final-screen .final-card {
+            background: var(--cream); border-radius: 10px; padding: 44px 34px; border-top: 3px solid var(--led);
+            border: 1px solid var(--panel-line); border-top: 3px solid var(--led);
+            box-shadow: 0 10px 34px rgba(36,31,26,0.09);
+        }
+        .final-leds { display: flex; justify-content: center; gap: 6px; margin-bottom: 22px; }
+        .final-leds span { width: 8px; height: 8px; border-radius: 50%; background: var(--led); opacity: 0.25; animation: ledSweep 1.2s ease-in-out infinite; animation-delay: calc(var(--i) * 0.08s); box-shadow: 0 0 8px var(--led-dim); }
+        @keyframes ledSweep { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+        .final-screen h1 { font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.3px; }
+        .final-screen .final-sub { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+        .final-xp-readout { font-family: var(--font-mono); font-size: 34px; font-weight: 600; color: var(--amber); margin-bottom: 28px; }
+        .final-screen .btn-action { max-width: 300px; margin: 0 auto; }
+
+        @media (max-width: 600px) {
+            .flashcard { padding: 26px 20px 22px; }
+            .target-sentence { font-size: 24px; }
+            .stats-badge .readout .rtext { display: none; }
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="nav-left"><a href="/dashboard" class="back-btn">✕</a></div>
-        <div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+        <a href="/dashboard" class="back-btn" aria-label="Retour au tableau de bord">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </a>
+        <div class="progress-container" id="progressBar"></div>
         <div class="stats-badge">
-            <div class="xp-badge">⭐ <span id="xpCounter"><%= user.xp || 0 %></span> XP</div>
-            <div class="streak-badge">🔥 <span><%= user.streak.current || 0 %></span></div>
+            <div class="readout xp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.6L22 9.2l-5.4 4.7L18.2 21 12 17.3 5.8 21l1.6-7.1L2 9.2l7.4-.6L12 2z"></path></svg>
+                <span id="xpCounter"><%= user.xp || 0 %></span>
+            </div>
+            <div class="readout streak">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 4-4 5-4 9a4 4 0 0 0 8 0c0-1.5-1-2.5-1-2.5 1.5 1 3 3 3 5.5a6 6 0 0 1-12 0c0-5 4-7 6-12z"></path></svg>
+                <span><%= user.streak.current || 0 %></span>
+            </div>
         </div>
     </nav>
 
     <div class="game-container">
         <div class="flashcard" id="learningCard">
             <div class="status-badge" id="stepIndicator">1 / 5</div>
-            <img src="" class="exercise-img" id="exerciseImg">
+            <img src="" class="exercise-img" id="exerciseImg" alt="">
             <div class="emotion-display" id="emotionDisplay">friendly</div>
-            <div class="pronunciation" id="pronunciation">...</div>
+
+            <div class="pronunciation" id="pronunciation">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"></path></svg>
+                <span id="pronText">...</span>
+            </div>
+
             <div class="target-sentence" id="targetSentence">Loading...</div>
-            
-            <div class="trap-box" id="trapBox">⚠️ <b>Attention Trap:</b> <span id="trapText"></span></div>
+
+            <div class="waveform" id="waveform">
+                <span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span><span style="--i:4"></span>
+                <span style="--i:5"></span><span style="--i:6"></span><span style="--i:7"></span><span style="--i:8"></span>
+                <span style="--i:9"></span><span style="--i:10"></span><span style="--i:11"></span><span style="--i:12"></span>
+                <span style="--i:13"></span><span style="--i:14"></span><span style="--i:15"></span><span style="--i:16"></span>
+            </div>
+
+            <div class="trap-box" id="trapBox">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9L2.7 17a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path></svg>
+                <span><b>Piège d'écoute :</b> <span id="trapText"></span></span>
+            </div>
 
             <div class="translation-box" id="transBoxMain">
                 <div class="trans-row"><span class="lang-label">Fr</span> <span class="trans-fr" id="transFr">...</span></div>
@@ -126,37 +293,66 @@
                 <div class="trans-row"><span class="lang-label">Ar</span> <span class="trans-ar" dir="rtl" id="transAr">...</span></div>
             </div>
 
-            <div class="grammar-hint" id="grammarHint">💡 <b>Indice:</b> <span id="hintText">...</span></div>
+            <div class="grammar-hint" id="grammarHint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.5.5.8 1 .9 1.5h6.2c.1-.5.4-1 .9-1.5A6 6 0 0 0 12 3z"></path></svg>
+                <span><b>Indice :</b> <span id="hintText">...</span></span>
+            </div>
 
             <div class="tools-area">
-                <span>Vitesse:</span>
-                <button class="speed-btn" onclick="updateSpeed(0.6)">0.6x</button>
-                <button class="speed-btn active" id="speedNormal" onclick="updateSpeed(0.85)">Normal</button>
-                <button class="speed-btn" onclick="updateSpeed(1.1)">Rapid</button>
+                <span class="tools-label">Vitesse</span>
+                <div class="speed-switch">
+                    <button class="speed-btn" onclick="updateSpeed(0.6, this)">0.6×</button>
+                    <button class="speed-btn active" id="speedNormal" onclick="updateSpeed(0.85, this)">Normal</button>
+                    <button class="speed-btn" onclick="updateSpeed(1.1, this)">Rapide</button>
+                </div>
             </div>
 
             <div class="repeat-tracker"><div class="dot" id="dot1"></div><div class="dot" id="dot2"></div></div>
 
             <div class="action-area">
-                <button class="btn-action btn-listen" id="btnListen" onclick="playAudio()">🔊 Écouter</button>
-                <button class="btn-action btn-speak" id="btnSpeak" onclick="startSpeaking()">🎤 Parler</button>
-                <button class="btn-action btn-next" id="btnNext" onclick="nextCard()">Continue ➔</button>
+                <button class="btn-action btn-listen" id="btnListen" onclick="playAudio()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path></svg>
+                    Écouter
+                </button>
+                <button class="btn-action btn-speak" id="btnSpeak" onclick="startSpeaking()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"></path><path d="M19 11a7 7 0 0 1-14 0M12 18v3"></path></svg>
+                    <span id="btnSpeakText">Parler</span>
+                </button>
+                <button class="btn-action btn-next" id="btnNext" onclick="nextCard()">
+                    Continuer
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+                
+                <div class="secondary-actions">
+                    <button class="btn-secondary" id="btnPrev" onclick="prevCard()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        Précédent
+                    </button>
+                    <button class="btn-secondary" onclick="restartLesson()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><polyline points="3 3 3 8 8 8"></polyline></svg>
+                        Recommencer
+                    </button>
+                </div>
             </div>
             <div class="feedback-msg" id="feedbackMsg"></div>
         </div>
 
         <div class="final-screen" id="finalScreen">
-            <div style="font-size: 80px; margin-bottom: 20px;">🏆</div>
-            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 10px;">Phase Terminée!</h1>
-            <p style="color: #64748B; font-size: 18px; margin-bottom: 30px;">+ <span id="finalXp">0</span> XP gagnés.</p>
-            <button class="btn-action btn-speak" style="max-width: 300px; margin: 0 auto;" onclick="finishSession()">Retour au Hub</button>
+            <div class="final-card">
+                <div class="final-leds"><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span><span style="--i:4"></span><span style="--i:5"></span></div>
+                <h1>Phase terminée</h1>
+                <p class="final-sub">Total gagné cette session</p>
+                <div class="final-xp-readout"><span id="finalXp">0</span> XP</div>
+                <button class="btn-action btn-speak" onclick="finishSession()">Retour au Hub</button>
+            </div>
         </div>
     </div>
+
+    <div id="toast-wrap" role="status" aria-live="polite"><div class="toast" id="toast-msg"></div></div>
 
     <%- include('../partials/ai-coach') %>
 
     <script id="lesson-data" type="application/json"><%- JSON.stringify(lesson || {}) %></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
         window.CURRENT_COURSE_TYPE = "<%= courseType %>";
@@ -166,28 +362,44 @@
         let exercises = [];
         let phaseSystemInfo = null;
 
-        // --- 🚀 AGGREGATOR ENGINE (Collects 30 lessons into one list) ---
         if (rawData.lessons) {
-            phaseSystemInfo = rawData; 
-            rawData.lessons.forEach(l => { if(l.exercises) exercises = exercises.concat(l.exercises); });
+            phaseSystemInfo = rawData;
+            rawData.lessons.forEach(l => { if (l.exercises) exercises = exercises.concat(l.exercises); });
         } else if (Array.isArray(rawData)) {
-            rawData.forEach(l => { if(l.exercises) exercises = exercises.concat(l.exercises); });
+            rawData.forEach(l => { if (l.exercises) exercises = exercises.concat(l.exercises); });
         } else {
             exercises = rawData.exercises || [];
         }
 
-        // --- 🧠 MEMORY ENGINE (Load last saved position) ---
         const storageKey = `last_pos_${window.CURRENT_COURSE_TYPE}_${CURRENT_LESSON_ID}`;
         let currentIndex = parseInt(localStorage.getItem(storageKey)) || 0;
-        
-        // Safety: If someone changed the JSON and the saved index is now too high
         if (currentIndex >= exercises.length) currentIndex = 0;
 
         let sessionXp = 0;
-        let requiredSuccess = 2; 
+        let requiredSuccess = 2;
         let currentSuccess = 0;
         let playbackRate = 0.85;
         let weakExercises = [];
+        let toastTimer = null;
+
+        function showToast(message) {
+            const wrap = document.getElementById('toast-wrap');
+            document.getElementById('toast-msg').textContent = message;
+            wrap.classList.add('visible');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => wrap.classList.remove('visible'), 4000);
+        }
+
+        function buildProgressSegments() {
+            const wrap = document.getElementById('progressBar');
+            wrap.innerHTML = exercises.map(() => '<div class="seg"></div>').join('');
+        }
+
+        function updateProgressSegments() {
+            document.querySelectorAll('#progressBar .seg').forEach((seg, i) => {
+                seg.classList.toggle('lit', i < currentIndex);
+            });
+        }
 
         // TTS setup
         const synth = window.speechSynthesis;
@@ -198,29 +410,33 @@
         }
         if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = setVoice;
 
-        window.updateSpeed = function(rate) {
+        window.updateSpeed = function (rate, btnEl) {
             playbackRate = rate;
             document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
-            event.target.classList.add('active');
+            (btnEl || window.event?.target)?.classList.add('active');
         };
 
-        window.playAudio = function() {
+        window.playAudio = function () {
             synth.cancel();
+            const waveform = document.getElementById('waveform');
             const utter = new SpeechSynthesisUtterance(exercises[currentIndex].en);
             if (femaleVoice) utter.voice = femaleVoice;
-            utter.lang = 'en-US'; utter.rate = playbackRate;
+            utter.lang = 'en-US';
+            utter.rate = playbackRate;
+            utter.onstart = () => waveform.classList.add('playing');
+            utter.onend = () => waveform.classList.remove('playing');
             synth.speak(utter);
         };
 
-        // Speech Recognition
         const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
         let recognition;
         if (SpeechRec) {
             recognition = new SpeechRec();
             recognition.lang = 'en-US';
-            recognition.onstart = () => { 
+            recognition.onstart = () => {
                 document.getElementById('btnSpeak').classList.add('listening');
-                document.getElementById('btnSpeak').innerHTML = '🎧 Je vous écoute...';
+                document.getElementById('btnSpeakText').textContent = "Je vous écoute…";
+                document.getElementById('waveform').classList.add('listening');
             };
             recognition.onresult = (e) => {
                 const said = e.results[0][0].transcript.toLowerCase().trim();
@@ -229,21 +445,24 @@
 
                 let matched = (cleanSpeech.includes(target) || target.includes(cleanSpeech));
                 if (!matched && exercises[currentIndex].variations) {
-                    for(let v of exercises[currentIndex].variations) {
-                        if(cleanSpeech.includes(v.toLowerCase().trim())) { matched = true; break; }
+                    for (let v of exercises[currentIndex].variations) {
+                        if (cleanSpeech.includes(v.toLowerCase().trim())) { matched = true; break; }
                     }
                 }
 
                 if (matched) handleSuccess();
                 else {
-                    if(!weakExercises.includes(exercises[currentIndex])) weakExercises.push(exercises[currentIndex]);
+                    if (!weakExercises.includes(exercises[currentIndex])) weakExercises.push(exercises[currentIndex]);
                     handleFailure(said, exercises[currentIndex].en);
                 }
             };
-            recognition.onend = () => { document.getElementById('btnSpeak').classList.remove('listening'); };
+            recognition.onend = () => {
+                document.getElementById('btnSpeak').classList.remove('listening');
+                document.getElementById('waveform').classList.remove('listening');
+            };
         }
 
-        window.startSpeaking = () => { if(recognition) try { recognition.start(); } catch(e) {} };
+        window.startSpeaking = () => { if (recognition) try { recognition.start(); } catch (e) {} };
 
         function loadCard() {
             if (!exercises[currentIndex]) return;
@@ -251,9 +470,8 @@
             currentSuccess = 0;
             updateDots();
 
-            // UI Refresh
             document.getElementById('targetSentence').innerText = ex.en;
-            document.getElementById('pronunciation').innerText = `🗣️ ${ex.pronunciation?.simple || ex.pronunciation || '...'}`;
+            document.getElementById('pronText').innerText = ex.pronunciation?.simple || ex.pronunciation || '...';
             document.getElementById('transFr').innerText = ex.fr || ex.french || '...';
             document.getElementById('transDarija').innerText = ex.darija || '...';
             document.getElementById('transAr').innerText = ex.ar || ex.arabic || '...';
@@ -262,25 +480,27 @@
             if (ex.imageUrl) { img.src = ex.imageUrl; img.classList.add('active'); } else { img.classList.remove('active'); }
 
             const trap = document.getElementById('trapBox');
-            if(ex.listening_trap) { trap.style.display = 'block'; document.getElementById('trapText').innerText = ex.listening_trap; } else { trap.style.display = 'none'; }
+            if (ex.listening_trap) { trap.style.display = 'flex'; document.getElementById('trapText').innerText = ex.listening_trap; } else { trap.style.display = 'none'; }
 
             const emo = document.getElementById('emotionDisplay');
-            if(ex.emotion) { emo.style.display = 'inline-block'; emo.innerText = Array.isArray(ex.emotion) ? ex.emotion[0] : ex.emotion; } else { emo.style.display = 'none'; }
+            if (ex.emotion) { emo.style.display = 'inline-block'; emo.innerText = Array.isArray(ex.emotion) ? ex.emotion[0] : ex.emotion; } else { emo.style.display = 'none'; }
 
             const hint = document.getElementById('grammarHint');
             const hText = ex.context || ex.hint;
-            if(hText) { hint.classList.add('active'); document.getElementById('hintText').innerText = hText; } else { hint.classList.remove('active'); }
+            if (hText) { hint.classList.add('active'); document.getElementById('hintText').innerText = hText; } else { hint.classList.remove('active'); }
 
             document.getElementById('stepIndicator').innerText = `${currentIndex + 1} / ${exercises.length}`;
-            document.getElementById('progressBar').style.width = `${(currentIndex / exercises.length) * 100}%`;
-            
+            updateProgressSegments();
+
             document.getElementById('btnNext').style.display = 'none';
             document.getElementById('btnSpeak').style.display = 'flex';
-            document.getElementById('btnSpeak').innerHTML = '🎤 Parler';
+            document.getElementById('btnSpeakText').textContent = 'Parler';
             document.getElementById('feedbackMsg').style.display = 'none';
+            
+            const btnPrev = document.getElementById('btnPrev');
+            if (btnPrev) btnPrev.disabled = (currentIndex === 0);
 
-            // Auto-play / Shadowing
-            if(currentIndex > 0 || (phaseSystemInfo && phaseSystemInfo.system?.includes("Shadowing"))) {
+            if (currentIndex > 0 || (phaseSystemInfo && phaseSystemInfo.system?.includes("Shadowing"))) {
                 setTimeout(() => playAudio(), 600);
             }
         }
@@ -296,44 +516,66 @@
             const f = document.getElementById('feedbackMsg');
             f.className = 'feedback-msg feedback-success';
             if (currentSuccess < requiredSuccess) {
-                f.innerHTML = '🔥 Super ! Répétez encore une fois.';
-                document.getElementById('btnSpeak').innerHTML = '🎤 Parler (Encore)';
+                f.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4L12 14.01l-3-3"></path></svg> Bien ! Répétez encore une fois.`;
+                document.getElementById('btnSpeakText').textContent = 'Parler (encore)';
             } else {
-                f.innerHTML = '🎉 Parfait !';
+                f.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4L12 14.01l-3-3"></path></svg> Parfait !`;
                 document.getElementById('btnSpeak').style.display = 'none';
                 document.getElementById('btnNext').style.display = 'flex';
             }
-            f.style.display = 'block';
+            f.style.display = 'flex';
         }
 
         function handleFailure(said, target) {
             const f = document.getElementById('feedbackMsg');
             f.className = 'feedback-msg feedback-error';
-            f.innerHTML = `<b>Oups, presque!</b><span>🗣️ <b>Vous:</b> "${said}"</span><span>🎯 <b>Correct:</b> "${target}"</span>`;
-            f.style.display = 'block';
-            document.getElementById('btnSpeak').innerHTML = '🎤 Réessayer';
+            f.innerHTML = `<span class="fb-label">Presque !</span><span class="fb-row">Vous&nbsp;: "${said}"</span><span class="fb-row">Correct&nbsp;: "${target}"</span>`;
+            f.style.display = 'flex';
+            document.getElementById('btnSpeakText').textContent = 'Réessayer';
             if (window.triggerAICoachError) window.triggerAICoachError(said, target);
         }
 
+        window.prevCard = () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                localStorage.setItem(storageKey, currentIndex);
+                loadCard();
+            }
+        };
+
+        window.restartLesson = () => {
+            if (confirm("Voulez-vous vraiment recommencer depuis le début ? (Votre progression actuelle sera réinitialisée)")) {
+                currentIndex = 0;
+                weakExercises = [];
+                sessionXp = 0;
+                document.getElementById('xpCounter').innerText = parseInt("<%= user.xp || 0 %>");
+                
+                localStorage.setItem(storageKey, currentIndex);
+                
+                document.getElementById('finalScreen').style.display = 'none';
+                document.getElementById('learningCard').style.display = 'block';
+                
+                buildProgressSegments();
+                loadCard();
+            }
+        };
+
         window.nextCard = () => {
             currentIndex++;
-            
-            // 🧠 SAVE POSITION (Memory update)
             localStorage.setItem(storageKey, currentIndex);
 
-            if (currentIndex < exercises.length) loadCard();
+            if (currentIndex < exercises.length) { loadCard(); }
             else {
-                if(weakExercises.length > 0) {
-                    alert("On révise les points faibles ! 💪");
-                    exercises = [...weakExercises]; weakExercises = []; currentIndex = 0; loadCard();
+                if (weakExercises.length > 0) {
+                    showToast("On révise les points faibles 💪");
+                    exercises = [...weakExercises]; weakExercises = []; currentIndex = 0;
+                    buildProgressSegments();
+                    loadCard();
                 } else {
                     document.getElementById('learningCard').style.display = 'none';
                     document.getElementById('finalScreen').style.display = 'block';
                     document.getElementById('finalXp').innerText = sessionXp;
-                    
-                    // 🧠 CLEANUP (Mission complete, reset position for next time)
                     localStorage.removeItem(storageKey);
-                    confetti({ particleCount: 150, spread: 70 });
                 }
             }
         };
@@ -346,10 +588,10 @@
                     body: JSON.stringify({ lessonId: CURRENT_LESSON_ID, courseType: window.CURRENT_COURSE_TYPE, xpEarned: sessionXp })
                 });
                 window.location.href = '/dashboard';
-            } catch(e) { window.location.href = '/dashboard'; }
+            } catch (e) { window.location.href = '/dashboard'; }
         };
 
-        window.onload = loadCard;
+        window.onload = () => { buildProgressSegments(); loadCard(); };
     </script>
 </body>
 </html>

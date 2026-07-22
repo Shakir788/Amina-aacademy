@@ -1,0 +1,2023 @@
+[
+  {
+    "id": 46,
+    "title": {
+      "fr": "Le Bilan — Structure et Logique Générale",
+      "en": "The Balance Sheet — Structure and General Logic",
+      "ar": "الميزانية العمومية — الهيكل والمنطق العام"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le Bilan est la photographie radiographique de l'entreprise. Il prouve que chaque dirham possédé (Actif) provient de quelque part (Passif).",
+      "en": "The Balance Sheet is the X-ray photograph of the company. It proves that every dirham owned (Asset) comes from somewhere (Liability).",
+      "ar": "الميزانية العمومية هي صورة الأشعة السينية للشركة. إنها تثبت أن كل درهم مملوك (أصول) يأتي من مكان ما (خصوم)."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Maîtriser la lecture globale du Bilan comptable marocain et comprendre l'équilibre fondamental.",
+        "explication": "🔹 Le Rôle du Bilan\nOubliez les opérations quotidiennes. Le Bilan fige le temps, généralement au 31 Décembre. Il montre le 'Patrimoine' de l'entreprise. Si vous voulez racheter une entreprise marocaine, c'est le premier document que vous demanderez à l'expert-comptable.\n\n🔹 L'Équation Incontournable\n**ACTIF (Emplois) = PASSIF (Ressources)**.\nL'Actif (à gauche) liste ce que l'entreprise POSSÈDE (Bâtiments, Stocks, Argent en banque, Créances clients).\nLe Passif (à droite) liste ce que l'entreprise DOIT (Capital aux actionnaires, Dettes bancaires, Dettes fournisseurs).\n\n🔹 Le Résultat Net : Le pont magique\nSi votre Actif vaut 1 000 000 DHS et vos dettes valent 800 000 DHS, votre Capital est de 100 000 DHS. Il manque 100 000 DHS au Passif pour équilibrer ! Ce trou, c'est le **Bénéfice de l'année** (Résultat Net). Le Résultat s'inscrit au Passif pour équilibrer le Bilan. S'il est négatif (Perte), il vient diminuer le Passif.\n\n👍 Pourquoi le Bilan doit-il équilibrer ?\nParce que l'argent ne se crée pas par magie. Si vous avez une nouvelle machine (Actif), vous avez forcément soit contracté une dette (Passif), soit utilisé votre bénéfice/capital (Passif).",
+        "exemple": "Karim fonde SARL Atlas avec 50 000 DHS (Capital - Passif). Il les met en Banque (Actif). Bilan = 50k = 50k. Il achète un PC à 10 000 DHS. L'Actif change de forme : PC (10k) + Banque (40k). Le Total Actif reste 50k. L'équilibre est indestructible !",
+        "pratique": "L'entreprise réalise une perte de 20 000 DHS. De quel côté du Bilan ce montant apparaîtra-t-il (en négatif) pour maintenir l'équilibre ?",
+        "resume": "Le Bilan photographie le patrimoine à un instant T.\nActif = Ce que l'entreprise possède.\nPassif = Ce que l'entreprise doit (Ressources de financement).\nLe Résultat Net s'intègre au Passif pour garantir l'égalité Actif = Passif."
+      },
+      "en": {
+        "objectif": "Master the global reading of the Moroccan Balance Sheet and understand the fundamental balance.",
+        "explication": "🔹 The Role of the Balance Sheet\nForget daily operations. The Balance Sheet freezes time, usually on Dec 31st. It shows the company's 'Wealth'. If you want to buy a Moroccan company, this is the first document you'll ask the CPA for.\n\n🔹 The Unavoidable Equation\n**ASSETS (Uses) = LIABILITIES + EQUITY (Resources)**.\nAssets (left) list what the company OWNS (Buildings, Inventory, Cash, Receivables).\nLiabilities (right) list what the company OWES (Shareholder Capital, Bank Debts, Supplier Debts).\n\n🔹 Net Income: The magic bridge\nIf Assets = 1M DHS, Debts = 800k, Capital = 100k. You are missing 100k on the right! This gap is the **Year's Profit** (Net Income). Profit goes into Equity to balance the sheet. If it's a loss, it reduces Equity.\n\n👍 Why must it balance?\nMoney isn't created by magic. If you get a new machine (Asset), you either took on debt (Liability) or used your capital/profit (Equity).",
+        "exemple": "Karim founds SARL Atlas with 50,000 DHS (Capital - Liability). Puts it in the Bank (Asset). Balance = 50k = 50k. Buys a PC for 10k. Assets change shape: PC (10k) + Bank (40k). Total Assets stay 50k. The balance is indestructible!",
+        "pratique": "The company makes a 20,000 DHS loss. Which side of the Balance Sheet will it appear (as negative) to maintain balance?",
+        "resume": "Balance Sheet photographs wealth at time T.\nAssets = What the company owns.\nLiabilities & Equity = What the company owes.\nNet Profit is added to Equity to guarantee Assets = Liabilities."
+      },
+      "ar": {
+        "objectif": "إتقان القراءة الشاملة للميزانية المحاسبية المغربية وفهم التوازن الأساسي.",
+        "explication": "🔹 دور الميزانية العمومية\nانسَ العمليات اليومية. تجمد الميزانية الوقت، عادة في 31 ديسمبر. إنها تظهر 'ذمة' الشركة. إذا أردت شراء شركة مغربية، فهذه هي الوثيقة الأولى التي ستطلبها من الخبير المحاسب.\n\n🔹 المعادلة الحتمية\n**الأصول (الاستخدامات) = الخصوم (الموارد)**.\nتسرد الأصول (على اليسار) ما **تملكه** الشركة (مباني، مخزون، أموال في البنك، مستحقات عملاء).\nتسرد الخصوم (على اليمين) ما **تدين به** الشركة (رأس مال المساهمين، ديون بنكية، ديون موردين).\n\n🔹 النتيجة الصافية: الجسر السحري\nإذا كانت أصولك مليون درهم وديونك 800 ألف ورأس مالك 100 ألف. ينقصك 100 ألف في الخصوم للموازنة! هذه الفجوة هي **ربح العام** (النتيجة الصافية). تُسجل النتيجة في الخصوم لموازنة الميزانية. إذا كانت سلبية (خسارة)، فإنها تقلل الخصوم.\n\n👍 لماذا يجب أن تتوازن الميزانية؟\nلأن المال لا يُخلق بالسحر. إذا حصلت على آلة جديدة (أصل)، فلا بد أنك إما تحملت ديناً (خصوم) أو استخدمت ربحك/رأس مالك (خصوم).",
+        "exemple": "يؤسس كريم SARL Atlas بـ 50,000 درهم (رأس مال - خصوم). يضعها في البنك (أصول). الميزانية = 50ألف = 50ألف. يشتري حاسوباً بـ 10,000. الأصول تتغير: حاسوب (10ألف) + بنك (40ألف). إجمالي الأصول يبقى 50ألف. التوازن لا يُقهر!",
+        "pratique": "حققت الشركة خسارة قدرها 20,000 درهم. في أي جانب من الميزانية سيظهر هذا المبلغ (بالسالب) للحفاظ على التوازن؟",
+        "resume": "تصور الميزانية الذمة المالية في لحظة معينة.\nالأصول = ما تمتلكه الشركة.\nالخصوم = ما تدين به الشركة (موارد التمويل).\nتُدمج النتيجة الصافية في الخصوم لضمان الأصول = الخصوم."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Le cerveau aime l'équilibre. Voir les totaux Actif et Passif s'aligner au centime près procure une profonde sécurité psychologique.",
+        "Le Bilan démystifie la richesse : on comprend vite qu'une entreprise avec de grosses voitures (Actif) peut être au bord de la faillite si ces voitures sont financées par de la dette toxique (Passif)."
+      ],
+      "en": [
+        "The brain loves balance. Seeing Asset and Liability totals align to the exact cent provides deep psychological security.",
+        "The Balance Sheet demystifies wealth: you quickly realize a company with big cars (Assets) can be bankrupt if financed by toxic debt (Liabilities)."
+      ],
+      "ar": [
+        "الدماغ يحب التوازن. رؤية إجمالي الأصول والخصوم تتطابق حتى آخر سنت توفر أماناً نفسياً عميقاً.",
+        "الميزانية تزيل الغموض عن الثروة: تدرك بسرعة أن شركة بها سيارات فخمة (أصول) قد تكون على وشك الإفلاس إذا كانت ممولة بديون سامة (خصوم)."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Tracez un grand 'T' sur une feuille. Écrivez 'Actif' à gauche et 'Passif' à droite.",
+        "Ajoutez mentalement le 'Résultat Net' du côté Passif.",
+        "Demandez à un entrepreneur s'il lit son Bilan chaque année."
+      ],
+      "en": [
+        "Draw a big 'T' on a sheet. Write 'Assets' on the left and 'Liabilities' on the right.",
+        "Mentally add 'Net Profit' to the Liabilities side.",
+        "Ask an entrepreneur if they read their Balance Sheet every year."
+      ],
+      "ar": [
+        "ارسم حرف 'T' كبيراً على ورقة. اكتب 'الأصول' على اليسار و 'الخصوم' على اليمين.",
+        "أضف ذهنياً 'صافي النتيجة' إلى جانب الخصوم.",
+        "اسأل رائد أعمال عما إذا كان يقرأ ميزانيته كل عام."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Les banquiers ne regardent jamais le Bilan tel quel. Ils font un 'Bilan Financier'. Ils enlèvent les actifs fictifs (comme les frais préliminaires) pour voir la valeur RÉELLE de l'entreprise s'ils devaient la vendre demain aux enchères.",
+      "en": "Bankers never look at the Balance Sheet as is. They make a 'Financial Balance Sheet'. They remove fictitious assets (like preliminary expenses) to see the REAL value of the company if they had to auction it tomorrow.",
+      "ar": "المصرفيون لا ينظرون أبداً للميزانية كما هي. يقومون بإعداد 'ميزانية مالية'. يزيلون الأصول الوهمية (مثل المصاريف الأولية) لرؤية القيمة الحقيقية للشركة إذا اضطروا لبيعها غداً في المزاد."
+    },
+    "piege_frequent": {
+      "fr": "Confondre le 'Bilan' et le 'CPC'. Le Bilan montre la situation accumulée depuis la création de l'entreprise. Le CPC ne montre QUE ce qui s'est passé pendant l'année en cours (12 mois).",
+      "en": "Confusing the 'Balance Sheet' and the 'CPC'. The Balance Sheet shows accumulated status since company creation. The CPC ONLY shows what happened during the current year (12 months).",
+      "ar": "الخلط بين 'الميزانية' و 'CPC'. تُظهر الميزانية الوضع المتراكم منذ تأسيس الشركة. يظهر CPC فقط ما حدث خلال العام الحالي (12 شهراً)."
+    },
+    "mission_terrain": {
+      "fr": "Cherchez 'Bilan Maroc Telecom PDF' sur Google. Allez à la page du Bilan Consolidé et vérifiez si le Total Actif est bien égal au Total Passif.",
+      "en": "Search 'Bilan Maroc Telecom PDF' on Google. Go to the Consolidated Balance Sheet page and check if Total Assets equal Total Liabilities.",
+      "ar": "ابحث عن 'Bilan Maroc Telecom PDF' على جوجل. اذهب إلى صفحة الميزانية الموحدة وتحقق مما إذا كان إجمالي الأصول يساوي بالفعل إجمالي الخصوم."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Une entreprise a 200 000 DHS de Bâtiments, 50 000 DHS en Banque et 10 000 DHS de Stocks. Son Capital est de 100 000 DHS et ses dettes bancaires de 120 000 DHS. Quel est son Résultat Net de l'année ?",
+        "en": "A company has 200,000 DHS in Buildings, 50,000 DHS in Bank, 10,000 DHS in Inventory. Its Capital is 100,000 DHS and bank debts are 120,000 DHS. What is its Net Profit for the year?",
+        "ar": "شركة تمتلك 200 ألف درهم مباني، 50 ألف في البنك، و 10 آلاف مخزون. رأس مالها 100 ألف وديونها البنكية 120 ألف. ما هي نتيجتها الصافية لهذا العام؟"
+      },
+      "reward_xp": 60
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Parfait ! Total Actif = 260 000. Total Passif (hors résultat) = 220 000. Pour équilibrer à 260 000, le Résultat Net doit être un bénéfice de 40 000 DHS ! 🔥",
+        "en": "Perfect! Total Assets = 260k. Total Liabilities (excluding profit) = 220k. To balance at 260k, the Net Profit must be 40k DHS! 🔥",
+        "ar": "ممتاز! إجمالي الأصول = 260 ألف. إجمالي الخصوم (بدون النتيجة) = 220 ألف. للموازنة عند 260 ألف، يجب أن تكون النتيجة الصافية ربحاً قدره 40 ألف درهم! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as additionné l'Actif et le Passif. Non, ils doivent s'équilibrer. Calcule la différence entre les deux côtés pour trouver le Résultat ! 😭",
+        "en": "You added Assets and Liabilities. No, they must balance. Calculate the difference between both sides to find the Profit! 😭",
+        "ar": "لقد جمعت الأصول والخصوم معاً. لا، يجب أن يتوازنا. احسب الفرق بين الجانبين للعثور على النتيجة! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "De quel côté du Bilan comptable inscrit-on les Créances Clients (l'argent que les clients nous doivent) ?",
+      "options": [
+        "À l'Actif, car c'est une ressource qui nous appartient.",
+        "Au Passif, car c'est une dette.",
+        "Dans le CPC.",
+        "En Capitaux Propres."
+      ],
+      "correct_answer": "À l'Actif, car c'est une ressource qui nous appartient.",
+      "explanation": "Une créance client est un droit de recevoir de l'argent. C'est un élément positif du patrimoine de l'entreprise, donc cela va à l'Actif (plus précisément à l'Actif Circulant).",
+      "hint": "C'est de l'argent qui vous appartient, il est juste dans la poche du client."
+    }
+  },
+  {
+    "id": 47,
+    "title": {
+      "fr": "Le Bilan Actif — Immobilisé, Circulant, Trésorerie",
+      "en": "The Asset Side — Fixed, Current, Treasury",
+      "ar": "أصول الميزانية — ثابتة، متداولة، خزينة"
+    },
+    "xp": 95,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'Actif marocain est classé du plus solide au plus liquide : de ce qui met des années à se vendre (le Bâtiment) à ce qui est déjà du cash (la Caisse).",
+      "en": "Moroccan Assets are ranked from solid to liquid: from what takes years to sell (Buildings) to what is already cash (Cash register).",
+      "ar": "تُرتب الأصول المغربية من الأكثر صلابة إلى الأكثر سيولة: من ما يستغرق سنوات لبيعه (المبنى) إلى ما هو نقد بالفعل (الصندوق)."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Lire et comprendre la structure de la partie gauche du Bilan (L'Actif) selon le critère de liquidité croissante.",
+        "explication": "🔹 Le rangement de l'Actif\nLe CGNC ne permet pas de lister vos possessions dans le désordre. L'Actif est classé par **Liquidité Croissante** (de haut en bas). La 'liquidité', c'est la vitesse à laquelle on peut transformer un bien en argent cash.\n\n🔹 1. L'Actif Immobilisé (Le Haut du Bilan - Classe 2)\nCe sont les éléments durables (> 1 an) et très peu liquides. Si vous avez besoin de cash demain, vous ne pouvez pas vendre votre usine en 24h !\n- Exemples : Terrains, Machines, Brevets, Cautions versées.\n\n🔹 2. L'Actif Circulant (Le Milieu du Bilan - Classe 3)\nCe sont les éléments qui 'tournent' rapidement (< 1 an). Ils sont plus faciles à transformer en cash.\n- Exemples : Les Stocks de marchandises (on espère les vendre vite), les Créances Clients (ils paieront d'ici 30 à 90 jours).\n\n🔹 3. La Trésorerie-Actif (Le Bas du Bilan - Classe 51)\nC'est la liquidité absolue. L'argent est déjà là, prêt à être dépensé.\n- Exemples : Le compte en Banque, l'argent liquide dans la Caisse.\n\n👍 Le regard de l'analyste\nUn analyste financier regarde ce classement pour évaluer le risque de l'entreprise. Une entreprise avec 90% de son actif en 'Immobilisé' et 0% en 'Trésorerie' est très riche sur le papier, mais elle peut faire faillite demain car elle n'a pas de cash pour payer ses employés !",
+        "exemple": "SARL Atlas a un Actif Total de 1 000 000 DHS. \n- Actif Immobilisé = 800 000 (Locaux). \n- Actif Circulant = 150 000 (Stocks). \n- Trésorerie-Actif = 50 000 (Banque). \nC'est une entreprise très 'lourde', elle doit vendre ses stocks pour augmenter sa trésorerie.",
+        "pratique": "Où classez-vous une facture envoyée à un client qui doit payer dans 60 jours : Immobilisé, Circulant ou Trésorerie ?",
+        "resume": "L'Actif est classé par liquidité croissante (du moins liquide au plus liquide).\nHaut : Actif Immobilisé (Machines, Bâtiments).\nMilieu : Actif Circulant (Stocks, Créances).\nBas : Trésorerie-Actif (Banque, Caisse)."
+      },
+      "en": {
+        "objectif": "Read and understand the left side of the Balance Sheet (Assets) based on increasing liquidity.",
+        "explication": "🔹 Sorting the Assets\nThe CGNC doesn't let you list belongings randomly. Assets are sorted by **Increasing Liquidity** (top to bottom). 'Liquidity' is how fast an asset can become cash.\n\n🔹 1. Fixed Assets (Top of Balance Sheet - Class 2)\nDurable items (> 1 year) and very illiquid. If you need cash tomorrow, you can't sell a factory in 24h!\n- Examples: Land, Machinery, Patents, Deposits.\n\n🔹 2. Current Assets (Middle of Balance Sheet - Class 3)\nItems that 'turn over' quickly (< 1 year). Easier to turn into cash.\n- Examples: Inventory (hope to sell fast), Client Receivables (will pay in 30-90 days).\n\n🔹 3. Treasury-Assets (Bottom of Balance Sheet - Class 51)\nAbsolute liquidity. The money is already there, ready to spend.\n- Examples: Bank account, Cash in register.\n\n👍 The analyst's view\nAn analyst checks this to evaluate risk. A company with 90% Fixed Assets and 0% Treasury is paper-rich, but could go bankrupt tomorrow without cash to pay employees!",
+        "exemple": "SARL Atlas Total Assets = 1M DHS. Fixed = 800k (Premises). Current = 150k (Stock). Treasury = 50k (Bank). It's a 'heavy' company; it must sell stock to boost cash.",
+        "pratique": "Where do you classify an invoice sent to a client due in 60 days: Fixed, Current, or Treasury?",
+        "resume": "Assets are ranked by increasing liquidity.\nTop: Fixed Assets (Machines, Buildings).\nMiddle: Current Assets (Inventory, Receivables).\nBottom: Treasury-Assets (Bank, Cash)."
+      },
+      "ar": {
+        "objectif": "قراءة وفهم الجانب الأيسر من الميزانية (الأصول) وفقاً لمعيار السيولة المتزايدة.",
+        "explication": "🔹 ترتيب الأصول\nلا يسمح CGNC بإدراج ممتلكاتك بشكل عشوائي. تُصنف الأصول حسب **السيولة المتزايدة** (من أعلى إلى أسفل). 'السيولة' هي سرعة تحويل الأصل إلى نقد.\n\n🔹 1. الأصول الثابتة (أعلى الميزانية - الفئة 2)\nعناصر دائمة (> 1 سنة) وقليلة السيولة. إذا احتجت نقداً غداً، لا يمكنك بيع مصنعك في 24 ساعة!\n- أمثلة: أراضي، آلات، براءات اختراع، ضمانات.\n\n🔹 2. الأصول المتداولة (وسط الميزانية - الفئة 3)\nعناصر 'تدور' بسرعة (< 1 سنة). أسهل في تحويلها إلى نقد.\n- أمثلة: مخزون (نأمل بيعه بسرعة)، مستحقات العملاء (سيدفعون خلال 30-90 يوماً).\n\n🔹 3. خزينة الأصول (أسفل الميزانية - الفئة 51)\nسيولة مطلقة. المال موجود وجاهز للإنفاق.\n- أمثلة: حساب بنكي، أموال سائلة في الصندوق.\n\n👍 نظرة المحلل\nينظر المحلل المالي لهذا الترتيب لتقييم المخاطر. شركة تمتلك 90% أصول ثابتة و 0% خزينة هي غنية على الورق، لكنها قد تفلس غداً لعدم وجود نقد لدفع الرواتب!",
+        "exemple": "إجمالي أصول Atlas = مليون درهم. أصول ثابتة = 800ألف (مباني). أصول متداولة = 150ألف (مخزون). خزينة أصول = 50ألف (بنك). إنها شركة 'ثقيلة'، يجب بيع المخزون لزيادة السيولة.",
+        "pratique": "أين تصنف فاتورة أُرسلت لعميل يدفع خلال 60 يوماً: ثابتة، متداولة، أم خزينة؟",
+        "resume": "تُرتب الأصول حسب السيولة المتزايدة.\nالأعلى: أصول ثابتة (آلات، مباني).\nالوسط: أصول متداولة (مخزون، مستحقات).\nالأسفل: خزينة الأصول (بنك، صندوق)."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Comprendre le classement par liquidité, c'est comprendre comment l'entreprise 'respire' : le dur se transforme en stock, qui se transforme en créance, qui se transforme en cash.",
+        "Le gérant focalise souvent sur ses beaux bâtiments (le haut du bilan). L'analyste focalise sur la trésorerie (le bas du bilan)."
+      ],
+      "en": [
+        "Understanding liquidity ranking is understanding how the company 'breathes': hard assets turn to stock, which turns to receivables, which turns to cash.",
+        "Managers often focus on their beautiful buildings (top of balance sheet). Analysts focus on cash flow (bottom)."
+      ],
+      "ar": [
+        "فهم الترتيب حسب السيولة هو فهم كيف 'تتنفس' الشركة: الصلب يتحول لمخزون، الذي يتحول لمستحقات، والتي تتحول لنقد.",
+        "غالباً ما يركز المدير على مبانيه الجميلة (أعلى الميزانية). يركز المحلل على السيولة (أسفل الميزانية)."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Ouvrez la première page du CGNC et observez l'ordre des classes (2, puis 3, puis 5).",
+        "Prenez 3 objets autour de vous et classez-les du moins 'liquide' au plus 'liquide'."
+      ],
+      "en": [
+        "Open the first page of the CGNC and observe the class order (2, then 3, then 5).",
+        "Take 3 objects around you and rank them from least to most 'liquid'."
+      ],
+      "ar": [
+        "افتح الصفحة الأولى من CGNC ولاحظ ترتيب الفئات (2، ثم 3، ثم 5).",
+        "خذ 3 أشياء حولك ورتبها من الأقل 'سيولة' إلى الأكثر 'سيولة'."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Sur le Bilan marocain officiel (Modèle Normal de la Liasse Fiscale), l'Actif est toujours présenté en 3 colonnes : Brut, Amortissements/Provisions, et NET. C'est la colonne 'NET' qui permet de calculer le total de l'Actif, car elle montre la vraie valeur dépréciée.",
+      "en": "On the official Moroccan Balance Sheet (Normal Tax Return Model), Assets are always in 3 columns: Gross, Depreciation/Provisions, and NET. The 'NET' column calculates Total Assets, showing true depreciated value.",
+      "ar": "في الميزانية المغربية الرسمية (النموذج العادي للحزمة الضريبية)، تظهر الأصول دائماً في 3 أعمدة: الإجمالي، الإهلاكات/المخصصات، والصافي. عمود 'الصافي' هو الذي يحسب إجمالي الأصول لأنه يظهر القيمة الحقيقية المهلكة."
+    },
+    "piege_frequent": {
+      "fr": "Placer les 'Prêts accordés au personnel' dans l'Actif Circulant. S'ils doivent rembourser sur 3 ans, c'est une créance longue durée, donc ça va dans l'Actif Immobilisé (Financier) !",
+      "en": "Placing 'Loans to staff' in Current Assets. If they repay over 3 years, it's a long-term receivable, so it goes in Fixed Assets (Financial)!",
+      "ar": "وضع 'قروض الموظفين' في الأصول المتداولة. إذا كانوا سيسددون على مدى 3 سنوات، فهي مستحقات طويلة الأجل، لذا تذهب في الأصول الثابتة (المالية)!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Un de vos clients (Compte 3421 - Actif circulant) fait faillite. Le tribunal vous accorde une machine de son usine en guise de remboursement. Comment votre structure d'Actif va-t-elle changer (quel poste baisse, quel poste augmente) ?",
+        "en": "A client (Account 3421 - Current Asset) goes bankrupt. The court gives you a factory machine as repayment. How does your Asset structure change (what drops, what rises)?",
+        "ar": "عميل (حساب 3421 - أصول متداولة) يفلس. تمنحك المحكمة آلة من مصنعه كسداد. كيف سيتغير هيكل أصولك (ما الذي ينخفض، وما الذي يرتفع)؟"
+      },
+      "reward_xp": 50
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Très bien analysé ! L'Actif Circulant (Créances) va baisser, et l'Actif Immobilisé (Matériel) va augmenter du même montant. Le total Actif ne change pas, mais l'entreprise devient 'moins liquide' ! 🔥",
+        "en": "Well analyzed! Current Assets (Receivables) will drop, and Fixed Assets (Equipment) will rise by the same amount. Total Assets won't change, but the company becomes 'less liquid'! 🔥",
+        "ar": "تحليل جيد جداً! ستنخفض الأصول المتداولة (المستحقات)، وسترتفع الأصول الثابتة (المعدات) بنفس المبلغ. إجمالي الأصول لا يتغير، لكن الشركة تصبح 'أقل سيولة'! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as oublié que la créance disparaît. C'est un simple transfert entre l'Actif Circulant et l'Actif Immobilisé. 😭",
+        "en": "You forgot the receivable disappears. It's a simple transfer between Current and Fixed Assets. 😭",
+        "ar": "لقد نسيت أن المستحق يختفي. إنه مجرد نقل بين الأصول المتداولة والأصول الثابتة. 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Dans le bilan marocain, comment l'Actif est-il ordonné de haut en bas ?",
+      "options": [
+        "Par ordre alphabétique",
+        "Par ordre de liquidité décroissante (du plus cash au moins cash)",
+        "Par ordre de liquidité croissante (du moins cash au plus cash)",
+        "Par importance du montant (du plus cher au moins cher)"
+      ],
+      "correct_answer": "Par ordre de liquidité croissante (du moins cash au plus cash)",
+      "explanation": "L'Actif commence en haut par ce qui est figé et difficile à vendre (Bâtiments, Machines), et finit en bas par ce qui est totalement liquide (Caisse, Banque). C'est le principe de liquidité croissante.",
+      "hint": "Qu'y a-t-il tout en bas de l'Actif ? La Banque (le plus liquide)."
+    }
+  },
+  {
+    "id": 48,
+    "title": {
+      "fr": "Le Bilan Passif — Financement Permanent, Circulant, Trésorerie",
+      "en": "The Liability Side — Permanent, Current, Treasury",
+      "ar": "خصوم الميزانية — تمويل دائم، متداول، خزينة"
+    },
+    "xp": 95,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le Passif est classé par Exigibilité. L'argent qu'on ne vous demandera jamais de rembourser (Capital) est en haut. L'argent qu'on peut vous réclamer demain est en bas.",
+      "en": "Liabilities are ranked by Exigibility. Money you'll never be asked to repay (Capital) is at the top. Money due tomorrow is at the bottom.",
+      "ar": "تُرتب الخصوم حسب الاستحقاق. الأموال التي لن يُطلب منك سدادها أبداً (رأس المال) في الأعلى. والأموال المستحقة غداً في الأسفل."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Lire et comprendre la partie droite du Bilan (Le Passif) selon le critère d'exigibilité croissante.",
+        "explication": "🔹 Le rangement du Passif\nL'Actif est classé par liquidité. Le Passif, lui, est classé par **Exigibilité Croissante**. L'exigibilité, c'est l'urgence avec laquelle on va vous réclamer cet argent.\n\n🔹 1. Financement Permanent (Le Haut - Classe 1)\nCe sont les ressources stables de l'entreprise. On ne va pas vous demander de les rembourser de sitôt.\n- **Capitaux Propres** : Le Capital des associés, les Réserves, et le Résultat de l'année. Les associés ne réclament pas cet argent tous les matins.\n- **Dettes de Financement** : Les crédits bancaires à très long terme (> 1 an).\n\n🔹 2. Passif Circulant (Le Milieu - Classe 4)\nCe sont les dettes à court terme (< 1 an). Il va falloir les payer vite !\n- Exemples : Les Fournisseurs (à payer dans 60 jours), l'État pour la TVA ou l'IS, la CNSS.\n\n🔹 3. Trésorerie-Passif (Le Bas - Classe 52)\nC'est l'urgence absolue. Ce sont les découverts bancaires (quand votre compte est dans le rouge) et les crédits d'escompte. La banque peut vous exiger ce remboursement littéralement demain matin.\n\n👍 Le cauchemar du banquier\nUn banquier déteste voir une entreprise utiliser le 'Passif Circulant' (dettes courtes) pour financer son 'Actif Immobilisé' (usines longues à rentabiliser). Ce déséquilibre est la cause n°1 de faillite !",
+        "exemple": "SARL Atlas a un Passif Total de 1 000 000 DHS. \n- Financement Permanent = 200 000 (Capital). \n- Passif Circulant = 600 000 (Dettes fournisseurs). \n- Trésorerie-Passif = 200 000 (Découvert Bancaire). \nC'est une entreprise très risquée ! Elle a 800 000 DHS de dettes urgentes et très peu de capital solide.",
+        "pratique": "Vous devez payer la CNSS le 10 du mois prochain. Est-ce un Financement Permanent ou un Passif Circulant ?",
+        "resume": "Le Passif indique l'origine de l'argent de l'entreprise.\nClassé par exigibilité (urgence de remboursement) de haut en bas.\nHaut : Capitaux Propres et Dettes Long Terme (Stables).\nMilieu : Dettes Fournisseurs et État (Court terme).\nBas : Découvert Bancaire (Urgence immédiate)."
+      },
+      "en": {
+        "objectif": "Read and understand the right side of the Balance Sheet (Liabilities/Equity) based on increasing exigibility.",
+        "explication": "🔹 Sorting Liabilities\nAssets are sorted by liquidity. Liabilities are sorted by **Increasing Exigibility** (urgency of repayment).\n\n🔹 1. Permanent Financing (Top - Class 1)\nStable resources. You won't be asked to repay them anytime soon.\n- **Equity**: Shareholder Capital, Reserves, and Net Profit.\n- **Financial Debts**: Long-term bank loans (> 1 year).\n\n🔹 2. Current Liabilities (Middle - Class 4)\nShort-term debts (< 1 year). Need to be paid quickly!\n- Examples: Suppliers (due in 60 days), State for VAT/IS, CNSS.\n\n🔹 3. Treasury-Liabilities (Bottom - Class 52)\nAbsolute urgency. Bank overdrafts (when account is in the red). The bank can demand this tomorrow morning.\n\n👍 The banker's nightmare\nBankers hate seeing a company use 'Current Liabilities' (short debts) to finance 'Fixed Assets' (long-term factories). This mismatch is the #1 cause of bankruptcy!",
+        "exemple": "SARL Atlas Total Liabilities = 1M DHS. Permanent = 200k (Capital). Current = 600k (Supplier debts). Treasury-Liability = 200k (Overdraft). Very risky company! 800k in urgent debts, very little solid capital.",
+        "pratique": "You must pay CNSS by the 10th of next month. Is this Permanent Financing or Current Liability?",
+        "resume": "Liabilities show the origin of the company's money.\nSorted by exigibility (urgency) top to bottom.\nTop: Equity and Long-Term Debt (Stable).\nMiddle: Supplier and State debts (Short-term).\nBottom: Bank overdraft (Immediate urgency)."
+      },
+      "ar": {
+        "objectif": "قراءة وفهم الجانب الأيمن من الميزانية (الخصوم) وفقاً لمعيار الاستحقاق المتزايد.",
+        "explication": "🔹 ترتيب الخصوم\nتُرتب الأصول حسب السيولة. أما الخصوم فتُرتب حسب **الاستحقاق المتزايد**. الاستحقاق هو الاستعجال الذي سيُطلب منك فيه سداد هذا المال.\n\n🔹 1. التمويل الدائم (الأعلى - الفئة 1)\nهي الموارد المستقرة للشركة. لن يُطلب منك سدادها قريباً.\n- **حقوق الملكية**: رأس مال المساهمين، الاحتياطيات، ونتيجة العام.\n- **ديون التمويل**: القروض البنكية طويلة الأجل (> 1 سنة).\n\n🔹 2. الخصوم المتداولة (الوسط - الفئة 4)\nهي الديون قصيرة الأجل (< 1 سنة). يجب دفعها بسرعة!\n- أمثلة: الموردون (للدفع خلال 60 يوماً)، الدولة بخصوص TVA أو IS، CNSS.\n\n🔹 3. خزينة الخصوم (الأسفل - الفئة 52)\nهي حالة الطوارئ المطلقة. السحب على المكشوف البنكي (عندما يكون حسابك بالسالب). يمكن للبنك أن يطالب بسدادها غداً صباحاً.\n\n👍 كابوس المصرفي\nيكره المصرفي رؤية شركة تستخدم 'الخصوم المتداولة' (ديون قصيرة) لتمويل 'الأصول الثابتة' (مصانع طويلة الأمد). عدم التوازن هذا هو السبب الأول للإفلاس!",
+        "exemple": "إجمالي خصوم Atlas = مليون درهم. تمويل دائم = 200ألف (رأس مال). خصوم متداولة = 600ألف (ديون موردين). خزينة خصوم = 200ألف (سحب على المكشوف). شركة خطيرة جداً! 800ألف ديون عاجلة وقليل من رأس المال الصلب.",
+        "pratique": "يجب أن تدفع CNSS في اليوم 10 من الشهر القادم. هل هذا تمويل دائم أم خصوم متداولة؟",
+        "resume": "توضح الخصوم مصدر أموال الشركة.\nتُرتب حسب الاستحقاق (استعجال السداد) من أعلى لأسفل.\nالأعلى: حقوق الملكية وديون طويلة الأجل (مستقرة).\nالوسط: ديون الموردين والدولة (قصيرة الأجل).\nالأسفل: السحب على المكشوف البنكي (طوارئ فورية)."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Un beau Passif, avec beaucoup de Capitaux Propres, donne au gérant une liberté d'esprit totale face aux créanciers.",
+        "Le compte Découvert (522) est la zone de stress maximale du comptable. C'est l'alarme rouge de l'entreprise."
+      ],
+      "en": [
+        "A healthy Liability side, with lots of Equity, gives the manager total peace of mind regarding creditors.",
+        "The Overdraft account (522) is the accountant's max stress zone. It's the company's red alarm."
+      ],
+      "ar": [
+        "جانب الخصوم الصحي، مع الكثير من حقوق الملكية، يمنح المدير راحة بال تامة تجاه الدائنين.",
+        "حساب السحب على المكشوف (522) هو منطقة الضغط القصوى للمحاسب. إنه الإنذار الأحمر للشركة."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Sur votre 'T' du Bilan, écrivez les 3 catégories du Passif de haut en bas.",
+        "Regardez les dettes personnelles que vous avez. Lesquelles sont à court terme, lesquelles sont à long terme ?",
+        "Mémorisez le mot : Exigibilité (La date limite pour payer)."
+      ],
+      "en": [
+        "On your Balance Sheet 'T', write the 3 Liability categories from top to bottom.",
+        "Look at your personal debts. Which are short-term, which are long-term?",
+        "Memorize the word: Exigibility (The deadline to pay)."
+      ],
+      "ar": [
+        "على حرف 'T' لميزانيتك، اكتب الفئات الثلاث للخصوم من أعلى لأسفل.",
+        "انظر للديون الشخصية التي عليك. أيها قصير الأجل، وأيها طويل الأجل؟",
+        "احفظ كلمة: استحقاق (Exigibilité) (الموعد النهائي للدفع)."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Dans les Capitaux Propres, on trouve le 'Résultat en instance d'affectation' et les 'Réserves'. Les patrons marocains adorent laisser les bénéfices en Réserves (compte 114) plutôt que de se verser des dividendes, car les dividendes sont lourdement taxés à 15% pour les personnes physiques !",
+      "en": "In Equity, you find 'Retained Earnings' and 'Reserves'. Moroccan bosses love leaving profits in Reserves (account 114) rather than paying themselves dividends, because dividends are heavily taxed at 15% for individuals!",
+      "ar": "في حقوق الملكية، نجد 'الأرباح المحتجزة' و 'الاحتياطيات'. يحب المديرون المغاربة ترك الأرباح في الاحتياطيات (حساب 114) بدلاً من دفع أرباح لأنفسهم، لأن الأرباح الموزعة تخضع لضريبة ثقيلة بنسبة 15% للأفراد!"
+    },
+    "piege_frequent": {
+      "fr": "Placer un crédit automobile de 4 ans dans le Passif Circulant (Classe 4). Faux ! S'il dure plus d'un an, c'est une Dette de Financement (Classe 1).",
+      "en": "Placing a 4-year car loan in Current Liabilities (Class 4). False! If it lasts more than a year, it's Financial Debt (Class 1).",
+      "ar": "وضع قرض سيارة لمدة 4 سنوات في الخصوم المتداولة (الفئة 4). خطأ! إذا كان يستمر لأكثر من عام، فهو دين تمويل (الفئة 1)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous obtenez un crédit bancaire de 100 000 DHS sur 5 ans. Remboursement : 20 000 DHS par an. Comment l'expert-comptable doit-il ventiler cette dette au Bilan à la fin de la 1ère année pour refléter la vraie exigibilité ?",
+        "en": "You get a 100,000 DHS bank loan for 5 years. Repayment: 20,000 DHS/year. How should the CPA split this debt on the Balance Sheet at the end of Year 1 to reflect true exigibility?",
+        "ar": "تحصل على قرض بنكي بـ 100,000 درهم لمدة 5 سنوات. السداد: 20,000 درهم سنوياً. كيف يجب على الخبير المحاسب تقسيم هذا الدين في الميزانية نهاية العام الأول ليعكس الاستحقاق الحقيقي؟"
+      },
+      "reward_xp": 75
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Excellent réflexe ! L'expert va mettre 80 000 DHS en Financement Permanent (car > 1 an) et transférer 20 000 DHS (l'échéance de l'année qui arrive) en Passif Circulant. La rigueur absolue ! 🔥",
+        "en": "Excellent reflex! The CPA puts 80,000 DHS in Permanent Financing (> 1 yr) and transfers 20,000 DHS (the upcoming year's due) to Current Liabilities. Absolute rigor! 🔥",
+        "ar": "تفكير ممتاز! سيضع الخبير 80,000 درهم في التمويل الدائم (> 1 سنة) وينقل 20,000 درهم (القسط المستحق في العام القادم) إلى الخصوم المتداولة. صرامة مطلقة! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as laissé les 100 000 en Classe 1. Faux ! La banque va te réclamer 20 000 très bientôt, il faut isoler cette partie en Dette à court terme. 😭",
+        "en": "You left all 100,000 in Class 1. False! The bank will demand 20,000 very soon; you must isolate this part in Short-term Debt. 😭",
+        "ar": "لقد تركت كل الـ 100,000 في الفئة 1. خطأ! سيطالب البنك بـ 20,000 قريباً جداً، يجب عزل هذا الجزء في ديون قصيرة الأجل. 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Sur quel critère principal les éléments du Passif sont-ils classés de haut en bas sur le bilan marocain ?",
+      "options": [
+        "Par ordre alphabétique des créanciers",
+        "Par ordre d'exigibilité croissante (du moins urgent au plus urgent)",
+        "Par ordre de liquidité croissante",
+        "Par ordre de grandeur des montants"
+      ],
+      "correct_answer": "Par ordre d'exigibilité croissante (du moins urgent au plus urgent)",
+      "explanation": "L'exigibilité est l'urgence avec laquelle une dette doit être remboursée. Le Capital (en haut) n'est jamais remboursable. Le découvert bancaire (en bas) est exigible immédiatement.",
+      "hint": "C'est l'inverse de l'Actif (Liquidité). Au Passif, on regarde l'urgence de la dette."
+    }
+  },
+  {
+    "id": 49,
+    "title": {
+      "fr": "Le CPC — Compte de Produits et Charges (norme CGNC)",
+      "en": "The Income Statement (CPC) — CGNC Standard",
+      "ar": "حساب المنتجات والتكاليف (CPC) — معيار CGNC"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le Bilan montre si vous êtes riche aujourd'hui. Le CPC explique *comment* vous vous êtes enrichi ou appauvri pendant l'année.",
+      "en": "The Balance Sheet shows if you are rich today. The CPC explains *how* you got richer or poorer during the year.",
+      "ar": "تظهر الميزانية ما إذا كنت غنياً اليوم. يوضح CPC *كيف* أصبحت أغنى أو أفقر خلال العام."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Analyser la structure en cascade du CPC marocain pour identifier d'où provient exactement le bénéfice ou la perte.",
+        "explication": "🔹 Le principe de la Cascade\nLe CGNC ne permet pas de mélanger toutes les charges et tous les produits. Le CPC est structuré en 3 niveaux stricts pour analyser la santé de l'entreprise.\n\n🔹 Niveau 1 : L'Exploitation (Le métier de base)\n- **Produits d'exploitation (71)** : Les ventes de votre cœur de métier.\n- **Charges d'exploitation (61)** : Ce qu'il faut dépenser pour ce métier (Achats, Salaires, Loyer, Dotations aux amortissements).\n👉 **RÉSULTAT D'EXPLOITATION** (I - II) : Si ce chiffre est négatif, le business model même de l'entreprise est défaillant !\n\n🔹 Niveau 2 : Le Financier (La politique de financement)\n- **Produits financiers (73)** : Escomptes obtenus, Intérêts gagnés.\n- **Charges financières (63)** : Intérêts bancaires payés, pertes de change.\n👉 **RÉSULTAT FINANCIER** (III - IV) : Souvent négatif pour les entreprises très endettées.\n👉 **RÉSULTAT COURANT** = Exploitation + Financier.\n\n🔹 Niveau 3 : Le Non-Courant (L'exceptionnel)\n- **Produits non courants (75)** : Vente d'un immeuble (Plus-value), Subventions étatiques.\n- **Charges non courantes (65)** : Amendes fiscales, Pénalités de retard CNSS.\n👉 **RÉSULTAT NON COURANT** (V - VI).\n\n👍 Le clap de fin\n**RÉSULTAT AVANT IMPÔT** = Résultat Courant + Résultat Non Courant.\nOn retire l'IS (Impôt sur les sociétés, Classe 67), et on obtient le fameux **RÉSULTAT NET** (celui qui va aller s'inscrire au Passif du Bilan !).",
+        "exemple": "SARL Atlas : \nRésultat d'Exploitation = +100 000 DHS (Bon business). \nRésultat Financier = -20 000 DHS (Trop de crédits). \nRésultat Courant = 80 000. \nRésultat Non-Courant = -10 000 (Amende DGI). \nRésultat Avant Impôt = 70 000. IS (20%) = 14 000. Résultat Net = 56 000 DHS.",
+        "pratique": "Vous payez une amende de 2 000 DHS pour retard de paiement d'impôts. Dans quel niveau du CPC allez-vous classer cette charge ?",
+        "resume": "Le CPC analyse l'activité sur l'année en 3 niveaux : Exploitation, Financier, Non-Courant.\nRésultat Courant = Exploitation + Financier.\nRésultat Net = Résultat Avant Impôt - IS.\nC'est la boussole de la rentabilité de l'entreprise."
+      },
+      "en": {
+        "objectif": "Analyze the cascade structure of the Moroccan CPC to identify exactly where profit or loss comes from.",
+        "explication": "🔹 The Cascade Principle\nThe CGNC doesn't let you mix all expenses and income. The CPC is structured in 3 strict levels to analyze company health.\n\n🔹 Level 1: Operating (The core business)\n- **Operating Income (71)**: Core business sales.\n- **Operating Expenses (61)**: What it takes to run it (Purchases, Wages, Rent, Depreciation).\n👉 **OPERATING RESULT** (I - II): If negative, the business model itself is failing!\n\n🔹 Level 2: Financial (Financing policy)\n- **Financial Income (73)**: Discounts obtained, Interest earned.\n- **Financial Expenses (63)**: Bank interests paid, FX losses.\n👉 **FINANCIAL RESULT** (III - IV): Often negative for heavily indebted companies.\n👉 **CURRENT RESULT** = Operating + Financial.\n\n🔹 Level 3: Non-Current (The exceptional)\n- **Non-current Income (75)**: Selling a building, State subsidies.\n- **Non-current Expenses (65)**: Tax fines, CNSS late penalties.\n👉 **NON-CURRENT RESULT** (V - VI).\n\n👍 The grand finale\n**PROFIT BEFORE TAX** = Current Result + Non-Current Result.\nSubtract Corporate Tax (IS, Class 67), and get the famous **NET PROFIT** (which goes to Equity in the Balance Sheet!).",
+        "exemple": "SARL Atlas:\nOperating = +100k DHS (Good business).\nFinancial = -20k DHS (Too many loans).\nCurrent = 80k.\nNon-Current = -10k (DGI fine).\nProfit Before Tax = 70k. IS (20%) = 14k. Net Profit = 56,000 DHS.",
+        "pratique": "You pay a 2,000 DHS fine for late taxes. In which CPC level do you classify this expense?",
+        "resume": "CPC analyzes yearly activity in 3 levels: Operating, Financial, Non-Current.\nCurrent Result = Operating + Financial.\nNet Profit = Profit Before Tax - IS.\nIt's the compass of the company's profitability."
+      },
+      "ar": {
+        "objectif": "تحليل الهيكل التسلسلي لـ CPC المغربي لتحديد من أين يأتي الربح أو الخسارة بالضبط.",
+        "explication": "🔹 مبدأ التسلسل\nلا يسمح CGNC بخلط جميع التكاليف والإيرادات. يتم هيكلة CPC في 3 مستويات صارمة لتحليل صحة الشركة.\n\n🔹 المستوى 1: الاستغلال (النشاط الأساسي)\n- **إيرادات الاستغلال (71)**: مبيعات نشاطك الأساسي.\n- **تكاليف الاستغلال (61)**: ما يلزم إنفاقه لهذا النشاط (مشتريات، رواتب، إيجار، إهلاكات).\n👉 **نتيجة الاستغلال** (I - II): إذا كان هذا الرقم سلبياً، فإن نموذج العمل ذاته فاشل!\n\n🔹 المستوى 2: المالي (سياسة التمويل)\n- **إيرادات مالية (73)**: خصومات مكتسبة، فوائد مكتسبة.\n- **تكاليف مالية (63)**: فوائد بنكية مدفوعة، خسائر صرف.\n👉 **النتيجة المالية** (III - IV): غالباً ما تكون سلبية للشركات المثقلة بالديون.\n👉 **النتيجة الجارية** = الاستغلال + المالية.\n\n🔹 المستوى 3: غير الجاري (الاستثنائي)\n- **إيرادات غير جارية (75)**: بيع مبنى (فائض قيمة)، إعانات حكومية.\n- **تكاليف غير جارية (65)**: غرامات ضريبية، غرامات تأخير CNSS.\n👉 **النتيجة غير الجارية** (V - VI).\n\n👍 النهاية الكبرى\n**النتيجة قبل الضريبة** = النتيجة الجارية + النتيجة غير الجارية.\nنطرح IS (الضريبة على الشركات، الفئة 67)، ونحصل على **النتيجة الصافية** الشهيرة (التي ستُسجل في خصوم الميزانية!).",
+        "exemple": "SARL Atlas:\nنتيجة الاستغلال = +100ألف درهم (عمل جيد).\nالنتيجة المالية = -20ألف درهم (قروض كثيرة).\nالنتيجة الجارية = 80ألف.\nالنتيجة غير الجارية = -10ألف (غرامة DGI).\nالنتيجة قبل الضريبة = 70ألف. IS (20%) = 14ألف. النتيجة الصافية = 56,000 درهم.",
+        "pratique": "تدفع غرامة قدرها 2000 درهم لتأخير دفع الضرائب. في أي مستوى من CPC ستصنف هذه التكلفة؟",
+        "resume": "يحلل CPC النشاط على مدار العام في 3 مستويات: الاستغلال، المالي، غير الجاري.\nالنتيجة الجارية = الاستغلال + المالي.\nالنتيجة الصافية = النتيجة قبل الضريبة - IS.\nإنها بوصلة ربحية الشركة."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Un résultat net positif cache parfois un Résultat d'Exploitation négatif ! (ex: l'entreprise vend son bâtiment pour masquer ses pertes opérationnelles). L'analyste traque ce mensonge.",
+        "Le découpage en niveaux permet au gérant de localiser la 'maladie' de son entreprise : est-ce mon produit qui est mauvais, ou est-ce que je paie trop d'intérêts bancaires ?"
+      ],
+      "en": [
+        "A positive net profit sometimes hides a negative Operating Result! (e.g., selling a building to mask operational losses). The analyst hunts this lie.",
+        "Breaking it down into levels allows the manager to locate the 'disease' of their company: is my product bad, or am I paying too much bank interest?"
+      ],
+      "ar": [
+        "قد يخفي صافي الربح الإيجابي أحياناً نتيجة استغلال سلبية! (مثل بيع مبنى لإخفاء الخسائر التشغيلية). المحلل يتعقب هذه الكذبة.",
+        "يسمح التقسيم إلى مستويات للمدير بتحديد 'مرض' شركته: هل منتجي سيء، أم أنني أدفع الكثير من الفوائد البنكية؟"
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez les 3 étages de la fusée : Exploitation, Financier, Non-Courant.",
+        "Téléchargez le modèle officiel du CPC marocain en PDF et regardez les numéros romains (I, II, III...).",
+        "Expliquez à voix haute pourquoi la vente d'une vieille machine de bureau n'est pas dans l'Exploitation."
+      ],
+      "en": [
+        "Memorize the 3 stages: Operating, Financial, Non-Current.",
+        "Download the official Moroccan CPC template in PDF and look at the Roman numerals (I, II, III...).",
+        "Explain out loud why selling an old office machine is not in Operating."
+      ],
+      "ar": [
+        "احفظ المراحل الثلاث: الاستغلال، المالي، غير الجاري.",
+        "قم بتنزيل النموذج الرسمي لـ CPC المغربي بصيغة PDF وانظر إلى الأرقام الرومانية (I، II، III...).",
+        "اشرح بصوت عالٍ لماذا لا يقع بيع آلة مكتبية قديمة في الاستغلال."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Les banques marocaines se moquent totalement de votre Résultat Non Courant. Si vous demandez un crédit, le banquier regardera UNIQUEMENT votre Résultat d'Exploitation pour savoir si votre métier de base est viable. Ne pensez pas tromper la banque en vendant des actifs pour gonfler le résultat net !",
+      "en": "Moroccan banks don't care at all about your Non-Current Result. If you ask for a loan, the banker will look ONLY at your Operating Result to know if your core business is viable. Don't think you can fool the bank by selling assets to inflate net profit!",
+      "ar": "لا تهتم البنوك المغربية إطلاقاً بنتيجتك غير الجارية. إذا طلبت قرضاً، سينظر المصرفي فقط إلى نتيجة الاستغلال لمعرفة ما إذا كانت مهنتك الأساسية قابلة للحياة. لا تظن أنك تستطيع خداع البنك ببيع الأصول لتضخيم صافي الربح!"
+    },
+    "piege_frequent": {
+      "fr": "Oublier de déduire l'Impôt sur les Sociétés (IS) à la fin. L'IS (Compte 670) est la toute dernière charge du CPC avant le Résultat Net.",
+      "en": "Forgetting to deduct Corporate Tax (IS) at the end. IS (Account 670) is the very last expense in the CPC before Net Profit.",
+      "ar": "نسيان خصم الضريبة على الشركات (IS) في النهاية. الضريبة (حساب 670) هي التكلفة الأخيرة في CPC قبل النتيجة الصافية."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Exploitation : Produits 500k, Charges 300k. \nFinancier : Produits 0, Charges 50k.\nNon-courant : Produits 200k, Charges 0.\nCalculez le Résultat Avant Impôts.",
+        "en": "Operating: Income 500k, Expenses 300k. \nFinancial: Income 0, Expenses 50k.\nNon-current: Income 200k, Expenses 0.\nCalculate Profit Before Tax.",
+        "ar": "الاستغلال: إيرادات 500ألف، تكاليف 300ألف.\nالمالي: إيرادات 0، تكاليف 50ألف.\nغير الجاري: إيرادات 200ألف، تكاليف 0.\nاحسب النتيجة قبل الضريبة."
+      },
+      "reward_xp": 50
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! Expl = +200k. Fin = -50k. Courant = 150k. Non-Courant = +200k. Résultat avant impôt = 350k ! 🔥",
+        "en": "Bravo! Op = +200k. Fin = -50k. Current = 150k. Non-Current = +200k. Profit before tax = 350k! 🔥",
+        "ar": "أحسنت! الاستغلال = +200ألف. مالي = -50ألف. جاري = 150ألف. غير جاري = +200ألف. نتيجة قبل الضريبة = 350ألف! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as oublié de soustraire la charge financière de 50k. Le résultat d'exploitation ne suffit pas pour trouver le résultat avant impôt ! 😭",
+        "en": "You forgot to subtract the 50k financial expense. Operating result isn't enough to find profit before tax! 😭",
+        "ar": "لقد نسيت طرح التكلفة المالية 50ألف. نتيجة الاستغلال لا تكفي للعثور على النتيجة قبل الضريبة! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Où classez-vous la charge liée au paiement des salaires de vos employés dans le CPC marocain ?",
+      "options": [
+        "Charges Financières",
+        "Charges d'Exploitation",
+        "Charges Non Courantes",
+        "Impôts sur les Résultats"
+      ],
+      "correct_answer": "Charges d'Exploitation",
+      "explanation": "Les salaires font partie du cœur de fonctionnement quotidien de l'entreprise. Ils sont donc classés au niveau I du CPC (Charges d'Exploitation).",
+      "hint": "Sans les employés, le cœur de l'activité s'arrête."
+    }
+  },
+  {
+    "id": 50,
+    "title": {
+      "fr": "L'ESG — État de Soldes de Gestion",
+      "en": "The ESG — Statement of Management Balances",
+      "ar": "ESG — بيان أرصدة التسيير"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'ESG est une loupe posée sur le CPC. Il découpe le bénéfice en étages pour voir EXACTEMENT comment la richesse a été créée.",
+      "en": "The ESG is a magnifying glass on the CPC. It slices profit into steps to see EXACTLY how wealth was created.",
+      "ar": "ESG هو عدسة مكبرة على CPC. يقطع الربح إلى درجات لمعرفة كيف تم إنشاء الثروة بالضبط."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Analyser la performance économique d'une entreprise via la Valeur Ajoutée (VA) et l'Excédent Brut d'Exploitation (EBE).",
+        "explication": "🔹 Qu'est-ce que l'ESG ?\nL'État des Soldes de Gestion (ESG) prend les chiffres du CPC, mais les réorganise pour créer des indicateurs d'analyse très puissants appelés 'Soldes Intermédiaires de Gestion' (SIG).\n\n🔹 1. La Marge Brute (Entreprises commerciales)\nMarge Brute = Ventes de marchandises - Achats revendus de marchandises.\nCombien l'entreprise gagne-t-elle juste en achetant et en revendant, avant même de payer ses salariés ?\n\n🔹 2. La Valeur Ajoutée (VA)\nC'est la vraie richesse créée par l'entreprise de ses propres mains.\nVA = Marge Brute + Production - Consommations intermédiaires (matières premières, électricité, loyers).\nSi la VA est négative, l'entreprise détruit de la valeur au lieu d'en créer !\n\n🔹 3. L'EBE (Excédent Brut d'Exploitation) : Le Roi des Ratios\nEBE = Valeur Ajoutée + Subventions - Impôts/Taxes - Salaires (Charges de personnel).\nPourquoi l'EBE est-il la star mondiale de l'analyse financière ? Parce que l'EBE montre ce que le 'Business' génère en cash AVANT de payer la banque (intérêts), AVANT l'impôt de l'État (IS), et AVANT la politique d'amortissement. C'est la performance PURE.\n\n👍 Résultat Net vs EBE\nDeux entreprises peuvent avoir le même Résultat Net, mais des EBE totalement différents. Celle avec le meilleur EBE est la plus performante opérationnellement.",
+        "exemple": "SARL Atlas vend pour 1 000. Achète de la marchandise pour 400. Marge Brute = 600. Elle paie 100 d'électricité. Valeur Ajoutée = 500. Elle paie 200 de salaires. EBE = 300. Cet EBE de 300 servira à payer les intérêts bancaires, les impôts, et les dividendes.",
+        "pratique": "Si la Valeur Ajoutée est de 500 et les Salaires de 300, quel est le montant de l'EBE (en ignorant impôts et subventions) ?",
+        "resume": "L'ESG découpe la formation du résultat étape par étape.\nLa Valeur Ajoutée mesure la richesse réelle créée par l'activité.\nL'EBE (Excédent Brut d'Exploitation) est le cash-flow opérationnel pur.\nLes banquiers préfèrent analyser l'EBE plutôt que le Résultat Net."
+      },
+      "en": {
+        "objectif": "Analyze a company's economic performance via Value Added (VA) and Gross Operating Surplus (EBE).",
+        "explication": "🔹 What is the ESG?\nThe ESG takes CPC numbers but reorganizes them to create powerful analytical indicators called 'Intermediate Management Balances' (SIG).\n\n🔹 1. Gross Margin (Commercial companies)\nGross Margin = Sales of goods - Cost of goods sold.\nHow much does the company make just buying and reselling, before paying employees?\n\n🔹 2. Value Added (VA)\nThe true wealth created by the company with its own hands.\nVA = Gross Margin + Production - Intermediate consumption (raw materials, electricity, rent).\nIf VA is negative, the company is destroying value!\n\n🔹 3. EBE (EBITDA in English): The King of Ratios\nEBE = Value Added + Subsidies - Taxes - Salaries.\nWhy is EBE the global star of financial analysis? Because EBE shows what the 'Business' generates in cash BEFORE paying the bank (interest), BEFORE State tax (IS), and BEFORE depreciation. It's PURE performance.",
+        "exemple": "Atlas sells for 1000. Buys goods for 400. Gross Margin = 600. Pays 100 electricity. Value Added = 500. Pays 200 salaries. EBE = 300. This EBE of 300 will pay bank interest, taxes, and dividends.",
+        "pratique": "If Value Added is 500 and Salaries are 300, what is the EBE (ignoring taxes and subsidies)?",
+        "resume": "ESG breaks down profit formation step by step.\nValue Added measures real wealth created.\nEBE (EBITDA) is pure operational cash flow.\nBankers prefer analyzing EBE over Net Profit."
+      },
+      "ar": {
+        "objectif": "تحليل الأداء الاقتصادي لشركة من خلال القيمة المضافة (VA) وإجمالي فائض الاستغلال (EBE).",
+        "explication": "🔹 ما هو ESG؟\nيأخذ ESG أرقام CPC، لكنه يعيد تنظيمها لإنشاء مؤشرات تحليل قوية جداً تسمى 'أرصدة التسيير الوسيطة' (SIG).\n\n🔹 1. الهامش الإجمالي (الشركات التجارية)\nالهامش الإجمالي = مبيعات البضائع - مشتريات البضائع المباعة.\nكم تكسب الشركة فقط من الشراء وإعادة البيع، قبل حتى دفع رواتب موظفيها؟\n\n🔹 2. القيمة المضافة (VA)\nإنها الثروة الحقيقية التي تخلقها الشركة بيديها.\nVA = الهامش الإجمالي + الإنتاج - الاستهلاكات الوسيطة (مواد أولية، كهرباء، إيجار).\nإذا كانت VA سلبية، فالشركة تدمر القيمة بدلاً من خلقها!\n\n🔹 3. إجمالي فائض الاستغلال (EBE): ملك النسب\nEBE = القيمة المضافة + الإعانات - الرسوم/الضرائب - الرواتب.\nلماذا EBE هو النجم العالمي للتحليل المالي؟ لأن EBE يُظهر ما يدره 'العمل' من نقد قبل الدفع للبنك (الفوائد)، وقبل ضريبة الدولة (IS)، وقبل سياسة الإهلاك. إنه الأداء النقي.",
+        "exemple": "تبيع Atlas بـ 1000. تشتري بضائع بـ 400. الهامش الإجمالي = 600. تدفع 100 كهرباء. القيمة المضافة = 500. تدفع 200 رواتب. EBE = 300. سيُستخدم EBE البالغ 300 لدفع الفوائد البنكية، والضرائب، وتوزيعات الأرباح.",
+        "pratique": "إذا كانت القيمة المضافة 500 والرواتب 300، فما هو مبلغ EBE (مع تجاهل الضرائب والإعانات)؟",
+        "resume": "يفكك ESG تكوين النتيجة خطوة بخطوة.\nتقيس القيمة المضافة الثروة الحقيقية المخلوقة.\nEBE (EBITDA) هو التدفق النقدي التشغيلي النقي.\nيفضل المصرفيون تحليل EBE بدلاً من النتيجة الصافية."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Passer du CPC à l'ESG, c'est passer du statut de 'Comptable' à celui de 'Directeur Financier (DAF)'. C'est de l'analyse pure.",
+        "Un EBE positif rassure profondément. Cela signifie que l'entreprise, dans son ADN, est rentable."
+      ],
+      "en": [
+        "Moving from CPC to ESG is moving from 'Accountant' to 'Chief Financial Officer (CFO)'. It's pure analysis.",
+        "A positive EBE is deeply reassuring. It means the company, in its DNA, is profitable."
+      ],
+      "ar": [
+        "الانتقال من CPC إلى ESG هو الانتقال من 'محاسب' إلى 'مدير مالي (CFO)'. إنه تحليل نقي.",
+        "EBE الإيجابي مطمئن للغاية. يعني أن الشركة مربحة في حمضها النووي."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez la cascade : Marge Brute -> Valeur Ajoutée -> EBE.",
+        "Trouvez la traduction de l'EBE en anglais (Indice : EBITDA). C'est le ratio le plus célèbre du monde de la finance.",
+        "Expliquez à voix haute pourquoi les banques regardent l'EBE."
+      ],
+      "en": [
+        "Memorize the cascade: Gross Margin -> Value Added -> EBE (EBITDA).",
+        "Find the English translation of EBE (Hint: EBITDA). It's the most famous ratio in finance.",
+        "Explain out loud why banks look at EBE."
+      ],
+      "ar": [
+        "احفظ التسلسل: الهامش الإجمالي -> القيمة المضافة -> EBE.",
+        "ابحث عن الترجمة الإنجليزية لـ EBE (تلميح: EBITDA). إنها النسبة الأكثر شهرة في عالم التمويل.",
+        "اشرح بصوت عالٍ لماذا تنظر البنوك إلى EBE."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Lorsqu'une entreprise marocaine est mise en vente, son prix de vente est très souvent calculé grâce à un multiple de l'EBE (ex: Prix de vente = 5 fois l'EBE). L'EBE est la vraie jauge de création de richesse récurrente.",
+      "en": "When a Moroccan company is up for sale, its selling price is very often calculated using a multiple of EBE (e.g., Sale Price = 5 times EBE). EBE is the true gauge of recurring wealth creation.",
+      "ar": "عندما تُعرض شركة مغربية للبيع، غالباً ما يُحسب سعر بيعها باستخدام مضاعف لـ EBE (مثال: سعر البيع = 5 أضعاف EBE). EBE هو المقياس الحقيقي لإنشاء الثروة المتكررة."
+    },
+    "piege_frequent": {
+      "fr": "Confondre Valeur Ajoutée et Bénéfice. La Valeur Ajoutée est très haute, mais il faut encore payer les employés et l'État avec ! Une VA positive ne garantit pas un bénéfice net positif.",
+      "en": "Confusing Value Added and Profit. Value Added is very high, but you still have to pay employees and the State with it! A positive VA does not guarantee a positive net profit.",
+      "ar": "الخلط بين القيمة المضافة والربح. القيمة المضافة عالية جداً، لكن لا يزال يتعين دفع رواتب الموظفين والدولة منها! VA الإيجابية لا تضمن ربحاً صافياً إيجابياً."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Marge Brute = 100 000 DHS. Achats de fournitures et loyer (Consommations intermédiaires) = 20 000 DHS. Salaires = 50 000 DHS. Impôts locaux = 5 000 DHS. Calculez l'EBE de cette entreprise.",
+        "en": "Gross Margin = 100k DHS. Office supplies and rent (Intermediate consumption) = 20k DHS. Salaries = 50k DHS. Local taxes = 5k DHS. Calculate the company's EBE.",
+        "ar": "الهامش الإجمالي = 100ألف درهم. مشتريات لوازم وإيجار (استهلاكات وسيطة) = 20ألف درهم. رواتب = 50ألف درهم. ضرائب محلية = 5آلاف درهم. احسب EBE لهذه الشركة."
+      },
+      "reward_xp": 75
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Excellent ! Valeur Ajoutée = 100k - 20k = 80k. Ensuite, EBE = VA (80k) - Salaires (50k) - Impôts (5k) = 25 000 DHS. Tu penses déjà comme un analyste financier ! 🔥",
+        "en": "Excellent! Value Added = 100k - 20k = 80k. Then, EBE = VA (80k) - Salaries (50k) - Taxes (5k) = 25,000 DHS. You already think like a financial analyst! 🔥",
+        "ar": "ممتاز! القيمة المضافة = 100ألف - 20ألف = 80ألف. ثم، EBE = VA (80ألف) - رواتب (50ألف) - ضرائب (5آلاف) = 25,000 درهم. أنت تفكر بالفعل كمحلل مالي! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as oublié de retirer les consommations intermédiaires pour trouver la Valeur Ajoutée d'abord. On procède par étages successifs ! 😭",
+        "en": "You forgot to subtract intermediate consumption to find Value Added first. We proceed step by step! 😭",
+        "ar": "لقد نسيت طرح الاستهلاكات الوسيطة للعثور على القيمة المضافة أولاً. نمضي في خطوات متتالية! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Une entreprise a une Valeur Ajoutée de 400 000 DHS. Elle paie 150 000 DHS de salaires et 10 000 DHS d'impôts et taxes (hors IS). Quel est son Excédent Brut d'Exploitation (EBE) ? (Entrez le nombre)",
+      "correct_answer": "240000",
+      "explanation": "L'EBE se calcule en prenant la Valeur Ajoutée (400 000) et en soustrayant les charges de personnel (150 000) et les impôts/taxes (10 000). Résultat = 240 000 DHS.",
+      "hint": "EBE = Valeur Ajoutée - Salaires - Impôts et Taxes."
+    }
+  }
+,
+  {
+    "id": 51,
+    "title": {
+      "fr": "La Marge Brute sur Ventes en l'État (MBVE)",
+      "en": "Gross Margin on Sales of Goods",
+      "ar": "الهامش الإجمالي على مبيعات البضائع (MBVE)"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "C'est l'indicateur roi des commerçants : combien gagnez-vous simplement en achetant un produit et en le revendant, sans rien transformer ?",
+      "en": "It is the king indicator for traders: how much do you make simply by buying a product and reselling it, without transforming it?",
+      "ar": "إنه المؤشر الرئيسي للتجار: كم تكسب بمجرد شراء منتج وإعادة بيعه، دون تحويله؟"
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer et analyser la Marge Brute sur Ventes en l'État (MBVE) pour une entreprise commerciale.",
+        "explication": "🔹 À qui sert la MBVE ?\nCet indicateur est exclusif aux entreprises COMMERCIALES (supermarchés, boutiques, distributeurs). Si vous êtes une usine qui transforme du bois en tables, cet indicateur n'est pas pour vous. La MBVE mesure l'efficacité de votre politique d'achat et de votre politique de prix de vente.\n\n🔹 La Formule de la MBVE\n**MBVE = Ventes de marchandises - Achats Revendus de marchandises.**\nAttention au piège : 'Achats revendus' ne veut pas dire 'Achats de l'année' ! Il faut prendre en compte la variation des stocks. Si vous achetez 100 téléphones mais n'en revendez que 80, on ne calcule la marge que sur les 80 vendus.\nAchats Revendus = Achats de l'année - Variation de stock.\n\n🔹 L'interprétation du Taux de Marge\nAu Maroc, chaque secteur a un taux de marge brute typique. Par exemple, une grande surface (BIM, Marjane) a une marge très faible (ex: 15%), mais compense par un volume de ventes énorme. Une boutique de luxe aura une marge de 60%, mais vendra moins de produits.\n\n👍 Le radar des impôts\nLa DGI marocaine possède des bases de données par secteur. Si un pharmacien déclare une Marge Brute de 10% alors que la norme nationale est de 30%, il sera immédiatement ciblé pour un contrôle fiscal. La DGI soupçonnera des ventes non déclarées.",
+        "exemple": "Boutique Zara achète pour 400 000 DHS de vêtements. Son stock final augmente de 100 000 DHS (donc elle n'a réellement vendu que pour 300 000 DHS de coût d'achat). Ses ventes totales sont de 600 000 DHS. \nAchats revendus = 400 000 - 100 000 = 300 000 DHS. \nMBVE = 600 000 (Ventes) - 300 000 (Achats revendus) = 300 000 DHS de Marge Brute !",
+        "pratique": "Vous achetez un produit 100 DHS et le revendez 150 DHS. Quel est le montant de la marge brute et le taux de marge ?",
+        "resume": "La MBVE concerne uniquement l'activité commerciale (Achat/Revente sans transformation).\nMBVE = Ventes - Achats Revendus.\nUn taux de marge anormalement bas attire l'attention de la DGI.\nC'est la première étape de l'ESG."
+      },
+      "en": {
+        "objectif": "Calculate and analyze the Gross Margin on Sales of Goods (MBVE) for a commercial company.",
+        "explication": "🔹 Who uses MBVE?\nThis indicator is exclusive to COMMERCIAL companies (supermarkets, boutiques, distributors). If you're a factory, this isn't for you. It measures the efficiency of your purchasing and pricing policies.\n\n🔹 The MBVE Formula\n**MBVE = Sales of goods - Cost of goods sold.**\nBeware the trap: 'Cost of goods sold' doesn't mean 'Purchases of the year'! You must account for stock variation. If you buy 100 phones but sell 80, you only calculate margin on the 80 sold.\nCost of goods sold = Purchases - Stock variation.\n\n🔹 Interpreting the Margin Rate\nIn Morocco, each sector has a typical gross margin rate. A supermarket has a low margin (15%) but high volume. A luxury boutique has a 60% margin but lower volume.\n\n👍 The Tax Radar\nThe Moroccan DGI has databases by sector. If a pharmacy declares a 10% Gross Margin when the national norm is 30%, they will be targeted for a tax audit for suspected undeclared sales.",
+        "exemple": "Zara buys 400k DHS of clothes. Stock increases by 100k (so it really only sold 300k worth of purchase cost). Total sales are 600k DHS. \nCost of goods sold = 400k - 100k = 300k. \nMBVE = 600k (Sales) - 300k (Cost) = 300k DHS Gross Margin!",
+        "pratique": "You buy a product for 100 DHS and resell it for 150 DHS. What is the gross margin amount?",
+        "resume": "MBVE concerns only commercial activity (Buy/Resell without transformation).\nMBVE = Sales - Cost of Goods Sold.\nAn abnormally low margin rate attracts DGI attention.\nIt's the first step of the ESG."
+      },
+      "ar": {
+        "objectif": "حساب وتحليل الهامش الإجمالي على مبيعات البضائع (MBVE) لشركة تجارية.",
+        "explication": "🔹 من يستخدم MBVE؟\nهذا المؤشر حصري للشركات التجارية (محلات السوبر ماركت، المتاجر، الموزعين). إذا كنت مصنعاً، فهذا المؤشر ليس لك. يقيس كفاءة سياسة الشراء وسياسة التسعير الخاصة بك.\n\n🔹 صيغة MBVE\n**MBVE = مبيعات البضائع - مشتريات البضائع المباعة.**\nاحذر الفخ: 'مشتريات البضائع المباعة' لا تعني 'مشتريات العام'! يجب أن تأخذ في الاعتبار تغير المخزون. إذا اشتريت 100 هاتف وبعت 80 فقط، فإننا نحسب الهامش فقط على الـ 80 المباعة.\nالمشتريات المباعة = مشتريات العام - تغير المخزون.\n\n🔹 تفسير معدل الهامش\nفي المغرب، لكل قطاع معدل هامش إجمالي نموذجي. على سبيل المثال، يمتلك سوبر ماركت هامشاً منخفضاً (مثلاً 15٪)، لكنه يعوض بحجم مبيعات ضخم. متجر فاخر سيكون لديه هامش 60٪، لكنه سيبيع أقل.\n\n👍 رادار الضرائب\nتمتلك DGI المغربية قواعد بيانات حسب القطاع. إذا صرح صيدلي بهامش إجمالي 10٪ بينما المعدل الوطني هو 30٪، فسيتم استهدافه فوراً لفحص ضريبي.",
+        "exemple": "يشتري متجر ملابس بـ 400 ألف درهم. يزداد مخزونه النهائي بـ 100 ألف درهم (لذلك لم يبع فعلياً سوى 300 ألف كلفة شراء). إجمالي مبيعاته 600 ألف درهم.\nالمشتريات المباعة = 400 ألف - 100 ألف = 300 ألف.\nMBVE = 600 ألف (مبيعات) - 300 ألف (مشتريات مباعة) = 300 ألف درهم هامش إجمالي!",
+        "pratique": "تشتري منتجاً بـ 100 درهم وتبيعه بـ 150 درهماً. ما هو مبلغ الهامش الإجمالي؟",
+        "resume": "يتعلق MBVE بالنشاط التجاري فقط (شراء/إعادة بيع دون تحويل).\nMBVE = المبيعات - المشتريات المباعة.\nمعدل الهامش المنخفض بشكل غير طبيعي يجذب انتباه DGI.\nإنها الخطوة الأولى في ESG."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Un commerçant ne parle jamais de son bénéfice, il ne parle que de sa 'Marge'. C'est le chiffre le plus viscéral pour lui.",
+        "La MBVE est impitoyable : si elle est mauvaise, aucune optimisation comptable en dessous (réduction des frais) ne pourra sauver l'entreprise."
+      ],
+      "en": [
+        "A trader never talks about their profit; they only talk about their 'Margin'. It's the most visceral number for them.",
+        "MBVE is ruthless: if it's bad, no accounting optimization below it (cost cutting) can save the company."
+      ],
+      "ar": [
+        "التاجر لا يتحدث أبداً عن ربحه، يتحدث فقط عن 'هامشه'. إنه الرقم الأكثر غريزية بالنسبة له.",
+        "MBVE لا يرحم: إذا كان سيئاً، فلا يمكن لأي تحسين محاسبي أدناه (خفض التكاليف) أن ينقذ الشركة."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Demandez à un commerçant local quel est son taux de marge moyen (souvent ils margent à 30%).",
+        "Calculez le taux de marge d'une bouteille d'eau achetée 3 DHS et revendue 5 DHS."
+      ],
+      "en": [
+        "Ask a local shopkeeper what their average margin rate is (often they margin at 30%).",
+        "Calculate the margin rate of a water bottle bought for 3 DHS and sold for 5 DHS."
+      ],
+      "ar": [
+        "اسأل تاجراً محلياً عن متوسط معدل هامشه (غالباً ما يكون هامشهم 30٪).",
+        "احسب معدل هامش زجاجة ماء مشتراة بـ 3 دراهم ومباعة بـ 5 دراهم."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Les contrôleurs fiscaux marocains utilisent la 'Reconstitution du Chiffre d'Affaires'. Ils prennent vos achats (qu'ils vérifient chez vos fournisseurs), y appliquent le taux de marge normal du secteur, et calculent le chiffre d'affaires que vous AUREZ DU déclarer. S'il y a un écart avec votre déclaration, vous êtes redressé !",
+      "en": "Moroccan tax auditors use 'Turnover Reconstitution'. They take your purchases (verified with your suppliers), apply the sector's normal margin rate, and calculate the turnover you SHOULD HAVE declared. If there's a gap, you get penalized!",
+      "ar": "يستخدم مفتشو الضرائب المغاربة 'إعادة بناء رقم المعاملات'. يأخذون مشترياتك (يتحققون منها مع مورديك)، ويطبقون معدل الهامش العادي للقطاع، ويحسبون رقم المعاملات الذي كان يجب عليك التصريح به. إذا كان هناك فرق، فسيتم تغريمك!"
+    },
+    "piege_frequent": {
+      "fr": "Calculer la Marge Brute en soustrayant simplement les achats de l'année des ventes. Il faut OBLIGATOIREMENT corriger les achats avec la variation de stock !",
+      "en": "Calculating Gross Margin by simply subtracting the year's purchases from sales. You MUST adjust purchases with the stock variation!",
+      "ar": "حساب الهامش الإجمالي بطرح مشتريات العام ببساطة من المبيعات. يجب عليك إلزامياً تصحيح المشتريات مع تغير المخزون!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous vendez pour 1 000 000 DHS de téléphones. Vous avez acheté pour 800 000 DHS cette année. Votre stock de téléphones était de 100 000 au 1er Janvier et de 300 000 au 31 Décembre. Calculez votre MBVE exacte.",
+        "en": "You sell 1M DHS of phones. You bought 800k DHS this year. Phone stock was 100k on Jan 1 and 300k on Dec 31. Calculate exact MBVE.",
+        "ar": "تبيع هواتف بـ مليون درهم. اشتريت بـ 800 ألف درهم هذا العام. كان مخزون الهواتف 100 ألف في 1 يناير و 300 ألف في 31 ديسمبر. احسب MBVE الدقيق."
+      },
+      "reward_xp": 75
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Excellent ! Variation de stock = Stock Final (300k) - Stock Initial (100k) = +200k. Achats revendus = 800k - 200k = 600k. MBVE = 1 000 000 - 600 000 = 400 000 DHS ! 🔥",
+        "en": "Excellent! Stock variation = Final (300k) - Initial (100k) = +200k. Cost of goods sold = 800k - 200k = 600k. MBVE = 1,000,000 - 600,000 = 400,000 DHS! 🔥",
+        "ar": "ممتاز! تغير المخزون = نهائي (300ألف) - أولي (100ألف) = +200ألف. مشتريات مباعة = 800ألف - 200ألف = 600ألف. MBVE = 1,000,000 - 600,000 = 400,000 درهم! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as fait 1 Million - 800 000. Faux ! L'entreprise a stocké 200 000 DHS de marchandises sans les vendre. Tu dois les retirer du coût d'achat ! 😭",
+        "en": "You did 1M - 800k. Wrong! The company stored 200k of goods without selling them. You must remove them from the purchase cost! 😭",
+        "ar": "لقد قمت بـ مليون - 800 ألف. خطأ! خزنت الشركة 200 ألف درهم من البضائع دون بيعها. يجب عليك إزالتها من تكلفة الشراء! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Un épicier achète une bouteille de lait à 3 DHS et la revend à 4 DHS. Quel est son taux de marge commerciale en pourcentage (entrez uniquement le chiffre, ex: 10 pour 10%) ?",
+      "correct_answer": "25",
+      "explanation": "La marge est de 1 DHS. Le taux de marge = (Marge / Prix de Vente) * 100. Donc (1 / 4) * 100 = 25%.",
+      "hint": "Calculez d'abord la marge en DHS, puis divisez par le prix de vente."
+    }
+  },
+  {
+    "id": 52,
+    "title": {
+      "fr": "La Valeur Ajoutée (VA)",
+      "en": "Value Added (VA)",
+      "ar": "القيمة المضافة (VA)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'entreprise est comme un cuisinier : elle achète des ingrédients bruts, les transforme, et crée de la valeur. La VA mesure cette richesse pure.",
+      "en": "The company is like a chef: it buys raw ingredients, transforms them, and creates value. VA measures this pure wealth.",
+      "ar": "الشركة مثل الطاهي: تشتري مكونات خام، تحولها، وتخلق قيمة. تقيس VA هذه الثروة النقية."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer la Valeur Ajoutée pour évaluer la richesse brute créée par l'entreprise, base de calcul du PIB national.",
+        "explication": "🔹 Le passage de la Marge à la Valeur Ajoutée\nSi la Marge Brute concerne les vendeurs, la Valeur Ajoutée concerne l'entreprise globale (Service et Industrie). La VA répond à la question : Quelle richesse l'entreprise a-t-elle créée elle-même, de ses propres mains, au-delà de ce qu'elle a acheté aux autres ?\n\n🔹 Le calcul de la VA\n**VA = Marge Brute + Production de l'exercice - Consommations Intermédiaires.**\n- **Production** : Les biens fabriqués ou les services vendus par l'entreprise.\n- **Consommations Intermédiaires** : Tout ce que l'entreprise achète à l'extérieur pour pouvoir travailler (Matières premières, Électricité, Loyer, Honoraires d'avocat, Fournitures).\n\n🔹 La VA et le PIB du Maroc\nPourquoi l'État adore la Valeur Ajoutée ? Parce que le PIB (Produit Intérieur Brut) du Maroc n'est rien d'autre que la somme de toutes les Valeurs Ajoutées de toutes les entreprises marocaines ! \n\n👍 Comment la VA est-elle partagée ?\nLa richesse créée (VA) servira ensuite à payer les acteurs de l'entreprise : le personnel (Salaires), l'État (Impôts), les banques (Intérêts) et enfin les associés (Bénéfice).",
+        "exemple": "Une usine de meubles achète pour 10 000 DHS de bois et 2 000 DHS d'électricité (Consommations Intermédiaires = 12 000). Elle fabrique et vend les tables pour 50 000 DHS (Production). Sa Valeur Ajoutée est de 50 000 - 12 000 = 38 000 DHS. L'usine a CRÉÉ 38 000 DHS de richesse nouvelle pour l'économie marocaine.",
+        "pratique": "Les salaires des employés sont-ils déduits pour calculer la Valeur Ajoutée ?",
+        "resume": "La Valeur Ajoutée (VA) mesure la richesse créée par le travail de l'entreprise.\nVA = Production + Marge Brute - Consommations externes.\nLes salaires et impôts NE SONT PAS des consommations externes (ils se paient grâce à la VA).\nLa somme des VA forme le PIB du pays."
+      },
+      "en": {
+        "objectif": "Calculate Value Added to evaluate the gross wealth created by the company, the basis of national GDP.",
+        "explication": "🔹 Moving from Margin to Value Added\nIf Gross Margin is for sellers, Value Added is for the whole company (Service and Industry). VA answers: What wealth did the company create with its own hands, beyond what it bought from others?\n\n🔹 Calculating VA\n**VA = Gross Margin + Production - Intermediate Consumptions.**\n- **Production**: Goods made or services sold.\n- **Intermediate Consumptions**: Everything bought externally to operate (Raw materials, Electricity, Rent, Lawyer fees, Supplies).\n\n🔹 VA and Morocco's GDP\nWhy does the State love Value Added? Because Morocco's GDP is simply the sum of all Moroccan companies' Value Added!\n\n👍 How is VA shared?\nThe wealth created (VA) will then pay the company's actors: staff (Salaries), State (Taxes), banks (Interests), and finally partners (Profit).",
+        "exemple": "A furniture factory buys 10k DHS wood and 2k DHS electricity (Intermediate Consumption = 12k). It makes and sells tables for 50k DHS (Production). Its Value Added is 50k - 12k = 38,000 DHS. The factory CREATED 38k DHS of new wealth.",
+        "pratique": "Are employee salaries deducted to calculate Value Added?",
+        "resume": "Value Added (VA) measures wealth created by the company's work.\nVA = Production + Gross Margin - External consumptions.\nSalaries and taxes are NOT external consumptions (they are paid using VA).\nSum of VAs forms the country's GDP."
+      },
+      "ar": {
+        "objectif": "حساب القيمة المضافة لتقييم الثروة الإجمالية التي خلقتها الشركة، والتي هي أساس حساب الناتج المحلي الإجمالي (PIB).",
+        "explication": "🔹 الانتقال من الهامش إلى القيمة المضافة\nإذا كان الهامش الإجمالي يخص البائعين، فإن القيمة المضافة تخص الشركة ككل (الخدمات والصناعة). تجيب VA على السؤال: ما هي الثروة التي خلقتها الشركة بنفسها، بيديها، تتجاوز ما اشترته من الآخرين؟\n\n🔹 حساب VA\n**VA = الهامش الإجمالي + إنتاج السنة - الاستهلاكات الوسيطة.**\n- **الإنتاج**: السلع المصنعة أو الخدمات المباعة.\n- **الاستهلاكات الوسيطة**: كل ما تشتريه الشركة من الخارج للعمل (مواد أولية، كهرباء، إيجار، أتعاب المحامي، لوازم).\n\n🔹 القيمة المضافة والناتج المحلي للمغرب\nلماذا تحب الدولة القيمة المضافة؟ لأن الناتج المحلي الإجمالي للمغرب ليس سوى مجموع القيم المضافة لجميع الشركات المغربية!\n\n👍 كيف تُوزع VA؟\nالثروة المخلوقة (VA) ستُستخدم بعد ذلك للدفع لفاعلي الشركة: الموظفين (رواتب)، الدولة (ضرائب)، البنوك (فوائد) وأخيراً الشركاء (أرباح).",
+        "exemple": "مصنع أثاث يشتري بـ 10آلاف درهم خشباً و 2000 درهم كهرباء (استهلاكات وسيطة = 12ألف). يصنع ويبيع الطاولات بـ 50ألف درهم (إنتاج). قيمته المضافة هي 50ألف - 12ألف = 38,000 درهم. خلق المصنع 38,000 درهم كثروة جديدة للاقتصاد المغربي.",
+        "pratique": "هل تُخصم رواتب الموظفين لحساب القيمة المضافة؟",
+        "resume": "تقيس القيمة المضافة الثروة المخلوقة بعمل الشركة.\nVA = الإنتاج + الهامش الإجمالي - الاستهلاكات الخارجية.\nالرواتب والضرائب ليست استهلاكات خارجية (تُدفع من VA).\nمجموع القيم المضافة يشكل الناتج المحلي للبلد."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Un patron fier regarde sa Valeur Ajoutée : c'est la preuve mathématique que son entreprise est utile à la société.",
+        "La TVA (Taxe sur la Valeur Ajoutée) prend tout son sens mentalement : l'État taxe exactement cette tranche de richesse nouvelle."
+      ],
+      "en": [
+        "A proud boss looks at their Value Added: it's mathematical proof their company is useful to society.",
+        "VAT (Value Added Tax) makes perfect mental sense: the State taxes exactly this slice of new wealth."
+      ],
+      "ar": [
+        "المدير الفخور ينظر إلى قيمته المضافة: إنها دليل رياضي على أن شركته مفيدة للمجتمع.",
+        "TVA (الضريبة على القيمة المضافة) تكتسب معناها الذهني الكامل: تفرض الدولة ضريبة على هذه الشريحة بالضبط من الثروة الجديدة."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez la définition de 'Consommation Intermédiaire' : tout achat externe détruit lors du processus (électricité, essence, matières).",
+        "Dessinez un camembert de la VA et divisez-le en 4 parts : Salariés, État, Banques, Entreprise."
+      ],
+      "en": [
+        "Memorize the definition of 'Intermediate Consumption': any external purchase destroyed during the process (electricity, gas, materials).",
+        "Draw a VA pie chart and divide it into 4 slices: Employees, State, Banks, Company."
+      ],
+      "ar": [
+        "احفظ تعريف 'الاستهلاك الوسيط': كل شراء خارجي يُدمر أثناء العملية (كهرباء، بنزين، مواد).",
+        "ارسم مخططاً دائرياً لـ VA وقسمه إلى 4 أجزاء: موظفون، دولة، بنوك، شركة."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Les analystes calculent le 'Taux de Valeur Ajoutée' (VA / Chiffre d'Affaires). Si le taux est élevé, l'entreprise maîtrise son processus de A à Z (ex: un artisan). Si le taux est faible, l'entreprise sous-traite beaucoup (ex: une usine de montage qui achète des pièces toutes faites).",
+      "en": "Analysts calculate the 'Value Added Rate' (VA / Turnover). If high, the company controls its process from A to Z (e.g., an artisan). If low, it outsources a lot (e.g., assembly plant buying ready-made parts).",
+      "ar": "يحسب المحللون 'معدل القيمة المضافة' (VA / رقم المعاملات). إذا كان المعدل مرتفعاً، فالشركة تتحكم في عمليتها من الألف إلى الياء (مثال: حرفي). إذا كان منخفضاً، فالشركة تعتمد كثيراً على المناولة (مثال: مصنع تجميع يشتري أجزاء جاهزة)."
+    },
+    "piege_frequent": {
+      "fr": "Soustraire les salaires pour trouver la Valeur Ajoutée. C'est l'erreur la plus fréquente ! Les employés font partie de l'entreprise, leur travail CRÉE la valeur ajoutée. On ne les déduit qu'à l'étape suivante (l'EBE).",
+      "en": "Subtracting salaries to find Value Added. Most frequent mistake! Employees are part of the company; their work CREATES the value added. They are deducted at the next step (EBE).",
+      "ar": "طرح الرواتب للعثور على القيمة المضافة. هذا هو الخطأ الأكثر شيوعاً! الموظفون جزء من الشركة، وعملهم 'يخلق' القيمة المضافة. تُخصم الرواتب في المرحلة التالية (EBE)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous avez produit pour 200 000 DHS de chaussures. Vous avez acheté pour 50 000 DHS de cuir, payé 10 000 DHS d'électricité, et payé 40 000 DHS de salaires. Calculez votre Valeur Ajoutée.",
+        "en": "Produced 200k DHS of shoes. Bought 50k DHS leather, paid 10k electricity, paid 40k salaries. Calculate your Value Added.",
+        "ar": "أنتجت أحذية بـ 200 ألف درهم. اشتريت جلداً بـ 50 ألف، ودفعت 10 آلاف كهرباء، و 40 ألف رواتب. احسب قيمتك المضافة."
+      },
+      "reward_xp": 60
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Excellent ! VA = Production (200k) - Consommations externes (50k + 10k) = 140 000 DHS. Tu n'as pas touché aux salaires, parfait ! 🔥",
+        "en": "Excellent! VA = Production (200k) - External consumptions (50k + 10k) = 140,000 DHS. You didn't touch salaries, perfect! 🔥",
+        "ar": "ممتاز! VA = الإنتاج (200ألف) - الاستهلاكات الخارجية (50ألف + 10ألف) = 140,000 درهم. لم تلمس الرواتب، رائع! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as retiré les 40 000 DHS de salaires. C'est une erreur classique de l'ESG ! Les salaires ne sont pas des consommations externes. 😭",
+        "en": "You subtracted the 40k DHS salaries. Classic ESG mistake! Salaries are not external consumptions. 😭",
+        "ar": "لقد طرحت الـ 40 ألف رواتب. هذا خطأ كلاسيكي في ESG! الرواتب ليست استهلاكات خارجية. 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Parmi ces charges de l'entreprise, laquelle est considérée comme une 'Consommation Intermédiaire' et doit être soustraite pour trouver la Valeur Ajoutée ?",
+      "options": [
+        "Les impôts payés à la DGI",
+        "La facture d'essence des camions de livraison",
+        "Les salaires des ouvriers",
+        "Les dotations aux amortissements des machines"
+      ],
+      "correct_answer": "La facture d'essence des camions de livraison",
+      "explanation": "L'essence est un achat externe (Classe 61) qui est détruit/consommé pendant l'activité de l'entreprise. Les impôts, salaires et amortissements ne sont pas des achats externes.",
+      "hint": "C'est un bien ou service acheté à l'extérieur de l'entreprise et qui disparaît à l'usage."
+    }
+  },
+  {
+    "id": 53,
+    "title": {
+      "fr": "L'Excédent Brut d'Exploitation (EBE)",
+      "en": "Gross Operating Surplus (EBITDA)",
+      "ar": "إجمالي فائض الاستغلال (EBE / EBITDA)"
+    },
+    "xp": 110,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'EBE est le juge impitoyable du business. Il vous dit si votre entreprise génère du vrai cash avec son métier, avant de pleurer sur les impôts et les banques.",
+      "en": "EBE is the ruthless judge of business. It tells you if your company generates real cash from its core trade, before crying over taxes and banks.",
+      "ar": "EBE هو القاضي الذي لا يرحم للأعمال. يخبرك ما إذا كانت شركتك تدر نقداً حقيقياً من مهنتها الأساسية، قبل البكاء على الضرائب والبنوك."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer l'EBE, l'indicateur financier le plus important au monde pour évaluer la rentabilité d'un modèle économique.",
+        "explication": "🔹 Le passage de la VA à l'EBE\nNous avons la Valeur Ajoutée (la richesse créée). Maintenant, il faut payer les acteurs. \n- L'État prend sa part locale (Impôts et taxes, comme la Patente, mais attention : PAS l'IS !).\n- Le personnel prend sa part (Salaires et charges CNSS).\n**EBE = Valeur Ajoutée + Subventions d'exploitation - Impôts/Taxes - Charges de Personnel.**\n\n🔹 Pourquoi l'EBE est-il la star des banquiers ?\nL'EBE (ou EBITDA en anglais) est le flux de trésorerie purement opérationnel. \nIl ne prend PAS en compte : \n- L'amortissement (car ce n'est pas une sortie de cash réelle).\n- Les intérêts bancaires (car ils dépendent de la façon dont l'entreprise est financée, pas de son métier de base).\n- L'Impôt sur les Sociétés (IS).\nDonc, si deux entreprises font la même chose (ex: deux cafés), vous pouvez comparer leurs EBE pour savoir qui a le meilleur concept, sans être biaisé par celui qui a le plus de crédits bancaires !\n\n👍 EBE Négatif (Insuffisance Brute d'Exploitation - IBE)\nSi votre EBE est négatif, vous avez un problème majeur. Vos ventes ne couvrent même pas vos achats et vos employés. L'entreprise brûle du cash tous les jours et se dirige vers la faillite.",
+        "exemple": "Le Café Atlas a une VA de 500 000 DHS. Il paie 10 000 DHS de taxe locale et 300 000 DHS de salaires. Son EBE est de 190 000 DHS. Ces 190 000 DHS serviront ensuite à rembourser le banquier et payer l'IS à l'État.",
+        "pratique": "Si l'entreprise n'a pas de dette bancaire, l'EBE sera-t-il différent de si elle avait 1 Million de DHS de dette ?",
+        "resume": "EBE = Richesse restante après avoir payé les achats, l'État local et les salariés.\nIl ignore les politiques d'amortissement et les dettes bancaires.\nIl permet de comparer la rentabilité opérationnelle pure de deux entreprises.\nUn EBE négatif est une alerte rouge de faillite."
+      },
+      "en": {
+        "objectif": "Calculate EBE (EBITDA), the world's most important financial indicator for evaluating business model profitability.",
+        "explication": "🔹 Moving from VA to EBE\nWe have Value Added (wealth created). Now, pay the actors.\n- State takes local share (Taxes like Patente, but NOT Corporate Tax!).\n- Staff takes its share (Wages and CNSS).\n**EBE = Value Added + Subsidies - Taxes - Personnel Expenses.**\n\n🔹 Why is EBE the bankers' star?\nEBE (EBITDA) is purely operational cash flow.\nIt does NOT include:\n- Depreciation (not a real cash outflow).\n- Bank interests (depends on financing, not the core business).\n- Corporate Tax (IS).\nIf two cafes operate, comparing EBE tells you who has the better concept, unbiased by who has more bank loans!\n\n👍 Negative EBE (IBE)\nIf EBE is negative, major problem. Sales don't even cover purchases and staff. The company burns cash daily toward bankruptcy.",
+        "exemple": "Cafe Atlas has VA of 500k. Pays 10k local tax, 300k salaries. EBE is 190k DHS. This 190k will then pay the banker and State IS.",
+        "pratique": "If the company has no bank debt, will EBE differ from if it had 1 Million DHS in debt?",
+        "resume": "EBE = Wealth remaining after paying purchases, local State, and staff.\nIt ignores depreciation policies and bank debts.\nIt compares pure operational profitability.\nNegative EBE is a red alert for bankruptcy."
+      },
+      "ar": {
+        "objectif": "حساب EBE، أهم مؤشر مالي في العالم لتقييم ربحية نموذج العمل.",
+        "explication": "🔹 الانتقال من VA إلى EBE\nلدينا القيمة المضافة (الثروة المخلوقة). الآن، يجب الدفع للفاعلين.\n- تأخذ الدولة حصتها المحلية (ضرائب ورسوم، مثل Patente، لكن انتبه: ليس ضريبة IS!).\n- يأخذ الموظفون حصتهم (الرواتب ورسوم CNSS).\n**EBE = القيمة المضافة + إعانات الاستغلال - الضرائب/الرسوم - تكاليف الموظفين.**\n\n🔹 لماذا EBE هو نجم المصرفيين؟\nEBE (EBITDA بالإنجليزية) هو التدفق النقدي التشغيلي البحت.\nإنه لا يأخذ في الاعتبار:\n- الإهلاك (لأنه ليس تدفقاً نقدياً حقيقياً خارجاً).\n- الفوائد البنكية (لأنها تعتمد على كيفية تمويل الشركة، وليس على مهنتها الأساسية).\n- الضريبة على الشركات (IS).\nلذا، إذا كان هناك مقهيان، يمكنك مقارنة EBE الخاص بهما لمعرفة أيهما لديه المفهوم الأفضل، دون الانحياز لمن لديه قروض بنكية أكثر!\n\n👍 EBE سلبي (IBE)\nإذا كان EBE سلبياً، فلديك مشكلة كبرى. مبيعاتك لا تغطي حتى مشترياتك وموظفيك. تحرق الشركة النقد يومياً وتتجه نحو الإفلاس.",
+        "exemple": "مقهى أطلس لديه VA بـ 500 ألف درهم. يدفع 10 آلاف ضريبة محلية و 300 ألف رواتب. EBE هو 190 ألف درهم. ستُستخدم هذه الـ 190 ألفاً لاحقاً لسداد البنك ودفع IS للدولة.",
+        "pratique": "إذا لم يكن على الشركة دين بنكي، هل سيختلف EBE عما إذا كان عليها دين بمليون درهم؟",
+        "resume": "EBE = الثروة المتبقية بعد دفع المشتريات والدولة المحلية والموظفين.\nيتجاهل سياسات الإهلاك والديون البنكية.\nيسمح بمقارنة الربحية التشغيلية البحتة لشركتين.\nEBE السلبي هو إنذار أحمر للإفلاس."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Un patron focalise sur le Résultat Net (ce qu'il met dans sa poche). L'analyste focalise sur l'EBE (ce que la machine produit vraiment).",
+        "Un EBE solide donne confiance en l'avenir : on sait qu'on peut s'endetter pour grandir, car l'activité crache du cash."
+      ],
+      "en": [
+        "A boss focuses on Net Profit (what goes in their pocket). The analyst focuses on EBE (what the machine truly produces).",
+        "A solid EBE gives confidence in the future: you know you can take on debt to grow, because the core activity spits out cash."
+      ],
+      "ar": [
+        "يركز المدير على النتيجة الصافية (ما يضعه في جيبه). يركز المحلل على EBE (ما تنتجه الآلة حقاً).",
+        "EBE القوي يعطي ثقة في المستقبل: تعلم أنه يمكنك الاستدانة للنمو، لأن النشاط الأساسي يدر نقداً."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez : EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) = EBE en français.",
+        "Écrivez sur un post-it : L'EBE ne tient jamais compte des frais bancaires ni des amortissements.",
+        "Regardez l'article Wikipedia de l'EBITDA pour comprendre sa popularité mondiale."
+      ],
+      "en": [
+        "Memorize: EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) = EBE in French.",
+        "Write on a post-it: EBE never accounts for bank fees or depreciation.",
+        "Look at the EBITDA Wikipedia article to understand its global popularity."
+      ],
+      "ar": [
+        "احفظ: EBITDA (الأرباح قبل الفوائد والضرائب والإهلاك والاستهلاك) = EBE بالفرنسية.",
+        "اكتب على ورقة: EBE لا يأخذ في الاعتبار أبداً الرسوم البنكية أو الإهلاكات.",
+        "انظر مقال Wikipedia عن EBITDA لفهم شعبيتها العالمية."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Les investisseurs regardent souvent le ratio 'Dette Nette / EBE'. Si ce ratio dépasse 3 ou 4, les banques marocaines refuseront souvent un nouveau crédit, car elles estiment que l'entreprise mettra trop d'années (son EBE) pour rembourser sa dette !",
+      "en": "Investors often look at the 'Net Debt / EBE' ratio. If this ratio exceeds 3 or 4, Moroccan banks will often refuse new credit, estimating the company will take too many years (its EBE) to repay its debt!",
+      "ar": "غالباً ما ينظر المستثمرون إلى نسبة 'صافي الدين / EBE'. إذا تجاوزت هذه النسبة 3 أو 4، فغالباً ما سترفض البنوك المغربية ائتماناً جديداً، حيث تقدر أن الشركة ستستغرق سنوات طويلة جداً (EBE الخاص بها) لسداد دينها!"
+    },
+    "piege_frequent": {
+      "fr": "Soustraire l'Impôt sur les Sociétés (IS) pour calculer l'EBE. Le 'E' de EBE signifie 'Exploitation'. L'IS vient tout en bas du CPC, bien après l'EBE. Ne soustrayez que les impôts liés à l'activité (comme la Taxe professionnelle).",
+      "en": "Subtracting Corporate Tax (IS) to calculate EBE. The 'E' in EBE means 'Exploitation' (Operations). IS comes at the very bottom of the CPC, long after EBE. Only subtract operation-related taxes.",
+      "ar": "طرح الضريبة على الشركات (IS) لحساب EBE. يرمز حرف 'E' في EBE إلى 'الاستغلال'. تأتي IS في أسفل CPC، بعد EBE بوقت طويل. اطرح فقط الضرائب المرتبطة بالنشاط."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Valeur Ajoutée = 500k. Salaires = 200k. Amortissements = 50k. Intérêts bancaires = 30k. IS (Impôt) = 20k. Calculez l'EBE de cette entreprise.",
+        "en": "Value Added = 500k. Salaries = 200k. Depreciation = 50k. Bank interest = 30k. Corporate Tax (IS) = 20k. Calculate the company's EBE.",
+        "ar": "القيمة المضافة = 500ألف. الرواتب = 200ألف. الإهلاك = 50ألف. فوائد بنكية = 30ألف. IS = 20ألف. احسب EBE."
+      },
+      "reward_xp": 75
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Excellent ! L'EBE = 500k - 200k (Salaires) = 300 000 DHS. Tu n'as pas enlevé les amortissements, ni les intérêts, ni l'IS ! L'EBE est la performance AVANT ces éléments. 🔥",
+        "en": "Excellent! EBE = 500k - 200k (Salaries) = 300,000 DHS. You didn't subtract depreciation, interest, or IS! EBE is performance BEFORE these elements. 🔥",
+        "ar": "ممتاز! EBE = 500ألف - 200ألف (رواتب) = 300,000 درهم. لم تطرح الإهلاك، أو الفوائد، أو IS! EBE هو الأداء قبل هذه العناصر. 🔥"
+      },
+      "bad": {
+        "fr": "Tu as soustrait les amortissements. C'est l'erreur piège ! Les amortissements ne sont pas des sorties de trésorerie de l'exploitation. 😭",
+        "en": "You subtracted depreciation. Trap error! Depreciation is not an operating cash outflow. 😭",
+        "ar": "لقد طرحت الإهلاكات. هذا فخ! الإهلاك ليس تدفقاً نقدياً تشغيلياً خارجاً. 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Votre Valeur Ajoutée est de 1 000 000 DHS. Vos charges de personnel (salaires + CNSS) sont de 600 000 DHS. Vous n'avez pas de taxes locales ni de subventions. Quel est votre EBE ?",
+      "correct_answer": "400000",
+      "explanation": "EBE = Valeur Ajoutée - Charges de Personnel. 1 000 000 - 600 000 = 400 000 DHS.",
+      "hint": "C'est la différence entre la richesse créée et le coût humain de cette création."
+    }
+  },
+  {
+    "id": 54,
+    "title": {
+      "fr": "La Capacité d'Autofinancement (CAF)",
+      "en": "Self-Financing Capacity (CAF)",
+      "ar": "قدرة التمويل الذاتي (CAF)"
+    },
+    "xp": 95,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le Résultat Net du Bilan est parfois faussé par des écritures invisibles (comme l'amortissement). La CAF révèle le VRAI CASH potentiel généré par l'entreprise pendant l'année.",
+      "en": "Net Profit is sometimes skewed by invisible entries (like depreciation). CAF reveals the TRUE potential CASH generated by the company during the year.",
+      "ar": "أحياناً يُشوه صافي الربح في الميزانية بقيود غير مرئية (مثل الإهلاك). يكشف CAF عن 'النقد المحتمل الحقيقي' الذي ولدته الشركة خلال العام."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer la Capacité d'Autofinancement (CAF) pour savoir si l'entreprise peut investir sans demander l'aide des banques.",
+        "explication": "🔹 Le mensonge du Résultat Net\nSi votre Résultat Net est de 50 000 DHS, vous pensez avoir gagné 50 000 DHS en cash. FAUX ! Dans vos charges, vous avez peut-être compté 100 000 DHS de Dotation aux Amortissements. Or, un amortissement est une charge 'calculée', vous n'avez pas fait de chèque de 100 000 DHS ! Donc, en réalité, vous avez généré beaucoup plus de trésorerie que ce que le bénéfice indique.\n\n🔹 La méthode de calcul de la CAF (Méthode Additive)\nLa méthode la plus rapide part du bas du CPC (Le Résultat Net) et fait marche arrière pour 'corriger' le mensonge.\n**CAF = Résultat Net + Dotations aux Amortissements/Provisions - Reprises.**\n- On rajoute les Dotations car ce sont des charges qui n'ont pas fait sortir d'argent.\n- On retire les Reprises car ce sont des produits qui n'ont pas fait entrer d'argent.\n\n🔹 Pourquoi la CAF est cruciale ?\nLa CAF (Capacité d'Autofinancement) représente l'argent frais, pur et dur, que l'entreprise a fabriqué cette année. Que va-t-elle en faire ?\n1. Payer des dividendes aux actionnaires.\n2. L'utiliser pour s'autofinancer (acheter une nouvelle machine sans crédit).\n3. Rembourser ses anciens crédits bancaires.",
+        "exemple": "SARL Atlas déclare un Bénéfice Net de 20 000 DHS. Pendant l'année, elle a passé 80 000 DHS d'amortissements. Sa CAF est de : 20 000 + 80 000 = 100 000 DHS. L'entreprise a réellement dégagé 100 000 DHS de potentiel de trésorerie !",
+        "pratique": "Les dividendes versés aux actionnaires sont-ils déduits pour calculer la CAF ou prélevés sur la CAF ?",
+        "resume": "La CAF mesure le cash-flow potentiel généré sur l'année.\nCAF = Résultat Net + Charges calculées (Dotations) - Produits calculés (Reprises).\nUne CAF forte permet de s'autofinancer et de rembourser les banques facilement.\nC'est la dernière étape du tableau de l'ESG."
+      },
+      "en": {
+        "objectif": "Calculate Self-Financing Capacity (CAF) to know if the company can invest without bank help.",
+        "explication": "🔹 The Net Profit Lie\nIf Net Profit is 50k, you think you made 50k in cash. FALSE! You might have expensed 100k in Depreciation. Depreciation is a 'calculated' expense, you didn't write a 100k check! So, you actually generated much more cash than the profit shows.\n\n🔹 CAF Calculation (Additive Method)\nThe fastest method starts from the bottom of CPC (Net Profit) and works backward to 'fix' the lie.\n**CAF = Net Profit + Depreciation/Provision Expenses - Reversals.**\n- Add back Dotations: they are expenses with no cash outflow.\n- Subtract Reprises: they are income with no cash inflow.\n\n🔹 Why is CAF crucial?\nCAF represents the fresh, hard cash potential generated this year. What will it be used for?\n1. Pay dividends to shareholders.\n2. Self-finance (buy a new machine without a loan).\n3. Repay old bank loans.",
+        "exemple": "Atlas declares 20k Net Profit. Passed 80k in depreciation. CAF = 20k + 80k = 100k DHS. The company actually generated 100k in cash flow potential!",
+        "pratique": "Are dividends paid to shareholders deducted to calculate CAF or taken from CAF?",
+        "resume": "CAF measures potential cash flow generated in the year.\nCAF = Net Profit + Calculated Expenses (Dotations) - Calculated Income (Reprises).\nA strong CAF allows self-financing and easy loan repayment.\nLast step of the ESG."
+      },
+      "ar": {
+        "objectif": "حساب قدرة التمويل الذاتي (CAF) لمعرفة ما إذا كانت الشركة قادرة على الاستثمار دون مساعدة البنوك.",
+        "explication": "🔹 كذبة النتيجة الصافية\nإذا كانت نتيجتك الصافية 50 ألف درهم، تعتقد أنك كسبت 50 ألف نقداً. خطأ! ربما تكون قد حسبت 100 ألف درهم כמخصص إهلاك. الإهلاك هو تكلفة 'محسوبة'، لم تكتب شيكاً بـ 100 ألف! إذن، في الواقع، أنت ولدت سيولة أكثر بكثير مما يشير إليه الربح.\n\n🔹 طريقة حساب CAF (الطريقة الإضافية)\nالطريقة الأسرع تبدأ من أسفل CPC (النتيجة الصافية) وتعمل عكسياً لـ 'إصلاح' الكذبة.\n**CAF = النتيجة الصافية + مخصصات الإهلاك/الاحتياطيات - الاستردادات.**\n- نضيف المخصصات (Dotations) لأنها تكاليف لم تخرج مالاً.\n- نطرح الاستردادات (Reprises) لأنها إيرادات لم تدخل مالاً.\n\n🔹 لماذا CAF حاسمة؟\nتمثل CAF النقد الجديد الصافي الذي صنعته الشركة هذا العام. ماذا ستفعل به؟\n1. دفع أرباح للمساهمين.\n2. التمويل الذاتي (شراء آلة جديدة دون قرض).\n3. سداد قروض بنكية قديمة.",
+        "exemple": "تصرح SARL Atlas بربح صافي قدره 20 ألف درهم. مررت 80 ألف درهم كإهلاك. قدرة التمويل الذاتي لها هي: 20 ألف + 80 ألف = 100 ألف درهم. لقد أفرزت الشركة بالفعل 100 ألف درهم من إمكانات السيولة!",
+        "pratique": "هل تُخصم الأرباح الموزعة على المساهمين لحساب CAF أم تُؤخذ من CAF؟",
+        "resume": "يقيس CAF التدفق النقدي المحتمل المتولد خلال العام.\nCAF = النتيجة الصافية + التكاليف المحسوبة (مخصصات) - الإيرادات المحسوبة (استردادات).\nCAF القوي يسمح بالتمويل الذاتي وسداد البنوك بسهولة.\nإنها الخطوة الأخيرة في جدول ESG."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "La CAF est un retour à la réalité : on efface la théorie comptable (les amortissements) pour revenir au vrai cash.",
+        "Une entreprise avec des pertes comptables mais une CAF positive peut survivre très longtemps. C'est l'espoir des start-ups !"
+      ],
+      "en": [
+        "CAF is a return to reality: erasing accounting theory (depreciation) to get back to real cash.",
+        "A company with accounting losses but positive CAF can survive a very long time. This is the hope of startups!"
+      ],
+      "ar": [
+        "CAF هو عودة للواقع: نمحو النظرية المحاسبية (الإهلاكات) للعودة إلى النقد الحقيقي.",
+        "الشركة التي لديها خسائر محاسبية ولكن CAF إيجابي يمكن أن تعيش طويلاً. هذا هو أمل الشركات الناشئة!"
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez la différence : Bénéfice = Comptable. CAF = Cash potentiel.",
+        "Tracez la formule simple : Résultat Net + Dotations = CAF."
+      ],
+      "en": [
+        "Memorize the difference: Profit = Accounting. CAF = Potential cash.",
+        "Trace the simple formula: Net Profit + Dotations = CAF."
+      ],
+      "ar": [
+        "احفظ الفرق: الربح = محاسبي. CAF = نقد محتمل.",
+        "ارسم الصيغة البسيطة: النتيجة الصافية + المخصصات = CAF."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Si on prend la CAF et qu'on soustrait les dividendes versés aux actionnaires, on obtient 'l'Autofinancement'. C'est ce qui reste VRAIMENT dans les caisses de l'entreprise pour grandir l'année suivante.",
+      "en": "If we take CAF and subtract dividends paid to shareholders, we get 'Self-Financing' (Autofinancement). This is what REALLY remains in company coffers to grow next year.",
+      "ar": "إذا أخذنا CAF وطرحنا الأرباح الموزعة للمساهمين، نحصل على 'التمويل الذاتي' (Autofinancement). هذا هو ما يتبقى حقاً في خزائن الشركة لتنمو العام القادم."
+    },
+    "piege_frequent": {
+      "fr": "Oublier que la CAF est une trésorerie POTENTIELLE. Si l'entreprise vend beaucoup mais que ses clients ne paient pas (crédit), la CAF est élevée, mais le compte en banque est vide ! Il faut recouvrir ses créances.",
+      "en": "Forgetting CAF is POTENTIAL cash flow. If a company sells a lot but clients don't pay (credit), CAF is high, but the bank account is empty! You must collect receivables.",
+      "ar": "نسيان أن CAF هي سيولة 'محتملة'. إذا باعت الشركة كثيراً لكن العملاء لم يدفعوا (على الحساب)، يكون CAF مرتفعاً، لكن الحساب البنكي فارغ! يجب تحصيل المستحقات."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Bénéfice Net : 40 000 DHS. Dotations aux amortissements : 60 000 DHS. Reprises sur provisions : 10 000 DHS. Calculez la CAF.",
+        "en": "Net Profit: 40k DHS. Depreciation expense: 60k DHS. Provision reversals: 10k DHS. Calculate CAF.",
+        "ar": "الربح الصافي: 40ألف درهم. مخصصات الإهلاك: 60ألف درهم. استرداد مخصصات: 10آلاف درهم. احسب CAF."
+      },
+      "reward_xp": 50
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Parfait ! CAF = 40 000 + 60 000 - 10 000 = 90 000 DHS. L'entreprise a un fort potentiel de cash-flow. 🔥",
+        "en": "Perfect! CAF = 40,000 + 60,000 - 10,000 = 90,000 DHS. Strong cash-flow potential. 🔥",
+        "ar": "ممتاز! CAF = 40,000 + 60,000 - 10,000 = 90,000 درهم. الشركة لديها إمكانات تدفق نقدي قوية. 🔥"
+      },
+      "bad": {
+        "fr": "Tu as ajouté les Reprises. Attention, les reprises sont des 'revenus fictifs', il faut les retirer pour retrouver le cash potentiel ! 😭",
+        "en": "You added Reversals. Warning, reversals are 'fictitious income', you must subtract them to find potential cash! 😭",
+        "ar": "لقد أضفت الاستردادات. انتبه، الاستردادات هي 'دخل وهمي'، يجب طرحها للعثور على النقد المحتمل! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Votre entreprise affiche une perte nette de -10 000 DHS. Cependant, vous avez enregistré 50 000 DHS de dotations aux amortissements cette année. Quelle est votre CAF (entrez le nombre) ?",
+      "correct_answer": "40000",
+      "explanation": "CAF = Résultat Net (-10 000) + Dotations (50 000) = 40 000 DHS.",
+      "hint": "Additionnez le montant des dotations au résultat (qui est négatif)."
+    }
+  },
+  {
+    "id": 55,
+    "title": {
+      "fr": "Le TAFIRE — Tableau de Financement",
+      "en": "TAFIRE — The Cash Flow Statement",
+      "ar": "TAFIRE — جدول التمويل"
+    },
+    "xp": 120,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le Bilan est une photo, le TAFIRE est la vidéo entre deux photos. Il montre où l'entreprise a trouvé de l'argent et où elle l'a dépensé sur une année.",
+      "en": "Balance sheet is a photo, TAFIRE is the video between two photos. It shows where the company found money and where it spent it over a year.",
+      "ar": "الميزانية صورة، و TAFIRE هو الفيديو بين صورتين. يوضح من أين حصلت الشركة على المال وأين أنفقته خلال عام."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comprendre le Tableau de Financement (obligatoire pour les grandes entreprises au Maroc) pour analyser la santé financière à long terme.",
+        "explication": "🔹 Qu'est-ce que le TAFIRE ?\nLe TAFIRE (Tableau de Financement des Ressources et des Emplois) est un état de synthèse marocain. Si une entreprise fait plus de 10 Millions de DHS de chiffre d'affaires (Modèle Normal), la DGI l'oblige à produire ce document.\nIl compare le Bilan de 2023 et le Bilan de 2024 pour voir les mouvements de fonds.\n\n🔹 Emplois vs Ressources\nLe TAFIRE se divise en deux colonnes vitales :\n- **Les Ressources (D'où vient l'argent ?)** : \n  - La CAF (la richesse créée en interne).\n  - Les Nouveaux Emprunts Bancaires.\n  - Les Apports en Capital des associés.\n- **Les Emplois (Où est allé l'argent ?)** : \n  - Les Investissements (Achats de machines, voitures).\n  - Les Remboursements d'Emprunts.\n  - Les Dividendes versés.\n\n🔹 La Variation du Fonds de Roulement\nSi vos Ressources de l'année sont SUPÉRIEURES à vos Emplois (Investissements), vous avez un excédent de cash long-terme. L'entreprise respire ! Si vos Emplois sont supérieurs (vous avez trop investi sans avoir de CAF ou de crédit), l'entreprise s'étouffe et la trésorerie plongera.\n\n👍 Le test ultime du Banquier\nUn banquier regarde le TAFIRE pour vérifier une règle d'or : 'Les emplois longs doivent être financés par des ressources longues'. On n'achète pas une usine (Emploi long) avec un découvert bancaire (Ressource courte) !",
+        "exemple": "Ressources 2024 : CAF (100k) + Nouveau Prêt (200k) = 300k. Emplois 2024 : Achat Machine (250k) + Remboursement ancien prêt (50k) = 300k. Le TAFIRE est à l'équilibre. L'entreprise a parfaitement financé sa croissance.",
+        "pratique": "L'achat d'un nouveau siège social est-il une Ressource (entrée de fonds) ou un Emploi (utilisation de fonds) ?",
+        "resume": "Le TAFIRE explique la variation du patrimoine entre deux années.\nIl oppose les Emplois (Investissements, remboursements) aux Ressources (CAF, Nouveaux prêts).\nObligatoire au Maroc pour le Modèle Normal (> 10M DHS de CA).\nIl vérifie si la stratégie d'investissement est bien financée."
+      },
+      "en": {
+        "objectif": "Understand the Cash Flow Statement (mandatory for large companies in Morocco) to analyze long-term financial health.",
+        "explication": "🔹 What is TAFIRE?\nTAFIRE (Tableau de Financement des Ressources et des Emplois) is a Moroccan summary statement. If a company makes over 10 Million DHS in revenue, the DGI requires it. It compares the 2023 and 2024 Balance Sheets to see fund movements.\n\n🔹 Uses vs Resources (Emplois vs Ressources)\nTAFIRE is divided into two vital columns:\n- **Resources (Where did money come from?)**:\n  - CAF (internally created wealth).\n  - New Bank Loans.\n  - Capital injections by partners.\n- **Uses (Where did money go?)**:\n  - Investments (Buying machines, cars).\n  - Loan Repayments.\n  - Dividends paid.\n\n🔹 Variation of Working Capital\nIf Resources > Uses, you have a long-term cash surplus. The company breathes! If Uses > Resources (invested too much without CAF/loans), treasury tanks.\n\n👍 The Banker's ultimate test\nBankers check the golden rule: 'Long-term uses must be financed by long-term resources'. Don't buy a factory with a bank overdraft!",
+        "exemple": "2024 Resources: CAF (100k) + New Loan (200k) = 300k. 2024 Uses: Buy Machine (250k) + Old loan repayment (50k) = 300k. Balanced. Perfect growth financing.",
+        "pratique": "Is buying a new headquarters a Resource (fund inflow) or a Use (fund utilization)?",
+        "resume": "TAFIRE explains wealth variation between two years.\nIt opposes Uses (Investments) to Resources (CAF, New loans).\nMandatory in Morocco for Normal Model (>10M DHS revenue).\nVerifies if investment strategy is well financed."
+      },
+      "ar": {
+        "objectif": "فهم جدول التمويل (إلزامي للشركات الكبرى في المغرب) لتحليل الصحة المالية على المدى الطويل.",
+        "explication": "🔹 ما هو TAFIRE؟\nجدول تمويل الموارد والاستخدامات هو بيان تجميعي مغربي. إذا حققت شركة أكثر من 10 ملايين درهم من المبيعات، تلزمها DGI بإعداده. يقارن بين ميزانية 2023 و 2024 لمعرفة حركة الأموال.\n\n🔹 الاستخدامات مقابل الموارد\nينقسم إلى عمودين حيويين:\n- **الموارد (من أين أتى المال؟)**:\n  - CAF (الثروة المخلوقة داخلياً).\n  - القروض البنكية الجديدة.\n  - ضخ رأس المال من الشركاء.\n- **الاستخدامات (أين ذهب المال؟)**:\n  - الاستثمارات (شراء آلات، سيارات).\n  - سداد القروض.\n  - توزيعات الأرباح.\n\n🔹 تغير رأس المال العامل\nإذا كانت مواردك > استخداماتك، فلديك فائض نقدي طويل الأجل. الشركة تتنفس! إذا كانت الاستخدامات أكبر (استثمرت كثيراً دون CAF/قروض)، ستغرق الخزينة.\n\n👍 الاختبار النهائي للمصرفي\nيتحقق المصرفيون من القاعدة الذهبية: 'يجب تمويل الاستخدامات الطويلة بموارد طويلة'. لا تشتري مصنعاً بسحب على المكشوف!",
+        "exemple": "موارد 2024: CAF (100ألف) + قرض جديد (200ألف) = 300ألف. الاستخدامات: شراء آلة (250ألف) + سداد قرض (50ألف) = 300ألف. متوازن. تمويل نمو مثالي.",
+        "pratique": "هل شراء مقر جديد هو مورد (دخول أموال) أم استخدام (استغلال أموال)؟",
+        "resume": "يشرح TAFIRE تغير الذمة المالية بين عامين.\nيقابل الاستخدامات بالموارد.\nإلزامي في المغرب للنموذج العادي (> 10 مليون درهم مبيعات).\nيتحقق مما إذا كانت استراتيجية الاستثمار ممولة جيداً."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Le TAFIRE est le document le plus 'stratégique' de la liasse fiscale. Il raconte l'histoire des choix du gérant (a-t-il investi ? s'est-il endetté ?).",
+        "Pour un étudiant, c'est souvent le tableau le plus effrayant car il faut tout connecter. Mais une fois compris, c'est une révélation logique absolue."
+      ],
+      "en": [
+        "TAFIRE is the most 'strategic' document in the tax return. It tells the story of the manager's choices (did they invest? take on debt?).",
+        "For a student, it's often the scariest table because everything connects. But once understood, it's an absolute logical revelation."
+      ],
+      "ar": [
+        "TAFIRE هي الوثيقة الأكثر 'استراتيجية' في الحزمة الضريبية. تحكي قصة خيارات المدير (هل استثمر؟ هل استدان؟).",
+        "بالنسبة للطالب، غالباً ما يكون الجدول الأكثر إخافة لأن كل شيء يتصل. لكن بمجرد فهمه، يصبح إلهاماً منطقياً مطلقاً."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez le duo : Emploi = Investir l'argent / Ressource = Trouver l'argent.",
+        "Cherchez sur Google le 'Modèle Normal de la liasse fiscale marocaine' et regardez la complexité du tableau TAFIRE."
+      ],
+      "en": [
+        "Memorize the duo: Use = Investing money / Resource = Finding money.",
+        "Search Google for the 'Moroccan normal tax return model' and look at the complexity of the TAFIRE table."
+      ],
+      "ar": [
+        "احفظ الثنائي: استخدام = استثمار المال / مورد = إيجاد المال.",
+        "ابحث في جوجل عن 'النموذج العادي للحزمة الضريبية المغربية' وانظر إلى مدى تعقيد جدول TAFIRE."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Beaucoup de petites SARL (Modèle Simplifié) demandent volontairement à leur expert-comptable de produire un TAFIRE même si la DGI ne l'exige pas. Pourquoi ? Parce que c'est le document préféré des banquiers pour accorder un gros crédit d'investissement !",
+      "en": "Many small SARLs voluntarily ask their CPA to produce a TAFIRE even if the DGI doesn't require it. Why? Because it's the bankers' favorite document for granting a large investment loan!",
+      "ar": "تطلب العديد من شركات SARL الصغيرة طواعية من خبيرها المحاسب إعداد TAFIRE حتى لو لم تطلبه DGI. لماذا؟ لأنه الوثيقة المفضلة لدى المصرفيين لمنح قرض استثماري كبير!"
+    },
+    "piege_frequent": {
+      "fr": "Confondre le remboursement d'un emprunt avec une charge du CPC. Rembourser le capital d'un prêt n'est PAS une charge (ça ne baisse pas l'IS), c'est un 'Emploi' qui se met dans le TAFIRE. Seuls les intérêts vont dans le CPC !",
+      "en": "Confusing loan repayment with a CPC expense. Repaying loan capital is NOT an expense (doesn't lower IS); it's a 'Use' in the TAFIRE. Only interest goes in the CPC!",
+      "ar": "الخلط بين سداد قرض وتكلفة CPC. سداد أصل القرض ليس تكلفة (لا يخفض IS)، إنه 'استخدام' يوضع في TAFIRE. الفوائد فقط تذهب إلى CPC!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "CAF = 50 000 DHS. Nouveau Crédit bancaire = 100 000 DHS. Achat d'une machine = 120 000 DHS. Dividendes payés aux patrons = 40 000 DHS. L'entreprise est-elle en équilibre cette année ?",
+        "en": "CAF = 50k DHS. New Bank Loan = 100k DHS. Machine purchase = 120k DHS. Dividends paid = 40k DHS. Is the company balanced this year?",
+        "ar": "CAF = 50ألف. قرض بنكي جديد = 100ألف. شراء آلة = 120ألف. أرباح موزعة للمديرين = 40ألف. هل الشركة في حالة توازن هذا العام؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! Ressources (50k + 100k = 150k). Emplois (120k + 40k = 160k). Les emplois dépassent les ressources de 10 000 DHS. La trésorerie va baisser de 10 000 DHS pour boucher le trou. Attention ! 🔥",
+        "en": "Bravo! Resources (150k). Uses (160k). Uses exceed resources by 10,000 DHS. Treasury will drop by 10,000 to plug the gap. Warning! 🔥",
+        "ar": "أحسنت! الموارد (150ألف). الاستخدامات (160ألف). تتجاوز الاستخدامات الموارد بـ 10 آلاف درهم. ستنخفض الخزينة بـ 10 آلاف لسد الفجوة. تحذير! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as dit que tout va bien. Non, compte bien : on a dépensé 160k (machine+dividendes) mais on n'a fait entrer que 150k (CAF+Prêt). On est en déficit de financement ! 😭",
+        "en": "You said all is well. No, count properly: spent 160k but only brought in 150k. We have a financing deficit! 😭",
+        "ar": "قلت أن كل شيء على ما يرام. لا، احسب جيداً: أنفقنا 160ألف ولكننا أدخلنا 150ألف فقط. نحن في عجز تمويلي! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Dans le TAFIRE, où devez-vous classer un emprunt de 500 000 DHS obtenu auprès de la BMCE Bank cette année ?",
+      "options": [
+        "Dans les Emplois (car on va devoir le rembourser)",
+        "Dans les Ressources (car c'est une entrée de fonds cette année)",
+        "Dans le CPC (car c'est une charge)",
+        "Nulle part, c'est hors bilan"
+      ],
+      "correct_answer": "Dans les Ressources (car c'est une entrée de fonds cette année)",
+      "explanation": "L'obtention d'un nouveau crédit fait entrer de l'argent frais pour financer l'activité de l'année. C'est donc une Ressource. Le remboursement futur, lui, sera un Emploi les années suivantes.",
+      "hint": "Cet argent a-t-il financé l'entreprise cette année ou a-t-il été dépensé ?"
+    }
+  },
+  
+    {
+    "id": 56,
+    "title": {
+      "fr": "Le Fonds de Roulement (FR)",
+      "en": "Working Capital (FR)",
+      "ar": "رأس المال العامل (FR)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le Fonds de Roulement, c'est votre coussin de sécurité. C'est l'argent stable (long terme) qui reste après avoir financé vos usines et machines.",
+      "en": "Working Capital is your safety cushion. It's the stable money (long-term) left over after financing your factories and machines.",
+      "ar": "رأس المال العامل هو وسادة أمانك. هو المال المستقر (طويل الأجل) المتبقي بعد تمويل مصانعك وآلاتك."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le Fonds de Roulement (FR) pour vérifier la solidité financière à long terme.",
+        "explication": "🔹 Définition du FR\nLe Fonds de Roulement (FR) répond à cette question : Est-ce que mes ressources stables (Capitaux propres + Dettes à long terme) couvrent tous mes investissements durables (Immobilisations) ?\n\n🔹 La Formule\n**FR = Ressources Stables - Emplois Stables**\n(Capitaux Propres + Dettes Financement - Actif Immobilisé)\n\n🔹 Interprétation\n- **FR > 0** : La situation est saine. Le surplus financier couvre les besoins de l'activité. L'entreprise est indépendante.\n- **FR = 0** : L'équilibre est fragile. Tout est tout juste financé.\n- **FR < 0** : Danger ! L'entreprise finance ses usines (long terme) avec des dettes fournisseurs (court terme). C'est le chemin rapide vers la faillite.",
+        "exemple": "SARL Atlas : Ressources Stables = 500k. Actif Immobilisé = 300k. FR = 500k - 300k = +200k. L'entreprise a un FR positif, elle est solide !",
+        "pratique": "Si Ressources Stables = 100k et Actif Immobilisé = 150k, le FR est-il bon ?",
+        "resume": "Le FR mesure la santé financière à long terme.\nFR positif = indépendance financière.\nFR négatif = risque de faillite (financement à long terme par dettes courtes).\nLe FR est le matelas de sécurité de l'entreprise."
+      },
+      "en": {
+        "objectif": "Calculate Working Capital (FR) to verify long-term financial stability.",
+        "explication": "🔹 Defining Working Capital (FR)\nFR answers: Do my stable resources (Equity + Long-term debt) cover all my long-term investments (Fixed Assets)?\n\n🔹 The Formula\n**FR = Stable Resources - Stable Uses**\n(Equity + Financing Debts - Fixed Assets)\n\n🔹 Interpretation\n- **FR > 0**: Healthy. Stable resources cover investments. The company is independent.\n- **FR = 0**: Fragile balance.\n- **FR < 0**: Danger! Using short-term supplier debt to finance long-term factories. Path to bankruptcy.",
+        "exemple": "SARL Atlas: Stable Resources = 500k. Fixed Assets = 300k. FR = 500k - 300k = +200k. Positive FR, the firm is solid!",
+        "pratique": "If Stable Resources = 100k and Fixed Assets = 150k, is the FR good?",
+        "resume": "FR measures long-term financial health.\nPositive FR = Financial independence.\nNegative FR = Bankruptcy risk (long-term funded by short-term).\nFR is the company's safety cushion."
+      },
+      "ar": {
+        "objectif": "حساب رأس المال العامل (FR) للتحقق من الاستقرار المالي على المدى الطويل.",
+        "explication": "🔹 تعريف رأس المال العامل (FR)\nيجيب FR على: هل تغطي مواردي المستقرة (حقوق الملكية + ديون طويلة الأجل) جميع استثماراتي المستدامة (أصول ثابتة)؟\n\n🔹 الصيغة\n**FR = الموارد المستقرة - الاستخدامات المستقرة**\n(حقوق الملكية + ديون التمويل - الأصول الثابتة)\n\n🔹 التفسير\n- **FR > 0**: وضع سليم. الموارد تغطي الاستثمارات. الشركة مستقلة.\n- **FR = 0**: توازن هش.\n- **FR < 0**: خطر! تمويل المصانع (طويلة الأجل) بديون الموردين (قصيرة الأجل). طريق سريع للإفلاس.",
+        "exemple": "شركة Atlas: موارد مستقرة = 500ألف. أصول ثابتة = 300ألف. FR = 500ألف - 300ألف = +200ألف. الشركة صلبة!",
+        "pratique": "إذا كانت الموارد المستقرة = 100 ألف والأصول الثابتة = 150 ألف، هل FR جيد؟",
+        "resume": "يقيس FR الصحة المالية على المدى الطويل.\nFR إيجابي = استقلال مالي.\nFR سلبي = خطر الإفلاس (تمويل طويل الأجل بديون قصيرة).\nFR هو وسادة أمان الشركة."
+      }
+    },
+    "psychology": {
+      "fr": ["Le FR est la tranquillité d'esprit du comptable : savoir que l'entreprise n'est pas financée par le découvert."],
+      "en": ["FR is the accountant's peace of mind: knowing the company isn't funded by overdrafts."],
+      "ar": ["FR هو راحة بال المحاسب: معرفة أن الشركة لا تُمول بالسحب على المكشوف."]
+    },
+    "missions": {
+      "fr": ["Calculez le FR de votre propre entreprise (ou projet).", "Expliquez à un partenaire pourquoi un FR négatif est dangereux."],
+      "en": ["Calculate FR for your company/project.", "Explain to a partner why a negative FR is dangerous."],
+      "ar": ["احسب FR لشركتك/مشروعك.", "اشرح لشريك لماذا FR السلبي خطير."]
+    },
+    "secret_pro": {
+      "fr": "Dans les PME marocaines, un FR négatif est souvent masqué par des 'Dettes fournisseurs' interminables. Le comptable doit savoir dire : 'Non, on n'est pas rentables, on ne fait que retarder le paiement'.",
+      "en": "In Moroccan SMEs, a negative FR is often masked by endless 'Supplier debts'. The accountant must be able to say: 'No, we aren't profitable, we are just delaying payment'.",
+      "ar": "في الشركات المغربية الصغيرة، غالباً ما يتم إخفاء FR السلبي بـ 'ديون موردين' لا تنتهي. يجب أن يعرف المحاسب كيف يقول: 'لا، نحن لسنا مربحين، نحن نؤخر الدفع فقط'."
+    },
+    "piege_frequent": {
+      "fr": "Confondre FR et Trésorerie. On peut avoir un FR positif (solide) et une Trésorerie négative (problème temporaire de cash) !",
+      "en": "Confusing FR and Cash Flow. You can have a positive FR (solid) and negative Treasury (temporary cash problem)!",
+      "ar": "الخلط بين FR والسيولة. يمكنك امتلاك FR إيجابي (صلب) وخزينة سلبية (مشكلة نقدية مؤقتة)!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Ressources = 800k. Immo = 900k. Le FR est négatif de 100k. Est-ce acceptable ?",
+        "en": "Resources = 800k. Fixed Assets = 900k. FR is negative 100k. Is this acceptable?",
+        "ar": "الموارد = 800ألف. أصول ثابتة = 900ألف. FR سلبي بـ 100 ألف. هل هذا مقبول؟"
+      },
+      "reward_xp": 70
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Calculer le FR : Ressources stables = 400 000, Actif immobilisé = 350 000.",
+      "correct_answer": "50000",
+      "explanation": "400 000 - 350 000 = 50 000 DHS.",
+      "hint": "Ressources - Emplois."
+    }
+  },
+  {
+    "id": 57,
+    "title": {
+      "fr": "Le Besoin en Fonds de Roulement (BFR)",
+      "en": "Working Capital Requirement (WCR)",
+      "ar": "احتياجات رأس المال العامل (WCR)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le BFR, c'est le décalage de cash : combien d'argent votre business bloque-t-il dans ses stocks et ses clients avant de revoir la couleur de son cash ?",
+      "en": "WCR is the cash gap: how much money does your business tie up in stock and clients before seeing cash again?",
+      "ar": "WCR هو فجوة النقد: كم يربط مشروعك من مال في المخزون والزبائن قبل أن ترى النقود مرة أخرى؟"
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le BFR pour identifier le besoin de trésorerie lié au cycle d'exploitation.",
+        "explication": "🔹 La définition du BFR\nLe BFR mesure le décalage entre le moment où vous payez vos fournisseurs/salaires et le moment où vos clients vous paient enfin. Plus ce décalage est long, plus le BFR est élevé.\n\n🔹 La Formule\n**BFR = (Stocks + Créances Clients) - Dettes Fournisseurs**\n- (Stocks + Clients) : C'est ce que vous avez 'investi' dans le cycle d'exploitation.\n- (Fournisseurs) : C'est l'aide que vos fournisseurs vous donnent.\n\n🔹 Interprétation\n- **BFR > 0** : Votre cycle d'exploitation consomme du cash. Vous avez besoin de financement (Banque ou FR).\n- **BFR < 0** : Vous avez un 'Besoin négatif'. Vous encaissez l'argent des clients AVANT de payer vos fournisseurs (ex: Supermarchés). C'est le paradis financier !\n\n👍 Pourquoi c'est important ?\nUne entreprise peut faire un énorme bénéfice mais couler car elle a un BFR trop élevé. C'est la cause N°1 des faillites au Maroc.",
+        "exemple": "SARL Atlas : Stock 100k + Clients 200k = 300k. Dettes Fournisseurs = 100k. BFR = 200k. L'entreprise a 200 000 DHS bloqués dans son activité. Elle doit trouver 200k DHS pour fonctionner.",
+        "pratique": "Si les clients vous doivent 50k, le stock est de 20k et les fournisseurs vous demandent 10k, quel est le BFR ?",
+        "resume": "BFR = Stocks + Clients - Fournisseurs.\nIl mesure le cash bloqué dans l'activité.\nBFR positif = besoin de financement.\nBFR négatif = autofinancement par les fournisseurs/clients."
+      },
+      "en": {
+        "objectif": "Calculate WCR to identify cash needs related to the operating cycle.",
+        "explication": "🔹 Defining WCR\nWCR measures the gap between paying suppliers/staff and getting paid by clients. The longer the gap, the higher the WCR.\n\n🔹 The Formula\n**WCR = (Inventory + Client Receivables) - Supplier Debts**\n- (Inventory + Clients): What you've 'invested' in operations.\n- (Suppliers): Help from suppliers.\n\n🔹 Interpretation\n- **WCR > 0**: Cycle consumes cash. You need financing (Bank).\n- **WCR < 0**: 'Negative need'. You collect cash BEFORE paying suppliers (e.g., Supermarkets). Financial heaven!\n\n👍 Why is it important?\nA company can be profitable but crash due to high WCR. #1 cause of bankruptcies.",
+        "exemple": "Atlas: Stock 100k + Clients 200k = 300k. Supplier Debt = 100k. WCR = 200k. Company has 200k DHS tied up. Needs 200k to operate.",
+        "pratique": "If clients owe 50k, stock is 20k, and suppliers demand 10k, what is the WCR?",
+        "resume": "WCR = Inventory + Clients - Suppliers.\nMeasures cash tied up in operations.\nPositive WCR = Financing needed.\nNegative WCR = Self-financing through suppliers/clients."
+      },
+      "ar": {
+        "objectif": "حساب WCR لتحديد الاحتياجات النقدية المتعلقة بدورة الاستغلال.",
+        "explication": "🔹 تعريف WCR\nيقيس WCR الفجوة بين دفع الموردين/الموظفين والحصول على أموال العملاء. كلما زادت الفجوة، زاد WCR.\n\n🔹 الصيغة\n**WCR = (المخزون + مستحقات العملاء) - ديون الموردين**\n- (المخزون + العملاء): ما 'استثمرته' في دورة الاستغلال.\n- (الموردون): مساعدة الموردين لك.\n\n🔹 التفسير\n- **WCR > 0**: الدورة تستهلك نقداً. تحتاج تمويلاً (البنك).\n- **WCR < 0**: 'حاجة سلبية'. تحصل المال قبل دفع الموردين (مثل السوبر ماركت). نعيم مالي!\n\n👍 لماذا هو مهم؟\nيمكن أن تحقق الشركة أرباحاً هائلة لكنها تنهار بسبب ارتفاع WCR. السبب الأول للإفلاس.",
+        "exemple": "Atlas: مخزون 100ألف + عملاء 200ألف = 300ألف. ديون موردين = 100ألف. WCR = 200ألف. الشركة لديها 200 ألف درهم محجوزة في نشاطها. تحتاج 200 ألف للعمل.",
+        "pratique": "إذا كان العملاء مدينين بـ 50 ألف، والمخزون 20 ألف، والموردون يطالبون بـ 10 آلاف، فما هو WCR؟",
+        "resume": "WCR = المخزون + العملاء - الموردين.\nيقيس النقد المحجوز في النشاط.\nWCR إيجابي = الحاجة للتمويل.\nWCR سلبي = تمويل ذاتي عبر الموردين/العملاء."
+      }
+    },
+    "psychology": {
+      "fr": ["Le BFR est la drogue dure du comptable : on veut le réduire à zéro pour être indépendant des banques.", "Un BFR qui explose est le signal d'alarme le plus précoce d'une entreprise qui va couler."],
+      "en": ["WCR is the accountant's hard drug: we want it at zero to be independent of banks.", "An exploding WCR is the earliest warning signal of a company going under."],
+      "ar": ["WCR هو المخدر القوي للمحاسب: نريد خفضه إلى الصفر لنكون مستقلين عن البنوك.", "WCR المتفجر هو أول إشارة تحذير لشركة ستنهار."]
+    },
+    "missions": {
+      "fr": ["Calculez le BFR de votre entreprise.", "Identifiez 3 actions pour réduire le BFR (ex: relancer les clients)."],
+      "en": ["Calculate your company's WCR.", "Identify 3 actions to reduce WCR (e.g., chasing clients)."],
+      "ar": ["احسب WCR لشركتك.", "حدد 3 إجراءات لخفض WCR (مثل ملاحقة العملاء)."]
+    },
+    "secret_pro": {
+      "fr": "Le BFR n'est jamais stable. Il explose en fin d'année si le comptable laisse traîner les factures clients. Relancez vos clients 15 jours avant la date limite !",
+      "en": "WCR is never stable. It explodes at year-end if the accountant lets client invoices linger. Chase clients 15 days before the deadline!",
+      "ar": "WCR لا يكون مستقراً أبداً. ينفجر في نهاية العام إذا ترك المحاسب فواتير العملاء معلقة. لاحِق العملاء قبل 15 يوماً من الموعد النهائي!"
+    },
+    "piege_frequent": {
+      "fr": "Oublier d'inclure la TVA dans le calcul du BFR. Les clients doivent le TTC, les fournisseurs demandent le TTC. Le BFR se calcule toujours TTC !",
+      "en": "Forgetting to include VAT in WCR. Clients owe the TTC, suppliers demand the TTC. WCR is always calculated TTC!",
+      "ar": "نسيان تضمين TVA في حساب WCR. العملاء مدينون بـ TTC، والموردون يطلبون TTC. يُحسب WCR دائماً بـ TTC!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Clients = 100k TTC. Stocks = 50k HT. Fournisseurs = 80k TTC. Calculez le BFR.",
+        "en": "Clients = 100k TTC. Stocks = 50k HT. Suppliers = 80k TTC. Calculate WCR.",
+        "ar": "عملاء = 100ألف TTC. مخزون = 50ألف HT. موردون = 80ألف TTC. احسب WCR."
+      },
+      "reward_xp": 70
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bien joué ! Il faut tout mettre en TTC. Stock = 50k HT * 1.2 = 60k TTC. BFR = (100k + 60k) - 80k = 80 000 DHS. 🔥",
+        "en": "Well played! Needs TTC. Stock = 50k * 1.2 = 60k TTC. WCR = (100k + 60k) - 80k = 80,000 DHS. 🔥",
+        "ar": "أحسنت! يجب وضع كل شيء بـ TTC. المخزون = 50ألف * 1.2 = 60ألف TTC. WCR = (100ألف + 60ألف) - 80ألف = 80,000 درهم! 🔥"
+      },
+      "bad": {
+        "fr": "Erreur : tu as utilisé le stock en HT. Tout doit être en TTC dans le BFR ! 😭",
+        "en": "Error: you used stock in HT. Everything must be in TTC in WCR! 😭",
+        "ar": "خطأ: استخدمت المخزون بـ HT. يجب أن يكون كل شيء بـ TTC في WCR! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Stocks = 100k TTC, Clients = 50k TTC, Fournisseurs = 60k TTC. Quel est le BFR ?",
+      "correct_answer": "90000",
+      "explanation": "BFR = (100 000 + 50 000) - 60 000 = 90 000 DHS.",
+      "hint": "Faites (Stocks + Clients) - Fournisseurs."
+    }
+  },
+  {
+    "id": 58,
+    "title": {
+      "fr": "La Trésorerie Nette",
+      "en": "Net Treasury",
+      "ar": "الخزينة الصافية"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La Trésorerie Nette, c'est le résultat final : Le Fonds de Roulement (ce qui est stable) moins le BFR (ce qui est bloqué dans l'activité).",
+      "en": "Net Treasury is the final result: Working Capital (what is stable) minus WCR (what is tied up in operations).",
+      "ar": "الخزينة الصافية هي النتيجة النهائية: رأس المال العامل (ما هو مستقر) ناقص WCR (ما هو محجوز في النشاط)."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer la Trésorerie Nette et comprendre pourquoi elle est l'ultime mesure de survie d'une entreprise.",
+        "explication": "🔹 Définition\nLa Trésorerie Nette (TN) est la somme qu'il reste dans les caisses après avoir payé toutes les dettes et financé tous les stocks. C'est l'oxygène.\n\n🔹 La Formule de la Vérité\n**TN = Fonds de Roulement (FR) - Besoin en Fonds de Roulement (BFR)**\nOu plus simplement : **TN = Trésorerie Active (Banque/Caisse) - Trésorerie Passif (Découvert).**\n\n🔹 Interprétation\n- **TN > 0** : La situation est excellente. L'entreprise a du cash disponible pour investir ou faire face aux imprévus.\n- **TN < 0** : L'entreprise vit sous perfusion bancaire. Elle est en situation de déséquilibre financier grave. Si la banque ferme le découvert, l'entreprise meurt instantanément.\n\n👍 Pourquoi c'est le ratio le plus important ?\nParce que vous pouvez être rentable (Résultat Net positif) et mourir (faillite) si votre Trésorerie Nette est négative. Le profit est une opinion, le cash est une réalité !",
+        "exemple": "FR = 100k. BFR = 60k. TN = 40k. L'entreprise a 40 000 DHS de cash net de toutes dettes court terme. Elle est confortable.",
+        "pratique": "Le FR est de 50k et le BFR est de 80k. Quelle est la Trésorerie Nette ?",
+        "resume": "TN = FR - BFR.\nTN > 0 = Cash disponible.\nTN < 0 = Dépendance totale à la banque.\nLe cash est la réalité, le profit n'est qu'une opinion."
+      },
+      "en": {
+        "objectif": "Calculate Net Treasury and understand why it is the ultimate survival measure.",
+        "explication": "🔹 Definition\nNet Treasury (NT) is the cash left after paying all debts and financing inventory. It is oxygen.\n\n🔹 The Truth Formula\n**NT = Working Capital (FR) - WCR**\nOr simply: **NT = Treasury-Assets (Bank/Cash) - Treasury-Liabilities (Overdraft).**\n\n🔹 Interpretation\n- **NT > 0**: Excellent. The company has cash for investments.\n- **NT < 0**: The company is on bank life support. Grave imbalance. If the bank stops the overdraft, the company dies.\n\n👍 Why is it the most important ratio?\nBecause you can be profitable (Net Profit) but die (bankruptcy) if Net Treasury is negative. Profit is an opinion, cash is a reality!",
+        "exemple": "FR = 100k. WCR = 60k. NT = 40k. The firm has 40,000 DHS cash net of all short-term debt. Comfortable.",
+        "pratique": "FR is 50k and WCR is 80k. What is the Net Treasury?",
+        "resume": "NT = FR - WCR.\nNT > 0 = Cash available.\nNT < 0 = Total bank dependence.\nCash is reality, profit is just an opinion."
+      },
+      "ar": {
+        "objectif": "حساب الخزينة الصافية وفهم سبب كونها المقياس النهائي لبقاء الشركة.",
+        "explication": "🔹 تعريف\nالخزينة الصافية (TN) هي المبلغ المتبقي في الخزينة بعد سداد جميع الديون وتمويل المخزون. إنه الأكسجين.\n\n🔹 صيغة الحقيقة\n**TN = رأس المال العامل (FR) - WCR**\nأو ببساطة: **TN = خزينة الأصول (بنك/صندوق) - خزينة الخصوم (سحب على المكشوف).**\n\n🔹 التفسير\n- **TN > 0**: الوضع ممتاز. الشركة لديها نقد للاستثمار.\n- **TN < 0**: الشركة تعيش بتمويل بنكي. اختلال مالي خطير. إذا أوقف البنك السحب على المكشوف، تموت الشركة.\n\n👍 لماذا هي أهم نسبة؟\nلأنك قد تكون مربحاً (صافي ربح) لكنك تموت (إفلاس) إذا كانت الخزينة الصافية سلبية. الربح رأي، النقد حقيقة!",
+        "exemple": "FR = 100ألف. WCR = 60ألف. TN = 40ألف. الشركة لديها 40 ألف درهم كسيولة صافية بعد كل الديون قصيرة الأجل. مريحة.",
+        "pratique": "FR هو 50 ألف و WCR هو 80 ألف. ما هي الخزينة الصافية؟",
+        "resume": "TN = FR - WCR.\nTN > 0 = سيولة متاحة.\nTN < 0 = تبعية كاملة للبنك.\nالنقد حقيقة، الربح مجرد رأي."
+      }
+    },
+    "psychology": {
+      "fr": ["La TN positive permet au chef d'entreprise de dormir sur ses deux oreilles. C'est la liberté totale."],
+      "en": ["Positive NT lets the manager sleep soundly. It's total freedom."],
+      "ar": ["الخزينة الصافية الإيجابية تجعل المدير ينام مرتاح البال. إنها الحرية المطلقة."]
+    },
+    "missions": {
+      "fr": ["Regardez votre compte bancaire. C'est votre trésorerie personnelle.", "Identifiez pourquoi le BFR positif 'mange' le Fonds de Roulement."],
+      "en": ["Look at your bank account. That's your personal treasury.", "Identify why positive WCR 'eats' Working Capital."],
+      "ar": ["انظر إلى حسابك البنكي. هذه هي خزانتك الشخصية.", "حدد لماذا يأكل WCR الإيجابي رأس المال العامل."]
+    },
+    "secret_pro": {
+      "fr": "Beaucoup d'entreprises marocaines qui échouent ont une très bonne 'Profitabilité' mais une 'TN' désastreuse à cause de clients qui paient à 180 jours. Soyez le comptable qui alerte sur les délais de paiement avant qu'il ne soit trop tard.",
+      "en": "Many Moroccan companies that fail have high 'Profitability' but disastrous 'NT' because clients pay in 180 days. Be the accountant who alerts on payment terms before it's too late.",
+      "ar": "العديد من الشركات المغربية التي تفشل لديها 'ربحية' جيدة ولكن 'خزينة' كارثية بسبب عملاء يدفعون بعد 180 يوماً. كن المحاسب الذي ينبه لمهل الدفع قبل فوات الأوان."
+    },
+    "piege_frequent": {
+      "fr": "Calculer la TN en additionnant FR et BFR. Non, il faut les SOUSTRAIRE !",
+      "en": "Calculating NT by adding FR and WCR. No, you must SUBTRACT them!",
+      "ar": "حساب TN بجمع FR و WCR. لا، يجب طرحهما!"
+    },
+    "mission_terrain": {
+      "fr": "Prenez les chiffres de la mission précédente et calculez la TN.",
+      "en": "Take figures from the previous mission and calculate NT.",
+      "ar": "خذ أرقام المهمة السابقة واحسب TN."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "FR = 200k. BFR = 250k. TN est négative. Quel est le montant du découvert bancaire (compte 551) pour équilibrer ?",
+        "en": "FR = 200k. WCR = 250k. NT is negative. What is the bank overdraft amount (account 551) to balance?",
+        "ar": "FR = 200ألف. WCR = 250ألف. TN سلبية. ما هو مبلغ السحب على المكشوف البنكي (حساب 551) للموازنة؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! TN = 200 - 250 = -50k. Vous avez besoin d'un découvert de 50 000 DHS pour survivre. 🔥",
+        "en": "Bravo! NT = 200 - 250 = -50k. You need a 50,000 DHS overdraft to survive. 🔥",
+        "ar": "أحسنت! TN = 200 - 250 = -50 ألف. أنت بحاجة لسحب على المكشوف بـ 50,000 درهم للبقاء! 🔥"
+      },
+      "bad": {
+        "fr": "Erreur de calcul. C'est FR moins BFR. 😭",
+        "en": "Calculation error. It's FR minus WCR. 😭",
+        "ar": "خطأ في الحساب. هو FR ناقص WCR. 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Le Fonds de Roulement est de 100 000 DHS et le BFR est de 70 000 DHS. Quelle est la Trésorerie Nette ?",
+      "correct_answer": "30000",
+      "explanation": "TN = 100 000 - 70 000 = 30 000 DHS.",
+      "hint": "Soustrayez le BFR du FR."
+    }
+  },
+  {
+    "id": 59,
+    "title": {
+      "fr": "Les Ratios de Liquidité",
+      "en": "Liquidity Ratios",
+      "ar": "نسب السيولة"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La liquidité, c'est la capacité à transformer votre patrimoine en cash pour payer vos dettes. C'est l'examen de survie de l'entreprise.",
+      "en": "Liquidity is the ability to turn your assets into cash to pay debts. It's the company's survival exam.",
+      "ar": "السيولة هي القدرة على تحويل أصولك إلى نقد لسداد ديونك. إنه اختبار بقاء الشركة."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Utiliser les ratios de liquidité pour mesurer la capacité de l'entreprise à faire face à ses dettes à court terme.",
+        "explication": "🔹 Le Ratio de Liquidité Générale\nIl mesure si l'Actif Circulant couvre les Dettes à court terme.\n**Ratio = Actif Circulant / Dettes à court terme (Passif circulant).**\n- **Ratio > 1** : L'entreprise est capable de payer ses dettes (c'est bon).\n- **Ratio < 1** : L'entreprise est en danger, elle n'a pas assez d'actifs rapides pour payer ses dettes urgentes.\n\n🔹 Le Ratio de Liquidité Réduite\nParfois, le stock est difficile à vendre. On utilise donc la liquidité 'réduite' qui exclut les stocks.\n**Ratio = (Créances + Trésorerie-Actif) / Dettes court terme.**\n\n👍 Pourquoi les banques adorent ces ratios ?\nLe banquier ne veut pas savoir si vous êtes riche à long terme (Bâtiments), il veut savoir si, si il vous demande de rembourser demain, vous avez les liquidités (Cash/Clients) pour le faire.",
+        "exemple": "SARL Atlas : Actif Circulant = 200k. Dettes court terme = 150k. Ratio = 200/150 = 1.33. C'est > 1, la banque est rassurée !",
+        "pratique": "Vous avez 100k d'actifs circulants et 120k de dettes court terme. Quel est le ratio et est-ce dangereux ?",
+        "resume": "Les ratios mesurent la solvabilité immédiate.\nLiquidité Générale = Actif circulant / Dettes court terme.\nRatio > 1 est le minimum de survie.\nLes banques utilisent ces ratios pour décider d'accorder un prêt."
+      },
+      "en": {
+        "objectif": "Use liquidity ratios to measure the company's ability to meet short-term debts.",
+        "explication": "🔹 Current Ratio (Liquidité Générale)\nMeasures if Current Assets cover short-term debts.\n**Ratio = Current Assets / Current Liabilities.**\n- **Ratio > 1**: Company can pay debts (good).\n- **Ratio < 1**: Company is in danger, not enough liquid assets to pay urgent debts.\n\n🔹 Quick Ratio (Liquidité Réduite)\nInventory can be hard to sell, so we exclude it.\n**Ratio = (Receivables + Treasury-Assets) / Current Liabilities.**\n\n👍 Why bankers love these ratios\nBankers don't care about long-term wealth (buildings); they want to know: if you need to pay back tomorrow, do you have the cash (or clients) to do it?",
+        "exemple": "SARL Atlas: Current Assets = 200k. Current Liabilities = 150k. Ratio = 200/150 = 1.33. It's > 1, the bank is reassured!",
+        "pratique": "You have 100k in current assets and 120k in short-term debt. What is the ratio and is it dangerous?",
+        "resume": "Ratios measure immediate solvency.\nCurrent Ratio = Current Assets / Current Liabilities.\nRatio > 1 is the minimum for survival.\nBanks use these ratios to decide on loan approvals."
+      },
+      "ar": {
+        "objectif": "استخدام نسب السيولة لقياس قدرة الشركة على مواجهة ديونها قصيرة الأجل.",
+        "explication": "🔹 نسبة السيولة العامة\nتقيس ما إذا كانت الأصول المتداولة تغطي الديون قصيرة الأجل.\n**النسبة = الأصول المتداولة / الديون قصيرة الأجل (الخصوم المتداولة).**\n- **النسبة > 1**: الشركة قادرة على دفع ديونها (جيد).\n- **النسبة < 1**: الشركة في خطر، لا توجد أصول سريعة كافية لدفع الديون العاجلة.\n\n🔹 نسبة السيولة السريعة\nأحياناً يصعب بيع المخزون، لذا نستثنيه.\n**النسبة = (مستحقات العملاء + خزينة الأصول) / الديون قصيرة الأجل.**\n\n👍 لماذا يعشق المصرفيون هذه النسب؟\nالمصرفي لا يهتم بالثروة طويلة الأجل (المباني)؛ يريد أن يعرف: إذا طُلب منك السداد غداً، هل لديك النقد (أو العملاء) للقيام بذلك؟",
+        "exemple": "شركة Atlas: أصول متداولة = 200ألف. ديون قصيرة الأجل = 150ألف. النسبة = 200/150 = 1.33. النسبة > 1، البنك مطمئن!",
+        "pratique": "لديك 100 ألف أصول متداولة و 120 ألف ديون قصيرة الأجل. ما هي النسبة وهل هي خطيرة؟",
+        "resume": "تقيس النسب الملاءة الفورية.\nالسيولة العامة = الأصول المتداولة / الديون قصيرة الأجل.\nالنسبة > 1 هي الحد الأدنى للبقاء.\nتستخدم البنوك هذه النسب لتقرير الموافقة على القروض."
+      }
+    },
+    "psychology": {
+      "fr": ["Le ratio de liquidité est le 'pouls' de l'entreprise. Un ratio qui baisse est un malade qui s'affaiblit."],
+      "en": ["The liquidity ratio is the company's 'pulse'. A falling ratio is a patient getting weaker."],
+      "ar": ["نسبة السيولة هي 'نبض' الشركة. النسبة التي تنخفض هي مريض يضعف."]
+    },
+    "missions": {
+      "fr": ["Calculez le ratio de liquidité de votre projet.", "Expliquez pourquoi le ratio de liquidité réduite est plus 'sévère' que la liquidité générale."],
+      "en": ["Calculate your project's liquidity ratio.", "Explain why the quick ratio is 'stricter' than the current ratio."],
+      "ar": ["احسب نسبة السيولة لمشروعك.", "اشرح لماذا نسبة السيولة السريعة 'أكثر صرامة' من السيولة العامة."]
+    },
+    "secret_pro": {
+      "fr": "Si le ratio est > 2, c'est peut-être aussi un mauvais signe ! Cela veut dire que l'entreprise laisse dormir trop d'argent en stock ou chez les clients au lieu de l'investir. Un bon ratio est souvent entre 1.2 et 1.5.",
+      "en": "If ratio > 2, it might be a bad sign too! It means the company lets too much money sleep in inventory or with clients instead of investing it. A good ratio is often 1.2 to 1.5.",
+      "ar": "إذا كانت النسبة > 2، فقد يكون ذلك علامة سيئة أيضاً! هذا يعني أن الشركة تترك الكثير من المال ينام في المخزون أو عند العملاء بدلاً من استثماره. النسبة الجيدة غالباً ما تكون بين 1.2 و 1.5."
+    },
+    "piege_frequent": {
+      "fr": "Inclure les dettes à long terme dans le dénominateur. NON ! On ne compare que l'Actif Circulant avec les Dettes Court Terme (Passif Circulant).",
+      "en": "Including long-term debt in the denominator. NO! We only compare Current Assets with Short-term Debts (Current Liabilities).",
+      "ar": "تضمين الديون طويلة الأجل في المقام. لا! نحن نقارن الأصول المتداولة فقط بالديون قصيرة الأجل (الخصوم المتداولة)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Actif circulant = 300k. Dettes court terme = 250k. Ratio = 1.2. Si les clients ne paient pas 50k, quel est le nouveau ratio ?",
+        "en": "Current Assets = 300k. Current Liabilities = 250k. Ratio = 1.2. If clients don't pay 50k, what is the new ratio?",
+        "ar": "أصول متداولة = 300ألف. ديون قصيرة الأجل = 250ألف. النسبة = 1.2. إذا لم يدفع العملاء 50ألفاً، ما هي النسبة الجديدة؟"
+      },
+      "reward_xp": 60
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! Actif = 250k. Dettes = 250k. Nouveau ratio = 1. L'entreprise est à la limite de la survie ! 🔥",
+        "en": "Bravo! Assets = 250k. Liabilities = 250k. New ratio = 1. The company is on the edge of survival! 🔥",
+        "ar": "أحسنت! الأصول = 250ألف. الديون = 250ألف. النسبة الجديدة = 1. الشركة على حافة البقاء! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as oublié de baisser l'actif circulant de 50k. Sans paiement, cet actif disparaît ! 😭",
+        "en": "You forgot to lower current assets by 50k. Without payment, this asset vanishes! 😭",
+        "ar": "لقد نسيت خفض الأصول المتداولة بـ 50ألف. بدون دفع، هذا الأصل يختفي! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Actif Circulant = 150 000, Dettes Court terme = 100 000. Quel est le ratio de liquidité générale ?",
+      "correct_answer": "1.5",
+      "explanation": "Ratio = 150 000 / 100 000 = 1.5.",
+      "hint": "Divisez l'actif circulant par les dettes court terme."
+    }
+  },
+  {
+    "id": 60,
+    "title": {
+      "fr": "Les Ratios de Rentabilité et Solvabilité",
+      "en": "Profitability and Solvency Ratios",
+      "ar": "نسب الربحية والملاءة"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La rentabilité mesure si vous créez de la richesse, la solvabilité mesure si vous survivrez assez longtemps pour en profiter.",
+      "en": "Profitability measures if you create wealth, solvency measures if you will survive long enough to enjoy it.",
+      "ar": "الربحية تقيس ما إذا كنت تخلق الثروة، والملاءة تقيس ما إذا كنت ستعيش لفترة كافية للاستمتاع بها."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Maîtriser les ratios clés pour évaluer la capacité de l'entreprise à générer du profit et à durer.",
+        "explication": "🔹 1. Ratio de Rentabilité (ROE - Return on Equity)\nLa rentabilité, c'est ce que gagnent les actionnaires avec leur propre argent.\n**ROE = Résultat Net / Capitaux Propres.**\n- Ex : Si vous avez investi 100k et gagné 20k, vous avez un ROE de 20%. C'est excellent ! \n\n🔹 2. Ratio de Solvabilité (Autonomie financière)\nIl mesure si l'entreprise dépend trop des banques.\n**Autonomie = Capitaux Propres / Total Passif.**\n- **> 30%** : C'est très bon. La banque vous fera confiance.\n- **< 10%** : Danger. L'entreprise est 'à la merci' des banques.\n\n👍 Le test de survie\nUne entreprise peut être très rentable (ROE élevé) mais peu solvable (beaucoup de dettes). Si les banques coupent le crédit, l'entreprise meurt, même si elle est rentable ! C'est pour ça qu'on regarde toujours ces deux ratios ensemble.",
+        "exemple": "SARL Atlas : Résultat Net = 50k. Capitaux Propres = 200k. ROE = 25%. C'est une entreprise très rentable pour ses actionnaires.",
+        "pratique": "Si vous avez 500k de Passif Total et 100k de Capitaux Propres, quelle est votre autonomie financière ?",
+        "resume": "ROE (Rentabilité) mesure la richesse créée pour les actionnaires.\nAutonomie financière mesure la dépendance aux banques.\nUne bonne entreprise doit être rentable ET solvable.\nLe risque financier augmente quand l'autonomie baisse."
+      },
+      "en": {
+        "objectif": "Master key ratios to evaluate the company's ability to generate profit and last.",
+        "explication": "🔹 1. Profitability Ratio (ROE - Return on Equity)\nProfitability is what shareholders earn with their own money.\n**ROE = Net Profit / Equity.**\n- Ex: If you invested 100k and made 20k, you have a 20% ROE. Excellent!\n\n🔹 2. Solvency Ratio (Financial Autonomy)\nMeasures if the company relies too much on banks.\n**Autonomy = Equity / Total Liabilities.**\n- **> 30%**: Very good. Banks will trust you.\n- **< 10%**: Danger. The company is 'at the mercy' of banks.\n\n👍 The Survival Test\nA company can be very profitable (high ROE) but not solvent (lots of debt). If banks cut credit, the company dies, even if profitable! That's why we check both.",
+        "exemple": "SARL Atlas: Net Profit = 50k. Equity = 200k. ROE = 25%. A very profitable company for shareholders.",
+        "pratique": "If you have 500k Total Liabilities and 100k Equity, what is your financial autonomy?",
+        "resume": "ROE (Profitability) measures wealth created for shareholders.\nFinancial Autonomy measures bank dependence.\nA good company must be profitable AND solvent.\nFinancial risk increases as autonomy decreases."
+      },
+      "ar": {
+        "objectif": "إتقان النسب الرئيسية لتقييم قدرة الشركة على توليد الربح والاستمرار.",
+        "explication": "🔹 1. نسبة الربحية (ROE - العائد على حقوق الملكية)\nالربحية هي ما يكسبه المساهمون بأموالهم الخاصة.\n**ROE = النتيجة الصافية / حقوق الملكية.**\n- مثال: إذا استثمرت 100 ألف وربحت 20 ألف، لديك ROE بنسبة 20%. ممتاز!\n\n🔹 2. نسبة الملاءة (الاستقلالية المالية)\nتقيس ما إذا كانت الشركة تعتمد أكثر من اللازم على البنوك.\n**الاستقلالية = حقوق الملكية / إجمالي الخصوم.**\n- **> 30%**: جيد جداً. سيثق بك البنك.\n- **< 10%**: خطر. الشركة تحت 'رحمة' البنوك.\n\n👍 اختبار البقاء\nيمكن أن تكون الشركة مربحة جداً (ROE مرتفع) ولكنها غير مليئة (ديون كثيرة). إذا قطعت البنوك الائتمان، تموت الشركة، حتى لو كانت مربحة! لهذا ننظر إليهما معاً.",
+        "exemple": "SARL Atlas: صافي الربح = 50 ألف. حقوق الملكية = 200 ألف. ROE = 25%. شركة مربحة جداً للمساهمين.",
+        "pratique": "إذا كان لديك 500 ألف خصوم إجمالية و 100 ألف حقوق ملكية، ما هي استقلاليتك المالية؟",
+        "resume": "ROE (الربحية) يقيس الثروة المخلوقة للمساهمين.\nالاستقلالية المالية تقيس التبعية للبنوك.\nيجب أن تكون الشركة الجيدة مربحة ومليئة (ذات ملاءة).\nيزداد الخطر المالي عندما تنخفض الاستقلالية."
+      }
+    },
+    "psychology": {
+      "fr": ["Le banquier regarde le ROE pour savoir si vous valez la peine d'être financé.", "La solvabilité est la confiance que vous inspirez : un ratio élevé = je dors tranquille."],
+      "en": ["The banker looks at ROE to see if you are worth financing.", "Solvency is the trust you inspire: high ratio = I sleep soundly."],
+      "ar": ["ينظر المصرفي إلى ROE ليعرف ما إذا كنت تستحق التمويل.", "الملاءة هي الثقة التي تُلهمها: نسبة عالية = أنام مرتاحاً."]
+    },
+    "missions": {
+      "fr": ["Calculez le ROE de votre projet.", "Vérifiez le ratio d'autonomie financière de votre entreprise."],
+      "en": ["Calculate the ROE for your project.", "Check the financial autonomy ratio for your company."],
+      "ar": ["احسب ROE لمشروعك.", "تحقق من نسبة الاستقلال المالي لشركتك."]
+    },
+    "secret_pro": {
+      "fr": "L'effet de levier : Une entreprise peut avoir un ROE médiocre mais décider de s'endetter pour racheter des machines. Si le rendement des machines est supérieur au coût du crédit, le ROE va exploser. C'est l'art de la dette.",
+      "en": "Leverage: A company can have a mediocre ROE but decide to take debt to buy machines. If the machines yield more than the credit cost, ROE explodes. That's the art of debt.",
+      "ar": "رافعة مالية: يمكن للشركة أن يكون لها ROE متوسط ولكنها تقرر الاستدانة لشراء آلات. إذا كان عائد الآلات أعلى من تكلفة القرض، سيتفجر ROE. هذا هو فن الدين."
+    },
+    "piege_frequent": {
+      "fr": "Confondre Rentabilité et Solvabilité. Vous pouvez être rentable (gagner de l'argent) mais insolvable (ne pas pouvoir rembourser vos dettes à temps).",
+      "en": "Confusing Profitability and Solvency. You can be profitable (making money) but insolvent (unable to repay debts on time).",
+      "ar": "الخلط بين الربحية والملاءة. يمكنك أن تكون مربحاً (تجني المال) ولكنك غير مليء (لا تستطيع سداد ديونك في الوقت المحدد)."
+    },
+    "mission_terrain": {
+      "fr": "Prenez n'importe quel Bilan. Divisez les Capitaux propres par le Passif Total. C'est votre niveau d'autonomie financière.",
+      "en": "Take any Balance Sheet. Divide Equity by Total Liabilities. That's your financial autonomy level.",
+      "ar": "خذ أي ميزانية. اقسم حقوق الملكية على إجمالي الخصوم. هذا هو مستوى استقلاليتك المالية."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Bénéfice = 100k. Capitaux Propres = 400k. Dettes = 600k. Quel est le ROE et quel est le ratio d'autonomie financière ?",
+        "en": "Profit = 100k. Equity = 400k. Debt = 600k. What is the ROE and financial autonomy ratio?",
+        "ar": "الربح = 100ألف. حقوق الملكية = 400ألف. الديون = 600ألف. ما هو ROE وما هي نسبة الاستقلال المالي؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! ROE = 100/400 = 25%. Autonomie = 400 / (400+600) = 40%. La société est très rentable et solide ! 🔥",
+        "en": "Bravo! ROE = 100/400 = 25%. Autonomy = 400 / (400+600) = 40%. The company is very profitable and solid! 🔥",
+        "ar": "أحسنت! ROE = 100/400 = 25%. الاستقلالية = 400 / (400+600) = 40%. الشركة مربحة جداً وصلبة! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as divisé par les dettes pour l'autonomie. Erreur ! C'est Capitaux Propres sur TOTAL Passif. 😭",
+        "en": "You divided by debt for autonomy. Wrong! It's Equity over TOTAL Liabilities. 😭",
+        "ar": "لقد قسمت على الديون من أجل الاستقلالية. خطأ! هي حقوق الملكية على إجمالي الخصوم. 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Résultat Net = 50 000 DHS, Capitaux Propres = 250 000 DHS. Quel est le ROE en % ?",
+      "correct_answer": "20",
+      "explanation": "ROE = 50 000 / 250 000 = 0.20 soit 20%.",
+      "hint": "Divisez le Résultat par les Capitaux Propres."
+    }
+  },
+  
+  {
+    "id": 56,
+    "title": {
+      "fr": "Le Fonds de Roulement (FR)",
+      "en": "Working Capital (FR)",
+      "ar": "رأس المال العامل (FR)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le Fonds de Roulement, c'est votre coussin de sécurité. C'est l'argent stable (long terme) qui reste après avoir financé vos usines et machines.",
+      "en": "Working Capital is your safety cushion. It's the stable money (long-term) left over after financing your factories and machines.",
+      "ar": "رأس المال العامل هو وسادة أمانك. هو المال المستقر (طويل الأجل) المتبقي بعد تمويل مصانعك وآلاتك."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le Fonds de Roulement (FR) pour vérifier la solidité financière à long terme.",
+        "explication": "🔹 Définition du FR\nLe Fonds de Roulement (FR) répond à cette question : Est-ce que mes ressources stables (Capitaux propres + Dettes à long terme) couvrent tous mes investissements durables (Immobilisations) ?\n\n🔹 La Formule\n**FR = Ressources Stables - Emplois Stables**\n(Capitaux Propres + Dettes Financement - Actif Immobilisé)\n\n🔹 Interprétation\n- **FR > 0** : La situation est saine. Le surplus financier couvre les besoins de l'activité. L'entreprise est indépendante.\n- **FR = 0** : L'équilibre est fragile. Tout est tout juste financé.\n- **FR < 0** : Danger ! L'entreprise finance ses usines (long terme) avec des dettes fournisseurs (court terme). C'est le chemin rapide vers la faillite.",
+        "exemple": "SARL Atlas : Ressources Stables = 500k. Actif Immobilisé = 300k. FR = 500k - 300k = +200k. L'entreprise a un FR positif, elle est solide !",
+        "pratique": "Si Ressources Stables = 100k et Actif Immobilisé = 150k, le FR est-il bon ?",
+        "resume": "Le FR mesure la santé financière à long terme.\nFR positif = indépendance financière.\nFR négatif = risque de faillite (financement à long terme par dettes courtes).\nLe FR est le matelas de sécurité de l'entreprise."
+      },
+      "en": {
+        "objectif": "Calculate Working Capital (FR) to verify long-term financial stability.",
+        "explication": "🔹 Defining Working Capital (FR)\nFR answers: Do my stable resources (Equity + Long-term debt) cover all my long-term investments (Fixed Assets)?\n\n🔹 The Formula\n**FR = Stable Resources - Stable Uses**\n(Equity + Financing Debts - Fixed Assets)\n\n🔹 Interpretation\n- **FR > 0**: Healthy. Stable resources cover investments. The company is independent.\n- **FR = 0**: Fragile balance.\n- **FR < 0**: Danger! Using short-term supplier debt to finance long-term factories. Path to bankruptcy.",
+        "exemple": "SARL Atlas: Stable Resources = 500k. Fixed Assets = 300k. FR = 500k - 300k = +200k. Positive FR, the firm is solid!",
+        "pratique": "If Stable Resources = 100k and Fixed Assets = 150k, is the FR good?",
+        "resume": "FR measures long-term financial health.\nPositive FR = Financial independence.\nNegative FR = Bankruptcy risk (long-term funded by short-term).\nFR is the company's safety cushion."
+      },
+      "ar": {
+        "objectif": "حساب رأس المال العامل (FR) للتحقق من الاستقرار المالي على المدى الطويل.",
+        "explication": "🔹 تعريف رأس المال العامل (FR)\nيجيب FR على: هل تغطي مواردي المستقرة (حقوق الملكية + ديون طويلة الأجل) جميع استثماراتي المستدامة (أصول ثابتة)؟\n\n🔹 الصيغة\n**FR = الموارد المستقرة - الاستخدامات المستقرة**\n(حقوق الملكية + ديون التمويل - الأصول الثابتة)\n\n🔹 التفسير\n- **FR > 0**: وضع سليم. الموارد تغطي الاستثمارات. الشركة مستقلة.\n- **FR = 0**: توازن هش.\n- **FR < 0**: خطر! تمويل المصانع (طويلة الأجل) بديون الموردين (قصيرة الأجل). طريق سريع للإفلاس.",
+        "exemple": "شركة Atlas: موارد مستقرة = 500ألف. أصول ثابتة = 300ألف. FR = 500ألف - 300ألف = +200ألف. الشركة صلبة!",
+        "pratique": "إذا كانت الموارد المستقرة = 100 ألف والأصول الثابتة = 150 ألف، هل FR جيد؟",
+        "resume": "يقيس FR الصحة المالية على المدى الطويل.\nFR إيجابي = استقلال مالي.\nFR سلبي = خطر الإفلاس (تمويل طويل الأجل بديون قصيرة).\nFR هو وسادة أمان الشركة."
+      }
+    },
+    "psychology": {
+      "fr": ["Le FR est la tranquillité d'esprit du comptable : savoir que l'entreprise n'est pas financée par le découvert."],
+      "en": ["FR is the accountant's peace of mind: knowing the company isn't funded by overdrafts."],
+      "ar": ["FR هو راحة بال المحاسب: معرفة أن الشركة لا تُمول بالسحب على المكشوف."]
+    },
+    "missions": {
+      "fr": ["Calculez le FR de votre propre entreprise (ou projet).", "Expliquez à un partenaire pourquoi un FR négatif est dangereux."],
+      "en": ["Calculate FR for your company/project.", "Explain to a partner why a negative FR is dangerous."],
+      "ar": ["احسب FR لشركتك/مشروعك.", "اشرح لشريك لماذا FR السلبي خطير."]
+    },
+    "secret_pro": {
+      "fr": "Dans les PME marocaines, un FR négatif est souvent masqué par des 'Dettes fournisseurs' interminables. Le comptable doit savoir dire : 'Non, on n'est pas rentables, on ne fait que retarder le paiement'.",
+      "en": "In Moroccan SMEs, a negative FR is often masked by endless 'Supplier debts'. The accountant must be able to say: 'No, we aren't profitable, we are just delaying payment'.",
+      "ar": "في الشركات المغربية الصغيرة، غالباً ما يتم إخفاء FR السلبي بـ 'ديون موردين' لا تنتهي. يجب أن يعرف المحاسب كيف يقول: 'لا، نحن لسنا مربحين، نحن نؤخر الدفع فقط'."
+    },
+    "piege_frequent": {
+      "fr": "Confondre FR et Trésorerie. On peut avoir un FR positif (solide) et une Trésorerie négative (problème temporaire de cash) !",
+      "en": "Confusing FR and Cash Flow. You can have a positive FR (solid) and negative Treasury (temporary cash problem)!",
+      "ar": "الخلط بين FR والسيولة. يمكنك امتلاك FR إيجابي (صلب) وخزينة سلبية (مشكلة نقدية مؤقتة)!"
+    },
+    "mission_terrain": {
+      "fr": "Prenez les chiffres de la mission précédente et calculez la TN.",
+      "en": "Take figures from the previous mission and calculate NT.",
+      "ar": "خذ أرقام المهمة السابقة واحسب TN."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Ressources = 800k. Immo = 900k. Le FR est négatif de 100k. Est-ce acceptable ?",
+        "en": "Resources = 800k. Fixed Assets = 900k. FR is negative 100k. Is this acceptable?",
+        "ar": "الموارد = 800ألف. أصول ثابتة = 900ألف. FR سلبي بـ 100 ألف. هل هذا مقبول؟"
+      },
+      "reward_xp": 70
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Calculer le FR : Ressources stables = 400 000, Actif immobilisé = 350 000.",
+      "correct_answer": "50000",
+      "explanation": "400 000 - 350 000 = 50 000 DHS.",
+      "hint": "Ressources - Emplois."
+    }
+  },
+  {
+    "id": 57,
+    "title": {
+      "fr": "Le Besoin en Fonds de Roulement (BFR)",
+      "en": "Working Capital Requirement (WCR)",
+      "ar": "احتياجات رأس المال العامل (WCR)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le BFR, c'est le décalage de cash : combien d'argent votre business bloque-t-il dans ses stocks et ses clients avant de revoir la couleur de son cash ?",
+      "en": "WCR is the cash gap: how much money does your business tie up in stock and clients before seeing cash again?",
+      "ar": "WCR هو فجوة النقد: كم يربط مشروعك من مال في المخزون والزبائن قبل أن ترى النقود مرة أخرى؟"
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le BFR pour identifier le besoin de trésorerie lié au cycle d'exploitation.",
+        "explication": "🔹 La définition du BFR\nLe BFR mesure le décalage entre le moment où vous payez vos fournisseurs/salaires et le moment où vos clients vous paient enfin. Plus ce décalage est long, plus le BFR est élevé.\n\n🔹 La Formule\n**BFR = (Stocks + Créances Clients) - Dettes Fournisseurs**\n- (Stocks + Clients) : C'est ce que vous avez 'investi' dans le cycle d'exploitation.\n- (Fournisseurs) : C'est l'aide que vos fournisseurs vous donnent.\n\n🔹 Interprétation\n- **BFR > 0** : Votre cycle d'exploitation consomme du cash. Vous avez besoin de financement (Banque ou FR).\n- **BFR < 0** : Vous avez un 'Besoin négatif'. Vous encaissez l'argent des clients AVANT de payer vos fournisseurs (ex: Supermarchés). C'est le paradis financier !\n\n👍 Pourquoi c'est important ?\nUne entreprise peut faire un énorme bénéfice mais couler car elle a un BFR trop élevé. C'est la cause N°1 des faillites au Maroc.",
+        "exemple": "SARL Atlas : Stock 100k + Clients 200k = 300k. Dettes Fournisseurs = 100k. BFR = 200k. L'entreprise a 200 000 DHS bloqués dans son activité. Elle doit trouver 200k DHS pour fonctionner.",
+        "pratique": "Si les clients vous doivent 50k, le stock est de 20k et les fournisseurs vous demandent 10k, quel est le BFR ?",
+        "resume": "BFR = Stocks + Clients - Fournisseurs.\nIl mesure le cash bloqué dans l'activité.\nBFR positif = besoin de financement.\nBFR négatif = autofinancement par les fournisseurs/clients."
+      },
+      "en": {
+        "objectif": "Calculate WCR to identify cash needs related to the operating cycle.",
+        "explication": "🔹 Defining WCR\nWCR measures the gap between paying suppliers/staff and getting paid by clients. The longer the gap, the higher the WCR.\n\n🔹 The Formula\n**WCR = (Inventory + Client Receivables) - Supplier Debts**\n- (Inventory + Clients): What you've 'invested' in operations.\n- (Suppliers): Help from suppliers.\n\n🔹 Interpretation\n- **WCR > 0**: Cycle consumes cash. You need financing (Bank).\n- **WCR < 0**: 'Negative need'. You collect cash BEFORE paying suppliers (e.g., Supermarkets). Financial heaven!\n\n👍 Why is it important?\nA company can be profitable but crash due to high WCR. #1 cause of bankruptcies.",
+        "exemple": "Atlas: Stock 100k + Clients 200k = 300k. Supplier Debt = 100k. WCR = 200k. Company has 200k DHS tied up. Needs 200k to operate.",
+        "pratique": "If clients owe 50k, stock is 20k, and suppliers demand 10k, what is the WCR?",
+        "resume": "WCR = Inventory + Clients - Suppliers.\nMeasures cash tied up in operations.\nPositive WCR = Financing needed.\nNegative WCR = Self-financing through suppliers/clients."
+      },
+      "ar": {
+        "objectif": "حساب WCR لتحديد الاحتياجات النقدية المتعلقة بدورة الاستغلال.",
+        "explication": "🔹 تعريف WCR\nيقيس WCR الفجوة بين دفع الموردين/الموظفين والحصول على أموال العملاء. كلما زادت الفجوة، زاد WCR.\n\n🔹 الصيغة\n**WCR = (المخزون + مستحقات العملاء) - ديون الموردين**\n- (المخزون + العملاء): ما 'استثمرته' في دورة الاستغلال.\n- (الموردون): مساعدة الموردين لك.\n\n🔹 التفسير\n- **WCR > 0**: الدورة تستهلك نقداً. تحتاج تمويلاً (البنك).\n- **WCR < 0**: 'حاجة سلبية'. تحصل المال قبل دفع الموردين (مثل السوبر ماركت). نعيم مالي!\n\n👍 لماذا هو مهم؟\nيمكن أن تحقق الشركة أرباحاً هائلة لكنها تنهار بسبب ارتفاع WCR. السبب الأول للإفلاس.",
+        "exemple": "Atlas: مخزون 100ألف + عملاء 200ألف = 300ألف. ديون موردين = 100ألف. WCR = 200ألف. الشركة لديها 200 ألف درهم محجوزة في نشاطها. تحتاج 200 ألف للعمل.",
+        "pratique": "إذا كان العملاء مدينين بـ 50 ألف، والمخزون 20 ألف، والموردون يطالبون بـ 10 آلاف، فما هو WCR؟",
+        "resume": "WCR = المخزون + العملاء - الموردين.\nيقيس النقد المحجوز في النشاط.\nWCR إيجابي = الحاجة للتمويل.\nWCR سلبي = تمويل ذاتي عبر الموردين/العملاء."
+      }
+    },
+    "psychology": {
+      "fr": ["Le BFR est la drogue dure du comptable : on veut le réduire à zéro pour être indépendant des banques.", "Un BFR qui explose est le signal d'alarme le plus précoce d'une entreprise qui va couler."],
+      "en": ["WCR is the accountant's hard drug: we want it at zero to be independent of banks.", "An exploding WCR is the earliest warning signal of a company going under."],
+      "ar": ["WCR هو المخدر القوي للمحاسب: نريد خفضه إلى الصفر لنكون مستقلين عن البنوك.", "WCR المتفجر هو أول إشارة تحذير لشركة ستنهار."]
+    },
+    "missions": {
+      "fr": ["Calculez le BFR de votre entreprise.", "Identifiez 3 actions pour réduire le BFR (ex: relancer les clients)."],
+      "en": ["Calculate your company's WCR.", "Identify 3 actions to reduce WCR (e.g., chasing clients)."],
+      "ar": ["احسب WCR لشركتك.", "حدد 3 إجراءات لخفض WCR (مثل ملاحقة العملاء)."]
+    },
+    "secret_pro": {
+      "fr": "Le BFR n'est jamais stable. Il explose en fin d'année si le comptable laisse traîner les factures clients. Relancez vos clients 15 jours avant la date limite !",
+      "en": "WCR is never stable. It explodes at year-end if the accountant lets client invoices linger. Chase clients 15 days before the deadline!",
+      "ar": "WCR لا يكون مستقراً أبداً. ينفجر في نهاية العام إذا ترك المحاسب فواتير العملاء معلقة. لاحِق العملاء قبل 15 يوماً من الموعد النهائي!"
+    },
+    "piege_frequent": {
+      "fr": "Oublier d'inclure la TVA dans le calcul du BFR. Les clients doivent le TTC, les fournisseurs demandent le TTC. Le BFR se calcule toujours TTC !",
+      "en": "Forgetting to include VAT in WCR. Clients owe the TTC, suppliers demand the TTC. WCR is always calculated TTC!",
+      "ar": "نسيان تضمين TVA في حساب WCR. العملاء مدينون بـ TTC، والموردون يطلبون TTC. يُحسب WCR دائماً بـ TTC!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Clients = 100k TTC. Stocks = 50k HT. Fournisseurs = 80k TTC. Calculez le BFR.",
+        "en": "Clients = 100k TTC. Stocks = 50k HT. Suppliers = 80k TTC. Calculate WCR.",
+        "ar": "عملاء = 100ألف TTC. مخزون = 50ألف HT. موردون = 80ألف TTC. احسب WCR."
+      },
+      "reward_xp": 80
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Stocks = 100k TTC, Clients = 50k TTC, Fournisseurs = 60k TTC. Quel est le BFR ?",
+      "correct_answer": "90000",
+      "explanation": "BFR = (100 000 + 50 000) - 60 000 = 90 000 DHS.",
+      "hint": "Faites (Stocks + Clients) - Fournisseurs."
+    }
+  },
+  {
+    "id": 58,
+    "title": {
+      "fr": "La Trésorerie Nette",
+      "en": "Net Treasury",
+      "ar": "الخزينة الصافية"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La Trésorerie Nette, c'est le résultat final : Le Fonds de Roulement (ce qui est stable) moins le BFR (ce qui est bloqué dans l'activité).",
+      "en": "Net Treasury is the final result: Working Capital (what is stable) minus WCR (what is tied up in operations).",
+      "ar": "الخزينة الصافية هي النتيجة النهائية: رأس المال العامل (ما هو مستقر) ناقص WCR (ما هو محجوز في النشاط)."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer la Trésorerie Nette et comprendre pourquoi elle est l'ultime mesure de survie d'une entreprise.",
+        "explication": "🔹 Définition\nLa Trésorerie Nette (TN) est la somme qu'il reste dans les caisses après avoir payé toutes les dettes et financé tous les stocks. C'est l'oxygène.\n\n🔹 La Formule de la Vérité\n**TN = Fonds de Roulement (FR) - Besoin en Fonds de Roulement (BFR)**\nOu plus simplement : **TN = Trésorerie Active (Banque/Caisse) - Trésorerie Passif (Découvert).**\n\n🔹 Interprétation\n- **TN > 0** : La situation est excellente. L'entreprise a du cash disponible pour investir ou faire face aux imprévus.\n- **TN < 0** : L'entreprise vit sous perfusion bancaire. Elle est en situation de déséquilibre financier grave. Si la banque ferme le découvert, l'entreprise meurt instantanément.\n\n👍 Pourquoi c'est le ratio le plus important ?\nParce que vous pouvez être rentable (Résultat Net positif) et mourir (faillite) si votre Trésorerie Nette est négative. Le profit est une opinion, le cash est une réalité !",
+        "exemple": "FR = 100k. BFR = 60k. TN = 40k. L'entreprise a 40 000 DHS de cash net de toutes dettes court terme. Elle est confortable.",
+        "pratique": "Le FR est de 50k et le BFR est de 80k. Quelle est la Trésorerie Nette ?",
+        "resume": "TN = FR - BFR.\nTN > 0 = Cash disponible.\nTN < 0 = Dépendance totale à la banque.\nLe cash est la réalité, le profit n'est qu'une opinion."
+      },
+      "en": {
+        "objectif": "Calculate Net Treasury and understand why it is the ultimate survival measure.",
+        "explication": "🔹 Definition\nNet Treasury (NT) is the cash left after paying all debts and financing inventory. It is oxygen.\n\n🔹 The Truth Formula\n**NT = Working Capital (FR) - WCR**\nOr simply: **NT = Treasury-Assets (Bank/Cash) - Treasury-Liabilities (Overdraft).**\n\n🔹 Interpretation\n- **NT > 0**: Excellent. The company has cash for investments.\n- **NT < 0**: The company is on bank life support. Grave imbalance. If the bank stops the overdraft, the company dies.\n\n👍 Why is it the most important ratio?\nBecause you can be profitable (Net Profit) but die (bankruptcy) if Net Treasury is negative. Profit is an opinion, cash is a reality!",
+        "exemple": "FR = 100k. WCR = 60k. NT = 40k. The firm has 40,000 DHS cash net of all short-term debt. Comfortable.",
+        "pratique": "If FR is 50k and WCR is 80k, what is the Net Treasury?",
+        "resume": "NT = FR - WCR.\nNT > 0 = Cash available.\nNT < 0 = Total bank dependence.\nCash is reality, profit is just an opinion."
+      },
+      "ar": {
+        "objectif": "حساب الخزينة الصافية وفهم سبب كونها المقياس النهائي لبقاء الشركة.",
+        "explication": "🔹 تعريف\nالخزينة الصافية (TN) هي المبلغ المتبقي في الخزينة بعد سداد جميع الديون وتمويل المخزون. إنه الأكسجين.\n\n🔹 صيغة الحقيقة\n**TN = رأس المال العامل (FR) - WCR**\nأو ببساطة: **TN = خزينة الأصول (بنك/صندوق) - خزينة الخصوم (سحب على المكشوف).**\n\n🔹 التفسير\n- **TN > 0**: الوضع ممتاز. الشركة لديها نقد للاستثمار.\n- **TN < 0**: الشركة تعيش بتمويل بنكي. اختلال مالي خطير. إذا أوقف البنك السحب على المكشوف، تموت الشركة.\n\n👍 لماذا هي أهم نسبة؟\nلأنك قد تكون مربحاً (صافي ربح) لكنك تموت (إفلاس) إذا كانت الخزينة الصافية سلبية. الربح رأي، النقد حقيقة!",
+        "exemple": "FR = 100ألف. WCR = 60ألف. TN = 40ألف. الشركة لديها 40 ألف درهم كسيولة صافية بعد كل الديون قصيرة الأجل. مريحة.",
+        "pratique": "FR هو 50 ألف و WCR هو 80 ألف. ما هي الخزينة الصافية؟",
+        "resume": "TN = FR - WCR.\nTN > 0 = سيولة متاحة.\nTN < 0 = تبعية كاملة للبنك.\nالنقد حقيقة، الربح مجرد رأي."
+      }
+    },
+    "psychology": {
+      "fr": ["La TN positive permet au chef d'entreprise de dormir sur ses deux oreilles. C'est la liberté totale."],
+      "en": ["Positive NT lets the manager sleep soundly. It's total freedom."],
+      "ar": ["الخزينة الصافية الإيجابية تجعل المدير ينام مرتاح البال. إنها الحرية المطلقة."]
+    },
+    "missions": {
+      "fr": ["Regardez votre compte bancaire. C'est votre trésorerie personnelle.", "Identifiez pourquoi le BFR positif 'mange' le Fonds de Roulement."],
+      "en": ["Look at your bank account. That's your personal treasury.", "Identify why positive WCR 'eats' Working Capital."],
+      "ar": ["انظر إلى حسابك البنكي. هذه هي خزانتك الشخصية.", "حدد لماذا يأكل WCR الإيجابي رأس المال العامل."]
+    },
+    "secret_pro": {
+      "fr": "Beaucoup d'entreprises marocaines qui échouent ont une très bonne 'Profitabilité' mais une 'TN' désastreuse à cause de clients qui paient à 180 jours. Soyez le comptable qui alerte sur les délais de paiement avant qu'il ne soit trop tard.",
+      "en": "Many Moroccan companies that fail have high 'Profitability' but disastrous 'NT' because clients pay in 180 days. Be the accountant who alerts on payment terms before it's too late.",
+      "ar": "العديد من الشركات المغربية التي تفشل لديها 'ربحية' جيدة ولكن 'خزينة' كارثية بسبب عملاء يدفعون بعد 180 يوماً. كن المحاسب الذي ينبه لمهل الدفع قبل فوات الأوان."
+    },
+    "piege_frequent": {
+      "fr": "Calculer la TN en additionnant FR et BFR. Non, il faut les SOUSTRAIRE !",
+      "en": "Calculating NT by adding FR and WCR. No, you must SUBTRACT them!",
+      "ar": "حساب TN بجمع FR و WCR. لا، يجب طرحهما!"
+    },
+    "mission_terrain": {
+      "fr": "Prenez les chiffres de la mission précédente et calculez la TN.",
+      "en": "Take figures from the previous mission and calculate NT.",
+      "ar": "خذ أرقام المهمة السابقة واحسب TN."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Votre solde 5141 est de 10 000 DHS. Le relevé indique 12 000 DHS. Vous trouvez un chèque fournisseur non encaissé de 3 000 DHS et des frais bancaires non saisis de 1 000 DHS. Faites le rapprochement. Quel est le solde final rapproché ?",
+        "en": "Your 5141 balance is 10,000 DHS. Bank statement says 12,000 DHS. You find an uncashed supplier check of 3,000 DHS and unrecorded bank fees of 1,000 DHS. What is the final reconciled balance?",
+        "ar": "رصيدك في 5141 هو 10000 درهم. يشير الكشف إلى 12000 درهم. تجد شيك مورد غير مصروف بـ 3000 درهم ورسوم بنكية غير مسجلة بـ 1000 درهم. ما هو الرصيد النهائي المطابق؟"
+      },
+      "reward_xp": 80
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Le Fonds de Roulement est de 100 000 DHS et le BFR est de 70 000 DHS. Quelle est la Trésorerie Nette ?",
+      "correct_answer": "30000",
+      "explanation": "TN = 100 000 - 70 000 = 30 000 DHS.",
+      "hint": "Soustrayez le BFR du FR."
+    }
+  },
+  {
+    "id": 59,
+    "title": {
+      "fr": "Les Ratios de Liquidité",
+      "en": "Liquidity Ratios",
+      "ar": "نسب السيولة"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La liquidité, c'est la capacité à transformer votre patrimoine en cash pour payer vos dettes. C'est l'examen de survie de l'entreprise.",
+      "en": "Liquidity is the ability to turn your assets into cash to pay debts. It's the company's survival exam.",
+      "ar": "السيولة هي القدرة على تحويل أصولك إلى نقد لسداد ديونك. إنه اختبار بقاء الشركة."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Utiliser les ratios de liquidité pour mesurer la capacité de l'entreprise à faire face à ses dettes à court terme.",
+        "explication": "🔹 Le Ratio de Liquidité Générale\nIl mesure si l'Actif Circulant couvre les Dettes à court terme.\n**Ratio = Actif Circulant / Dettes à court terme (Passif circulant).**\n- **Ratio > 1** : L'entreprise est capable de payer ses dettes (c'est bon).\n- **Ratio < 1** : L'entreprise est en danger, elle n'a pas assez d'actifs rapides pour payer ses dettes urgentes.\n\n🔹 Le Ratio de Liquidité Réduite\nParfois, le stock est difficile à vendre. On utilise donc la liquidité 'réduite' qui exclut les stocks.\n**Ratio = (Créances + Trésorerie-Actif) / Dettes court terme.**\n\n👍 Pourquoi les banques adorent ces ratios ?\nLe banquier ne veut pas savoir si vous êtes riche à long terme (Bâtiments), il veut savoir si, si il vous demande de rembourser demain, vous avez les liquidités (Cash/Clients) pour le faire.",
+        "exemple": "SARL Atlas : Actif Circulant = 200k. Dettes court terme = 150k. Ratio = 200/150 = 1.33. C'est > 1, la banque est rassurée !",
+        "pratique": "Vous avez 100k d'actifs circulants et 120k de dettes court terme. Quel est le ratio et est-ce dangereux ?",
+        "resume": "Les ratios mesurent la solvabilité immédiate.\nLiquidité Générale = Actif circulant / Dettes court terme.\nRatio > 1 est le minimum de survie.\nLes banques utilisent ces ratios pour décider d'accorder un prêt."
+      },
+      "en": {
+        "objectif": "Use liquidity ratios to measure the company's ability to meet short-term debts.",
+        "explication": "🔹 Current Ratio (Liquidité Générale)\nMeasures if Current Assets cover short-term debts.\n**Ratio = Current Assets / Current Liabilities.**\n- **Ratio > 1**: Company can pay debts (good).\n- **Ratio < 1**: Company is in danger, not enough liquid assets to pay urgent debts.\n\n🔹 Quick Ratio (Liquidité Réduite)\nInventory can be hard to sell, so we exclude it.\n**Ratio = (Receivables + Treasury-Assets) / Current Liabilities.**\n\n👍 Why bankers love these ratios\nBankers don't care about long-term wealth (buildings); they want to know: if you need to pay back tomorrow, do you have the cash (or clients) to do it?",
+        "exemple": "SARL Atlas: Current Assets = 200k. Current Liabilities = 150k. Ratio = 200/150 = 1.33. It's > 1, the bank is reassured!",
+        "pratique": "You have 100k in current assets and 120k in short-term debt. What is the ratio and is it dangerous?",
+        "resume": "Ratios measure immediate solvency.\nCurrent Ratio = Current Assets / Current Liabilities.\nRatio > 1 is the minimum for survival.\nBanks use these ratios to decide on loan approvals."
+      },
+      "ar": {
+        "objectif": "استخدام نسب السيولة لقياس قدرة الشركة على مواجهة ديونها قصيرة الأجل.",
+        "explication": "🔹 نسبة السيولة العامة\nتقيس ما إذا كانت الأصول المتداولة تغطي الديون قصيرة الأجل.\n**النسبة = الأصول المتداولة / الديون قصيرة الأجل (الخصوم المتداولة).**\n- **النسبة > 1**: الشركة قادرة على دفع ديونها (جيد).\n- **النسبة < 1**: الشركة في خطر، لا توجد أصول سريعة كافية لدفع الديون العاجلة.\n\n🔹 نسبة السيولة السريعة\nأحياناً يصعب بيع المخزون، لذا نستثنيه.\n**النسبة = (مستحقات العملاء + خزينة الأصول) / الديون قصيرة الأجل.**\n\n👍 لماذا يعشق المصرفيون هذه النسب؟\nالمصرفي لا يهتم بالثروة طويلة الأجل (المباني)؛ يريد أن يعرف: إذا طُلب منك السداد غداً، هل لديك النقد (أو العملاء) للقيام بذلك؟",
+        "exemple": "شركة Atlas: أصول متداولة = 200ألف. ديون قصيرة الأجل = 150ألف. النسبة = 200/150 = 1.33. النسبة > 1، البنك مطمئن!",
+        "pratique": "لديك 100 ألف أصول متداولة و 120 ألف ديون قصيرة الأجل. ما هي النسبة وهل هي خطيرة؟",
+        "resume": "تقيس النسب الملاءة الفورية.\nالسيولة العامة = الأصول المتداولة / الديون قصيرة الأجل.\nالنسبة > 1 هي الحد الأدنى للبقاء.\nتستخدم البنوك هذه النسب لتقرير الموافقة على القروض."
+      }
+    },
+    "psychology": {
+      "fr": ["Le ratio de liquidité est le 'pouls' de l'entreprise. Un ratio qui baisse est un malade qui s'affaiblit."],
+      "en": ["The liquidity ratio is the company's 'pulse'. A falling ratio is a patient getting weaker."],
+      "ar": ["نسبة السيولة هي 'نبض' الشركة. النسبة التي تنخفض هي مريض يضعف."]
+    },
+    "missions": {
+      "fr": ["Calculez le ratio de liquidité de votre projet.", "Expliquez pourquoi le ratio de liquidité réduite est plus 'sévère' que la liquidité générale."],
+      "en": ["Calculate your project's liquidity ratio.", "Explain why the quick ratio is 'stricter' than the current ratio."],
+      "ar": ["احسب نسبة السيولة لمشروعك.", "اشرح لماذا نسبة السيولة السريعة 'أكثر صرامة' من السيولة العامة."]
+    },
+    "secret_pro": {
+      "fr": "Si le ratio est > 2, c'est peut-être aussi un mauvais signe ! Cela veut dire que l'entreprise laisse dormir trop d'argent en stock ou chez les clients au lieu de l'investir. Un bon ratio est souvent entre 1.2 et 1.5.",
+      "en": "If ratio > 2, it might be a bad sign too! It means the company lets too much money sleep in inventory or with clients instead of investing it. A good ratio is often 1.2 to 1.5.",
+      "ar": "إذا كانت النسبة > 2، فقد يكون ذلك علامة سيئة أيضاً! هذا يعني أن الشركة تترك الكثير من المال ينام في المخزون أو عند العملاء بدلاً من استثماره. النسبة الجيدة غالباً ما تكون بين 1.2 و 1.5."
+    },
+    "piege_frequent": {
+      "fr": "Inclure les dettes à long terme dans le dénominateur. NON ! On ne compare que l'Actif Circulant avec les Dettes Court Terme (Passif Circulant).",
+      "en": "Including long-term debt in the denominator. NO! We only compare Current Assets with Short-term Debts (Current Liabilities).",
+      "ar": "تضمين الديون طويلة الأجل في المقام. لا! نحن نقارن الأصول المتداولة فقط بالديون قصيرة الأجل (الخصوم المتداولة)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Actif circulant = 300k. Dettes court terme = 250k. Ratio = 1.2. Si les clients ne paient pas 50k, quel est le nouveau ratio ?",
+        "en": "Current Assets = 300k. Current Liabilities = 250k. Ratio = 1.2. If clients don't pay 50k, what is the new ratio?",
+        "ar": "أصول متداولة = 300ألف. ديون قصيرة الأجل = 250ألف. النسبة = 1.2. إذا لم يدفع العملاء 50ألفاً، ما هي النسبة الجديدة؟"
+      },
+      "reward_xp": 60
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Actif Circulant = 150 000, Dettes Court terme = 100 000. Quel est le ratio de liquidité générale ?",
+      "correct_answer": "1.5",
+      "explanation": "Ratio = 150 000 / 100 000 = 1.5.",
+      "hint": "Divisez l'actif circulant par les dettes court terme."
+    }
+  },
+  {
+    "id": 60,
+    "title": {
+      "fr": "Les Ratios de Rentabilité et Solvabilité",
+      "en": "Profitability and Solvency Ratios",
+      "ar": "نسب الربحية والملاءة"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La rentabilité mesure si vous créez de la richesse, la solvabilité mesure si vous survivrez assez longtemps pour en profiter.",
+      "en": "Profitability measures if you create wealth, solvency measures if you will survive long enough to enjoy it.",
+      "ar": "الربحية تقيس ما إذا كنت تخلق الثروة، والملاءة تقيس ما إذا كنت ستعيش لفترة كافية للاستمتاع بها."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Maîtriser les ratios clés pour évaluer la capacité de l'entreprise à générer du profit et à durer.",
+        "explication": "🔹 1. Ratio de Rentabilité (ROE - Return on Equity)\nLa rentabilité, c'est ce que gagnent les actionnaires avec leur propre argent.\n**ROE = Résultat Net / Capitaux Propres.**\n- Ex : Si vous avez investi 100k et gagné 20k, vous avez un ROE de 20%. C'est excellent ! \n\n🔹 2. Ratio de Solvabilité (Autonomie financière)\nIl mesure si l'entreprise dépend trop des banques.\n**Autonomie = Capitaux Propres / Total Passif.**\n- **> 30%** : C'est très bon. La banque vous fera confiance.\n- **< 10%** : Danger. L'entreprise est 'à la merci' des banques.\n\n👍 Le test de survie\nUne entreprise peut être très rentable (ROE élevé) mais peu solvable (beaucoup de dettes). Si les banques coupent le crédit, l'entreprise meurt, même si elle est rentable ! C'est pour ça qu'on regarde toujours ces deux ratios ensemble.",
+        "exemple": "SARL Atlas : Résultat Net = 50k. Capitaux Propres = 200k. ROE = 25%. C'est une entreprise très rentable pour ses actionnaires.",
+        "pratique": "Si vous avez 500k de Passif Total et 100k de Capitaux Propres, quelle est votre autonomie financière ?",
+        "resume": "ROE (Rentabilité) mesure la richesse créée pour les actionnaires.\nAutonomie financière mesure la dépendance aux banques.\nUne bonne entreprise doit être rentable ET solvable.\nLe risque financier augmente quand l'autonomie baisse."
+      },
+      "en": {
+        "objectif": "Master key ratios to evaluate the company's ability to generate profit and last.",
+        "explication": "🔹 1. Profitability Ratio (ROE - Return on Equity)\nProfitability is what shareholders earn with their own money.\n**ROE = Net Profit / Equity.**\n- Ex: If you invested 100k and made 20k, you have a 20% ROE. Excellent!\n\n🔹 2. Solvency Ratio (Financial Autonomy)\nMeasures if the company relies too much on banks.\n**Autonomy = Equity / Total Liabilities.**\n- **> 30%**: Very good. Banks will trust you.\n- **< 10%**: Danger. The company is 'at the mercy' of banks.\n\n👍 The Survival Test\nA company can be very profitable (high ROE) but not solvent (lots of debt). If banks cut credit, the company dies, even if profitable! That's why we check both.",
+        "exemple": "SARL Atlas: Net Profit = 50k. Equity = 200k. ROE = 25%. A very profitable company for shareholders.",
+        "pratique": "If you have 500k Total Liabilities and 100k Equity, what is your financial autonomy?",
+        "resume": "ROE (Profitability) measures wealth created for shareholders.\nFinancial Autonomy measures bank dependence.\nA good company must be profitable AND solvent.\nFinancial risk increases as autonomy decreases."
+      },
+      "ar": {
+        "objectif": "إتقان النسب الرئيسية لتقييم قدرة الشركة على توليد الربح والاستمرار.",
+        "explication": "🔹 1. نسبة الربحية (ROE - العائد على حقوق الملكية)\nالربحية هي ما يكسبه المساهمون بأموالهم الخاصة.\n**ROE = النتيجة الصافية / حقوق الملكية.**\n- مثال: إذا استثمرت 100 ألف وربحت 20 ألف، لديك ROE بنسبة 20%. ممتاز!\n\n🔹 2. نسبة الملاءة (الاستقلالية المالية)\nتقيس ما إذا كانت الشركة تعتمد أكثر من اللازم على البنوك.\n**الاستقلالية = حقوق الملكية / إجمالي الخصوم.**\n- **> 30%**: جيد جداً. سيثق بك البنك.\n- **< 10%**: خطر. الشركة تحت 'رحمة' البنوك.\n\n👍 اختبار البقاء\nيمكن أن تكون الشركة مربحة جداً (ROE مرتفع) ولكنها غير مليئة (ديون كثيرة). إذا قطعت البنوك الائتمان، تموت الشركة، حتى لو كانت مربحة! لهذا ننظر إليهما معاً.",
+        "exemple": "شركة Atlas: صافي الربح = 50 ألف. حقوق الملكية = 200 ألف. ROE = 25%. شركة مربحة جداً للمساهمين.",
+        "pratique": "إذا كان لديك 500 ألف خصوم إجمالية و 100 ألف حقوق ملكية، ما هي استقلاليتك المالية؟",
+        "resume": "ROE (الربحية) يقيس الثروة المخلوقة للمساهمين.\nالاستقلالية المالية تقيس التبعية للبنوك.\nيجب أن تكون الشركة الجيدة مربحة ومليئة (ذات ملاءة).\nيزداد الخطر المالي عندما تنخفض الاستقلالية."
+      }
+    },
+    "psychology": {
+      "fr": ["Le banquier regarde le ROE pour savoir si vous valez la peine d'être financé.", "La solvabilité est la confiance que vous inspirez : un ratio élevé = je dors tranquille."],
+      "en": ["The banker looks at ROE to see if you are worth financing.", "Solvency is the trust you inspire: high ratio = I sleep soundly."],
+      "ar": ["ينظر المصرفي إلى ROE ليعرف ما إذا كنت تستحق التمويل.", "الملاءة هي الثقة التي تُلهمها: نسبة عالية = أنام مرتاحاً."]
+    },
+    "missions": {
+      "fr": ["Calculez le ROE de votre projet.", "Vérifiez le ratio d'autonomie financière de votre entreprise."],
+      "en": ["Calculate the ROE for your project.", "Check the financial autonomy ratio for your company."],
+      "ar": ["احسب ROE لمشروعك.", "تحقق من نسبة الاستقلال المالي لشركتك."]
+    },
+    "secret_pro": {
+      "fr": "L'effet de levier : Une entreprise peut avoir un ROE médiocre mais décider de s'endetter pour racheter des machines. Si le rendement des machines est supérieur au coût du crédit, le ROE va exploser. C'est l'art de la dette.",
+      "en": "Leverage: A company can have a mediocre ROE but decide to take debt to buy machines. If the machines yield more than the credit cost, ROE explodes. That's the art of debt.",
+      "ar": "رافعة مالية: يمكن للشركة أن يكون لها ROE متوسط ولكنها تقرر الاستدانة لشراء آلات. إذا كان عائد الآلات أعلى من تكلفة القرض، سيتفجر ROE. هذا هو فن الدين."
+    },
+    "piege_frequent": {
+      "fr": "Confondre Rentabilité et Solvabilité. Vous pouvez être rentable (gagner de l'argent) mais insolvable (ne pas pouvoir rembourser vos dettes à temps).",
+      "en": "Confusing Profitability and Solvency. You can be profitable (making money) but insolvent (unable to repay debts on time).",
+      "ar": "الخلط بين الربحية والملاءة. يمكنك أن تكون مربحاً (تجني المال) ولكنك غير مليء (لا تستطيع سداد ديونك في الوقت المحدد)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Bénéfice = 100k. Capitaux Propres = 400k. Dettes = 600k. Quel est le ROE et quel est le ratio d'autonomie financière ?",
+        "en": "Profit = 100k. Equity = 400k. Debt = 600k. What is the ROE and financial autonomy ratio?",
+        "ar": "الربح = 100ألف. حقوق الملكية = 400ألف. الديون = 600ألف. ما هو ROE وما هي نسبة الاستقلال المالي؟"
+      },
+      "reward_xp": 80
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Résultat Net = 50 000 DHS, Capitaux Propres = 250 000 DHS. Quel est le ROE en % ?",
+      "correct_answer": "20",
+      "explanation": "ROE = 50 000 / 250 000 = 0.20 soit 20%.",
+      "hint": "Divisez le Résultat par les Capitaux Propres."
+    }
+  },
+  
+  {
+    "id": 61,
+    "title": {
+      "fr": "Travaux de Fin d'Exercice — Checklist",
+      "en": "Year-End Closing — Checklist",
+      "ar": "أعمال نهاية السنة المالية — قائمة التحقق"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La clôture annuelle est une course contre la montre : il faut valider chaque compte pour garantir que le Bilan reflète la réalité.",
+      "en": "Year-end closing is a race against time: validate every account to ensure the Balance Sheet reflects reality.",
+      "ar": "إغلاق السنة المالية هو سباق مع الزمن: يجب التحقق من كل حساب لضمان أن الميزانية تعكس الواقع."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Mener à bien les opérations de clôture annuelle pour préparer la liasse fiscale.",
+        "explication": "🔹 Le 31 Décembre : Le grand nettoyage\nLa clôture n'est pas qu'une simple date. C'est l'étape où le comptable 'arrête' les compteurs. \n\n🔹 La Checklist du Comptable :\n1. **Lettrage complet** : Vérifier que tous les comptes tiers (clients/fournisseurs) sont lettrés.\n2. **Rapprochement bancaire** : Solde comptable = Solde relevé.\n3. **Inventaire physique** : Compter les stocks et les valoriser.\n4. **Amortissements** : Calculer les dotations de l'année pour tout le parc d'immos.\n5. **Régularisations** : Passer les FNP (Factures non parvenues) et les CCA/PCA.\n\n👍 Le rôle de l'Expert-Comptable\nEn fin d'année, l'expert-comptable supervise ces travaux. Il cherche les 'anomalies' : pourquoi ce compte caisse est-il créditeur ? Pourquoi cette créance client n'a pas bougé depuis 2 ans ?",
+        "exemple": "Le 31/12, le comptable vérifie le compte 3421. Il voit une facture de 5 000 DHS non payée depuis 2021. Il passe une provision pour dépréciation car le risque de non-paiement est devenu très élevé.",
+        "pratique": "L'inventaire physique montre 50 000 DHS de stock alors que la comptabilité en indique 55 000. Que faire ?",
+        "resume": "La clôture est une étape légale obligatoire.\nLa checklist inclut le lettrage, le rapprochement et l'inventaire.\nL'expert-comptable valide la cohérence des comptes.\nUn Bilan non clôturé est un document sans valeur fiscale."
+      },
+      "en": {
+        "objectif": "Successfully perform year-end closing operations to prepare the tax return.",
+        "explication": "🔹 Dec 31st: The big cleanup\nClosing isn't just a date. It's when the accountant 'stops' the meters. \n\n🔹 Accountant's Checklist:\n1. **Full Matching**: Verify all third-party accounts (clients/suppliers).\n2. **Bank Reconciliation**: Ledger balance = Statement balance.\n3. **Physical Inventory**: Count and value stock.\n4. **Depreciation**: Calculate annual expenses for all assets.\n5. **Accruals**: Record FNP (unreceived invoices) and CCA/PCA.\n\n👍 The CPA's role\nAt year-end, the CPA supervises. They look for 'anomalies': Why is this cash account in credit? Why has this receivable not moved in 2 years?",
+        "exemple": "On 12/31, the accountant checks account 3421. He sees a 5,000 DHS invoice unpaid since 2021. He records an impairment provision because the risk of non-payment is now very high.",
+        "pratique": "Physical inventory shows 50k DHS stock, while accounting shows 55k. What do you do?",
+        "resume": "Closing is a mandatory legal step.\nChecklist includes matching, reconciliation, and inventory.\nCPA validates account consistency.\nAn unclosed Balance Sheet has no tax value."
+      },
+      "ar": {
+        "objectif": "إنجاز عمليات إغلاق السنة المالية بنجاح لإعداد الحزمة الضريبية.",
+        "explication": "🔹 31 ديسمبر: التنظيف الكبير\nالإغلاق ليس مجرد تاريخ. إنها المرحلة التي 'يوقف' فيها المحاسب العدادات.\n\n🔹 قائمة تحقق المحاسب:\n1. **المطابقة الكاملة**: التحقق من جميع حسابات الأغيار (عملاء/موردين).\n2. **المطابقة البنكية**: رصيد المحاسبة = رصيد الكشف.\n3. **الجرد المادي**: عد وتقييم المخزون.\n4. **الإهلاكات**: حساب مخصصات السنة لجميع الأصول.\n5. **التسويات**: تسجيل FNP (فواتير لم تصل) و CCA/PCA.\n\n👍 دور الخبير المحاسب\nفي نهاية العام، يشرف الخبير المحاسب. يبحث عن 'الشذوذ': لماذا حساب الصندوق دائن؟ لماذا لم تتحرك هذه المستحقات منذ سنتين؟",
+        "exemple": "في 31/12، يراجع المحاسب الحساب 3421. يرى فاتورة بـ 5000 درهم غير مدفوعة منذ 2021. يسجل مخصصاً لانخفاض القيمة لأن خطر عدم الدفع أصبح مرتفعاً جداً.",
+        "pratique": "يظهر الجرد المادي 50 ألف درهم مخزون بينما تشير المحاسبة إلى 55 ألفاً. ماذا تفعل؟",
+        "resume": "الإغلاق خطوة قانونية إلزامية.\nتتضمن القائمة: المطابقة، التسوية البنكية، والجرد.\nيتحقق الخبير المحاسب من اتساق الحسابات.\nالميزانية غير المغلقة هي وثيقة بلا قيمة ضريبية."
+      }
+    },
+    "psychology": ["Le calme avant la tempête : la clôture est la période la plus intense mais la plus valorisante pour le comptable."],
+    "missions": ["Faites une liste des 5 comptes clés à vérifier avant de clôturer.", "Demandez à un comptable quelle est sa plus grosse peur lors de la clôture."],
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Que doit-on faire si l'inventaire physique diffère de la comptabilité ?",
+      "options": ["Ignorer la différence", "Ajuster la comptabilité pour refléter la réalité", "Supprimer le stock", "Ne rien faire"],
+      "correct_answer": "Ajuster la comptabilité pour refléter la réalité",
+      "explanation": "La comptabilité doit toujours refléter la réalité physique (principe de réalité).",
+      "hint": "La comptabilité doit suivre la réalité, pas l'inverse."
+    }
+  },
+  {
+    "id": 62,
+    "title": {
+      "fr": "La Liasse Fiscale Marocaine",
+      "en": "Moroccan Tax Return (Liasse Fiscale)",
+      "ar": "الحزمة الضريبية المغربية (Liasse Fiscale)"
+    },
+    "xp": 120,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "content": {
+      "fr": {
+        "objectif": "Savoir composer les 9 documents obligatoires de la Liasse Fiscale.",
+        "explication": "La Liasse Fiscale est la carte d'identité financière de l'entreprise. Elle comprend : Le Bilan, le CPC, l'ESG, le TAFIRE, et les états d'informations complémentaires (détails des immo, des dettes, des créances).",
+        "resume": "La Liasse Fiscale est le dossier complet transmis à la DGI."
+      },
+      "en": {
+        "objectif": "Know how to compile the 9 mandatory documents of the Tax Return.",
+        "explication": "The Tax Return is the financial ID card of the firm. It includes: Balance Sheet, Income Statement, ESG, TAFIRE, and supplementary information states.",
+        "resume": "Tax Return is the full file sent to the DGI."
+      },
+      "ar": {
+        "objectif": "معرفة كيفية تجميع الوثائق التسع الإلزامية للحزمة الضريبية.",
+        "explication": "الحزمة الضريبية هي بطاقة الهوية المالية للشركة. تشمل: الميزانية، CPC، ESG، TAFIRE، وحالات المعلومات التكميلية.",
+        "resume": "الحزمة الضريبية هي الملف الكامل المرسل لـ DGI."
+      }
+    },
+    "practice_zone": {
+        "type": "input",
+        "question": "Combien de documents obligatoires composent la Liasse Fiscale?",
+        "correct_answer": "9",
+        "explanation": "Il y a 9 états de synthèse obligatoires.",
+        "hint": "Le chiffre est compris entre 5 et 10."
+    }
+  },
+  {
+    "id": 63,
+    "title": {
+      "fr": "Analyser un Bilan Réel",
+      "en": "Analyzing a Real Balance Sheet",
+      "ar": "تحليل ميزانية حقيقية"
+    },
+    "xp": 110,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "content": {
+        "fr": {"objectif": "Identifier les points forts et faibles d'une PME marocaine via son Bilan.", "explication": "Analyser l'équilibre financier (FR, BFR, TN).", "resume": "Le Bilan révèle la solidité financière."},
+        "en": {"objectif": "Identify strengths and weaknesses of a Moroccan SME via its Balance Sheet.", "explication": "Analyze financial balance (FR, WCR, NT).", "resume": "Balance Sheet reveals financial strength."},
+        "ar": {"objectif": "تحديد نقاط القوة والضعف لشركة مغربية عبر ميزانيتها.", "explication": "تحليل التوازن المالي (FR، WCR، TN).", "resume": "الميزانية تكشف القوة المالية."}
+    },
+    "practice_zone": { "type": "input", "question": "Si Actif = 500k et Dettes = 500k, que vaut le Capital (si Résultat = 0) ?", "correct_answer": "0", "explanation": "A=P. 500k = (Capital + 500k). Donc Capital=0.", "hint": "A=P." }
+  },
+  {
+    "id": 64,
+    "title": {
+      "fr": "Présenter les Résultats",
+      "en": "Presenting Results",
+      "ar": "عرض النتائج"
+    },
+    "xp": 80,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "content": {
+        "fr": {"objectif": "Expliquer le bilan au patron.", "explication": "Vulgarisation comptable.", "resume": "Le comptable est un conseiller."},
+        "en": {"objectif": "Explain balance sheet to the boss.", "explication": "Simplifying accounting.", "resume": "Accountant is an advisor."},
+        "ar": {"objectif": "شرح الميزانية للمدير.", "إexplication": "تبسيط المحاسبة.", "resume": "المحاسب مستشار."}
+    },
+    "practice_zone": { "type": "mcq", "question": "Quelle est la meilleure approche ?", "options": ["Montrer le bilan technique", "Vulgariser les indicateurs"], "correct_answer": "Vulgariser les indicateurs", "explanation": "Le patron veut des résultats, pas du jargon.", "hint": "Simplification." }
+  },
+  {
+    "id": 65,
+    "title": {
+      "fr": "SIMULATION PHASE 3 — L'Analyste Financier",
+      "en": "FINAL SIMULATION P3 — Financial Analyst",
+      "ar": "المحاكاة النهائية للمرحلة 3 — المحلل المالي"
+    },
+    "xp": 600,
+    "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+    "content": {
+        "fr": {"objectif": "Synthèse finale.", "explication": "Étude de cas complète.", "resume": "Vous êtes prêt pour la fiscalité."},
+        "en": {"objectif": "Final synthesis.", "explication": "Full case study.", "resume": "Ready for taxation."},
+        "ar": {"objectif": "توليف نهائي.", "explication": "دراسة حالة كاملة.", "resume": "مستعد للضرائب."}
+    },
+    "practice_zone": { "type": "input", "question": "Calcul final ?", "correct_answer": "1000", "explanation": "Calcul.", "hint": "Calcul." }
+  }
+]
+    
+
+

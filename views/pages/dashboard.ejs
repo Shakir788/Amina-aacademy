@@ -245,7 +245,7 @@
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <aside class="sidebar" id="sidebar">
-        <a href="/" class="logo">AMINA <span>Académie</span></a>
+        <a href="/dashboard" class="logo">AMINA <span>Académie</span></a>
         
         <% const isPremiumUser = user && user.subscription && user.subscription.plan === 'premium'; %>
         <% const isAdmin = user && user.role === 'admin'; %>
@@ -311,11 +311,11 @@
 
         <% 
         const mktLessons = (typeof marketingLessons !== 'undefined' && marketingLessons.length > 0) ? marketingLessons : [
-            {id: 1, title: "Viral Content Brain", description: "Hooks + Psychology + Reels", isUnlocked: true},
-            {id: 2, title: "Creator System", description: "Design, Édition & Outils IA", isUnlocked: true},
-            {id: 3, title: "Money System", description: "Trouver des clients & Négociation", isUnlocked: false},
-            {id: 4, title: "Ads & Growth", description: "Meta Ads & Stratégies d'audience", isUnlocked: false},
-            {id: 5, title: "AI Domination", description: "Automatisation & Contenu IA", isUnlocked: false}
+            {id: 1, title: {fr: "Viral Content Brain"}, description: {fr: "Hooks + Psychology + Reels"}, isUnlocked: true},
+            {id: 2, title: {fr: "Creator System"}, description: {fr: "Design, Édition & Outils IA"}, isUnlocked: true},
+            {id: 3, title: {fr: "Money System"}, description: {fr: "Trouver des clients & Négociation"}, isUnlocked: false},
+            {id: 4, title: {fr: "Ads & Growth"}, description: {fr: "Meta Ads & Stratégies d'audience"}, isUnlocked: false},
+            {id: 5, title: {fr: "AI Domination"}, description: {fr: "Automatisation & Contenu IA"}, isUnlocked: false}
         ]; 
         %>
 
@@ -345,6 +345,10 @@
                         if (!isPremiumUser && !isAdmin && lesson.id > 2) {
                             isAvailable = false; needsUpgrade = true;
                         }
+
+                        // Smart fallback for JSON multilingual structure
+                        const titleDisplay = (typeof lesson.title === 'object') ? (lesson.title.fr || lesson.title.en) : lesson.title;
+                        const descDisplay = (typeof lesson.description === 'object') ? (lesson.description.fr || lesson.description.en) : lesson.description;
                     %>
                     <div class="lesson-card <%= isAvailable ? 'active-lesson' : 'locked-lesson' %>">
                         <div class="card-img" style="background-image: url('<%= imgUrl %>');">
@@ -359,8 +363,8 @@
                         <div class="card-content">
                             <span class="lesson-number" style="color:#7C3AED;"><%= formattedNum %></span>
                             <div class="card-text">
-                                <h3><%= lesson.title %></h3>
-                                <p><%= lesson.description %></p>
+                                <h3><%= titleDisplay %></h3>
+                                <p><%= descDisplay %></p>
                             </div>
                             
                             <% if(needsUpgrade) { %>
@@ -401,6 +405,10 @@
                         if (!isPremiumUser && !isAdmin && lesson.id > 1) {
                             isAvailable = false; needsUpgrade = true;
                         }
+
+                        // Smart fallback for JSON multilingual structure
+                        const titleDisplay = (typeof lesson.title === 'object') ? (lesson.title.fr || lesson.title.en) : lesson.title;
+                        const descDisplay = (typeof lesson.description === 'object') ? (lesson.description.fr || lesson.description.en) : lesson.description;
                     %>
                     <div class="lesson-card <%= isAvailable ? 'active-lesson' : 'locked-lesson' %>">
                         <div class="card-img" style="background-image: url('<%= imgUrl %>');">
@@ -415,8 +423,8 @@
                         <div class="card-content">
                             <span class="lesson-number" style="color:#4f46e5;"><%= formattedNum %></span>
                             <div class="card-text">
-                                <h3><%= lesson.title %></h3>
-                                <p><%= lesson.description %></p>
+                                <h3><%= titleDisplay %></h3>
+                                <p><%= descDisplay %></p>
                             </div>
                             
                             <% if(needsUpgrade) { %>
@@ -458,6 +466,10 @@
                         if (!isPremiumUser && !isAdmin && lesson.id > 3) {
                             isAvailable = false; needsUpgrade = true;
                         }
+
+                        // Smart fallback for JSON multilingual structure
+                        const titleDisplay = (typeof lesson.title === 'object') ? (lesson.title.fr || lesson.title.en) : lesson.title;
+                        const descDisplay = (typeof lesson.description === 'object') ? (lesson.description.fr || lesson.description.en) : lesson.description;
                     %>
                     <div class="lesson-card <%= isAvailable ? 'active-lesson' : 'locked-lesson' %>">
                         <div class="card-img" style="background-image: url('<%= imgUrl %>');">
@@ -472,8 +484,8 @@
                         <div class="card-content">
                             <span class="lesson-number" style="color:#0f766e;"><%= formattedNum %></span>
                             <div class="card-text">
-                                <h3><%= lesson.title %></h3>
-                                <p><%= lesson.description %></p>
+                                <h3><%= titleDisplay %></h3>
+                                <p><%= descDisplay %></p>
                             </div>
                             
                             <% if(needsUpgrade) { %>

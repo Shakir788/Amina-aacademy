@@ -63,7 +63,7 @@
         .modal-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(8px); display: none; justify-content: center; align-items: center; z-index: 9999; opacity: 0; transition: opacity 0.3s ease; }
         .modal-overlay.active { display: flex; opacity: 1; }
         
-        .payment-modal { background: white; border-radius: 24px; width: 100%; max-width: 500px; padding: 40px; transform: scale(0.9); transition: transform 0.3s ease; box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
+        .payment-modal { background: white; border-radius: 24px; width: 100%; max-width: 500px; padding: 40px; transform: scale(0.9); transition: transform 0.3s ease; box-shadow: 0 25px 50px rgba(0,0,0,0.2); max-height: 90vh; overflow-y: auto;}
         .modal-overlay.active .payment-modal { transform: scale(1); }
         
         .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
@@ -75,9 +75,14 @@
         .pay-method-btn:hover { border-color: var(--primary); background: #f8fafc; }
         .method-icon { font-size: 24px; }
 
-        /* Instruction Box */
+        /* Instruction Box & QR Code */
         .cih-instructions { background: #f0fdf4; border: 2px solid #bbf7d0; border-radius: 16px; padding: 25px; margin-top: 20px; display: none; text-align: left; }
         .rib-box { background: white; border: 1px dashed #cbd5e1; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 15px; margin: 15px 0; text-align: center; font-weight: bold; letter-spacing: 1px; color: #0f172a; }
+        
+        .qr-code-container { text-align: center; margin: 20px 0; }
+        .qr-code { width: 160px; height: 160px; border-radius: 12px; border: 2px solid #cbd5e1; padding: 8px; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .qr-text { font-size: 13px; color: #065f46; font-weight: 600; margin-top: 8px; }
+
         .btn-whatsapp { display: flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: white; text-decoration: none; padding: 15px; border-radius: 12px; font-weight: 700; font-size: 16px; transition: 0.3s; }
         .btn-whatsapp:hover { background: #1ebc5a; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
 
@@ -232,10 +237,17 @@
             const message = `Bonjour ! Je souhaite activer le plan *${currentSelectedPlan}* à *${currentSelectedPrice} DH*. Voici le reçu de mon virement CIH :`;
             const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
             
+            // Note: Replace the src with your actual CIH QR Code path (e.g., /images/qr-cih.png)
+            // If you don't have one yet, it will just show an alternate broken image icon, or you can use a placeholder.
             box.innerHTML = `
                 <h3 style="margin-top:0; color:#065f46;">Instructions Virement CIH</h3>
-                <p style="font-size:15px; color:#065f46;">Envoyez <b style="font-size:18px;">${currentSelectedPrice} DH</b> vers le compte CIH suivant :</p>
+                <p style="font-size:15px; color:#065f46;">Scannez le QR Code ou envoyez <b style="font-size:18px;">${currentSelectedPrice} DH</b> vers le compte ci-dessous :</p>
                 
+                <div class="qr-code-container">
+                    <img src="/images/qr-cih.png" alt="QR Code CIH" class="qr-code" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=230780290616521100330080'">
+                    <div class="qr-text">Scanner pour payer via CIH Mobile</div>
+                </div>
+
                 <div class="rib-box">
                     Nom : AMINA KARMI<br><br>
                     RIB CIH :<br>230 780 2906165211003300 80
@@ -259,10 +271,16 @@
             const message = `Bonjour ! Voici mon reçu Wafacash/Cash Plus pour l'activation du plan *${currentSelectedPlan}* :`;
             const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
+            // Note: Replace the src with your actual Cash Plus QR Code path (e.g., /images/qr-cashplus.png)
             box.innerHTML = `
                 <h3 style="margin-top:0; color:#065f46;">Wafacash / Cash Plus</h3>
-                <p style="font-size:15px; color:#065f46;">Envoyez <b style="font-size:18px;">${currentSelectedPrice} DH</b> à l'agence la plus proche avec ces informations :</p>
+                <p style="font-size:15px; color:#065f46;">Scannez le QR Code Cash Plus ou envoyez <b style="font-size:18px;">${currentSelectedPrice} DH</b> à l'agence avec ces informations :</p>
                 
+                <div class="qr-code-container">
+                    <img src="/images/qr-cashplus.jpeg" alt="QR Code Cash Plus" class="qr-code" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=AMINA_ACADEMY_CASHPLUS'">
+                    <div class="qr-text">Scanner avec l'appli Cash Plus</div>
+                </div>
+
                 <div class="rib-box">
                     Nom : AMINA KARMI<br>
                     <span style="font-size: 12px; color: #64748b;">(Veuillez nous contacter sur WhatsApp si vous avez besoin du numéro de CIN)</span>

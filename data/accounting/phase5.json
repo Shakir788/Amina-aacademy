@@ -1,0 +1,1424 @@
+[
+  {
+    "id": 81,
+    "title": {
+      "fr": "Introduction à la Comptabilité Analytique",
+      "en": "Introduction to Cost Accounting",
+      "ar": "مقدمة في المحاسبة التحليلية"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La comptabilité générale est faite pour l'État (les impôts). La comptabilité analytique est faite pour le patron (la stratégie).",
+      "en": "Financial accounting is made for the State (taxes). Cost accounting is made for the boss (strategy).",
+      "ar": "المحاسبة العامة مخصصة للدولة (الضرائب). المحاسبة التحليلية مخصصة للمدير (الاستراتيجية)."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comprendre la différence entre comptabilité générale (externe) et comptabilité analytique (interne).",
+        "explication": "🔹 Les limites de la Comptabilité Générale (CG)\nLa CG vous dit : 'L'entreprise a fait 100 000 DHS de bénéfice global'. Mais elle ne vous dit pas *quel produit* a gagné de l'argent et *quel produit* en a perdu ! Si vous fabriquez des chaises et des tables, la CG mélange tout.\n\n🔹 Le rôle de la Comptabilité Analytique (CA)\nLa CA n'est PAS obligatoire au Maroc (la DGI ne la demande pas). C'est un outil interne, secret, utilisé par les dirigeants pour prendre des décisions. Elle permet de découper l'entreprise en petits morceaux.\n\n🔹 Les questions auxquelles la CA répond :\n1. Quel est le coût de fabrication exact d'une seule chaise ?\n2. Doit-on continuer à produire ce modèle ou l'abandonner ?\n3. À quel prix minimum dois-je vendre ma table pour ne pas perdre d'argent ?\n\n👍 Le radar de rentabilité\nL'analyste prend les charges de la classe 6 (CG), les retravaille, et les distribue produit par produit. C'est de la chirurgie financière !",
+        "exemple": "Une usine de jus de fruits fait un bénéfice global de 50 000 DHS (Comptabilité Générale). La Comptabilité Analytique révèle que le jus d'orange rapporte 80 000 DHS, mais que le jus de pomme perd 30 000 DHS. Sans la CA, le patron n'aurait jamais su que le jus de pomme détruisait sa rentabilité !",
+        "pratique": "L'inspecteur des impôts (DGI) peut-il vous sanctionner si vous ne tenez pas de comptabilité analytique ?",
+        "resume": "La comptabilité générale (CG) est globale, obligatoire et tournée vers l'extérieur (DGI, Banques).\nLa comptabilité analytique (CA) est détaillée, facultative et tournée vers l'intérieur (Dirigeants).\nElle permet de calculer le coût de chaque produit pour fixer les prix de vente."
+      },
+      "en": {
+        "objectif": "Understand the difference between financial accounting (external) and cost accounting (internal).",
+        "explication": "🔹 The limits of Financial Accounting (CG)\nCG tells you: 'The company made 100,000 DHS overall profit'. But it doesn't tell you *which product* made money and *which product* lost money! If you make chairs and tables, CG mixes everything.\n\n🔹 The role of Cost Accounting (CA)\nCA is NOT mandatory in Morocco (the DGI doesn't ask for it). It's an internal, secret tool used by managers to make decisions. It slices the company into small pieces.\n\n🔹 Questions CA answers:\n1. What is the exact manufacturing cost of a single chair?\n2. Should we keep producing this model or drop it?\n3. What is the minimum selling price for my table so I don't lose money?\n\n👍 The profitability radar\nThe analyst takes Class 6 expenses (CG), reworks them, and distributes them product by product. It's financial surgery!",
+        "exemple": "A juice factory makes 50k DHS overall profit (CG). Cost Accounting reveals orange juice makes 80k DHS, but apple juice loses 30k DHS. Without CA, the boss would never know apple juice was destroying profitability!",
+        "pratique": "Can the tax inspector (DGI) penalize you if you don't keep cost accounting?",
+        "resume": "Financial accounting (CG) is global, mandatory, and outward-facing (DGI, Banks).\nCost accounting (CA) is detailed, optional, and inward-facing (Managers).\nIt allows calculating each product's cost to set selling prices."
+      },
+      "ar": {
+        "objectif": "فهم الفرق بين المحاسبة العامة (الخارجية) والمحاسبة التحليلية (الداخلية).",
+        "explication": "🔹 حدود المحاسبة العامة (CG)\nتخبرك CG: 'الشركة حققت 100 ألف درهم ربحاً إجمالياً'. لكنها لا تخبرك *أي منتج* كسب المال و*أي منتج* خسره! إذا كنت تصنع كراسي وطاولات، فإن CG تخلط كل شيء.\n\n🔹 دور المحاسبة التحليلية (CA)\nCA ليست إجبارية في المغرب (لا تطلبها DGI). إنها أداة داخلية سرية يستخدمها المديرون لاتخاذ القرارات. تسمح بتقسيم الشركة إلى أجزاء صغيرة.\n\n🔹 الأسئلة التي تجيب عليها CA:\n1. ما هي تكلفة التصنيع الدقيقة لكرسي واحد؟\n2. هل يجب الاستمرار في إنتاج هذا الطراز أم التخلي عنه؟\n3. ما هو الحد الأدنى لسعر بيع طاولتي حتى لا أخسر المال؟\n\n👍 رادار الربحية\nيأخذ المحلل تكاليف الفئة 6 (CG)، ويعيد العمل عليها، ويوزعها منتجاً بمنتج. إنها جراحة مالية!",
+        "exemple": "يحقق مصنع عصير ربحاً إجمالياً 50 ألف درهم (محاسبة عامة). تكشف المحاسبة التحليلية أن عصير البرتقال يربح 80 ألفاً، لكن عصير التفاح يخسر 30 ألفاً. بدون CA، لم يكن المدير ليعرف أبداً أن عصير التفاح يدمر ربحيته!",
+        "pratique": "هل يمكن لمفتش الضرائب معاقبتك إذا لم تمسك محاسبة تحليلية؟",
+        "resume": "المحاسبة العامة (CG) شاملة، إجبارية، وموجهة للخارج (DGI، البنوك).\nالمحاسبة التحليلية (CA) مفصلة، اختيارية، وموجهة للداخل (المديرون).\nتسمح بحساب تكلفة كل منتج لتحديد أسعار البيع."
+      }
+    },
+    "psychology": {
+      "fr": ["La Comptabilité Générale subit le passé (constat). La Comptabilité Analytique prépare le futur (décision). C'est le passage d'historien à stratège."],
+      "en": ["Financial Accounting endures the past (observation). Cost Accounting prepares the future (decision). It's the shift from historian to strategist."],
+      "ar": ["المحاسبة العامة تتحمل الماضي (ملاحظة). المحاسبة التحليلية تجهز المستقبل (قرار). إنه الانتقال من مؤرخ إلى خبير استراتيجي."]
+    },
+    "missions": {
+      "fr": ["Regardez le menu d'un restaurant. Pensez-vous qu'ils connaissent le coût exact de chaque plat ? C'est le but de la CA."],
+      "en": ["Look at a restaurant menu. Do you think they know the exact cost of each dish? That's the goal of CA."],
+      "ar": ["انظر إلى قائمة مطعم. هل تعتقد أنهم يعرفون التكلفة الدقيقة لكل طبق؟ هذا هو هدف CA."]
+    },
+    "secret_pro": {
+      "fr": "Dans les grandes industries marocaines, le 'Contrôleur de Gestion' (celui qui fait la CA) est souvent mieux payé que le Chef Comptable, car ses calculs ont un impact direct sur la stratégie de survie de l'entreprise et la fixation des prix.",
+      "en": "In large Moroccan industries, the 'Management Controller' (who does CA) is often paid more than the Chief Accountant because their calculations directly impact the company's survival strategy and pricing.",
+      "ar": "في الصناعات المغربية الكبرى، غالباً ما يتقاضى 'مراقب التسيير' (الذي يقوم بـ CA) راتباً أعلى من رئيس الحسابات، لأن حساباته تؤثر مباشرة على استراتيجية بقاء الشركة وتحديد الأسعار."
+    },
+    "piege_frequent": {
+      "fr": "Penser qu'on peut envoyer les documents de comptabilité analytique à la DGI. Surtout pas ! Ce sont des documents confidentiels qui montrent votre vraie marge. La DGI ne demande que le Bilan et le CPC.",
+      "en": "Thinking you can send cost accounting documents to the DGI. Absolutely not! These are confidential documents showing your true margin. DGI only asks for Balance Sheet and CPC.",
+      "ar": "الاعتقاد بأنه يمكن إرسال وثائق المحاسبة التحليلية إلى DGI. إياك! هذه وثائق سرية تظهر هامشك الحقيقي. تطلب DGI الميزانية و CPC فقط."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "SARL Atlas produit des chaises et des tables. Le CPC montre des charges totales de 100 000 DHS et un produit total de 120 000 DHS. L'entreprise est rentable. Le gérant vous demande : 'Dois-je augmenter le prix des chaises ?' Que lui répondez-vous avec vos données actuelles ?",
+        "en": "Atlas produces chairs and tables. CPC shows 100k DHS total expenses and 120k DHS total income. The firm is profitable. The manager asks: 'Should I raise the chair price?' What do you answer with current data?",
+        "ar": "تنتج Atlas كراسي وطاولات. يظهر CPC إجمالي تكاليف 100ألف وإيرادات 120ألف. الشركة مربحة. يسألك المدير: 'هل يجب أن أرفع سعر الكراسي؟' ماذا تجيب ببياناتك الحالية؟"
+      },
+      "reward_xp": 50
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Parfait ! Tu lui dis que c'est impossible à savoir sans Comptabilité Analytique. Le bénéfice global de 20 000 DHS cache peut-être une perte sur les chaises compensée par les tables. Il faut calculer les coûts par produit ! 🔥",
+        "en": "Perfect! You tell him it's impossible to know without Cost Accounting. The 20k global profit might hide a loss on chairs offset by tables. Must calculate costs per product! 🔥",
+        "ar": "ممتاز! تخبره أنه من المستحيل معرفة ذلك بدون محاسبة تحليلية. قد يخفي الربح الإجمالي 20ألف خسارة في الكراسي تعوضها الطاولات. يجب حساب التكاليف لكل منتج! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as dit oui car l'entreprise gagne de l'argent. Faux ! Tu n'en as aucune idée. Peut-être que les chaises sont déjà trop chères et que personne ne les achète ! 😭",
+        "en": "You said yes because the firm makes money. False! You have no idea. Maybe chairs are already too expensive! 😭",
+        "ar": "قلت نعم لأن الشركة تكسب المال. خطأ! ليس لديك أي فكرة. ربما الكراسي غالية جداً بالفعل! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Lequel de ces documents est un produit de la Comptabilité Générale, et NON de la Comptabilité Analytique ?",
+      "options": [
+        "Le Bilan",
+        "Le Coût de revient d'une chaise",
+        "La rentabilité par atelier de production",
+        "La marge sur le produit X"
+      ],
+      "correct_answer": "Le Bilan",
+      "explanation": "Le Bilan est un document officiel de la Comptabilité Générale destiné à l'État et aux banques. Les calculs de coûts par produit ou atelier sont purement analytiques (internes).",
+      "hint": "C'est le document officiel que l'on donne à la DGI."
+    }
+  },
+  {
+    "id": 82,
+    "title": {
+      "fr": "Charges Directes et Indirectes",
+      "en": "Direct and Indirect Costs",
+      "ar": "التكاليف المباشرة وغير المباشرة"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Une charge directe va droit dans le produit sans calcul. Une charge indirecte doit être 'coupée en morceaux' pour être répartie entre plusieurs produits.",
+      "en": "A direct cost goes straight into the product without calculation. An indirect cost must be 'sliced up' to be distributed among several products.",
+      "ar": "التكلفة المباشرة تذهب مباشرة إلى المنتج دون حساب. التكلفة غير المباشرة يجب 'تقطيعها' لتوزيعها على عدة منتجات."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Classer les charges en directes et indirectes pour imputer correctement les coûts aux produits.",
+        "explication": "🔹 1. Les Charges Directes (Faciles à affecter)\nCe sont les dépenses qu'on peut affecter IMMÉDIATEMENT et sans calcul à un produit précis.\n- **Matière première** : Pour faire une table de bois, vous savez exactement que vous avez utilisé 2 mètres de bois à 100 DHS.\n- **Main d'œuvre directe (MOD)** : L'ouvrier a passé exactement 2 heures à monter CETTE table. (Salaire horaire x 2).\n\n🔹 2. Les Charges Indirectes (Le casse-tête)\nCe sont les dépenses qui concernent PLUSIEURS produits ou toute l'usine. On ne peut pas les affecter directement.\n- **Exemples** : Le loyer de l'usine, l'électricité globale, le salaire du gardien, l'assurance.\n\n🔹 Le problème du Répartiteur (Clé de répartition)\nSi la facture d'électricité est de 10 000 DHS. Comment diviser ces 10 000 DHS entre les chaises et les tables fabriquées ce mois-ci ? \nLe contrôleur de gestion utilise des 'Centres d'Analyse' (ex: Atelier Découpe, Atelier Montage) et des 'Clés de répartition' (ex: on répartit l'électricité selon le nombre d'heures machine utilisées pour chaque produit).",
+        "exemple": "Une usine fabrique des chaussures. Le cuir = Charge Directe. Le fil de couture = Charge Directe. Le salaire du directeur de l'usine = Charge Indirecte (car le directeur gère toute l'usine, pas une chaussure en particulier).",
+        "pratique": "L'amortissement de la machine qui coupe uniquement le cuir des chaussures est-elle une charge directe ou indirecte pour la chaussure ?",
+        "resume": "Charge Directe = Liée à un seul produit (Affectation facile).\nCharge Indirecte = Concerne plusieurs produits (Nécessite des calculs et clés de répartition).\nLa précision du calcul de coût dépend de la bonne répartition des charges indirectes."
+      },
+      "en": {
+        "objectif": "Classify costs into direct and indirect to properly allocate costs to products.",
+        "explication": "🔹 1. Direct Costs (Easy to allocate)\nExpenses you can IMMEDIATELY allocate to a specific product without calculation.\n- **Raw material**: For a wooden table, you know exactly you used 2 meters of wood at 100 DHS.\n- **Direct Labor (MOD)**: The worker spent exactly 2 hours building THIS table.\n\n🔹 2. Indirect Costs (The headache)\nExpenses that concern SEVERAL products or the whole factory. Cannot be allocated directly.\n- **Examples**: Factory rent, overall electricity, guard's salary, insurance.\n\n🔹 The Allocation Problem (Allocation Keys)\nIf the electricity bill is 10k DHS. How do you divide it between chairs and tables made this month?\nThe controller uses 'Analysis Centers' and 'Allocation Keys' (e.g., divide electricity by machine hours used per product).",
+        "exemple": "A shoe factory. Leather = Direct Cost. Thread = Direct Cost. Factory manager's salary = Indirect Cost (manager oversees the whole factory, not one specific shoe).",
+        "pratique": "Is the depreciation of the machine that ONLY cuts shoe leather a direct or indirect cost for the shoe?",
+        "resume": "Direct Cost = Linked to a single product (Easy allocation).\nIndirect Cost = Concerns multiple products (Requires allocation keys).\nCost accuracy depends on proper indirect cost allocation."
+      },
+      "ar": {
+        "objectif": "تصنيف التكاليف إلى مباشرة وغير مباشرة لتخصيص التكاليف للمنتجات بشكل صحيح.",
+        "explication": "🔹 1. التكاليف المباشرة (سهلة التخصيص)\nهي النفقات التي يمكن تخصيصها فوراً وبدون حساب لمنتج معين.\n- **المواد الأولية**: لصنع طاولة خشبية، تعرف بالضبط أنك استخدمت مترين من الخشب بـ 100 درهم.\n- **اليد العاملة المباشرة (MOD)**: قضى العامل ساعتين بالضبط في تجميع هذه الطاولة.\n\n🔹 2. التكاليف غير المباشرة (الصداع)\nهي النفقات التي تخص عدة منتجات أو المصنع بأكمله. لا يمكن تخصيصها مباشرة.\n- **أمثلة**: إيجار المصنع، الكهرباء العامة، راتب الحارس، التأمين.\n\n🔹 مشكلة الموزع (مفتاح التوزيع)\nإذا كانت فاتورة الكهرباء 10,000 درهم. كيف تقسمها بين الكراسي والطاولات المصنوعة هذا الشهر؟\nيستخدم مراقب التسيير 'مراكز التحليل' (مثل: ورشة القطع، ورشة التجميع) و'مفاتيح التوزيع' (مثال: نوزع الكهرباء حسب عدد ساعات الآلة المستخدمة لكل منتج).",
+        "exemple": "مصنع أحذية. الجلد = تكلفة مباشرة. راتب مدير المصنع = تكلفة غير مباشرة (لأنه يدير المصنع كله، وليس حذاءً بعينه).",
+        "pratique": "هل إهلاك الآلة التي تقطع جلد الأحذية فقط يُعتبر تكلفة مباشرة أم غير مباشرة للحذاء؟",
+        "resume": "التكلفة المباشرة = مرتبطة بمنتج واحد (تخصيص سهل).\nالتكلفة غير المباشرة = تخص عدة منتجات (تتطلب مفاتيح توزيع).\nدقة حساب التكلفة تعتمد على التوزيع الجيد للتكاليف غير المباشرة."
+      }
+    },
+    "psychology": {
+      "fr": ["Séparer le direct de l'indirect est comme trier le sel du sucre. Cela demande un esprit chirurgical."],
+      "en": ["Separating direct from indirect is like sorting salt from sugar. It requires a surgical mind."],
+      "ar": ["فصل المباشر عن غير المباشر يشبه فرز الملح عن السكر. يتطلب عقلاً جراحياً."]
+    },
+    "missions": {
+      "fr": ["Pensez à un plat cuisiné (ex: Couscous). La viande est une charge directe. Le gaz de la cuisinière est une charge indirecte !"],
+      "en": ["Think of a cooked dish (e.g., Couscous). Meat is a direct cost. Stove gas is an indirect cost!"],
+      "ar": ["فكر في طبق مطبوخ (مثل الكسكس). اللحم تكلفة مباشرة. غاز الموقد تكلفة غير مباشرة!"]
+    },
+    "secret_pro": {
+      "fr": "Le grand art de la Comptabilité Analytique est de trouver la bonne 'Clé de Répartition'. Si vous répartissez le loyer de l'usine en fonction de la 'surface en mètre carré' utilisée par chaque produit, votre calcul sera juste. Si vous le répartissez au hasard, votre coût de revient sera faux, et votre prix de vente aussi !",
+      "en": "The great art of CA is finding the right 'Allocation Key'. If you allocate factory rent based on 'square meters' used by each product, your calculation is fair. If done randomly, your cost price is wrong!",
+      "ar": "الفن العظيم في المحاسبة التحليلية هو إيجاد 'مفتاح التوزيع' الصحيح. إذا وزعت إيجار المصنع بناءً على 'المساحة بالمتر المربع' المستخدمة لكل منتج، فسيكون حسابك عادلاً. التوزيع العشوائي يجعل سعر التكلفة خاطئاً!"
+    },
+    "piege_frequent": {
+      "fr": "Considérer le salaire du comptable comme une charge directe. Faux ! Le comptable travaille pour l'entreprise entière, pas pour un produit spécifique. Son salaire est une charge 100% indirecte (Frais d'administration).",
+      "en": "Considering the accountant's salary a direct cost. False! The accountant works for the whole firm. Their salary is 100% indirect (Admin expenses).",
+      "ar": "اعتبار راتب المحاسب تكلفة مباشرة. خطأ! يعمل المحاسب للشركة بأكملها. راتبه تكلفة غير مباشرة بنسبة 100% (مصاريف إدارية)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous fabriquez des T-shirts et des Pantalons. La facture d'électricité est de 10 000 DHS. Vous décidez de la répartir selon les heures machines. T-shirts : 300 heures. Pantalons : 700 heures. Combien d'électricité (en DHS) devez-vous imputer aux Pantalons ?",
+        "en": "You make T-shirts and Pants. Electricity bill = 10k DHS. Allocated by machine hours. T-shirts: 300 hrs. Pants: 700 hrs. How much electricity (DHS) is allocated to Pants?",
+        "ar": "تصنع قمصاناً وسراويل. فاتورة الكهرباء 10,000 درهم. قررت توزيعها حسب ساعات الآلة. قمصان: 300 ساعة. سراويل: 700 ساعة. كم من الكهرباء تخصص للسراويل؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Parfait ! Total heures = 1000h. Pantalons = 700/1000 = 70%. Donc 10 000 * 70% = 7 000 DHS d'électricité affectés aux Pantalons ! 🔥",
+        "en": "Perfect! Total hours = 1000h. Pants = 700/1000 = 70%. So 10,000 * 70% = 7,000 DHS allocated to Pants! 🔥",
+        "ar": "ممتاز! إجمالي الساعات = 1000. سراويل = 700/1000 = 70%. إذن 10,000 * 70% = 7000 درهم مخصصة للسراويل! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as divisé par deux (50/50). Faux ! Les pantalons ont utilisé beaucoup plus les machines, il faut utiliser la clé de répartition au prorata des heures ! 😭",
+        "en": "You divided by two (50/50). False! Pants used machines way more, you must use the pro-rata allocation key! 😭",
+        "ar": "لقد قسمت على اثنين (50/50). خطأ! استخدمت السراويل الآلات أكثر بكثير، يجب استخدام مفتاح التوزيع بالتناسب! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Parmi ces charges, laquelle est considérée comme une 'Charge Indirecte' pour un fabricant de chaussures ?",
+      "options": [
+        "Le cuir acheté",
+        "Le salaire de l'ouvrier cordonnier",
+        "La prime d'assurance du bâtiment de l'usine",
+        "Les semelles en caoutchouc"
+      ],
+      "correct_answer": "La prime d'assurance du bâtiment de l'usine",
+      "explanation": "L'assurance protège tout le bâtiment, pas une chaussure en particulier. C'est une charge commune qui devra être répartie sur toute la production de l'année.",
+      "hint": "Cherchez la dépense qui ne touche pas physiquement la chaussure."
+    }
+  },
+  {
+    "id": 83,
+    "title": {
+      "fr": "La Hiérarchie des Coûts : 1. Le Coût d'Achat",
+      "en": "Cost Hierarchy: 1. Purchase Cost",
+      "ar": "التسلسل الهرمي للتكاليف: 1. تكلفة الشراء"
+    },
+    "xp": 95,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Pour calculer le prix d'un produit, on procède en cascade. La première marche, c'est de savoir exactement combien a coûté l'achat de la matière première avant même de commencer à la toucher.",
+      "en": "To calculate a product's price, we use a cascade. The first step is knowing exactly how much raw materials cost before even touching them.",
+      "ar": "لحساب سعر المنتج، نمضي بتسلسل. الخطوة الأولى هي معرفة التكلفة الدقيقة لشراء المادة الأولية قبل البدء في لمسها."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le Coût d'Achat, première étape de la comptabilité analytique.",
+        "explication": "🔹 Le principe de la Cascade\nEn compta analytique, on ne calcule pas le coût final d'un coup. On fait : Coût d'Achat -> Coût de Production -> Coût de Revient.\n\n🔹 Étape 1 : Le Coût d'Achat\nLe coût d'achat, ce n'est PAS juste le prix payé au fournisseur. Il faut y ajouter tous les frais nécessaires pour que la marchandise arrive dans votre entrepôt.\n**Coût d'Achat = Prix d'Achat HT + Frais d'Approvisionnement.**\n\n🔹 Les Frais d'Approvisionnement\nIls se divisent en deux :\n- **Frais directs d'achat** : Le transporteur que vous avez payé pour amener la marchandise, les droits de douane.\n- **Frais indirects d'achat** : Une partie du salaire des magasiniers qui déchargent le camion, ou les frais du service Achat (qui a négocié les prix). Ces frais indirects sont injectés grâce au tableau de répartition.\n\n👍 Pourquoi isoler ce coût ?\nUne fois le Coût d'Achat calculé, cette marchandise entre en Stock. C'est à partir de ce montant que vous calculerez le fameux CMUP (vu en Phase 3) !",
+        "exemple": "L'usine achète 1 000 kg de bois à 10 DHS/kg (Prix = 10 000). Le transport coûte 1 000 DHS (Frais direct). Le service Achat/Magasin nous coûte 500 DHS pour cette commande (Frais indirect). \nCoût d'Achat Total = 10 000 + 1 000 + 500 = 11 500 DHS. Le coût d'achat d'un kilo de bois n'est donc pas 10 DHS, mais 11.5 DHS !",
+        "pratique": "Vous achetez pour 50 000 DHS de tissu, avec 5 000 de douane et 2 000 de transport. Quel est le Coût d'Achat global ?",
+        "resume": "La compta analytique se fait en cascade (Achat, Production, Revient).\nCoût d'Achat = Prix d'Achat + Frais directs liés à l'achat + Frais indirects de la section approvisionnement.\nC'est la valeur d'entrée en stock de la matière première."
+      },
+      "en": {
+        "objectif": "Calculate Purchase Cost, the first step in cost accounting.",
+        "explication": "🔹 The Cascade Principle\nIn cost accounting, you don't calculate final cost at once. It's: Purchase Cost -> Production Cost -> Cost Price.\n\n🔹 Step 1: Purchase Cost\nPurchase cost is NOT just the price paid to the supplier. Add all expenses needed to get goods into your warehouse.\n**Purchase Cost = Purchase Price HT + Procurement Expenses.**\n\n🔹 Procurement Expenses\nDivided in two:\n- **Direct purchase expenses**: Carrier paid, customs duties.\n- **Indirect purchase expenses**: Warehouse workers' salaries, Purchasing department costs. Injected via the allocation table.\n\n👍 Why isolate this cost?\nOnce calculated, goods enter Inventory. This amount is used to calculate CMUP!",
+        "exemple": "Factory buys 1000 kg of wood at 10 DHS/kg (Price = 10k). Transport is 1k (Direct). Purchasing/Warehouse dept costs 500 (Indirect). Total Purchase Cost = 10k + 1k + 500 = 11,500 DHS. The cost of a kg of wood isn't 10 DHS, it's 11.5 DHS!",
+        "pratique": "You buy 50k DHS of fabric, 5k customs, 2k transport. What is the overall Purchase Cost?",
+        "resume": "Cost accounting is a cascade (Purchase, Production, Cost Price).\nPurchase Cost = Purchase Price + Direct purchasing costs + Indirect procurement costs.\nThis is the inventory entry value of raw materials."
+      },
+      "ar": {
+        "objectif": "حساب تكلفة الشراء، الخطوة الأولى في المحاسبة التحليلية.",
+        "explication": "🔹 مبدأ التسلسل\nفي المحاسبة التحليلية، لا نحسب التكلفة النهائية دفعة واحدة. نمضي: تكلفة الشراء -> تكلفة الإنتاج -> سعر التكلفة.\n\n🔹 الخطوة 1: تكلفة الشراء\nتكلفة الشراء ليست فقط السعر المدفوع للمورد. يجب إضافة جميع النفقات اللازمة لوصول البضاعة إلى مستودعك.\n**تكلفة الشراء = سعر الشراء HT + مصاريف التوريد.**\n\n🔹 مصاريف التوريد\nتنقسم إلى اثنين:\n- **مصاريف الشراء المباشرة**: الناقل الذي دفعته، الرسوم الجمركية.\n- **مصاريف الشراء غير المباشرة**: جزء من راتب عمال المستودع، أو مصاريف قسم المشتريات. يتم إدخالها عبر جدول التوزيع.\n\n👍 لماذا نعزل هذه التكلفة؟\nبمجرد حساب تكلفة الشراء، تدخل هذه البضاعة إلى المخزون. من هذا المبلغ ستحسب CMUP!",
+        "exemple": "يشتري مصنع 1000 كغ من الخشب بـ 10 دراهم/كغ (السعر = 10,000). يكلف النقل 1000 درهم (مباشرة). قسم المشتريات يكلف 500 درهم (غير مباشرة). إجمالي تكلفة الشراء = 10,000 + 1000 + 500 = 11,500 درهم. إذن تكلفة كيلو الخشب ليست 10 دراهم، بل 11.5 درهم!",
+        "pratique": "تشتري قماشاً بـ 50 ألف درهم، مع جمارك بـ 5 آلاف ونقل بـ 2000. ما هي تكلفة الشراء الإجمالية؟",
+        "resume": "المحاسبة التحليلية متسلسلة (شراء، إنتاج، سعر تكلفة).\nتكلفة الشراء = سعر الشراء + مصاريف مباشرة + مصاريف قسم التوريد غير المباشرة.\nهذه هي قيمة دخول المادة الأولية للمخزون."
+      }
+    },
+    "psychology": {
+      "fr": ["Le négociateur d'achat (acheteur) se vante souvent d'avoir eu un bon prix. L'analyste lui rappelle que sans compter le transport et la douane, son 'bon prix' est une illusion."],
+      "en": ["The buyer often boasts of getting a good price. The analyst reminds them that without counting transport and customs, their 'good price' is an illusion."],
+      "ar": ["غالباً ما يتفاخر المشتري بالحصول على سعر جيد. يذكره المحلل بأنه بدون حساب النقل والجمارك، فإن 'سعره الجيد' مجرد وهم."]
+    },
+    "missions": {
+      "fr": ["Réfléchissez au prix d'un smartphone commandé sur AliExpress. Le prix affiché n'est pas le coût d'achat (il manque la livraison et la douane marocaine !)."],
+      "en": ["Think about the price of a smartphone ordered on AliExpress. The displayed price isn't the purchase cost (missing delivery and customs!)."],
+      "ar": ["فكر في سعر هاتف ذكي تم طلبه من AliExpress. السعر المعروض ليس تكلفة الشراء (ينقص التوصيل والجمارك!)."]
+    },
+    "secret_pro": {
+      "fr": "C'est à cette étape que la DGI au Maroc surveille les importations. Si vous achetez en Chine, le coût d'achat comptable DOIT inclure les frais de transitaire et les taxes douanières non récupérables.",
+      "en": "This is where the DGI monitors imports. If you buy from China, the accounting purchase cost MUST include freight forwarder fees and non-recoverable customs taxes.",
+      "ar": "هنا تراقب DGI الواردات. إذا اشتريت من الصين، يجب أن تشمل تكلفة الشراء المحاسبية رسوم وكيل الشحن والضرائب الجمركية غير القابلة للاسترداد."
+    },
+    "piege_frequent": {
+      "fr": "Inclure la TVA récupérable dans le coût d'achat. FAUX ! En comptabilité analytique comme en générale, si la TVA est récupérable, elle ne fait jamais partie du coût.",
+      "en": "Including recoverable VAT in the purchase cost. FALSE! If VAT is recoverable, it is never part of the cost.",
+      "ar": "إدراج TVA القابلة للاسترداد في تكلفة الشراء. خطأ! إذا كانت TVA قابلة للاسترداد، فهي ليست جزءاً من التكلفة أبداً."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous importez 1 000 pièces. Prix fournisseur = 20 000 DHS HT. Douane = 4 000 DHS. Transport = 1 000 DHS. Les frais du service Achat (indirects) alloués sont de 500 DHS. Quel est le Coût d'Achat unitaire d'une seule pièce ?",
+        "en": "You import 1000 parts. Supplier price = 20k HT. Customs = 4k. Transport = 1k. Indirect purchasing dept fees = 500. What is the unit Purchase Cost of one part?",
+        "ar": "تستورد 1000 قطعة. سعر المورد = 20ألف HT. جمارك = 4آلاف. نقل = 1000. مصاريف قسم المشتريات (غير مباشرة) = 500. ما هي تكلفة الشراء الوحدوية لقطعة واحدة؟"
+      },
+      "reward_xp": 70
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! Coût d'Achat Global = 20k + 4k + 1k + 500 = 25 500 DHS. Divisé par 1 000 pièces = 25.5 DHS par pièce ! Tu as trouvé la vraie valeur d'entrée en stock. 🔥",
+        "en": "Bravo! Global Purchase Cost = 20k + 4k + 1k + 500 = 25,500 DHS. Divided by 1000 parts = 25.5 DHS per part! You found the true inventory entry value. 🔥",
+        "ar": "أحسنت! التكلفة الإجمالية = 20ألف + 4آلاف + 1000 + 500 = 25,500 درهم. مقسومة على 1000 قطعة = 25.5 درهم للقطعة! وجدت القيمة الحقيقية لدخول المخزون. 🔥"
+      },
+      "bad": {
+        "fr": "Tu as oublié de rajouter les 500 DHS de frais indirects. Le salaire de l'acheteur doit être rentabilisé dans le prix de la matière ! 😭",
+        "en": "You forgot to add the 500 DHS indirect costs. The buyer's salary must be absorbed in the material's price! 😭",
+        "ar": "لقد نسيت إضافة 500 درهم مصاريف غير مباشرة. يجب استرداد راتب المشتري في سعر المادة! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Prix d'achat HT = 40 000 DHS, Frais de transport = 2 000 DHS. Quel est le Coût d'Achat ?",
+      "correct_answer": "42000",
+      "explanation": "Le coût d'achat englobe le prix et tous les frais d'approche (40 000 + 2 000).",
+      "hint": "Additionnez les deux montants."
+    }
+  },
+  {
+    "id": 84,
+    "title": {
+      "fr": "La Hiérarchie des Coûts : 2. Le Coût de Production",
+      "en": "Cost Hierarchy: 2. Production Cost",
+      "ar": "التسلسل الهرمي للتكاليف: 2. تكلفة الإنتاج"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "On sort les matières du stock, on fait travailler les ouvriers et tourner les machines. Le coût de production, c'est le prix de l'objet fini qui sort de l'usine.",
+      "en": "We take materials from stock, put workers to work, and run machines. Production cost is the price of the finished object leaving the factory.",
+      "ar": "نخرج المواد من المخزون، ونشغل العمال وندير الآلات. تكلفة الإنتاج هي سعر القطعة النهائية التي تخرج من المصنع."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le Coût de Production d'un produit fini fabriqué par l'entreprise.",
+        "explication": "🔹 La deuxième marche de la cascade\nMaintenant que la matière première est dans l'entrepôt (évaluée au CMUP), l'usine va la transformer. \n\n🔹 La Formule du Coût de Production\n**Coût de Production = Coût d'Achat des Matières CONSOMMÉES + Frais de Fabrication Directs + Frais de Fabrication Indirects.**\n\n🔹 Décryptage de la formule :\n1. **Matières consommées** : Attention, on ne prend pas les achats de l'année, on prend uniquement ce qui est SORTI du stock d'approvisionnement pour aller dans l'atelier.\n2. **Frais directs de fabrication** : La Main d'Œuvre Directe (MOD). Les ouvriers qui ont touché le produit (Nb d'heures * Taux horaire).\n3. **Frais indirects de fabrication** : L'amortissement des machines, le loyer de l'atelier de montage, l'électricité de l'usine (imputés grâce aux centres d'analyse).\n\n👍 Le résultat\nUne fois le produit fini, il entre dans un DEUXIÈME stock : le Stock de Produits Finis. Sa valeur d'entrée n'est pas son prix de vente, c'est son Coût de Production !",
+        "exemple": "Pour fabriquer 100 tables : \n- Sortie de bois (CMUP) = 10 000 DHS. \n- Ouvriers (Direct) = 5 000 DHS.\n- Électricité/Machines (Indirect affecté) = 3 000 DHS.\nCoût de Production Total = 18 000 DHS. Une table 'coûte' 180 DHS à fabriquer.",
+        "pratique": "Si la matière première vous a coûté 50k, les ouvriers 30k, et l'atelier 20k. Quel est le coût de production ?",
+        "resume": "Coût de Production = Matières utilisées + Main d'œuvre (MOD) + Frais de l'atelier.\nC'est la valeur du produit lorsqu'il est techniquement terminé.\nIl sert de valeur d'entrée pour le stock de Produits Finis."
+      },
+      "en": {
+        "objectif": "Calculate the Production Cost of a finished product manufactured by the company.",
+        "explication": "🔹 The second step of the cascade\nNow that raw material is in the warehouse (valued at CMUP), the factory transforms it.\n\n🔹 Production Cost Formula\n**Production Cost = Cost of CONSUMED Materials + Direct Manufacturing Costs + Indirect Manufacturing Costs.**\n\n🔹 Decoding the formula:\n1. **Consumed materials**: Not yearly purchases, but what EXITED the warehouse to enter the workshop.\n2. **Direct manufacturing costs**: Direct Labor (MOD). Workers who touched the product (Hours * Hourly rate).\n3. **Indirect manufacturing costs**: Machine depreciation, workshop rent, factory electricity.\n\n👍 The result\nOnce finished, the product enters a SECOND stock: Finished Goods Inventory. Its entry value is its Production Cost!",
+        "exemple": "To make 100 tables:\n- Wood used (CMUP) = 10k DHS.\n- Workers (Direct) = 5k DHS.\n- Electricity/Machines (Indirect) = 3k DHS.\nTotal Prod Cost = 18,000 DHS. One table 'costs' 180 DHS to make.",
+        "pratique": "If raw material cost 50k, workers 30k, and workshop 20k. What is the production cost?",
+        "resume": "Production Cost = Used materials + Direct Labor + Workshop expenses.\nIt's the product's value when technically finished.\nServes as entry value for Finished Goods inventory."
+      },
+      "ar": {
+        "objectif": "حساب تكلفة إنتاج منتج نهائي مصنع من قبل الشركة.",
+        "explication": "🔹 الخطوة الثانية في التسلسل\nالآن وقد أصبحت المادة الأولية في المستودع (مُقيمة بـ CMUP)، سيقوم المصنع بتحويلها.\n\n🔹 صيغة تكلفة الإنتاج\n**تكلفة الإنتاج = تكلفة شراء المواد المستهلكة + مصاريف التصنيع المباشرة + مصاريف التصنيع غير المباشرة.**\n\n🔹 تفكيك الصيغة:\n1. **المواد المستهلكة**: انتبه، لا نأخذ مشتريات العام، بل ما خرج من المخزون للذهاب إلى الورشة.\n2. **مصاريف تصنيع مباشرة**: اليد العاملة المباشرة (MOD). العمال الذين لمسوا المنتج (ساعات * أجر الساعة).\n3. **مصاريف تصنيع غير مباشرة**: إهلاك الآلات، إيجار الورشة، كهرباء المصنع.\n\n👍 النتيجة\nبمجرد الانتهاء من المنتج، يدخل في مخزون ثانٍ: مخزون المنتجات النهائية. قيمة دخوله ليست سعر بيعه، بل تكلفة إنتاجه!",
+        "exemple": "لصنع 100 طاولة:\n- خروج الخشب (CMUP) = 10,000 درهم.\n- عمال (مباشر) = 5,000 درهم.\n- كهرباء/آلات (غير مباشر) = 3,000 درهم.\nإجمالي تكلفة الإنتاج = 18,000 درهم. الطاولة 'تكلف' 180 درهماً لصنعها.",
+        "pratique": "إذا كلفتك المادة الأولية 50ألف، والعمال 30ألف، والورشة 20ألف. ما هي تكلفة الإنتاج؟",
+        "resume": "تكلفة الإنتاج = المواد المستخدمة + اليد العاملة + مصاريف الورشة.\nإنها قيمة المنتج عند اكتماله فنياً.\nيستخدم كقيمة دخول لمخزون المنتجات النهائية."
+      }
+    },
+    "psychology": {
+      "fr": ["Le coût de production est le 'bébé' de l'ingénieur et du comptable. L'un crée l'objet physique, l'autre crée l'objet financier."],
+      "en": ["Production cost is the 'baby' of the engineer and the accountant. One creates the physical object, the other the financial one."],
+      "ar": ["تكلفة الإنتاج هي 'طفل' المهندس والمحاسب. أحدهما يخلق الشيء المادي، والآخر يخلق الشيء المالي."]
+    },
+    "missions": {
+      "fr": ["Différenciez la MOD (Main d'œuvre directe = l'ouvrier à la machine) de la MOI (Main d'œuvre indirecte = le chef d'usine)."],
+      "en": ["Differentiate Direct Labor (worker at the machine) from Indirect Labor (factory manager)."],
+      "ar": ["فرق بين اليد العاملة المباشرة (العامل على الآلة) وغير المباشرة (مدير المصنع)."]
+    },
+    "secret_pro": {
+      "fr": "Pour réduire le coût de production, beaucoup d'entreprises marocaines jouent sur la MOD (Heures supplémentaires non déclarées) ou sous-traitent une partie de la production. Le rôle du contrôleur de gestion est d'analyser si la sous-traitance coûte moins cher que de fabriquer en interne (Make or Buy decision).",
+      "en": "To cut production costs, many Moroccan firms play with Direct Labor (undeclared overtime) or outsource. The controller's role is analyzing if outsourcing is cheaper than making it internally (Make or Buy decision).",
+      "ar": "لخفض تكلفة الإنتاج، تتلاعب العديد من الشركات المغربية باليد العاملة المباشرة أو تعتمد على المناولة. دور مراقب التسيير هو تحليل ما إذا كانت المناولة أرخص من التصنيع الداخلي."
+    },
+    "piege_frequent": {
+      "fr": "Prendre les achats de l'année au lieu des 'Matières Consommées'. Si vous avez acheté 100 tonnes de cuir mais n'en avez utilisé que 10, le coût de production ne prend en compte QUE les 10 tonnes !",
+      "en": "Taking yearly purchases instead of 'Consumed Materials'. If you bought 100 tons of leather but used 10, production cost ONLY uses the 10 tons!",
+      "ar": "أخذ مشتريات العام بدلاً من 'المواد المستهلكة'. إذا اشتريت 100 طن من الجلد واستخدمت 10 فقط، فإن تكلفة الإنتاج تأخذ الـ 10 أطنان فقط!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Pour fabriquer 50 chaises, on sort du stock 200kg de bois au CMUP de 50 DHS/kg. Les ouvriers ont travaillé 20 heures à 20 DHS/h. L'atelier (frais indirects) est imputé à hauteur de 1 000 DHS. Calculez le Coût de Production d'UNE SEULE chaise.",
+        "en": "To make 50 chairs, 200kg wood is used at 50 DHS/kg. Workers worked 20 hrs at 20 DHS/h. Workshop (indirect) allocated is 1,000 DHS. Calculate Production Cost for ONE chair.",
+        "ar": "لصنع 50 كرسياً، أخرجنا 200 كغ خشب بـ 50 درهم/كغ. عمل العمال 20 ساعة بـ 20 درهم/ساعة. حُملت الورشة بـ 1000 درهم. احسب تكلفة إنتاج كرسي واحد."
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Impeccable ! Bois = 10 000. MOD = 400. Atelier = 1 000. Coût Total = 11 400 DHS. Divisé par 50 chaises = 228 DHS la chaise ! Tu es prêt à fixer des prix de vente. 🔥",
+        "en": "Impeccable! Wood = 10k. Labor = 400. Workshop = 1k. Total = 11,400 DHS. Divided by 50 chairs = 228 DHS per chair! You are ready to set prices. 🔥",
+        "ar": "لا تشوبه شائبة! خشب = 10,000. عمال = 400. ورشة = 1000. التكلفة الإجمالية = 11,400 درهم. مقسومة على 50 كرسياً = 228 درهماً للكرسي! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as oublié de diviser par 50 à la fin. On cherche le coût UNITAIRE (pour une seule chaise), pas le coût global ! 😭",
+        "en": "You forgot to divide by 50 at the end. We want the UNIT cost (for one chair), not total! 😭",
+        "ar": "لقد نسيت القسمة على 50 في النهاية. نحن نبحث عن التكلفة الوحدوية (لكرسي واحد)، وليس الإجمالية! 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Que deviennent les produits finis une fois leur coût de production calculé ?",
+      "options": [
+        "Ils sont envoyés à la DGI.",
+        "Ils entrent dans le Stock de Produits Finis évalués à ce coût de production.",
+        "Ils sont jetés.",
+        "Ils sont vendus immédiatement sans être stockés."
+      ],
+      "correct_answer": "Ils entrent dans le Stock de Produits Finis évalués à ce coût de production.",
+      "explanation": "La fin de la production déclenche une entrée en stock (Stock de Produits Finis). La valeur de ce stock sera déterminée par ce fameux Coût de Production.",
+      "hint": "C'est la transition entre l'usine et le magasin de vente."
+    }
+  },
+  {
+    "id": 85,
+    "title": {
+      "fr": "Le Coût de Revient et Résultat Analytique",
+      "en": "Cost Price and Analytical Result",
+      "ar": "سعر التكلفة والنتيجة التحليلية"
+    },
+    "xp": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le produit est fini, mais il faut encore le vendre et payer l'administration. Le Coût de Revient, c'est la ligne d'arrivée : le coût total et absolu de ce qui a été VENDU.",
+      "en": "The product is finished, but it still must be sold and admin paid. Cost Price is the finish line: the total absolute cost of what was SOLD.",
+      "ar": "المنتج انتهى، لكن لا يزال يتعين بيعه ودفع الإدارة. سعر التكلفة هو خط النهاية: التكلفة الإجمالية والمطلقة لما تم بيعه."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le Coût de Revient final et déduire la rentabilité par produit (Résultat Analytique).",
+        "explication": "🔹 L'Ultime étape de la Cascade\nLe produit est dans le stock. Quand il est vendu, il a besoin d'être emballé, transporté chez le client, et l'entreprise doit payer ses secrétaires, ses directeurs et sa publicité. C'est le Coût de Revient.\n\n🔹 La Formule du Coût de Revient\n**Coût de Revient = Coût de Production des produits VENDUS + Frais de Distribution (Vente) + Frais d'Administration (Généraux).**\n- *Attention* : On ne prend en compte QUE la quantité VENDUE. Si on fabrique 100 chaises mais qu'on en vend 10, le coût de revient ne se calcule que sur les 10 chaises vendues !\n\n🔹 Le Résultat Analytique (La vérité crue)\nUne fois qu'on a le coût total absolu (Coût de Revient), on le compare au Prix de Vente (Chiffre d'Affaires).\n**Résultat Analytique = Prix de Vente HT - Coût de Revient.**\n\n👍 La décision stratégique\nSi le Résultat Analytique de la chaise est de +20 DHS, et celui de la table de -10 DHS, le dirigeant va arrêter de fabriquer des tables ou augmenter leur prix de vente. La compta analytique a rempli sa mission !",
+        "exemple": "Coût de production des 10 chaises vendues = 2 000 DHS. Frais de distribution (livraison) = 200 DHS. Frais administratifs alloués = 100 DHS. \nCoût de Revient = 2 300 DHS.\nChiffre d'Affaires (Ventes) = 3 000 DHS.\nRésultat Analytique = 3 000 - 2 300 = +700 DHS de bénéfice net sur cette opération !",
+        "pratique": "Si le Coût de Revient est supérieur au Chiffre d'Affaires, l'entreprise est-elle en bénéfice ou en perte sur ce produit ?",
+        "resume": "Coût de Revient = Le coût ultime du produit (Production + Vente + Admin).\nIl ne se calcule QUE sur les produits qui sont sortis du stock pour être vendus.\nRésultat Analytique = Prix de vente - Coût de Revient.\nC'est l'outil d'aide à la décision par excellence."
+      },
+      "en": {
+        "objectif": "Calculate final Cost Price and deduce product profitability (Analytical Result).",
+        "explication": "🔹 The Cascade's Final Step\nProduct is in stock. When sold, it must be packaged, delivered, and the firm must pay secretaries, directors, ads. This is Cost Price.\n\n🔹 Cost Price Formula\n**Cost Price = Production Cost of SOLD products + Distribution Costs + Administrative Costs.**\n- *Warning*: Only account for SOLD quantity. Make 100, sell 10? Calculate cost price only for the 10 sold!\n\n🔹 Analytical Result (The harsh truth)\nCompare total absolute cost (Cost Price) to Selling Price (Turnover).\n**Analytical Result = Selling Price HT - Cost Price.**\n\n👍 Strategic Decision\nIf chair profit is +20 DHS, and table is -10 DHS, the boss will stop making tables or raise prices. CA fulfilled its mission!",
+        "exemple": "Production cost of 10 sold chairs = 2,000. Delivery = 200. Admin = 100. Cost Price = 2,300 DHS. Sales = 3,000 DHS. Analytical Result = 3,000 - 2,300 = +700 DHS net profit on this operation!",
+        "pratique": "If Cost Price > Turnover, is the company making a profit or loss on this product?",
+        "resume": "Cost Price = Ultimate product cost (Production + Sale + Admin).\nCalculated ONLY on products sold.\nAnalytical Result = Sale Price - Cost Price.\nIt's the ultimate decision-making tool."
+      },
+      "ar": {
+        "objectif": "حساب سعر التكلفة النهائي واستنتاج الربحية لكل منتج (النتيجة التحليلية).",
+        "explication": "🔹 الخطوة النهائية في التسلسل\nالمنتج في المخزون. عند بيعه، يحتاج إلى تعبئة، ونقل للعميل، ويجب على الشركة دفع رواتب السكرتيرات والمديرين والإعلانات. هذا هو سعر التكلفة.\n\n🔹 صيغة سعر التكلفة\n**سعر التكلفة = تكلفة إنتاج المنتجات المباعة + مصاريف التوزيع (البيع) + مصاريف الإدارة.**\n- *انتبه*: نأخذ في الاعتبار الكمية المباعة فقط. إذا صنعنا 100 وبعنا 10، يُحسب سعر التكلفة على الـ 10 المباعة فقط!\n\n🔹 النتيجة التحليلية (الحقيقة المجردة)\nبمجرد الحصول على التكلفة المطلقة (سعر التكلفة)، نقارنها بسعر البيع (رقم المعاملات).\n**النتيجة التحليلية = سعر البيع HT - سعر التكلفة.**\n\n👍 القرار الاستراتيجي\nإذا كانت النتيجة التحليلية للكرسي +20 درهم، والطاولة -10 دراهم، سيوقف المدير صنع الطاولات أو يرفع سعرها. المحاسبة التحليلية أدت مهمتها!",
+        "exemple": "تكلفة إنتاج 10 كراسي مباعة = 2000. مصاريف توصيل = 200. مصاريف إدارية = 100. سعر التكلفة = 2300. المبيعات = 3000. النتيجة التحليلية = 3000 - 2300 = +700 درهم ربح صافي!",
+        "pratique": "إذا كان سعر التكلفة أعلى من المبيعات، فهل الشركة في حالة ربح أم خسارة في هذا المنتج؟",
+        "resume": "سعر التكلفة = التكلفة النهائية للمنتج (إنتاج + بيع + إدارة).\nيُحسب فقط على المنتجات المباعة.\nالنتيجة التحليلية = سعر البيع - سعر التكلفة.\nإنه أداة دعم القرار بامتياز."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "C'est l'aboutissement de toute la compta analytique. Le moment où le comptable regarde le PDG dans les yeux et lui dit : 'Ton produit phare nous fait perdre de l'argent'."
+      ],
+      "en": [
+        "This is the culmination of all cost accounting. The moment the accountant looks the CEO in the eye and says: 'Your flagship product is losing us money'."
+      ],
+      "ar": [
+        "هذه ذروة كل المحاسبة التحليلية. اللحظة التي ينظر فيها المحاسب في عيني المدير العام ويقول له: 'منتجك الرئيسي يجعلنا نخسر المال'."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez la Cascade d'Or : Achat -> Production -> Revient -> Résultat."
+      ],
+      "en": [
+        "Memorize the Golden Cascade: Purchase -> Production -> Cost Price -> Result."
+      ],
+      "ar": [
+        "احفظ التسلسل الذهبي: شراء -> إنتاج -> سعر تكلفة -> نتيجة."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Si on additionne les Résultats Analytiques de TOUS les produits d'une entreprise marocaine, on doit trouver (aux différences d'arrondis et éléments non-incorporables près) le même montant que le Résultat Net du CPC (Comptabilité Générale). C'est la preuve que vos calculs sont exacts !",
+      "en": "If you sum the Analytical Results of ALL products, you must find (give or take rounding) the same amount as the Net Profit in the CPC (Financial Accounting). Proof your math is right!",
+      "ar": "إذا جمعنا النتائج التحليلية لجميع المنتجات، يجب أن نجد نفس مبلغ النتيجة الصافية لـ CPC (المحاسبة العامة). هذا دليل على دقة حساباتك!"
+    },
+    "piege_frequent": {
+      "fr": "Intégrer le coût des produits restés en stock dans le Coût de Revient. C'est l'erreur fatale ! Le Coût de Revient ne s'applique qu'aux produits qui ont quitté l'entreprise (VENDUS).",
+      "en": "Including the cost of unsold stock in Cost Price. Fatal error! Cost Price applies ONLY to products that left the company (SOLD).",
+      "ar": "إدراج تكلفة المنتجات المتبقية في المخزون في سعر التكلفة. خطأ فادح! سعر التكلفة يطبق فقط على المنتجات التي غادرت الشركة (مباعة)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous avez fabriqué 100 bureaux pour un Coût de Production Total de 50 000 DHS. Vous vendez 80 bureaux pour 60 000 DHS (CA total). Les frais de distribution (livraison) sont de 5 000 DHS. Quel est le Coût de Revient des 80 bureaux, et quel est le Résultat Analytique de cette vente ?",
+        "en": "Made 100 desks for Total Prod Cost 50k. Sell 80 desks for 60k (Total Sales). Delivery fees are 5k. What is the Cost Price of 80 desks, and the Analytical Result?",
+        "ar": "صنعت 100 مكتب بتكلفة إنتاج إجمالية 50ألف. تبيع 80 مكتباً بـ 60ألف (المبيعات). رسوم التوصيل 5000. ما هو سعر التكلفة لـ 80 مكتباً، والنتيجة التحليلية؟"
+      },
+      "reward_xp": 100
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Magnifique ! 1 bureau coûte 500 DHS à produire. Coût de prod des VENDUS (80 bureaux) = 40 000. On y ajoute les frais de livraison (5 000) = Coût de Revient de 45 000 DHS. \nRésultat = CA (60 000) - Revient (45 000) = Bénéfice de 15 000 DHS ! 🔥",
+        "en": "Magnificent! 1 desk costs 500 to make. Prod cost of SOLD (80 desks) = 40k. Add delivery (5k) = Cost Price 45k DHS. Result = Sales (60k) - Cost Price (45k) = 15,000 DHS profit! 🔥",
+        "ar": "رائع! المكتب الواحد يكلف 500 للإنتاج. تكلفة إنتاج المباع (80 مكتب) = 40ألف. نضيف رسوم التوصيل (5000) = سعر التكلفة 45ألف درهم. النتيجة = المبيعات (60ألف) - سعر التكلفة (45ألف) = ربح 15000 درهم! 🔥"
+      },
+      "bad": {
+        "fr": "Tu as utilisé le Coût de Production des 100 bureaux (50 000) dans ton calcul. Non ! Il faut toujours ramener le calcul à la quantité VENDUE (80). 😭",
+        "en": "You used the Prod Cost of 100 desks (50k). No! Always scale the calculation to the SOLD quantity (80). 😭",
+        "ar": "استخدمت تكلفة إنتاج 100 مكتب (50ألف). لا! يجب دائماً تعديل الحساب للكمية المباعة (80). 😭"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Vente d'un lot pour 20 000 DHS. Le coût de production du lot est de 12 000 DHS et les frais de vente (pub, transport) sont de 3 000 DHS. Quel est le montant du Coût de Revient total ?",
+      "correct_answer": "15000",
+      "explanation": "Coût de Revient = Coût de Prod (12 000) + Frais de vente (3 000) = 15 000 DHS.",
+      "hint": "Faites la somme de tout ce que ce lot vous a coûté (Production + Vente)."
+     }
+  },
+  {
+   
+    "id": 86,
+    "title": {
+      "fr": "Le Seuil de Rentabilité (Point Mort)",
+      "en": "The Breakeven Point",
+      "ar": "عتبة المردودية (نقطة التعادل)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "C'est le moment exact de l'année où vous arrêtez de perdre de l'argent et commencez à faire du bénéfice. Avant ce point : survie. Après : richesse.",
+      "en": "It's the exact moment of the year when you stop losing money and start making a profit. Before this point: survival. After: wealth.",
+      "ar": "إنها اللحظة الدقيقة في العام التي تتوقف فيها عن خسارة المال وتبدأ في تحقيق الربح. قبل هذه النقطة: بقاء. بعدها: ثروة."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer le chiffre d'affaires minimum à atteindre pour couvrir l'ensemble des charges (fixes et variables).",
+        "explication": "🔹 Charges Fixes vs Charges Variables\nPour calculer le Seuil de Rentabilité (SR), il faut diviser la classe 6 en deux :\n1. **Variables** : Elles montent si vous produisez plus (ex: achat de cuir pour des chaussures).\n2. **Fixes (Structure)** : Elles ne bougent pas, même si l'usine est à l'arrêt (ex: loyer de l'usine, assurance).\n\n🔹 La Marge sur Coût Variable (MSCV)\nAvant de payer le loyer, que reste-t-il de vos ventes ?\n**MSCV = Chiffre d'Affaires - Charges Variables.**\nLe Taux de MSCV = (MSCV / Chiffre d'Affaires) * 100.\n\n🔹 Le Calcul du Seuil de Rentabilité (SR)\nC'est le Chiffre d'Affaires (CA) exact pour lequel le bénéfice est de ZÉRO.\n**SR = Charges Fixes / Taux de MSCV.**\n\n👍 Le Point Mort (La date)\nSi vous atteignez ce SR le 10 Octobre, cela s'appelle le 'Point Mort'. Du 1er Janvier au 10 Octobre, vous travaillez pour payer vos charges fixes. À partir du 11 Octobre, chaque dirham vendu est un pur bénéfice !",
+        "exemple": "Ventes = 1 000 000 DHS. Charges Variables = 600 000 DHS. MSCV = 400 000 DHS (soit un taux de 40%). \nCharges Fixes = 200 000 DHS. \nSR = 200 000 / 40% = 500 000 DHS. \nDès que l'entreprise vendra pour 500 000 DHS, elle sera à l'équilibre (bénéfice 0). Tout ce qu'elle vendra au-delà de 500 000 sera du bénéfice net !",
+        "pratique": "Si vos charges fixes augmentent (ex: le loyer double), votre seuil de rentabilité va-t-il monter ou baisser ?",
+        "resume": "Le SR est le chiffre d'affaires minimum pour ne pas être en perte.\nCharges séparées en Fixes (Loyer) et Variables (Matières).\nSR = Charges Fixes / Taux de Marge sur Coût Variable.\nPoint Mort = La date à laquelle ce seuil est atteint dans l'année."
+      },
+      "en": {
+        "objectif": "Calculate the minimum revenue required to cover all expenses (fixed and variable).",
+        "explication": "🔹 Fixed vs Variable Costs\nTo calculate the Breakeven Point (SR), divide Class 6 into two:\n1. **Variable**: They rise if you produce more (e.g., leather for shoes).\n2. **Fixed (Structure)**: They don't move, even if the factory stops (e.g., rent, insurance).\n\n🔹 Variable Cost Margin (MSCV)\nBefore paying rent, what's left of your sales?\n**MSCV = Sales - Variable Costs.**\nMSCV Rate = (MSCV / Sales) * 100.\n\n🔹 Calculating Breakeven Point (SR)\nThe exact Sales (CA) where profit is ZERO.\n**SR = Fixed Costs / MSCV Rate.**\n\n👍 The Breakeven Date (Point Mort)\nIf you hit this SR on Oct 10, it's the 'Point Mort'. From Jan 1 to Oct 10, you work to pay fixed costs. From Oct 11, every dirham sold is pure profit!",
+        "exemple": "Sales = 1M DHS. Var Costs = 600k. MSCV = 400k (Rate = 40%). \nFixed Costs = 200k. \nSR = 200k / 40% = 500,000 DHS. \nOnce sales hit 500k, profit is 0. Anything sold above 500k is net profit!",
+        "pratique": "If your fixed costs increase (e.g., rent doubles), will your breakeven point go up or down?",
+        "resume": "Breakeven is the minimum sales to not lose money.\nCosts are split into Fixed (Rent) and Variable (Materials).\nSR = Fixed Costs / Variable Margin Rate.\nPoint Mort = The date this threshold is reached."
+      },
+      "ar": {
+        "objectif": "حساب الحد الأدنى لرقم المعاملات المطلوب لتغطية جميع التكاليف (الثابتة والمتغيرة).",
+        "explication": "🔹 التكاليف الثابتة مقابل المتغيرة\nلحساب عتبة المردودية (SR)، يجب تقسيم الفئة 6 إلى اثنين:\n1. **المتغيرة**: ترتفع إذا أنتجت أكثر (مثل شراء الجلد للأحذية).\n2. **الثابتة (الهيكلية)**: لا تتحرك، حتى لو توقف المصنع (مثل إيجار المصنع، التأمين).\n\n🔹 الهامش على التكلفة المتغيرة (MSCV)\nقبل دفع الإيجار، ماذا يتبقى من مبيعاتك؟\n**MSCV = المبيعات - التكاليف المتغيرة.**\nمعدل MSCV = (MSCV / المبيعات) * 100.\n\n🔹 حساب عتبة المردودية (SR)\nإنه رقم المعاملات الدقيق الذي يكون فيه الربح صفراً.\n**SR = التكاليف الثابتة / معدل MSCV.**\n\n👍 نقطة التعادل (التاريخ)\nإذا وصلت إلى هذا SR في 10 أكتوبر، فهذه 'نقطة التعادل'. من 1 يناير إلى 10 أكتوبر، أنت تعمل لدفع التكاليف الثابتة. ابتداءً من 11 أكتوبر، كل درهم تبيعه هو ربح صافي!",
+        "exemple": "المبيعات = 1,000,000 درهم. تكاليف متغيرة = 600,000 درهم. MSCV = 400,000 درهم (أي بمعدل 40%). \nالتكاليف الثابتة = 200,000 درهم. \nSR = 200,000 / 40% = 500,000 درهم. \nبمجرد أن تبيع الشركة بـ 500,000 درهم، ستكون في حالة توازن (ربح 0). كل ما تبيعه فوق ذلك هو ربح صافٍ!",
+        "pratique": "إذا ارتفعت تكاليفك الثابتة (مثلاً تضاعف الإيجار)، هل سترتفع عتبة مردوديتك أم تنخفض؟",
+        "resume": "SR هو الحد الأدنى للمبيعات لعدم التعرض لخسارة.\nتقسم التكاليف لثابتة (إيجار) ومتغيرة (مواد).\nSR = التكاليف الثابتة / معدل الهامش على التكلفة المتغيرة.\nنقطة التعادل = التاريخ الذي يتم فيه الوصول لهذه العتبة."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "C'est l'indicateur qui empêche le patron de dormir s'il ne l'a pas encore atteint en Novembre, et qui le fait sabler le champagne s'il l'atteint en Juin."
+      ],
+      "en": [
+        "It's the indicator that keeps the boss awake if not reached by November, and popping champagne if reached in June."
+      ],
+      "ar": [
+        "إنه المؤشر الذي يمنع المدير من النوم إذا لم يصل إليه بحلول نوفمبر، ويجعله يفتح الشمبانيا إذا وصل إليه في يونيو."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez la séparation des charges : Variables (liées au produit) / Fixes (liées au bâtiment)."
+      ],
+      "en": [
+        "Memorize cost separation: Variable (linked to product) / Fixed (linked to building)."
+      ],
+      "ar": [
+        "احفظ فصل التكاليف: متغيرة (مرتبطة بالمنتج) / ثابتة (مرتبطة بالمبنى)."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Les startups de la Tech ont un Seuil de Rentabilité très difficile à atteindre car leurs charges fixes sont colossales (salaires des développeurs, serveurs) alors que leurs charges variables sont quasi nulles. Une fois le SR dépassé, leur rentabilité explose de manière exponentielle !",
+      "en": "Tech startups have a very hard Breakeven point to reach because fixed costs are huge (devs, servers) while variable costs are near zero. Once SR is crossed, profitability explodes exponentially!",
+      "ar": "الشركات الناشئة في مجال التكنولوجيا لديها عتبة مردودية يصعب الوصول إليها لأن تكاليفها الثابتة ضخمة (رواتب المطورين، الخوادم) بينما تكاليفها المتغيرة شبه معدومة. بمجرد تجاوز SR، تنفجر ربحيتها بشكل هائل!"
+    },
+    "piege_frequent": {
+      "fr": "Oublier que les salaires des ouvriers payés à l'heure sont des charges VARIABLES, tandis que les salaires des directeurs payés au mois sont des charges FIXES.",
+      "en": "Forgetting that hourly workers' wages are VARIABLE costs, while monthly directors' salaries are FIXED costs.",
+      "ar": "نسيان أن أجور العمال المدفوعة بالساعة هي تكاليف متغيرة، في حين أن رواتب المديرين المدفوعة شهرياً هي تكاليف ثابتة."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Charges Fixes = 50 000 DHS. Le Taux de MSCV est de 25%. Quel Chiffre d'Affaires l'entreprise doit-elle réaliser pour atteindre le Seuil de Rentabilité ?",
+        "en": "Fixed Costs = 50k. MSCV Rate = 25%. What Sales revenue must the firm hit to Breakeven?",
+        "ar": "التكاليف الثابتة = 50 ألف. معدل MSCV هو 25%. ما هو رقم المعاملات الذي يجب تحقيقه للوصول لعتبة المردودية؟"
+      },
+      "reward_xp": 80
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Charges Fixes = 100 000 DHS. Taux de Marge sur Coût Variable (MSCV) = 20%. Quel est le Seuil de Rentabilité (en DHS) ?",
+      "correct_answer": "500000",
+      "explanation": "SR = 100 000 / 0.20 = 500 000 DHS.",
+      "hint": "Divisez les charges fixes par 0.20."
+    }
+  },
+  {
+    "id": 87,
+    "title": {
+      "fr": "L'Imputation Rationnelle des Charges Fixes",
+      "en": "Rational Allocation of Fixed Costs",
+      "ar": "التحميل العقلاني للتكاليف الثابتة"
+    },
+    "xp": 110,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Si votre usine tourne à moitié vide, le produit fabriqué ne doit pas supporter tout le poids du loyer. On isole le 'Coût du Chômage'.",
+      "en": "If your factory runs half empty, the manufactured product shouldn't bear the full rent. We isolate the 'Cost of Idle Capacity'.",
+      "ar": "إذا كان مصنعك يعمل بنصف طاقته، فلا يجب أن يتحمل المنتج المصنوع عبء الإيجار كاملاً. نعزل 'تكلفة البطالة'."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Éviter de pénaliser le coût d'un produit en cas de baisse d'activité de l'usine (chômage technique).",
+        "explication": "🔹 Le problème du Loyer (Charge Fixe)\nImaginez que le loyer de l'usine soit de 10 000 DHS. L'usine peut produire normalement 1 000 chaises par mois. Le coût du loyer par chaise est donc de 10 DHS. \nMais ce mois-ci, crise économique ! L'usine n'a produit que 500 chaises. Si on met tout le loyer sur ces 500 chaises, la part du loyer passe à 20 DHS par chaise. Le coût de revient de la chaise va exploser, et on devra augmenter son prix de vente (ce qui fera fuir les derniers clients !).\n\n🔹 La méthode de l'Imputation Rationnelle (IR)\nL'idée est de ne faire supporter au produit QUE les charges fixes qui correspondent à l'activité réelle.\n**Coefficient d'IR (CIR) = Activité Réelle / Activité Normale.**\nDans notre exemple : 500 / 1000 = 0.5 (ou 50%).\n\n🔹 L'application\nSur les 10 000 DHS de loyer, on impute seulement 50% au coût de production des chaises (soit 5 000 DHS). Le coût du loyer reste de 10 DHS par chaise ! Le prix de vente reste stable.\n\n👍 Où vont les 5 000 DHS restants ?\nC'est le **Coût du Chômage**. Il n'est pas mis dans le coût du produit, il est envoyé directement comme une 'perte' dans le compte de résultat de l'entreprise. C'est le prix de la mauvaise gestion ou de la crise, pas le prix de la chaise !",
+        "exemple": "Activité Normale = 200 heures. Activité Réelle = 150 heures. CIR = 150 / 200 = 75%. Les charges fixes de 20 000 DHS ne seront imputées aux produits qu'à hauteur de 75% (15 000 DHS). Le reste (5 000 DHS) est le coût du chômage.",
+        "pratique": "Si l'activité réelle est SUPÉRIEURE à l'activité normale (ex: l'usine fait des heures supplémentaires intenses), le CIR sera-t-il supérieur ou inférieur à 1 ?",
+        "resume": "L'Imputation Rationnelle protège le coût du produit des baisses d'activité.\nCIR = Activité Réelle / Activité Normale.\nCharges Fixes Imputées = Charges Fixes * CIR.\nLa différence est le 'Coût du chômage' (perte sèche pour la direction)."
+      },
+      "en": {
+        "objectif": "Avoid penalizing product cost during factory downturns (idle capacity).",
+        "explication": "🔹 The Rent Problem (Fixed Cost)\nFactory rent is 10k DHS. Normal production is 1000 chairs/month. Rent cost per chair = 10 DHS.\nCrisis month! Factory produced only 500 chairs. If you dump all rent on 500 chairs, rent cost hits 20 DHS per chair. Cost price explodes, forcing price hikes (driving away remaining clients!).\n\n🔹 Rational Allocation Method (IR)\nMake the product bear ONLY fixed costs matching real activity.\n**Coefficient (CIR) = Real Activity / Normal Activity.**\nExample: 500 / 1000 = 0.5 (50%).\n\n🔹 Application\nOf 10k rent, allocate only 50% to production cost (5k DHS). Rent cost stays 10 DHS per chair! Selling price remains stable.\n\n👍 Where does the remaining 5k go?\nIt's the **Idle Capacity Cost**. Not put in product cost; sent directly as a 'loss' to the company's income statement. It's the price of crisis, not the price of the chair!",
+        "exemple": "Normal = 200 hrs. Real = 150 hrs. CIR = 150 / 200 = 75%. Fixed costs of 20k DHS are allocated to products only up to 75% (15k DHS). The rest (5k DHS) is idle cost.",
+        "pratique": "If real activity EXCEEDS normal activity (intense overtime), will CIR be above or below 1?",
+        "resume": "Rational Allocation shields product cost from activity drops.\nCIR = Real Activity / Normal Activity.\nAllocated Fixed Costs = Fixed Costs * CIR.\nDifference is 'Idle Cost' (dead loss for management)."
+      },
+      "ar": {
+        "objectif": "تجنب معاقبة تكلفة المنتج في حالة انخفاض نشاط المصنع (البطالة الفنية).",
+        "explication": "🔹 مشكلة الإيجار (تكلفة ثابتة)\nتخيل إيجار المصنع 10آلاف درهم. المصنع ينتج طبيعياً 1000 كرسي/شهر. إذن إيجار الكرسي 10 دراهم.\nهذا الشهر، أزمة! أنتج 500 كرسي فقط. إذا حملنا الإيجار كله لـ 500 كرسي، يصبح نصيب الكرسي 20 درهماً. سينفجر سعر التكلفة، ونضطر لرفع السعر (مما ينفر العملاء!).\n\n🔹 طريقة التحميل العقلاني (IR)\nالفكرة هي تحميل المنتج فقط بالتكاليف الثابتة التي تطابق النشاط الفعلي.\n**معامل IR (CIR) = النشاط الفعلي / النشاط العادي.**\nفي مثالنا: 500 / 1000 = 0.5 (أو 50%).\n\n🔹 التطبيق\nمن الـ 10آلاف، نحمل 50% فقط لتكلفة الإنتاج (5000 درهم). يبقى إيجار الكرسي 10 دراهم! السعر مستقر.\n\n👍 أين تذهب الـ 5000 المتبقية؟\nإنها **تكلفة البطالة**. لا توضع في تكلفة المنتج، بل ترسل كـ 'خسارة' في قائمة دخل الشركة. إنه ثمن سوء الإدارة أو الأزمة، وليس ثمن الكرسي!",
+        "exemple": "عادي = 200 ساعة. فعلي = 150 ساعة. CIR = 150/200 = 75%. تُحمل التكاليف الثابتة (20ألف) بنسبة 75% فقط (15ألف). الباقي (5آلاف) تكلفة بطالة.",
+        "pratique": "إذا تجاوز النشاط الفعلي العادي (ساعات إضافية مكثفة)، هل سيكون CIR أعلى أم أقل من 1؟",
+        "resume": "يحمي التحميل العقلاني تكلفة المنتج من انخفاض النشاط.\nCIR = نشاط فعلي / نشاط عادي.\nتكاليف ثابتة محملة = تكاليف ثابتة * CIR.\nالفرق هو 'تكلفة البطالة' (خسارة صافية للإدارة)."
+      }
+    },
+    "psychology": {
+      "fr": ["Cette méthode prouve que la comptabilité n'est pas aveugle. Elle protège l'ingénieur de production des erreurs du directeur commercial."]
+    },
+    "missions": {
+      "fr": ["Mémorisez la formule vitale du CIR : Activité Réelle / Activité Normale."]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Activité Normale : 500 unités. Activité Réelle : 400 unités. Charges Fixes : 100 000 DHS. Quel est le montant des charges fixes que vous allez 'jeter' (Coût du Chômage) ?",
+        "en": "Normal: 500 units. Real: 400 units. Fixed Costs: 100k DHS. What is the amount of fixed costs you will 'throw away' (Idle Cost)?",
+        "ar": "عادي: 500 وحدة. فعلي: 400 وحدة. تكاليف ثابتة: 100ألف. ما هو مبلغ التكاليف الثابتة الذي سـ 'ترميه' (تكلفة البطالة)؟"
+      },
+      "reward_xp": 80
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Activité Réelle = 80 heures. Activité Normale = 100 heures. Quel est le CIR (Coefficient d'Imputation Rationnelle) ? (Entrez le nombre en décimale, ex: 0.8)",
+      "correct_answer": "0.8",
+      "explanation": "80 / 100 = 0.8 (ou 80%).",
+      "hint": "Réel divisé par Normal."
+    }
+  },
+  {
+    "id": 88,
+    "title": {
+      "fr": "La Gestion Budgétaire — Prévisions et Écarts",
+      "en": "Budget Management — Forecasts and Variances",
+      "ar": "المراقبة الإدارية — التوقعات والانحرافات"
+    },
+    "xp": 95,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Gouverner, c'est prévoir. Le contrôle de gestion compare ce qu'on avait rêvé de faire (le Budget) avec ce qu'on a vraiment fait (le Réel) pour trouver les coupables.",
+      "en": "To govern is to foresee. Management control compares what we dreamed of doing (Budget) with what we actually did (Actual) to find the culprits.",
+      "ar": "أن تحكم يعني أن تتوقع. تقارن المراقبة الإدارية ما حلمنا بفعله (الميزانية) بما فعلناه حقاً (الفعلي) للعثور على المذنبين."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer et analyser les écarts budgétaires (favorable ou défavorable) pour ajuster la stratégie.",
+        "explication": "🔹 Le Budget (Le rêve)\nEn décembre, le Directeur Financier fait le budget pour l'année suivante : 'L'année prochaine, on va vendre 100 000 chaises à 50 DHS, et on achètera le bois à 10 DHS/kg'. \n\n🔹 Le Réel (La réalité)\nUn an plus tard, on regarde la comptabilité : 'On a vendu 80 000 chaises à 45 DHS, et le bois a coûté 12 DHS/kg'. Oups !\n\n🔹 L'Écart Budgétaire (L'enquêteur)\n**Écart = Réalisé - Préétabli (Budget).**\n- Pour les **CHARGES** (ex: achat de bois) : Si l'écart est positif (on a dépensé plus que prévu), c'est un écart **DÉFAVORABLE** (Mauvais).\n- Pour les **PRODUITS** (ex: ventes) : Si l'écart est négatif (on a vendu moins que prévu), c'est un écart **DÉFAVORABLE** (Mauvais).\n\n👍 Le rôle du Contrôleur de Gestion\nIl ne s'arrête pas au chiffre. Il découpe l'écart pour accuser le bon service :\n- *Écart sur Prix* : Le service Achat a mal négocié le bois avec le fournisseur.\n- *Écart sur Quantité* : L'usine a gaspillé trop de bois pour faire une chaise (problème machine ou ouvrier).",
+        "exemple": "Budget Achat de bois : 1000 kg à 10 DHS = 10 000 DHS.\nRéel Achat de bois : 1100 kg à 12 DHS = 13 200 DHS.\nÉcart = 13 200 - 10 000 = +3 200 DHS. \nC'est une CHARGE qui a augmenté, donc c'est Défavorable (D). L'entreprise a perdu 3 200 DHS par rapport à ses plans.",
+        "pratique": "L'entreprise avait budgété 50 000 DHS de ventes. Elle en réalise 60 000 DHS. Est-ce un écart Favorable (F) ou Défavorable (D) ?",
+        "resume": "Écart = Chiffre Réel - Chiffre Budgété.\nDépenser plus que prévu = Défavorable.\nVendre plus que prévu = Favorable.\nL'analyse des écarts pointe la responsabilité des différents départements (Achats, Production, Ventes)."
+      },
+      "en": {
+        "objectif": "Calculate and analyze budget variances (favorable or unfavorable) to adjust strategy.",
+        "explication": "🔹 The Budget (The Dream)\nIn Dec, the CFO makes next year's budget: 'Next year, we'll sell 100k chairs at 50 DHS, and buy wood at 10 DHS/kg'.\n\n🔹 Actual (Reality)\nA year later, accounting says: 'Sold 80k chairs at 45 DHS, wood cost 12 DHS/kg'. Oops!\n\n🔹 The Variance (The Investigator)\n**Variance = Actual - Budget.**\n- For **EXPENSES**: Positive variance (spent more) = **UNFAVORABLE** (Bad).\n- For **INCOME**: Negative variance (sold less) = **UNFAVORABLE** (Bad).\n\n👍 The Controller's Role\nThey break down the variance to blame the right dept:\n- *Price Variance*: Purchasing dept negotiated badly.\n- *Quantity Variance*: Factory wasted too much wood (machine/worker issue).",
+        "exemple": "Budget Wood: 1000 kg at 10 = 10,000.\nActual Wood: 1100 kg at 12 = 13,200.\nVariance = 13,200 - 10,000 = +3,200 DHS. Expense rose, so Unfavorable (U). Lost 3,200 compared to plans.",
+        "pratique": "Budgeted 50k sales. Actually did 60k. Favorable (F) or Unfavorable (U)?",
+        "resume": "Variance = Actual - Budget.\nSpending more = Unfavorable.\nSelling more = Favorable.\nVariance analysis points responsibility to depts (Purchasing, Production, Sales)."
+      },
+      "ar": {
+        "objectif": "حساب وتحليل الانحرافات الميزانيتية (ملائمة أو غير ملائمة) لتعديل الاستراتيجية.",
+        "explication": "🔹 الميزانية (الحلم)\nفي ديسمبر، يضع المدير المالي ميزانية العام القادم: 'سنبيع 100ألف كرسي بـ 50 درهماً، ونشتري الخشب بـ 10 دراهم/كغ'.\n\n🔹 الفعلي (الواقع)\nبعد عام، تقول المحاسبة: 'بعنا 80ألف كرسي بـ 45 درهماً، والخشب كلف 12 درهماً/كغ'. عذراً!\n\n🔹 الانحراف (المحقق)\n**الانحراف = الفعلي - الميزانية.**\n- للـ **التكاليف**: انحراف إيجابي (أنفقنا أكثر) = **غير ملائم** (سيء).\n- للـ **الإيرادات**: انحراف سلبي (بعنا أقل) = **غير ملائم** (سيء).\n\n👍 دور مراقب التسيير\nيقوم بتقسيم الانحراف لاتهام القسم الصحيح:\n- *انحراف السعر*: قسم المشتريات فاوض بشكل سيء.\n- *انحراف الكمية*: المصنع أهدر خشباً كثيراً (مشكلة آلة أو عامل).",
+        "exemple": "ميزانية الخشب: 1000 كغ بـ 10 = 10ألف.\nالفعلي: 1100 كغ بـ 12 = 13,200.\nالانحراف = 13,200 - 10,000 = +3200 درهم. تكلفة زادت، إذن غير ملائم (D).",
+        "pratique": "ميزانية المبيعات 50 ألف. الفعلي 60 ألف. ملائم (F) أم غير ملائم (D)؟",
+        "resume": "الانحراف = الفعلي - الميزانية.\nإنفاق أكثر = غير ملائم.\nبيع أكثر = ملائم.\nيشير تحليل الانحرافات إلى مسؤولية الأقسام."
+      }
+    },
+    "psychology": {
+      "fr": ["L'analyse des écarts est le moment où le financier fait 'trembler' les autres directeurs (Production, Achats). C'est le pouvoir des chiffres."]
+    },
+    "missions": {
+      "fr": ["Retenez bien : Pour une Dépense, un écart '+' est Mauvais. Pour une Vente, un écart '+' est Bon !"]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous aviez prévu (budget) de payer 10 000 DHS de publicité. Vous avez finalement payé 8 000 DHS. Quel est le montant de l'écart et est-il Favorable (F) ou Défavorable (D) ?",
+        "en": "Budgeted 10k DHS ads. Paid 8k DHS. What is the variance amount and is it Favorable (F) or Unfavorable (U)?",
+        "ar": "ميزانية إعلانات 10آلاف. الفعلي 8آلاف. ما هو الانحراف وهل هو ملائم (F) أم غير ملائم (D)؟"
+      },
+      "reward_xp": 60
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Un atelier a consommé 50 kg de matière pour fabriquer un bureau, alors que le standard (budget) exigeait 40 kg. À qui incombe principalement la responsabilité de cet écart Défavorable sur Quantité ?",
+      "options": [
+        "Au service Achats",
+        "Au service Production (L'atelier)",
+        "Au service Commercial (Ventes)",
+        "À la DGI"
+      ],
+      "correct_answer": "Au service Production (L'atelier)",
+      "explanation": "L'atelier a gaspillé de la matière première (problème de découpe ou d'efficacité). Le service Achat n'est responsable que des prix, pas des quantités gaspillées.",
+      "hint": "Qui manipule physiquement la matière ?"
+    }
+  },
+  {
+    "id": 89,
+    "title": {
+      "fr": "La Digitalisation — Sage 100 et ERP",
+      "en": "Digitalization — Sage 100 and ERP",
+      "ar": "الرقمنة — Sage 100 و ERP"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le stylo et le papier sont morts. Le comptable marocain moderne est un pilote de logiciel. Sage 100 est le cockpit le plus célèbre du marché.",
+      "en": "Pen and paper are dead. The modern Moroccan accountant is a software pilot. Sage 100 is the most famous cockpit in the market.",
+      "ar": "مات القلم والورقة. المحاسب المغربي الحديث هو طيار برمجيات. Sage 100 هي قمرة القيادة الأكثر شهرة في السوق."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comprendre l'environnement d'un ERP comptable (notamment Sage 100, standard au Maroc).",
+        "explication": "🔹 Qu'est-ce qu'un ERP ?\nEntreprise Resource Planning (Progiciel de Gestion Intégré). C'est un super-logiciel où la caisse, le stock, la paie et la comptabilité sont liés. Si le magasinier valide la réception du bois, l'ERP génère l'écriture comptable automatiquement !\n\n🔹 La Maîtrise de Sage 100\nC'est le logiciel le plus enseigné et utilisé dans les PME marocaines.\n- **Les Journaux Auxiliaires** : Sur Sage, on ne saisit pas dans un 'Journal Général'. On a un journal 'Achat', un journal 'Ventes', un journal 'Banque'.\n- **Le Lettrage automatique** : Fini le pointage à la main. Le logiciel repère les montants identiques entre le client et la banque et les 'lettre' (les marque d'une lettre A, B, C...) pour valider le paiement.\n- **La Clôture** : Un bouton magique qui fige l'année, empêche toute modification (obligation de la DGI) et génère la liasse fiscale en un clin d'œil.\n\n👍 Le nouveau rôle du Comptable\nPuisque Sage fait le calcul, le rôle du comptable n'est plus de calculer, mais de **PARAMÉTRER** (créer le plan comptable, définir les taux de TVA) et **CONTRÔLER** (vérifier que l'ERP n'a pas buggé).",
+        "exemple": "Le commercial saisit la facture de vente sur l'interface 'Gestion Commerciale' de Sage. Instantanément, la 'Comptabilité' affiche : Débit Client 3421, Crédit Vente 7111, Crédit TVA 4455. Le comptable n'a rien saisi au clavier, il a juste vérifié !",
+        "pratique": "Dans Sage 100, pour saisir une facture d'électricité payée en espèces, allez-vous ouvrir le journal des Ventes ou le journal de Caisse ?",
+        "resume": "Les ERP automatisent le passage entre les services et la comptabilité.\nSage 100 utilise des journaux auxiliaires spécialisés (Achat, Vente, Trésorerie).\nLe lettrage des comptes et l'édition de la liasse fiscale sont informatisés.\nLe métier devient un métier de contrôle et de paramétrage."
+      },
+      "en": {
+        "objectif": "Understand the environment of an accounting ERP (notably Sage 100, standard in Morocco).",
+        "explication": "🔹 What is an ERP?\nEnterprise Resource Planning. A super-software where cash, stock, payroll, and accounting are linked. If the warehouse validates wood receipt, the ERP generates the accounting entry automatically!\n\n🔹 Mastering Sage 100\nMost used in Moroccan SMEs.\n- **Auxiliary Journals**: In Sage, no 'General Journal'. You have a 'Purchase' journal, 'Sales' journal, 'Bank' journal.\n- **Auto-Matching (Lettrage)**: No more manual ticking. Software spots identical amounts between client and bank and 'matches' them (letters A, B, C) to validate payment.\n- **Closing**: A magic button freezing the year, preventing edits (DGI rule), and generating tax returns.\n\n👍 The new Accountant role\nSince Sage calculates, the accountant's role is **CONFIGURING** (creating chart of accounts, VAT rates) and **CONTROLLING**.",
+        "exemple": "Sales rep enters invoice in Sage 'Commercial Management'. Instantly, 'Accounting' shows: Debit Client, Credit Sale, Credit VAT. The accountant typed nothing, just verified!",
+        "pratique": "In Sage, to enter a cash-paid electricity bill, do you open the Sales journal or Cash journal?",
+        "resume": "ERPs automate flow between depts and accounting.\nSage uses specialized auxiliary journals.\nAccount matching and tax return generation are computerized.\nThe job shifts to control and configuration."
+      },
+      "ar": {
+        "objectif": "فهم بيئة برنامج ERP المحاسبي (خاصة Sage 100، القياسي في المغرب).",
+        "explication": "🔹 ما هو ERP؟\nتخطيط موارد المؤسسات. برنامج فائق يربط الصندوق، المخزون، الرواتب، والمحاسبة. إذا اعتمد المستودع استلام الخشب، يُنشئ ERP القيد المحاسبي تلقائياً!\n\n🔹 إتقان Sage 100\nالأكثر استخداماً في الشركات المغربية الصغرى والمتوسطة.\n- **اليوميات المساعدة**: في Sage، لا ندخل في 'يومية عامة'. لدينا يومية 'مشتريات'، و'مبيعات'، و'بنك'.\n- **المطابقة التلقائية (Lettrage)**: انتهى التعليم اليدوي. يكتشف البرنامج المبالغ المتطابقة ويطابقها (حروف A، B، C) لاعتماد الدفع.\n- **الإغلاق**: زر سحري يجمد العام، يمنع التعديل (قاعدة DGI)، ويولد الحزمة الضريبية.\n\n👍 الدور الجديد للمحاسب\nبما أن Sage يحسب، دور المحاسب هو **الإعداد** (إنشاء المخطط، معدلات TVA) و**المراقبة**.",
+        "exemple": "يدخل المندوب الفاتورة في 'الإدارة التجارية' لـ Sage. فوراً، تظهر 'المحاسبة': مدين عميل، دائن مبيعات، دائن TVA. لم يطبع المحاسب شيئاً، فقط تحقق!",
+        "pratique": "في Sage، لإدخال فاتورة كهرباء مدفوعة نقداً، هل تفتح يومية المبيعات أم يومية الصندوق؟",
+        "resume": "أتمتة ERP للتدفق بين الأقسام والمحاسبة.\nيستخدم Sage يوميات مساعدة متخصصة.\nمطابقة الحسابات وتوليد الحزمة الضريبية آلياً.\nتتحول المهنة إلى مراقبة وإعداد."
+      }
+    },
+    "psychology": {
+      "fr": ["Le logiciel n'est pas votre ennemi pour voler votre travail. C'est un exosquelette qui vous permet d'analyser 10 000 factures sans transpirer."]
+    },
+    "missions": {
+      "fr": ["Tapez 'Sage 100 Comptabilité' sur YouTube et regardez à quoi ressemble l'interface grise mythique."]
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Quel est le grand avantage de la fonction 'Lettrage Automatique' sur un logiciel comme Sage 100 ?",
+      "options": [
+        "Elle déclare la TVA toute seule à la DGI.",
+        "Elle associe automatiquement une facture client à son paiement bancaire pour vérifier qui a payé.",
+        "Elle invente des numéros de factures.",
+        "Elle supprime les écritures erronées."
+      ],
+      "correct_answer": "Elle associe automatiquement une facture client à son paiement bancaire pour vérifier qui a payé.",
+      "explanation": "Le logiciel scanne le journal des Ventes et le journal de Banque. S'il voit 10 000 DHS chez le client A et une entrée de 10 000 DHS en banque, il met la lettre 'A' sur les deux pour les 'lettrer' (solder).",
+      "hint": "C'est un travail de pointage (check)."
+    }
+  },
+  {
+    "id": 90,
+    "title": {
+      "fr": "SIMULATION FINALE P5 — Le Directeur Financier",
+      "en": "FINAL SIMULATION P5 — The CFO",
+      "ar": "المحاكاة النهائية للمرحلة 5 — المدير المالي (CFO)"
+    },
+    "xp": 1000,
+    "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Vous maîtrisez le Bilan, la TVA, le CPC, la Paie, et les Coûts. Vous n'êtes plus un simple comptable, vous êtes l'architecte de l'empire financier.",
+      "en": "You master the Balance Sheet, VAT, CPC, Payroll, and Costs. You are no longer a simple accountant; you are the architect of the financial empire.",
+      "ar": "أنت تتقن الميزانية، TVA، CPC، الرواتب، والتكاليف. لم تعد مجرد محاسب، أنت مهندس الإمبراطورية المالية."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Synthèse Ultime : Agir en tant que Directeur Administratif et Financier (DAF).",
+        "explication": "🔹 Le DAF (Directeur Administratif et Financier)\nC'est l'évolution finale de notre parcours. Le DAF ne saisit plus les factures (les ERP et les juniors s'en occupent). Son rôle est : \n1. **Fiscal** : Assurer que l'entreprise paie le minimum d'impôts de manière légale (Gestion de l'IS et de la TVA).\n2. **Financier** : Surveiller le Fonds de Roulement et la Trésorerie pour éviter la faillite.\n3. **Analytique** : Contrôler les coûts de production pour maximiser la Marge Brute.\n\n🔹 La Boucle est bouclée\nSouvenez-vous de la Leçon 1 : La comptabilité est la Mémoire, la Boussole et le Bouclier de l'entreprise. \nVous savez maintenant remplir les tiroirs du PCM (Mémoire), analyser l'ESG et le Seuil de rentabilité (Boussole), et préparer la Liasse Fiscale pour la DGI (Bouclier).",
+        "exemple": "Le PDG vous dit : 'On a 1 Million de bénéfice cette année ! On va acheter de grosses voitures de luxe !'. En tant que DAF, vous répondez : 'Attention, notre Trésorerie Nette est négative, les voitures de luxe ne sont pas déductibles (TVA et IS) et cela va plomber notre EBE. On investit d'abord dans les machines pour l'usine !'.",
+        "pratique": "Vous avez terminé Amina Académie. Quel sera votre premier réflexe face au prochain Bilan d'entreprise que vous croiserez ?",
+        "resume": "Le DAF utilise la comptabilité générale, fiscale et analytique comme outils de stratégie.\nIl protège la trésorerie et optimise l'impôt (IS/TVA).\nVous avez maintenant toutes les compétences techniques fondamentales du système marocain."
+      },
+      "en": {
+        "objectif": "Ultimate Synthesis: Act as the Chief Financial Officer (CFO).",
+        "explication": "🔹 The CFO\nThe final evolution of our journey. The CFO no longer enters invoices (ERPs and juniors do that). Their role is:\n1. **Tax**: Ensure the firm pays minimum legal tax (IS/VAT management).\n2. **Financial**: Monitor Working Capital and Treasury to prevent bankruptcy.\n3. **Analytical**: Control production costs to maximize Gross Margin.\n\n🔹 Full Circle\nRemember Lesson 1: Accounting is the Memory, Compass, and Shield of the business.\nYou now know how to fill PCM drawers (Memory), analyze ESG and Breakeven (Compass), and prepare Tax Returns for DGI (Shield).",
+        "exemple": "CEO says: '1 Million profit! Let's buy luxury cars!'. As CFO, you say: 'Warning, Net Treasury is negative, luxury cars aren't deductible (VAT/IS) and will tank our EBE. We invest in factory machines first!'.",
+        "pratique": "You finished Amina Academy. What will be your first reflex facing the next company Balance Sheet you see?",
+        "resume": "CFO uses financial, tax, and cost accounting for strategy.\nProtects cash flow and optimizes tax.\nYou now possess all fundamental technical skills of the Moroccan system."
+      },
+      "ar": {
+        "objectif": "التوليف النهائي: العمل كمدير مالي (CFO).",
+        "explication": "🔹 المدير المالي (CFO)\nالتطور النهائي لرحلتنا. لا يدخل المدير المالي الفواتير (يقوم ERP والمبتدئون بذلك). دوره هو:\n1. **ضريبي**: ضمان دفع الشركة للحد الأدنى من الضرائب القانونية (إدارة IS و TVA).\n2. **مالي**: مراقبة رأس المال العامل والخزينة لمنع الإفلاس.\n3. **تحليلي**: مراقبة تكاليف الإنتاج لزيادة الهامش الإجمالي.\n\n🔹 اكتملت الدائرة\nتذكر الدرس 1: المحاسبة هي ذاكرة، وبوصلة، ودرع الشركة.\nأنت تعرف الآن كيف تملأ أدراج PCM (ذاكرة)، وتحلل ESG وعتبة المردودية (بوصلة)، وتعد الحزمة الضريبية لـ DGI (درع).",
+        "exemple": "يقول المدير التنفيذي: 'مليون ربح! لنشتري سيارات فاخرة!'. بصفتك مديراً مالياً، تجيب: 'تحذير، الخزينة الصافية سلبية، السيارات الفاخرة غير قابلة للخصم (TVA/IS) وستدمر EBE. نستثمر في آلات المصنع أولاً!'.",
+        "pratique": "لقد أنهيت أكاديمية أمينة. ما هو أول رد فعل لك أمام الميزانية القادمة التي ستواجهها؟",
+        "resume": "يستخدم CFO المحاسبة العامة والضريبية والتحليلية كأدوات استراتيجية.\nيحمي السيولة ويحسن الضرائب.\nأنت تمتلك الآن جميع المهارات الفنية الأساسية للنظام المغربي."
+      }
+    },
+    "psychology": {
+      "fr": ["Vous avez gravi la montagne de l'expertise financière. Ce qui était un mystère de chiffres est devenu un langage clair et puissant. Félicitations !"]
+    },
+    "missions": {
+      "fr": ["Célébrez votre réussite !", "Commencez à conseiller de vrais entrepreneurs autour de vous."]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Quel est le nom de l'Acronyme qui regroupe la Caisse Nationale de Sécurité Sociale (Rappel Phase 2) ?",
+        "en": "What does the acronym CNSS stand for?",
+        "ar": "ماذا يمثل الاختصار CNSS؟"
+      },
+      "reward_xp": 1000
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Quel est le nom du code officiel imposé par l'État Marocain pour normaliser la comptabilité (Entrez les 4 lettres majuscules) ?",
+      "correct_answer": "CGNC",
+      "explanation": "Le Code Général de Normalisation Comptable (CGNC).",
+      "hint": "C _ N _"
+     }
+  },
+  {
+    
+  
+    "id": 91,
+    "title": {
+      "fr": "Les Normes IFRS vs CGNC",
+      "en": "IFRS Standards vs CGNC",
+      "ar": "معايير IFRS مقابل CGNC"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Le CGNC est la langue locale marocaine. Les IFRS sont la langue internationale des affaires. Pour jouer dans la cour des grands, il faut parler IFRS.",
+      "en": "CGNC is the local Moroccan language. IFRS is the international language of business. To play in the big leagues, you must speak IFRS.",
+      "ar": "CGNC هي اللغة المحلية المغربية. IFRS هي لغة الأعمال الدولية. للعب في البطولات الكبرى، يجب أن تتحدث IFRS."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comprendre les différences majeures entre le référentiel comptable marocain (CGNC) et les normes internationales (IFRS).",
+        "explication": "🔹 Pourquoi deux normes ?\nSi SARL Atlas veut un crédit auprès d'une banque américaine, le banquier ne comprendra rien au Bilan marocain (CGNC). Il exigera des états financiers en **IFRS (International Financial Reporting Standards)**.\n\n🔹 La grande différence : Historique vs Économique\n- **Le CGNC (Maroc)** est basé sur le *Coût Historique*. Si vous avez acheté un terrain 100 000 DHS en 1990, il vaut toujours 100 000 DHS au Bilan en 2026, même si sa valeur réelle est de 5 Millions aujourd'hui !\n- **Les normes IFRS** sont basées sur la *Juste Valeur (Fair Value)*. Le Bilan doit montrer la valeur RÉELLE des actifs sur le marché actuel. C'est plus risqué, mais plus réaliste pour les investisseurs.\n\n👍 Qui utilise les IFRS au Maroc ?\nLes PME utilisent le CGNC. Mais les banques marocaines, les assurances, et les sociétés cotées en Bourse (à la Bourse de Casablanca) sont OBLIGÉES de présenter des comptes consolidés en normes IFRS.",
+        "exemple": "Une entreprise a acheté des actions à 10 000 DHS. Aujourd'hui, elles valent 50 000 DHS en Bourse. En CGNC, le comptable ne touche à rien (prudence). En IFRS, le comptable augmente la valeur au Bilan à 50 000 DHS et constate un profit latent !",
+        "pratique": "Quel référentiel comptable préférez-vous utiliser si vous voulez montrer que votre entreprise vaut très cher aujourd'hui ?",
+        "resume": "CGNC = Norme marocaine basée sur le coût d'achat historique et la prudence.\nIFRS = Norme internationale basée sur la valeur réelle du marché (Fair Value).\nObligatoire pour les sociétés cotées en Bourse de Casablanca."
+      },
+      "en": {
+        "objectif": "Understand major differences between Moroccan accounting (CGNC) and international standards (IFRS).",
+        "explication": "🔹 Why two standards?\nIf Atlas wants a US bank loan, the banker won't understand the Moroccan CGNC Balance Sheet. They demand **IFRS (International Financial Reporting Standards)**.\n\n🔹 The Big Difference: Historical vs Economic\n- **CGNC (Morocco)** uses *Historical Cost*. A land bought for 100k DHS in 1990 is still 100k on the 2026 Balance Sheet, even if worth 5 Million today!\n- **IFRS** uses *Fair Value*. The Balance Sheet must show REAL market value. Riskier, but more realistic for investors.\n\n👍 Who uses IFRS in Morocco?\nSMEs use CGNC. But Moroccan banks, insurance, and listed companies (Casablanca Stock Exchange) MUST present consolidated accounts in IFRS.",
+        "exemple": "A firm bought shares for 10k DHS. Today they are worth 50k on the market. In CGNC, the accountant does nothing (prudence). In IFRS, they increase the Balance Sheet value to 50k and record an unrealized profit!",
+        "pratique": "Which accounting standard would you use to show your company is worth a lot today?",
+        "resume": "CGNC = Moroccan standard based on historical cost and prudence.\nIFRS = International standard based on real market value (Fair Value).\nMandatory for companies listed on the Casablanca Stock Exchange."
+      },
+      "ar": {
+        "objectif": "فهم الاختلافات الرئيسية بين المرجعية المحاسبية المغربية (CGNC) والمعايير الدولية (IFRS).",
+        "explication": "🔹 لماذا معياران؟\nإذا أرادت Atlas قرضاً من بنك أمريكي، فلن يفهم المصرفي شيئاً من الميزانية المغربية (CGNC). سيطالب ببيانات مالية وفق **IFRS (المعايير الدولية لإعداد التقارير المالية)**.\n\n🔹 الفرق الكبير: تاريخي مقابل اقتصادي\n- **CGNC (المغرب)** يعتمد على *التكلفة التاريخية*. أرض مشتراة بـ 100ألف درهم في 1990 تظل بـ 100ألف في ميزانية 2026، حتى لو كانت قيمتها 5 ملايين اليوم!\n- **IFRS** تعتمد على *القيمة العادلة (Fair Value)*. يجب أن تظهر الميزانية القيمة الحقيقية للأصول في السوق الحالي. إنها أكثر خطورة، لكنها أكثر واقعية للمستثمرين.\n\n👍 من يستخدم IFRS في المغرب؟\nتستخدم الشركات الصغرى CGNC. لكن البنوك، والتأمين، والشركات المدرجة في بورصة الدار البيضاء ملزمة بتقديم حسابات مجمعة بمعايير IFRS.",
+        "exemple": "اشترت شركة أسهماً بـ 10آلاف درهم. اليوم تبلغ قيمتها 50ألفاً في البورصة. في CGNC، لا يغير المحاسب شيئاً (الحيطة). في IFRS، يزيد القيمة في الميزانية إلى 50ألفاً ويسجل ربحاً كامناً!",
+        "pratique": "أي مرجعية محاسبية تفضل استخدامها إذا أردت إظهار أن شركتك تساوي الكثير اليوم؟",
+        "resume": "CGNC = معيار مغربي يعتمد على تكلفة الشراء التاريخية والحيطة.\nIFRS = معيار دولي يعتمد على القيمة السوقية الحقيقية.\nإلزامي للشركات المدرجة في بورصة الدار البيضاء."
+      }
+    },
+    "psychology": {
+      "fr": ["Le passage aux IFRS est un choc culturel. On abandonne la sécurité du passé pour affronter la volatilité du présent."]
+    },
+    "missions": {
+      "fr": ["Mémorisez : IFRS = International Financial Reporting Standards.", "Retenez que 'Fair Value' signifie Juste Valeur (Prix du marché)."]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous avez un terrain acheté 200 000 DHS en 2010. Aujourd'hui, l'expert immobilier l'évalue à 1 500 000 DHS. Quel sera le montant affiché au Bilan de 2026 en norme CGNC ? Et en norme IFRS ?",
+        "en": "Land bought 200k in 2010. Today valued at 1.5M. What is the 2026 Balance Sheet amount in CGNC? And in IFRS?",
+        "ar": "أرض مشتراة بـ 200ألف في 2010. اليوم قيمتها 1.5 مليون. ما المبلغ المعروض في ميزانية 2026 بمعيار CGNC؟ وبمعيار IFRS؟"
+      },
+      "reward_xp": 70
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Quel est le principe de base de valorisation des actifs selon les normes IFRS ?",
+      "options": [
+        "Le Coût Historique",
+        "La Juste Valeur (Fair Value)",
+        "Le Coût de Production",
+        "La Valeur à Neuf"
+      ],
+      "correct_answer": "La Juste Valeur (Fair Value)",
+      "explanation": "Les IFRS veulent refléter la réalité économique actuelle de l'entreprise, d'où l'utilisation de la Fair Value (prix du marché).",
+      "hint": "C'est la valeur du marché 'juste'."
+    }
+  },
+  {
+    "id": 92,
+    "title": {
+      "fr": "La Consolidation des Comptes",
+      "en": "Consolidation of Accounts",
+      "ar": "توحيد الحسابات (التجميع)"
+    },
+    "xp": 110,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Quand une 'Société Mère' possède plusieurs 'Filiales', on fusionne toutes leurs comptabilités en un seul Super-Bilan pour voir la vraie taille de l'Empire.",
+      "en": "When a 'Parent Company' owns several 'Subsidiaries', we merge all their accounting into a single Super-Balance Sheet to see the true size of the Empire.",
+      "ar": "عندما تمتلك 'الشركة الأم' عدة 'شركات تابعة'، ندمج جميع محاسباتهم في ميزانية كبرى واحدة لرؤية الحجم الحقيقي للإمبراطورية."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comprendre la logique des comptes consolidés pour les groupes de sociétés.",
+        "explication": "🔹 Le problème des Groupes\nUne Holding (Société Mère A) possède 100% d'une usine (Filiale B) et 100% d'une boutique (Filiale C). Si on regarde le Bilan de la société A seule, elle n'a presque rien (juste des actions). Cela ne reflète pas sa vraie puissance ! Il faut 'Consolider' (regrouper) les comptes de A, B et C.\n\n🔹 L'élimination des opérations intra-groupe\nLa règle d'or de la consolidation : on ne peut pas faire de business avec soi-même ! \nSi la Filiale B vend pour 100 000 DHS de marchandises à la Filiale C, c'est de l'argent qui a juste changé de poche dans l'Empire. \nLors de la consolidation, le comptable va **ANNULER** cette vente. Le Chiffre d'Affaires Consolidé ne montrera QUE les ventes faites aux 'Vrais' clients externes.\n\n👍 L'Image Fidèle de l'Empire\nLes comptes consolidés permettent aux investisseurs et aux banques d'analyser le Groupe comme s'il s'agissait d'une seule et même immense entreprise.",
+        "exemple": "Le Groupe OCP possède des dizaines de filiales. Si OCP publie ses comptes 'Sociaux' (seuls), son chiffre d'affaires serait trompeur. OCP publie des 'Comptes Consolidés' qui additionnent les revenus de toutes ses filiales dans le monde en éliminant le commerce interne.",
+        "pratique": "Si la filiale A prête 1 Million de DHS à la filiale B, cette dette apparaîtra-t-elle dans le Bilan Consolidé du Groupe ?",
+        "resume": "La consolidation fusionne les Bilans et CPC d'une société mère et de ses filiales.\nElle élimine toutes les dettes, créances et ventes internes au groupe.\nObligatoire pour les grands groupes marocains (Banques, Assurances, Bourse).\nLe but est de donner une image économique réelle de la taille du groupe."
+      },
+      "en": {
+        "objectif": "Understand the logic of consolidated accounts for corporate groups.",
+        "explication": "🔹 The Group Problem\nA Holding (Parent A) owns 100% of a factory (Sub B) and a shop (Sub C). If you look at Parent A's Balance Sheet alone, it has almost nothing (just shares). This doesn't reflect its true power! We must 'Consolidate' A, B, and C.\n\n🔹 Eliminating Intra-group Operations\nThe golden rule of consolidation: you can't do business with yourself!\nIf Sub B sells 100k DHS of goods to Sub C, it's just money shifting pockets in the Empire.\nDuring consolidation, the accountant will **CANCEL** this sale. Consolidated Turnover ONLY shows sales to 'Real' external clients.\n\n👍 The True Image of the Empire\nConsolidated accounts allow investors and banks to analyze the Group as if it were a single massive company.",
+        "exemple": "OCP Group owns dozens of subsidiaries. If it published only 'Social' (solo) accounts, turnover would be misleading. OCP publishes 'Consolidated Accounts' adding global subsidiary revenues while erasing internal trade.",
+        "pratique": "If Sub A lends 1 Million DHS to Sub B, will this debt appear on the Group's Consolidated Balance Sheet?",
+        "resume": "Consolidation merges Balance Sheets/CPCs of parent and subsidiaries.\nIt eliminates all internal debts, receivables, and sales.\nMandatory for large Moroccan groups (Banks, Insurance, Stock Market).\nGoal is to give a true economic picture of the group's size."
+      },
+      "ar": {
+        "objectif": "فهم منطق الحسابات المجمعة لمجموعات الشركات.",
+        "explication": "🔹 مشكلة المجموعات\nتمتلك شركة قابضة (الشركة الأم A) 100% من مصنع (تابعة B) ومتجر (تابعة C). إذا نظرنا لميزانية A وحدها، فهي لا تملك شيئاً تقريباً (فقط أسهم). هذا لا يعكس قوتها الحقيقية! يجب 'تجميع' (دمج) حسابات A و B و C.\n\n🔹 إلغاء العمليات داخل المجموعة\nالقاعدة الذهبية للتجميع: لا يمكنك القيام بأعمال تجارية مع نفسك!\nإذا باعت التابعة B بـ 100ألف درهم للتابعة C، فهذا مال تغير جيبه فقط داخل الإمبراطورية.\nأثناء التجميع، سيقوم المحاسب بـ **إلغاء** هذا البيع. سيُظهر رقم المعاملات المجمع فقط المبيعات للعملاء الخارجيين 'الحقيقيين'.\n\n👍 الصورة الصادقة للإمبراطورية\nتتيح الحسابات المجمعة للمستثمرين والبنوك تحليل المجموعة وكأنها شركة واحدة ضخمة.",
+        "exemple": "تمتلك مجموعة OCP عشرات الشركات التابعة. إذا نشرت حساباتها 'الاجتماعية' (الفردية) فقط، سيكون رقم المعاملات مضللاً. تنشر OCP 'حسابات مجمعة' تجمع إيرادات جميع توابعها مع محو التجارة الداخلية.",
+        "pratique": "إذا أقرضت التابعة A مليون درهم للتابعة B، هل سيظهر هذا الدين في الميزانية المجمعة للمجموعة؟",
+        "resume": "يدمج التجميع ميزانيات و CPC للشركة الأم وتوابعها.\nيلغي جميع الديون والمبيعات الداخلية للمجموعة.\nإلزامي للمجموعات المغربية الكبرى.\nالهدف هو إعطاء صورة اقتصادية حقيقية لحجم المجموعة."
+      }
+    },
+    "psychology": {
+      "fr": ["Faire de la consolidation demande une vision d'aigle. On ne gère plus une entreprise, on gère un écosystème."]
+    },
+    "missions": {
+      "fr": ["Mémorisez : 'Comptes Sociaux' = 1 seule entreprise. 'Comptes Consolidés' = Le Groupe entier."]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Société Mère : CA de 500k. Filiale : CA de 300k. Pendant l'année, la Filiale a facturé 100k de prestations à la Société Mère. Quel est le Chiffre d'Affaires Consolidé du Groupe ?",
+        "en": "Parent: CA 500k. Sub: CA 300k. Sub billed Parent 100k during the year. What is the Group's Consolidated Turnover?",
+        "ar": "الشركة الأم: مبيعات 500ألف. التابعة: مبيعات 300ألف. فوترت التابعة 100ألف للأم. ما هو رقم المعاملات المجمع للمجموعة؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Excellent ! CA Total = 800k. On élimine les 100k de facturation interne. CA Consolidé = 700 000 DHS. L'empire a généré 700k de 'vrai' business externe. 🔥",
+        "en": "Excellent! Total CA = 800k. Eliminate 100k internal billing. Consolidated CA = 700,000 DHS. The empire generated 700k of 'real' external business. 🔥",
+        "ar": "ممتاز! الإجمالي = 800ألف. نلغي 100ألف فوترة داخلية. مبيعات مجمعة = 700,000 درهم. أنتجت الإمبراطورية 700ألف من الأعمال الخارجية الحقيقية. 🔥"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Une filiale prête 50 000 DHS à sa société mère. Quel sera le montant de cette dette dans le Bilan Consolidé final du groupe ?",
+      "correct_answer": "0",
+      "explanation": "Les dettes et créances intra-groupe s'annulent mutuellement lors de la consolidation.",
+      "hint": "Peut-on se devoir de l'argent à soi-même ?"
+    }
+  },
+  {
+    "id": 93,
+    "title": {
+      "fr": "Audit et Commissariat Aux Comptes (CAC)",
+      "en": "Audit and Statutory Auditing (CAC)",
+      "ar": "التدقيق ومراقبة الحسابات (CAC)"
+    },
+    "xp": 120,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La confiance n'exclut pas le contrôle. Le CAC est le policier financier externe qui certifie que la comptabilité de l'entreprise ne ment pas.",
+      "en": "Trust doesn't exclude control. The Statutory Auditor is the external financial police certifying the company's accounting isn't lying.",
+      "ar": "الثقة لا تستبعد الرقابة. مراقب الحسابات هو الشرطي المالي الخارجي الذي يصدق أن محاسبة الشركة لا تكذب."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comprendre le rôle légal de l'Auditeur Externe (CAC) dans la certification des comptes au Maroc.",
+        "explication": "🔹 Qu'est-ce que l'Audit Financier ?\nC'est un examen critique des états financiers de l'entreprise par un expert indépendant. Au Maroc, cet expert est appelé le **Commissaire aux Comptes (CAC)**.\n\n🔹 L'obligation légale au Maroc\nToutes les entreprises ne sont pas obligées d'avoir un CAC. C'est obligatoire pour :\n1. Toutes les Sociétés Anonymes (SA).\n2. Les SARL dont le Chiffre d'Affaires dépasse **50 Millions de DHS**.\nSi une SARL dépasse ce seuil et ne nomme pas de CAC, les décisions de ses assemblées générales sont nulles en justice !\n\n🔹 La mission du CAC\nLe CAC ne fait pas la comptabilité (c'est interdit). Il vient à la fin de l'année pour vérifier le travail du comptable de l'entreprise. \nIl émet une 'Opinion' : \n- **Certification sans réserve** : Les comptes sont excellents et fidèles.\n- **Certification avec réserve** : C'est globalement bon, mais il y a un problème sur un compte spécifique (ex: un litige caché).\n- **Refus de certifier** : Les comptes sont faux ou manipulés.\n\n👍 Le droit d'Alerte\nSi le CAC découvre des fraudes, des vols, ou que l'entreprise est proche de la faillite, la loi l'oblige à déclencher une procédure d'alerte auprès des juges et des actionnaires.",
+        "exemple": "Le CAC contrôle le stock de SARL Atlas. La comptabilité dit qu'il y a pour 1 Million de DHS d'ordinateurs. Le CAC va physiquement dans le dépôt, compte les cartons, et demande les factures. S'il n'en trouve que pour 500 000 DHS, il refusera de certifier le Bilan.",
+        "pratique": "Une SARL fait 40 Millions de DHS de chiffre d'affaires. La nomination d'un CAC est-elle obligatoire légalement ?",
+        "resume": "Le Commissaire aux Comptes (CAC) est un auditeur externe indépendant.\nObligatoire pour les SA et les SARL dépassant 50 Millions de DHS de CA.\nSon rôle est de 'certifier' que le Bilan donne une image fidèle de la réalité.\nIl possède un pouvoir d'alerte en cas de fraude ou danger."
+      },
+      "en": {
+        "objectif": "Understand the legal role of the External Auditor (CAC) in certifying accounts in Morocco.",
+        "explication": "🔹 What is a Financial Audit?\nA critical exam of financial statements by an independent expert. In Morocco, this expert is the **Commissaire aux Comptes (CAC)**.\n\n🔹 Legal Obligation in Morocco\nNot all firms need a CAC. Mandatory for:\n1. All Public Limited Companies (SA).\n2. SARLs with Turnover > **50 Million DHS**.\nIf a SARL crosses this and doesn't appoint a CAC, its general assembly decisions are legally void!\n\n🔹 The CAC's Mission\nThe CAC doesn't do accounting (forbidden). They check the firm accountant's work at year-end. \nThey issue an 'Opinion':\n- **Unqualified opinion**: Accounts are excellent and true.\n- **Qualified opinion**: Mostly good, but a specific issue exists (e.g., hidden lawsuit).\n- **Adverse/Disclaimer**: Accounts are fake or manipulated.\n\n👍 The Right of Alert\nIf the CAC finds fraud or bankruptcy risk, law forces them to alert judges and shareholders.",
+        "exemple": "CAC audits Atlas stock. Accounting says 1M DHS computers. CAC physically goes to the warehouse, counts boxes. If they find only 500k, they refuse to certify the Balance Sheet.",
+        "pratique": "A SARL makes 40M DHS turnover. Is appointing a CAC legally mandatory?",
+        "resume": "The CAC is an independent external auditor.\nMandatory for SAs and SARLs > 50M DHS turnover.\nRole is to 'certify' the Balance Sheet is a true image.\nHas alert power for fraud or danger."
+      },
+      "ar": {
+        "objectif": "فهم الدور القانوني للمدقق الخارجي (مراقب الحسابات) في التصديق على الحسابات في المغرب.",
+        "explication": "🔹 ما هو التدقيق المالي؟\nفحص نقدي للبيانات المالية من قبل خبير مستقل. يُسمى هذا الخبير في المغرب **مراقب الحسابات (CAC)**.\n\n🔹 الالتزام القانوني في المغرب\nليست كل الشركات ملزمة بوجود CAC. إلزامي لـ:\n1. جميع شركات المساهمة (SA).\n2. شركات SARL التي يتجاوز رقم معاملاتها **50 مليون درهم**.\nإذا تجاوزت SARL هذا السقف ولم تعين CAC، تعتبر قرارات جمعيتها العامة باطلة قانوناً!\n\n🔹 مهمة CAC\nلا يقوم CAC بالمحاسبة (ممنوع). يأتي نهاية العام للتحقق من عمل محاسب الشركة.\nيصدر 'رأياً':\n- **تصديق بدون تحفظ**: الحسابات ممتازة وصادقة.\n- **تصديق مع تحفظ**: جيد إجمالاً، لكن هناك مشكلة في حساب معين (نزاع مخفي).\n- **رفض التصديق**: الحسابات خاطئة أو متلاعب بها.\n\n👍 حق التنبيه (إنذار)\nإذا اكتشف CAC احتيالاً أو خطراً بالإفلاس، يلزمه القانون بإطلاق إجراء تنبيه للقضاة والمساهمين.",
+        "exemple": "يدقق CAC مخزون Atlas. تقول المحاسبة 1 مليون حواسيب. يذهب CAC فعلياً للمستودع. إذا وجد 500 ألف فقط، يرفض التصديق على الميزانية.",
+        "pratique": "SARL تحقق 40 مليون درهم مبيعات. هل تعيين CAC إلزامي قانوناً؟",
+        "resume": "مراقب الحسابات (CAC) مدقق خارجي مستقل.\nإلزامي لـ SA و SARL > 50 مليون مبيعات.\nدوره 'التصديق' على أن الميزانية تعطي صورة صادقة.\nيملك سلطة إنذار في حالة الاحتيال أو الخطر."
+      }
+    },
+    "psychology": {
+      "fr": ["Le comptable d'entreprise redoute l'arrivée de l'auditeur. C'est l'affrontement entre celui qui a construit le château de cartes et celui qui vient chercher la carte bancale pour tout faire tomber."]
+    },
+    "missions": {
+      "fr": ["Mémorisez le seuil marocain de l'audit pour les SARL : 50 Millions de DHS de Chiffre d'Affaires."]
+    },
+    "piege_frequent": {
+      "fr": "Confondre l'Expert-Comptable et le Commissaire aux Comptes. L'expert-comptable CONSTRUIT la comptabilité de l'entreprise (conseil). Le CAC VÉRIFIE la comptabilité (juge indépendant). C'est pour ça qu'une même personne n'a pas le droit de faire les deux pour la même entreprise !",
+      "en": "Confusing the CPA and the Statutory Auditor. The CPA BUILDS accounting (advisor). The CAC CHECKS it (independent judge). One person cannot legally do both for the same firm!",
+      "ar": "الخلط بين الخبير المحاسب ومراقب الحسابات. الخبير المحاسب 'يبني' المحاسبة (مستشار). CAC 'يتحقق' منها (قاض مستقل). لا يجوز قانوناً لشخص واحد القيام بالدورين لنفس الشركة!"
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Quelle est l'opinion émise par le CAC lorsque les comptes de l'entreprise sont globablement bons, mais comportent une erreur ou incertitude mineure ?",
+      "options": [
+        "Certification sans réserve",
+        "Certification avec réserve",
+        "Refus de certifier",
+        "Dénonciation au Procureur du Roi"
+      ],
+      "correct_answer": "Certification avec réserve",
+      "explanation": "Le CAC certifie que le Bilan est juste, 'à l'exception' (sous réserve) d'un point précis qu'il signale aux actionnaires dans son rapport.",
+      "hint": "C'est une approbation, mais avec un petit 'MAIS'."
+    }
+  },
+  {
+    "id": 94,
+    "title": {
+      "fr": "Le Contrôle Interne (Séparation des Tâches)",
+      "en": "Internal Control (Segregation of Duties)",
+      "ar": "الرقابة الداخلية (فصل المهام)"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Si la même personne commande la marchandise, valide la facture et signe le chèque de paiement... la fraude est garantie. Il faut séparer les pouvoirs.",
+      "en": "If the same person orders goods, approves the invoice, and signs the check... fraud is guaranteed. Powers must be separated.",
+      "ar": "إذا كان نفس الشخص يطلب البضاعة، ويعتمد الفاتورة، ويوقع الشيك... فالاحتيال مضمون. يجب فصل السلطات."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Mettre en place un système de contrôle interne pour sécuriser le patrimoine de l'entreprise.",
+        "explication": "🔹 Qu'est-ce que le Contrôle Interne ?\nC'est l'ensemble des procédures et règles de sécurité imposées DANS l'entreprise pour éviter les vols, les erreurs et les fraudes.\n\n🔹 La Règle d'or : La Séparation des Tâches\nC'est le pilier de l'audit. Il existe 4 fonctions incompatibles qu'il ne faut JAMAIS donner à la même personne :\n1. **Décider** (Commander un achat).\n2. **Détenir** (Garder le stock ou l'argent dans un coffre).\n3. **Enregistrer** (Faire la saisie comptable).\n4. **Contrôler** (Valider que tout est correct).\n\n🔹 Le cauchemar du patron\nSi le comptable (qui enregistre) a aussi les clés du coffre-fort (qui détient), il peut voler 1 000 DHS en espèces et passer une fausse écriture de charge en comptabilité pour cacher le trou ! C'est pour ça qu'il faut séparer les rôles.",
+        "exemple": "Processus d'achat sécurisé : Le Chef d'atelier DEMANDE le bois. Le service Achat COMMANDE le bois. Le Magasinier REÇOIT le bois. Le Comptable SAISIT la facture. Le Directeur SIGNE le chèque. Personne ne peut frauder seul !",
+        "pratique": "Si le caissier du supermarché est aussi celui qui fait le contrôle comptable de fin de journée. Y a-t-il un risque de fraude ?",
+        "resume": "Le contrôle interne protège l'entreprise de l'intérieur.\nLa séparation des tâches est la règle absolue de sécurité.\nDécider, Détenir, Enregistrer et Contrôler doivent être faits par des personnes différentes.\nL'auditeur vérifie toujours le contrôle interne avant de vérifier les chiffres."
+      },
+      "en": {
+        "objectif": "Implement an internal control system to secure company assets.",
+        "explication": "🔹 What is Internal Control?\nProcedures and security rules INSIDE the company to prevent theft, errors, and fraud.\n\n🔹 Golden Rule: Segregation of Duties\nThe pillar of auditing. There are 4 incompatible functions you NEVER give to the same person:\n1. **Authorize** (Order a purchase).\n2. **Custody** (Hold stock or cash).\n3. **Record** (Do the accounting entry).\n4. **Reconcile/Control** (Validate it's correct).\n\n🔹 The Boss's Nightmare\nIf the accountant (records) also has the safe keys (custody), they can steal 1,000 DHS and book a fake expense to hide the hole! Separate the roles.",
+        "exemple": "Secure purchase: Workshop boss ASKS for wood. Purchasing dept ORDERS it. Warehouse worker RECEIVES it. Accountant RECORDS invoice. Director SIGNS check. No one can commit fraud alone!",
+        "pratique": "If the supermarket cashier also does the end-of-day accounting reconciliation. Is there a fraud risk?",
+        "resume": "Internal control protects the firm from the inside.\nSegregation of duties is the absolute security rule.\nAuthorize, Custody, Record, Reconcile must be separate.\nAuditors always check internal controls before checking numbers."
+      },
+      "ar": {
+        "objectif": "إرساء نظام رقابة داخلية لتأمين أصول الشركة.",
+        "explication": "🔹 ما هي الرقابة الداخلية؟\nمجموعة الإجراءات وقواعد الأمن المفروضة 'داخل' الشركة لتجنب السرقات والأخطاء والاحتيال.\n\n🔹 القاعدة الذهبية: فصل المهام\nعمود التدقيق. هناك 4 وظائف غير متوافقة يجب ألا تُعطى لشخص واحد أبداً:\n1. **القرار/الاعتماد** (طلب شراء).\n2. **الحيازة** (الاحتفاظ بالمخزون أو النقد).\n3. **التسجيل** (إدخال القيود المحاسبية).\n4. **الرقابة/المطابقة** (التأكد من صحة كل شيء).\n\n🔹 كابوس المدير\nإذا كان المحاسب (الذي يسجل) يملك أيضاً مفاتيح الخزنة (الحيازة)، يمكنه سرقة 1000 درهم وتسجيل تكلفة وهمية في المحاسبة لإخفاء العجز! لهذا يجب فصل الأدوار.",
+        "exemple": "شراء آمن: رئيس الورشة يطلب الخشب. قسم المشتريات يطلب. أمين المستودع يستلم. المحاسب يسجل. المدير يوقع الشيك. لا أحد يستطيع الاحتيال بمفرده!",
+        "pratique": "إذا كان كاشير السوبر ماركت هو من يقوم بالرقابة المحاسبية نهاية اليوم. هل هناك خطر احتيال؟",
+        "resume": "تحمي الرقابة الداخلية الشركة من الداخل.\nفصل المهام هو القاعدة المطلقة للأمن.\nالقرار، الحيازة، التسجيل، الرقابة يجب أن يقوم بها أشخاص مختلفون.\nيتحقق المدقق دائماً من الرقابة الداخلية قبل الأرقام."
+      }
+    },
+    "psychology": {
+      "fr": ["Le contrôle interne part d'un principe sombre mais réaliste : la confiance n'est pas une procédure de gestion."]
+    },
+    "missions": {
+      "fr": ["Mémorisez les 4 verbes dangereux : Décider, Détenir, Enregistrer, Contrôler."]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Dans une startup de 3 personnes. Le développeur achète le matériel informatique avec la carte bancaire de la société, et fait lui-même la saisie comptable de ses achats sur le logiciel. Quelle règle fondamentale est violée ?",
+        "en": "In a 3-person startup. Developer buys hardware with company card and does his own accounting entry. What fundamental rule is violated?",
+        "ar": "في شركة ناشئة من 3 أشخاص. يشتري المطور المعدات ببطاقة الشركة، ويدخل قيود مشترياته بنفسه في البرنامج. ما القاعدة الأساسية التي تم انتهاكها؟"
+      },
+      "reward_xp": 50
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Exact ! C'est la violation du principe de 'Séparation des Tâches'. La même personne détient l'argent (carte) et enregistre la dépense (compta). Le risque de fraude est immense ! 🔥",
+        "en": "Exact! Violation of 'Segregation of Duties'. Same person holds money (card) and records expense (accounting). Fraud risk is huge! 🔥",
+        "ar": "صحيح! انتهاك لمبدأ 'فصل المهام'. نفس الشخص يحوز المال (البطاقة) ويسجل النفقة (المحاسبة). خطر الاحتيال هائل! 🔥"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Combien de fonctions incompatibles (verbes d'action comme Détenir, Enregistrer...) ne doit-on jamais cumuler chez la même personne pour éviter la fraude ?",
+      "correct_answer": "4",
+      "explanation": "Décider, Détenir, Enregistrer, et Contrôler.",
+      "hint": "C'est un chiffre entre 3 et 5."
+    }
+  },
+  {
+    "id": 95,
+    "title": {
+      "fr": "Analyse Avancée : La Méthode ABC",
+      "en": "Advanced Analysis: ABC Method",
+      "ar": "التحليل المتقدم: طريقة ABC"
+    },
+    "xp": 110,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La méthode classique répartit les charges selon les heures machine. La méthode ABC (Activity Based Costing) les répartit selon les 'Activités'. C'est le niveau expert de l'analyse des coûts.",
+      "en": "Classic method allocates costs by machine hours. ABC (Activity Based Costing) allocates by 'Activities'. It's the expert level of cost analysis.",
+      "ar": "الطريقة الكلاسيكية توزع التكاليف حسب ساعات الآلة. طريقة ABC توزعها حسب 'الأنشطة'. إنه مستوى الخبراء في تحليل التكاليف."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Dépasser la comptabilité analytique classique pour comprendre la philosophie moderne du 'Activity Based Costing'.",
+        "explication": "🔹 Les limites du modèle classique\nDans la leçon 82, on divisait la facture d'électricité selon les heures machines. Mais comment diviser le salaire du service 'Contrôle Qualité' ou 'Marketing' ? Les heures machines ne marchent plus ici !\n\n🔹 La Philosophie ABC (Activity Based Costing)\nPlutôt que de regarder des 'Centres d'Analyse' (l'atelier), on regarde des **'Activités'** transversales.\nExemples d'activités : Gérer les commandes, Contrôler la qualité, Livrer les clients.\n\n🔹 Les Inducteurs de Coûts (Cost Drivers)\nOn cherche ce qui 'déclenche' le coût de l'activité.\n- L'activité 'Gérer les commandes' coûte 50 000 DHS. Quel est le moteur (l'inducteur) de ce coût ? C'est le **Nombre de bons de commande** !\nSi on a traité 500 bons, chaque bon coûte 100 DHS à traiter. Si le Produit A a nécessité 400 bons de commandes (car il est complexe), il va absorber 40 000 DHS de cette charge ! \n\n👍 Pourquoi c'est révolutionnaire ?\nLa méthode ABC prouve souvent que les produits 'simples' produits en grande série sont très rentables, alors que les produits 'complexes' sur mesure coûtent en fait très cher à gérer en administratif !",
+        "exemple": "Le service qualité coûte 10 000 DHS. Inducteur = Nombre d'inspections. Si la chaise standard demande 1 inspection, mais la chaise luxe en demande 9, la chaise luxe absorbera 90% des coûts du service qualité. La méthode classique aurait fait 50/50 !",
+        "pratique": "L'activité est 'Livraison aux clients'. Quel serait le meilleur inducteur de coût : Les heures machines ou le Kilométrage parcouru ?",
+        "resume": "La méthode ABC (Coûts à base d'activités) est moderne et précise.\nElle remplace les 'Centres d'analyse' par des 'Activités'.\nElle remplace les 'Clés de répartition' par des 'Inducteurs de coûts' (Drivers).\nIdéal pour les entreprises de services et la complexité moderne."
+      },
+      "en": {
+        "objectif": "Move beyond classic cost accounting to understand the modern philosophy of Activity Based Costing.",
+        "explication": "🔹 Limits of the classic model\nEarlier, we divided electricity by machine hours. But how to divide 'Quality Control' or 'Marketing' salaries? Machine hours don't work here!\n\n🔹 ABC Philosophy (Activity Based Costing)\nInstead of 'Analysis Centers' (workshop), look at cross-functional **'Activities'**.\nExamples: Managing orders, Quality control, Delivering clients.\n\n🔹 Cost Drivers\nFind what 'triggers' the activity cost.\n- 'Managing orders' costs 50k. What drives it? **Number of purchase orders**!\nIf 500 orders processed, each costs 100 DHS. If Product A needed 400 orders (complex product), it absorbs 40k DHS of this cost!\n\n👍 Why is it revolutionary?\nABC often proves that 'simple' mass-produced goods are very profitable, while 'complex' custom products cost a fortune in admin management!",
+        "exemple": "Quality dept costs 10k. Driver = Number of inspections. Standard chair = 1 inspection. Luxury chair = 9. Luxury chair absorbs 90% of quality costs. Classic method would have done 50/50!",
+        "pratique": "Activity is 'Client Delivery'. Best cost driver: Machine hours or Kilometers driven?",
+        "resume": "ABC is modern and highly accurate.\nReplaces 'Analysis Centers' with 'Activities'.\nReplaces 'Allocation Keys' with 'Cost Drivers'.\nIdeal for service firms and modern complexity."
+      },
+      "ar": {
+        "objectif": "تجاوز المحاسبة التحليلية الكلاسيكية لفهم الفلسفة الحديثة لـ 'التكلفة على أساس النشاط'.",
+        "explication": "🔹 حدود النموذج الكلاسيكي\nسابقاً، قسمنا الكهرباء حسب ساعات الآلة. لكن كيف نقسم راتب 'مراقبة الجودة' أو 'التسويق'؟ ساعات الآلة لا تنفع هنا!\n\n🔹 فلسفة ABC\nبدلاً من النظر إلى 'مراكز التحليل' (الورشة)، ننظر إلى **'الأنشطة'** المتقاطعة.\nأمثلة: إدارة الطلبات، مراقبة الجودة، التوصيل للعملاء.\n\n🔹 محركات التكلفة (Cost Drivers)\nنبحث عما 'يشغل' تكلفة النشاط.\n- نشاط 'إدارة الطلبات' يكلف 50ألف. ما هو محركها؟ **عدد أوامر الشراء**!\nإذا تمت معالجة 500 أمر، كل أمر يكلف 100 درهم. إذا تطلب المنتج A عدد 400 أمر (لأنه معقد)، فسوف يمتص 40ألف من هذه التكلفة!\n\n👍 لماذا هي ثورية؟\nتثبت ABC غالباً أن المنتجات 'البسيطة' المصنعة بكميات كبيرة مربحة جداً، بينما المنتجات 'المعقدة' المصممة خصيصاً تكلف ثروة في الإدارة الإدارية!",
+        "exemple": "قسم الجودة يكلف 10ألف. المحرك = عدد الفحوصات. الكرسي العادي يطلب فحصاً 1. الفاخر يطلب 9. يمتص الكرسي الفاخر 90% من تكاليف الجودة. الطريقة الكلاسيكية كانت لتجعله 50/50!",
+        "pratique": "النشاط هو 'توصيل العملاء'. ما هو أفضل محرك تكلفة: ساعات الآلات أم الكيلومترات المقطوعة؟",
+        "resume": "طريقة ABC حديثة ودقيقة جداً.\nتستبدل 'مراكز التحليل' بـ 'الأنشطة'.\nتستبدل 'مفاتيح التوزيع' بـ 'محركات التكلفة'.\nمثالية لشركات الخدمات والتعقيد الحديث."
+      }
+    },
+    "psychology": {
+      "fr": ["La méthode ABC est un scanner à rayons X. Elle révèle les produits 'parasites' qui bouffent l'énergie administrative sans rapporter d'argent."]
+    },
+    "missions": {
+      "fr": ["Mémorisez le mot 'Inducteur de coût' (Cost Driver), c'est le vocabulaire des top DAF."]
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Dans la méthode ABC, quel est le meilleur 'Inducteur de coût' pour répartir les frais de l'activité 'Service Client (Call Center)' ?",
+      "options": [
+        "Le nombre de kilomètres parcourus",
+        "Le nombre d'appels reçus par produit",
+        "Le poids des marchandises",
+        "La surface de l'usine"
+      ],
+      "correct_answer": "Le nombre d'appels reçus par produit",
+      "explanation": "L'inducteur doit avoir un lien direct de cause à effet avec l'activité. Plus un produit génère d'appels, plus il coûte cher en Service Client.",
+      "hint": "Qu'est-ce qui fait travailler un Call Center ?"
+    }
+  },
+  {
+    "id": 96,
+    "title": {
+      "fr": "Le Budget de Trésorerie",
+      "en": "The Cash Budget",
+      "ar": "الميزانية النقدية (توقعات الخزينة)"
+    },
+    "xp": 95,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'exercice comptable regarde le passé. Le budget de trésorerie regarde le futur pour répondre à une seule question : 'Aurais-je assez d'argent pour payer mes employés le mois prochain ?'",
+      "en": "Accounting looks at the past. The cash budget looks at the future to answer one question: 'Will I have enough money to pay employees next month?'",
+      "ar": "المحاسبة تنظر للماضي. الميزانية النقدية تنظر للمستقبل للإجابة على سؤال واحد: 'هل سأمتلك مالاً كافياً لدفع رواتب الموظفين الشهر القادم؟'"
+    },
+    "content": {
+      "fr": {
+        "objectif": "Établir un budget prévisionnel des encaissements et décaissements pour anticiper les besoins en cash.",
+        "explication": "🔹 La machine à voyager dans le futur\nLe Budget de Trésorerie est un énorme tableau Excel découpé mois par mois (Janvier, Février, Mars...). On y projette le VRAI CASH qui va bouger, pas les factures !\n\n🔹 Étape 1 : Le Budget des Encaissements (Entrées)\nVous avez vendu pour 100 000 DHS en Janvier. Vos clients paient à 60 jours. Vous n'écrivez RIEN en Janvier dans le tableau de trésorerie ! Vous écrirez 100 000 DHS dans la colonne de **MARS**.\n\n🔹 Étape 2 : Le Budget des Décaissements (Sorties)\nAchats, Salaires, Paiement de la TVA. Si vous payez vos fournisseurs à 30 jours, l'achat de Janvier sera noté comme décaissement en Février.\n\n🔹 Étape 3 : La Synthèse et l'alerte rouge\nTrésorerie de fin de mois = Trésorerie Initiale + Encaissements du mois - Décaissements du mois.\nSi la case de Mai affiche '- 20 000 DHS', c'est l'Alerte ! Le DAF a maintenant 5 mois pour appeler son banquier et négocier un découvert pour le mois de Mai, avant que la crise n'arrive.",
+        "exemple": "Début Février : 10k en banque. Encaissements prévus (clients qui paient enfin) = +50k. Décaissements prévus (salaires, fournisseurs) = -70k. Trésorerie fin Février prévue = 10k + 50k - 70k = -10 000 DHS. Il faut trouver 10 000 DHS en urgence !",
+        "pratique": "Vous faites une facture de 5 000 DHS en Avril avec paiement cash. Dans quel mois mettez-vous l'encaissement dans le budget ?",
+        "resume": "Le budget de trésorerie anticipe les flux réels de cash (TTC), pas les dates de factures.\nIl est découpé mois par mois.\nIl permet d'anticiper les déficits de trésorerie et de négocier des crédits en avance avec la banque."
+      },
+      "en": {
+        "objectif": "Establish a cash forecast budget to anticipate cash needs.",
+        "explication": "🔹 Time machine into the future\nThe Cash Budget is a huge Excel table split by month. You project REAL CASH moving, not invoices!\n\n🔹 Step 1: Receipts Budget (Inflows)\nSold 100k DHS in Jan. Clients pay in 60 days. Write NOTHING in Jan's cash table! Write 100k in the **MARCH** column.\n\n🔹 Step 2: Disbursements Budget (Outflows)\nPurchases, Wages, VAT. If you pay suppliers in 30 days, Jan's purchase is a Feb disbursement.\n\n🔹 Step 3: Synthesis and Red Alert\nEnd-of-month Cash = Initial Cash + Month's Receipts - Month's Disbursements.\nIf May's box shows '- 20k DHS', Red Alert! The CFO now has 5 months to negotiate an overdraft with the bank before the crisis hits.",
+        "exemple": "Early Feb: 10k in bank. Expected receipts = +50k. Expected disbursements = -70k. Expected end-Feb cash = 10k + 50k - 70k = -10,000 DHS. Must find 10k urgently!",
+        "pratique": "You issue a 5k invoice in April, paid cash. Which month do you put the receipt in the budget?",
+        "resume": "Cash budget anticipates real cash flows (TTC), not invoice dates.\nSegmented month by month.\nAllows anticipating deficits and negotiating bank credit in advance."
+      },
+      "ar": {
+        "objectif": "وضع ميزانية توقعية للمقبوضات والمدفوعات لاستباق الاحتياجات النقدية.",
+        "explication": "🔹 آلة السفر للمستقبل\nالميزانية النقدية جدول Excel ضخم مقسم شهراً بشهر. نتوقع فيه **النقد الحقيقي** الذي سيتحرك، وليس الفواتير!\n\n🔹 الخطوة 1: ميزانية المقبوضات (مداخل)\nبعت بـ 100ألف في يناير. عملاؤك يدفعون بعد 60 يوماً. لا تكتب شيئاً في يناير! ستكتب 100ألف في عمود **مارس**.\n\n🔹 الخطوة 2: ميزانية المدفوعات (مخارج)\nمشتريات، رواتب، دفع TVA. إذا كنت تدفع للموردين خلال 30 يوماً، سيُسجل شراء يناير كمدفوعات في فبراير.\n\n🔹 الخطوة 3: التجميع والإنذار الأحمر\nخزينة نهاية الشهر = الخزينة الأولية + مقبوضات الشهر - مدفوعات الشهر.\nإذا أظهرت خانة مايو '-20,000 درهم'، إنذار! لدى CFO الآن 5 أشهر للتفاوض على سحب على المكشوف قبل حدوث الأزمة.",
+        "exemple": "بداية فبراير: 10آلاف في البنك. مقبوضات متوقعة = +50ألف. مدفوعات = -70ألف. خزينة نهاية فبراير المتوقعة = 10آلاف + 50ألف - 70ألف = -10,000 درهم. يجب إيجاد 10آلاف فوراً!",
+        "pratique": "تصدر فاتورة بـ 5000 درهم في أبريل وتدفع نقداً. في أي شهر تضع المقبوضات في الميزانية؟",
+        "resume": "الميزانية النقدية تتوقع التدفقات النقدية الحقيقية (TTC)، وليس تواريخ الفواتير.\nمقسمة شهراً بشهر.\nتسمح باستباق العجز والتفاوض على الائتمان مسبقاً."
+      }
+    },
+    "psychology": {
+      "fr": ["Le budget de trésorerie transforme l'angoisse de l'inconnu en un plan d'action mathématique."]
+    },
+    "missions": {
+      "fr": ["Construisez votre propre budget personnel pour les 3 prochains mois pour tester le concept."]
+    },
+    "piege_frequent": {
+      "fr": "Oublier de mettre la TVA. Les budgets de trésorerie se font TOUJOURS en TTC (Toutes Taxes Comprises), car c'est le montant TTC que l'entreprise paie et encaisse en réalité de son compte bancaire.",
+      "en": "Forgetting VAT. Cash budgets are ALWAYS in TTC (incl. tax), because the TTC amount is what actually leaves/enters the bank.",
+      "ar": "نسيان وضع TVA. تُعد الميزانيات النقدية دائماً بـ TTC (شاملة الضرائب)، لأنه المبلغ الذي يخرج/يدخل فعلياً من الحساب البنكي."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Solde banque en Janvier : 50 000 DHS. Vous vendez pour 120 000 DHS TTC en Janvier, paiement prévu 50% comptant et 50% en Février. Vous prévoyez de payer 80 000 DHS de charges en Janvier. Quelle sera votre trésorerie finale à la fin du mois de Janvier ?",
+        "en": "Jan bank balance: 50k. Sell 120k TTC in Jan, paid 50% cash, 50% in Feb. Expect 80k expenses paid in Jan. Final Jan cash balance?",
+        "ar": "رصيد البنك في يناير: 50ألف. تبيع بـ 120ألف TTC في يناير، الدفع 50% نقداً و 50% في فبراير. تدفع 80ألف تكاليف في يناير. ما هي خزينتك النهائية نهاية يناير؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Excellent ! Initiale (50k). Encaissement de Janvier = 50% de 120k = 60k (le reste va en février). Décaissements = 80k. \nSolde fin Janvier = 50k + 60k - 80k = 30 000 DHS ! 🔥",
+        "en": "Excellent! Initial (50k). Jan receipt = 50% of 120k = 60k. Disbursements = 80k. End-Jan balance = 50k + 60k - 80k = 30,000 DHS! 🔥",
+        "ar": "ممتاز! أولية (50ألف). مقبوضات يناير = 50% من 120ألف = 60ألف. مدفوعات = 80ألف. رصيد نهاية يناير = 50ألف + 60ألف - 80ألف = 30,000 درهم! 🔥"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Une entreprise a des charges mensuelles de 30 000 DHS payables immédiatement. Elle a 0 en banque. Un client lui signe un contrat de 100 000 DHS mais ne paiera que dans 2 mois. Est-elle en déficit de trésorerie ce mois-ci ? (Répondez par Oui ou Non)",
+      "correct_answer": "Oui",
+      "explanation": "Oui, car le paiement client n'entre pas ce mois-ci. Les charges vont générer un trou de 30 000 DHS.",
+      "hint": "L'argent du client est-il dans la banque aujourd'hui ?"
+    }
+  },
+  {
+    "id": 97,
+    "title": {
+      "fr": "Direct Costing (Coûts Variables)",
+      "en": "Direct Costing (Variable Costs)",
+      "ar": "طريقة التكلفة المتغيرة (Direct Costing)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Parfois, le coût total est trop complexe. Le Direct Costing simplifie la décision : ce produit rapporte-t-il plus que ce qu'il coûte en matières premières ?",
+      "en": "Sometimes total cost is too complex. Direct Costing simplifies decisions: does this product bring in more than its raw material cost?",
+      "ar": "أحياناً التكلفة الإجمالية معقدة جداً. يبسط Direct Costing القرار: هل يدر هذا المنتج أكثر مما تكلفه مواده الأولية؟"
+    },
+    "content": {
+      "fr": {
+        "objectif": "Utiliser la méthode du Direct Costing pour évaluer rapidement la rentabilité marginale d'un produit.",
+        "explication": "🔹 Le problème du Coût Complet\nLe coût complet (Achats + MOD + Loyer + Siège social) est précis mais lourd à calculer. De plus, affecter le loyer d'un siège social à une chaise est très arbitraire.\n\n🔹 La solution Direct Costing\nOn abandonne les charges fixes ! On calcule uniquement avec les **Charges Variables** (Matières, emballage, électricité machine).\n\n🔹 La Marge sur Coût Variable Unitaire\nOn calcule : **Prix de Vente Unitaire - Coût Variable Unitaire**.\n- Si la marge est Positive : Le produit est intéressant, il va aider à payer le loyer de l'usine (charges fixes globales).\n- Si la marge est Négative : Il faut ARRETER IMMÉDIATEMENT le produit, il détruit de la valeur à chaque vente.\n\n👍 Le grand avantage\nC'est la méthode préférée pour accepter une commande exceptionnelle ou lancer une promotion rapide sans faire une usine à gaz comptable.",
+        "exemple": "Vendre un stylo à 5 DHS. Il coûte 2 DHS en plastique (Variable). Le loyer de l'usine est de 100 000 DHS (Fixe). Marge sur coût variable = 5 - 2 = 3 DHS par stylo. Le stylo est rentable en Direct Costing, il apporte 3 DHS pour aider à payer le loyer.",
+        "pratique": "Un produit coûte 10 DHS en matières variables et se vend 8 DHS. Faut-il continuer à le produire pour 'couvrir les charges fixes' ?",
+        "resume": "Direct Costing ignore volontairement les charges fixes.\nIl calcule la Marge sur Coût Variable unitaire.\nIdéal pour les décisions commerciales rapides et politiques de prix.\nUn produit à marge variable négative doit être éliminé."
+      },
+      "en": {
+        "objectif": "Use Direct Costing to quickly evaluate a product's marginal profitability.",
+        "explication": "🔹 Full Cost Problem\nFull cost (Purchases + Labor + Rent + HQ) is precise but heavy. Allocating HQ rent to a chair is arbitrary.\n\n🔹 Direct Costing Solution\nAbandon fixed costs! Calculate ONLY with **Variable Costs** (Materials, packaging, machine power).\n\n🔹 Unit Variable Margin\nCalculate: **Unit Selling Price - Unit Variable Cost**.\n- Positive margin: Good product, helps pay factory rent.\n- Negative margin: STOP IMMEDIATELY, destroys value every sale.\n\n👍 Big Advantage\nPreferred method for accepting special orders or launching quick promos without a heavy accounting setup.",
+        "exemple": "Sell a pen at 5 DHS. Plastic costs 2 DHS (Variable). Factory rent is 100k DHS (Fixed). Variable Margin = 5 - 2 = 3 DHS/pen. It's profitable in Direct Costing; brings 3 DHS to help pay rent.",
+        "pratique": "Product costs 10 DHS in variable materials, sells for 8 DHS. Keep producing to 'cover fixed costs'?",
+        "resume": "Direct Costing ignores fixed costs.\nCalculates unit Variable Cost Margin.\nIdeal for quick commercial decisions.\nNegative variable margin products must be eliminated."
+      },
+      "ar": {
+        "objectif": "استخدام طريقة التكلفة المتغيرة لتقييم الربحية الهامشية للمنتج بسرعة.",
+        "explication": "🔹 مشكلة التكلفة الكاملة\nالتكلفة الكاملة (مشتريات + عمال + إيجار + مقر) دقيقة لكنها ثقيلة. وتخصيص إيجار المقر لكرسي أمر تعسفي.\n\n🔹 حل التكلفة المتغيرة\nنتخلى عن التكاليف الثابتة! نحسب فقط باستخدام **التكاليف المتغيرة** (مواد، تغليف، كهرباء الآلة).\n\n🔹 الهامش على التكلفة المتغيرة الوحدوية\nنحسب: **سعر البيع الوحدوي - التكلفة المتغيرة الوحدوية**.\n- هامش إيجابي: منتج مثير للاهتمام، سيساعد في دفع إيجار المصنع.\n- هامش سلبي: يجب الإيقاف فوراً، يدمر القيمة مع كل بيع.\n\n👍 الميزة الكبرى\nطريقة مفضلة لقبول طلب استثنائي أو إطلاق عرض ترويجي سريع دون تعقيد محاسبي.",
+        "exemple": "بيع قلم بـ 5 دراهم. يكلف 2 درهم بلاستيك (متغير). إيجار المصنع 100ألف (ثابت). الهامش = 5 - 2 = 3 دراهم/قلم. مربح في التكلفة المتغيرة، يجلب 3 دراهم للمساعدة في الإيجار.",
+        "pratique": "منتج يكلف 10 دراهم مواد متغيرة ويباع بـ 8 دراهم. هل نستمر في إنتاجه لـ 'تغطية التكاليف الثابتة'؟",
+        "resume": "يتجاهل Direct Costing التكاليف الثابتة عمداً.\nيحسب الهامش على التكلفة المتغيرة للوحدة.\nمثالي للقرارات التجارية السريعة.\nيجب القضاء على المنتج ذي الهامش المتغير السلبي."
+      }
+    },
+    "psychology": {
+      "fr": ["Cette méthode libère les commerciaux du 'poids' des charges administratives du siège central pour se concentrer sur le terrain."]
+    },
+    "missions": {
+      "fr": ["Rappelez-vous : Toute commande dont le prix de vente dépasse ses propres coûts variables augmente le bénéfice global de l'entreprise !"]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Votre usine n'est pas à pleine capacité. Un client propose d'acheter 1 000 pièces à 20 DHS/pièce. Le coût variable d'une pièce est de 15 DHS. Le coût complet (incluant l'amortissement usine) est de 25 DHS. En utilisant le Direct Costing, acceptez-vous la commande ?",
+        "en": "Factory under capacity. Client offers to buy 1000 parts at 20 DHS/part. Unit variable cost is 15 DHS. Full cost (inc. factory depr.) is 25 DHS. Using Direct Costing, do you accept?",
+        "ar": "مصنعك يعمل دون طاقته. عميل يعرض شراء 1000 قطعة بـ 20 درهم/قطعة. التكلفة المتغيرة 15 درهم. التكلفة الكاملة (شاملة إهلاك المصنع) 25 درهم. باستخدام Direct Costing، هل تقبل الطلب؟"
+      },
+      "reward_xp": 100
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "OUI ! Marge variable = 20 - 15 = 5 DHS de gain par pièce. Cette commande va vous rapporter 5 000 DHS de cash immédiat pour payer vos charges fixes existantes. Le coût complet (25) vous aurait fait refuser à tort ! 🔥",
+        "en": "YES! Variable margin = 20 - 15 = 5 DHS gain/part. Brings 5,000 DHS instant cash to pay existing fixed costs. Full cost (25) would have wrongly made you refuse! 🔥",
+        "ar": "نعم! الهامش المتغير = 20 - 15 = 5 دراهم مكسب للقطعة. يجلب 5000 درهم نقد فوري لدفع تكاليف ثابتة. التكلفة الكاملة (25) كانت ستجعلك ترفض خطأً! 🔥"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Le Direct Costing est particulièrement recommandé pour...",
+      "options": [
+        "Faire sa liasse fiscale pour la DGI",
+        "Calculer l'IS",
+        "Prendre des décisions d'acceptation de commandes supplémentaires",
+        "Payer la TVA"
+      ],
+      "correct_answer": "Prendre des décisions d'acceptation de commandes supplémentaires",
+      "explanation": "C'est un outil de prise de décision managériale à court terme, sans lien avec la fiscalité.",
+      "hint": "C'est un outil pour les commerciaux et les managers."
+    }
+  },
+  {
+    "id": 98,
+    "title": {
+      "fr": "L'Intelligence Artificielle et le Futur du Comptable",
+      "en": "AI and the Future of the Accountant",
+      "ar": "الذكاء الاصطناعي ومستقبل المحاسب"
+    },
+    "xp": 90,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'IA (comme OCR et Machine Learning) va détruire la 'Saisie comptable', mais elle va glorifier le 'Conseil financier'. L'expert-comptable de demain est un Data Analyst.",
+      "en": "AI (like OCR and ML) will destroy 'Data Entry', but glorify 'Financial Advisory'. Tomorrow's CPA is a Data Analyst.",
+      "ar": "سيدمر الذكاء الاصطناعي (مثل OCR وتعلم الآلة) 'الإدخال المحاسبي'، لكنه سيمجد 'الاستشارات المالية'. خبير الغد هو محلل بيانات."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comprendre l'évolution du métier de la comptabilité face aux nouvelles technologies.",
+        "explication": "🔹 La Fin du 'Saisisseur'\nActuellement, un comptable junior passe 80% de son temps à taper des factures. Les technologies OCR (Reconnaissance Optique de Caractères) couplées à l'IA 'lisent' le PDF de la facture, trouvent la TVA, le montant HT, et passent l'écriture comptable toutes seules dans le logiciel en 1 seconde.\n\n🔹 L'avènement du Conseiller\nQue va faire le comptable s'il ne saisit plus ? Il va faire ce que l'IA ne sait pas faire (pour l'instant) :\n- Analyser la Trésorerie Nette et rassurer le patron.\n- Gérer la fiscalité et le risque de contrôle fiscal.\n- Mettre en place la Comptabilité Analytique (Méthode ABC) pour la stratégie.\n\n🔹 La Facturation Électronique (E-Invoicing)\nBientôt au Maroc, les factures papier n'existeront plus. L'entreprise A enverra sa facture électronique directement dans le serveur de l'entreprise B ET dans le serveur de la DGI en même temps. La fraude à la TVA sera techniquement impossible !",
+        "exemple": "Une application scanne un ticket de restaurant d'affaires. L'IA extrait le montant, vérifie s'il y a un client invité (déductibilité), l'enregistre en compte 614, et classe le ticket dans le Cloud pour les impôts.",
+        "pratique": "L'intelligence artificielle peut-elle remplacer un Directeur Financier qui négocie un découvert avec un banquier ?",
+        "resume": "L'IA automatise la saisie et le pointage.\nLa facturation électronique supprime le papier et réduit la fraude.\nLe comptable de demain se concentre sur l'analyse, la fiscalité et la stratégie."
+      },
+      "en": {
+        "objectif": "Understand the evolution of the accounting profession in the face of new technologies.",
+        "explication": "🔹 The End of 'Data Entry'\nCurrently, a junior spends 80% of time typing invoices. OCR (Optical Character Recognition) + AI 'reads' the PDF, finds VAT, HT, and books the entry itself in 1 second.\n\n🔹 The Rise of the Advisor\nWhat will accountants do? What AI can't:\n- Analyze Net Treasury and reassure the boss.\n- Manage tax and audit risks.\n- Setup Cost Accounting (ABC Method) for strategy.\n\n🔹 E-Invoicing\nSoon in Morocco, paper invoices will vanish. Company A will send e-invoices directly to Company B's server AND the DGI's server simultaneously. VAT fraud will be technically impossible!",
+        "exemple": "App scans a business lunch receipt. AI extracts the amount, checks for a client guest (deductibility), books it to account 614, and clouds the receipt for taxes.",
+        "pratique": "Can AI replace a CFO negotiating an overdraft with a banker?",
+        "resume": "AI automates data entry and matching.\nE-invoicing eliminates paper and reduces fraud.\nTomorrow's accountant focuses on analysis, tax, and strategy."
+      },
+      "ar": {
+        "objectif": "فهم تطور مهنة المحاسبة في مواجهة التقنيات الجديدة.",
+        "explication": "🔹 نهاية 'مدخل البيانات'\nحالياً، يقضي المبتدئ 80% من وقته في طباعة الفواتير. تقنيات OCR (التعرف البصري على الحروف) والذكاء الاصطناعي 'تقرأ' PDF الفاتورة، وتجد TVA، وHT، وتمرر القيد المحاسبي بنفسها في ثانية.\n\n🔹 صعود المستشار\nماذا سيفعل المحاسب؟ سيفعل ما لا يتقنه الذكاء الاصطناعي:\n- تحليل الخزينة الصافية وطمأنة المدير.\n- إدارة الضرائب ومخاطر الفحص.\n- إعداد المحاسبة التحليلية (طريقة ABC) للاستراتيجية.\n\n🔹 الفوترة الإلكترونية (E-Invoicing)\nقريباً في المغرب، ستختفي الفواتير الورقية. سترسل الشركة A فاتورتها الإلكترونية لخادم الشركة B وخادم DGI في نفس الوقت. الاحتيال في TVA سيكون مستحيلاً فنياً!",
+        "exemple": "تطبيق يمسح إيصال غداء عمل. يستخرج الذكاء الاصطناعي المبلغ، يتحقق من وجود ضيف (قابلية الخصم)، يسجله في 614، ويحفظ الإيصال سحابياً للضرائب.",
+        "pratique": "هل يمكن للذكاء الاصطناعي استبدال مدير مالي يتفاوض على سحب على المكشوف مع مصرفي؟",
+        "resume": "يؤتمت الذكاء الاصطناعي الإدخال والمطابقة.\nتقضي الفوترة الإلكترونية على الورق وتقلل الاحتيال.\nيركز محاسب الغد على التحليل والضرائب والاستراتيجية."
+      }
+    },
+    "psychology": {
+      "fr": ["N'ayez pas peur de l'IA, utilisez-la. Un comptable qui utilise l'IA remplacera 10 comptables qui ne l'utilisent pas."]
+    },
+    "missions": {
+      "fr": ["Faites des recherches sur 'OCR Factures' pour voir comment fonctionnent ces logiciels modernes."]
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Quel pan de la comptabilité est le plus susceptible d'être complètement automatisé par l'Intelligence Artificielle dans les prochaines années ?",
+      "options": [
+        "La définition de la stratégie financière globale",
+        "La saisie des achats et l'enregistrement de base",
+        "La négociation lors d'un contrôle fiscal",
+        "Le choix entre financer par fonds propres ou par la dette"
+      ],
+      "correct_answer": "La saisie des achats et l'enregistrement de base",
+      "explanation": "Les tâches répétitives sans forte valeur ajoutée stratégique (saisie, lettrage simple) sont les cibles parfaites pour l'automatisation IA.",
+      "hint": "C'est la tâche la plus ennuyeuse et répétitive du stagiaire."
+    }
+  },
+  {
+    "id": 99,
+    "title": {
+      "fr": "Cas Pratique : Due Diligence (Achat d'Entreprise)",
+      "en": "Case Study: Due Diligence (M&A)",
+      "ar": "دراسة حالة: العناية الواجبة (شراء شركة)"
+    },
+    "xp": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Avant d'acheter une entreprise, on envoie des auditeurs vérifier s'il n'y a pas des cadavres (dettes cachées) dans le placard. C'est la Due Diligence.",
+      "en": "Before buying a firm, auditors are sent to check for skeletons (hidden debts) in the closet. That's Due Diligence.",
+      "ar": "قبل شراء شركة، يُرسل مدققون للتحقق من عدم وجود جثث (ديون خفية) في الخزانة. هذه هي العناية الواجبة."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Appliquer l'ensemble des connaissances (Bilan, BFR, Fiscalité) dans le cadre d'un rachat d'entreprise (M&A).",
+        "explication": "🔹 Le Contexte\nVotre client veut racheter une usine textile marocaine. L'usine affiche un beau bénéfice net au CPC et des Capitaux Propres solides. Vous êtes engagé pour l'Audit d'Acquisition (Due Diligence).\n\n🔹 Les points d'audit à traquer :\n1. **Trésorerie Nette** : Le BFR explose-t-il ? Si les clients paient à 200 jours, l'usine n'a pas de cash, le bénéfice n'est que sur le papier.\n2. **Les Provisions** : Le comptable actuel a-t-il provisionné le risque de départ des vieux salariés (indemnités) ? S'il ne l'a pas fait, les Capitaux Propres sont artificiellement gonflés.\n3. **Le Risque Fiscal** : Si l'entreprise fait beaucoup de cash sans facture, le jour du contrôle fiscal DGI, c'est le nouveau propriétaire qui paiera l'amende historique !\n\n👍 La Négociation\nChaque risque découvert par l'auditeur permet de baisser le prix d'achat final de l'entreprise (Garantie de Passif).",
+        "exemple": "Le vendeur demande 10 Millions DHS. Votre audit révèle 1 Million DHS de créances clients très douteuses non provisionnées et 2 Millions de risque fiscal. Vous négociez le prix d'achat à 7 Millions DHS !",
+        "pratique": "Le vendeur d'une entreprise a 'oublié' de passer la dotation aux amortissements de l'année. Le prix de vente basé sur le bénéfice actuel est-il surévalué ou sous-évalué ?",
+        "resume": "La Due Diligence est un audit profond avant rachat.\nOn cherche les risques cachés dans le BFR, les provisions, et la fiscalité.\nLes découvertes servent à ajuster le prix de rachat."
+      },
+      "en": {
+        "objectif": "Apply all knowledge (Balance Sheet, WCR, Tax) in an M&A context.",
+        "explication": "🔹 Context\nClient wants to buy a Moroccan textile plant. Shows good profit and solid Equity. You do the Due Diligence.\n\n🔹 Audit points to track:\n1. **Net Treasury**: Is WCR exploding? If clients pay in 200 days, no cash, profit is just paper.\n2. **Provisions**: Did they provision severance risks for old staff? If not, Equity is artificially inflated.\n3. **Tax Risk**: If doing off-book cash, DGI audit will hit the new owner with historic fines!\n\n👍 Negotiation\nEvery risk found lowers the final purchase price (Liability Guarantee).",
+        "exemple": "Seller asks 10M DHS. Audit shows 1M highly doubtful unprovisioned receivables and 2M tax risk. You negotiate the price down to 7M DHS!",
+        "pratique": "Seller 'forgot' year's depreciation. Is selling price based on current profit overvalued or undervalued?",
+        "resume": "Due Diligence is deep pre-buy audit.\nLooking for hidden WCR, provision, and tax risks.\nFindings adjust the purchase price."
+      },
+      "ar": {
+        "objectif": "تطبيق جميع المعارف (ميزانية، WCR، ضرائب) في إطار شراء شركة (M&A).",
+        "explication": "🔹 السياق\nيريد عميلك شراء مصنع نسيج مغربي. يُظهر أرباحاً جيدة ورأسمالاً صلباً. تم تعيينك لتدقيق الاستحواذ (العناية الواجبة).\n\n🔹 نقاط التدقيق للتعقب:\n1. **الخزينة الصافية**: هل ينفجر WCR؟ إذا كان العملاء يدفعون بعد 200 يوم، لا يوجد نقد، الربح على الورق فقط.\n2. **المخصصات**: هل خصص المحاسب خطر مغادرة العمال القدامى؟ إذا لم يفعل، حقوق الملكية مضخمة اصطناعياً.\n3. **الخطر الضريبي**: إذا كانت تفعل نقداً بدون فواتير، يوم فحص DGI، المالك الجديد هو من سيدفع الغرامة التاريخية!\n\n👍 التفاوض\nكل خطر يكتشفه المدقق يسمح بخفض سعر الشراء (ضمان الخصوم).",
+        "exemple": "البائع يطلب 10 ملايين. كشف تدقيقك مليون ديون مشكوك فيها غير مخصصة و 2 مليون خطر ضريبي. تتفاوض على السعر لـ 7 ملايين!",
+        "pratique": "البائع 'نسي' مخصص إهلاك العام. هل سعر البيع المبني على الربح الحالي مقيّم بأكثر أو أقل من قيمته؟",
+        "resume": "العناية الواجبة تدقيق عميق قبل الشراء.\nنبحث عن المخاطر الخفية في WCR، المخصصات، والضرائب.\nتُستخدم الاكتشافات لتعديل سعر الشراء."
+      }
+    },
+    "psychology": {
+      "fr": ["Le Due Diligence est un travail d'avocat et d'enquêteur. Vous défendez les intérêts (et l'argent) de votre client."]
+    },
+    "missions": {
+      "fr": ["Comprenez l'importance des Provisions : Une provision manquante, c'est une perte cachée qui va exploser plus tard."]
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Prix de vente initial = 100 000 DHS. Vous découvrez 20 000 DHS de litige prud'homal non provisionné. Quel est le prix révisé équitable de l'entreprise ?",
+      "correct_answer": "80000",
+      "explanation": "On déduit le risque caché du prix initial : 100k - 20k = 80 000 DHS.",
+      "hint": "Soustrayez le litige du prix."
+    }
+  },
+  {
+    "id": 100,
+    "title": {
+      "fr": "L'Éthique Financière — Le Serment du DAF",
+      "en": "Financial Ethics — The CFO's Oath",
+      "ar": "الأخلاقيات المالية — قسم المدير المالي"
+    },
+    "xp": 2000,
+    "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "La comptabilité est la grammaire du capitalisme. Le respect des règles garantit la survie de l'entreprise, et la confiance de la société toute entière.",
+      "en": "Accounting is the grammar of capitalism. Respecting rules guarantees company survival, and the trust of society.",
+      "ar": "المحاسبة هي قواعد الرأسمالية. احترام القواعد يضمن بقاء الشركة، وثقة المجتمع بأسره."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Conclure l'Amina Académie sur la responsabilité éthique, pénale et stratégique des professionnels du chiffre.",
+        "explication": "🔹 Le Pouvoir des Chiffres\nLe Bilan que vous signez décide si 100 ouvriers vont garder leur travail ou si la banque va couper le crédit. Une comptabilité 'maquillée' pour faire plaisir aux actionnaires (scandale Enron) détruit des vies et des économies.\n\n🔹 L'Optimisation vs L'Évasion (Fraude)\n- **L'Optimisation Fiscale** : Utiliser toutes les lois (DGI), les exonérations, le bon régime (débits/encaissements) pour payer le minimum LÉGAL d'impôt. C'est l'excellence du DAF.\n- **L'Évasion Fiscale (Fraude)** : Créer de fausses factures, cacher des ventes en cash. C'est du pénal (prison).\n\n🔹 Le Serment de l'Amina Académie\nVous connaissez maintenant la Mécanique (Débit/Crédit, TVA), le Pilotage (BFR, Seuil de rentabilité) et la Défense (Contrôle fiscal, Liasse). Votre mission est d'éclairer les décisions des dirigeants dans la lumière de la loi et de la rentabilité réelle.",
+        "exemple": "Un PDG vous demande de passer des dépenses personnelles en charge d'entreprise. Vous lui répondez avec autorité : 'C'est un Acte Anormal de Gestion. En cas de contrôle, ce sera réintégré avec 100% de pénalité, et mon nom est sur les comptes.'",
+        "pratique": "L'utilisation légale des abattements pour baisser l'impôt est-elle de la fraude fiscale ?",
+        "resume": "L'éthique est le bouclier ultime du professionnel de la finance.\nOptimisation (Légal) ≠ Fraude (Illégal).\nVous maîtrisez à présent la compta générale, fiscale, analytique, et d'audit.\nVous êtes diplômé virtuel d'Amina Académie !"
+      },
+      "en": {
+        "objectif": "Conclude Amina Academy on the ethical, penal, and strategic responsibility of financial professionals.",
+        "explication": "🔹 Power of Numbers\nThe Balance Sheet you sign decides if 100 workers keep jobs or banks cut credit. 'Cooked' books (Enron scandal) destroy lives and economies.\n\n🔹 Optimization vs Evasion (Fraud)\n- **Tax Optimization**: Using all laws (DGI), exemptions, regimes to pay the LEGAL minimum tax. This is CFO excellence.\n- **Tax Evasion (Fraud)**: Fake invoices, hiding cash sales. This is penal (prison).\n\n🔹 Amina Academy Oath\nYou now know Mechanics (Debit/Credit, VAT), Piloting (WCR, Breakeven), and Defense (Audit, Tax returns). Your mission is to enlighten leaders' decisions in the light of law and real profitability.",
+        "exemple": "CEO asks to book personal expenses to the firm. You answer: 'That's an Abnormal Management Act. During audit, it's 100% penalty, and my name is on the accounts.'",
+        "pratique": "Is legally using allowances to lower tax considered tax fraud?",
+        "resume": "Ethics is the ultimate shield of the finance pro.\nOptimization (Legal) ≠ Fraud (Illegal).\nYou now master financial, tax, cost accounting, and audit.\nYou are a virtual graduate of Amina Academy!"
+      },
+      "ar": {
+        "objectif": "اختتام أكاديمية أمينة بالمسؤولية الأخلاقية والجنائية والاستراتيجية لمهنيي الأرقام.",
+        "explication": "🔹 قوة الأرقام\nالميزانية التي توقعها تقرر ما إذا كان 100 عامل سيحتفظون بعملهم أو سيقطع البنك الائتمان. المحاسبة 'المزورة' (فضيحة إنرون) تدمر أرواحاً واقتصادات.\n\n🔹 التحسين مقابل التهرب (الاحتيال)\n- **التحسين الضريبي**: استخدام جميع القوانين (DGI)، الإعفاءات، الأنظمة لدفع الحد الأدنى القانوني. هذا تميز CFO.\n- **التهرب الضريبي (احتيال)**: فواتير وهمية، إخفاء مبيعات الكاش. هذا جنائي (سجن).\n\n🔹 قسم أكاديمية أمينة\nأنت تعرف الآن الآليات (مدين/دائن، TVA)، التوجيه (WCR، التعادل)، والدفاع (الفحص، الحزمة). مهمتك هي إنارة قرارات المديرين في ضوء القانون والربحية الحقيقية.",
+        "exemple": "يطلب مدير إدراج نفقات شخصية للشركة. تجيبه: 'هذا عمل تسيير غير طبيعي. عند الفحص، 100% غرامة، واسمي على الحسابات.'",
+        "pratique": "هل يعتبر الاستخدام القانوني للإعفاءات لخفض الضريبة تهرباً ضريبياً؟",
+        "resume": "الأخلاق هي الدرع النهائي للمحترف المالي.\nالتحسين (قانوني) ≠ الاحتيال (غير قانوني).\nأنت تتقن الآن المحاسبة العامة، الضريبية، التحليلية، والتدقيق.\nأنت خريج افتراضي من أكاديمية أمينة!"
+      }
+    },
+    "psychology": {
+      "fr": ["Vous êtes arrivé au sommet. Vous ne voyez plus des tableaux de chiffres, vous voyez la matrice de l'économie marocaine et mondiale. Bravo !"]
+    },
+    "missions": {
+      "fr": ["Leçon finale : Soyez intègre, exigeant, et n'arrêtez jamais d'apprendre."]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Un de vos amis monte sa startup au Maroc. Il vous demande si la comptabilité sert juste à payer les impôts. Que lui répondez-vous en utilisant les 3 rôles vus tout au long des 100 leçons ?",
+        "en": "A friend starts a Moroccan startup. Asks if accounting is just for taxes. What do you answer using the 3 roles seen in 100 lessons?",
+        "ar": "صديق ينشئ شركة ناشئة. يسأل إذا المحاسبة للضرائب فقط. ماذا تجيبه باستخدام الأدوار الثلاثة في الـ 100 درس؟"
+      },
+      "reward_xp": 5000
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Magnifique ! Tu lui réponds que c'est : 1. La Mémoire (Légal/Impôts). 2. La Boussole (Analytique/BFR/Stratégie pour survivre). 3. Le Bouclier (Contrôle interne/Due diligence/Audit). La boucle est bouclée ! 🔥🎓",
+        "en": "Magnificent! You reply it's: 1. Memory (Legal/Tax). 2. Compass (Analytic/WCR/Strategy). 3. Shield (Audit/Control). Full circle! 🔥🎓",
+        "ar": "رائع! تجيبه أنها: 1. ذاكرة (قانون/ضرائب). 2. بوصلة (تحليلي/استراتيجية). 3. درع (رقابة/تدقيق). اكتملت الدائرة! 🔥🎓"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Quel est le mot qui définit l'utilisation parfaitement légale des failles et options du système fiscal pour réduire ses impôts ?",
+      "options": [
+        "L'Évasion Fiscale",
+        "L'Optimisation Fiscale",
+        "Le Blanchiment",
+        "La Fraude"
+      ],
+      "correct_answer": "L'Optimisation Fiscale",
+      "explanation": "L'optimisation (choisir le bon régime, les bonnes exonérations) est le devoir d'un bon DAF. L'évasion ou la fraude, c'est tricher et c'est illégal.",
+      "hint": "C'est l'inverse d'une fraude."
+    }
+  }
+]

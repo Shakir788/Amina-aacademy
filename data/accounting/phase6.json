@@ -1,0 +1,369 @@
+[
+  {
+    "id": 101,
+    "title": {
+      "fr": "Fiscalité Internationale — La Retenue à la Source (10%)",
+      "en": "International Tax — Withholding Tax (10%)",
+      "ar": "الضرائب الدولية — الاقتطاع من المنبع (10%)"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Quand vous payez un étranger qui n'habite pas au Maroc, l'État marocain veut sa part avant que l'argent ne quitte le pays.",
+      "en": "When you pay a foreigner not living in Morocco, the Moroccan State wants its cut before the money leaves the country.",
+      "ar": "عندما تدفع لأجنبي لا يعيش في المغرب، تريد الدولة المغربية حصتها قبل أن تغادر الأموال البلاد."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Appliquer la Retenue à la Source (RAS) sur les prestataires étrangers.",
+        "explication": "🔹 Le Principe de la fuite des capitaux\nSARL Atlas engage un ingénieur français (vivant à Paris) pour créer son site web. L'ingénieur facture 100 000 DHS. Si Atlas lui envoie les 100 000 DHS, l'État marocain ne touchera jamais d'impôt sur cet argent généré grâce au Maroc. \n\n🔹 La RAS de 10%\nLe Code Général des Impôts (CGI) oblige l'entreprise marocaine à retenir **10%** du montant brut (hors taxe) facturé par l'étranger. \nAtlas ne virera que 90 000 DHS en France, et enverra les 10 000 DHS restants à la DGI marocaine le mois suivant.\n\n🔹 La TVA sur prestation étrangère\nAttention ! Vous devez aussi auto-liquider la TVA à 20%. Vous déclarez cette TVA comme collectée (l'État) et déductible (pour vous) en même temps sur la déclaration marocaine.",
+        "exemple": "Facture de Google ou Facebook Ads (Irlande) : 10 000 DHS. Vous devez retenir 10% (1 000 DHS) pour la DGI et ne payer que 9 000 DHS à Google. En pratique, si Google exige ses 10 000 nets, l'entreprise marocaine doit supporter la taxe de sa poche (ce qu'on appelle la prise en charge).",
+        "pratique": "Vous payez 50 000 DHS à un consultant espagnol. Quel montant exact allez-vous virer sur son compte bancaire ?",
+        "resume": "La RAS s'applique aux rémunérations versées à des non-résidents.\nLe taux standard au Maroc est de 10%.\nL'entreprise marocaine est responsable du prélèvement et du versement à la DGI.\nC'est une obligation stricte pour autoriser le transfert de devises par la banque."
+      },
+      "en": {
+        "objectif": "Apply Withholding Tax (WHT) on foreign service providers.",
+        "explication": "🔹 Capital Flight Principle\nSARL Atlas hires a French engineer (in Paris) for 100k DHS. If Atlas sends 100k, the Moroccan State never taxes this Morocco-sourced money.\n\n🔹 The 10% WHT\nThe CGI forces the Moroccan firm to withhold **10%** of the gross invoice. Atlas wires 90k DHS to France, and sends 10k to the DGI next month.\n\n🔹 VAT on foreign services\nWarning! You must also reverse-charge the 20% VAT on your Moroccan declaration.",
+        "exemple": "Facebook Ads invoice (Ireland): 10k DHS. You withhold 10% (1k) for DGI, pay 9k to Facebook. If Facebook demands 10k net, the Moroccan firm pays the tax from its own pocket (grossing up).",
+        "pratique": "You pay 50k DHS to a Spanish consultant. What exact amount do you wire to their bank?",
+        "resume": "WHT applies to payments made to non-residents.\nStandard Moroccan rate is 10%.\nMoroccan firm is legally responsible for withholding and paying DGI.\nBanks require proof of this tax to authorize foreign currency transfers."
+      },
+      "ar": {
+        "objectif": "تطبيق الاقتطاع من المنبع (RAS) على مقدمي الخدمات الأجانب.",
+        "explication": "🔹 مبدأ هروب رؤوس الأموال\nتتعاقد Atlas مع مهندس فرنسي لإنشاء موقعها بـ 100ألف درهم. إذا أرسلت Atlas 100ألف، فلن تحصل الدولة المغربية أبداً على ضريبة من هذا المال.\n\n🔹 اقتطاع 10%\nيلزم CGI الشركة المغربية باقتطاع **10%** من المبلغ الإجمالي المفوتر من الأجنبي. ستحول Atlas 90ألف درهم لفرنسا، وترسل 10آلاف لـ DGI الشهر القادم.\n\n🔹 TVA على الخدمات الأجنبية\nانتبه! يجب عليك أيضاً التصفية الذاتية لـ TVA بنسبة 20% في إقرارك المغربي.",
+        "exemple": "فاتورة إعلانات فيسبوك (أيرلندا): 10آلاف درهم. تقتطع 10% (1000) لـ DGI وتدفع 9000 لفيسبوك. إذا طلب فيسبوك 10آلاف صافية، تتحمل الشركة المغربية الضريبة من جيبها.",
+        "pratique": "تدفع 50 ألف درهم لمستشار إسباني. ما هو المبلغ الدقيق الذي ستحوله إلى حسابه؟",
+        "resume": "يُطبق الاقتطاع من المنبع على المكافآت المدفوعة لغير المقيمين.\nالمعدل القياسي في المغرب هو 10%.\nالشركة المغربية مسؤولة عن الاقتطاع والدفع لـ DGI.\nإلزامية صارمة للسماح بتحويل العملات الأجنبية."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Le comptable bloque les virements internationaux tant que la déclaration n'est pas faite. C'est lui le gardien des frontières financières !"
+      ],
+      "en": [
+        "The accountant blocks international wires until the declaration is made. They are the border guards of finance!"
+      ],
+      "ar": [
+        "يمنع المحاسب التحويلات الدولية حتى يتم تقديم الإقرار. إنه حارس الحدود المالية!"
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez : Si vous payez un service à l'étranger, vous devez payer 10% à la DGI."
+      ],
+      "en": [
+        "Memorize: If you pay for a service abroad, you must pay 10% to the DGI."
+      ],
+      "ar": [
+        "احفظ: إذا دفعت مقابل خدمة في الخارج، يجب دفع 10% لـ DGI."
+      ]
+    },
+    "secret_pro": {
+      "fr": "Il existe des 'Conventions Fiscales de Non-Double Imposition' entre le Maroc et certains pays. Si le prestataire étranger vous fournit un 'Certificat de Résidence Fiscale' de son pays, vous pouvez être exonéré de cette retenue de 10% !",
+      "en": "There are 'Double Taxation Avoidance Agreements'. If the foreigner gives you a 'Certificate of Tax Residence', you can be exempt from this 10% WHT!",
+      "ar": "توجد 'اتفاقيات لتجنب الازدواج الضريبي'. إذا قدم لك الأجنبي 'شهادة إقامة ضريبية'، يمكنك الإعفاء من هذا الاقتطاع بنسبة 10%!"
+    },
+    "piege_frequent": {
+      "fr": "Appliquer la retenue de 10% sur l'achat de marchandises (produits physiques). C'est faux ! La RAS de 10% ne s'applique qu'aux PRESTATIONS DE SERVICES (conseil, logiciels, droits d'auteur).",
+      "en": "Applying the 10% WHT on goods purchases. False! The 10% WHT ONLY applies to SERVICES (consulting, software, royalties).",
+      "ar": "تطبيق اقتطاع 10% على شراء البضائع (المنتجات المادية). خطأ! يطبق الاقتطاع فقط على تقديم الخدمات (استشارات، برمجيات، حقوق نشر)."
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous achetez un logiciel en ligne à une société américaine pour 20 000 DHS HT. La société américaine exige de recevoir 20 000 DHS nets sur son compte. Vous prenez l'impôt à votre charge. Quel sera le coût total de cette charge pour votre entreprise ?",
+        "en": "Buy software from US firm for 20k DHS HT. They demand 20k net. You bear the tax. What is the total cost for your firm?",
+        "ar": "تشتري برنامجاً من شركة أمريكية بـ 20ألف درهم. تطلب الشركة الأمريكية 20ألف صافية. تتحمل أنت الضريبة. ما التكلفة الإجمالية لشركتك؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Exact ! Si vous prenez la taxe à votre charge, le calcul se fait en 'dedans'. 20 000 / 0.90 = 22 222 DHS. Vous payez 20 000 à l'Américain, et 2 222 DHS à la DGI. L'achat vous a coûté 22 222 DHS ! 🔥",
+        "en": "Exact! Grossing up: 20k / 0.90 = 22,222 DHS. You pay 20k to the American, and 2,222 to the DGI. The purchase cost you 22,222 DHS! 🔥",
+        "ar": "صحيح! 20,000 / 0.90 = 22,222 درهم. تدفع 20ألف للأمريكي، و 2222 درهم لـ DGI. كلفك الشراء 22,222 درهم! 🔥"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Quel est le taux de la retenue à la source applicable au Maroc sur les honoraires versés à un consultant étranger non résident (en %) ?",
+      "correct_answer": "10",
+      "explanation": "Le taux standard fixé par le CGI pour les rémunérations des non-résidents est de 10%.",
+      "hint": "C'est un dixième du montant."
+    }
+  },
+  {
+    "id": 102,
+    "title": {
+      "fr": "La Douane et les Importations",
+      "en": "Customs and Imports",
+      "ar": "الجمارك والواردات"
+    },
+    "xp": 110,
+    "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'importation de biens est le parcours du combattant. L'administration des Douanes vous fait payer les Droits de Douane (charge) ET la TVA (récupérable) avant de libérer votre conteneur.",
+      "en": "Importing goods is an obstacle course. Customs charges you Customs Duties (expense) AND VAT (recoverable) before releasing your container.",
+      "ar": "استيراد البضائع مسار شاق. تُدفعك إدارة الجمارك الرسوم الجمركية (تكلفة) وضريبة القيمة المضافة (قابلة للاسترداد) قبل الإفراج عن الحاوية."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comptabiliser une opération d'importation incluant les frais de douane, la TVA et les honoraires du transitaire.",
+        "explication": "🔹 Le processus d'importation\nVous achetez 100 000 DHS de marchandises en Chine. Quand le bateau arrive au port de Casablanca, la marchandise est bloquée. Pour la libérer, vous devez payer des taxes via votre **Transitaire** (l'agent en douane).\n\n🔹 1. Les Droits de Douane (DD)\nC'est une taxe d'importation. Ce montant est une **Charge pure** qui vient s'ajouter au Coût d'Achat de votre marchandise. Il n'est pas récupérable.\n\n🔹 2. La TVA à l'importation\nL'État marocain applique 20% de TVA sur l'achat ET sur les droits de douane. Cette TVA est payée à la douane, mais elle est **100% récupérable** (Compte 3455). Elle ne coûte donc rien à l'entreprise à la fin du mois.\n\n🔹 3. La Facture du Transitaire\nLe transitaire vous facture ses honoraires (services) pour avoir géré la paperasse. C'est une charge d'exploitation (Compte 614 - Services extérieurs).",
+        "exemple": "Achat Chine = 100 000 DHS. \nDroits de Douane = 10% = 10 000 DHS. (Coût d'achat total = 110 000 DHS).\nTVA payée à la douane = 20% de 110 000 = 22 000 DHS. \nL'entreprise paiera 32 000 DHS à la douane, mais récupérera les 22 000 DHS sur sa prochaine déclaration de TVA !",
+        "pratique": "Les Droits de Douane (DD) sont-ils une charge récupérable par l'entreprise ?",
+        "resume": "Les Droits de Douane (DD) sont des charges intégrées au Coût d'Achat.\nLa TVA à l'importation se calcule sur (Prix d'Achat + Droits de Douane).\nLa TVA à l'importation est récupérable.\nLe Transitaire est l'intermédiaire obligatoire pour dédouaner."
+      },
+      "en": {
+        "objectif": "Record an import operation including customs duties, VAT, and freight forwarder fees.",
+        "explication": "🔹 The Import Process\nYou buy 100k DHS of goods in China. When the ship arrives in Casablanca, goods are held. To release them, you pay taxes via your **Freight Forwarder**.\n\n🔹 1. Customs Duties (DD)\nAn import tax. This is a **Pure Expense** added to your Purchase Cost. It is non-recoverable.\n\n🔹 2. Import VAT\nThe State applies 20% VAT on the purchase AND the customs duties. This VAT is paid to customs but is **100% recoverable**. It costs the company nothing in the end.\n\n🔹 3. Forwarder's Invoice\nThe forwarder bills fees for paperwork (Account 614 - External services).",
+        "exemple": "China Purchase = 100k DHS. \nCustoms Duties = 10% = 10k DHS. (Total Purchase Cost = 110k DHS).\nVAT paid to customs = 20% of 110k = 22,000 DHS. \nThe firm pays 32k to customs, but recovers the 22k on its next VAT return!",
+        "pratique": "Are Customs Duties (DD) a recoverable expense for the company?",
+        "resume": "Customs Duties (DD) are expenses added to Purchase Cost.\nImport VAT is calculated on (Purchase Price + Customs Duties).\nImport VAT is recoverable.\nThe Forwarder is the mandatory intermediary."
+      },
+      "ar": {
+        "objectif": "تسجيل عملية استيراد تشمل الرسوم الجمركية، TVA، وأتعاب وكيل الشحن.",
+        "explication": "🔹 عملية الاستيراد\nتشتري 100ألف درهم بضائع من الصين. عند وصول السفينة للدار البيضاء، تُحجز البضاعة. للإفراج عنها، تدفع الضرائب عبر **وكيل الشحن**.\n\n🔹 1. الرسوم الجمركية (DD)\nضريبة استيراد. هذا المبلغ **تكلفة خالصة** تُضاف إلى تكلفة شراء البضاعة. غير قابلة للاسترداد.\n\n🔹 2. TVA على الاستيراد\nتطبق الدولة 20% ضريبة على الشراء وعلى الرسوم الجمركية. تُدفع في الجمارك، لكنها **قابلة للاسترداد 100%**. لذا لا تكلف الشركة شيئاً.\n\n🔹 3. فاتورة وكيل الشحن\nيفوتر وكيل الشحن أتعابه (خدمات). إنها تكلفة استغلال (حساب 614).",
+        "exemple": "شراء الصين = 100ألف درهم. \nرسوم جمركية = 10% = 10آلاف. (إجمالي تكلفة الشراء = 110ألف).\nTVA مدفوعة للجمارك = 20% من 110ألف = 22ألف درهم. \nتدفع الشركة 32ألف للجمارك، لكنها تسترد 22ألف في إقرارها القادم!",
+        "pratique": "هل الرسوم الجمركية (DD) تكلفة قابلة للاسترداد للشركة؟",
+        "resume": "الرسوم الجمركية تكاليف مدمجة في تكلفة الشراء.\nتُحسب TVA للاستيراد على (سعر الشراء + الرسوم الجمركية).\nTVA للاستيراد قابلة للاسترداد.\nوكيل الشحن وسيط إلزامي للتخليص."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Le document de douane (la DUM) est le graal du comptable. Sans lui, impossible de prouver la TVA récupérable à l'inspecteur des impôts."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez l'acronyme : DUM = Déclaration Unique de Marchandises (le document officiel de la douane marocaine)."
+      ]
+    },
+    "piege_frequent": {
+      "fr": "Enregistrer la facture du transitaire comme un achat de marchandises. Faux ! Le transitaire ne vous vend pas la marchandise, il vous vend le service de dédouanement. Ce sont deux factures différentes à comptabiliser !",
+      "en": "Recording the forwarder's invoice as a goods purchase. False! The forwarder sells you the clearance service. They are two separate invoices!",
+      "ar": "تسجيل فاتورة وكيل الشحن كشراء بضائع. خطأ! وكيل الشحن يبيعك خدمة التخليص الجمركي. هما فاتورتان مختلفتان!"
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Marchandise = 50 000 DHS. Douane = 5 000 DHS. TVA Douane = 20%. Honoraires transitaire = 2 000 DHS HT (TVA 20%). Calculez le montant total de TVA que l'entreprise va récupérer (Compte 3455).",
+        "en": "Goods = 50k. Customs = 5k. Customs VAT = 20%. Forwarder fees = 2k HT (VAT 20%). Calculate total recoverable VAT.",
+        "ar": "بضاعة = 50ألف. جمارك = 5آلاف. TVA جمارك = 20%. أتعاب وكيل = 2000 HT (TVA 20%). احسب إجمالي الضريبة القابلة للاسترداد."
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! TVA en douane = 20% de (50k + 5k) = 11 000 DHS. TVA du transitaire = 2 000 * 20% = 400 DHS. Total récupérable = 11 400 DHS ! 🔥",
+        "en": "Bravo! Customs VAT = 20% of 55k = 11,000. Forwarder VAT = 400. Total recoverable = 11,400 DHS! 🔥",
+        "ar": "أحسنت! ضريبة الجمارك = 20% من 55ألف = 11,000. ضريبة الوكيل = 400. إجمالي مسترد = 11,400 درهم! 🔥"
+      }
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Comment les Droits de Douane (DD) impactent-ils la comptabilité de l'entreprise importatrice ?",
+      "options": [
+        "Ils sont récupérables comme la TVA",
+        "Ils sont ignorés en comptabilité",
+        "Ils augmentent le coût d'achat de la marchandise",
+        "Ils diminuent le chiffre d'affaires"
+      ],
+      "correct_answer": "Ils augmentent le coût d'achat de la marchandise",
+      "explanation": "Les droits de douane sont des charges intégrées directement au coût d'acquisition du produit (Classe 6). Ils ne sont pas récupérables.",
+      "hint": "C'est une taxe qui vous coûte de l'argent de façon définitive."
+    }
+  },
+  {
+    "id": 103,
+    "title": {
+      "fr": "Les Subventions d'Investissement",
+      "en": "Investment Subsidies",
+      "ar": "إعانات الاستثمار"
+    },
+    "xp": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "L'État vous donne de l'argent gratuit pour acheter une usine. En comptabilité, ce 'cadeau' ne va pas directement dans les bénéfices de l'année pour éviter une énorme taxe immédiate.",
+      "en": "The State gives you free money to buy a factory. In accounting, this 'gift' doesn't go straight into the year's profits to avoid a massive immediate tax.",
+      "ar": "تعطيك الدولة أموالاً مجانية لشراء مصنع. في المحاسبة، لا تذهب هذه 'الهدية' مباشرة إلى أرباح العام لتجنب ضريبة فورية ضخمة."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Comptabiliser une subvention d'investissement et répartir son imposition sur plusieurs années (Étalement).",
+        "explication": "🔹 Le Cadeau de l'État\nSARL Atlas veut acheter une machine écologique à 500 000 DHS. L'État marocain lui donne une 'Subvention d'Investissement' de 100 000 DHS (de l'argent gratuit non remboursable !).\n\n🔹 Le problème fiscal\nSi le comptable met ces 100 000 DHS directement en Produit (Classe 7), l'entreprise va payer 20% d'IS (20 000 DHS) tout de suite sur ce cadeau. L'aide de l'État perdrait de son sens !\n\n🔹 La solution comptable : L'étalement\nLa subvention est d'abord stockée au **Passif du Bilan (Compte 131 - Subventions d'investissement)** dans les Capitaux Propres.\nEnsuite, à la fin de chaque année, le comptable va 'Reprendre' (transférer) une petite partie de cette subvention dans le CPC (Compte 75 - Reprises sur subventions d'investissement). \n\n👍 Le rythme de reprise\nLa subvention est étalée sur la même durée que l'amortissement de la machine. Si la machine est amortie sur 5 ans, on mettra 20% de la subvention dans le CPC chaque année pendant 5 ans. L'impôt est donc dilué dans le temps !",
+        "exemple": "Subvention reçue = 100 000 DHS. Machine amortie sur 5 ans. \nAnnée 1 : On passe 20 000 DHS en Produit (Classe 7) et le solde (80 000) reste au Bilan (Compte 131). \nAu bout de 5 ans, le compte 131 sera totalement vidé.",
+        "pratique": "Vous recevez 60 000 DHS de subvention pour une machine amortissable sur 3 ans. Quel montant allez-vous déclarer en Produit dans le CPC la 1ère année ?",
+        "resume": "La subvention d'investissement est stockée dans les Capitaux Propres (Classe 1).\nElle est réintégrée progressivement dans les Produits du CPC (Classe 7).\nLe rythme de l'étalement suit le rythme de l'amortissement du bien financé.\nCela permet d'éviter un choc fiscal l'année de l'encaissement."
+      },
+      "en": {
+        "objectif": "Record an investment subsidy and spread its taxation over several years.",
+        "explication": "🔹 The State's Gift\nAtlas wants to buy an eco-machine for 500k DHS. The Moroccan State gives a 100k DHS 'Investment Subsidy' (free non-repayable money!).\n\n🔹 The Tax Problem\nIf the accountant puts 100k directly into Income (Class 7), the firm pays 20% IS (20k) immediately on this gift. The help would lose its meaning!\n\n🔹 Accounting Solution: Spreading\nThe subsidy is stored in **Liabilities/Equity (Account 131)**.\nAt year-end, the accountant transfers a small portion into the CPC (Account 75 - Reversals).\n\n👍 The pace of reversal\nThe subsidy is spread over the machine's depreciation life. If depreciated over 5 years, 20% of the subsidy enters the CPC yearly. Tax is diluted over time!",
+        "exemple": "Subsidy received = 100k. Machine depreciated over 5 years. Year 1: Book 20k as Income (Class 7), the balance (80k) stays on Balance Sheet (131). After 5 years, account 131 is empty.",
+        "pratique": "You receive 60k subsidy for a machine depreciable over 3 years. What amount do you declare in the CPC the 1st year?",
+        "resume": "Investment subsidy is stored in Equity (Class 1).\nIt's progressively reintegrated into CPC Income (Class 7).\nSpreading pace matches the financed asset's depreciation.\nAvoids a tax shock the year of receipt."
+      },
+      "ar": {
+        "objectif": "تسجيل إعانة استثمار وتوزيع ضريبتها على عدة سنوات.",
+        "explication": "🔹 هدية الدولة\nتريد Atlas شراء آلة بيئية بـ 500ألف درهم. تمنحها الدولة 'إعانة استثمار' بـ 100ألف درهم (مال مجاني غير مسترد!).\n\n🔹 المشكلة الضريبية\nإذا وضع المحاسب هذه 100ألف مباشرة كإيراد (الفئة 7)، ستدفع الشركة 20% IS (20ألف) فوراً على هذه الهدية. ستفقد مساعدة الدولة معناها!\n\n🔹 الحل المحاسبي: التوزيع\nتُخزن الإعانة أولاً في **خصوم الميزانية (حساب 131)** ضمن حقوق الملكية.\nفي نهاية كل عام، يقوم المحاسب بـ 'استرداد' (تحويل) جزء صغير من هذه الإعانة إلى CPC (حساب 75).\n\n👍 وتيرة الاسترداد\nتوزع الإعانة على نفس مدة إهلاك الآلة. إذا هلكت الآلة على 5 سنوات، نضع 20% من الإعانة في CPC كل عام. تُخفف الضريبة بمرور الوقت!",
+        "exemple": "إعانة مستلمة = 100ألف. آلة تهلك على 5 سنوات. السنة 1: نمرر 20ألف كإيراد (الفئة 7) والباقي (80ألف) يبقى في الميزانية (131). بعد 5 سنوات، يفرغ حساب 131 تماماً.",
+        "pratique": "تستلم 60 ألف إعانة لآلة تهلك على 3 سنوات. ما المبلغ الذي ستصرح به كإيراد في CPC السنة الأولى؟",
+        "resume": "تُخزن إعانة الاستثمار في حقوق الملكية (الفئة 1).\nتُدمج تدريجياً في إيرادات CPC (الفئة 7).\nتتبع وتيرة التوزيع وتيرة إهلاك الأصل الممول.\nيتيح ذلك تجنب صدمة ضريبية في سنة التحصيل."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Cette méthode prouve la 'gentillesse' de la norme comptable : elle ne veut pas vous assommer d'impôts sur un argent qui sert à faire grandir le pays."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Mémorisez le lien sacré : Subvention (Compte 13) suit le même rythme que l'Amortissement (Compte 28)."
+      ]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Vous obtenez une subvention de 120 000 DHS pour acheter un camion amortissable sur 4 ans. Quel sera le solde du Compte 131 (Subvention) au Bilan à la fin de la 2ème année ?",
+        "en": "Subsidy 120k DHS to buy a truck depreciable over 4 years. What is the Account 131 balance at the end of Year 2?",
+        "ar": "تحصل على إعانة 120ألف درهم لشراء شاحنة تهلك على 4 سنوات. ما هو رصيد الحساب 131 في الميزانية نهاية السنة الثانية؟"
+      },
+      "reward_xp": 80
+    },
+    "ai_feedback_examples": {
+      "good": {
+        "fr": "Bravo ! Étalement = 120 000 / 4 ans = 30 000 DHS par an envoyés au CPC. Fin de l'année 2, vous avez enlevé 60 000 DHS. Le solde restant au compte 131 est donc de 60 000 DHS ! 🔥",
+        "en": "Bravo! Spread = 120k / 4 yrs = 30k/yr to CPC. End of year 2, you removed 60k. Remaining balance in 131 is 60,000 DHS! 🔥",
+        "ar": "أحسنت! التوزيع = 120ألف / 4 سنوات = 30ألف/سنة لـ CPC. نهاية السنة 2، أزلت 60ألف. الرصيد المتبقي في 131 هو 60,000 درهم! 🔥"
+      }
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "Subvention reçue = 50 000 DHS. Le bien financé est amorti sur 5 ans. Quel montant passera dans le CPC (Produit) la première année ?",
+      "correct_answer": "10000",
+      "explanation": "50 000 / 5 ans = 10 000 DHS par an.",
+      "hint": "Divisez le total par 5."
+    }
+  },
+  {
+    "id": 104,
+    "title": {
+      "fr": "L'Évaluation d'Entreprise (L'Actif Net Comptable Corrigé)",
+      "en": "Company Valuation (Adjusted Net Asset Value)",
+      "ar": "تقييم الشركات (صافي الأصول المحاسبية المصححة)"
+    },
+    "xp": 150,
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Une entreprise ne vaut pas ce qui est écrit sur son bilan. Elle vaut ce que le marché est prêt à payer pour ses actifs réels, plus la 'magie' de sa marque (le Goodwill).",
+      "en": "A company isn't worth what's on its balance sheet. It's worth what the market pays for its real assets, plus the 'magic' of its brand (Goodwill).",
+      "ar": "الشركة لا تساوي ما هو مكتوب في ميزانيتها. إنها تساوي ما يدفعه السوق لأصولها الحقيقية، بالإضافة إلى 'سحر' علامتها التجارية (الشهرة)."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Calculer la valeur financière d'une entreprise via la méthode de l'ANCC (Actif Net Comptable Corrigé) et comprendre le Goodwill.",
+        "explication": "🔹 Le problème du Bilan Comptable\nVous voulez acheter la SARL Atlas. Son Bilan dit : Capitaux Propres (Actif Net) = 1 Million de DHS. Allez-vous payer 1 Million ? NON ! \nLe Bilan contient des 'Frais préliminaires' (Actif fictif qui ne vaut rien à la revente) et le Bilan sous-évalue les terrains (Coût historique au lieu de la valeur actuelle du marché).\n\n🔹 L'ANCC (Actif Net Comptable Corrigé)\nL'auditeur va 'corriger' le Bilan : \n1. Il prend l'Actif Net (Capitaux propres).\n2. Il enlève les Actifs Fictifs (les frais).\n3. Il rajoute les 'Plus-values latentes' (ex: le terrain acheté 100k vaut 500k aujourd'hui, on rajoute +400k).\n**Valeur Mathématique = ANCC.**\n\n🔹 Le Goodwill (Le Fonds de Commerce ou la Magie)\nSi l'ANCC vaut 2 Millions, pourquoi Apple ou Coca-Cola se rachètent pour 10 fois leur valeur comptable ? C'est le **Goodwill**. \nLe Goodwill, c'est la valeur de la marque, la base client fidèle, le savoir-faire. C'est la capacité de l'entreprise à générer des super-profits dans le futur. \n**Valeur Globale de l'entreprise = ANCC + Goodwill.**",
+        "exemple": "Atlas : Capitaux Propres = 100. Frais fictifs = 10. Plus-value terrain = 50. \nANCC = 100 - 10 + 50 = 140. \nLa marque Atlas est très connue (Goodwill estimé à 60). \nValeur de rachat de l'entreprise = 140 + 60 = 200 !",
+        "pratique": "Faut-il ajouter ou soustraire un actif 'fictif' (sans valeur de revente) pour trouver l'ANCC ?",
+        "resume": "La valeur comptable (Bilan) est différente de la valeur économique réelle.\nL'ANCC corrige le bilan en ajoutant les plus-values et retirant les actifs fictifs.\nLe Goodwill est la survaleur immatérielle (marque, clients, brevets).\nL'ANCC est la méthode de base des fusions et acquisitions (M&A)."
+      },
+      "en": {
+        "objectif": "Calculate financial value via Adjusted Net Asset Value (ANCC) and understand Goodwill.",
+        "explication": "🔹 The Balance Sheet Problem\nYou want to buy SARL Atlas. Balance Sheet says: Equity (Net Assets) = 1M DHS. Do you pay 1M? NO! \nIt contains 'Preliminary expenses' (Fictitious assets worth nothing to resell) and undervalues land (Historical cost instead of market value).\n\n🔹 ANCC (Adjusted Net Asset Value)\nThe auditor 'corrects' the Balance Sheet:\n1. Takes Net Assets (Equity).\n2. Removes Fictitious Assets.\n3. Adds 'Unrealized capital gains' (e.g., land bought 100k is worth 500k today, add +400k).\n**Mathematical Value = ANCC.**\n\n🔹 Goodwill (The Magic)\nIf ANCC is 2M, why are Apple/Coca-Cola bought for 10x book value? It's **Goodwill**. \nGoodwill is brand value, loyal clients, know-how. Ability to generate super-profits. \n**Global Company Value = ANCC + Goodwill.**",
+        "exemple": "Atlas: Equity = 100. Fictitious costs = 10. Land capital gain = 50. \nANCC = 100 - 10 + 50 = 140. \nAtlas brand is famous (Goodwill = 60). \nPurchase Value = 140 + 60 = 200!",
+        "pratique": "Must you add or subtract a 'fictitious' asset to find ANCC?",
+        "resume": "Book value differs from real economic value.\nANCC corrects the balance sheet (adds gains, removes fictions).\nGoodwill is intangible surplus value (brand, clients).\nANCC is the baseline for Mergers & Acquisitions (M&A)."
+      },
+      "ar": {
+        "objectif": "حساب القيمة المالية عبر صافي الأصول المحاسبية المصححة (ANCC) وفهم الشهرة (Goodwill).",
+        "explication": "🔹 مشكلة الميزانية المحاسبية\nتريد شراء SARL Atlas. تقول الميزانية: حقوق الملكية (صافي الأصول) = 1 مليون درهم. هل تدفع مليون؟ لا!\nتحتوي على 'مصاريف أولية' (أصل وهمي لا يساوي شيئاً عند البيع) وتبخس قيمة الأراضي (تكلفة تاريخية بدلاً من السوق).\n\n🔹 ANCC (صافي الأصول المحاسبية المصححة)\n'يصحح' المدقق الميزانية:\n1. يأخذ صافي الأصول (حقوق الملكية).\n2. يزيل الأصول الوهمية.\n3. يضيف 'فوائض القيمة الكامنة' (أرض بـ 100ألف تساوي 500ألف اليوم، نضيف +400ألف).\n**القيمة الرياضية = ANCC.**\n\n🔹 الشهرة (Goodwill أو السحر)\nإذا كانت ANCC مليونين، لماذا تُشترى Apple بـ 10 أضعاف قيمتها الدفترية؟ إنها **الشهرة**.\nالشهرة هي قيمة العلامة، العملاء الأوفياء، المعرفة. القدرة على توليد أرباح فائقة مستقبلاً.\n**القيمة الإجمالية للشركة = ANCC + الشهرة.**",
+        "exemple": "Atlas: حقوق الملكية = 100. مصاريف وهمية = 10. فائض أرض = 50.\nANCC = 100 - 10 + 50 = 140.\nعلامة Atlas مشهورة (شهرة = 60).\nقيمة شراء الشركة = 140 + 60 = 200!",
+        "pratique": "هل يجب إضافة أم طرح أصل 'وهمي' للعثور على ANCC؟",
+        "resume": "القيمة الدفترية تختلف عن القيمة الاقتصادية الحقيقية.\nيصحح ANCC الميزانية (يضيف الفوائض ويزيل الوهمي).\nالشهرة هي القيمة الزائدة غير المادية (علامة، عملاء).\nANCC هو أساس الاندماج والاستحواذ (M&A)."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Le Goodwill, c'est ce qu'on appelle 'l'âme' de l'entreprise. L'ANCC, c'est le squelette."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Cherchez la notion de 'Frais préliminaires'. C'est le premier actif à supprimer lors d'une évaluation."
+      ]
+    },
+    "practice_zone": {
+      "type": "mcq",
+      "question": "Qu'est-ce que le 'Goodwill' dans l'évaluation d'une entreprise ?",
+      "options": [
+        "Le stock de marchandises",
+        "La valeur de la marque, du savoir-faire et du portefeuille client (Survaleur)",
+        "Les dettes envers l'État",
+        "Le compte bancaire de l'entreprise"
+      ],
+      "correct_answer": "La valeur de la marque, du savoir-faire et du portefeuille client (Survaleur)",
+      "explanation": "Le Goodwill est l'élément immatériel qui fait qu'une entreprise vaut beaucoup plus cher que ses simples machines et bâtiments.",
+      "hint": "Pourquoi Coca-Cola vaut-elle des milliards de plus que la valeur de ses usines ?"
+    }
+  },
+  {
+    "id": 105,
+    "title": {
+      "fr": "Masterclass — Le Cas Global (De l'Achat au Bilan)",
+      "en": "Masterclass — The Global Case (From Purchase to Balance Sheet)",
+      "ar": "درس احترافي — الحالة الشاملة (من الشراء إلى الميزانية)"
+    },
+    "xp": 2000,
+    "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+    "core_concept": {
+      "fr": "Voici le test final. Tout ce que vous avez appris depuis la leçon 1 se réunit ici. C'est l'examen final de l'Amina Académie.",
+      "en": "This is the final test. Everything you learned since lesson 1 comes together here. It's the final exam of Amina Academy.",
+      "ar": "هذا هو الاختبار النهائي. كل ما تعلمته منذ الدرس 1 يجتمع هنا. إنه الامتحان النهائي لأكاديمية أمينة."
+    },
+    "content": {
+      "fr": {
+        "objectif": "Synthétiser 104 leçons en analysant l'impact d'une seule opération sur le Bilan, le CPC, la Trésorerie et l'IS.",
+        "explication": "🔹 Le Scénario de fin d'études\nL'entreprise Amina Brand (capital 1 000 000 DHS) achète une machine industrielle le 1er Janvier pour 200 000 DHS HT (TVA 20%). Elle est payée par chèque. Elle l'amortit sur 5 ans en linéaire. Grâce à cette machine, elle vend 500 000 DHS HT de vêtements (TVA 20%) payés en espèces. Ses charges salariales sont de 100 000 DHS. \n\n🔹 Phase 1 : La TVA\n- TVA Déductible (machine) = 40 000 DHS.\n- TVA Collectée (ventes) = 100 000 DHS.\n- TVA à payer = 100 000 - 40 000 = **60 000 DHS** à la DGI.\n\n🔹 Phase 2 : Le CPC (Bénéfice)\n- Produits : 500 000 DHS (Ventes).\n- Charges : 100 000 (Salaires) + 40 000 (Amortissement de la machine : 200k/5).\n- Résultat Comptable = 500 000 - 140 000 = **360 000 DHS**.\n\n🔹 Phase 3 : L'IS et le Bilan\n- Résultat Fiscal = 360 000 DHS (Rien à réintégrer).\n- IS (20%) = **72 000 DHS**.\n- Résultat Net final = 360 000 - 72 000 = **288 000 DHS**. Ce montant va se loger fièrement au Passif du Bilan en dessous du Capital.",
+        "exemple": "Toute la mécanique comptable marocaine est un circuit fermé. L'achat de la machine a touché l'Actif, son amortissement a baissé le CPC, l'IS a créé une dette envers l'État, et le bénéfice final a gonflé les Capitaux Propres.",
+        "pratique": "Vous êtes diplômé ! Quel rôle de la comptabilité préférez-vous : Saisisseur, DAF, ou Fiscaliste ?",
+        "resume": "Une seule opération impacte la TVA, le Bilan, l'Amortissement et l'IS.\nLa comptabilité est un écosystème où le Bilan et le CPC s'équilibrent toujours via le Résultat Net.\nVous avez désormais les clés pour lire, comprendre et piloter n'importe quelle entreprise."
+      },
+      "en": {
+        "objectif": "Synthesize 104 lessons by analyzing the impact of a single operation on the Balance Sheet, CPC, Cash, and IS.",
+        "explication": "🔹 The Graduation Scenario\nAmina Brand (Capital 1M DHS) buys a machine Jan 1st for 200k HT (20% VAT). Paid by check. Depreciated over 5 yrs linear. Sells 500k HT clothes (20% VAT) cash. Salaries = 100k.\n\n🔹 Phase 1: VAT\n- Deductible VAT = 40k.\n- Collected VAT = 100k.\n- VAT due = 100k - 40k = **60k DHS**.\n\n🔹 Phase 2: CPC (Profit)\n- Income: 500k.\n- Expenses: 100k (Wages) + 40k (Machine depreciation: 200k/5).\n- Accounting Profit = 500k - 140k = **360k DHS**.\n\n🔹 Phase 3: IS and Balance Sheet\n- Taxable Result = 360k.\n- IS (20%) = **72k DHS**.\n- Final Net Profit = 360k - 72k = **288k DHS**. This goes to Equity on the Balance Sheet.",
+        "exemple": "The Moroccan accounting mechanism is a closed loop. Buying the machine hits Assets, depreciation lowers CPC, IS creates a State debt, and final profit inflates Equity.",
+        "pratique": "You graduated! Which accounting role do you prefer: Data entry, CFO, or Tax expert?",
+        "resume": "A single operation impacts VAT, Balance Sheet, Depreciation, and IS.\nAccounting is an ecosystem where Balance Sheet and CPC always balance via Net Profit.\nYou now hold the keys to read, understand, and steer any business."
+      },
+      "ar": {
+        "objectif": "توليف 104 دروس من خلال تحليل تأثير عملية واحدة على الميزانية، CPC، الخزينة، و IS.",
+        "explication": "🔹 سيناريو التخرج\nتشتري Amina Brand (رأسمال مليون درهم) آلة في 1 يناير بـ 200ألف HT (20% TVA). تُدفع بشيك. تهلك على 5 سنوات خطياً. تبيع 500ألف ملابس (20% TVA) نقداً. الرواتب = 100ألف.\n\n🔹 المرحلة 1: TVA\n- قابلة للخصم = 40ألف.\n- محصلة = 100ألف.\n- مستحقة = 100ألف - 40ألف = **60ألف درهم**.\n\n🔹 المرحلة 2: CPC (الربح)\n- إيرادات: 500ألف.\n- تكاليف: 100ألف (رواتب) + 40ألف (إهلاك الآلة: 200ألف/5).\n- النتيجة المحاسبية = 500ألف - 140ألف = **360ألف درهم**.\n\n🔹 المرحلة 3: IS والميزانية\n- النتيجة الضريبية = 360ألف.\n- IS (20%) = **72ألف درهم**.\n- النتيجة الصافية النهائية = 360ألف - 72ألف = **288ألف درهم**. يوضع في خصوم الميزانية تحت رأس المال.",
+        "exemple": "الآلية المحاسبية دائرة مغلقة. شراء الآلة مس الأصول، إهلاكها خفض CPC، IS خلق ديناً للدولة، والربح النهائي ضخم حقوق الملكية.",
+        "pratique": "لقد تخرجت! أي دور تفضل: مدخل بيانات، مدير مالي، أم خبير ضرائب؟",
+        "resume": "عملية واحدة تؤثر على TVA، الميزانية، الإهلاك، و IS.\nالمحاسبة نظام بيئي حيث تتوازن الميزانية و CPC دائماً عبر النتيجة الصافية.\nأنت تمتلك الآن المفاتيح لقراءة وفهم وتوجيه أي شركة."
+      }
+    },
+    "psychology": {
+      "fr": [
+        "Vous avez transformé le chaos des factures en un écosystème parfaitement organisé. Soyez fier du chemin parcouru."
+      ]
+    },
+    "missions": {
+      "fr": [
+        "Appliquez tout ce savoir dans le monde réel. L'économie a besoin d'esprits structurés comme le vôtre."
+      ]
+    },
+    "challenge_mode": {
+      "task": {
+        "fr": "Quel est le nom de l'Impôt que vous venez de calculer dans cette masterclass globale ?",
+        "en": "What is the name of the Tax calculated in this masterclass?",
+        "ar": "ما اسم الضريبة المحسوبة في هذا الدرس الاحترافي؟"
+      },
+      "reward_xp": 5000
+    },
+    "practice_zone": {
+      "type": "input",
+      "question": "FÉLICITATIONS ! Pour valider votre diplôme virtuel de l'Amina Académie, tapez le mot : EXPERT",
+      "correct_answer": "EXPERT",
+      "explanation": "Vous avez validé les 105 leçons. Vous êtes désormais un expert en comptabilité et gestion d'entreprise !",
+      "hint": "E X P E R T"
+    }
+  }
+]

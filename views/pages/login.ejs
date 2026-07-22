@@ -4,88 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion | AMINA Académie</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4F46E5;
-            --primary-hover: #4338CA;
-            --bg-light: #F8FAFC;
-            --text-main: #0F172A;
-            --text-muted: #64748B;
-            --border: #E2E8F0;
+            --ink:          #1B2420;
+            --ink-soft:     #5B655D;
+            --ledger:       #2F5D45;
+            --ledger-deep:  #1F4432;
+            --ledger-tint:  #E9F0E9;
+            --brass:        #AD7F35;
+            --brass-tint:   #F6EDD8;
+            --paper:        #F6F3E9;
+            --paper-card:   #FCFAF3;
+            --rule:         #DAD3BC;
+            --danger:       #B24B36;
+            --danger-tint:  #FBEBE5;
+            --font-display: 'Fraunces', serif;
+            --font-body:    'IBM Plex Sans', sans-serif;
+            --font-mono:    'IBM Plex Mono', monospace;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-main);
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink);
             height: 100vh;
             display: flex;
             overflow: hidden;
         }
 
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+        }
+
         .auth-layout { display: flex; width: 100%; height: 100%; }
 
-        /* LEFT SIDE: Banner */
+        /* ─── LEFT: Editorial Banner ─── */
         .auth-banner {
-            flex: 1;
-            background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), 
-                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 60px;
-            color: white;
+            flex: 1.05;
+            background: linear-gradient(180deg, rgba(31,68,50,0.4) 0%, rgba(27,32,30,0.8) 100%),
+                        url('https://images.unsplash.com/photo-1642543492691-ddf04d74a507?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+            display: flex; flex-direction: column; justify-content: space-between;
+            padding: 48px 56px 56px;
+            color: var(--paper);
             position: relative;
         }
-        .auth-banner h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 48px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
-        .auth-banner p { font-size: 18px; color: #CBD5E1; max-width: 450px; line-height: 1.6; }
-        
-        .logo-white { position: absolute; top: 40px; left: 60px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 800; color: white; text-decoration: none; }
-        .logo-white span { color: #818CF8; }
 
-        /* RIGHT SIDE: Auth Panel */
-        .auth-form-container { flex: 1; display: flex; align-items: center; justify-content: center; background: white; padding: 40px; }
-        .auth-form-box { width: 100%; max-width: 400px; text-align: center; }
+        .logo-white {
+            font-family: var(--font-display); font-size: 20px; font-weight: 700; font-style: italic;
+            color: var(--paper); text-decoration: none; letter-spacing: -0.2px;
+            transition: opacity 0.2s;
+        }
+        .logo-white:hover { opacity: 0.85; }
+        .logo-white span { color: #BFE0C9; font-style: normal; }
 
-        .auth-header { margin-bottom: 40px; text-align: left; }
-        .auth-header h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 32px; font-weight: 800; margin-bottom: 12px; letter-spacing: -1px; }
-        .auth-header p { color: var(--text-muted); font-size: 16px; line-height: 1.5; }
+        .banner-mid { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 
-        /* GOOGLE BUTTON */
+        .cert-copy { max-width: 440px; animation: fadeIn 0.8s ease-out; }
+        .cert-copy h2 { font-family: var(--font-display); font-size: 42px; font-weight: 600; line-height: 1.16; letter-spacing: -0.5px; margin-bottom: 16px; color: var(--paper); }
+        .cert-copy p { font-size: 16px; color: #E4E9E4; line-height: 1.65; }
+
+        .auth-footer-note { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; color: #C9D6CB; text-transform: uppercase; font-weight: 600; }
+
+        /* ─── RIGHT: Sign-in Panel with Smooth Entry ─── */
+        .auth-form-container { 
+            flex: 1; display: flex; align-items: center; justify-content: center; 
+            background: var(--paper-card); padding: 40px; 
+            box-shadow: -10px 0 30px rgba(0,0,0,0.02);
+        }
+        .auth-form-box { 
+            width: 100%; max-width: 380px; 
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .auth-header { margin-bottom: 36px; }
+        .auth-header .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.6px; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 10px; display: block; }
+        .auth-header h1 { font-family: var(--font-display); font-size: 30px; font-weight: 600; margin-bottom: 10px; letter-spacing: -0.5px; color: var(--ink); }
+        .auth-header p { color: var(--ink-soft); font-size: 15px; line-height: 1.55; }
+
+        .auth-error {
+            background: var(--danger-tint); color: #7A2E20; padding: 12px 16px; border-left: 2px solid var(--danger);
+            margin-bottom: 24px; font-size: 13.5px; text-align: left; display: flex; gap: 10px; align-items: flex-start;
+            border-radius: 2px;
+            animation: shake 0.4s ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+        }
+
+        .auth-error svg { width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; color: var(--danger); }
+
         .btn-google-large {
-            width: 100%;
-            padding: 16px;
-            background: white;
-            color: #0F172A;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            text-decoration: none;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-            margin-bottom: 32px;
+            width: 100%; padding: 16px; background: var(--paper-card); color: var(--ink);
+            border: 1px solid var(--rule); border-radius: 6px; font-size: 15px; font-weight: 600;
+            cursor: pointer; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); 
+            display: flex; align-items: center; justify-content: center;
+            gap: 12px; text-decoration: none; margin-bottom: 28px; font-family: var(--font-body);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
-        .btn-google-large:hover {
-            background: #F8FAFC;
-            border-color: #CBD5E1;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        .btn-google-large:hover { 
+            background: var(--ledger-tint); 
+            border-color: var(--ledger); 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(47,93,69,0.08);
         }
+        .btn-google-large:active { transform: translateY(0); }
+        .btn-google-large:focus-visible { outline: 2px solid var(--ledger); outline-offset: 2px; }
 
-        .auth-footer { padding-top: 24px; border-top: 1px solid var(--border); font-size: 14px; color: var(--text-muted); }
-        .auth-footer a { color: var(--primary); font-weight: 600; text-decoration: none; margin-left: 4px; }
-        .auth-footer a:hover { text-decoration: underline; }
+        .auth-divider { display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
+        .auth-divider .line { flex: 1; height: 1px; background: var(--rule); }
+        .auth-divider span { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-soft); }
 
-        @media (max-width: 900px) { .auth-banner { display: none; } .auth-form-container { padding: 24px; } }
+        .auth-footer { padding-top: 22px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--ink-soft); text-align: center; }
+        .auth-footer a { color: var(--ledger); font-weight: 600; text-decoration: none; margin-left: 4px; transition: color 0.2s; }
+        .auth-footer a:hover { color: var(--ledger-deep); text-decoration: underline; }
+
+        @media (max-width: 900px) {
+            .auth-banner { display: none; }
+            .auth-form-container { padding: 24px; }
+        }
     </style>
 </head>
 <body>
@@ -93,30 +147,41 @@
     <div class="auth-layout">
         <div class="auth-banner">
             <a href="/" class="logo-white">AMINA <span>Académie</span></a>
-            <h2>Bon retour ! </h2>
-            <p>Reprenez votre apprentissage là où vous l'avez laissé. La maîtrise de la comptabilité n'est qu'à un clic.</p>
+
+            <div class="banner-mid">
+                <div class="cert-copy">
+                    <h2>Bon retour.</h2>
+                    <p>Reprenez votre apprentissage là où vous l'avez laissé. Chaque module terminé vous rapproche d'une compétence certifiée.</p>
+                </div>
+            </div>
+
+            <div class="auth-footer-note">Comptabilité · Anglais professionnel</div>
         </div>
 
         <div class="auth-form-container">
             <div class="auth-form-box">
                 <div class="auth-header">
+                    <span class="eyebrow">Espace membre</span>
                     <h1>Se connecter</h1>
-                    <p>Accédez à votre espace membre sécurisé.</p>
+                    <p>Accédez à votre espace sécurisé.</p>
                 </div>
 
                 <% if (typeof error !== 'undefined' && error) { %>
-                    <div style="background-color: #FEF2F2; color: #B91C1C; padding: 12px; border-radius: 8px; margin-bottom: 24px; font-size: 14px; text-align: center; border: 1px solid #FCA5A5;">
-                        ⚠️ <%= error %>
+                    <div class="auth-error">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9L2.7 17a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path></svg>
+                        <span><%= error %></span>
                     </div>
                 <% } %>
 
                 <a href="/api/auth/google" class="btn-google-large">
-                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="24">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="" width="20" height="20">
                     Continuer avec Google
                 </a>
 
+                <div class="auth-divider"><div class="line"></div><span>Sécurisé</span><div class="line"></div></div>
+
                 <div class="auth-footer">
-                    Nouveau ici ? <a href="/register">Créer un compte</a>
+                    Nouveau ici ?<a href="/register">Créer un compte</a>
                 </div>
             </div>
         </div>
