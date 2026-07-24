@@ -152,6 +152,13 @@
             background: rgba(255, 255, 255, 0.95);
         }
 
+        /* 🛠️ FIXED: Prevent dark block from turning white on hover */
+        .lesson-block.blk-dark.is-loaded:hover {
+            background: var(--text-main);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-8px) scale(1.01);
+        }
+
         .lesson-block::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--primary); transition: 0.3s; }
         .lesson-block.is-loaded:hover::before { width: 10px; background: linear-gradient(to bottom, var(--primary), var(--secondary)); }
 
@@ -448,8 +455,15 @@
     let pzAttempts = 0;
     let toastTimer = null;
 
-    // ─── READING PROGRESS ───
+    // ─── SCROLL POSITION MEMORY ───
+    const scrollKey = `amina_scroll_${window.CURRENT_COURSE_TYPE}_${CURRENT_LESSON_ID}`;
     window.addEventListener('scroll', () => {
+        clearTimeout(window._scrollSaveTimer);
+        window._scrollSaveTimer = setTimeout(() => {
+            localStorage.setItem(scrollKey, window.scrollY);
+        }, 300);
+        
+        // General reading progress bar
         const docH = document.documentElement.scrollHeight - window.innerHeight;
         const pct = docH > 0 ? (window.scrollY / docH) * 100 : 0;
         document.getElementById('progress-bar-fill').style.width = pct + '%';
@@ -721,7 +735,7 @@
         renderHeroVisual(content.imageUrl || lessonData.imageUrl || '');
     }
 
-    // ─── MARK COMPLETE (FREE TIER CHECK UP TO LESSON 5 -> PREMIUM PAYWALL, REST GO TO NEXT LESSON WITHIN COURSE) ───
+    // ─── MARK COMPLETE ───
     async function markComplete() {
         const btn = document.getElementById('btn-complete');
         const l = labels[activeLang] || labels.fr;
@@ -744,9 +758,11 @@
                 fireConfetti();
                 if (data.totalXp) animateXpTo(data.totalXp);
                 
+                // Clear scroll memory when lesson is completed so next lesson starts fresh from top
+                localStorage.removeItem(scrollKey);
+                
                 const nextId = currentIdNum + 1;
 
-                // 👑 FREE TIER LOGIC: Agar lesson 5 complete kiya, toh lesson 6 ke baad Premium par redirect karo
                 const userPlan = "<%= user && user.subscription && user.subscription.plan ? user.subscription.plan : 'free' %>";
                 const userRole = "<%= user && user.role ? user.role : 'user' %>";
                 const isPro = userPlan === 'premium' || userRole === 'admin';
@@ -779,6 +795,14 @@
     window.addEventListener('load', () => {
         switchLang('fr', 'ltr', document.querySelector('.btn-lang.active'));
         renderPracticeZone();
+
+        // Restore scroll position memory
+        const savedScroll = localStorage.getItem(scrollKey);
+        if (savedScroll) {
+            setTimeout(() => {
+                window.scrollTo({ top: parseInt(savedScroll, 10), behavior: 'smooth' });
+            }, 400);
+        }
     });
 
     window.addEventListener('pageshow', e => { if (e.persisted) window.location.reload(); });

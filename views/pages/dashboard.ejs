@@ -342,9 +342,9 @@
                         const formattedNum = lesson.id < 10 ? '0' + lesson.id : lesson.id;
                         let isAvailable = lesson.isUnlocked;
                         let needsUpgrade = false;
-                        if (!isPremiumUser && !isAdmin && lesson.id > 2) {
-                            isAvailable = false; needsUpgrade = true;
-                        }
+                        if (!isPremiumUser && !isAdmin && lesson.id > 4) {
+                         isAvailable = false; needsUpgrade = true;
+}
 
                         // Smart fallback for JSON multilingual structure
                         const titleDisplay = (typeof lesson.title === 'object') ? (lesson.title.fr || lesson.title.en) : lesson.title;
@@ -402,7 +402,7 @@
                         const formattedNum = lesson.id < 10 ? '0' + lesson.id : lesson.id;
                         let isAvailable = lesson.isUnlocked;
                         let needsUpgrade = false;
-                        if (!isPremiumUser && !isAdmin && lesson.id > 1) {
+                        if (!isPremiumUser && !isAdmin && lesson.id > 4) {
                             isAvailable = false; needsUpgrade = true;
                         }
 
@@ -463,7 +463,7 @@
                         const formattedNum = lesson.id < 10 ? '0' + lesson.id : lesson.id;
                         let isAvailable = lesson.isUnlocked;
                         let needsUpgrade = false;
-                        if (!isPremiumUser && !isAdmin && lesson.id > 3) {
+                        if (!isPremiumUser && !isAdmin && lesson.id > 4) {
                             isAvailable = false; needsUpgrade = true;
                         }
 

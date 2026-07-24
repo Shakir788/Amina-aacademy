@@ -7,208 +7,274 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 
     <style>
+        /* ══════════════════════════════════════════
+           SOFT 3D / PREMIUM SAAS DESIGN TOKENS
+           ══════════════════════════════════════════ */
         :root {
-            --ink: #0F172A;       
-            --ink-light: #334155; 
-            --surface: #F8FAFC;   
-            --card: #FFFFFF;      
-            --accent: #4F46E5;    
-            --accent-hover: #4338CA;
-            --danger: #EF4444;    
-            --success: #10B981;   
-            --border: #E2E8F0;    
-            --font-display: 'Plus Jakarta Sans', sans-serif;
-            --font-body: 'Inter', sans-serif;
+            --bg-base:        #F4F7F9; 
+            --surface:        #FFFFFF;
+            --surface-glass:  rgba(255, 255, 255, 0.75);
+            
+            --text-main:      #0F172A;
+            --text-muted:     #64748B;
+            
+            --primary:        #4F46E5; 
+            --primary-light:  #EEF2FF;
+            --primary-glow:   rgba(79, 70, 229, 0.4);
+            
+            --secondary:      #EC4899; 
+            
+            --success:        #10B981;
+            --success-light:  #ECFDF5;
+            
+            --danger:         #EF4444;
+            --danger-light:   #FEF2F2;
+            
+            --gold:           #F59E0B;
+            --gold-light:     #FFFBEB;
+            --gold-glow:      rgba(245, 158, 11, 0.3);
+
+            --border-soft:    rgba(226, 232, 240, 0.8);
+            
+            --font-display:   'Plus Jakarta Sans', sans-serif;
+            --font-body:      'Inter', sans-serif;
+            --font-mono:      'JetBrains Mono', monospace;
         }
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+        /* 🌟 LIQUID ANIMATED BACKGROUND */
         body {
-            background: var(--surface);
             font-family: var(--font-body);
-            color: var(--ink);
+            color: var(--text-main);
             min-height: 100vh;
+            background: linear-gradient(-45deg, #F8FAFC, #EEF2FF, #FDF2F8, #FFFBEB);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
             display: flex;
             flex-direction: column;
-            -webkit-font-smoothing: antialiased;
         }
+        @keyframes gradientBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
 
-        /* ───── NAV (Clean) ───── */
+        /* ─── FIXED PROGRESS BAR ─── */
+        #progress-bar-wrap { position: fixed; top: 0; left: 0; right: 0; height: 4px; background: rgba(0,0,0,0.05); z-index: 2000; }
+        #progress-bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--secondary)); width: 0%; transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 0 15px var(--primary-glow); border-radius: 0 4px 4px 0; }
+
+        /* ─── GLASS NAV ─── */
         nav {
-            position: sticky; top: 0; z-index: 100;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-            padding: 15px 24px;
-            display: flex; align-items: center; gap: 20px;
+            position: sticky; top: 0; z-index: 1000;
+            background: var(--surface-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            padding: 0 5%; height: 72px;
+            display: flex; align-items: center; justify-content: space-between;
         }
+        
+        .nav-left { display: flex; align-items: center; gap: 16px; }
         .close-btn {
-            width: 40px; height: 40px; border-radius: 50%;
-            background: #F1F5F9; border: none; cursor: pointer;
-            font-size: 20px; color: var(--ink-light);
+            width: 36px; height: 36px; border-radius: 12px;
+            background: white; border: 1px solid var(--border-soft); cursor: pointer;
+            font-size: 16px; color: var(--text-muted);
             display: flex; align-items: center; justify-content: center;
             text-decoration: none; transition: 0.2s; font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
-        .close-btn:hover { background: #FEE2E2; color: var(--danger); }
+        .close-btn:hover { background: #FEE2E2; color: var(--danger); border-color: #FECACA; transform: scale(1.05); }
 
-        .progress-wrap { flex: 1; background: var(--border); border-radius: 99px; height: 10px; overflow: hidden; }
-        .progress-fill { height: 100%; background: var(--accent); width: 0%; transition: width 0.5s ease-in-out; border-radius: 99px; }
+        .nav-divider { width: 2px; height: 24px; background: var(--border-soft); border-radius: 2px; }
         
-        .xp-pill {
-            background: #EEF2FF; color: var(--accent);
-            padding: 8px 16px; border-radius: 99px;
-            font-weight: 700; font-size: 15px; font-family: var(--font-display);
-        }
-        .step-counter { font-size: 14px; font-weight: 700; color: var(--ink-light); }
+        .nav-right { display: flex; align-items: center; gap: 16px; }
+        .step-counter { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--text-muted); background: white; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border-soft); }
+        .ledger-balance { display: flex; align-items: center; gap: 8px; background: white; padding: 6px 14px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
+        .lb-label { font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); }
+        .lb-value { font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--primary); transition: 0.3s; }
         
-        /* Language Pills */
-        .lang-pill { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--border); background: white; font-size: 12px; font-weight: 700; cursor: pointer; transition: 0.2s; color: var(--ink-light); }
-        .lang-pill.active { background: var(--accent); color: white; border-color: var(--accent); }
+        .lang-switcher { display: flex; background: white; padding: 4px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); border: 1px solid var(--border-soft); }
+        .lang-pill { border: none; background: transparent; padding: 6px 12px; font-family: var(--font-display); font-weight: 700; font-size: 11px; border-radius: 8px; cursor: pointer; color: var(--text-muted); transition: 0.3s; }
+        .lang-pill.active { background: var(--primary); color: white; box-shadow: 0 4px 10px var(--primary-glow); }
 
-        /* ───── MAIN LAYOUT ───── */
+        /* ─── LAYOUT ─── */
         .page-wrap {
             flex: 1; display: flex; flex-direction: column;
-            align-items: center; padding: 40px 20px;
-            max-width: 750px; margin: 0 auto; width: 100%;
+            align-items: center; padding: 40px 24px 140px;
+            max-width: 860px; margin: 0 auto; width: 100%;
         }
 
-        .lesson-card {
-            background: var(--card); border-radius: 24px;
-            border: 1px solid var(--border); width: 100%;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.04);
+        /* ─── HERO ─── */
+        .lesson-hero { margin-bottom: 40px; text-align: center; display: flex; flex-direction: column; align-items: center; animation: smoothFadeUp 0.6s ease forwards; }
+        .lesson-meta { display: inline-flex; align-items: center; gap: 10px; padding: 6px 12px; background: white; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px; font-family: var(--font-display); font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--primary); }
+        
+        /* 🌟 SHINING TEXT EFFECT */
+        .lesson-hero h1 { 
+            font-family: var(--font-display); font-size: 42px; font-weight: 900; line-height: 1.15; letter-spacing: -1px; margin-bottom: 16px; max-width: 800px;
+            background: linear-gradient(to right, var(--text-main) 20%, var(--primary) 40%, var(--secondary) 60%, var(--text-main) 80%);
+            background-size: 200% auto; color: #000;
+            background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            animation: shine 6s linear infinite;
+        }
+        @keyframes shine { to { background-position: 200% center; } }
+        .lesson-subtitle { font-size: 18px; color: var(--text-muted); line-height: 1.6; max-width: 660px; font-weight: 500; }
+
+        /* ─── 3D CARDS (LESSON BLOCKS) ─── */
+        #cardBody { width: 100%; display: flex; flex-direction: column; gap: 32px; }
+
+        .lesson-block {
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,1); border-radius: 24px;
+            position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
             overflow: hidden;
+            animation: smoothFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
         }
-
-        /* Hero Gradient (Instead of Image) */
-        .hero-gradient {
-            background: linear-gradient(135deg, #1E1B4B 0%, #4F46E5 100%);
-            padding: 40px; color: white; position: relative;
-        }
-        .lesson-chip {
-            display: inline-block; background: rgba(255,255,255,0.2); color: white;
-            padding: 6px 14px; border-radius: 8px; font-family: var(--font-display);
-            font-size: 12px; font-weight: 800; text-transform: uppercase;
-            letter-spacing: 1.5px; margin-bottom: 16px; border: 1px solid rgba(255,255,255,0.3);
-        }
-        .lesson-title {
-            font-family: var(--font-display); font-size: 34px;
-            font-weight: 800; line-height: 1.2; margin-bottom: 10px;
-        }
-        .lesson-concept { font-size: 18px; font-weight: 500; opacity: 0.9; line-height: 1.5; }
-
-        .card-body { padding: 40px; }
-
-        /* Section Titles */
-        .section { margin-bottom: 35px; }
-        .section-title {
-            font-family: var(--font-display); font-size: 13px; font-weight: 800;
-            color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.5px;
-            margin-bottom: 16px; display: flex; align-items: center; gap: 10px;
-        }
-        .section-title::after { content: ''; flex: 1; height: 2px; background: #F1F5F9; }
-
-        /* ───── CONTENT BLOCKS ───── */
-        .explain-box { background: #F8FAFC; border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
-        .explain-box p { font-size: 17px; line-height: 1.7; color: var(--ink-light); margin-bottom: 16px; }
-        .explain-box p:last-child { margin-bottom: 0; }
+        @keyframes smoothFadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         
-        .explain-truth {
-            background: #FEF2F2; border: 1px solid #FECDD3; border-radius: 12px;
-            padding: 16px; font-size: 16px; color: #9F1239; font-weight: 600;
-            margin-top: 16px; display: flex; align-items: flex-start; gap: 10px; line-height: 1.5;
+        .lesson-block:hover { 
+            transform: translateY(-8px) scale(1.01); 
+            box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.25); 
+            background: rgba(255, 255, 255, 0.95);
         }
+        .lesson-block::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--primary); transition: 0.3s; }
+        .lesson-block:hover::before { width: 10px; background: linear-gradient(to bottom, var(--primary), var(--secondary)); }
 
-        /* Lists */
+        .block-header { display: flex; align-items: center; gap: 16px; padding: 24px 32px; border-bottom: 1px solid rgba(0,0,0,0.03); }
+        .block-icon { 
+            width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; font-size: 22px; 
+            background: white; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); 
+            animation: floatIcon 3s ease-in-out infinite; 
+        }
+        @keyframes floatIcon { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+        
+        .block-header h2 { font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--text-main); }
+        .block-badge { margin-left: auto; font-family: var(--font-display); font-size: 11px; font-weight: 800; color: var(--primary); background: var(--primary-light); padding: 6px 12px; border-radius: 8px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .block-body { padding: 32px; font-size: 16px; line-height: 1.8; color: var(--text-main); }
+
+        /* Block Variations */
+        .blk-blue { border-color: #E0E7FF; }
+        .blk-brass { background: linear-gradient(145deg, #FFFCF5, #FFF3D6); border-color: #FDE68A; }
+        .blk-brass::before { background: #D97706; }
+        .blk-brass .block-badge { background: #FEF3C7; color: #D97706; }
+        
+        .blk-red { background: linear-gradient(145deg, #FEF2F2, #FEE2E2); border-color: #FECACA; }
+        .blk-red::before { background: var(--danger); }
+        .blk-red .block-badge { background: #FEE2E2; color: var(--danger); }
+        
+        .blk-terrain { background: linear-gradient(145deg, #ECFDF5, #D1FAE5); border-color: #A7F3D0; }
+        .blk-terrain::before { background: var(--success); }
+        .blk-terrain .block-badge { background: #D1FAE5; color: var(--success); }
+
+        .blk-dark { background: var(--text-main); color: white; border: none; }
+        .blk-dark .block-header h2 { color: white; }
+        .blk-dark::before { background: var(--primary); }
+        .blk-dark:hover { background: var(--text-main); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3); }
+
+        /* Inner Content Styling */
+        .premium-note { background: linear-gradient(135deg, var(--primary-light), white); border-left: 4px solid var(--primary); border-radius: 12px; padding: 20px; margin: 20px 0; font-weight: 500; color: #3730A3; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.1); }
+        .explain-truth { background: #FEF2F2; border: 1px solid #FECDD3; border-radius: 12px; padding: 16px; font-size: 15px; color: #9F1239; font-weight: 600; margin-top: 16px; display: flex; align-items: flex-start; gap: 10px; }
+        
         .list-container { display: flex; flex-direction: column; gap: 12px; }
-        .list-item {
-            border-radius: 16px; padding: 16px 20px; font-size: 16px;
-            font-weight: 500; display: flex; gap: 15px; align-items: flex-start; line-height: 1.5;
-        }
-        
-        .item-good { background: #F0FDF4; border: 1px solid #BBF7D0; color: #166534; }
-        .item-bad { background: #FFF1F2; border: 1px solid #FECDD3; color: #9F1239; }
-        .item-neutral { background: #F8FAFC; border: 1px solid var(--border); color: var(--ink); }
+        .list-item { padding: 16px 20px; border-radius: 12px; background: rgba(255,255,255,0.5); border: 1px solid rgba(0,0,0,0.05); display: flex; gap: 12px; align-items: flex-start; transition: transform 0.2s ease; }
+        .list-item:hover { transform: translateX(6px); background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+        .item-good { background: #F0FDF4; border-color: #BBF7D0; color: #166534; }
+        .item-bad { background: #FFF1F2; border-color: #FECDD3; color: #9F1239; }
+        .item-dark { background: #0F172A; color: white; border-color: #334155; }
+        .item-dark:hover { background: #1E293B; }
 
-        /* Breakdown Box */
-        .breakdown-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-        .bd-card { border-radius: 14px; padding: 16px; font-size: 15px; font-weight: 600; line-height: 1.5; }
-        .bd-label { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; opacity: 0.8; }
+        .breakdown-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+        .bd-card { border-radius: 14px; padding: 20px; font-size: 15px; font-weight: 500; }
+        .bd-label { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; opacity: 0.9; display: inline-block; padding: 4px 10px; border-radius: 6px; background: rgba(255,255,255,0.3); }
 
-        /* Business Task & Challenge */
-        .biz-box {
-            background: #FFFFFF; border: 1px solid var(--border); border-radius: 16px;
-            padding: 20px; display: flex; gap: 15px; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-        }
-        .biz-icon { width: 50px; height: 50px; border-radius: 12px; background: #EEF2FF; color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
-        
-        .challenge-box {
-            background: linear-gradient(135deg, #0F172A, #1E293B); border-radius: 16px;
-            padding: 24px; color: white; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
-        }
-        .challenge-header { font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #94A3B8; margin-bottom: 10px; }
-        .challenge-task { font-size: 18px; font-weight: 700; line-height: 1.5; margin-bottom: 15px; }
+        .biz-box { display: flex; gap: 16px; align-items: center; }
+        .biz-icon { width: 56px; height: 56px; border-radius: 16px; background: white; color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
 
-        /* ───── NAVIGATION BUTTONS ───── */
-        .nav-buttons { display: flex; gap: 15px; margin-top: 40px; width: 100%; }
-        .btn-action {
-            border: none; border-radius: 20px; padding: 22px;
-            font-family: var(--font-display); font-size: 18px; font-weight: 700;
-            cursor: pointer; transition: 0.3s;
-        }
-        .btn-prev { flex: 1; background: #F1F5F9; color: var(--ink-light); }
-        .btn-prev:hover { background: #E2E8F0; }
+        /* ─── ACTION BUTTONS ─── */
+        .nav-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 20px; flex-wrap: wrap; width: 100%; animation: smoothFadeUp 0.8s ease; }
         
+        .btn-prev {
+            background: white; color: var(--text-muted); border: 1px solid var(--border-soft);
+            border-radius: 16px; padding: 18px 28px; font-size: 15px; font-weight: 700; cursor: pointer;
+            font-family: var(--font-display); transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03); flex: 1; max-width: 200px;
+        }
+        .btn-prev:hover { background: var(--bg-base); color: var(--text-main); border-color: var(--primary); transform: translateY(-2px); }
+
         .btn-next {
-            flex: 2; background: var(--accent); color: white;
-            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white !important; border: none; border-radius: 16px;
+            padding: 18px 42px; font-size: 16px; font-weight: 800; cursor: pointer;
+            font-family: var(--font-display); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 35px var(--primary-glow);
+            position: relative; overflow: hidden; flex: 2; text-align: center;
         }
-        .btn-next:hover { background: var(--accent-hover); transform: translateY(-3px); box-shadow: 0 12px 25px rgba(79, 70, 229, 0.35); }
+        .btn-next::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent); transform: skewX(-20deg); animation: buttonShine 3s infinite; }
+        .btn-next:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 20px 45px rgba(236, 72, 153, 0.4); background: linear-gradient(135deg, #4338CA, #DB2777); }
 
-        /* ───── WIN SCREEN ───── */
-        .win-screen { display: none; text-align: center; padding: 60px 20px; width: 100%; }
-        .win-trophy { font-size: 90px; margin-bottom: 25px; }
-        .win-title { font-family: var(--font-display); font-size: 36px; font-weight: 800; margin-bottom: 15px; color: var(--ink); }
-        .win-sub { color: var(--ink-light); font-size: 18px; margin-bottom: 40px; line-height: 1.6; }
+        /* ─── WIN SCREEN ─── */
+        .win-screen { display: none; text-align: center; padding: 60px 20px; width: 100%; animation: smoothFadeUp 0.6s ease; }
+        .win-trophy { font-size: 90px; margin-bottom: 25px; filter: drop-shadow(0 10px 20px rgba(245, 158, 11, 0.4)); animation: floatIcon 3s infinite; }
+        .win-title { font-family: var(--font-display); font-size: 42px; font-weight: 900; margin-bottom: 15px; color: var(--text-main); letter-spacing: -1px; }
+        .win-sub { color: var(--text-muted); font-size: 18px; margin-bottom: 40px; line-height: 1.6; font-weight: 500; }
         
+        #confetti-layer { position: fixed; inset: 0; pointer-events: none; z-index: 2500; overflow: hidden; }
+
         @media (max-width: 600px) {
-            .hero-gradient { padding: 30px 20px; }
-            .card-body { padding: 25px 20px; }
-            .lesson-title { font-size: 28px; }
-            .explain-box p { font-size: 16px; }
-            .list-item { font-size: 15px; padding: 16px; }
-            .btn-action { font-size: 16px; padding: 18px; }
+            .lesson-hero h1 { font-size: 32px; }
+            .nav-buttons { flex-direction: column; }
+            .btn-prev, .btn-next { width: 100%; max-width: 100%; }
+            .block-header { padding: 20px; flex-direction: column; align-items: flex-start; gap: 12px; }
+            .block-badge { margin-left: 0; }
+            .block-body { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="/dashboard" class="close-btn">✕</a>
-    <div class="progress-wrap"><div class="progress-fill" id="progressFill"></div></div>
-    
-    <div style="display: flex; gap: 5px;">
-        <button class="lang-pill" onclick="switchLang('fr', this)">FR</button>
-        <button class="lang-pill" onclick="switchLang('en', this)">EN</button>
-        <button class="lang-pill" onclick="switchLang('ar', this)">AR</button>
-    </div>
+<div id="progress-bar-wrap"><div id="progress-bar-fill"></div></div>
+<div id="confetti-layer"></div>
 
-    <span class="step-counter" id="stepCounter">1 / 10</span>
-    <div class="xp-pill">⭐ <span id="xpHeader"><%= user.xp || 0 %></span> XP</div>
+<nav>
+    <div class="nav-left">
+        <a href="/dashboard" class="close-btn">✕</a>
+        <div class="nav-divider"></div>
+        <div class="ledger-balance progress" style="display:none;" id="mobileProgress">
+            <span class="lb-value">Mode: Viral</span>
+        </div>
+    </div>
+    
+    <div class="nav-right">
+        <div class="step-counter" id="stepCounter">1 / 1</div>
+        <div class="ledger-balance">
+            <span class="lb-label">XP</span>
+            <span class="lb-value" id="xpHeader"><%= user.xp || 0 %></span>
+        </div>
+        <div class="lang-switcher">
+            <button class="lang-pill" onclick="switchLang('fr', this)">FR</button>
+            <button class="lang-pill" onclick="switchLang('en', this)">EN</button>
+            <button class="lang-pill" onclick="switchLang('ar', this)">AR</button>
+        </div>
+    </div>
 </nav>
 
 <div class="page-wrap">
-    <div class="lesson-card" id="lessonCard">
-        <div id="cardBody"></div>
+    <div id="lessonContainer">
+        <div class="lesson-hero" id="lessonHero">
+            </div>
+        <div id="cardBody">
+            </div>
     </div>
 
     <div class="win-screen" id="winScreen">
         <div class="win-trophy">👑</div>
         <h1 class="win-title">Mode Dieu Activé !</h1>
-        <p class="win-sub">Vous maîtrisez maintenant les systèmes de contenu viral.<br>Prêt à dominer internet.</p>
-        <button class="btn-action btn-next" style="width: 100%; margin-top: 0;" onclick="finishMission()">Retour au Dashboard ➔</button>
+        <p class="win-sub">Vous maîtrisez maintenant ce module.<br>Prêt à dominer internet.</p>
+        <button class="btn-action btn-next" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;" onclick="finishMission()">Passer à la leçon suivante ➔</button>
     </div>
 </div>
 
@@ -218,15 +284,24 @@
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 <script>
-const rawData = JSON.parse(document.getElementById('lesson-data').textContent);
+const rawData = JSON.parse(document.getElementById('lesson-data').textContent || '{}');
 const LESSON_ID = parseInt("<%= lessonId %>");
 const COURSE = "<%= courseType %>";
-let steps = Array.isArray(rawData) ? rawData : (rawData.lessons || [rawData]);
+
+// 🔥 CRITICAL FIX: Ensure `steps` is always an array of actual content items
+let steps = [];
+if (Array.isArray(rawData)) {
+    steps = rawData;
+} else if (rawData.lessons && Array.isArray(rawData.lessons)) {
+    steps = rawData.lessons;
+} else if (Object.keys(rawData).length > 0) {
+    steps = [rawData]; // Single object lesson
+}
 
 // Language Persistence
 let currentLang = localStorage.getItem('siteLang') || 'fr';
 
-// Memory Persistence
+// Memory Persistence (Start from where left off)
 const memoryKey = `pos_${COURSE}_${LESSON_ID}`;
 let cursor = parseInt(localStorage.getItem(memoryKey)) || 0;
 if (cursor >= steps.length) cursor = 0;
@@ -238,7 +313,7 @@ function switchLang(lang, btn) {
     currentLang = lang;
     localStorage.setItem('siteLang', lang);
     document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
+    if(btn) btn.classList.add('active');
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
     render();
 }
@@ -257,176 +332,333 @@ function langArr(obj) {
     return [];
 }
 
-// UI Builders
-function section(icon, title, html) { 
-    return `<div class="section"><div class="section-title">${icon} ${title}</div>${html}</div>`; 
+// UI Block Builder
+function createBlock(icon, title, badge, cssClass, bodyHtml) {
+    if (!bodyHtml || !bodyHtml.trim()) return '';
+    return `
+        <div class="lesson-block ${cssClass}" style="animation-delay: 0.1s;">
+            <div class="block-header">
+                <div class="block-icon">${icon}</div>
+                <h2>${title}</h2>
+                <span class="block-badge">${badge}</span>
+            </div>
+            <div class="block-body">${bodyHtml}</div>
+        </div>
+    `;
 }
 
 function render() {
-    const step = steps[cursor];
+    try {
+        const rawStep = steps[cursor];
+        if (!rawStep) return;
 
-    // Progress Update
-    document.getElementById('stepCounter').innerText = `${cursor + 1} / ${steps.length}`;
-    document.getElementById('progressFill').style.width = `${((cursor + 1) / steps.length) * 100}%`;
-
-    let html = `
-        <div class="hero-gradient">
-            <div class="lesson-chip">Module ${cursor + 1}</div>
-            <h1 class="lesson-title">${lang(step.title)}</h1>
-            <div style="font-size: 16px; opacity: 0.9;">${lang(step.core_concept || step.concept)}</div>
-        </div>
-        <div class="card-body">
-    `;
-
-    // 1. Deep Explanation
-    if (step.deep_explanation) {
-        const de = step.deep_explanation;
-        let expHtml = `<div class="explain-box">`;
-        if (de.summary) expHtml += `<p>${lang(de.summary)}</p>`;
-        if (de.why_it_matters) expHtml += `<p><strong>Pourquoi c'est important :</strong> ${lang(de.why_it_matters)}</p>`;
-        if (de.internet_truth) expHtml += `<div class="explain-truth">⚠️ <span>${lang(de.internet_truth)}</span></div>`;
-        expHtml += `</div>`;
-        html += section('🧠', 'Compréhension Profonde', expHtml);
-    }
-
-    // 2. Automated Lists
-    const listFields = ['psychology','hook_types','visual_systems','emotion_types','retention_systems',
-                        'psychology_systems','story_systems','trend_systems','mindset_training',
-                        'audience_psychology','simulation_systems', 'advanced_story_psychology'];
-    
-    listFields.forEach(f => {
-        if (step[f]) {
-            const arr = langArr(step[f]);
-            if (arr.length) {
-                let listHtml = `<div class="list-container">`;
-                arr.forEach(item => { listHtml += `<div class="list-item item-neutral">💡 ${item}</div>`; });
-                listHtml += `</div>`;
-                html += section('⚙️', f.replace(/_/g,' ').toUpperCase(), listHtml);
+        // 🔥 SMART EXTRACTOR: Look inside `content` or `content.fr` if data is nested
+        let step = rawStep;
+        if (rawStep.content) {
+            if (rawStep.content[currentLang]) {
+                step = { ...rawStep, ...rawStep.content[currentLang] };
+            } else if (rawStep.content.fr) {
+                step = { ...rawStep, ...rawStep.content.fr };
+            } else {
+                step = { ...rawStep, ...rawStep.content };
             }
         }
-    });
 
-    // 3. Examples & Mistakes
-    if (step.real_examples) {
-        let lHtml = `<div class="list-container">`;
-        langArr(step.real_examples).forEach(i => { lHtml += `<div class="list-item item-good">${i}</div>`; });
-        lHtml += `</div>`;
-        html += section('✅', 'Exemples Réels', lHtml);
-    }
+        // Progress Update
+        const stepCounter = document.getElementById('stepCounter');
+        if (stepCounter) stepCounter.innerText = `${cursor + 1} / ${steps.length}`;
+        
+        const pb = document.getElementById('progress-bar-fill');
+        if (pb) pb.style.width = `${((cursor + 1) / steps.length) * 100}%`;
 
-    if (step.common_mistakes) {
-        let lHtml = `<div class="list-container">`;
-        langArr(step.common_mistakes).forEach(i => { lHtml += `<div class="list-item item-bad">${i}</div>`; });
-        lHtml += `</div>`;
-        html += section('❌', 'Erreurs Fatales', lHtml);
-    }
-
-    // 4. Breakdown
-    const bdFields = ['viral_analysis','hook_breakdown','caption_breakdown'];
-    bdFields.forEach(f => {
-        if (step[f]) {
-            const bd = step[f];
-            const bad = lang(bd.bad || bd.weak_intro || bd.problem);
-            const good = lang(bd.good || bd.better_version);
-            if (bad || good) {
-                let bdHtml = `<div class="breakdown-grid">`;
-                if(bad) bdHtml += `<div class="bd-card item-bad"><div class="bd-label">❌ Faible</div>${bad}</div>`;
-                if(good) bdHtml += `<div class="bd-card item-good"><div class="bd-label">✅ Puissant</div>${good}</div>`;
-                bdHtml += `</div>`;
-                html += section('🔄', 'Analyse Comparative', bdHtml);
-            }
+        // Hero Section
+        const heroEl = document.getElementById('lessonHero');
+        if (heroEl) {
+            heroEl.innerHTML = `
+                <div class="lesson-meta">🌟 Module ${cursor + 1}</div>
+                <h1>${lang(step.title) || 'Leçon ' + LESSON_ID}</h1>
+                <p class="lesson-subtitle">${lang(step.core_concept || step.concept || step.description || step.objectif || '')}</p>
+            `;
         }
-    });
 
-    // 5. Missions
-    const missions = langArr(step.missions || step.final_missions);
-    if (missions.length > 0) {
-        let lHtml = `<div class="list-container">`;
-        missions.forEach((m, idx) => { lHtml += `<div class="list-item item-neutral"><b>${idx+1}.</b> ${m}</div>`; });
-        lHtml += `</div>`;
-        html += section('🎯', 'Vos Missions', lHtml);
-    }
+        let blocksHtml = '';
 
-    // 6. Business Task
-    if (step.real_business_task) {
-        const rbt = step.real_business_task;
-        html += section('🏢', 'Application Business', `
-            <div class="biz-box">
-                <div class="biz-icon">💼</div>
-                <div>
-                    <div style="font-size:11px; font-weight:800; color:#64748B; text-transform:uppercase; margin-bottom:4px;">${lang(rbt.industry)}</div>
-                    <div style="font-size:16px; font-weight:600;">${lang(rbt.task)}</div>
+        // 1. Deep Explanation (Marketing) / Explication (Accounting fallback)
+        const explanationData = step.deep_explanation || step.explication;
+        if (explanationData) {
+            let expHtml = ``;
+            if (typeof explanationData === 'string') {
+                expHtml += `<p>${explanationData}</p>`;
+            } else {
+                if (explanationData.summary) expHtml += `<p>${lang(explanationData.summary)}</p>`;
+                if (explanationData.why_it_matters) expHtml += `<div class="premium-note"><strong>Pourquoi c'est important :</strong><br>${lang(explanationData.why_it_matters)}</div>`;
+                if (explanationData.internet_truth) expHtml += `<div class="explain-truth">⚠️ <span>${lang(explanationData.internet_truth)}</span></div>`;
+            }
+            blocksHtml += createBlock('🧠', 'Compréhension Profonde', 'Théorie', 'blk-blue', expHtml);
+        }
+
+        // 2. Automated Lists (All possible keys included)
+        const listFields = [
+            { key: 'psychology', icon: '🧠', title: 'Psychologie' },
+            { key: 'psychology_systems', icon: '🧠', title: 'Systèmes Psychologiques' },
+            { key: 'audience_psychology', icon: '👥', title: 'Psychologie de l\'Audience' },
+            { key: 'mindset_training', icon: '🧘', title: 'Mindset & Mental' },
+            { key: 'hook_types', icon: '🪝', title: 'Types de Hooks' },
+            { key: 'visual_systems', icon: '👁️', title: 'Systèmes Visuels' },
+            { key: 'emotion_types', icon: '❤️', title: 'Déclencheurs Émotionnels' },
+            { key: 'retention_systems', icon: '⏱️', title: 'Rétention' },
+            { key: 'story_systems', icon: '📖', title: 'Storytelling' },
+            { key: 'advanced_story_psychology', icon: '📖', title: 'Storytelling Avancé' },
+            { key: 'trend_systems', icon: '📈', title: 'Analyse des Tendances' },
+            { key: 'simulation_systems', icon: '🎮', title: 'Simulation & Pratique' }
+        ];
+        
+        listFields.forEach(f => {
+            if (step[f.key]) {
+                const arr = langArr(step[f.key]);
+                if (arr.length) {
+                    let listHtml = `<div class="list-container">`;
+                    arr.forEach(item => { listHtml += `<div class="list-item">💡 <span>${item}</span></div>`; });
+                    listHtml += `</div>`;
+                    blocksHtml += createBlock(f.icon, f.title, 'Système', 'blk-blue', listHtml);
+                }
+            }
+        });
+
+        // 3. Examples & Mistakes
+        const examplesData = step.real_examples || step.exemple;
+        if (examplesData) {
+            let lHtml = `<div class="list-container">`;
+            if (typeof examplesData === 'string') {
+                lHtml += `<div class="list-item item-good">✅ <span>${examplesData}</span></div>`;
+            } else {
+                langArr(examplesData).forEach(i => { lHtml += `<div class="list-item item-good">✅ <span>${i}</span></div>`; });
+            }
+            lHtml += `</div>`;
+            blocksHtml += createBlock('📊', 'Exemples Réels', 'Pratique', 'blk-terrain', lHtml);
+        }
+
+        if (step.common_mistakes || step.piege_frequent) {
+            let lHtml = `<div class="list-container">`;
+            const mistakes = step.common_mistakes || step.piege_frequent;
+            if (typeof mistakes === 'string') {
+                lHtml += `<div class="list-item item-bad">❌ <span>${mistakes}</span></div>`;
+            } else {
+                langArr(mistakes).forEach(i => { lHtml += `<div class="list-item item-bad">❌ <span>${i}</span></div>`; });
+            }
+            lHtml += `</div>`;
+            blocksHtml += createBlock('⚠️', 'Erreurs Fatales', 'Attention', 'blk-red', lHtml);
+        }
+
+        // 4. Breakdown
+        const bdFields = ['viral_analysis','hook_breakdown','caption_breakdown'];
+        bdFields.forEach(f => {
+            if (step[f]) {
+                const bd = step[f];
+                const bad = lang(bd.bad || bd.weak_intro || bd.problem);
+                const good = lang(bd.good || bd.better_version);
+                if (bad || good) {
+                    let bdHtml = `<div class="breakdown-grid">`;
+                    if(bad) bdHtml += `<div class="bd-card item-bad"><div class="bd-label">❌ Version Faible</div>${bad}</div>`;
+                    if(good) bdHtml += `<div class="bd-card item-good"><div class="bd-label">✅ Version Virale</div>${good}</div>`;
+                    bdHtml += `</div>`;
+                    blocksHtml += createBlock('🔄', 'Analyse Comparative', 'Breakdown', 'blk-blue', bdHtml);
+                }
+            }
+        });
+
+        // 5. Missions
+        const missions = langArr(step.missions || step.final_missions || step.mission_terrain);
+        if (missions.length > 0 && Array.isArray(missions)) {
+            let lHtml = `<div class="list-container">`;
+            missions.forEach((m, idx) => { lHtml += `<div class="list-item"><b>${idx+1}.</b> <span>${m}</span></div>`; });
+            lHtml += `</div>`;
+            blocksHtml += createBlock('🎯', 'Vos Missions', 'Action', 'blk-gold', lHtml);
+        } else if (typeof (step.missions || step.final_missions || step.mission_terrain) === 'string') {
+            blocksHtml += createBlock('🎯', 'Vos Missions', 'Action', 'blk-gold', `<div class="list-container"><div class="list-item"><b>1.</b> <span>${step.missions || step.final_missions || step.mission_terrain}</span></div></div>`);
+        }
+
+        // 6. Business Task
+        if (step.real_business_task) {
+            const rbt = step.real_business_task;
+            blocksHtml += createBlock('🏢', 'Application Business', 'Cas Réel', 'blk-brass', `
+                <div class="biz-box">
+                    <div class="biz-icon">💼</div>
+                    <div>
+                        <div style="font-size:11px; font-weight:800; color:#64748B; text-transform:uppercase; margin-bottom:4px;">${lang(rbt.industry)}</div>
+                        <div style="font-size:16px; font-weight:600;">${lang(rbt.task)}</div>
+                    </div>
                 </div>
+            `);
+        }
+
+        // 7. Pro Secrets & AI
+        if (step.pro_secrets || step.secret_pro) {
+            let lHtml = `<div class="list-container">`;
+            const secrets = step.pro_secrets || step.secret_pro;
+            if (typeof secrets === 'string') {
+                lHtml += `<div class="list-item item-dark">⚡ <span>${secrets}</span></div>`;
+            } else {
+                langArr(secrets).forEach(i => { lHtml += `<div class="list-item item-dark">⚡ <span>${i}</span></div>`; });
+            }
+            lHtml += `</div>`;
+            blocksHtml += createBlock('🔐', 'Secrets de Pro', 'Insider', 'blk-dark', lHtml);
+        }
+        
+        if (step.ai_feedback_examples) {
+            let lHtml = `<div class="list-container">`;
+            langArr(step.ai_feedback_examples).forEach(i => { lHtml += `<div class="list-item" style="background:#EEF2FF; border-color:#C7D2FE;">🤖 <span>${i}</span></div>`; });
+            lHtml += `</div>`;
+            blocksHtml += createBlock('🧠', 'Algorithme & IA', 'Tech', 'blk-blue', lHtml);
+        }
+
+        // 8. Challenge / Pratique
+        if (step.challenge_mode || step.pratique) {
+            const ch = step.challenge_mode || step.pratique;
+            let chHtml = "";
+            if (typeof ch === 'string') {
+                chHtml = `<div style="font-size: 16px; line-height: 1.5;">${ch}</div>`;
+            } else {
+                chHtml = `
+                    <div style="font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #94A3B8; margin-bottom: 10px;">Défi Premium</div>
+                    <div style="font-size: 18px; font-weight: 700; line-height: 1.5; margin-bottom: 15px;">${lang(ch.task || ch.instruction)}</div>
+                    <div style="background:rgba(255,255,255,0.2); display:inline-block; padding:5px 12px; border-radius:50px; font-size:12px; font-weight:700;">⭐ +${ch.reward_xp || 100} XP</div>
+                `;
+            }
+            
+            blocksHtml += createBlock('🏆', 'Mode Défi', 'Challenge', 'blk-gold', `
+                <div style="background: linear-gradient(135deg, #0F172A, #1E293B); border-radius: 16px; padding: 24px; color: white; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);">
+                    ${chHtml}
+                </div>
+            `);
+        }
+
+        // 🛑 FALLBACK ANTI-BLANK-SCREEN
+        if (!blocksHtml.trim()) {
+            blocksHtml = createBlock('📄', 'Contenu', 'Info', 'blk-blue', `
+                <div style="font-size: 16px; line-height: 1.6; color: var(--text-main);">
+                    ${lang(step.description || step.objectif || "Le contenu détaillé de cette leçon est en cours de préparation. Cliquez sur 'Continuer' pour valider.")}
+                </div>
+            `);
+        }
+
+        // 🚀 SMART NAV BUTTONS LOGIC
+        let prevBtnHtml = '';
+        if (cursor > 0) {
+            // Agar step 2 ya usse aage hai, toh pichle step par bhejo
+            prevBtnHtml = `<button class="btn-prev" onclick="handlePrev()">← Étape précédente</button>`;
+        } else if (LESSON_ID > 1) {
+            // Agar step 1 par hai aur Lesson 2 ya aage hai, toh pichle LESSON par bhejo
+            prevBtnHtml = `<a href="/lesson/${COURSE}/${LESSON_ID - 1}" class="btn-prev" style="text-decoration:none; display:flex; align-items:center; justify-content:center;">← Leçon précédente</a>`;
+        }
+
+        blocksHtml += `
+            <div class="nav-buttons">
+                ${prevBtnHtml}
+                <button class="btn-next" onclick="handleNext()">
+                    ${cursor < steps.length - 1 ? 'Continuer le cours ➔' : 'Terminer le Module 🏆'}
+                </button>
             </div>
-        `);
-    }
+        `;
+        
+        const cardBody = document.getElementById('cardBody');
+        if (cardBody) cardBody.innerHTML = blocksHtml;
 
-    // 7. Pro Secrets & AI
-    if (step.pro_secrets) {
-        let lHtml = `<div class="list-container">`;
-        langArr(step.pro_secrets).forEach(i => { lHtml += `<div class="list-item item-neutral" style="background:#0F172A; color:white; border:none;">⚡ ${i}</div>`; });
-        lHtml += `</div>`;
-        html += section('🔐', 'Secrets de Pro', lHtml);
+    } catch(err) {
+        console.error("Erreur de rendu (Render Error):", err);
     }
-    
-    if (step.ai_feedback_examples) {
-        let lHtml = `<div class="list-container">`;
-        langArr(step.ai_feedback_examples).forEach(i => { lHtml += `<div class="list-item item-neutral" style="background:#EEF2FF; border-color:#C7D2FE;">🤖 ${i}</div>`; });
-        lHtml += `</div>`;
-        html += section('🧠', 'Réactions de l\'Algorithme', lHtml);
-    }
-
-    // 8. Challenge
-    if (step.challenge_mode) {
-        const ch = step.challenge_mode;
-        html += section('🏆', 'Mode Défi', `
-            <div class="challenge-box">
-                <div class="challenge-header">Défi Premium</div>
-                <div class="challenge-task">${lang(ch.task || ch.instruction)}</div>
-                <div style="background:rgba(255,255,255,0.2); display:inline-block; padding:5px 12px; border-radius:50px; font-size:12px; font-weight:700;">⭐ +${ch.reward_xp || 100} XP</div>
-            </div>
-        `);
-    }
-
-    // Nav Buttons
-    html += `
-        <div class="nav-buttons">
-            ${cursor > 0 ? `<button class="btn-action btn-prev" onclick="handlePrev()">← Retour</button>` : ''}
-            <button class="btn-action btn-next" onclick="handleNext()">
-                ${cursor < steps.length - 1 ? 'Continuer ➔' : 'Terminer le Module 🏆'}
-            </button>
-        </div>
-        </div>
-    `;
-    
-    document.getElementById('cardBody').innerHTML = html;
 }
 
-window.handlePrev = () => { if (cursor > 0) { cursor--; localStorage.setItem(memoryKey, cursor); window.scrollTo({ top: 0, behavior: 'smooth' }); render(); } };
+window.handlePrev = () => { 
+    if (cursor > 0) { 
+        cursor--; 
+        localStorage.setItem(memoryKey, cursor); 
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+        render(); 
+    } 
+};
 
 window.handleNext = () => {
-    const currentXp = steps[cursor].xp || 50;
+    const currentXp = steps[cursor]?.xp || 50;
     totalXpGained += currentXp;
-    document.getElementById('xpHeader').innerText = parseInt(document.getElementById('xpHeader').innerText) + currentXp;
+    
+    // XP Animation
+    const xpEl = document.getElementById('xpHeader');
+    if (xpEl) {
+        xpEl.innerText = parseInt(xpEl.innerText) + currentXp;
+        xpEl.style.transform = "scale(1.3)";
+        xpEl.style.color = "var(--gold)";
+        setTimeout(() => { xpEl.style.transform = "scale(1)"; xpEl.style.color = "var(--primary)"; }, 300);
+    }
+
     cursor++;
-    if (cursor < steps.length) { localStorage.setItem(memoryKey, cursor); window.scrollTo({ top: 0, behavior: 'smooth' }); render(); }
-    else { localStorage.removeItem(memoryKey); document.getElementById('lessonCard').style.display = 'none'; document.getElementById('winScreen').style.display = 'block'; confetti({ particleCount: 200, spread: 100, origin: { y: 0.5 } }); }
+    if (cursor < steps.length) { 
+        localStorage.setItem(memoryKey, cursor); 
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+        render(); 
+    }
+    else { 
+        // End of lesson
+        localStorage.removeItem(memoryKey); 
+        const lc = document.getElementById('lessonContainer');
+        const ws = document.getElementById('winScreen');
+        if(lc) lc.style.display = 'none'; 
+        if(ws) ws.style.display = 'block'; 
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Throw Confetti
+        if (typeof confetti === 'function') {
+            var duration = 3 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 3000 };
+            function randomInRange(min, max) { return Math.random() * (max - min) + min; }
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+                if (timeLeft <= 0) return clearInterval(interval);
+                var particleCount = 50 * (timeLeft / duration);
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+    }
 };
 
 window.finishMission = async () => {
+    // 🚀 Change button text to show loading state
+    const btn = document.querySelector('.win-screen .btn-next');
+    if (btn) {
+        btn.disabled = true;
+        btn.innerText = "Chargement... ⏳";
+    }
+
     try {
         await fetch('/api/progress/complete', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ lessonId: LESSON_ID, courseType: COURSE, xpEarned: totalXpGained })
         });
-    } catch(e) {}
-    window.location.href = '/dashboard';
+    } catch(e) { console.error(e) }
+    
+    // 👑 Redirect logic (Free tier gets blocked after marketing lesson 4)
+    const currentIdNum = parseInt(LESSON_ID);
+    const nextId = currentIdNum + 1;
+    const userPlan = "<%= user && user.subscription && user.subscription.plan ? user.subscription.plan : 'free' %>";
+    const userRole = "<%= user && user.role ? user.role : 'user' %>";
+    const isPro = userPlan === 'premium' || userRole === 'admin';
+
+    if (!isPro && nextId > 4) {
+        window.location.href = `/premium`; 
+    } else {
+        // Automatically go to the next lesson
+        window.location.href = `/lesson/${COURSE}/${nextId}`;
+    }
 };
 
 window.onload = () => {
     const btns = document.querySelectorAll('.lang-pill');
-    btns.forEach(b => b.classList.toggle('active', b.innerText.toLowerCase() === currentLang));
+    btns.forEach(b => {
+        if(b.innerText.toLowerCase() === currentLang) b.classList.add('active');
+    });
     document.documentElement.dir = (currentLang === 'ar') ? 'rtl' : 'ltr';
     render();
 };
