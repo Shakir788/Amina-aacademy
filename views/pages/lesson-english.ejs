@@ -443,10 +443,29 @@
                 const target = exercises[currentIndex].en.toLowerCase().replace(/[^\w\s\']/g, "").trim();
                 const cleanSpeech = said.replace(/[^\w\s\']/g, "").trim();
 
-                let matched = (cleanSpeech.includes(target) || target.includes(cleanSpeech));
+                                const speechMatches = (saidRaw, targetRaw) => {
+                    const contractions = { "i'm":"i am","you're":"you are","he's":"he is","she's":"she is","it's":"it is","we're":"we are","they're":"they are","that's":"that is","don't":"do not","doesn't":"does not","can't":"can not","won't":"will not","i'll":"i will","i've":"i have","let's":"let us","isn't":"is not","didn't":"did not" };
+                    const norm = (t) => {
+                        let s = t.toLowerCase().replace(/[’‘]/g, "'").replace(/[^\w\s']/g, " ");
+                        s = s.split(/\s+/).filter(Boolean).map(w => contractions[w] || w).join(" ");
+                        return s.split(/\s+/).filter(Boolean);
+                    };
+                    const a = norm(saidRaw), b = norm(targetRaw);
+                    if (!a.length || !b.length) return false;
+                    // Target ke kitne words sahi order me bole gaye (LCS)
+                    const dp = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+                    for (let i = 1; i <= a.length; i++)
+                        for (let j = 1; j <= b.length; j++)
+                            dp[i][j] = a[i-1] === b[j-1] ? dp[i-1][j-1] + 1 : Math.max(dp[i-1][j], dp[i][j-1]);
+                    const ratio = dp[a.length][b.length] / b.length;
+                    const need = b.length <= 4 ? 1 : 0.8; // chhote sentence pura, lambe me 80%
+                    return ratio >= need;
+                };
+
+                let matched = speechMatches(said, exercises[currentIndex].en);
                 if (!matched && exercises[currentIndex].variations) {
                     for (let v of exercises[currentIndex].variations) {
-                        if (cleanSpeech.includes(v.toLowerCase().trim())) { matched = true; break; }
+                        if (speechMatches(said, v)) { matched = true; break; }
                     }
                 }
 
@@ -580,13 +599,22 @@
             }
         };
 
-        window.finishSession = async () => {
+                window.finishSession = async () => {
             try {
-                await fetch('/api/progress/complete', {
+                const res = await fetch('/api/progress/complete', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ lessonId: CURRENT_LESSON_ID, courseType: window.CURRENT_COURSE_TYPE, xpEarned: sessionXp })
                 });
+
+                // Daily limit: 
+                if (res.status === 429) {
+                    const data = await res.json();
+                    showToast(data.message);
+                    setTimeout(() => { window.location.href = '/dashboard'; }, 3500);
+                    return;
+                }
+
                 window.location.href = '/dashboard';
             } catch (e) { window.location.href = '/dashboard'; }
         };

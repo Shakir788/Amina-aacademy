@@ -6,6 +6,8 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const http = require('http'); 
+const WebSocket = require('ws'); 
 
 const connectDB = require('./config/db.js');
 const User = require('./models/User'); 
@@ -17,6 +19,9 @@ const { protect } = require('./middleware/authMiddleware');
 const { getDashboard } = require('./controllers/progressController');
 const { isAdmin } = require('./middleware/adminMiddleware');
 const { getAdminDashboard, upgradeUser, deleteUser } = require('./controllers/adminController');
+
+// 🔥 IMPORT THE REAL AI VOICE PROXY 🔥
+const attachLiveVoiceProxy = require('./liveVoiceProxy');
 
 connectDB();
 
@@ -126,6 +131,21 @@ app.get('/lesson/:course/:id', protect, (req, res) => {
     
     if (!/^\d+$/.test(id)) return res.redirect('/dashboard');
 
+    
+    // Free users sirf Phase 1 ke lessons dekh sakte hain
+    if (!req.user.isPremium && req.user.role !== 'admin') {
+        let freeIds = [];
+        const cfg = COURSE_CONFIG[course];
+        if (cfg) {
+            try {
+                const p1 = JSON.parse(fs.readFileSync(path.join(__dirname, cfg.folder, 'phase1.json'), 'utf8'));
+                const list = Array.isArray(p1) ? p1 : (p1.lessons || [p1]);
+                freeIds = list.map(l => Number(l.id));
+            } catch (e) {}
+        }
+        if (!freeIds.includes(Number(id))) return res.redirect('/premium');
+    }
+
     const config = COURSE_CONFIG[course] || DEFAULT_COURSE;
     const folderPath = path.join(__dirname, config.folder);
 
@@ -138,14 +158,12 @@ app.get('/lesson/:course/:id', protect, (req, res) => {
         const files = fs.readdirSync(folderPath);
         let correctLessonData = null;
 
-        // Saari JSON files mein loop lagao us folder ke andar
         for (const file of files) {
             if (file.startsWith(config.filePrefix) && file.endsWith('.json')) {
                 const filePath = path.join(folderPath, file);
                 const fileContent = fs.readFileSync(filePath, 'utf8');
                 const parsedData = JSON.parse(fileContent);
 
-                // Agar file ek Array hai (jaise phase1.json)
                 if (Array.isArray(parsedData)) {
                     const foundLesson = parsedData.find(l => String(l.id) === String(id));
                     if (foundLesson) {
@@ -153,7 +171,6 @@ app.get('/lesson/:course/:id', protect, (req, res) => {
                         break;
                     }
                 } 
-                // Agar file { lessons: [...] } structure mein hai
                 else if (parsedData.lessons && Array.isArray(parsedData.lessons)) {
                     const foundLesson = parsedData.lessons.find(l => String(l.id) === String(id));
                     if (foundLesson) {
@@ -161,7 +178,6 @@ app.get('/lesson/:course/:id', protect, (req, res) => {
                         break;
                     }
                 } 
-                // Agar file direct ek single object hai
                 else if (String(parsedData.id) === String(id)) {
                     correctLessonData = parsedData;
                     break;
@@ -169,13 +185,11 @@ app.get('/lesson/:course/:id', protect, (req, res) => {
             }
         }
 
-        // Agar kisi file mein ye lesson ID nahi mila
         if (!correctLessonData) {
             console.error(`❌ Lesson id=${id} not found in any ${config.filePrefix} file inside ${folderPath}`);
             return res.redirect('/dashboard');
         }
 
-        // Sab sahi mila toh render kar do
         res.render(config.view, { 
             user: req.user, 
             lessonId: id,
@@ -196,7 +210,13 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something went wrong.');
 });
 
+// 🚀 CREATE HTTP SERVER 🚀
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
+const server = http.createServer(app);
+
+// 🎤 ATTACH THE REAL WEBSOCKET SERVER (Connecting Proxy!) 🎤
+attachLiveVoiceProxy(server); 
+
+server.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
 
 module.exports = app;

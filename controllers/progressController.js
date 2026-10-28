@@ -7,73 +7,108 @@ const User = require('../models/User');
  * @route   POST /api/progress/complete
  * @access  Private
  */
+// ---- Real lesson IDs data folders se padho ----
+const ALLOWED_COURSES = ['accounting', 'english', 'marketing'];
+const COURSE_IDS = {};
+
+const getCourseIds = (course) => {
+    if (COURSE_IDS[course]) return COURSE_IDS[course];
+    const folder = path.join(__dirname, '../data', course);
+    const ids = new Set();
+    if (fs.existsSync(folder)) {
+        for (const file of fs.readdirSync(folder)) {
+            if (!file.startsWith('phase') || !file.endsWith('.json')) continue;
+            try {
+                const parsed = JSON.parse(fs.readFileSync(path.join(folder, file), 'utf8'));
+                const list = Array.isArray(parsed) ? parsed : (parsed.lessons || [parsed]);
+                list.forEach(l => { if (Number.isInteger(Number(l.id))) ids.add(Number(l.id)); });
+            } catch (e) {}
+        }
+    }
+    COURSE_IDS[course] = [...ids].sort((a, b) => a - b);
+    return COURSE_IDS[course];
+};
+
+const nextLessonId = (course, current) => getCourseIds(course).find(id => id > current) || null;
+
 exports.markLessonComplete = async (req, res) => {
     try {
-        const { lessonId, courseType = 'accounting' } = req.body; 
-        const userId = req.user.id || req.user._id; 
+        const { lessonId, courseType = 'accounting' } = req.body;
+
+        if (!ALLOWED_COURSES.includes(courseType)) {
+            return res.status(400).json({ success: false, message: 'Cours invalide' });
+        }
+
         const lessonNumber = parseInt(lessonId);
+        if (!getCourseIds(courseType).includes(lessonNumber)) {
+            return res.status(400).json({ success: false, message: 'Leçon invalide' });
+        }
 
-        const user = await User.findById(userId);
+        const user = await User.findById(req.user.id || req.user._id);
 
-        // 🏗️ Safety: Ensure the progress sub-object exists for ANY course
         if (!user.progress[courseType]) {
             user.progress[courseType] = { completedLessons: [], lastUnlockedLesson: 1 };
         }
 
-        let xpGained = 0;
-        let isNewCompletion = false;
+        // Locked lesson ko complete karke XP farm nahi kar sakte
+        if (lessonNumber > user.progress[courseType].lastUnlockedLesson) {
+            return res.status(403).json({ success: false, message: 'Leçon verrouillée' });
+        }
 
-        // 1. Mark current lesson as complete & Add XP
+        
+        // Pacing: roz sirf 2 naye lessons (sab courses mila ke)
+        const DAILY_NEW_LIMIT = 2;
+        const todayKey = new Date().toLocaleDateString('en-CA', { timeZone: 'Africa/Casablanca' });
+        if (!user.dailyNew || user.dailyNew.day !== todayKey) {
+            user.dailyNew = { day: todayKey, count: 0 };
+        }
+        const isNew = !user.progress[courseType].completedLessons.includes(lessonNumber);
+        if (isNew && user.dailyNew.count >= DAILY_NEW_LIMIT) {
+            return res.status(429).json({
+                success: false,
+                limitDaily: true,
+                message: "Limite du jour atteinte : 2 nouvelles leçons par jour. Reviens demain !"
+            });
+        }
+        if (isNew) user.dailyNew.count += 1;
+
+        let xpGained = 0;
+
         if (!user.progress[courseType].completedLessons.includes(lessonNumber)) {
             user.progress[courseType].completedLessons.push(lessonNumber);
-            
-            // 🎮 GAMIFICATION: XP Logic
-            xpGained = courseType === 'marketing' ? 30 : 20; 
+            xpGained = courseType === 'marketing' ? 30 : 20;
             user.xp = (user.xp || 0) + xpGained;
-            isNewCompletion = true;
         }
 
-        // 2. Unlock logic (Accounting: 40, English: 30, Marketing: 20)
-        let limit = 30;
-        if (courseType === 'accounting') limit = 40;
-        if (courseType === 'marketing') limit = 20;
-
-        const nextLesson = lessonNumber + 1;
-        
-        if (user.progress[courseType].lastUnlockedLesson < nextLesson && nextLesson <= limit) {
-            user.progress[courseType].lastUnlockedLesson = nextLesson;
+        // Next lesson unlock (gaps bhi handle hote hain)
+        const next = nextLessonId(courseType, lessonNumber);
+        if (next && user.progress[courseType].lastUnlockedLesson < next) {
+            user.progress[courseType].lastUnlockedLesson = next;
         }
 
-        // 🎮 GAMIFICATION: STREAK LOGIC (Duolingo Style)
+        // Streak
         const now = new Date();
         const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
-        
+        const oneDay = 24 * 60 * 60 * 1000;
+
         if (!user.streak.lastActive) {
             user.streak.current = 1;
         } else {
-            const lastActiveDate = new Date(user.streak.lastActive);
-            const lastActiveDay = new Date(lastActiveDate.getFullYear(), lastActiveDate.getMonth(), lastActiveDate.getDate()).getTime();
-            const oneDay = 24 * 60 * 60 * 1000;
-
-            if (today - lastActiveDay === oneDay) {
-                user.streak.current += 1;
-            } else if (today - lastActiveDay > oneDay) {
-                user.streak.current = 1; // Gap ho gaya
-            }
+            const last = new Date(user.streak.lastActive);
+            const lastDay = new Date(last.getFullYear(), last.getMonth(), last.getDate()).getTime();
+            if (today - lastDay === oneDay) user.streak.current += 1;
+            else if (today - lastDay > oneDay) user.streak.current = 1;
         }
         user.streak.lastActive = now;
 
-        // Save all changes to Database
-        user.markModified('progress'); 
-        await user.save(); 
+        user.markModified('progress');
+        await user.save();
 
-        console.log(`✅ Progress: [${courseType.toUpperCase()}] Phase ${lessonNumber} complete. Next: ${user.progress[courseType].lastUnlockedLesson}. XP: ${user.xp}, Streak: ${user.streak.current}`);
-
-        res.status(200).json({ 
-            success: true, 
+        res.status(200).json({
+            success: true,
             message: xpGained > 0 ? `Progression sauvegardée ! +${xpGained} XP gagné 🌟` : 'Progression sauvegardée !',
             nextLesson: user.progress[courseType].lastUnlockedLesson,
-            xpGained: xpGained,
+            xpGained,
             totalXp: user.xp,
             currentStreak: user.streak.current
         });
@@ -82,7 +117,6 @@ exports.markLessonComplete = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
-
 /**
  * @desc    Load Dashboard with Multi-Track data from separate folders
  * @route   GET /dashboard

@@ -15,13 +15,24 @@ exports.getAdminDashboard = async (req, res) => {
 // User ko premium banane ke liye API
 exports.upgradeUser = async (req, res) => {
     try {
-        const { userId } = req.body;
-        
+        // months: 1, 3, 6 ya 'lifetime'. Kuch na bheje to 3 mahine (pehle jaisa)
+        const { userId, months = 3 } = req.body;
+
+        let expiresAt = null; // null = lifetime
+        if (String(months) !== 'lifetime') {
+            const m = parseInt(months);
+            if (!m || m < 1) {
+                return res.status(400).json({ success: false, message: "Durée invalide" });
+            }
+            expiresAt = new Date(Date.now() + m * 30 * 24 * 60 * 60 * 1000);
+        }
+
         const updatedUser = await User.findByIdAndUpdate(
             userId,
             {
+                isPremium: true, // AI paywall isi ko check karta hai
                 'subscription.plan': 'premium',
-                'subscription.expiresAt': new Date(Date.now() + 90 * 24 * 60 * 60 * 1000) // 90 days expiration
+                'subscription.expiresAt': expiresAt
             },
             { new: true }
         );
@@ -35,7 +46,6 @@ exports.upgradeUser = async (req, res) => {
         res.status(500).json({ success: false, message: error.message });
     }
 };
-
 // 🚀 NAYA: User ko permanently delete karne ke liye API
 exports.deleteUser = async (req, res) => {
     try {

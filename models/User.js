@@ -41,6 +41,12 @@ const userSchema = new mongoose.Schema({
         lastActive: { type: Date, default: null }
     },
 
+        // Pacing:
+    dailyNew: {
+        day: { type: String, default: '' },
+        count: { type: Number, default: 0 }
+    },
+
     // 4. Multi-Course Progress System 🏗️ [UPDATED: Added Marketing]
     progress: {
         accounting: {

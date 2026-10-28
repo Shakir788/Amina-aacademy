@@ -156,7 +156,7 @@
     .send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
     /* =========================================
-       2. FULL SCREEN LIVE CALL OVERLAY 🚀
+       2. FULL SCREEN LIVE CALL OVERLAY
        ========================================= */
     .call-overlay {
         position: fixed; inset: 0; background: rgba(5, 5, 5, 0.95); 
@@ -169,6 +169,8 @@
     .call-header { text-align: center; color: #fff; margin-top: 20px;}
     .call-header h2 { font-size: 32px; font-weight: 700; margin-bottom: 8px; font-family: 'Playfair Display', serif; }
     .call-status { font-size: 14px; color: #22c55e; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+    .call-status.error { color: #ef4444; }
+    .call-status.connecting { color: #fbbf24; }
 
     .avatar-wrapper { position: relative; display: flex; align-items: center; justify-content: center; margin-top: -20px; }
     .avatar-wrapper img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; z-index: 10; border: 3px solid #fbbf24; box-shadow: 0 0 30px rgba(251, 191, 36, 0.3); }
@@ -252,7 +254,7 @@
 
 <script>
     // ==========================================
-    // 1. TEXT CHAT LOGIC (ORIGINAL)
+    // 1. TEXT CHAT LOGIC
     // ==========================================
     function toggleAIPanel() {
         const panel = document.getElementById('aiPanel');
@@ -336,240 +338,122 @@
         }
     }
 
-    window.triggerAICoachError = async function(whatTheySaid, target) {
-        document.getElementById('aiPanel').style.display = 'flex';
-        appendAIMessage(`J'ai dit "${whatTheySaid}" au lieu de "${target}". Pourquoi ?`, 'user');
-        const typingId = 'typing-' + Date.now();
-        const typingDiv = document.createElement('div');
-        typingDiv.className = 'ai-msg-bubble ai-system-msg';
-        typingDiv.id = typingId;
-        typingDiv.innerHTML = '<span style="color:#64748B; font-style:italic;">Amina écrit...</span>';
-        document.getElementById('aiMessages').appendChild(typingDiv);
-        document.getElementById('aiMessages').scrollTop = document.getElementById('aiMessages').scrollHeight;
-        try {
-            const aiRes = await fetch('/api/ai/coach', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ userSaid: whatTheySaid, correctText: target, courseType: window.CURRENT_COURSE_TYPE || 'english' })
-            });
-            const aiData = await aiRes.json();
-            document.getElementById(typingId).remove();
-            if (aiData.limitReached) {
-                lockChatWithPaywall(aiData.feedback || aiData.message || "Tu as atteint ta limite de messages gratuits.");
-                return;
-            }
-            if(aiData.feedback) { appendAIMessage(aiData.feedback, 'ai'); }
-        } catch(e) {
-            document.getElementById(typingId).remove();
-            appendAIMessage("Erreur de réseau. 😞", 'ai');
-        }
-    }
-
     // ==========================================
-    // 2. LIVE CALL LOGIC (FIXED VERSION)
+    // 2. LIVE CALL LOGIC — CRYSTAL CLEAR AUDIO
     // ==========================================
     let isCallActive = false;
     let isMuted = false;
     let liveSocket = null;
     let audioStream = null;
-    let playbackContext = null;
-    let workletNode = null;
     let micAudioContext = null;
     let audioProcessor = null;
+
+    // 🚀 NEW: Flawless Audio Playback Tech (from React)
+    let playCtx = null;
     let nextPlayTime = 0;
+    let liveSources = [];
+
+    function setCallStatus(text, mode) {
+        const el = document.getElementById('callStatusText');
+        el.innerText = text;
+        el.className = 'call-status' + (mode ? ' ' + mode : '');
+    }
 
     async function openLiveCallScreen() {
         toggleAIPanel();
         const callScreen = document.getElementById('liveCallScreen');
         callScreen.style.display = 'flex';
         setTimeout(() => callScreen.classList.add('active'), 10);
-        document.getElementById('callStatusText').innerText = "CONNECTING...";
-        document.getElementById('callStatusText').style.color = "#fbbf24";
+        setCallStatus('CONNECTING...', 'connecting');
         document.getElementById('liveCaption').innerText = "";
         isCallActive = true;
 
         try {
+            // 1) Mic permission (Eco Cancellation on)
             audioStream = await navigator.mediaDevices.getUserMedia({
-                audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true, channelCount: 1, sampleRate: 16000 }
+                audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true, channelCount: 1 }
             });
-            const tokenRes = await fetch('/api/ai/live-token');
-            if (tokenRes.status === 403) {
-                const errorData = await tokenRes.json();
-                if (errorData.limitReached) {
-                    closeLiveCallScreen();
-                    toggleAIPanel();
-                    lockChatWithPaywall("Tu as atteint ta limite gratuite.");
-                    return;
+
+            // 2) Get token
+            let token = "dummy-token-for-now";
+            try {
+                const tokenRes = await fetch(`/api/ai/live-token?courseType=${encodeURIComponent(window.CURRENT_COURSE_TYPE || 'general')}`);
+                if (tokenRes.status === 403) {
+                    const errorData = await tokenRes.json();
+                    if (errorData.limitReached) {
+                        closeLiveCallScreen();
+                        lockChatWithPaywall("Tu as atteint ta limite gratuite.");
+                        toggleAIPanel();
+                        return;
+                    }
                 }
-            }
-            const tokenData = await tokenRes.json();
-            if (!tokenData.success) throw new Error("Token error");
+                const tokenData = await tokenRes.json();
+                if (tokenData.success) token = tokenData.token;
+            } catch(e) { console.log("Token API failed, proceeding anyway..."); }
 
-            liveSocket = new WebSocket(`${tokenData.url}?key=${tokenData.key}`);
-           playbackContext = new (
-    window.AudioContext ||
-    window.webkitAudioContext
-)({
-    sampleRate: 24000
-});
+            // 3) Connect to local proxy server
+            const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            liveSocket = new WebSocket(`${tokenData.url}?access_token=${tokenData.token}`);
+            liveSocket.binaryType = 'arraybuffer';
 
-await playbackContext.audioWorklet.addModule(
-    '/js/pcm-player-processor.js'
-);
+           liveSocket.onmessage = async (event) => {
+                try {
+                    // 🔥 FIX: Check if incoming data is binary audio (ArrayBuffer)
+                    if (event.data instanceof ArrayBuffer) {
+                        const base64 = arrayBufferToBase64(event.data);
+                        playAudioChunk(base64);
+                        return;
+                    }
 
-workletNode = new AudioWorkletNode(
-    playbackContext,
-    'pcm-player-processor'
-);
+                    const data = JSON.parse(event.data);
+                    
+                    if (data.type === 'connected' || data.proxyStatus === 'live') {
+                        document.getElementById('liveCaption').innerText = data.message || "Amina vous écoute...";
+                        return;
+                    }
 
-workletNode.connect(
-    playbackContext.destination
-);
-
-            liveSocket.onopen = async () => {
-                if (playbackContext.state === 'suspended') await playbackContext.resume();
-                liveSocket.send(JSON.stringify({
-                    setup: {
-                        model: "models/gemini-3.1-flash-live-preview",
-                        generation_config: { response_modalities: ["AUDIO"] },
-                        speech_config: {
-                            voice_config: {
-                                prebuilt_voice_config: {
-                                    voice_name: "Aoede"
-                                }
+                    // Handling AI Voice Data (Fallback if JSON comes from direct API)
+                    if (data.serverContent?.modelTurn?.parts) {
+                        for (const part of data.serverContent.modelTurn.parts) {
+                            if (part.inlineData?.data) {
+                                playAudioChunk(part.inlineData.data);
                             }
-                        },
-                        
-                        system_instruction: { 
-                            parts: [{ 
-                                text: `You are Amina, a warm AI tutor. Course: ${window.CURRENT_COURSE_TYPE || 'general'}. Speak naturally. Avoid robotic pauses. Mix French + Moroccan Darija. Keep voice smooth.` 
-                            }] 
+                            if (part.text) {
+                                document.getElementById('liveCaption').innerText = part.text;
+                            }
                         }
                     }
-                }));
-                document.getElementById('callStatusText').innerText = "● LIVE";
-                document.getElementById('callStatusText').style.color = "#22c55e";
-                setTimeout(startStreamingPCMAudio, 700);
-            };
 
-          liveSocket.onmessage = async (event) => {
-
-    try {
-
-        // ✅ RAW BLOB AUDIO
-        if (event.data instanceof Blob) {
-
-            console.log(
-                "BLOB AUDIO RECEIVED"
-            );
-
-            playRawPCM(
-                await event.data.arrayBuffer()
-            );
-        }
-
-        else {
-
-            const data =
-                JSON.parse(event.data);
-
-            console.log(
-                "GEMINI DATA:",
-                data
-            );
-
-            // ✅ MODEL AUDIO
-            if (
-                data.serverContent?.modelTurn?.parts
-            ) {
-
-                for (
-                    const part of
-                    data.serverContent.modelTurn.parts
-                ) {
-
-                    // AUDIO
-                if (part.text) {
-
-    document.getElementById(
-        'liveCaption'
-    ).innerText = part.text;
-
-    // ✅ PLAY CLEAN TTS
-    const ttsRes = await fetch(
-        '/api/ai/speak',
-        {
-            method: 'POST',
-            headers: {
-                'Content-Type':
-                    'application/json'
-            },
-            body: JSON.stringify({
-                text: part.text,
-                courseType:
-                    window.CURRENT_COURSE_TYPE
-            })
-        }
-    );
-
-    const ttsData =
-        await ttsRes.json();
-
-    if (ttsData.audioContent) {
-
-        const audio = new Audio(
-            'data:audio/mp3;base64,' +
-            ttsData.audioContent
-        );
-
-        audio.play();
-
-        simulateAminaSpeaking();
-    }
-}
-
-                    // TEXT
-                    if (part.text) {
-
-                        console.log(
-                            "TEXT:",
-                            part.text
-                        );
-
-                        document.getElementById(
-                            'liveCaption'
-                        ).innerText =
-                            part.text;
+                    // Handle Interruption
+                    if (data.serverContent?.interrupted) {
+                        flushPlayback();
                     }
+
+                    if (data.serverContent?.outputTranscription?.text) {
+                        document.getElementById('liveCaption').innerText = data.serverContent.outputTranscription.text;
+                    }
+                } catch (e) {
+                    console.error("onmessage error:", e);
                 }
-            }
-
-            // ✅ TRANSCRIPTION
-            if (
-                data.serverContent
-                    ?.outputTranscription?.text
-            ) {
-
-                document.getElementById(
-                    'liveCaption'
-                ).innerText =
-                    data.serverContent
-                        .outputTranscription.text;
-            }
-        }
-
-    } catch (e) {
-
-        console.log(
-            "ONMESSAGE ERROR:",
-            e
-        );
-    }
-
             };
+
+            liveSocket.onerror = (e) => {
+                console.error("Live socket error:", e);
+                setCallStatus('ERREUR DE CONNEXION', 'error');
+            };
+
+            liveSocket.onclose = (e) => {
+                console.log("Live socket closed:", e.code, e.reason);
+                if (isCallActive) {
+                    setCallStatus('APPEL TERMINÉ', 'error');
+                    setTimeout(closeLiveCallScreen, 1200);
+                }
+            };
+
         } catch (error) {
             console.error("Call Error:", error);
-            closeLiveCallScreen();
+            setCallStatus('MIC DENIED OR ERROR', 'error');
+            setTimeout(closeLiveCallScreen, 2000);
         }
     }
 
@@ -577,11 +461,12 @@ workletNode.connect(
         if (!audioStream || !liveSocket) return;
         micAudioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
         const source = micAudioContext.createMediaStreamSource(audioStream);
-        audioProcessor = micAudioContext.createScriptProcessor(16384, 1, 1);
+        audioProcessor = micAudioContext.createScriptProcessor(4096, 1, 1);
         source.connect(audioProcessor);
         audioProcessor.connect(micAudioContext.destination);
+        
         audioProcessor.onaudioprocess = (e) => {
-            if (liveSocket.readyState === WebSocket.OPEN && !isMuted) {
+            if (liveSocket && liveSocket.readyState === WebSocket.OPEN && !isMuted) {
                 const inputData = e.inputBuffer.getChannelData(0);
                 const pcm16 = new Int16Array(inputData.length);
                 for (let i = 0; i < inputData.length; i++) {
@@ -589,202 +474,88 @@ workletNode.connect(
                     pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
                 }
                 const base64Audio = window.btoa(String.fromCharCode(...new Uint8Array(pcm16.buffer)));
-                liveSocket.send(JSON.stringify({ realtimeInput: { audio: { data: base64Audio, mimeType: "audio/pcm;rate=16000" } } }));
+                liveSocket.send(JSON.stringify({
+                    realtime_input: { media_chunks: [{ data: base64Audio, mime_type: "audio/pcm;rate=16000" }] }
+                }));
             }
         };
     }
 
-   let audioQueue = [];
-let isPlayingAudio = false;
+    // 🚀 NEW: FLawless Audio Scheduler (No Worklet Needed)
+    function playAudioChunk(base64Pcm) {
+        if (!isCallActive) return;
+        try {
+            if (!playCtx) {
+                playCtx = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 24000 });
+                nextPlayTime = playCtx.currentTime;
+            }
+            
+            const binary = window.atob(base64Pcm);
+            const bytes = new Uint8Array(binary.length);
+            for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+            const int16 = new Int16Array(bytes.buffer);
+            
+            const float32 = new Float32Array(int16.length);
+            for (let i = 0; i < int16.length; i++) float32[i] = int16[i] / 32768;
 
-// ✅ SMOOTH AUDIO PLAYER
-async function playRawPCM(arrayBuffer) {
+            const buffer = playCtx.createBuffer(1, float32.length, 24000);
+            buffer.copyToChannel(float32, 0);
 
-    if (!playbackContext || !isCallActive) return;
+            const src = playCtx.createBufferSource();
+            src.buffer = buffer;
+            src.connect(playCtx.destination);
 
-    try {
+            const startAt = Math.max(playCtx.currentTime, nextPlayTime);
+            src.start(startAt);
+            nextPlayTime = startAt + buffer.duration;
 
-        if (playbackContext.state === 'suspended') {
-            await playbackContext.resume();
+            simulateAminaSpeaking();
+            
+            liveSources.push(src);
+            src.onended = () => {
+                liveSources = liveSources.filter(s => s !== src);
+            };
+        } catch (e) {
+            console.error("Playback error:", e);
         }
-
-        const evenBuffer =
-            arrayBuffer.byteLength % 2 === 0
-                ? arrayBuffer
-                : arrayBuffer.slice(
-                    0,
-                    arrayBuffer.byteLength - 1
-                );
-
-        const int16 =
-            new Int16Array(evenBuffer);
-
-        if (int16.length === 0) return;
-
-        const float32 =
-            new Float32Array(int16.length);
-
-        for (let i = 0; i < int16.length; i++) {
-
-            float32[i] =
-                int16[i] / 32768;
-        }
-
-        // ✅ SEND TO AUDIO WORKLET
-       workletNode.port.postMessage(
-    Array.from(float32)
-);
-
-    } catch (e) {
-
-        console.log(
-            "AudioWorklet Error:",
-            e
-        );
-    }
-}
-// ✅ PROCESS AUDIO ONE BY ONE
-async function processAudioQueue() {
-
-    if (audioQueue.length === 0) {
-
-        isPlayingAudio = false;
-        return;
     }
 
-    isPlayingAudio = true;
-
-    const buffer = audioQueue.shift();
-
-    const source =
-        playbackContext.createBufferSource();
-
-    source.buffer = buffer;
-
-    // Smooth gain
-    const gainNode =
-        playbackContext.createGain();
-
-    gainNode.gain.value = 0.95;
-
-    source.connect(gainNode);
-
-    gainNode.connect(
-        playbackContext.destination
-    );
-
-    simulateAminaSpeaking();
-
-    source.start(0);
-
-    source.onended = () => {
-        processAudioQueue();
-    };
-}
-
-// ✅ BASE64 HELPER
-function base64ToArrayBuffer(base64) {
-
-    const binary = window.atob(base64);
-
-    const bytes =
-        new Uint8Array(binary.length);
-
-    for (let i = 0; i < binary.length; i++) {
-        bytes[i] = binary.charCodeAt(i);
+    function flushPlayback() {
+        liveSources.forEach(s => { try { s.stop(); } catch(e){} });
+        liveSources = [];
+        if (playCtx) nextPlayTime = playCtx.currentTime;
     }
 
-    return bytes.buffer;
-}
+    function closeLiveCallScreen() {
+        document.getElementById('liveCallScreen').classList.remove('active');
+        setTimeout(() => { document.getElementById('liveCallScreen').style.display = 'none'; }, 400);
 
-// ✅ CLOSE CALL
-function closeLiveCallScreen() {
+        isCallActive = false;
 
-    document.getElementById(
-        'liveCallScreen'
-    ).classList.remove('active');
-
-    setTimeout(() => {
-
-        document.getElementById(
-            'liveCallScreen'
-        ).style.display = 'none';
-
-    }, 400);
-
-    isCallActive = false;
-
-    audioQueue = [];
-    isPlayingAudio = false;
-
-    if (audioProcessor) {
-        audioProcessor.disconnect();
-        audioProcessor = null;
+        flushPlayback();
+        if (playCtx) { playCtx.close(); playCtx = null; }
+        if (audioProcessor) { audioProcessor.disconnect(); audioProcessor = null; }
+        if (micAudioContext) { micAudioContext.close(); micAudioContext = null; }
+        if (audioStream) { audioStream.getTracks().forEach(track => track.stop()); audioStream = null; }
+        if (liveSocket) { liveSocket.onclose = null; liveSocket.close(); liveSocket = null; }
+        
+        // Remove the Worklet file requirement! No more pcm-player-processor.js needed!
     }
 
-    if (micAudioContext) {
-        micAudioContext.close();
-        micAudioContext = null;
+    function toggleCallMute() {
+        isMuted = !isMuted;
+        const btn = document.getElementById('callMicBtn');
+        btn.classList.toggle('muted', isMuted);
+        btn.innerHTML = isMuted ? '🔇' : '🎙️';
     }
 
-   if (playbackContext) {
-    playbackContext.close();
-    playbackContext = null;
-}
-
-if (workletNode) {
-    workletNode.disconnect();
-    workletNode = null;
-}
-    if (audioStream) {
-        audioStream
-            .getTracks()
-            .forEach(track => track.stop());
+    function simulateAminaSpeaking() {
+        if (!isCallActive) return;
+        const screen = document.getElementById('liveCallScreen');
+        screen.classList.add('speaking');
+        clearTimeout(window._aminaSpeakTimeout);
+        window._aminaSpeakTimeout = setTimeout(() => {
+            if (isCallActive) screen.classList.remove('speaking');
+        }, 1000);
     }
-
-    if (liveSocket) {
-        liveSocket.close();
-        liveSocket = null;
-    }
-}
-
-// ✅ MUTE
-function toggleCallMute() {
-
-    isMuted = !isMuted;
-
-    const btn =
-        document.getElementById('callMicBtn');
-
-    btn.classList.toggle(
-        'muted',
-        isMuted
-    );
-
-    btn.innerHTML =
-        isMuted ? '🔇' : '🎙️';
-}
-
-// ✅ SPEAKING ANIMATION
-function simulateAminaSpeaking() {
-
-    if (!isCallActive) return;
-
-    const screen =
-        document.getElementById(
-            'liveCallScreen'
-        );
-
-    screen.classList.add('speaking');
-
-    setTimeout(() => {
-
-        if (isCallActive) {
-            screen.classList.remove(
-                'speaking'
-            );
-        }
-
-    }, 1000);
-}
 </script>

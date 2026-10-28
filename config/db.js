@@ -1,3 +1,5 @@
+const dns = require('dns');
+dns.setServers(['8.8.8.8', '1.1.1.1']); // Google/Cloudflare DNS, Atlas SRV 
 const mongoose = require('mongoose');
 
 const connectDB = async () => {

@@ -2,20 +2,21 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 const { protect } = require('../middleware/authMiddleware');
+const { issueLiveToken } = require('../liveVoiceProxy'); // adjust path if you place liveVoiceProxy.js elsewhere
 
 const userMemory = {};
 
 // ==========================================
-// 🚀 1. TEXT COACH ENGINE (WITH PAYWALL)
+// 🚀 1. TEXT COACH ENGINE (WITH PAYWALL) — unchanged
 // ==========================================
 router.post('/coach', protect, async (req, res) => {
-    const { 
-        userSaid, correctText, courseType, userQuestion, 
+    const {
+        userSaid, correctText, courseType, userQuestion,
         personality = 'funny',
         userEmotion = 'neutral',
         chaosMode = false
     } = req.body;
-    
+
     const userId = req.user._id.toString();
 
     if (!req.user.isPremium && req.user.aiMessageCount >= 10) {
@@ -49,8 +50,8 @@ router.post('/coach', protect, async (req, res) => {
         1. Explain in Moroccan Darija (Latin) mixed with English.
         2. Keep it conversational (2-3 sentences).
         3. GUARDRAIL: ONLY teach English.`;
-        userPrompt = userSaid 
-            ? `Student mistake: Wanted to say "${correctText}", said "${userSaid}". Correct them.` 
+        userPrompt = userSaid
+            ? `Student mistake: Wanted to say "${correctText}", said "${userSaid}". Correct them.`
             : `Student says: "${userQuestion}". Respond naturally.`;
     } else if (courseType === 'accounting') {
         systemPrompt = `You are Amina, a ${personality} Accounting tutor for Moroccans.
@@ -88,11 +89,11 @@ router.post('/coach', protect, async (req, res) => {
         }, { headers: { "Content-Type": "application/json" } });
 
         const data = response.data;
-        
+
         if (data.candidates && data.candidates.length > 0) {
             const aiText = data.candidates[0].content.parts[0].text;
             userMemory[userId].history.push({ role: 'model', content: aiText });
-            
+
             if (!req.user.isPremium) {
                 req.user.aiMessageCount += 1;
                 await req.user.save();
@@ -110,18 +111,20 @@ router.post('/coach', protect, async (req, res) => {
 
 
 // ==========================================
-// 🎙️ 2. TTS ENGINE
+// 🎙️ 2. TTS ENGINE — kept for any text-only surfaces,
+//    but NO LONGER called during a Live voice call
+//    (that would double up with the Live API's own audio).
 // ==========================================
 router.post('/speak', protect, async (req, res) => {
     const { text, courseType, emotion = 'neutral' } = req.body;
     if (!text) return res.status(400).json({ error: "Text is required" });
 
     let languageCode = 'fr-FR';
-    let voiceName = 'fr-FR-Neural2-A'; 
+    let voiceName = 'fr-FR-Neural2-A';
 
     if (courseType === 'english') {
         languageCode = 'en-US';
-        voiceName = 'en-US-Journey-F'; 
+        voiceName = 'en-US-Journey-F';
     }
 
     let speakingRate = 1.0;
@@ -149,26 +152,44 @@ router.post('/speak', protect, async (req, res) => {
 
 
 // ==========================================
-// 🛑 3. LIVE CALL TOKEN
+// 🛑 3. LIVE CALL TOKEN — now issues a short-lived,
+//    single-use token instead of the raw API key.
+//    The browser NEVER sees process.env.GEMINI_API_KEY.
 // ==========================================
-router.get('/live-token', protect, (req, res) => {
+router.get('/live-token', protect, async (req, res) => {
     if (!req.user.isPremium && req.user.aiMessageCount >= 10) {
-        return res.status(403).json({ 
-            success: false, limitReached: true, error: "Limite atteinte." 
+        return res.status(403).json({
+            success: false, limitReached: true, error: "Limite atteinte."
         });
     }
 
     try {
-        res.json({ 
+        const now = Date.now();
+
+        // Asli key server pe hi rehti hai. Browser ko sirf 1-use ka chhota token milta hai.
+        const r = await axios.post(
+            'https://generativelanguage.googleapis.com/v1beta/auth_tokens',
+            {
+                uses: 1,
+                expireTime: new Date(now + 30 * 60 * 1000).toISOString(),
+                newSessionExpireTime: new Date(now + 60 * 1000).toISOString()
+            },
+            {
+                headers: {
+                    'x-goog-api-key': process.env.GEMINI_API_KEY,
+                    'Content-Type': 'application/json'
+                }
+            }
+        );
+
+        res.json({
             success: true,
-            // ✅ FIX: v1alpha → v1beta (v1alpha deprecated for live-001 model)
-            url: "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent",
-            key: process.env.GEMINI_API_KEY 
+            url: "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContentConstrained",
+            token: r.data.name
         });
     } catch (error) {
-        console.error("Token Error:", error);
+        console.error("Token Error:", error.response?.data || error.message);
         res.status(500).json({ success: false, error: "Failed to secure live connection." });
     }
 });
-
 module.exports = router;
